@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="azure-devops-16.143.0-preview">
+  <Assemblies>
+    <Assembly Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi" Version="17.0.0.0" />
+  </Assemblies>
+  <Namespace Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi">
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperation" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperation">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperation.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperation.OperationState" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperation.OperationType" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperation.Reason" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperation.Reasons" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationDisallowReason" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationDisallowReason">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationDisallowReason.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationDisallowReason.Message" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationDisallowReason.Type" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationState" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationState">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationState.Allow" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationState.Completed" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationState.Disallow" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType.Buy" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType.Get" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType.Install" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType.None" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType.PurchaseRequest" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType.Request" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOperationType.Try" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions.DefaultOperation" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions.ItemId" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions.Operations" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions.Properties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions.Target" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution.#ctor(System.String)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution.Description" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution.Id" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution.Includes" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution.Properties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution.Targets" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContribution.Type" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionNode" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionNode">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionNode.#ctor(System.String)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionNode.Children" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionNode.Contribution" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionNode.Parents" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionProviderDetails" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionProviderDetails">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionProviderDetails.#ctor(System.String)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionProviderDetails.DisplayName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionProviderDetails.Name" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionProviderDetails.Properties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientContributionProviderDetails.Version" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientDataProviderQuery" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientDataProviderQuery">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientDataProviderQuery.QueryServiceInstanceType" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientDataProviderQuery.#ctor" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.GetAssociatedObject``1(System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.GetHashCode" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.SetAssociatedObject``1(System.String,``0)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.ToString" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.Constraints" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.Includes" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.Properties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.RestrictedTo" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.Targets" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution.Type" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionBase" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionBase">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionBase.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionBase.GetHashCode" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionBase.Description" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionBase.Id" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionBase.VisibleTo" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint.GetHashCode" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint.Group" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint.Id" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint.Inverse" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint.Name" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint.Properties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint.Relationships" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionElementTypeException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionElementTypeException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionElementTypeException.#ctor(System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionEmbeddedException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionEmbeddedException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionEmbeddedException.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier.#ctor(System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier.ToString" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier.TryParse(System.String,Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier@)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier.ExtensionName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier.PublisherName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdentifier.RelativeId" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdInvalidInElement" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdInvalidInElement">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdInvalidInElement.#ctor(System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdRequiredInElement" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdRequiredInElement">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionIdRequiredInElement.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionLicensingBehaviorType" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionLicensingBehaviorType">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionLicensingBehaviorType.AlwaysInclude" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionLicensingBehaviorType.OnlyIfLicensed" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionLicensingBehaviorType.OnlyIfUnlicensed" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetProperty``1(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String,``0,System.Boolean)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetPropertyRawValue(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetReferenceLinks(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.IsOfType(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.IsTargeting(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery.DataProviderContext" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery.ContributionIds" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery.IncludeProviderDetails" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery.QueryOptions" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult.#ctor(System.String)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult.Nodes" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult.ProviderDetails" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription.GetHashCode" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription.Description" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription.Name" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription.Required" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription.Type" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Array" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Boolean" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.DateTime" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Dictionary" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Double" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Guid" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Integer" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Object" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.String" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Unknown" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyType.Uri" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionProviderDetails" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionProviderDetails">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionProviderDetails.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionProviderDetails.GetHashCode" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionProviderDetails.DisplayName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionProviderDetails.Name" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionProviderDetails.Properties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionProviderDetails.Version" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionQueryOptions" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionQueryOptions">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionQueryOptions.IgnoreConstraints" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionQueryOptions.IncludeAll" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionQueryOptions.IncludeChildren" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionQueryOptions.IncludeSelf" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionQueryOptions.IncludeSubTree" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionQueryOptions.None" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRendererNotDefinedException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRendererNotDefinedException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRendererNotDefinedException.#ctor(System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.AnonymousClaim" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.MemberClaim" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.PublicClaim" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.GetDefaultValues" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.HasAnyClaim(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String[])" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.ParseRestrictedClaimGroups(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.GetInstalledExtensionByNameAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.GetInstalledExtensionsAsync(System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.QueryContributionNodesAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.QueryDataProvidersAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.AreaId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.AssetsResource" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.ContributionQueryLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.ContributionQueryLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.ContributionsAreaName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.DataProvidersQueryLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.DataProvidersQueryLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.ExtensionsAreaName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.InstalledAppsByNameLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.InstalledAppsLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.InstalledExtensionsByNameLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.InstalledExtensionsLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.LocalExtensionAssetsLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.LocalExtensionAssetsLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.VDiscCompatLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.VDiscCompatLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.VDiscId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.VersionDiscoveryLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsResourceIds.VersionDiscoveryLocationIdString" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionType" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionType">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionType.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionType.GetHashCode" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionType.Indexed" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionType.Name" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionType.Properties" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderContext" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderContext">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderContext.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderContext.Properties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderContext.SharedData" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderExceptionDetails" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderExceptionDetails">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderExceptionDetails.ExceptionType" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderExceptionDetails.Message" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderExceptionDetails.StackTrace" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderExceptionDetails.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderMetadata" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderMetadata">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderMetadata.#ctor(System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderMetadata.GetToken" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderMetadata.NamespaceId" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderMetadata.RequiredPermissions" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery.Context" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery.ContributionIds" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult.#ctor(System.String)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult.ClientProviders" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult.Data" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult.Exceptions" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult.ResolvedProviders" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult.ScopeName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult.ScopeValue" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult.SharedData" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderSecurityConstants" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderSecurityConstants">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderSecurityConstants.NamespaceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderSecurityConstants.ReadPermission" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderSecurityConstants.RootMetadataToken" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderSharedData" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderSharedData">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderSharedData.#ctor" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentCollectionDoesNotExistException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentCollectionDoesNotExistException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentCollectionDoesNotExistException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentCollectionDoesNotExistException.#ctor(System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentDoesNotExistException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentDoesNotExistException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentDoesNotExistException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentDoesNotExistException.#ctor(System.String,System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentExistsException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentExistsException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentExistsException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DocumentExistsException.#ctor(System.String,System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DuplicateContributionException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DuplicateContributionException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DuplicateContributionException.#ctor(System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DuplicateContributionTypeException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DuplicateContributionTypeException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DuplicateContributionTypeException.#ctor(System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAlreadyInstalledException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAlreadyInstalledException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAlreadyInstalledException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAlreadyInstalledException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAlreadyInstalledException.#ctor(System.String,System.Exception,System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditAction" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditAction">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditAction.Disable" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditAction.Enable" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditAction.Insert" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditAction.Uninstall" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditAction.Update" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditAction.UpdateVersion" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLog" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLog">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLog.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLog.Entries" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLog.ExtensionName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLog.PublisherName" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLogEntry" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLogEntry">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLogEntry.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLogEntry.AuditAction" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLogEntry.AuditDate" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLogEntry.Comment" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuditLogEntry.UpdatedBy" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization.Id" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization.Scopes" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionConstants" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionConstants">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionConstants.AreaId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionConstants.ServiceOwner" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionConstants.ServiceOwnerString" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection.CollectionName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection.Documents" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection.ScopeType" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection.ScopeValue" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery.Collections" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDemandsNotSupportedException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDemandsNotSupportedException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDemandsNotSupportedException.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent.Extension" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent.ExtensionVersion" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent.Host" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent.Links" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent.ModifiedBy" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEvent.UpdateType" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallback" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallback">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallback.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallback.Uri" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection.PostDisable" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection.PostEnable" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection.PostInstall" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection.PostUninstall" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection.PostUpdate" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection.PreInstall" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection.VersionCheck" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackDeniedException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackDeniedException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackDeniedException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackDeniedException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventUrls" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventUrls">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventUrls.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventUrls.ManageExtensionsPage" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionFlags" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionFlags">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionFlags.BuiltIn" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionFlags.Trusted" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionHost" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionHost">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionHost.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionHost.Id" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionHost.Name" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionInvalidAuthorizationException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionInvalidAuthorizationException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionInvalidAuthorizationException.#ctor(System.Guid)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionInvalidAuthorizationException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionInvalidAuthorizationException.#ctor(System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionLicensing" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionLicensing">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionLicensing.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionLicensing.Overrides" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.CreateDocumentByNameAsync(Newtonsoft.Json.Linq.JObject,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.DeleteDocumentByNameAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.DeleteRequestAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetAcquisitionOptionsAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetDocumentByNameAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetDocumentsByNameAsync(System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetInstalledExtensionByNameAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetInstalledExtensionsAsync(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetPoliciesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetRequestsAsync(System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetStatesAsync(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetTokenAsync(System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.InstallExtensionByNameAsync(System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.QueryCollectionsByNameAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.QueryExtensionsAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.RegisterAuthorizationAsync(System.String,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.RequestAcquisitionAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.RequestExtensionAsync(System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.ResolveAllRequestsAsync(System.String,System.String,System.String,Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.ResolveRequestAsync(System.String,System.String,System.String,System.String,Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.SetDocumentByNameAsync(Newtonsoft.Json.Linq.JObject,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.UninstallExtensionByNameAsync(System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.UpdateDocumentByNameAsync(Newtonsoft.Json.Linq.JObject,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.UpdateInstalledExtensionAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension,System.Object,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.#ctor(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.BaseUri" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.Constraints" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.Contributions" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.ContributionTypes" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.Demands" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.EventCallbacks" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.FallbackBaseUri" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.Language" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.Licensing" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.ManifestVersion" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.RestrictedTo" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.Scopes" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest.ServiceInstanceType" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifestMethods" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifestMethods">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifestMethods.GetTemplateUriProperty(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest,System.String,System.Object,Microsoft.VisualStudio.Services.WebApi.MustacheTemplateParser,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionNotLoadedException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionNotLoadedException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionNotLoadedException.#ctor(System.Guid,System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest.RejectMessage" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest.RequestDate" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest.RequestedBy" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest.RequestMessage" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest.RequestState" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest.ResolveDate" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequest.ResolvedBy" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestAlreadyExistsException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestAlreadyExistsException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestAlreadyExistsException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestAlreadyExistsException.#ctor(System.String,System.Exception,System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent.Extension" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent.Host" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent.HostName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent.Links" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent.Request" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestEvent.UpdateType" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestsEvent" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestsEvent">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestsEvent.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestsEvent.Extension" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestsEvent.Host" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestsEvent.Links" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestsEvent.Requests" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestsEvent.UpdateType" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState.Accepted" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState.Open" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState.Rejected" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUpdateType" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUpdateType">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUpdateType.Approved" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUpdateType.Created" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUpdateType.Deleted" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUpdateType.Rejected" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUrls" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUrls">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUrls.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestUrls.RequestPage" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AcquisitionOptionsResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AcquisitionOptionsResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AcquisitionRequestLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AcquisitionRequestsResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AdminExtensionRequestsResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AdminExtensionRequestsResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AdminExtensionRequestsResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AreaId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AuthorizationsResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AuthorizationsResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.AuthorizationsResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ContributionsResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ContributionsResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.DataByNameResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.DocumentByNameResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.DocumentByNameResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.DocumentResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.DocumentResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.DocumentResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionDataCollectionQueryByNameResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionDataCollectionQueryByNameResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionDataCollectionQueryResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionManagementResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionManagementResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionManagementResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionPoliciesResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionPoliciesResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionPoliciesUserMe" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionsArea" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionStatesResouceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionStatesResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ExtensionStatesResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionQueryResouceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionQueryResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionQueryResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionsByNameResouceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionsByNameResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionsByNameResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionsResouceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionsResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.InstalledExtensionsResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.RequestedExtensionsResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.RequestedExtensionsResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.RequestedExtensionsResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ScopesByNameResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ScopesByNameResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ScopesByNameResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ScopesResouceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ScopesResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.ScopesResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.TokenResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.TokenResourceName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.UserExtensionRequestsResourceId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.UserExtensionRequestsResourceIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionResourceIds.UserExtensionRequestsResourceName" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionServiceEvents" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionServiceEvents">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionServiceEvents.ExtensionBulkInstallEvent" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionServiceEvents.ExtensionInstallEvent" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionServiceEvents.ExtensionServiceBusName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionServiceEvents.ExtensionUninstallEvent" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionServiceEvents.#ctor" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState.#ctor(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState.ExtensionName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState.FullyQualifiedName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState.LastVersionCheck" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState.PublisherName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState.RegistrationId" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState.Version" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.AutoUpgradeError" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.BuiltIn" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.Disabled" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.Error" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.MultiVersion" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.NeedsReauthorization" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.None" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.Trusted" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.UnInstalled" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.VersionCheckError" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionStateFlags.Warning" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionTemplateContextItemNames" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionTemplateContextItemNames">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionTemplateContextItemNames.ServiceInstanceType" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionTemplateException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionTemplateException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionTemplateException.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType.ActionRequired" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType.ActionResolved" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType.Disabled" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType.Enabled" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType.Installed" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType.Uninstalled" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUpdateType.VersionUpdated" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUrls" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUrls">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUrls.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUrls.ExtensionIcon" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUrls.ExtensionPage" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.FullyQualifyContributionIds(System.Collections.Generic.List{System.String},System.String)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.GetExtensionProperties(Microsoft.VisualStudio.Services.Gallery.WebApi.PublishedExtensionFlags)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.GetFullyQualifiedReference(System.String,System.String,System.Boolean)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.LoadManifest(System.String,System.String,System.String,System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.#ctor(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.ExtensionDisplayName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.ExtensionName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.Files" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.Flags" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.FullyQualifiedName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.InstallState" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.LastPublished" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.PublisherDisplayName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.PublisherName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.RegistrationId" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension.Version" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionNotFoundException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionNotFoundException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionNotFoundException.#ctor(System.Guid)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionNotFoundException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionNotFoundException.#ctor(System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery.AssetTypes" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery.Monikers" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionState" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionState">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionState.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionState.#ctor(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionState)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionState.Flags" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionState.InstallationIssues" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionState.LastUpdated" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssue" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssue">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssue.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssue.Message" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssue.Source" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssue.Type" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssueType" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssueType">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssueType.Error" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionStateIssueType.Warning" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InvalidDocumentVersionException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InvalidDocumentVersionException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InvalidDocumentVersionException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InvalidDocumentVersionException.#ctor(System.String,System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InvalidInstallationTargetException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InvalidInstallationTargetException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InvalidInstallationTargetException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InvalidInstallationTargetException.#ctor(System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.LicensingOverride" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.LicensingOverride">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.LicensingOverride.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.LicensingOverride.Behavior" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.LicensingOverride.Id" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ManifestNotFoundException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ManifestNotFoundException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ManifestNotFoundException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ManifestNotFoundException.#ctor(System.String,System.Version)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension.ExtensionName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension.ExtensionRequests" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension.PublisherDisplayName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension.PublisherName" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension.RequestCount" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ResolvedDataProvider" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ResolvedDataProvider">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ResolvedDataProvider.Exception" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ResolvedDataProvider.#ctor(System.String)" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ResolvedDataProvider.Duration" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ResolvedDataProvider.Error" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ResolvedDataProvider.Id" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributesProperty" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.BaseUriProperty" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.FallbackBaseUriProperty" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.HashcodeProperty" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.RegistrationIdProperty" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.ServiceInstanceTypeProperty" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.VersionProperty" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty/AttributeValue" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributeValue">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributeValue.BuiltIn" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributeValue.MultiVersion" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributeValue.Paid" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributeValue.Preview" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributeValue.Public" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributeValue.System" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RestrictedProperty.AttributeValue.Trusted" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Scope" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Scope">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Scope.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Scope.Description" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Scope.Title" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Scope.Value" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.SupportedExtension" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.SupportedExtension">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.SupportedExtension.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.SupportedExtension.Extension" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.SupportedExtension.Publisher" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.SupportedExtension.Version" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.TokenMissingHostAuthorizationClaimException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.TokenMissingHostAuthorizationClaimException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.TokenMissingHostAuthorizationClaimException.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.TokenMissingHostAuthorizationClaimException.#ctor(System.String,System.Exception)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest">
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.AcquisitionAssignmentType" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.AcquisitionAssignmentType">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.AcquisitionAssignmentType.All" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.AcquisitionAssignmentType.Me" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.AcquisitionAssignmentType.None" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest.AssignmentType" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest.BillingId" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest.ItemId" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest.OperationType" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest.Properties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest.Quantity" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement">
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.DefaultState" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.DefaultValueRules" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.Description" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.FeatureProperties" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.FeatureStateChangedListeners" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.Id" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.IncludeAsClaim" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.Links" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.Name" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.Order" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.OverrideRules" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.Scopes" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.ServiceInstanceType" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature.Tags" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureEnabledValue" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureEnabledValue">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureEnabledValue.Disabled" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureEnabledValue.Enabled" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureEnabledValue.Undefined" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureHandlerSettings" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureHandlerSettings">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureHandlerSettings.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureHandlerSettings.Name" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureHandlerSettings.Properties" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureInvalidScopeException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureInvalidScopeException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureInvalidScopeException.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureListener" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureListener">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureListener.#ctor" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureNotFoundException" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureNotFoundException">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureNotFoundException.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureSettingScope" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureSettingScope">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureSettingScope.#ctor" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureSettingScope.ToString" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureSettingScope.SettingScope" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureSettingScope.UserScoped" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState.FeatureId" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState.Overridden" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState.Reason" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState.Scope" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState.State" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery.FeatureIds" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery.FeatureStates" />
+      <Member Id="P:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery.ScopeValues" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureValueRule" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureValueRule">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureValueRule.#ctor" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient">
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.GetFeatureAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.GetFeaturesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.GetFeatureStateAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.GetFeatureStateForScopeAsync(System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.QueryFeatureStatesAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.QueryFeatureStatesForDefaultScopeAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.QueryFeatureStatesForNamedScopeAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.SetFeatureStateAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.SetFeatureStateForScopeAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState,System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds" Id="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds">
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureManagementAreaName" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeaturesLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeaturesResource" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesQueryForDefaultScopeLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesQueryForDefaultScopeLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesQueryForScopeLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesQueryForScopeLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesQueryLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesQueryLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesQueryResource" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.FeatureStatesResource" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.NamedScopeFeatureStatesLocationId" />
+      <Member Id="F:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementResourceIds.NamedScopeFeatureStatesLocationIdString" />
+    </Type>
+  </Namespace>
+</Framework>
