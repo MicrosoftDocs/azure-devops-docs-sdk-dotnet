@@ -20,7 +20,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            States of an extension
+            Note:  If you add value to this enum, you need to do 2 other things.  First add the back compat enum in
+            value src\Vssf\Sdk\Server\Contributions\InstalledExtensionMessage.cs.  Second, you can not send the new value on the
+            message bus.  You need to remove it from the message bus event prior to being sent.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +50,10 @@
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Error performing auto-upgrade. For example, if the new version has demands not supported 
+            the extension cannot be auto-upgraded.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltIn">
@@ -69,7 +77,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Extension is a built in
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -93,7 +103,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Extension is disabled
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -117,7 +129,9 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Extension is currently in an error state
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MultiVersion">
@@ -141,7 +155,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Extension has multiple versions
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NeedsReauthorization">
@@ -165,7 +181,9 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Extension scopes have changed and the extension requires re-authorization
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -189,7 +207,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            No flags set
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Trusted">
@@ -213,7 +233,13 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Trusted extensions are ones that are given special capabilities. These
+            tend to come from Microsoft and can't be published by the general
+            public. 
+            
+            Note: BuiltIn extensions are always trusted.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UnInstalled">
@@ -237,7 +263,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Extension is not installed.  This is for builtin extensions only and can not otherwise be set.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="VersionCheckError">
@@ -261,7 +289,9 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Error performing version check
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -285,7 +315,11 @@
       </ReturnValue>
       <MemberValue>512</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Extension is currently in a warning state, that can cause a degraded experience. 
+            The degraded experience can be caused for example by some installation issues detected
+            such as implicit demands not supported.
+            </summary>
       </Docs>
     </Member>
   </Members>

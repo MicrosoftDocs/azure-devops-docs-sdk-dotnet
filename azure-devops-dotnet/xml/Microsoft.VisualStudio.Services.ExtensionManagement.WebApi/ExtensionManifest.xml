@@ -18,7 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Base class for extension properties which are shared by the extension manifest and the extension model
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -78,7 +80,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Uri used as base for other relative uri's defined in extension
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +107,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionConstraint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List of shared constraints defined by this extension
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +134,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List of contributions made by this extension
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,7 +161,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List of contribution types defined by this extension
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,7 +188,9 @@
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List of explicit demands required by this extension
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,7 +215,9 @@
         <ReturnType>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionEventCallbackCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Collection of endpoints that get called when particular extension events occur
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +242,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Secondary location that can be used as base for other relative uri's defined in extension
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -253,7 +269,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Language Culture Name set by the Gallery
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,7 +296,9 @@
         <ReturnType>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionLicensing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            How this extension behaves with respect to licensing
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,7 +323,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Version of the extension manifest format/content
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -328,7 +350,10 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Default user claims applied to all contributions (except the ones which have been speficied
+            restrictedTo explicitly) to control the visibility of a contribution.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -353,7 +378,9 @@
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List of all oauth scopes required by this extension
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,7 +405,9 @@
         <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The ServiceInstanceType(Guid) of the VSTS service that must be available to an account in order for the extension to be installed
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Methods to help work with Contributions
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,13 +42,15 @@
         <Parameter Name="ignoreInvalidTypeError" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="contribution">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <param name="defaultValue">To be added.</param>
-        <param name="ignoreInvalidTypeError">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type of property value</typeparam>
+        <param name="contribution">Contribution to retrieve the property from</param>
+        <param name="propertyName">Name of the property; can be a JToken selector such as "foo[0].bar"</param>
+        <param name="defaultValue">Default value to return if the property is not found/valid</param>
+        <param name="ignoreInvalidTypeError">Unless true, throw if the property exists but cannot be parsed as the given type</param>
+        <summary>
+            Get a property value for the given contribution
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,10 +72,12 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contribution">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contribution"></param>
+        <param name="propertyName"></param>
+        <summary>
+            Gets the value of a property in its raw form - with values converted from JObject/JToken into strings, numbers, arrays, dictionaries.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +99,12 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contribution">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contribution"></param>
+        <param name="propertyName"></param>
+        <summary>
+            Convert the specified contribution property to a ReferenceLinks object
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,10 +126,12 @@
         <Parameter Name="contributionTypeId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contribution">To be added.</param>
-        <param name="contributionTypeId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contribution">Contribution to check</param>
+        <param name="contributionTypeId">The full id of the contribution type to check for</param>
+        <summary>
+            Is the contribution's type the specified contribution type
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,10 +153,12 @@
         <Parameter Name="contributionId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contribution">To be added.</param>
+        <param name="contribution">Contribution to check</param>
         <param name="contributionId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Is the contribution targeting the specified contribution id
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

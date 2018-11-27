@@ -18,7 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Result structure from calls to GetDataProviderData
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -62,7 +64,11 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ClientDataProviderQuery&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            This is the set of data providers that were requested, but either they were
+            defined as client providers, or as remote providers that failed and may
+            be retried by the client.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +93,9 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Property bag of data keyed off of the data provider contribution id
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +120,9 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderExceptionDetails&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Set of exceptions that occurred resolving the data providers.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +147,9 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ResolvedDataProvider&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List of data providers resolved in the data-provider query
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,7 +174,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Scope name applied to this data provider result.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,7 +201,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Scope value applied to this data provider result.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,7 +228,9 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Property bag of shared data that was contributed to by any of the individual data providers
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -17,7 +17,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Options that control the contributions to include in a query
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +44,10 @@
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Some callers may want the entire tree back without constraint evaluation being
+            performed.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeAll">
@@ -66,7 +71,9 @@
       </ReturnValue>
       <MemberValue>112</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Include the contribution being queried as well as all contributions that target them recursively.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeChildren">
@@ -90,7 +97,9 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Include the contributions that directly target the contributions queried.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeSelf">
@@ -114,7 +123,9 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Include the direct contributions that have the ids queried.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeSubTree">
@@ -138,7 +149,9 @@
       </ReturnValue>
       <MemberValue>96</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Include the contributions from the entire sub-tree targetting the contributions queried.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">

@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary />
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,9 +36,9 @@
         <Parameter Name="extensionIdentifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <param name="extensionIdentifier">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="list"></param>
+        <param name="extensionIdentifier"></param>
+        <summary />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,9 +60,9 @@
         <Parameter Name="extensionFlags" Type="Microsoft.VisualStudio.Services.Gallery.WebApi.PublishedExtensionFlags" />
       </Parameters>
       <Docs>
-        <param name="extensionFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="extensionFlags"></param>
+        <summary />
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,11 +86,11 @@
         <Parameter Name="supportsExternalReference" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="extensionIdentifier">To be added.</param>
-        <param name="contributionId">To be added.</param>
-        <param name="supportsExternalReference">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="extensionIdentifier"></param>
+        <param name="contributionId"></param>
+        <param name="supportsExternalReference"></param>
+        <summary />
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,14 +117,26 @@
         <Parameter Name="addLicensingConstraints" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="publisherName">To be added.</param>
-        <param name="extensionName">To be added.</param>
-        <param name="version">To be added.</param>
-        <param name="manifestStream">To be added.</param>
-        <param name="extraProperties">To be added.</param>
+        <param name="publisherName"></param>
+        <param name="extensionName"></param>
+        <param name="version"></param>
+        <param name="manifestStream"></param>
+        <param name="extraProperties"></param>
         <param name="addLicensingConstraints">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Given a serialized manifest stream this method will deserialize the manifest
+            and fill in all the run time properties of the contributions
+            
+            Contributions that are deserialized from an ExtensionManfiest don't have all
+            their properties setup and need to be fixed before the manifest can be used.
+            
+            This includes things like:
+                Ensureing Id's are fully qualified
+                Filtering out supplied resrticted properties from each contribution
+                Adding any extra properties to each contribution
+                etc.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

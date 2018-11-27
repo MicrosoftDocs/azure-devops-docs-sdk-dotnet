@@ -18,7 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A contribution type, given by a json schema
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,8 +56,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary />
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +81,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Controls whether or not contributions of this type have the type 
+            indexed for queries. This allows clients to find all extensions 
+            that have a contribution of this type. 
+            
+            NOTE: Only TrustedPartners are allowed to specify indexed 
+            contribution types.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,7 +113,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Friendly name of the contribution/type
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +140,9 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionPropertyDescription&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Describes the allowed properties for this contribution type
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

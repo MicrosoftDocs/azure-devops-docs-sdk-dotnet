@@ -168,10 +168,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="featureId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="featureId">The contribution id of the feature</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a specific feature by its id
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,10 +197,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="targetContributionId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetContributionId">Optional target contribution. If null/empty, return all features. If specified include the features that target the specified contribution.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of all defined features
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -223,11 +227,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="featureId">To be added.</param>
-        <param name="userScope">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="featureId">Contribution id of the feature</param>
+        <param name="userScope">User-Scope at which to get the value. Should be "me" for the current user or "host" for all users.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the state of the specified feature for the given user/all-users scope
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,13 +260,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="featureId">To be added.</param>
-        <param name="userScope">To be added.</param>
-        <param name="scopeName">To be added.</param>
-        <param name="scopeValue">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="featureId">Contribution id of the feature</param>
+        <param name="userScope">User-Scope at which to get the value. Should be "me" for the current user or "host" for all users.</param>
+        <param name="scopeName">Scope at which to get the feature setting for (e.g. "project" or "team")</param>
+        <param name="scopeValue">Value of the scope (e.g. the project or team id)</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the state of the specified feature for the given named scope
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,10 +292,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="query">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="query">Features to query along with current scope values</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the effective state for a list of feature ids
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -312,11 +322,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="query">To be added.</param>
-        <param name="userScope">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="query">Query describing the features to query.</param>
+        <param name="userScope"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the states of the specified features for the default scope
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,13 +355,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="query">To be added.</param>
-        <param name="userScope">To be added.</param>
-        <param name="scopeName">To be added.</param>
-        <param name="scopeValue">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="query">Query describing the features to query.</param>
+        <param name="userScope"></param>
+        <param name="scopeName"></param>
+        <param name="scopeValue"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the states of the specified features for the specific named scope
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -377,14 +391,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="feature">To be added.</param>
-        <param name="featureId">To be added.</param>
-        <param name="userScope">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="reasonCode">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="feature">Posted feature state object. Should specify the effective value.</param>
+        <param name="featureId">Contribution id of the feature</param>
+        <param name="userScope">User-Scope at which to set the value. Should be "me" for the current user or "host" for all users.</param>
+        <param name="reason">Reason for changing the state</param>
+        <param name="reasonCode">Short reason code</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Set the state of a feature
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -414,16 +430,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="feature">To be added.</param>
-        <param name="featureId">To be added.</param>
-        <param name="userScope">To be added.</param>
-        <param name="scopeName">To be added.</param>
-        <param name="scopeValue">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="reasonCode">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="feature">Posted feature state object. Should specify the effective value.</param>
+        <param name="featureId">Contribution id of the feature</param>
+        <param name="userScope">User-Scope at which to set the value. Should be "me" for the current user or "host" for all users.</param>
+        <param name="scopeName">Scope at which to get the feature setting for (e.g. "project" or "team")</param>
+        <param name="scopeValue">Value of the scope (e.g. the project or team id)</param>
+        <param name="reason">Reason for changing the state</param>
+        <param name="reasonCode">Short reason code</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Set the state of a feature at a specific scope
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

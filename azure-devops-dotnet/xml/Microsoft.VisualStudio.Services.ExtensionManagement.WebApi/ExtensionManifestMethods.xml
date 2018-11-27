@@ -38,13 +38,15 @@
         <Parameter Name="additionalEvaluationData" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="extensionManifest">To be added.</param>
-        <param name="uriTemplate">To be added.</param>
-        <param name="replacementValues">To be added.</param>
-        <param name="customTemplateParser">To be added.</param>
+        <param name="extensionManifest">ExtensionManifest to complete the URI from</param>
+        <param name="uriTemplate">Templated value of the URI</param>
+        <param name="replacementValues">Replacement values to use in the template translation</param>
+        <param name="customTemplateParser">Optional template parser that can be used in place of the default</param>
         <param name="additionalEvaluationData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Get a contribution property value and resolve it as a mustache template, using the given replacements object
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
