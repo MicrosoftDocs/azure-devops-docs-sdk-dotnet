@@ -1,0 +1,226 @@
+﻿<Type Name="SuiteUpdateModel" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel">
+  <TypeSignature Language="C#" Value="public class SuiteUpdateModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SuiteUpdateModel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel" />
+  <TypeSignature Language="VB.NET" Value="Public Class SuiteUpdateModel" />
+  <TypeSignature Language="F#" Value="type SuiteUpdateModel = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Test suite update model.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SuiteUpdateModel (string name = &quot;&quot;, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference parent = null, string queryString = &quot;&quot;, Nullable&lt;bool&gt; inheritDefaultConfigurations = null, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference[] defaultConfigurations = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference parent, string queryString, valuetype System.Nullable`1&lt;bool&gt; inheritDefaultConfigurations, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference[] defaultConfigurations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.#ctor(System.String,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,System.String,System.Nullable{System.Boolean},Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = &quot;&quot;, Optional parent As ShallowReference = null, Optional queryString As String = &quot;&quot;, Optional inheritDefaultConfigurations As Nullable(Of Boolean) = null, Optional defaultConfigurations As ShallowReference() = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel : string * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * string * Nullable&lt;bool&gt; * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference[] -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel (name, parent, queryString, inheritDefaultConfigurations, defaultConfigurations)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="parent" Type="Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" />
+        <Parameter Name="queryString" Type="System.String" />
+        <Parameter Name="inheritDefaultConfigurations" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="defaultConfigurations" Type="Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference[]" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="parent">To be added.</param>
+        <param name="queryString">To be added.</param>
+        <param name="inheritDefaultConfigurations">To be added.</param>
+        <param name="defaultConfigurations">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultConfigurations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference&gt; DefaultConfigurations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference&gt; DefaultConfigurations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.DefaultConfigurations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultConfigurations As List(Of ShallowReference)" />
+      <MemberSignature Language="F#" Value="member this.DefaultConfigurations : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference&gt;" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.DefaultConfigurations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Shallow reference of default configurations for the suite.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTesters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference&gt; DefaultTesters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference&gt; DefaultTesters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.DefaultTesters" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultTesters As List(Of ShallowReference)" />
+      <MemberSignature Language="F#" Value="member this.DefaultTesters : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference&gt; with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.DefaultTesters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Shallow reference of test suite.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritDefaultConfigurations">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; InheritDefaultConfigurations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; InheritDefaultConfigurations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.InheritDefaultConfigurations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritDefaultConfigurations As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.InheritDefaultConfigurations : Nullable&lt;bool&gt;" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.InheritDefaultConfigurations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specifies if the default configurations have to be inherited from the parent test suite in which the test suite is created.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Test suite name
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As ShallowReference" />
+      <MemberSignature Language="F#" Value="member this.Parent : Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Shallow reference of the parent.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="public string QueryString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.QueryString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryString As String" />
+      <MemberSignature Language="F#" Value="member this.QueryString : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel.QueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            For query based suites, the new query string.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

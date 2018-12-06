@@ -1,0 +1,154 @@
+﻿<Type Name="GitLfsLock" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock">
+  <TypeSignature Language="C#" Value="public class GitLfsLock" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GitLfsLock extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock" />
+  <TypeSignature Language="VB.NET" Value="Public Class GitLfsLock" />
+  <TypeSignature Language="F#" Value="type GitLfsLock = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.Internal.ClientIgnore</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitLfsLock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>
+            This must be a string type in order for the LFS client to parse the JSON
+            correctly. (It requires quotation marks around the value.)
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockedAt">
+      <MemberSignature Language="C#" Value="public DateTimeOffset LockedAt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LockedAt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.LockedAt" />
+      <MemberSignature Language="VB.NET" Value="Public Property LockedAt As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.LockedAt : DateTimeOffset with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.LockedAt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="locked_at")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockOwner Owner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockOwner Owner" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public Property Owner As GitLfsLockOwner" />
+      <MemberSignature Language="F#" Value="member this.Owner : Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockOwner with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="owner")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockOwner</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="path")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

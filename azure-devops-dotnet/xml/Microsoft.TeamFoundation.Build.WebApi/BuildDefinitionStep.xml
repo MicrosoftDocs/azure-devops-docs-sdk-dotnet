@@ -1,0 +1,340 @@
+﻿<Type Name="BuildDefinitionStep" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep">
+  <TypeSignature Language="C#" Value="public class BuildDefinitionStep : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildDefinitionStep extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildDefinitionStep&#xA;Inherits BaseSecuredObject" />
+  <TypeSignature Language="F#" Value="type BuildDefinitionStep = class&#xA;    inherit BaseSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a step in a build phase.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildDefinitionStep ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysRun">
+      <MemberSignature Language="C#" Value="public bool AlwaysRun { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysRun" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.AlwaysRun" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysRun As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AlwaysRun : bool with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.AlwaysRun" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether this step should run even if a previous step fails.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BuildDefinitionStep" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep" Usage="buildDefinitionStep.Clone " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            A clone of this step.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Condition">
+      <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Condition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A condition that determines whether this step should run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueOnError">
+      <MemberSignature Language="C#" Value="public bool ContinueOnError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContinueOnError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.ContinueOnError" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContinueOnError As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContinueOnError : bool with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.ContinueOnError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the phase should continue even if this step fails.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The display name for this step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the step is enabled.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Environment">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Environment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Environment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Environment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Environment As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Environment : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Environment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The run-time environment for this step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inputs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Inputs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Inputs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Inputs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Inputs As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Inputs : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.Inputs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The inputs used by this step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefName">
+      <MemberSignature Language="C#" Value="public string RefName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RefName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.RefName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefName As String" />
+      <MemberSignature Language="F#" Value="member this.RefName : string with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.RefName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The reference name for this step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskDefinition">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.TaskDefinitionReference TaskDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Build.WebApi.TaskDefinitionReference TaskDefinition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.TaskDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property TaskDefinition As TaskDefinitionReference" />
+      <MemberSignature Language="F#" Value="member this.TaskDefinition : Microsoft.TeamFoundation.Build.WebApi.TaskDefinitionReference with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.TaskDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="Task", Order=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.TaskDefinitionReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The task associated with this step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeoutInMinutes">
+      <MemberSignature Language="C#" Value="public int TimeoutInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TimeoutInMinutes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.TimeoutInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeoutInMinutes As Integer" />
+      <MemberSignature Language="F#" Value="member this.TimeoutInMinutes : int with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep.TimeoutInMinutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The time, in minutes, that this step is allowed to run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

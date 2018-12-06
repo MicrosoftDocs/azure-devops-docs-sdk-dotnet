@@ -1,0 +1,188 @@
+﻿<Type Name="PolicyEvaluationStatus" FullName="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus">
+  <TypeSignature Language="C#" Value="public enum PolicyEvaluationStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PolicyEvaluationStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PolicyEvaluationStatus" />
+  <TypeSignature Language="F#" Value="type PolicyEvaluationStatus = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Status of a policy which is running against a specific pull request.
+            </summary>
+    <remarks>
+            Not all policies make use of every status. For example, policies which are based on reviewers voting
+            do not have a Runnig state. They are generally Queued when no vote has been cast, and then transition
+            to Approved or Rejected depending on the vote.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Approved">
+      <MemberSignature Language="C#" Value="Approved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus Approved = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Approved" />
+      <MemberSignature Language="VB.NET" Value="Approved" />
+      <MemberSignature Language="F#" Value="Approved = 2" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Approved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The policy has been fulfilled for this pull request.
+            </summary>
+        <remarks>
+            Generally a pull request where all policies are Approved or NotApplicable can be completed and the target
+            branch updated.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Broken">
+      <MemberSignature Language="C#" Value="Broken" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus Broken = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Broken" />
+      <MemberSignature Language="VB.NET" Value="Broken" />
+      <MemberSignature Language="F#" Value="Broken = 5" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Broken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            The policy has encountered an unexpected error.
+            </summary>
+        <remarks>
+            This status should not normally occur. It signals that the policy itself has encountered an error or exception.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotApplicable">
+      <MemberSignature Language="C#" Value="NotApplicable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus NotApplicable = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.NotApplicable" />
+      <MemberSignature Language="VB.NET" Value="NotApplicable" />
+      <MemberSignature Language="F#" Value="NotApplicable = 4" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.NotApplicable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The policy does not apply to this pull request.
+            </summary>
+        <remarks>
+            Generally a pull request where all policies are Approved or NotApplicable can be completed and the target
+            branch updated.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Queued">
+      <MemberSignature Language="C#" Value="Queued" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus Queued = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Queued" />
+      <MemberSignature Language="VB.NET" Value="Queued" />
+      <MemberSignature Language="F#" Value="Queued = 0" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Queued" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            The policy is either queued to run, or is waiting for some event before progressing.
+            </summary>
+        <remarks>
+            In the case of a build policy, this might represent a build which is in the queue waiting for a build agent.
+            Other examples include a reviewer policy where the reviewer has not yet voted. Once the reviewer votes, the
+            status would transition to either Approved or Rejected as approriate.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rejected">
+      <MemberSignature Language="C#" Value="Rejected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus Rejected = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Rejected" />
+      <MemberSignature Language="VB.NET" Value="Rejected" />
+      <MemberSignature Language="F#" Value="Rejected = 3" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Rejected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            The policy has rejected this pull request.
+            </summary>
+        <remarks>
+            It should be noted that no policy status is final while a pull request is active. For example, a required reviewer
+            policy might be in Rejected status because the reviewer has voted "Waiting on author". If the reviewer later changes
+            his vote to an approval, the policy status will transition to Approved.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Running">
+      <MemberSignature Language="C#" Value="Running" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus Running = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Running" />
+      <MemberSignature Language="VB.NET" Value="Running" />
+      <MemberSignature Language="F#" Value="Running = 1" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus.Running" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The policy is currently running.
+            </summary>
+        <remarks>
+            Few policies make use of this state; generally a build or release would be involved.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

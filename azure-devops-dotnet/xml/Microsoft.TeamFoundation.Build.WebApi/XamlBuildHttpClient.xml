@@ -1,0 +1,1946 @@
+﻿<Type Name="XamlBuildHttpClient" FullName="Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient">
+  <TypeSignature Language="C#" Value="public sealed class XamlBuildHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XamlBuildHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XamlBuildHttpClient&#xA;Inherits VssHttpClientBase" />
+  <TypeSignature Language="F#" Value="type XamlBuildHttpClient = class&#xA;    inherit VssHttpClientBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("5D6898BB-45EC-463F-95F9-54D49C71752E")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlBuildHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials -&gt; Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient" Usage="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient (baseUrl, credentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlBuildHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings -&gt; Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient" Usage="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient (baseUrl, credentials, settings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlBuildHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient" Usage="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient (baseUrl, credentials, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlBuildHttpClient (Uri baseUrl, System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, pipeline As HttpMessageHandler, disposeHandler As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient : Uri * System.Net.Http.HttpMessageHandler * bool -&gt; Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient" Usage="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient (baseUrl, pipeline, disposeHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="pipeline" Type="System.Net.Http.HttpMessageHandler" />
+        <Parameter Name="disposeHandler" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="pipeline">To be added.</param>
+        <param name="disposeHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlBuildHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient" Usage="new Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient (baseUrl, credentials, settings, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteBuildAsync (int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteBuildAsync(int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.DeleteBuildAsync(System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.DeleteBuildAsync : int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xamlBuildHttpClient.DeleteBuildAsync (buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Deletes a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteBuildAsync (Guid project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteBuildAsync(valuetype System.Guid project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.DeleteBuildAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.DeleteBuildAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xamlBuildHttpClient.DeleteBuildAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Deletes a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteBuildAsync (string project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteBuildAsync(string project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.DeleteBuildAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.DeleteBuildAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xamlBuildHttpClient.DeleteBuildAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Deletes a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt; GetArtifactAsync (int buildId, string artifactName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt; GetArtifactAsync(int32 buildId, string artifactName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactAsync(System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactAsync : int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;" Usage="xamlBuildHttpClient.GetArtifactAsync (buildId, artifactName, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="artifactName" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="buildId"></param>
+        <param name="artifactName"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a specific artifact for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt; GetArtifactAsync (Guid project, int buildId, string artifactName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt; GetArtifactAsync(valuetype System.Guid project, int32 buildId, string artifactName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactAsync(System.Guid,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactAsync : Guid * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;" Usage="xamlBuildHttpClient.GetArtifactAsync (project, buildId, artifactName, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="artifactName" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="artifactName"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a specific artifact for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt; GetArtifactAsync (string project, int buildId, string artifactName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt; GetArtifactAsync(string project, int32 buildId, string artifactName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactAsync(System.String,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactAsync : string * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;" Usage="xamlBuildHttpClient.GetArtifactAsync (project, buildId, artifactName, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="artifactName" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="artifactName"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a specific artifact for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactContentZipAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetArtifactContentZipAsync (int buildId, string artifactName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetArtifactContentZipAsync(int32 buildId, string artifactName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactContentZipAsync(System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactContentZipAsync : int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetArtifactContentZipAsync (buildId, artifactName, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="artifactName" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="buildId"></param>
+        <param name="artifactName"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a specific artifact for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactContentZipAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetArtifactContentZipAsync (Guid project, int buildId, string artifactName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetArtifactContentZipAsync(valuetype System.Guid project, int32 buildId, string artifactName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactContentZipAsync(System.Guid,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactContentZipAsync : Guid * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetArtifactContentZipAsync (project, buildId, artifactName, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="artifactName" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="artifactName"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a specific artifact for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactContentZipAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetArtifactContentZipAsync (string project, int buildId, string artifactName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetArtifactContentZipAsync(string project, int32 buildId, string artifactName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactContentZipAsync(System.String,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactContentZipAsync : string * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetArtifactContentZipAsync (project, buildId, artifactName, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="artifactName" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="artifactName"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a specific artifact for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt; GetArtifactsAsync (int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt; GetArtifactsAsync(int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactsAsync(System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactsAsync : int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt;" Usage="xamlBuildHttpClient.GetArtifactsAsync (buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets all artifacts for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt; GetArtifactsAsync (Guid project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt; GetArtifactsAsync(valuetype System.Guid project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactsAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactsAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt;" Usage="xamlBuildHttpClient.GetArtifactsAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets all artifacts for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt; GetArtifactsAsync (string project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt; GetArtifactsAsync(string project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetArtifactsAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetArtifactsAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt;" Usage="xamlBuildHttpClient.GetArtifactsAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildArtifact&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets all artifacts for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; GetBuildAsync (int buildId, string propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; GetBuildAsync(int32 buildId, string propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildAsync(System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildAsync : int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.GetBuildAsync (buildId, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="propertyFilters" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="buildId"></param>
+        <param name="propertyFilters">A comma-delimited list of properties to include in the results</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; GetBuildAsync (Guid project, int buildId, string propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; GetBuildAsync(valuetype System.Guid project, int32 buildId, string propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildAsync(System.Guid,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildAsync : Guid * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.GetBuildAsync (project, buildId, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="propertyFilters" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="propertyFilters">A comma-delimited list of properties to include in the results</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; GetBuildAsync (string project, int buildId, string propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; GetBuildAsync(string project, int32 buildId, string propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildAsync(System.String,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildAsync : string * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.GetBuildAsync (project, buildId, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="propertyFilters" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="propertyFilters">A comma-delimited list of properties to include in the results</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildChangesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt;&gt; GetBuildChangesAsync (Guid project, int buildId, string continuationToken = null, Nullable&lt;int&gt; top = null, Nullable&lt;bool&gt; includeSourceChange = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Change&gt;&gt; GetBuildChangesAsync(valuetype System.Guid project, int32 buildId, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;bool&gt; includeSourceChange, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildChangesAsync(System.Guid,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildChangesAsync : Guid * int * string * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildChangesAsync (project, buildId, continuationToken, top, includeSourceChange, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="includeSourceChange" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="continuationToken"></param>
+        <param name="top">The maximum number of changes to return</param>
+        <param name="includeSourceChange"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets the changes associated with a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildChangesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt;&gt; GetBuildChangesAsync (string project, int buildId, string continuationToken = null, Nullable&lt;int&gt; top = null, Nullable&lt;bool&gt; includeSourceChange = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Change&gt;&gt; GetBuildChangesAsync(string project, int32 buildId, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;bool&gt; includeSourceChange, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildChangesAsync(System.String,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildChangesAsync : string * int * string * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildChangesAsync (project, buildId, continuationToken, top, includeSourceChange, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="includeSourceChange" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="continuationToken"></param>
+        <param name="top">The maximum number of changes to return</param>
+        <param name="includeSourceChange"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets the changes associated with a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildControllerAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildController&gt; GetBuildControllerAsync (int controllerId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildController&gt; GetBuildControllerAsync(int32 controllerId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildControllerAsync(System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildControllerAsync : int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildController&gt;" Usage="xamlBuildHttpClient.GetBuildControllerAsync (controllerId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildController&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controllerId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="controllerId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a controller
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildControllersAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildController&gt;&gt; GetBuildControllersAsync (string name = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildController&gt;&gt; GetBuildControllersAsync(string name, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildControllersAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildControllersAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildController&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildControllersAsync (name, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildController&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets controller, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildDeploymentsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Deployment&gt;&gt; GetBuildDeploymentsAsync (Guid project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Deployment&gt;&gt; GetBuildDeploymentsAsync(valuetype System.Guid project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildDeploymentsAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildDeploymentsAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Deployment&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildDeploymentsAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Deployment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets the deployment information associated with a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildDeploymentsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Deployment&gt;&gt; GetBuildDeploymentsAsync (string project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Deployment&gt;&gt; GetBuildDeploymentsAsync(string project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildDeploymentsAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildDeploymentsAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Deployment&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildDeploymentsAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Deployment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets the deployment information associated with a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildLogAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetBuildLogAsync (Guid project, int buildId, int logId, Nullable&lt;long&gt; startLine = null, Nullable&lt;long&gt; endLine = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetBuildLogAsync(valuetype System.Guid project, int32 buildId, int32 logId, valuetype System.Nullable`1&lt;int64&gt; startLine, valuetype System.Nullable`1&lt;int64&gt; endLine, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildLogAsync(System.Guid,System.Int32,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildLogAsync : Guid * int * int * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetBuildLogAsync (project, buildId, logId, startLine, endLine, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="logId" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="endLine" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="logId"></param>
+        <param name="startLine"></param>
+        <param name="endLine"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a log
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildLogAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetBuildLogAsync (string project, int buildId, int logId, Nullable&lt;long&gt; startLine = null, Nullable&lt;long&gt; endLine = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetBuildLogAsync(string project, int32 buildId, int32 logId, valuetype System.Nullable`1&lt;int64&gt; startLine, valuetype System.Nullable`1&lt;int64&gt; endLine, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildLogAsync(System.String,System.Int32,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildLogAsync : string * int * int * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetBuildLogAsync (project, buildId, logId, startLine, endLine, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="logId" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="endLine" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="logId"></param>
+        <param name="startLine"></param>
+        <param name="endLine"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a log
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildLogsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildLog&gt;&gt; GetBuildLogsAsync (Guid project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildLog&gt;&gt; GetBuildLogsAsync(valuetype System.Guid project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildLogsAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildLogsAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildLog&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildLogsAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildLog&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets logs for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildLogsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildLog&gt;&gt; GetBuildLogsAsync (string project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildLog&gt;&gt; GetBuildLogsAsync(string project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildLogsAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildLogsAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildLog&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildLogsAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildLog&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets logs for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildLogsZipAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetBuildLogsZipAsync (Guid project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetBuildLogsZipAsync(valuetype System.Guid project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildLogsZipAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildLogsZipAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetBuildLogsZipAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets logs for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildLogsZipAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetBuildLogsZipAsync (string project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetBuildLogsZipAsync(string project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildLogsZipAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildLogsZipAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetBuildLogsZipAsync (project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets logs for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildReportAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReportMetadata&gt; GetBuildReportAsync (Guid project, int buildId, string type = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildReportMetadata&gt; GetBuildReportAsync(valuetype System.Guid project, int32 buildId, string type, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildReportAsync(System.Guid,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildReportAsync : Guid * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReportMetadata&gt;" Usage="xamlBuildHttpClient.GetBuildReportAsync (project, buildId, type, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReportMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="type"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets report for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildReportAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReportMetadata&gt; GetBuildReportAsync (string project, int buildId, string type = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildReportMetadata&gt; GetBuildReportAsync(string project, int32 buildId, string type, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildReportAsync(System.String,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildReportAsync : string * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReportMetadata&gt;" Usage="xamlBuildHttpClient.GetBuildReportAsync (project, buildId, type, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReportMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="type"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets report for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildReportHtmlContentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetBuildReportHtmlContentAsync (Guid project, int buildId, string type = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetBuildReportHtmlContentAsync(valuetype System.Guid project, int32 buildId, string type, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildReportHtmlContentAsync(System.Guid,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildReportHtmlContentAsync : Guid * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetBuildReportHtmlContentAsync (project, buildId, type, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="type"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets report for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildReportHtmlContentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetBuildReportHtmlContentAsync (string project, int buildId, string type = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetBuildReportHtmlContentAsync(string project, int32 buildId, string type, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildReportHtmlContentAsync(System.String,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildReportHtmlContentAsync : string * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="xamlBuildHttpClient.GetBuildReportHtmlContentAsync (project, buildId, type, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="type"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets report for a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync (System.Collections.Generic.IEnumerable&lt;int&gt; definitions = null, System.Collections.Generic.IEnumerable&lt;int&gt; queues = null, string buildNumber = null, Nullable&lt;DateTime&gt; minFinishTime = null, Nullable&lt;DateTime&gt; maxFinishTime = null, string requestedFor = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter = null, System.Collections.Generic.IEnumerable&lt;string&gt; tagFilters = null, System.Collections.Generic.IEnumerable&lt;string&gt; properties = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;int&gt; maxBuildsPerDefinition = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync(class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitions, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; queues, string buildNumber, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minFinishTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; maxFinishTime, string requestedFor, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tagFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; properties, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; maxBuildsPerDefinition, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildsAsync(System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildReason},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildStatus},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildResult},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildsAsync : seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildsAsync (definitions, queues, buildNumber, minFinishTime, maxFinishTime, requestedFor, reasonFilter, statusFilter, resultFilter, tagFilters, properties, top, continuationToken, maxBuildsPerDefinition, deletedFilter, queryOrder, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="definitions" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="queues" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="buildNumber" Type="System.String" />
+        <Parameter Name="minFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="maxFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="requestedFor" Type="System.String" />
+        <Parameter Name="reasonFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt;" />
+        <Parameter Name="statusFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt;" />
+        <Parameter Name="resultFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt;" />
+        <Parameter Name="tagFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="maxBuildsPerDefinition" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="deletedFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt;" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="definitions">A comma-delimited list of definition ids</param>
+        <param name="queues">A comma-delimited list of queue ids</param>
+        <param name="buildNumber"></param>
+        <param name="minFinishTime"></param>
+        <param name="maxFinishTime"></param>
+        <param name="requestedFor"></param>
+        <param name="reasonFilter"></param>
+        <param name="statusFilter"></param>
+        <param name="resultFilter"></param>
+        <param name="tagFilters">A comma-delimited list of tags</param>
+        <param name="properties">A comma-delimited list of properties to include in the results</param>
+        <param name="top">The maximum number of builds to retrieve</param>
+        <param name="continuationToken"></param>
+        <param name="maxBuildsPerDefinition"></param>
+        <param name="deletedFilter"></param>
+        <param name="queryOrder"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets builds
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync (Guid project, System.Collections.Generic.IEnumerable&lt;int&gt; definitions = null, System.Collections.Generic.IEnumerable&lt;int&gt; queues = null, string buildNumber = null, Nullable&lt;DateTime&gt; minFinishTime = null, Nullable&lt;DateTime&gt; maxFinishTime = null, string requestedFor = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter = null, System.Collections.Generic.IEnumerable&lt;string&gt; tagFilters = null, System.Collections.Generic.IEnumerable&lt;string&gt; properties = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;int&gt; maxBuildsPerDefinition = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync(valuetype System.Guid project, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitions, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; queues, string buildNumber, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minFinishTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; maxFinishTime, string requestedFor, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tagFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; properties, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; maxBuildsPerDefinition, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildsAsync(System.Guid,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildReason},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildStatus},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildResult},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildsAsync : Guid * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildsAsync (project, definitions, queues, buildNumber, minFinishTime, maxFinishTime, requestedFor, reasonFilter, statusFilter, resultFilter, tagFilters, properties, top, continuationToken, maxBuildsPerDefinition, deletedFilter, queryOrder, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="definitions" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="queues" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="buildNumber" Type="System.String" />
+        <Parameter Name="minFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="maxFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="requestedFor" Type="System.String" />
+        <Parameter Name="reasonFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt;" />
+        <Parameter Name="statusFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt;" />
+        <Parameter Name="resultFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt;" />
+        <Parameter Name="tagFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="maxBuildsPerDefinition" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="deletedFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt;" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="definitions">A comma-delimited list of definition ids</param>
+        <param name="queues">A comma-delimited list of queue ids</param>
+        <param name="buildNumber"></param>
+        <param name="minFinishTime"></param>
+        <param name="maxFinishTime"></param>
+        <param name="requestedFor"></param>
+        <param name="reasonFilter"></param>
+        <param name="statusFilter"></param>
+        <param name="resultFilter"></param>
+        <param name="tagFilters">A comma-delimited list of tags</param>
+        <param name="properties">A comma-delimited list of properties to include in the results</param>
+        <param name="top">The maximum number of builds to retrieve</param>
+        <param name="continuationToken"></param>
+        <param name="maxBuildsPerDefinition"></param>
+        <param name="deletedFilter"></param>
+        <param name="queryOrder"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets builds
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync (string project, System.Collections.Generic.IEnumerable&lt;int&gt; definitions = null, System.Collections.Generic.IEnumerable&lt;int&gt; queues = null, string buildNumber = null, Nullable&lt;DateTime&gt; minFinishTime = null, Nullable&lt;DateTime&gt; maxFinishTime = null, string requestedFor = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter = null, System.Collections.Generic.IEnumerable&lt;string&gt; tagFilters = null, System.Collections.Generic.IEnumerable&lt;string&gt; properties = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;int&gt; maxBuildsPerDefinition = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync(string project, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitions, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; queues, string buildNumber, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minFinishTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; maxFinishTime, string requestedFor, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tagFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; properties, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; maxBuildsPerDefinition, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildsAsync(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildReason},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildStatus},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildResult},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildsAsync : string * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildsAsync (project, definitions, queues, buildNumber, minFinishTime, maxFinishTime, requestedFor, reasonFilter, statusFilter, resultFilter, tagFilters, properties, top, continuationToken, maxBuildsPerDefinition, deletedFilter, queryOrder, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="definitions" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="queues" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="buildNumber" Type="System.String" />
+        <Parameter Name="minFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="maxFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="requestedFor" Type="System.String" />
+        <Parameter Name="reasonFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt;" />
+        <Parameter Name="statusFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt;" />
+        <Parameter Name="resultFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt;" />
+        <Parameter Name="tagFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="maxBuildsPerDefinition" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="deletedFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt;" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="definitions">A comma-delimited list of definition ids</param>
+        <param name="queues">A comma-delimited list of queue ids</param>
+        <param name="buildNumber"></param>
+        <param name="minFinishTime"></param>
+        <param name="maxFinishTime"></param>
+        <param name="requestedFor"></param>
+        <param name="reasonFilter"></param>
+        <param name="statusFilter"></param>
+        <param name="resultFilter"></param>
+        <param name="tagFilters">A comma-delimited list of tags</param>
+        <param name="properties">A comma-delimited list of properties to include in the results</param>
+        <param name="top">The maximum number of builds to retrieve</param>
+        <param name="continuationToken"></param>
+        <param name="maxBuildsPerDefinition"></param>
+        <param name="deletedFilter"></param>
+        <param name="queryOrder"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets builds
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildWorkItemsRefsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt; GetBuildWorkItemsRefsAsync (Guid project, int buildId, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt; GetBuildWorkItemsRefsAsync(valuetype System.Guid project, int32 buildId, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildWorkItemsRefsAsync(System.Guid,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildWorkItemsRefsAsync : Guid * int * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildWorkItemsRefsAsync (project, buildId, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="top">The maximum number of workitems to return</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets the work item ids associated with a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildWorkItemsRefsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt; GetBuildWorkItemsRefsAsync (string project, int buildId, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt; GetBuildWorkItemsRefsAsync(string project, int32 buildId, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildWorkItemsRefsAsync(System.String,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildWorkItemsRefsAsync : string * int * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildWorkItemsRefsAsync (project, buildId, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="top">The maximum number of workitems to return</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets the work item ids associated with a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildWorkItemsRefsFromCommitsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt; GetBuildWorkItemsRefsFromCommitsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; commitIds, Guid project, int buildId, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt; GetBuildWorkItemsRefsFromCommitsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; commitIds, valuetype System.Guid project, int32 buildId, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildWorkItemsRefsFromCommitsAsync(System.Collections.Generic.IEnumerable{System.String},System.Guid,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildWorkItemsRefsFromCommitsAsync : seq&lt;string&gt; * Guid * int * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildWorkItemsRefsFromCommitsAsync (commitIds, project, buildId, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commitIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="commitIds"></param>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="top">The maximum number of workitems to return, also number of commits to consider if commitids are not sent</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets the work item ids associated with build commits
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildWorkItemsRefsFromCommitsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt; GetBuildWorkItemsRefsFromCommitsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; commitIds, string project, int buildId, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt; GetBuildWorkItemsRefsFromCommitsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; commitIds, string project, int32 buildId, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetBuildWorkItemsRefsFromCommitsAsync(System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetBuildWorkItemsRefsFromCommitsAsync : seq&lt;string&gt; * string * int * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt;" Usage="xamlBuildHttpClient.GetBuildWorkItemsRefsFromCommitsAsync (commitIds, project, buildId, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.ResourceRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commitIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="commitIds"></param>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="top">The maximum number of workitems to return, also number of commits to consider if commitids are not sent</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets the work item ids associated with build commits
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt; GetDefinitionAsync (int definitionId, Nullable&lt;int&gt; revision = null, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt; GetDefinitionAsync(int32 definitionId, valuetype System.Nullable`1&lt;int32&gt; revision, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetDefinitionAsync(System.Int32,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetDefinitionAsync : int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;" Usage="xamlBuildHttpClient.GetDefinitionAsync (definitionId, revision, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="definitionId" Type="System.Int32" />
+        <Parameter Name="revision" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="propertyFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="definitionId"></param>
+        <param name="revision"></param>
+        <param name="propertyFilters"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a definition, optionally at a specific revision
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt; GetDefinitionAsync (Guid project, int definitionId, Nullable&lt;int&gt; revision = null, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt; GetDefinitionAsync(valuetype System.Guid project, int32 definitionId, valuetype System.Nullable`1&lt;int32&gt; revision, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetDefinitionAsync(System.Guid,System.Int32,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetDefinitionAsync : Guid * int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;" Usage="xamlBuildHttpClient.GetDefinitionAsync (project, definitionId, revision, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="definitionId" Type="System.Int32" />
+        <Parameter Name="revision" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="propertyFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="definitionId"></param>
+        <param name="revision"></param>
+        <param name="propertyFilters"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a definition, optionally at a specific revision
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt; GetDefinitionAsync (string project, int definitionId, Nullable&lt;int&gt; revision = null, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt; GetDefinitionAsync(string project, int32 definitionId, valuetype System.Nullable`1&lt;int32&gt; revision, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetDefinitionAsync(System.String,System.Int32,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetDefinitionAsync : string * int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;" Usage="xamlBuildHttpClient.GetDefinitionAsync (project, definitionId, revision, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="definitionId" Type="System.Int32" />
+        <Parameter Name="revision" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="propertyFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="definitionId"></param>
+        <param name="revision"></param>
+        <param name="propertyFilters"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets a definition, optionally at a specific revision
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt; GetDefinitionsAsync (string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt; GetDefinitionsAsync(string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetDefinitionsAsync(System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt;" Usage="xamlBuildHttpClient.GetDefinitionsAsync (name, repositoryId, repositoryType, queryOrder, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt; GetDefinitionsAsync (Guid project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt; GetDefinitionsAsync(valuetype System.Guid project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetDefinitionsAsync(System.Guid,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt;" Usage="xamlBuildHttpClient.GetDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt; GetDefinitionsAsync (string project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt; GetDefinitionsAsync(string project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.GetDefinitionsAsync(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt;" Usage="xamlBuildHttpClient.GetDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, Nullable&lt;bool&gt; ignoreWarnings = null, string checkInTicket = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, valuetype System.Nullable`1&lt;bool&gt; ignoreWarnings, string checkInTicket, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.QueueBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Nullable{System.Boolean},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.QueueBuildAsync (build, ignoreWarnings, checkInTicket, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="ignoreWarnings" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="checkInTicket" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="ignoreWarnings"></param>
+        <param name="checkInTicket"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Queues a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, Guid project, Nullable&lt;bool&gt; ignoreWarnings = null, string checkInTicket = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, valuetype System.Guid project, valuetype System.Nullable`1&lt;bool&gt; ignoreWarnings, string checkInTicket, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.QueueBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Guid,System.Nullable{System.Boolean},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Guid * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.QueueBuildAsync (build, project, ignoreWarnings, checkInTicket, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="ignoreWarnings" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="checkInTicket" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="project">Project ID</param>
+        <param name="ignoreWarnings"></param>
+        <param name="checkInTicket"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Queues a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, string project, Nullable&lt;bool&gt; ignoreWarnings = null, string checkInTicket = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, string project, valuetype System.Nullable`1&lt;bool&gt; ignoreWarnings, string checkInTicket, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.QueueBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.String,System.Nullable{System.Boolean},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * string * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.QueueBuildAsync (build, project, ignoreWarnings, checkInTicket, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="ignoreWarnings" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="checkInTicket" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="project">Project ID or project name</param>
+        <param name="ignoreWarnings"></param>
+        <param name="checkInTicket"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Queues a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.UpdateBuildAsync (build, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Updates a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, Guid project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, valuetype System.Guid project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.UpdateBuildAsync (build, project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="project">Project ID</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Updates a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, string project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, string project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.XamlBuildHttpClient.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="xamlBuildHttpClient.UpdateBuildAsync (build, project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            Updates a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

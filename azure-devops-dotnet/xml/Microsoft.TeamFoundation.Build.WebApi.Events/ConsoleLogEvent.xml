@@ -1,0 +1,187 @@
+﻿<Type Name="ConsoleLogEvent" FullName="Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent">
+  <TypeSignature Language="C#" Value="public sealed class ConsoleLogEvent : Microsoft.TeamFoundation.Build.WebApi.Events.RealtimeBuildEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConsoleLogEvent extends Microsoft.TeamFoundation.Build.WebApi.Events.RealtimeBuildEvent" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConsoleLogEvent&#xA;Inherits RealtimeBuildEvent" />
+  <TypeSignature Language="F#" Value="type ConsoleLogEvent = class&#xA;    inherit RealtimeBuildEvent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Build.WebApi.Events.RealtimeBuildEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConsoleLogEvent (int buildId, Guid timelineId, Guid recordId, System.Collections.Generic.IEnumerable&lt;string&gt; lines);" FrameworkAlternate="azure-devops-dotnet-latest" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 buildId, valuetype System.Guid timelineId, valuetype System.Guid recordId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; lines) cil managed" FrameworkAlternate="azure-devops-dotnet-latest" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.#ctor(System.Int32,System.Guid,System.Guid,System.Collections.Generic.IEnumerable{System.String})" FrameworkAlternate="azure-devops-dotnet-latest" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (buildId As Integer, timelineId As Guid, recordId As Guid, lines As IEnumerable(Of String))" FrameworkAlternate="azure-devops-dotnet-latest" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent : int * Guid * Guid * seq&lt;string&gt; -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent (buildId, timelineId, recordId, lines)" FrameworkAlternate="azure-devops-dotnet-latest" />
+      <MemberSignature Language="C#" Value="public ConsoleLogEvent (int buildId, Guid timelineId, Guid jobTimelineRecordId, System.Collections.Generic.IEnumerable&lt;string&gt; lines);" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 buildId, valuetype System.Guid timelineId, valuetype System.Guid jobTimelineRecordId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; lines) cil managed" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.#ctor(System.Int32,System.Guid,System.Guid,System.Collections.Generic.IEnumerable{System.String})" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (buildId As Integer, timelineId As Guid, jobTimelineRecordId As Guid, lines As IEnumerable(Of String))" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent : int * Guid * Guid * seq&lt;string&gt; -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent (buildId, timelineId, jobTimelineRecordId, lines)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buildId" Type="System.Int32" Index="0" />
+        <Parameter Name="timelineId" Type="System.Guid" Index="1" />
+        <Parameter Name="recordId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet-latest" />
+        <Parameter Name="jobTimelineRecordId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="lines" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="3" />
+      </Parameters>
+      <Docs>
+        <param name="buildId">To be added.</param>
+        <param name="timelineId">To be added.</param>
+        <param name="recordId">To be added.</param>
+        <param name="jobTimelineRecordId">To be added.</param>
+        <param name="lines">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConsoleLogEvent (int buildId, Guid timelineId, Guid jobTimelineRecordId, Guid stepTimelineRecordId, System.Collections.Generic.IEnumerable&lt;string&gt; lines);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 buildId, valuetype System.Guid timelineId, valuetype System.Guid jobTimelineRecordId, valuetype System.Guid stepTimelineRecordId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; lines) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.#ctor(System.Int32,System.Guid,System.Guid,System.Guid,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (buildId As Integer, timelineId As Guid, jobTimelineRecordId As Guid, stepTimelineRecordId As Guid, lines As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent : int * Guid * Guid * Guid * seq&lt;string&gt; -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent (buildId, timelineId, jobTimelineRecordId, stepTimelineRecordId, lines)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="timelineId" Type="System.Guid" />
+        <Parameter Name="jobTimelineRecordId" Type="System.Guid" />
+        <Parameter Name="stepTimelineRecordId" Type="System.Guid" />
+        <Parameter Name="lines" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="buildId">To be added.</param>
+        <param name="timelineId">To be added.</param>
+        <param name="jobTimelineRecordId">To be added.</param>
+        <param name="stepTimelineRecordId">To be added.</param>
+        <param name="lines">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lines">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; Lines { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Lines" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.Lines" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Lines As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Lines : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.Lines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepRecordId">
+      <MemberSignature Language="C#" Value="public Guid StepRecordId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid StepRecordId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.StepRecordId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepRecordId As Guid" />
+      <MemberSignature Language="F#" Value="member this.StepRecordId : Guid" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.StepRecordId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimelineId">
+      <MemberSignature Language="C#" Value="public Guid TimelineId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid TimelineId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.TimelineId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimelineId As Guid" />
+      <MemberSignature Language="F#" Value="member this.TimelineId : Guid" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.TimelineId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimelineRecordId">
+      <MemberSignature Language="C#" Value="public Guid TimelineRecordId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid TimelineRecordId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.TimelineRecordId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimelineRecordId As Guid" />
+      <MemberSignature Language="F#" Value="member this.TimelineRecordId : Guid" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.TimelineRecordId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

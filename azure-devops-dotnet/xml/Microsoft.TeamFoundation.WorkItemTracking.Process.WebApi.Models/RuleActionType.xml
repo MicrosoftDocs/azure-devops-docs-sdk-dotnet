@@ -1,0 +1,309 @@
+﻿<Type Name="RuleActionType" FullName="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType">
+  <TypeSignature Language="C#" Value="public enum RuleActionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RuleActionType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RuleActionType" />
+  <TypeSignature Language="F#" Value="type RuleActionType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Type of action to take when the rule is triggered.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyFromClock">
+      <MemberSignature Language="C#" Value="CopyFromClock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType CopyFromClock = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromClock" />
+      <MemberSignature Language="VB.NET" Value="CopyFromClock" />
+      <MemberSignature Language="F#" Value="CopyFromClock = 8" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromClock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+            Set the value from clock. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFromCurrentUser">
+      <MemberSignature Language="C#" Value="CopyFromCurrentUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType CopyFromCurrentUser = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromCurrentUser" />
+      <MemberSignature Language="VB.NET" Value="CopyFromCurrentUser" />
+      <MemberSignature Language="F#" Value="CopyFromCurrentUser = 9" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromCurrentUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>
+            Set the current user to the target field.
+            Example : {"actionType":"$copyFromCurrentUser","targetField":"System.AssignedTo","value":""}.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFromField">
+      <MemberSignature Language="C#" Value="CopyFromField" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType CopyFromField = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromField" />
+      <MemberSignature Language="VB.NET" Value="CopyFromField" />
+      <MemberSignature Language="F#" Value="CopyFromField = 10" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromField" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>
+            Copy the value from a specified field and set to target field. 
+            Example : {actionType: "$copyFromField", targetField: "System.AssignedTo", value:"System.ChangedBy"}.
+            Here, value is copied from "System.ChangedBy" and set to "System.AssingedTo" field.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFromServerClock">
+      <MemberSignature Language="C#" Value="CopyFromServerClock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType CopyFromServerClock = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromServerClock" />
+      <MemberSignature Language="VB.NET" Value="CopyFromServerClock" />
+      <MemberSignature Language="F#" Value="CopyFromServerClock = 12" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromServerClock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>
+            Use the current time to set the value of the target field.
+            Example : {actionType: "$copyFromServerClock", targetField: "System.CreatedDate", value: ""}
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFromServerCurrentUser">
+      <MemberSignature Language="C#" Value="CopyFromServerCurrentUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType CopyFromServerCurrentUser = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromServerCurrentUser" />
+      <MemberSignature Language="VB.NET" Value="CopyFromServerCurrentUser" />
+      <MemberSignature Language="F#" Value="CopyFromServerCurrentUser = 13" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyFromServerCurrentUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>
+            Use the current user to set the value of the target field.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyValue">
+      <MemberSignature Language="C#" Value="CopyValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType CopyValue = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyValue" />
+      <MemberSignature Language="VB.NET" Value="CopyValue" />
+      <MemberSignature Language="F#" Value="CopyValue = 7" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.CopyValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+            Set the value of target field to given value.
+            Example : {actionType: "$copyValue", targetField: "ScrumInherited.mypicklist", value: "samplevalue"}
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeReadOnly">
+      <MemberSignature Language="C#" Value="MakeReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType MakeReadOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.MakeReadOnly" />
+      <MemberSignature Language="VB.NET" Value="MakeReadOnly" />
+      <MemberSignature Language="F#" Value="MakeReadOnly = 2" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.MakeReadOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Make the target field read-only. 
+            Example : 
+            {"actionType":"$makeReadOnly","targetField":"Microsoft.VSTS.Common.Activity","value":""}
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeRequired">
+      <MemberSignature Language="C#" Value="MakeRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType MakeRequired = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.MakeRequired" />
+      <MemberSignature Language="VB.NET" Value="MakeRequired" />
+      <MemberSignature Language="F#" Value="MakeRequired = 1" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.MakeRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Make the target field required.
+            Example : 
+            {"actionType":"$makeRequired","targetField":"Microsoft.VSTS.Common.Activity","value":""}
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultFromClock">
+      <MemberSignature Language="C#" Value="SetDefaultFromClock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType SetDefaultFromClock = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetDefaultFromClock" />
+      <MemberSignature Language="VB.NET" Value="SetDefaultFromClock" />
+      <MemberSignature Language="F#" Value="SetDefaultFromClock = 4" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetDefaultFromClock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            Set the default value on the target field from server clock. This is used if user creates the field like Date/Time and uses default value. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultFromCurrentUser">
+      <MemberSignature Language="C#" Value="SetDefaultFromCurrentUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType SetDefaultFromCurrentUser = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetDefaultFromCurrentUser" />
+      <MemberSignature Language="VB.NET" Value="SetDefaultFromCurrentUser" />
+      <MemberSignature Language="F#" Value="SetDefaultFromCurrentUser = 5" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetDefaultFromCurrentUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            Set the default current user value on the target field. This is used if the user creates the field of type identity and uses default value. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultFromField">
+      <MemberSignature Language="C#" Value="SetDefaultFromField" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType SetDefaultFromField = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetDefaultFromField" />
+      <MemberSignature Language="VB.NET" Value="SetDefaultFromField" />
+      <MemberSignature Language="F#" Value="SetDefaultFromField = 6" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetDefaultFromField" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            Set the default value on from existing field to the target field.  This used wants to set a existing field value to the current field. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultValue">
+      <MemberSignature Language="C#" Value="SetDefaultValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType SetDefaultValue = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetDefaultValue" />
+      <MemberSignature Language="VB.NET" Value="SetDefaultValue" />
+      <MemberSignature Language="F#" Value="SetDefaultValue = 3" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetDefaultValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Set a default value on the target field. This is used if the user creates a integer/string field and sets a default value of this field. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValueToEmpty">
+      <MemberSignature Language="C#" Value="SetValueToEmpty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType SetValueToEmpty = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetValueToEmpty" />
+      <MemberSignature Language="VB.NET" Value="SetValueToEmpty" />
+      <MemberSignature Language="F#" Value="SetValueToEmpty = 11" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType.SetValueToEmpty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleActionType</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>
+            Set the value of the target field to empty. 
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

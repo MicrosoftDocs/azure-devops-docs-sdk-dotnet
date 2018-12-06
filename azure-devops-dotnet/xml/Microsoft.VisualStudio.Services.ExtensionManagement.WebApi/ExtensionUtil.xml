@@ -6,6 +6,7 @@
   <TypeSignature Language="F#" Value="type ExtensionUtil = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
     <AssemblyVersion>17.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,6 +27,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,6 +53,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,6 +78,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,6 +94,50 @@
         <param name="contributionId"></param>
         <param name="supportsExternalReference"></param>
         <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadManifest">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest LoadManifest (string publisherName, string extensionName, string version, System.IO.Stream manifestStream, System.Collections.Generic.IDictionary&lt;string,object&gt; extraProperties = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest LoadManifest(string publisherName, string extensionName, string version, class System.IO.Stream manifestStream, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; extraProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.LoadManifest(System.String,System.String,System.String,System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadManifest (publisherName As String, extensionName As String, version As String, manifestStream As Stream, Optional extraProperties As IDictionary(Of String, Object) = null) As ExtensionManifest" />
+      <MemberSignature Language="F#" Value="static member LoadManifest : string * string * string * System.IO.Stream * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.LoadManifest (publisherName, extensionName, version, manifestStream, extraProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="publisherName" Type="System.String" />
+        <Parameter Name="extensionName" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+        <Parameter Name="manifestStream" Type="System.IO.Stream" />
+        <Parameter Name="extraProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="publisherName"></param>
+        <param name="extensionName"></param>
+        <param name="version"></param>
+        <param name="manifestStream"></param>
+        <param name="extraProperties"></param>
+        <summary>
+            Given a serialized manifest stream this method will deserialize the manifest
+            and fill in all the run time properties of the contributions
+            
+            Contributions that are deserialized from an ExtensionManfiest don't have all
+            their properties setup and need to be fixed before the manifest can be used.
+            
+            This includes things like:
+                Ensureing Id's are fully qualified
+                Filtering out supplied resrticted properties from each contribution
+                Adding any extra properties to each contribution
+                etc.
+            </summary>
         <returns />
         <remarks>To be added.</remarks>
       </Docs>

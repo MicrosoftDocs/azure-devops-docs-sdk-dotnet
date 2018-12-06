@@ -1,0 +1,748 @@
+﻿<Type Name="QueryHierarchyItem" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem">
+  <TypeSignature Language="C#" Value="public class QueryHierarchyItem : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTrackingResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryHierarchyItem extends Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTrackingResource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryHierarchyItem&#xA;Inherits WorkItemTrackingResource" />
+  <TypeSignature Language="F#" Value="type QueryHierarchyItem = class&#xA;    inherit WorkItemTrackingResource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTrackingResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents an item in the work item query hierarchy.
+            This can be either a query or a folder.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QueryHierarchyItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem&gt; Children { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem&gt; Children" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As IList(Of QueryHierarchyItem)" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Children" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The child query items inside a query folder.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clauses">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause Clauses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause Clauses" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Clauses" />
+      <MemberSignature Language="VB.NET" Value="Public Property Clauses As WorkItemQueryClause" />
+      <MemberSignature Language="F#" Value="member this.Clauses : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Clauses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The clauses for a flat query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemFieldReference&gt; Columns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemFieldReference&gt; Columns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public Property Columns As IEnumerable(Of WorkItemFieldReference)" />
+      <MemberSignature Language="F#" Value="member this.Columns : seq&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemFieldReference&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Columns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemFieldReference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The columns of the query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference CreatedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference CreatedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.CreatedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedBy As IdentityReference" />
+      <MemberSignature Language="F#" Value="member this.CreatedBy : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.CreatedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The identity who created the query item.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedDate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreatedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreatedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.CreatedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedDate As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.CreatedDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.CreatedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When the query item was created.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterOptions">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.LinkQueryMode&gt; FilterOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.LinkQueryMode&gt; FilterOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.FilterOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterOptions As Nullable(Of LinkQueryMode)" />
+      <MemberSignature Language="F#" Value="member this.FilterOptions : Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.LinkQueryMode&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.FilterOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.LinkQueryMode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The link query mode.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasChildren">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; HasChildren { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; HasChildren" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.HasChildren" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasChildren As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.HasChildren : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.HasChildren" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If this is a query folder, indicates if it contains any children.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Guid Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As Guid" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The id of the query item.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeleted">
+      <MemberSignature Language="C#" Value="public bool IsDeleted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDeleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.IsDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDeleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDeleted : bool with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.IsDeleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if this query item is deleted. Setting this to false on a deleted query item will undelete it. Undeleting a query or folder will not bring back the permission changes that were previously applied to it.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFolder">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.IsFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFolder As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsFolder : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.IsFolder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if this is a query folder or a query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInvalidSyntax">
+      <MemberSignature Language="C#" Value="public bool IsInvalidSyntax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInvalidSyntax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.IsInvalidSyntax" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInvalidSyntax As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInvalidSyntax : bool with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.IsInvalidSyntax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if the WIQL of this query is invalid. This could be due to invalid syntax
+            or a no longer valid area/iteration path.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPublic">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsPublic { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsPublic" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.IsPublic" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsPublic As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsPublic : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.IsPublic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if this query item is public or private.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastExecutedBy">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference LastExecutedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference LastExecutedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LastExecutedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastExecutedBy As IdentityReference" />
+      <MemberSignature Language="F#" Value="member this.LastExecutedBy : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LastExecutedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The identity who last ran the query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastExecutedDate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastExecutedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastExecutedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LastExecutedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastExecutedDate As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.LastExecutedDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LastExecutedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When the query was last run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedBy">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference LastModifiedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference LastModifiedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LastModifiedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedBy As IdentityReference" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedBy : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LastModifiedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The identity who last modified the query item.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedDate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastModifiedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastModifiedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LastModifiedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedDate As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LastModifiedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When the query item was last modified.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkClauses">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause LinkClauses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause LinkClauses" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LinkClauses" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkClauses As WorkItemQueryClause" />
+      <MemberSignature Language="F#" Value="member this.LinkClauses : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.LinkClauses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The link query clause.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the query item.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The path of the query item.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryRecursionOption">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryRecursionOption&gt; QueryRecursionOption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryRecursionOption&gt; QueryRecursionOption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.QueryRecursionOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryRecursionOption As Nullable(Of QueryRecursionOption)" />
+      <MemberSignature Language="F#" Value="member this.QueryRecursionOption : Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryRecursionOption&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.QueryRecursionOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryRecursionOption&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The recursion option for use in a tree query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryType">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryType&gt; QueryType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryType&gt; QueryType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.QueryType" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryType As Nullable(Of QueryType)" />
+      <MemberSignature Language="F#" Value="member this.QueryType : Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryType&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.QueryType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The type of query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortColumns">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQuerySortColumn&gt; SortColumns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQuerySortColumn&gt; SortColumns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.SortColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortColumns As IEnumerable(Of WorkItemQuerySortColumn)" />
+      <MemberSignature Language="F#" Value="member this.SortColumns : seq&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQuerySortColumn&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.SortColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQuerySortColumn&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The sort columns of the query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceClauses">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause SourceClauses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause SourceClauses" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.SourceClauses" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceClauses As WorkItemQueryClause" />
+      <MemberSignature Language="F#" Value="member this.SourceClauses : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.SourceClauses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The source clauses in a tree or one-hop link query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetClauses">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause TargetClauses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause TargetClauses" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.TargetClauses" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetClauses As WorkItemQueryClause" />
+      <MemberSignature Language="F#" Value="member this.TargetClauses : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.TargetClauses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemQueryClause</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The target clauses in a tree or one-hop link query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wiql">
+      <MemberSignature Language="C#" Value="public string Wiql { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Wiql" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Wiql" />
+      <MemberSignature Language="VB.NET" Value="Public Property Wiql As String" />
+      <MemberSignature Language="F#" Value="member this.Wiql : string with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryHierarchyItem.Wiql" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The WIQL text of the query
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

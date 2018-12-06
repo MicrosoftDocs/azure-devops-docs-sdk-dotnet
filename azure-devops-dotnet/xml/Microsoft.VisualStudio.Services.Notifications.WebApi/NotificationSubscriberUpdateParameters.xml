@@ -1,0 +1,105 @@
+﻿<Type Name="NotificationSubscriberUpdateParameters" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters">
+  <TypeSignature Language="C#" Value="public class NotificationSubscriberUpdateParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotificationSubscriberUpdateParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters" />
+  <TypeSignature Language="VB.NET" Value="Public Class NotificationSubscriberUpdateParameters" />
+  <TypeSignature Language="F#" Value="type NotificationSubscriberUpdateParameters = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+             Updates to a subscriber. Typically used to change (or set) a preferred email address or default delivery preference.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationSubscriberUpdateParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeliveryPreference">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference&gt; DeliveryPreference { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference&gt; DeliveryPreference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters.DeliveryPreference" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeliveryPreference As Nullable(Of NotificationSubscriberDeliveryPreference)" />
+      <MemberSignature Language="F#" Value="member this.DeliveryPreference : Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference&gt; with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters.DeliveryPreference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            New delivery preference for the subscriber (indicates how the subscriber should be notified).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredEmailAddress">
+      <MemberSignature Language="C#" Value="public string PreferredEmailAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PreferredEmailAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters.PreferredEmailAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferredEmailAddress As String" />
+      <MemberSignature Language="F#" Value="member this.PreferredEmailAddress : string with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters.PreferredEmailAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            New preferred email address for the subscriber. Specify an empty string to clear the current address. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

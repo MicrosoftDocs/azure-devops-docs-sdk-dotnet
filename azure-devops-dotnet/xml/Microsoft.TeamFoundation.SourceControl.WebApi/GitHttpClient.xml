@@ -1,0 +1,800 @@
+﻿<Type Name="GitHttpClient" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient">
+  <TypeSignature Language="C#" Value="public class GitHttpClient : Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GitHttpClient extends Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class GitHttpClient&#xA;Inherits GitHttpClientBase" />
+  <TypeSignature Language="F#" Value="type GitHttpClient = class&#xA;    inherit GitHttpClientBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(22, 80)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient" Usage="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient (baseUrl, credentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient" Usage="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient (baseUrl, credentials, settings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient" Usage="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient (baseUrl, credentials, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitHttpClient (Uri baseUrl, System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, pipeline As HttpMessageHandler, disposeHandler As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient : Uri * System.Net.Http.HttpMessageHandler * bool -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient" Usage="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient (baseUrl, pipeline, disposeHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="pipeline" Type="System.Net.Http.HttpMessageHandler" />
+        <Parameter Name="disposeHandler" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="pipeline">To be added.</param>
+        <param name="disposeHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient" Usage="new Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient (baseUrl, credentials, settings, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddModelAsQueryParams">
+      <MemberSignature Language="C#" Value="protected override void AddModelAsQueryParams (System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParams, string parameterName, object model);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddModelAsQueryParams(class System.Collections.Generic.IList`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParams, string parameterName, object model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.AddModelAsQueryParams(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddModelAsQueryParams (queryParams As IList(Of KeyValuePair(Of String, String)), parameterName As String, model As Object)" />
+      <MemberSignature Language="F#" Value="override this.AddModelAsQueryParams : System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * string * obj -&gt; unit" Usage="gitHttpClient.AddModelAsQueryParams (queryParams, parameterName, model)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryParams" Type="System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="model" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="queryParams">To be added.</param>
+        <param name="parameterName">To be added.</param>
+        <param name="model">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBranchRefsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetBranchRefsAsync (Guid repositoryId, object userState = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetBranchRefsAsync(valuetype System.Guid repositoryId, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetBranchRefsAsync(System.Guid,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBranchRefsAsync (repositoryId As Guid, Optional userState As Object = null) As Task(Of List(Of GitRef))" />
+      <MemberSignature Language="F#" Value="abstract member GetBranchRefsAsync : Guid * obj -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;&#xA;override this.GetBranchRefsAsync : Guid * obj -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;" Usage="gitHttpClient.GetBranchRefsAsync (repositoryId, userState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="repositoryId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="repositoryId">Repository Id</param>
+        <param name="userState"></param>
+        <summary>
+            Get the refs that are branches for a specific git repository
+            </summary>
+        <returns>Task&lt;List&lt;GitRef&gt;&gt;</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContinuationToken">
+      <MemberSignature Language="C#" Value="protected string GetContinuationToken (System.Net.Http.HttpResponseMessage responseMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetContinuationToken(class System.Net.Http.HttpResponseMessage responseMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetContinuationToken(System.Net.Http.HttpResponseMessage)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetContinuationToken (responseMessage As HttpResponseMessage) As String" />
+      <MemberSignature Language="F#" Value="member this.GetContinuationToken : System.Net.Http.HttpResponseMessage -&gt; string" Usage="gitHttpClient.GetContinuationToken responseMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="responseMessage" Type="System.Net.Http.HttpResponseMessage" />
+      </Parameters>
+      <Docs>
+        <param name="responseMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemsPagedAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (Guid project, Guid repositoryId, string scopePath, Nullable&lt;int&gt; top = null, string continuationToken = null, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync(valuetype System.Guid project, valuetype System.Guid repositoryId, string scopePath, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, class Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetItemsPagedAsync(System.Guid,System.Guid,System.String,System.Nullable{System.Int32},System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : Guid * Guid * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : Guid * Guid * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;" Usage="gitHttpClient.GetItemsPagedAsync (project, repositoryId, scopePath, top, continuationToken, versionDescriptor, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="repositoryId" Type="System.Guid" />
+        <Parameter Name="scopePath" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="versionDescriptor" Type="Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="scopePath">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="versionDescriptor">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            [Internal customers only API]
+            Get lightweight item metadata information with continuation token support.
+            Gets the specified number of items under the scopePath at full recursion.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemsPagedAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (Guid project, string repositoryId, string scopePath, Nullable&lt;int&gt; top = null, string continuationToken = null, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync(valuetype System.Guid project, string repositoryId, string scopePath, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, class Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetItemsPagedAsync(System.Guid,System.String,System.String,System.Nullable{System.Int32},System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : Guid * string * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : Guid * string * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;" Usage="gitHttpClient.GetItemsPagedAsync (project, repositoryId, scopePath, top, continuationToken, versionDescriptor, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="scopePath" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="versionDescriptor" Type="Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="scopePath">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="versionDescriptor">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            [Internal customers only API]
+            Get lightweight item metadata information with continuation token support.
+            Gets the specified number of items under the scopePath at full recursion.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemsPagedAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (string project, Guid repositoryId, string scopePath, Nullable&lt;int&gt; top = null, string continuationToken = null, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync(string project, valuetype System.Guid repositoryId, string scopePath, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, class Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetItemsPagedAsync(System.String,System.Guid,System.String,System.Nullable{System.Int32},System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : string * Guid * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : string * Guid * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;" Usage="gitHttpClient.GetItemsPagedAsync (project, repositoryId, scopePath, top, continuationToken, versionDescriptor, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.Guid" />
+        <Parameter Name="scopePath" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="versionDescriptor" Type="Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="scopePath">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="versionDescriptor">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            [Internal customers only API]
+            Get lightweight item metadata information with continuation token support.
+            Gets the specified number of items under the scopePath at full recursion.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemsPagedAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (string project, string repositoryId, string scopePath, Nullable&lt;int&gt; top = null, string continuationToken = null, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync(string project, string repositoryId, string scopePath, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, class Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetItemsPagedAsync(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : string * string * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : string * string * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;" Usage="gitHttpClient.GetItemsPagedAsync (project, repositoryId, scopePath, top, continuationToken, versionDescriptor, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="scopePath" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="versionDescriptor" Type="Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="scopePath">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="versionDescriptor">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            [Internal customers only API]
+            Get lightweight item metadata information with continuation token support.
+            Gets the specified number of items under the scopePath at full recursion.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPagedList&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;T&gt;&gt; GetPagedList&lt;T&gt; (System.Net.Http.HttpResponseMessage responseMessage, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;!!T&gt;&gt; GetPagedList&lt;T&gt;(class System.Net.Http.HttpResponseMessage responseMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPagedList``1(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetPagedList : System.Net.Http.HttpResponseMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;'T&gt;&gt;" Usage="gitHttpClient.GetPagedList (responseMessage, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="responseMessage" Type="System.Net.Http.HttpResponseMessage" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="responseMessage">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPullRequestCommitsPagedAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (Guid project, Guid repositoryId, int pullRequestId, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync(valuetype System.Guid project, valuetype System.Guid repositoryId, int32 pullRequestId, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPullRequestCommitsPagedAsync(System.Guid,System.Guid,System.Int32,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetPullRequestCommitsPagedAsync : Guid * Guid * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;&#xA;override this.GetPullRequestCommitsPagedAsync : Guid * Guid * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;" Usage="gitHttpClient.GetPullRequestCommitsPagedAsync (project, repositoryId, pullRequestId, top, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="repositoryId" Type="System.Guid" />
+        <Parameter Name="pullRequestId" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="pullRequestId">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            [Preview API] Get the commits for the specified pull request.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPullRequestCommitsPagedAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (Guid project, string repositoryId, int pullRequestId, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync(valuetype System.Guid project, string repositoryId, int32 pullRequestId, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPullRequestCommitsPagedAsync(System.Guid,System.String,System.Int32,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetPullRequestCommitsPagedAsync : Guid * string * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;&#xA;override this.GetPullRequestCommitsPagedAsync : Guid * string * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;" Usage="gitHttpClient.GetPullRequestCommitsPagedAsync (project, repositoryId, pullRequestId, top, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="pullRequestId" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="pullRequestId">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            [Preview API] Get the commits for the specified pull request.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPullRequestCommitsPagedAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (string project, Guid repositoryId, int pullRequestId, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync(string project, valuetype System.Guid repositoryId, int32 pullRequestId, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPullRequestCommitsPagedAsync(System.String,System.Guid,System.Int32,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetPullRequestCommitsPagedAsync : string * Guid * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;&#xA;override this.GetPullRequestCommitsPagedAsync : string * Guid * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;" Usage="gitHttpClient.GetPullRequestCommitsPagedAsync (project, repositoryId, pullRequestId, top, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.Guid" />
+        <Parameter Name="pullRequestId" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="pullRequestId">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            [Preview API] Get the commits for the specified pull request.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPullRequestCommitsPagedAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (string project, string repositoryId, int pullRequestId, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync(string project, string repositoryId, int32 pullRequestId, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPullRequestCommitsPagedAsync(System.String,System.String,System.Int32,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetPullRequestCommitsPagedAsync : string * string * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;&#xA;override this.GetPullRequestCommitsPagedAsync : string * string * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;" Usage="gitHttpClient.GetPullRequestCommitsPagedAsync (project, repositoryId, pullRequestId, top, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="pullRequestId" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="pullRequestId">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            [Preview API] Get the commits for the specified pull request.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTagRefsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetTagRefsAsync (Guid repositoryId, object userState = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetTagRefsAsync(valuetype System.Guid repositoryId, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetTagRefsAsync(System.Guid,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTagRefsAsync (repositoryId As Guid, Optional userState As Object = null) As Task(Of List(Of GitRef))" />
+      <MemberSignature Language="F#" Value="abstract member GetTagRefsAsync : Guid * obj -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;&#xA;override this.GetTagRefsAsync : Guid * obj -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;" Usage="gitHttpClient.GetTagRefsAsync (repositoryId, userState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="repositoryId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="repositoryId">Repository Id</param>
+        <param name="userState"></param>
+        <summary>
+            Get the refs that are tags for a specific git repository
+            </summary>
+        <returns>Task&lt;List&lt;GitRef&gt;&gt;</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameRepositoryAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt; RenameRepositoryAsync (Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository repositoryToRename, string newName, object userState = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt; RenameRepositoryAsync(class Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository repositoryToRename, string newName, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.RenameRepositoryAsync(Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RenameRepositoryAsync (repositoryToRename As GitRepository, newName As String, Optional userState As Object = null) As Task(Of GitRepository)" />
+      <MemberSignature Language="F#" Value="abstract member RenameRepositoryAsync : Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository * string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt;&#xA;override this.RenameRepositoryAsync : Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository * string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt;" Usage="gitHttpClient.RenameRepositoryAsync (repositoryToRename, newName, userState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="repositoryToRename" Type="Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository" />
+        <Parameter Name="newName" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="repositoryToRename"></param>
+        <param name="newName"></param>
+        <param name="userState"></param>
+        <summary>
+            Rename a repository.  Only the name is observed.  If other properties are passed, the server will ensure they match.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpRequestMessage message, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.SendAsync``1(System.Net.Http.HttpRequestMessage,System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="gitHttpClient.SendAsync (message, userState, cancellationToken, processResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="message" Type="System.Net.Http.HttpRequestMessage" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="processResponse" Type="System.Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="message">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="processResponse">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="gitHttpClient.SendAsync (method, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="method" Type="System.Net.Http.HttpMethod" />
+        <Parameter Name="locationId" Type="System.Guid" />
+        <Parameter Name="routeValues" Type="System.Object" />
+        <Parameter Name="version" Type="Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion" />
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
+        <Parameter Name="queryParameters" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="processResponse" Type="System.Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="method">To be added.</param>
+        <param name="locationId">To be added.</param>
+        <param name="routeValues">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="content">To be added.</param>
+        <param name="queryParameters">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="processResponse">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; additionalHeaders, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="gitHttpClient.SendAsync (method, additionalHeaders, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="method" Type="System.Net.Http.HttpMethod" />
+        <Parameter Name="additionalHeaders" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="locationId" Type="System.Guid" />
+        <Parameter Name="routeValues" Type="System.Object" />
+        <Parameter Name="version" Type="Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion" />
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
+        <Parameter Name="queryParameters" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="processResponse" Type="System.Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="method">To be added.</param>
+        <param name="additionalHeaders">To be added.</param>
+        <param name="locationId">To be added.</param>
+        <param name="routeValues">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="content">To be added.</param>
+        <param name="queryParameters">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="processResponse">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

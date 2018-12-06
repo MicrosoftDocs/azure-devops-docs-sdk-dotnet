@@ -1,0 +1,131 @@
+﻿<Type Name="CodeCoverageSummary" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary">
+  <TypeSignature Language="C#" Value="public sealed class CodeCoverageSummary : Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementBaseSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeCoverageSummary extends Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementBaseSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeCoverageSummary&#xA;Inherits TestManagementBaseSecuredObject" />
+  <TypeSignature Language="F#" Value="type CodeCoverageSummary = class&#xA;    inherit TestManagementBaseSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementBaseSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the code coverage summary results
+            Used to publish or retrieve code coverage summary against a build
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeCoverageSummary ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Build">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference Build { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference Build" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary.Build" />
+      <MemberSignature Language="VB.NET" Value="Public Property Build As ShallowReference" />
+      <MemberSignature Language="F#" Value="member this.Build : Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary.Build" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Uri of build for which data is retrieved/published
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoverageData">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData&gt; CoverageData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData&gt; CoverageData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary.CoverageData" />
+      <MemberSignature Language="VB.NET" Value="Public Property CoverageData As IList(Of CodeCoverageData)" />
+      <MemberSignature Language="F#" Value="member this.CoverageData : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData&gt; with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary.CoverageData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of coverage data and details for the build
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeltaBuild">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference DeltaBuild { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference DeltaBuild" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary.DeltaBuild" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeltaBuild As ShallowReference" />
+      <MemberSignature Language="F#" Value="member this.DeltaBuild : Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageSummary.DeltaBuild" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Uri of build against which difference in coverage is computed
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

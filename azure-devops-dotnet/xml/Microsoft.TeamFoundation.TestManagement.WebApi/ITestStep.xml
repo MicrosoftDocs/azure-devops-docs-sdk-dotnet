@@ -1,0 +1,167 @@
+﻿<Type Name="ITestStep" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep">
+  <TypeSignature Language="C#" Value="public interface ITestStep : Microsoft.TeamFoundation.TestManagement.WebApi.ITestAction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITestStep implements class Microsoft.TeamFoundation.TestManagement.WebApi.ITestAction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITestStep&#xA;Implements ITestAction" />
+  <TypeSignature Language="F#" Value="type ITestStep = interface&#xA;    interface ITestAction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.TestManagement.WebApi.ITestAction</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Attachments">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentCollection Attachments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentCollection Attachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attachments As TestAttachmentCollection" />
+      <MemberSignature Language="F#" Value="member this.Attachments : Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentCollection" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.Attachments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Attachments to the step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAttachment">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ITestStepAttachment CreateAttachment (string url, string attachmentName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.TestManagement.WebApi.ITestStepAttachment CreateAttachment(string url, string attachmentName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.CreateAttachment(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateAttachment (url As String, Optional attachmentName As String = null) As ITestStepAttachment" />
+      <MemberSignature Language="F#" Value="abstract member CreateAttachment : string * string -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.ITestStepAttachment" Usage="iTestStep.CreateAttachment (url, attachmentName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ITestStepAttachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="attachmentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <param name="attachmentName">To be added.</param>
+        <summary>
+            Creates an attachment.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Longer description of the step (optional).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpectedResult">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ParameterizedString ExpectedResult { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ParameterizedString ExpectedResult" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.ExpectedResult" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpectedResult As ParameterizedString" />
+      <MemberSignature Language="F#" Value="member this.ExpectedResult : Microsoft.TeamFoundation.TestManagement.WebApi.ParameterizedString with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.ExpectedResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ParameterizedString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            One-line description of the expected result of this action.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestStepType">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.TestStepType TestStepType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestStepType TestStepType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.TestStepType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TestStepType As TestStepType" />
+      <MemberSignature Language="F#" Value="member this.TestStepType : Microsoft.TeamFoundation.TestManagement.WebApi.TestStepType with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.TestStepType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestStepType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Type of step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ParameterizedString Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ParameterizedString Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As ParameterizedString" />
+      <MemberSignature Language="F#" Value="member this.Title : Microsoft.TeamFoundation.TestManagement.WebApi.ParameterizedString with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ParameterizedString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            One-line description of the action to perform.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

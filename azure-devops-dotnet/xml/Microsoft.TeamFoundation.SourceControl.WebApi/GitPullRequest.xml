@@ -1,0 +1,1030 @@
+﻿<Type Name="GitPullRequest" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest">
+  <TypeSignature Language="C#" Value="public class GitPullRequest : Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GitPullRequest extends Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class GitPullRequest&#xA;Inherits VersionControlSecuredObject" />
+  <TypeSignature Language="F#" Value="type GitPullRequest = class&#xA;    inherit VersionControlSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ServiceEventObject</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents all the data associated with a pull request.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitPullRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtifactId">
+      <MemberSignature Language="C#" Value="public string ArtifactId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ArtifactId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.ArtifactId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ArtifactId As String" />
+      <MemberSignature Language="F#" Value="member this.ArtifactId : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.ArtifactId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="artifactId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A string which uniquely identifies this pull request. To generate an artifact ID for a pull request, use this template:
+            ```vstfs:///Git/PullRequestId/{projectId}/{repositoryId}/{pullRequestId}```
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoCompleteSetBy">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef AutoCompleteSetBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef AutoCompleteSetBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.AutoCompleteSetBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCompleteSetBy As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.AutoCompleteSetBy : Microsoft.VisualStudio.Services.WebApi.IdentityRef with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.AutoCompleteSetBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="autoCompleteSetBy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If set, auto-complete is enabled for this pull request and this is the identity that enabled it.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClosedBy">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef ClosedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef ClosedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.ClosedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClosedBy As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.ClosedBy : Microsoft.VisualStudio.Services.WebApi.IdentityRef with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.ClosedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="closedBy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The user who closed the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClosedDate">
+      <MemberSignature Language="C#" Value="public DateTime ClosedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ClosedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.ClosedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClosedDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ClosedDate : DateTime with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.ClosedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="closedDate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The date when the pull request was closed (completed, abandoned, or merged externally).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeReviewId">
+      <MemberSignature Language="C#" Value="public int CodeReviewId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CodeReviewId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CodeReviewId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeReviewId As Integer" />
+      <MemberSignature Language="F#" Value="member this.CodeReviewId : int with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CodeReviewId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="codeReviewId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The code review ID of the pull request. Used internally.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commits">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef[] Commits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef[] Commits" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Commits" />
+      <MemberSignature Language="VB.NET" Value="Public Property Commits As GitCommitRef()" />
+      <MemberSignature Language="F#" Value="member this.Commits : Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef[] with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Commits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="commits")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The commits contained in the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletionOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCompletionOptions CompletionOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCompletionOptions CompletionOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CompletionOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompletionOptions As GitPullRequestCompletionOptions" />
+      <MemberSignature Language="F#" Value="member this.CompletionOptions : Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCompletionOptions with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CompletionOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="completionOptions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCompletionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Options which affect how the pull request will be merged when it is completed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletionQueueTime">
+      <MemberSignature Language="C#" Value="public DateTime CompletionQueueTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CompletionQueueTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CompletionQueueTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompletionQueueTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CompletionQueueTime : DateTime with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CompletionQueueTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="completionQueueTime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The most recent date at which the pull request entered the queue to be completed. Used internally.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef CreatedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef CreatedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CreatedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedBy As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.CreatedBy : Microsoft.VisualStudio.Services.WebApi.IdentityRef with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CreatedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="createdBy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The identity of the user who created the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationDate">
+      <MemberSignature Language="C#" Value="public DateTime CreationDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CreationDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreationDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreationDate : DateTime with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.CreationDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="creationDate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The date when the pull request was created.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="description")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The description of the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForkSource">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitForkRef ForkSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitForkRef ForkSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.ForkSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForkSource As GitForkRef" />
+      <MemberSignature Language="F#" Value="member this.ForkSource : Microsoft.TeamFoundation.SourceControl.WebApi.GitForkRef with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.ForkSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="forkSource")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitForkRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If this is a PR from a fork this will contain information about its source.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDraft">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsDraft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsDraft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.IsDraft" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDraft As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsDraft : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.IsDraft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isDraft")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Draft / WIP pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Labels">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Core.WebApi.WebApiTagDefinition[] Labels { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Core.WebApi.WebApiTagDefinition[] Labels" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Labels" />
+      <MemberSignature Language="VB.NET" Value="Public Property Labels As WebApiTagDefinition()" />
+      <MemberSignature Language="F#" Value="member this.Labels : Microsoft.TeamFoundation.Core.WebApi.WebApiTagDefinition[] with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Labels" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="labels")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Core.WebApi.WebApiTagDefinition[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The labels associated with the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastMergeCommit">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef LastMergeCommit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef LastMergeCommit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.LastMergeCommit" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastMergeCommit As GitCommitRef" />
+      <MemberSignature Language="F#" Value="member this.LastMergeCommit : Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.LastMergeCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="lastMergeCommit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The commit of the most recent pull request merge.
+            If empty, the most recent merge is in progress or was unsuccessful.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastMergeSourceCommit">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef LastMergeSourceCommit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef LastMergeSourceCommit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.LastMergeSourceCommit" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastMergeSourceCommit As GitCommitRef" />
+      <MemberSignature Language="F#" Value="member this.LastMergeSourceCommit : Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.LastMergeSourceCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="lastMergeSourceCommit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The commit at the head of the source branch at the time of the last pull request merge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastMergeTargetCommit">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef LastMergeTargetCommit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef LastMergeTargetCommit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.LastMergeTargetCommit" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastMergeTargetCommit As GitCommitRef" />
+      <MemberSignature Language="F#" Value="member this.LastMergeTargetCommit : Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.LastMergeTargetCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="lastMergeTargetCommit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The commit at the head of the target branch at the time of the last pull request merge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Links">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.ReferenceLinks Links { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.ReferenceLinks Links" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Links" />
+      <MemberSignature Language="VB.NET" Value="Public Property Links As ReferenceLinks" />
+      <MemberSignature Language="F#" Value="member this.Links : Microsoft.VisualStudio.Services.WebApi.ReferenceLinks with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Links" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="_links")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.ReferenceLinks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Links to other related objects.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeFailureMessage">
+      <MemberSignature Language="C#" Value="public string MergeFailureMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MergeFailureMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeFailureMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergeFailureMessage As String" />
+      <MemberSignature Language="F#" Value="member this.MergeFailureMessage : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeFailureMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="mergeFailureMessage")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If set, pull request merge failed for this reason.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeFailureType">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestMergeFailureType MergeFailureType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestMergeFailureType MergeFailureType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeFailureType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergeFailureType As PullRequestMergeFailureType" />
+      <MemberSignature Language="F#" Value="member this.MergeFailureType : Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestMergeFailureType with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeFailureType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="mergeFailureType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestMergeFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The type of failure (if any) of the pull request merge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeId">
+      <MemberSignature Language="C#" Value="public Guid MergeId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid MergeId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergeId As Guid" />
+      <MemberSignature Language="F#" Value="member this.MergeId : Guid with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="mergeId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The ID of the job used to run the pull request merge. Used internally.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestMergeOptions MergeOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestMergeOptions MergeOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergeOptions As GitPullRequestMergeOptions" />
+      <MemberSignature Language="F#" Value="member this.MergeOptions : Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestMergeOptions with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="mergeOptions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestMergeOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Options used when the pull request merge runs.
+            These are separate from completion options since completion happens only once and a new merge
+            will run every time the source branch of the pull request changes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestAsyncStatus MergeStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestAsyncStatus MergeStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergeStatus As PullRequestAsyncStatus" />
+      <MemberSignature Language="F#" Value="member this.MergeStatus : Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestAsyncStatus with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.MergeStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="mergeStatus")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestAsyncStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The current status of the pull request merge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PullRequestId">
+      <MemberSignature Language="C#" Value="public int PullRequestId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PullRequestId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.PullRequestId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PullRequestId As Integer" />
+      <MemberSignature Language="F#" Value="member this.PullRequestId : int with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.PullRequestId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="pullRequestId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The ID of the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteUrl">
+      <MemberSignature Language="C#" Value="public string RemoteUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RemoteUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.RemoteUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemoteUrl As String" />
+      <MemberSignature Language="F#" Value="member this.RemoteUrl : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.RemoteUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Used internally.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Repository">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository Repository { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository Repository" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Repository" />
+      <MemberSignature Language="VB.NET" Value="Public Property Repository As GitRepository" />
+      <MemberSignature Language="F#" Value="member this.Repository : Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Repository" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="repository")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The repository containing the target branch of the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reviewers">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote[] Reviewers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote[] Reviewers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Reviewers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reviewers As IdentityRefWithVote()" />
+      <MemberSignature Language="F#" Value="member this.Reviewers : Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote[] with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Reviewers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="reviewers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of reviewers on the pull request along with the state of their votes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredObject">
+      <MemberSignature Language="C#" Value="public override void SetSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.SetSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetSecuredObject (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="override this.SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit" Usage="gitPullRequest.SetSecuredObject securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceRefName">
+      <MemberSignature Language="C#" Value="public string SourceRefName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceRefName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.SourceRefName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceRefName As String" />
+      <MemberSignature Language="F#" Value="member this.SourceRefName : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.SourceRefName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="sourceRefName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the source branch of the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestStatus Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Property Status As PullRequestStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestStatus with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="status")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.PullRequestStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The status of the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsIterations">
+      <MemberSignature Language="C#" Value="public bool SupportsIterations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsIterations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.SupportsIterations" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportsIterations As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsIterations : bool with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.SupportsIterations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="supportsIterations")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If true, this pull request supports multiple iterations. Iteration support means individual pushes to
+            the source branch of the pull request can be reviewed and comments left in one iteration will be
+            tracked across future iterations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetRefName">
+      <MemberSignature Language="C#" Value="public string TargetRefName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetRefName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.TargetRefName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetRefName As String" />
+      <MemberSignature Language="F#" Value="member this.TargetRefName : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.TargetRefName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="targetRefName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the target branch of the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="title")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The title of the pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Used internally.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkItemRefs">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.ResourceRef[] WorkItemRefs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.ResourceRef[] WorkItemRefs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.WorkItemRefs" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkItemRefs As ResourceRef()" />
+      <MemberSignature Language="F#" Value="member this.WorkItemRefs : Microsoft.VisualStudio.Services.WebApi.ResourceRef[] with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.WorkItemRefs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="workItemRefs")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.ResourceRef[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Any work item references associated with this pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

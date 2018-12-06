@@ -1,0 +1,270 @@
+﻿<Type Name="CommentTrackingCriteria" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria">
+  <TypeSignature Language="C#" Value="public class CommentTrackingCriteria : Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommentTrackingCriteria extends Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommentTrackingCriteria&#xA;Inherits VersionControlSecuredObject" />
+  <TypeSignature Language="F#" Value="type CommentTrackingCriteria = class&#xA;    inherit VersionControlSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Comment tracking criteria is used to identify which iteration context the thread has been tracked to (if any)
+            along with some detail about the original position and filename.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommentTrackingCriteria ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstComparingIteration">
+      <MemberSignature Language="C#" Value="public int FirstComparingIteration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FirstComparingIteration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.FirstComparingIteration" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstComparingIteration As Integer" />
+      <MemberSignature Language="F#" Value="member this.FirstComparingIteration : int with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.FirstComparingIteration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The iteration of the file on the left side of the diff that the thread will be tracked to.
+            Threads were tracked if this is greater than 0.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrigFilePath">
+      <MemberSignature Language="C#" Value="public string OrigFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OrigFilePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigFilePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrigFilePath As String" />
+      <MemberSignature Language="F#" Value="member this.OrigFilePath : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Original filepath the thread was created on before tracking. This will be different than the current thread
+            filepath if the file in question was renamed in a later iteration.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrigLeftFileEnd">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition OrigLeftFileEnd { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition OrigLeftFileEnd" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigLeftFileEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrigLeftFileEnd As CommentPosition" />
+      <MemberSignature Language="F#" Value="member this.OrigLeftFileEnd : Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigLeftFileEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Original position of last character of the thread's span in left file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrigLeftFileStart">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition OrigLeftFileStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition OrigLeftFileStart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigLeftFileStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrigLeftFileStart As CommentPosition" />
+      <MemberSignature Language="F#" Value="member this.OrigLeftFileStart : Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigLeftFileStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Original position of first character of the thread's span in left file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrigRightFileEnd">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition OrigRightFileEnd { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition OrigRightFileEnd" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigRightFileEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrigRightFileEnd As CommentPosition" />
+      <MemberSignature Language="F#" Value="member this.OrigRightFileEnd : Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigRightFileEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Original position of last character of the thread's span in right file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrigRightFileStart">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition OrigRightFileStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition OrigRightFileStart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigRightFileStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrigRightFileStart As CommentPosition" />
+      <MemberSignature Language="F#" Value="member this.OrigRightFileStart : Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.OrigRightFileStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.CommentPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Original position of first character of the thread's span in right file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondComparingIteration">
+      <MemberSignature Language="C#" Value="public int SecondComparingIteration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SecondComparingIteration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.SecondComparingIteration" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecondComparingIteration As Integer" />
+      <MemberSignature Language="F#" Value="member this.SecondComparingIteration : int with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.SecondComparingIteration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The iteration of the file on the right side of the diff that the thread will be tracked to.
+            Threads were tracked if this is greater than 0.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredObject">
+      <MemberSignature Language="C#" Value="public override void SetSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria.SetSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetSecuredObject (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="override this.SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit" Usage="commentTrackingCriteria.SetSecuredObject securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

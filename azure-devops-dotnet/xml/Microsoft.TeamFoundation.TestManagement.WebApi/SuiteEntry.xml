@@ -1,0 +1,170 @@
+﻿<Type Name="SuiteEntry" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry">
+  <TypeSignature Language="C#" Value="public class SuiteEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SuiteEntry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class SuiteEntry" />
+  <TypeSignature Language="F#" Value="type SuiteEntry = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            A suite entry defines properties for a test suite.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SuiteEntry (int suiteId, int sequenceNumber, int testCaseId, int childSuiteId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 suiteId, int32 sequenceNumber, int32 testCaseId, int32 childSuiteId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (suiteId As Integer, sequenceNumber As Integer, testCaseId As Integer, childSuiteId As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry : int * int * int * int -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry (suiteId, sequenceNumber, testCaseId, childSuiteId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="sequenceNumber" Type="System.Int32" />
+        <Parameter Name="testCaseId" Type="System.Int32" />
+        <Parameter Name="childSuiteId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="suiteId">Id for the test suite.</param>
+        <param name="sequenceNumber">Sequence number for the test case or child test suite in the test suite.</param>
+        <param name="testCaseId">Id of a test case in the test suite.</param>
+        <param name="childSuiteId">Id of child test suite in the test suite.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildSuiteId">
+      <MemberSignature Language="C#" Value="public int ChildSuiteId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChildSuiteId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.ChildSuiteId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChildSuiteId As Integer" />
+      <MemberSignature Language="F#" Value="member this.ChildSuiteId : int with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.ChildSuiteId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="childSuiteId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Id of child suite in the test suite.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SequenceNumber">
+      <MemberSignature Language="C#" Value="public int SequenceNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SequenceNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.SequenceNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property SequenceNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.SequenceNumber : int with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.SequenceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="sequenceNumber")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sequence number for the test case or child test suite in the test suite.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuiteId">
+      <MemberSignature Language="C#" Value="public int SuiteId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SuiteId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.SuiteId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuiteId As Integer" />
+      <MemberSignature Language="F#" Value="member this.SuiteId : int with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.SuiteId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="suiteId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Id for the test suite.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestCaseId">
+      <MemberSignature Language="C#" Value="public int TestCaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TestCaseId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.TestCaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TestCaseId As Integer" />
+      <MemberSignature Language="F#" Value="member this.TestCaseId : int with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteEntry.TestCaseId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="testCaseId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Id of a test case in the test suite.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

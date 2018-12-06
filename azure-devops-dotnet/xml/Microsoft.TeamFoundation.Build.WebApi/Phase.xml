@@ -1,0 +1,313 @@
+﻿<Type Name="Phase" FullName="Microsoft.TeamFoundation.Build.WebApi.Phase">
+  <TypeSignature Language="C#" Value="public class Phase : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Phase extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.Phase" />
+  <TypeSignature Language="VB.NET" Value="Public Class Phase&#xA;Inherits BaseSecuredObject" />
+  <TypeSignature Language="F#" Value="type Phase = class&#xA;    inherit BaseSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a phase of a build definition.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Phase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Phase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Condition">
+      <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.Condition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The condition that must be true for this phase to execute.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            The condition is evaluated after all dependencies are satisfied.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dependencies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Dependency&gt; Dependencies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Dependency&gt; Dependencies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.Dependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Property Dependencies As List(Of Dependency)" />
+      <MemberSignature Language="F#" Value="member this.Dependencies : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Dependency&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.Dependencies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Dependency&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The list of dependencies for this phase.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobAuthorizationScope">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope JobAuthorizationScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope JobAuthorizationScope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.JobAuthorizationScope" />
+      <MemberSignature Language="VB.NET" Value="Public Property JobAuthorizationScope As BuildAuthorizationScope" />
+      <MemberSignature Language="F#" Value="member this.JobAuthorizationScope : Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.JobAuthorizationScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The job authorization scope for builds queued against this definition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobCancelTimeoutInMinutes">
+      <MemberSignature Language="C#" Value="public int JobCancelTimeoutInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 JobCancelTimeoutInMinutes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.JobCancelTimeoutInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property JobCancelTimeoutInMinutes As Integer" />
+      <MemberSignature Language="F#" Value="member this.JobCancelTimeoutInMinutes : int with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.JobCancelTimeoutInMinutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The cancellation timeout, in minutes, for builds queued against this definition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobTimeoutInMinutes">
+      <MemberSignature Language="C#" Value="public int JobTimeoutInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 JobTimeoutInMinutes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.JobTimeoutInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property JobTimeoutInMinutes As Integer" />
+      <MemberSignature Language="F#" Value="member this.JobTimeoutInMinutes : int with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.JobTimeoutInMinutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The job execution timeout, in minutes, for builds queued against this definition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the phase.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefName">
+      <MemberSignature Language="C#" Value="public string RefName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RefName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.RefName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefName As String" />
+      <MemberSignature Language="F#" Value="member this.RefName : string with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.RefName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The unique ref name of the phase.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Steps">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep&gt; Steps { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep&gt; Steps" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.Steps" />
+      <MemberSignature Language="VB.NET" Value="Public Property Steps As List(Of BuildDefinitionStep)" />
+      <MemberSignature Language="F#" Value="member this.Steps : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.Steps" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionStep&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The list of steps run by the phase.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.PhaseTarget Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Build.WebApi.PhaseTarget Target" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As PhaseTarget" />
+      <MemberSignature Language="F#" Value="member this.Target : Microsoft.TeamFoundation.Build.WebApi.PhaseTarget with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.PhaseTarget</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The target (agent, server, etc.) for this phase.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionVariable&gt; Variables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionVariable&gt; Variables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Phase.Variables" />
+      <MemberSignature Language="VB.NET" Value="Public Property Variables As IDictionary(Of String, BuildDefinitionVariable)" />
+      <MemberSignature Language="F#" Value="member this.Variables : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionVariable&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Phase.Variables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionVariable&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The list of variables defined on the phase.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,139 @@
+﻿<Type Name="GitPermissionScope" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope">
+  <TypeSignature Language="C#" Value="public enum GitPermissionScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GitPermissionScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GitPermissionScope" />
+  <TypeSignature Language="F#" Value="type GitPermissionScope = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Scopes where <see cref="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitRepositoryPermissions" /> can apply.
+            </summary>
+    <remarks>
+            This enum currently serves 2 purposes:
+            1. Used by VC Admin UI to determine the GitRepositoryPermissions value that applies
+            to a specific scope and can be changed using the web UI.
+            2. Used through Git Server to specify a scope to pass to SecurityHelper calls to decide whether
+            an identity has the required access to a resource. Only Project/Repository/Branch apply.
+            FUTURE: We should separate these uses since some scopes are never valid in SecurityHelper
+            calls, and both sets will continue changing for different reasons.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Branch">
+      <MemberSignature Language="C#" Value="Branch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope Branch = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.Branch" />
+      <MemberSignature Language="VB.NET" Value="Branch" />
+      <MemberSignature Language="F#" Value="Branch = 4" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.Branch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BranchesRoot">
+      <MemberSignature Language="C#" Value="BranchesRoot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope BranchesRoot = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.BranchesRoot" />
+      <MemberSignature Language="VB.NET" Value="BranchesRoot" />
+      <MemberSignature Language="F#" Value="BranchesRoot = 16" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.BranchesRoot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonBranchRef">
+      <MemberSignature Language="C#" Value="NonBranchRef" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope NonBranchRef = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.NonBranchRef" />
+      <MemberSignature Language="VB.NET" Value="NonBranchRef" />
+      <MemberSignature Language="F#" Value="NonBranchRef = 8" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.NonBranchRef" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Project">
+      <MemberSignature Language="C#" Value="Project" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope Project = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.Project" />
+      <MemberSignature Language="VB.NET" Value="Project" />
+      <MemberSignature Language="F#" Value="Project = 1" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.Project" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Repository">
+      <MemberSignature Language="C#" Value="Repository" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope Repository = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.Repository" />
+      <MemberSignature Language="VB.NET" Value="Repository" />
+      <MemberSignature Language="F#" Value="Repository = 2" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope.Repository" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

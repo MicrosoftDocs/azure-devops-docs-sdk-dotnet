@@ -1,0 +1,191 @@
+﻿<Type Name="PullRequestTrigger" FullName="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger">
+  <TypeSignature Language="C#" Value="public class PullRequestTrigger : Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PullRequestTrigger extends Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger" />
+  <TypeSignature Language="VB.NET" Value="Public Class PullRequestTrigger&#xA;Inherits BuildTrigger" />
+  <TypeSignature Language="F#" Value="type PullRequestTrigger = class&#xA;    inherit BuildTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Build.WebApi.BuildTrigger</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a pull request trigger.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PullRequestTrigger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoCancel">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AutoCancel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AutoCancel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.AutoCancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCancel As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AutoCancel : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.AutoCancel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="AutoCancel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if an update to a PR should delete current in-progress builds.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BranchFilters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; BranchFilters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; BranchFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.BranchFilters" />
+      <MemberSignature Language="VB.NET" Value="Public Property BranchFilters As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.BranchFilters : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.BranchFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of filters that describe which branches will trigger builds.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Forks">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.Forks Forks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Build.WebApi.Forks Forks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.Forks" />
+      <MemberSignature Language="VB.NET" Value="Public Property Forks As Forks" />
+      <MemberSignature Language="F#" Value="member this.Forks : Microsoft.TeamFoundation.Build.WebApi.Forks with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.Forks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.Forks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes if forks of a selected repository should build and use secrets.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCommentRequiredForPullRequest">
+      <MemberSignature Language="C#" Value="public bool IsCommentRequiredForPullRequest { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCommentRequiredForPullRequest" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.IsCommentRequiredForPullRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCommentRequiredForPullRequest As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCommentRequiredForPullRequest : bool with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.IsCommentRequiredForPullRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathFilters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; PathFilters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; PathFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.PathFilters" />
+      <MemberSignature Language="VB.NET" Value="Public Property PathFilters As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PathFilters : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.PathFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of filters that describe which paths will trigger builds.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SettingsSourceType">
+      <MemberSignature Language="C#" Value="public int SettingsSourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SettingsSourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.SettingsSourceType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SettingsSourceType As Integer" />
+      <MemberSignature Language="F#" Value="member this.SettingsSourceType : int with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.SettingsSourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

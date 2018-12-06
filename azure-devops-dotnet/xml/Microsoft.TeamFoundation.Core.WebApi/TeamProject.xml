@@ -1,0 +1,176 @@
+﻿<Type Name="TeamProject" FullName="Microsoft.TeamFoundation.Core.WebApi.TeamProject">
+  <TypeSignature Language="C#" Value="public class TeamProject : Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TeamProject extends Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.TeamProject" />
+  <TypeSignature Language="VB.NET" Value="Public Class TeamProject&#xA;Inherits TeamProjectReference" />
+  <TypeSignature Language="F#" Value="type TeamProject = class&#xA;    inherit TeamProjectReference" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a Team Project object.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamProject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.TeamProject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamProject (Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference projectReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference projectReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.TeamProject.#ctor(Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (projectReference As TeamProjectReference)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Core.WebApi.TeamProject : Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference -&gt; Microsoft.TeamFoundation.Core.WebApi.TeamProject" Usage="new Microsoft.TeamFoundation.Core.WebApi.TeamProject projectReference" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectReference" Type="Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference" />
+      </Parameters>
+      <Docs>
+        <param name="projectReference">Reference upon which to base this project.</param>
+        <summary>
+            Initializes a team project from a team project reference.
+            </summary>
+        <remarks>Will create the reference links object and add the self reference.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capabilities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; Capabilities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; Capabilities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.TeamProject.Capabilities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Capabilities As Dictionary(Of String, Dictionary(Of String, String))" />
+      <MemberSignature Language="F#" Value="member this.Capabilities : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.Dictionary&lt;string, string&gt;&gt; with get, set" Usage="Microsoft.TeamFoundation.Core.WebApi.TeamProject.Capabilities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Set of capabilities this project has (such as process template &amp; version control).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTeam">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Core.WebApi.WebApiTeamRef DefaultTeam { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Core.WebApi.WebApiTeamRef DefaultTeam" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.TeamProject.DefaultTeam" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultTeam As WebApiTeamRef" />
+      <MemberSignature Language="F#" Value="member this.DefaultTeam : Microsoft.TeamFoundation.Core.WebApi.WebApiTeamRef with get, set" Usage="Microsoft.TeamFoundation.Core.WebApi.TeamProject.DefaultTeam" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Core.WebApi.WebApiTeamRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The shallow ref to the default team.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Links">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.ReferenceLinks Links { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.ReferenceLinks Links" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.TeamProject.Links" />
+      <MemberSignature Language="VB.NET" Value="Public Property Links As ReferenceLinks" />
+      <MemberSignature Language="F#" Value="member this.Links : Microsoft.VisualStudio.Services.WebApi.ReferenceLinks with get, set" Usage="Microsoft.TeamFoundation.Core.WebApi.TeamProject.Links" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="_links", Order=7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.ReferenceLinks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The links to other objects related to this object.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TfsUri">
+      <MemberSignature Language="C#" Value="public string TfsUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TfsUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.TeamProject.TfsUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property TfsUri As String" />
+      <MemberSignature Language="F#" Value="member this.TfsUri : string with get, set" Usage="Microsoft.TeamFoundation.Core.WebApi.TeamProject.TfsUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tfs Uri to this project - useful when querying teams.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

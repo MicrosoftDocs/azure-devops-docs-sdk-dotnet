@@ -1,0 +1,489 @@
+﻿<Type Name="TestHttpClient" FullName="Microsoft.TeamFoundation.Test.WebApi.TestHttpClient">
+  <TypeSignature Language="C#" Value="public class TestHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase, Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi TestHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase implements class Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class TestHttpClient&#xA;Inherits VssHttpClientBase&#xA;Implements ITestHttpClient" />
+  <TypeSignature Language="F#" Value="type TestHttpClient = class&#xA;    inherit VssHttpClientBase&#xA;    interface ITestHttpClient" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("3b95fb80-fdda-4218-b60e-1052d070ae6b")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials -&gt; Microsoft.TeamFoundation.Test.WebApi.TestHttpClient" Usage="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient (baseUrl, credentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings -&gt; Microsoft.TeamFoundation.Test.WebApi.TestHttpClient" Usage="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient (baseUrl, credentials, settings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.TeamFoundation.Test.WebApi.TestHttpClient" Usage="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient (baseUrl, credentials, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestHttpClient (Uri baseUrl, System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, pipeline As HttpMessageHandler, disposeHandler As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient : Uri * System.Net.Http.HttpMessageHandler * bool -&gt; Microsoft.TeamFoundation.Test.WebApi.TestHttpClient" Usage="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient (baseUrl, pipeline, disposeHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="pipeline" Type="System.Net.Http.HttpMessageHandler" />
+        <Parameter Name="disposeHandler" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="pipeline">To be added.</param>
+        <param name="disposeHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.TeamFoundation.Test.WebApi.TestHttpClient" Usage="new Microsoft.TeamFoundation.Test.WebApi.TestHttpClient (baseUrl, credentials, settings, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAgentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt; CreateAgentAsync (Microsoft.TeamFoundation.Test.WebApi.TestAgent testAgent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt; CreateAgentAsync(class Microsoft.TeamFoundation.Test.WebApi.TestAgent testAgent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.CreateAgentAsync(Microsoft.TeamFoundation.Test.WebApi.TestAgent)" />
+      <MemberSignature Language="F#" Value="abstract member CreateAgentAsync : Microsoft.TeamFoundation.Test.WebApi.TestAgent -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;&#xA;override this.CreateAgentAsync : Microsoft.TeamFoundation.Test.WebApi.TestAgent -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;" Usage="testHttpClient.CreateAgentAsync testAgent" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.CreateAgentAsync(Microsoft.TeamFoundation.Test.WebApi.TestAgent)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testAgent" Type="Microsoft.TeamFoundation.Test.WebApi.TestAgent" />
+      </Parameters>
+      <Docs>
+        <param name="testAgent">TestAgent object</param>
+        <summary>
+            Sends REST based msg to Server for creating new entry of Test Agent.
+            This API can be consumed in Registration Process.
+            </summary>
+        <returns>TestAgent Object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAgentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteAgentAsync (int id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAgentAsync(int32 id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.DeleteAgentAsync(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteAgentAsync (id As Integer) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAgentAsync : int -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteAgentAsync : int -&gt; System.Threading.Tasks.Task" Usage="testHttpClient.DeleteAgentAsync id" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.DeleteAgentAsync(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="id">TestAgent Id</param>
+        <summary>
+            Sends REST based msg to Server for deleting an existing entry of Test Agent
+            This API can be consume in UnRegisteration process
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAgentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt; GetAgentAsync (int id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt; GetAgentAsync(int32 id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.GetAgentAsync(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAgentAsync (id As Integer) As Task(Of TestAgent)" />
+      <MemberSignature Language="F#" Value="abstract member GetAgentAsync : int -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;&#xA;override this.GetAgentAsync : int -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;" Usage="testHttpClient.GetAgentAsync id" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.GetAgentAsync(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="id">TestAgent Id</param>
+        <summary>
+            Sends REST based msg to Server for getting TestAgent object based on TestAgentId
+            This API can be consumed in Query process
+            </summary>
+        <returns>Test Agent object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommandAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt; GetCommandAsync (int testAgentId, Nullable&lt;long&gt; lastCommandId = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt; GetCommandAsync(int32 testAgentId, valuetype System.Nullable`1&lt;int64&gt; lastCommandId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.GetCommandAsync(System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetCommandAsync : int * Nullable&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt;&#xA;override this.GetCommandAsync : int * Nullable&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt;" Usage="testHttpClient.GetCommandAsync (testAgentId, lastCommandId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.GetCommandAsync(System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testAgentId" Type="System.Int32" />
+        <Parameter Name="lastCommandId" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testAgentId">The test agent which calls this api.</param>
+        <param name="lastCommandId">The last command Id which agent has already read.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            Gets test command that is in queue after lastCommandId.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRerunConfigurationAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt; GetRerunConfigurationAsync (Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration testRunExecutionConfiguration, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt; GetRerunConfigurationAsync(class Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration testRunExecutionConfiguration, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.GetRerunConfigurationAsync(Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetRerunConfigurationAsync : Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt;&#xA;override this.GetRerunConfigurationAsync : Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt;" Usage="testHttpClient.GetRerunConfigurationAsync (testRunExecutionConfiguration, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.GetRerunConfigurationAsync(Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testRunExecutionConfiguration" Type="Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testRunExecutionConfiguration"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] http://(tfsserver):8080/tfs/DefaultCollection/_apis/test/TestExecutionConfiguration/ Request: Json of TestRun
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSliceAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt; GetSliceAsync (int testAgentId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt; GetSliceAsync(int32 testAgentId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.GetSliceAsync(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSliceAsync (testAgentId As Integer) As Task(Of TestAutomationRunSlice)" />
+      <MemberSignature Language="F#" Value="abstract member GetSliceAsync : int -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt;&#xA;override this.GetSliceAsync : int -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt;" Usage="testHttpClient.GetSliceAsync testAgentId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.GetSliceAsync(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testAgentId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="testAgentId">the unique ID of the agent</param>
+        <summary>
+            Sends a Rest based request to the server asking for a AutomatedTestRunSlice
+            </summary>
+        <returns>
+            returns a AotmatedTestRunSlice which agent can process.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpClient">
+      <MemberSignature Language="C#" Value="public System.Net.Http.HttpClient HttpClient { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.HttpClient HttpClient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.HttpClient" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpClient As HttpClient" />
+      <MemberSignature Language="F#" Value="member this.HttpClient : System.Net.Http.HttpClient" Usage="Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.HttpClient" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.HttpClient</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongPollTimeOutForMessageQueueInSeconds">
+      <MemberSignature Language="C#" Value="public static int LongPollTimeOutForMessageQueueInSeconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 LongPollTimeOutForMessageQueueInSeconds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.LongPollTimeOutForMessageQueueInSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LongPollTimeOutForMessageQueueInSeconds As Integer" />
+      <MemberSignature Language="F#" Value="member this.LongPollTimeOutForMessageQueueInSeconds : int" Usage="Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.LongPollTimeOutForMessageQueueInSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslatedExceptions">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.IDictionary&lt;string,Type&gt; TranslatedExceptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Type&gt; TranslatedExceptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.TranslatedExceptions" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TranslatedExceptions As IDictionary(Of String, Type)" />
+      <MemberSignature Language="F#" Value="member this.TranslatedExceptions : System.Collections.Generic.IDictionary&lt;string, Type&gt;" Usage="Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.TranslatedExceptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSliceAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpdateSliceAsync (Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice sliceUpdatePackage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task UpdateSliceAsync(class Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice sliceUpdatePackage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.UpdateSliceAsync(Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateSliceAsync (sliceUpdatePackage As TestAutomationRunSlice) As Task" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSliceAsync : Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice -&gt; System.Threading.Tasks.Task&#xA;override this.UpdateSliceAsync : Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice -&gt; System.Threading.Tasks.Task" Usage="testHttpClient.UpdateSliceAsync sliceUpdatePackage" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.UpdateSliceAsync(Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sliceUpdatePackage" Type="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice" />
+      </Parameters>
+      <Docs>
+        <param name="sliceUpdatePackage">The update slice result.</param>
+        <summary>
+            Sends a Rest based request to the server for updating slice results
+            </summary>
+        <returns>Returns a task for the rest call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestRunAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt; UpdateTestRunAsync (Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun distributedTestRun, string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt; UpdateTestRunAsync(class Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun distributedTestRun, string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestHttpClient.UpdateTestRunAsync(Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestRunAsync : Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt;&#xA;override this.UpdateTestRunAsync : Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt;" Usage="testHttpClient.UpdateTestRunAsync (distributedTestRun, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.UpdateTestRunAsync(Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun,System.String,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="distributedTestRun" Type="Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="distributedTestRun"></param>
+        <param name="project"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] http://(tfsserver):8080/tfs/DefaultCollection/_apis/test/DistributedTestRuns/ Request: Json of TestRun
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

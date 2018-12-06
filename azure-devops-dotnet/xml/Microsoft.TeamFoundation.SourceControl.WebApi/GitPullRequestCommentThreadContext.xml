@@ -1,0 +1,158 @@
+﻿<Type Name="GitPullRequestCommentThreadContext" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext">
+  <TypeSignature Language="C#" Value="public class GitPullRequestCommentThreadContext : Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GitPullRequestCommentThreadContext extends Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class GitPullRequestCommentThreadContext&#xA;Inherits VersionControlSecuredObject" />
+  <TypeSignature Language="F#" Value="type GitPullRequestCommentThreadContext = class&#xA;    inherit VersionControlSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Comment thread context contains details about what diffs were being viewed at the time of
+            thread creation and whether or not the thread has been tracked from that original diff.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitPullRequestCommentThreadContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeTrackingId">
+      <MemberSignature Language="C#" Value="public int ChangeTrackingId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChangeTrackingId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext.ChangeTrackingId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeTrackingId As Integer" />
+      <MemberSignature Language="F#" Value="member this.ChangeTrackingId : int with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext.ChangeTrackingId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Used to track a comment across iterations.
+            This value can be found by looking at the iteration's changes list.
+            Must be set for pull requests with iteration support. Otherwise, it's not required for 'legacy' pull requests. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IterationContext">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.CommentIterationContext IterationContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.CommentIterationContext IterationContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext.IterationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property IterationContext As CommentIterationContext" />
+      <MemberSignature Language="F#" Value="member this.IterationContext : Microsoft.TeamFoundation.SourceControl.WebApi.CommentIterationContext with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext.IterationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.CommentIterationContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The iteration context being viewed when the thread was created.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredObject">
+      <MemberSignature Language="C#" Value="public override void SetSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext.SetSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetSecuredObject (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="override this.SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit" Usage="gitPullRequestCommentThreadContext.SetSecuredObject securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackingCriteria">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria TrackingCriteria { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria TrackingCriteria" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext.TrackingCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrackingCriteria As CommentTrackingCriteria" />
+      <MemberSignature Language="F#" Value="member this.TrackingCriteria : Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequestCommentThreadContext.TrackingCriteria" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.CommentTrackingCriteria</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The criteria used to track this thread. If this property is filled out when the thread is returned, then
+            the thread has been tracked from its original location using the given criteria.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

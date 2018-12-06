@@ -1,0 +1,127 @@
+﻿<Type Name="ChangeListHelpers" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers">
+  <TypeSignature Language="C#" Value="public static class ChangeListHelpers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ChangeListHelpers extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChangeListHelpers" />
+  <TypeSignature Language="F#" Value="type ChangeListHelpers = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ComputeChangeCounts">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,int&gt; ComputeChangeCounts (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitChange&gt; changes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType, int32&gt; ComputeChangeCounts(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitChange&gt; changes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers.ComputeChangeCounts(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.SourceControl.WebApi.GitChange})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComputeChangeCounts (changes As IEnumerable(Of GitChange)) As Dictionary(Of VersionControlChangeType, Integer)" />
+      <MemberSignature Language="F#" Value="static member ComputeChangeCounts : seq&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitChange&gt; -&gt; System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType, int&gt;" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers.ComputeChangeCounts changes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="changes" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitChange&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="changes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeChangeCounts">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,int&gt; ComputeChangeCounts (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt; changes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType, int32&gt; ComputeChangeCounts(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt; changes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers.ComputeChangeCounts(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ComputeChangeCounts (changes As IEnumerable(Of TfvcChange)) As Dictionary(Of VersionControlChangeType, Integer)" />
+      <MemberSignature Language="F#" Value="static member ComputeChangeCounts : seq&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt; -&gt; System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType, int&gt;" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers.ComputeChangeCounts changes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="changes" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="changes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementChangeCounts">
+      <MemberSignature Language="C#" Value="public static void IncrementChangeCounts (System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,int&gt; changeCounts, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType changeType, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IncrementChangeCounts(class System.Collections.Generic.Dictionary`2&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType, int32&gt; changeCounts, valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType changeType, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers.IncrementChangeCounts(System.Collections.Generic.Dictionary{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,System.Int32},Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub IncrementChangeCounts (changeCounts As Dictionary(Of VersionControlChangeType, Integer), changeType As VersionControlChangeType, count As Integer)" />
+      <MemberSignature Language="F#" Value="static member IncrementChangeCounts : System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType, int&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType * int -&gt; unit" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers.IncrementChangeCounts (changeCounts, changeType, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="changeCounts" Type="System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,System.Int32&gt;" />
+        <Parameter Name="changeType" Type="Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="changeCounts">To be added.</param>
+        <param name="changeType">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementChangeFlagCount">
+      <MemberSignature Language="C#" Value="public static void IncrementChangeFlagCount (System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,int&gt; changeCounts, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType changeFlag, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IncrementChangeFlagCount(class System.Collections.Generic.Dictionary`2&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType, int32&gt; changeCounts, valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType changeFlag, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers.IncrementChangeFlagCount(System.Collections.Generic.Dictionary{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,System.Int32},Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub IncrementChangeFlagCount (changeCounts As Dictionary(Of VersionControlChangeType, Integer), changeFlag As VersionControlChangeType, count As Integer)" />
+      <MemberSignature Language="F#" Value="static member IncrementChangeFlagCount : System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType, int&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType * int -&gt; unit" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.ChangeListHelpers.IncrementChangeFlagCount (changeCounts, changeFlag, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="changeCounts" Type="System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType,System.Int32&gt;" />
+        <Parameter Name="changeFlag" Type="Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlChangeType" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="changeCounts">To be added.</param>
+        <param name="changeFlag">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

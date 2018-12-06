@@ -1,0 +1,208 @@
+﻿<Type Name="TaggingHelper" FullName="Microsoft.TeamFoundation.Core.WebApi.TaggingHelper">
+  <TypeSignature Language="C#" Value="public class TaggingHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaggingHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaggingHelper" />
+  <TypeSignature Language="F#" Value="type TaggingHelper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaggingHelper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTagDefinitionLimit">
+      <MemberSignature Language="C#" Value="public const int DefaultTagDefinitionLimit = 100000;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultTagDefinitionLimit = (100000)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.DefaultTagDefinitionLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultTagDefinitionLimit As Integer  = 100000" />
+      <MemberSignature Language="F#" Value="val mutable DefaultTagDefinitionLimit : int" Usage="Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.DefaultTagDefinitionLimit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>100000</MemberValue>
+      <Docs>
+        <summary>
+            Max number of tag definitions allowed per account
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnforceTagLimitsFeatureFlag">
+      <MemberSignature Language="C#" Value="public const string EnforceTagLimitsFeatureFlag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string EnforceTagLimitsFeatureFlag" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.EnforceTagLimitsFeatureFlag" />
+      <MemberSignature Language="VB.NET" Value="Public Const EnforceTagLimitsFeatureFlag As String " />
+      <MemberSignature Language="F#" Value="val mutable EnforceTagLimitsFeatureFlag : string" Usage="Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.EnforceTagLimitsFeatureFlag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatTagsValue">
+      <MemberSignature Language="C#" Value="public static string FormatTagsValue (System.Collections.Generic.IEnumerable&lt;string&gt; tags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatTagsValue(class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.FormatTagsValue(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FormatTagsValue (tags As IEnumerable(Of String)) As String" />
+      <MemberSignature Language="F#" Value="static member FormatTagsValue : seq&lt;string&gt; -&gt; string" Usage="Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.FormatTagsValue tags" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="tags">A collection of tag names</param>
+        <summary>
+            Return a user friendly string representing a set of tags (does not reorder tags)
+            </summary>
+        <returns>delimiter joined string representing the tags.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxTagNameLength">
+      <MemberSignature Language="C#" Value="public const int MaxTagNameLength = 400;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MaxTagNameLength = (400)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.MaxTagNameLength" />
+      <MemberSignature Language="VB.NET" Value="Public Const MaxTagNameLength As Integer  = 400" />
+      <MemberSignature Language="F#" Value="val mutable MaxTagNameLength : int" Usage="Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.MaxTagNameLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>400</MemberValue>
+      <Docs>
+        <summary>
+            Max length for a Tag Name
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitTagText">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; SplitTagText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; SplitTagText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.SplitTagText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SplitTagText (text As String) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="static member SplitTagText : string -&gt; seq&lt;string&gt;" Usage="Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.SplitTagText text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The string to split</param>
+        <summary>
+            Splits a string of tags and their delimiters into a collection of individual tag values
+            </summary>
+        <returns>A collection of tag names</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagLimitRegistryPath">
+      <MemberSignature Language="C#" Value="public const string TagLimitRegistryPath;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TagLimitRegistryPath" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.TagLimitRegistryPath" />
+      <MemberSignature Language="VB.NET" Value="Public Const TagLimitRegistryPath As String " />
+      <MemberSignature Language="F#" Value="val mutable TagLimitRegistryPath : string" Usage="Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.TagLimitRegistryPath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Registry setting to override the default tag limit
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagSeparators">
+      <MemberSignature Language="C#" Value="public static readonly char[] TagSeparators;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly char[] TagSeparators" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.TagSeparators" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TagSeparators As Char() " />
+      <MemberSignature Language="F#" Value=" staticval mutable TagSeparators : char[]" Usage="Microsoft.TeamFoundation.Core.WebApi.TaggingHelper.TagSeparators" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tag seperator characters
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

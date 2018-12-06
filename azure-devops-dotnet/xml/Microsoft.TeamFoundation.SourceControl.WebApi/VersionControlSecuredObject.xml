@@ -1,0 +1,211 @@
+﻿<Type Name="VersionControlSecuredObject" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject">
+  <TypeSignature Language="C#" Value="public abstract class VersionControlSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VersionControlSecuredObject extends System.Object implements class Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class VersionControlSecuredObject&#xA;Implements ISecuredObject" />
+  <TypeSignature Language="F#" Value="type VersionControlSecuredObject = class&#xA;    interface ISecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualStudio.Services.WebApi.ISecuredObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.SourceControl.WebApi.GitPushRef))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Base class for Web API data contracts that implements ISecuredObject for public projects
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VersionControlSecuredObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VersionControlSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject.#ctor(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" Usage="new Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject securedObject" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken">
+      <MemberSignature Language="C#" Value="string ISecuredObject.GetToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#GetToken" />
+      <MemberSignature Language="VB.NET" Value="Function GetToken () As String Implements ISecuredObject.GetToken" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId">
+      <MemberSignature Language="C#" Value="Guid Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#NamespaceId" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property NamespaceId As Guid Implements ISecuredObject.NamespaceId" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.IgnoreDataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions">
+      <MemberSignature Language="C#" Value="int Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#RequiredPermissions" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RequiredPermissions As Integer Implements ISecuredObject.RequiredPermissions" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.IgnoreDataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredObject">
+      <MemberSignature Language="C#" Value="public virtual void SetSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject.SetSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSecuredObject (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="abstract member SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit&#xA;override this.SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit" Usage="versionControlSecuredObject.SetSecuredObject securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredObject">
+      <MemberSignature Language="C#" Value="protected static void SetSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject&gt; securableObjects);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void SetSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject&gt; securableObjects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject.SetSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject,System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject})" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub SetSecuredObject (securedObject As ISecuredObject, securableObjects As IEnumerable(Of VersionControlSecuredObject))" />
+      <MemberSignature Language="F#" Value="static member SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject * seq&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject&gt; -&gt; unit" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject.SetSecuredObject (securedObject, securableObjects)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+        <Parameter Name="securableObjects" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <param name="securableObjects">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

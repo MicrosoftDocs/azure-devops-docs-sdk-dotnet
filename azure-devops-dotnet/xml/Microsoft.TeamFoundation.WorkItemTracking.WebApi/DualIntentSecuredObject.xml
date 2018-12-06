@@ -1,0 +1,287 @@
+﻿<Type Name="DualIntentSecuredObject" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject">
+  <TypeSignature Language="C#" Value="public abstract class DualIntentSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DualIntentSecuredObject extends System.Object implements class Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DualIntentSecuredObject&#xA;Implements ISecuredObject" />
+  <TypeSignature Language="F#" Value="type DualIntentSecuredObject = class&#xA;    interface ISecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualStudio.Services.WebApi.ISecuredObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Dual intent object with ISecuredObject implementation at collection/project level respectively
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DualIntentSecuredObject (Nullable&lt;Guid&gt; filterUnderProjectId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; filterUnderProjectId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.#ctor(System.Nullable{System.Guid})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filterUnderProjectId As Nullable(Of Guid))" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject : Nullable&lt;Guid&gt; -&gt; Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject" Usage="new Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject filterUnderProjectId" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filterUnderProjectId" Type="System.Nullable&lt;System.Guid&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="filterUnderProjectId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionScopeNamespaceId">
+      <MemberSignature Language="C#" Value="protected abstract Guid CollectionScopeNamespaceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid CollectionScopeNamespaceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.CollectionScopeNamespaceId" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property CollectionScopeNamespaceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.CollectionScopeNamespaceId : Guid" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.CollectionScopeNamespaceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionScopeRequiredPermissions">
+      <MemberSignature Language="C#" Value="protected abstract int CollectionScopeRequiredPermissions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CollectionScopeRequiredPermissions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.CollectionScopeRequiredPermissions" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property CollectionScopeRequiredPermissions As Integer" />
+      <MemberSignature Language="F#" Value="member this.CollectionScopeRequiredPermissions : int" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.CollectionScopeRequiredPermissions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionScopeToken">
+      <MemberSignature Language="C#" Value="protected abstract string CollectionScopeToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CollectionScopeToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.CollectionScopeToken" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property CollectionScopeToken As String" />
+      <MemberSignature Language="F#" Value="member this.CollectionScopeToken : string" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.CollectionScopeToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_isCollectionApi">
+      <MemberSignature Language="C#" Value="protected bool m_isCollectionApi;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool m_isCollectionApi" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.m_isCollectionApi" />
+      <MemberSignature Language="VB.NET" Value="Protected m_isCollectionApi As Boolean " />
+      <MemberSignature Language="F#" Value="val mutable m_isCollectionApi : bool" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.m_isCollectionApi" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_projectId">
+      <MemberSignature Language="C#" Value="protected Nullable&lt;Guid&gt; m_projectId;" />
+      <MemberSignature Language="ILAsm" Value=".field family valuetype System.Nullable`1&lt;valuetype System.Guid&gt; m_projectId" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.m_projectId" />
+      <MemberSignature Language="VB.NET" Value="Protected m_projectId As Nullable(Of Guid) " />
+      <MemberSignature Language="F#" Value="val mutable m_projectId : Nullable&lt;Guid&gt;" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.m_projectId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken">
+      <MemberSignature Language="C#" Value="string ISecuredObject.GetToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#GetToken" />
+      <MemberSignature Language="VB.NET" Value="Function GetToken () As String Implements ISecuredObject.GetToken" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId">
+      <MemberSignature Language="C#" Value="Guid Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#NamespaceId" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property NamespaceId As Guid Implements ISecuredObject.NamespaceId" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions">
+      <MemberSignature Language="C#" Value="int Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#RequiredPermissions" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RequiredPermissions As Integer Implements ISecuredObject.RequiredPermissions" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectScopeNamespaceId">
+      <MemberSignature Language="C#" Value="protected abstract Guid ProjectScopeNamespaceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ProjectScopeNamespaceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.ProjectScopeNamespaceId" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property ProjectScopeNamespaceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.ProjectScopeNamespaceId : Guid" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.ProjectScopeNamespaceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectScopeRequiredPermissions">
+      <MemberSignature Language="C#" Value="protected abstract int ProjectScopeRequiredPermissions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ProjectScopeRequiredPermissions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.ProjectScopeRequiredPermissions" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property ProjectScopeRequiredPermissions As Integer" />
+      <MemberSignature Language="F#" Value="member this.ProjectScopeRequiredPermissions : int" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.ProjectScopeRequiredPermissions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectScopeToken">
+      <MemberSignature Language="C#" Value="protected abstract string ProjectScopeToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProjectScopeToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.ProjectScopeToken" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property ProjectScopeToken As String" />
+      <MemberSignature Language="F#" Value="member this.ProjectScopeToken : string" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.ProjectScopeToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

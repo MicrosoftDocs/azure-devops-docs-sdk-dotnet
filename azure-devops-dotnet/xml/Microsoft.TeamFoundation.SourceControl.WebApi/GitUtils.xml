@@ -1,0 +1,364 @@
+﻿<Type Name="GitUtils" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils">
+  <TypeSignature Language="C#" Value="public static class GitUtils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GitUtils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils" />
+  <TypeSignature Language="VB.NET" Value="Public Class GitUtils" />
+  <TypeSignature Language="F#" Value="type GitUtils = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendBytesToStringBuilder">
+      <MemberSignature Language="C#" Value="public static void AppendBytesToStringBuilder (System.Text.StringBuilder builder, ArraySegment&lt;byte&gt; bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AppendBytesToStringBuilder(class System.Text.StringBuilder builder, valuetype System.ArraySegment`1&lt;unsigned int8&gt; bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.AppendBytesToStringBuilder(System.Text.StringBuilder,System.ArraySegment{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AppendBytesToStringBuilder (builder As StringBuilder, bytes As ArraySegment(Of Byte))" />
+      <MemberSignature Language="F#" Value="static member AppendBytesToStringBuilder : System.Text.StringBuilder * ArraySegment&lt;byte&gt; -&gt; unit" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.AppendBytesToStringBuilder (builder, bytes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Text.StringBuilder" />
+        <Parameter Name="bytes" Type="System.ArraySegment&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <summary>
+            Append <paramref name="bytes" /> to <paramref name="builder" /> as a lower case hex string.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendUrl">
+      <MemberSignature Language="C#" Value="public static string AppendUrl (string url, string pathToAppend);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string AppendUrl(string url, string pathToAppend) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.AppendUrl(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AppendUrl (url As String, pathToAppend As String) As String" />
+      <MemberSignature Language="F#" Value="static member AppendUrl : string * string -&gt; string" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.AppendUrl (url, pathToAppend)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="pathToAppend" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <param name="pathToAppend">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ByteArraysAreEqual">
+      <MemberSignature Language="C#" Value="public static bool ByteArraysAreEqual (byte[] x, byte[] y, int expectedLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ByteArraysAreEqual(unsigned int8[] x, unsigned int8[] y, int32 expectedLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.ByteArraysAreEqual(System.Byte[],System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ByteArraysAreEqual (x As Byte(), y As Byte(), expectedLength As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ByteArraysAreEqual : byte[] * byte[] * int -&gt; bool" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.ByteArraysAreEqual (x, y, expectedLength)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Byte[]" />
+        <Parameter Name="y" Type="System.Byte[]" />
+        <Parameter Name="expectedLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="expectedLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateSecurable">
+      <MemberSignature Language="C#" Value="public static string CalculateSecurable (Guid projectId, Guid repositoryId, string refName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CalculateSecurable(valuetype System.Guid projectId, valuetype System.Guid repositoryId, string refName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CalculateSecurable(System.Guid,System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CalculateSecurable (projectId As Guid, repositoryId As Guid, refName As String) As String" />
+      <MemberSignature Language="F#" Value="static member CalculateSecurable : Guid * Guid * string -&gt; string" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CalculateSecurable (projectId, repositoryId, refName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectId" Type="System.Guid" />
+        <Parameter Name="repositoryId" Type="System.Guid" />
+        <Parameter Name="refName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectId">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="refName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateSecurable">
+      <MemberSignature Language="C#" Value="public static string CalculateSecurable (string teamProjectUri, Guid repositoryId, string refName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CalculateSecurable(string teamProjectUri, valuetype System.Guid repositoryId, string refName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CalculateSecurable(System.String,System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CalculateSecurable (teamProjectUri As String, repositoryId As Guid, refName As String) As String" />
+      <MemberSignature Language="F#" Value="static member CalculateSecurable : string * Guid * string -&gt; string" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CalculateSecurable (teamProjectUri, repositoryId, refName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamProjectUri" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.Guid" />
+        <Parameter Name="refName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="teamProjectUri">To be added.</param>
+        <param name="repositoryId">To be added.</param>
+        <param name="refName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareByteArrays">
+      <MemberSignature Language="C#" Value="public static bool CompareByteArrays (byte[] b1, int b1start, byte[] b2, int b2start, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareByteArrays(unsigned int8[] b1, int32 b1start, unsigned int8[] b2, int32 b2start, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CompareByteArrays(System.Byte[],System.Int32,System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareByteArrays (b1 As Byte(), b1start As Integer, b2 As Byte(), b2start As Integer, length As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CompareByteArrays : byte[] * int * byte[] * int * int -&gt; bool" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CompareByteArrays (b1, b1start, b2, b2start, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b1" Type="System.Byte[]" />
+        <Parameter Name="b1start" Type="System.Int32" />
+        <Parameter Name="b2" Type="System.Byte[]" />
+        <Parameter Name="b2start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="b1">To be added.</param>
+        <param name="b1start">To be added.</param>
+        <param name="b2">To be added.</param>
+        <param name="b2start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFriendlyBranchName">
+      <MemberSignature Language="C#" Value="public static string GetFriendlyBranchName (string refName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFriendlyBranchName(string refName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.GetFriendlyBranchName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFriendlyBranchName (refName As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetFriendlyBranchName : string -&gt; string" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.GetFriendlyBranchName refName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="refName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="refName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPermissionFlags">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.SourceControl.WebApi.GitRepositoryPermissions GetPermissionFlags (string[] permissionList);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRepositoryPermissions GetPermissionFlags(string[] permissionList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.GetPermissionFlags(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPermissionFlags (permissionList As String()) As GitRepositoryPermissions" />
+      <MemberSignature Language="F#" Value="static member GetPermissionFlags : string[] -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.GitRepositoryPermissions" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.GetPermissionFlags permissionList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRepositoryPermissions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permissionList" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permissionList">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectIdFromUTF8Bytes">
+      <MemberSignature Language="C#" Value="public static byte[] ObjectIdFromUTF8Bytes (byte[] bytes, int start = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] ObjectIdFromUTF8Bytes(unsigned int8[] bytes, int32 start) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.ObjectIdFromUTF8Bytes(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ObjectIdFromUTF8Bytes (bytes As Byte(), Optional start As Integer = 0) As Byte()" />
+      <MemberSignature Language="F#" Value="static member ObjectIdFromUTF8Bytes : byte[] * int -&gt; byte[]" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.ObjectIdFromUTF8Bytes (bytes, start)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="start" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">To be added.</param>
+        <param name="start">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeUnicodeLENoBOM">
+      <MemberSignature Language="C#" Value="public static readonly System.Text.Encoding SafeUnicodeLENoBOM;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Text.Encoding SafeUnicodeLENoBOM" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.SafeUnicodeLENoBOM" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SafeUnicodeLENoBOM As Encoding " />
+      <MemberSignature Language="F#" Value=" staticval mutable SafeUnicodeLENoBOM : System.Text.Encoding" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.SafeUnicodeLENoBOM" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a <see cref="T:System.Text.UnicodeEncoding" /> (without BOM) that throws when decoding invalid byte sequences or
+            encoding unsupported char sequences (Unicode can't encode strings w/ invalid surrogate
+            pair sequences).  Use this instead of <see cref="P:System.Text.Encoding.Unicode" />, which uses a
+            fallback character instead of throwing, which leads to silent corruption.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringFromByteArray">
+      <MemberSignature Language="C#" Value="public static string StringFromByteArray (byte[] byteArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string StringFromByteArray(unsigned int8[] byteArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.StringFromByteArray(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringFromByteArray (byteArray As Byte()) As String" />
+      <MemberSignature Language="F#" Value="static member StringFromByteArray : byte[] -&gt; string" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.StringFromByteArray byteArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="byteArray" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="byteArray">To be added.</param>
+        <summary>
+            Convert the byte array to a lower case hex string.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetByteArrayFromString">
+      <MemberSignature Language="C#" Value="public static bool TryGetByteArrayFromString (string objectId, int expectedStringLength, out byte[] parsedObjectId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetByteArrayFromString(string objectId, int32 expectedStringLength, [out] unsigned int8[]&amp; parsedObjectId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.TryGetByteArrayFromString(System.String,System.Int32,System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetByteArrayFromString (objectId As String, expectedStringLength As Integer, ByRef parsedObjectId As Byte()) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryGetByteArrayFromString : string * int *  -&gt; bool" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.TryGetByteArrayFromString (objectId, expectedStringLength, parsedObjectId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectId" Type="System.String" />
+        <Parameter Name="expectedStringLength" Type="System.Int32" />
+        <Parameter Name="parsedObjectId" Type="System.Byte[]" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="objectId">To be added.</param>
+        <param name="expectedStringLength">To be added.</param>
+        <param name="parsedObjectId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

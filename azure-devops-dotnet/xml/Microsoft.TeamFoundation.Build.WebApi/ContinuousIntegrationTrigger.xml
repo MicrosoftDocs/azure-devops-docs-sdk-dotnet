@@ -1,0 +1,233 @@
+﻿<Type Name="ContinuousIntegrationTrigger" FullName="Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger">
+  <TypeSignature Language="C#" Value="public sealed class ContinuousIntegrationTrigger : Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContinuousIntegrationTrigger extends Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContinuousIntegrationTrigger&#xA;Inherits BuildTrigger" />
+  <TypeSignature Language="F#" Value="type ContinuousIntegrationTrigger = class&#xA;    inherit BuildTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Build.WebApi.BuildTrigger</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a continuous integration (CI) trigger.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContinuousIntegrationTrigger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchChanges">
+      <MemberSignature Language="C#" Value="public bool BatchChanges { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BatchChanges" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.BatchChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Property BatchChanges As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BatchChanges : bool with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.BatchChanges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether changes should be batched while another CI build is running.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            If this is true, then changes submitted while a CI build is running will be batched and built in one new CI build when the current build finishes.
+            If this is false, then a new CI build will be triggered for each change to the repository.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BranchFilters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; BranchFilters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; BranchFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.BranchFilters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BranchFilters As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.BranchFilters : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.BranchFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of filters that describe which branches will trigger builds.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrentBuildsPerBranch">
+      <MemberSignature Language="C#" Value="public int MaxConcurrentBuildsPerBranch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentBuildsPerBranch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.MaxConcurrentBuildsPerBranch" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentBuildsPerBranch As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentBuildsPerBranch : int with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.MaxConcurrentBuildsPerBranch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The maximum number of simultaneous CI builds that will run per branch.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathFilters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; PathFilters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; PathFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.PathFilters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathFilters As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PathFilters : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.PathFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of filters that describe which paths will trigger builds.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PollingInterval">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; PollingInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PollingInterval" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.PollingInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property PollingInterval As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.PollingInterval : Nullable&lt;int&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.PollingInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The polling interval, in seconds.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PollingJobId">
+      <MemberSignature Language="C#" Value="public Guid PollingJobId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid PollingJobId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.PollingJobId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PollingJobId As Guid" />
+      <MemberSignature Language="F#" Value="member this.PollingJobId : Guid with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.PollingJobId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The ID of the job used to poll an external repository.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SettingsSourceType">
+      <MemberSignature Language="C#" Value="public int SettingsSourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SettingsSourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.SettingsSourceType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SettingsSourceType As Integer" />
+      <MemberSignature Language="F#" Value="member this.SettingsSourceType : int with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger.SettingsSourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

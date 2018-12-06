@@ -1,0 +1,1643 @@
+﻿<Type Name="BuildHttpClientCompatBase" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase">
+  <TypeSignature Language="C#" Value="public abstract class BuildHttpClientCompatBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BuildHttpClientCompatBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BuildHttpClientCompatBase&#xA;Inherits VssHttpClientBase" />
+  <TypeSignature Language="F#" Value="type BuildHttpClientCompatBase = class&#xA;    inherit VssHttpClientBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildHttpClientCompatBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials -&gt; Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase" Usage="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase (baseUrl, credentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildHttpClientCompatBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings -&gt; Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase" Usage="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase (baseUrl, credentials, settings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildHttpClientCompatBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase" Usage="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase (baseUrl, credentials, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildHttpClientCompatBase (Uri baseUrl, System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, pipeline As HttpMessageHandler, disposeHandler As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase : Uri * System.Net.Http.HttpMessageHandler * bool -&gt; Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase" Usage="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase (baseUrl, pipeline, disposeHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="pipeline" Type="System.Net.Http.HttpMessageHandler" />
+        <Parameter Name="disposeHandler" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="pipeline">To be added.</param>
+        <param name="disposeHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildHttpClientCompatBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase" Usage="new Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase (baseUrl, credentials, settings, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync (System.Collections.Generic.IEnumerable&lt;int&gt; definitions = null, System.Collections.Generic.IEnumerable&lt;int&gt; queues = null, string buildNumber = null, Nullable&lt;DateTime&gt; minFinishTime = null, Nullable&lt;DateTime&gt; maxFinishTime = null, string requestedFor = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter = null, System.Collections.Generic.IEnumerable&lt;string&gt; tagFilters = null, System.Collections.Generic.IEnumerable&lt;string&gt; properties = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;int&gt; maxBuildsPerDefinition = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder = null, string branchName = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync(class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitions, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; queues, string buildNumber, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minFinishTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; maxFinishTime, string requestedFor, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tagFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; properties, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; maxBuildsPerDefinition, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder, string branchName, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildIds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetBuildsAsync(System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildReason},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildStatus},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildResult},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetBuildsAsync : seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * string * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;&#xA;override this.GetBuildsAsync : seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * string * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;" Usage="buildHttpClientCompatBase.GetBuildsAsync (definitions, queues, buildNumber, minFinishTime, maxFinishTime, requestedFor, reasonFilter, statusFilter, resultFilter, tagFilters, properties, top, continuationToken, maxBuildsPerDefinition, deletedFilter, queryOrder, branchName, buildIds, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="definitions" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="queues" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="buildNumber" Type="System.String" />
+        <Parameter Name="minFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="maxFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="requestedFor" Type="System.String" />
+        <Parameter Name="reasonFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt;" />
+        <Parameter Name="statusFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt;" />
+        <Parameter Name="resultFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt;" />
+        <Parameter Name="tagFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="maxBuildsPerDefinition" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="deletedFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt;" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt;" />
+        <Parameter Name="branchName" Type="System.String" />
+        <Parameter Name="buildIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="definitions">A comma-delimited list of definition ids</param>
+        <param name="queues">A comma-delimited list of queue ids</param>
+        <param name="buildNumber"></param>
+        <param name="minFinishTime"></param>
+        <param name="maxFinishTime"></param>
+        <param name="requestedFor"></param>
+        <param name="reasonFilter"></param>
+        <param name="statusFilter"></param>
+        <param name="resultFilter"></param>
+        <param name="tagFilters">A comma-delimited list of tags</param>
+        <param name="properties">A comma-delimited list of properties to include in the results</param>
+        <param name="top">The maximum number of builds to retrieve</param>
+        <param name="continuationToken"></param>
+        <param name="maxBuildsPerDefinition"></param>
+        <param name="deletedFilter"></param>
+        <param name="queryOrder"></param>
+        <param name="branchName"></param>
+        <param name="buildIds"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets builds
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync (Guid project, System.Collections.Generic.IEnumerable&lt;int&gt; definitions = null, System.Collections.Generic.IEnumerable&lt;int&gt; queues = null, string buildNumber = null, Nullable&lt;DateTime&gt; minFinishTime = null, Nullable&lt;DateTime&gt; maxFinishTime = null, string requestedFor = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter = null, System.Collections.Generic.IEnumerable&lt;string&gt; tagFilters = null, System.Collections.Generic.IEnumerable&lt;string&gt; properties = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;int&gt; maxBuildsPerDefinition = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder = null, string branchName = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync(valuetype System.Guid project, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitions, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; queues, string buildNumber, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minFinishTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; maxFinishTime, string requestedFor, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tagFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; properties, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; maxBuildsPerDefinition, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder, string branchName, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildIds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetBuildsAsync(System.Guid,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildReason},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildStatus},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildResult},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetBuildsAsync : Guid * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * string * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;&#xA;override this.GetBuildsAsync : Guid * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * string * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;" Usage="buildHttpClientCompatBase.GetBuildsAsync (project, definitions, queues, buildNumber, minFinishTime, maxFinishTime, requestedFor, reasonFilter, statusFilter, resultFilter, tagFilters, properties, top, continuationToken, maxBuildsPerDefinition, deletedFilter, queryOrder, branchName, buildIds, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="definitions" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="queues" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="buildNumber" Type="System.String" />
+        <Parameter Name="minFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="maxFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="requestedFor" Type="System.String" />
+        <Parameter Name="reasonFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt;" />
+        <Parameter Name="statusFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt;" />
+        <Parameter Name="resultFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt;" />
+        <Parameter Name="tagFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="maxBuildsPerDefinition" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="deletedFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt;" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt;" />
+        <Parameter Name="branchName" Type="System.String" />
+        <Parameter Name="buildIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="definitions">A comma-delimited list of definition ids</param>
+        <param name="queues">A comma-delimited list of queue ids</param>
+        <param name="buildNumber"></param>
+        <param name="minFinishTime"></param>
+        <param name="maxFinishTime"></param>
+        <param name="requestedFor"></param>
+        <param name="reasonFilter"></param>
+        <param name="statusFilter"></param>
+        <param name="resultFilter"></param>
+        <param name="tagFilters">A comma-delimited list of tags</param>
+        <param name="properties">A comma-delimited list of properties to include in the results</param>
+        <param name="top">The maximum number of builds to retrieve</param>
+        <param name="continuationToken"></param>
+        <param name="maxBuildsPerDefinition"></param>
+        <param name="deletedFilter"></param>
+        <param name="queryOrder"></param>
+        <param name="branchName"></param>
+        <param name="buildIds"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets builds
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync (string project, System.Collections.Generic.IEnumerable&lt;int&gt; definitions = null, System.Collections.Generic.IEnumerable&lt;int&gt; queues = null, string buildNumber = null, Nullable&lt;DateTime&gt; minFinishTime = null, Nullable&lt;DateTime&gt; maxFinishTime = null, string requestedFor = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter = null, System.Collections.Generic.IEnumerable&lt;string&gt; tagFilters = null, System.Collections.Generic.IEnumerable&lt;string&gt; properties = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;int&gt; maxBuildsPerDefinition = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder = null, string branchName = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt; GetBuildsAsync(string project, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitions, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; queues, string buildNumber, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minFinishTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; maxFinishTime, string requestedFor, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; reasonFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; statusFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; resultFilter, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tagFilters, class System.Collections.Generic.IEnumerable`1&lt;string&gt; properties, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; maxBuildsPerDefinition, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; deletedFilter, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; queryOrder, string branchName, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildIds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetBuildsAsync(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildReason},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildStatus},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildResult},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption},System.Nullable{Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetBuildsAsync : string * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * string * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;&#xA;override this.GetBuildsAsync : string * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt; * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt; * string * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;" Usage="buildHttpClientCompatBase.GetBuildsAsync (project, definitions, queues, buildNumber, minFinishTime, maxFinishTime, requestedFor, reasonFilter, statusFilter, resultFilter, tagFilters, properties, top, continuationToken, maxBuildsPerDefinition, deletedFilter, queryOrder, branchName, buildIds, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="definitions" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="queues" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="buildNumber" Type="System.String" />
+        <Parameter Name="minFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="maxFinishTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="requestedFor" Type="System.String" />
+        <Parameter Name="reasonFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildReason&gt;" />
+        <Parameter Name="statusFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt;" />
+        <Parameter Name="resultFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt;" />
+        <Parameter Name="tagFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="maxBuildsPerDefinition" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="deletedFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.QueryDeletedOption&gt;" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildQueryOrder&gt;" />
+        <Parameter Name="branchName" Type="System.String" />
+        <Parameter Name="buildIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="definitions">A comma-delimited list of definition ids</param>
+        <param name="queues">A comma-delimited list of queue ids</param>
+        <param name="buildNumber"></param>
+        <param name="minFinishTime"></param>
+        <param name="maxFinishTime"></param>
+        <param name="requestedFor"></param>
+        <param name="reasonFilter"></param>
+        <param name="statusFilter"></param>
+        <param name="resultFilter"></param>
+        <param name="tagFilters">A comma-delimited list of tags</param>
+        <param name="properties">A comma-delimited list of properties to include in the results</param>
+        <param name="top">The maximum number of builds to retrieve</param>
+        <param name="continuationToken"></param>
+        <param name="maxBuildsPerDefinition"></param>
+        <param name="deletedFilter"></param>
+        <param name="queryOrder"></param>
+        <param name="branchName"></param>
+        <param name="buildIds"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets builds
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt; GetDefinitionAsync (int definitionId, Nullable&lt;int&gt; revision = null, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt; GetDefinitionAsync(int32 definitionId, valuetype System.Nullable`1&lt;int32&gt; revision, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionAsync(System.Int32,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionAsync : int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&#xA;override this.GetDefinitionAsync : int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;" Usage="buildHttpClientCompatBase.GetDefinitionAsync (definitionId, revision, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="definitionId" Type="System.Int32" />
+        <Parameter Name="revision" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="propertyFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="definitionId"></param>
+        <param name="revision"></param>
+        <param name="propertyFilters"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets a definition, optionally at a specific revision
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt; GetDefinitionAsync (Guid project, int definitionId, Nullable&lt;int&gt; revision = null, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt; GetDefinitionAsync(valuetype System.Guid project, int32 definitionId, valuetype System.Nullable`1&lt;int32&gt; revision, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionAsync(System.Guid,System.Int32,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionAsync : Guid * int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&#xA;override this.GetDefinitionAsync : Guid * int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;" Usage="buildHttpClientCompatBase.GetDefinitionAsync (project, definitionId, revision, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="definitionId" Type="System.Int32" />
+        <Parameter Name="revision" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="propertyFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="definitionId"></param>
+        <param name="revision"></param>
+        <param name="propertyFilters"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets a definition, optionally at a specific revision
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt; GetDefinitionAsync (string project, int definitionId, Nullable&lt;int&gt; revision = null, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt; GetDefinitionAsync(string project, int32 definitionId, valuetype System.Nullable`1&lt;int32&gt; revision, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionAsync(System.String,System.Int32,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionAsync : string * int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&#xA;override this.GetDefinitionAsync : string * int * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;" Usage="buildHttpClientCompatBase.GetDefinitionAsync (project, definitionId, revision, propertyFilters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="definitionId" Type="System.Int32" />
+        <Parameter Name="revision" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="propertyFilters" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="definitionId"></param>
+        <param name="revision"></param>
+        <param name="propertyFilters"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets a definition, optionally at a specific revision
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTime"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter"></param>
+        <param name="notBuiltAfter"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (Guid project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(valuetype System.Guid project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.Guid,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTime"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter"></param>
+        <param name="notBuiltAfter"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (string project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(string project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTime"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter"></param>
+        <param name="notBuiltAfter"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, Nullable&lt;bool&gt; includeAllProperties = null, Nullable&lt;bool&gt; includeLatestBuilds = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, valuetype System.Nullable`1&lt;bool&gt; includeAllProperties, valuetype System.Nullable`1&lt;bool&gt; includeLatestBuilds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, includeAllProperties, includeLatestBuilds, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="includeAllProperties" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="includeLatestBuilds" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTime"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter"></param>
+        <param name="notBuiltAfter"></param>
+        <param name="includeAllProperties"></param>
+        <param name="includeLatestBuilds"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (Guid project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, Nullable&lt;bool&gt; includeAllProperties = null, Nullable&lt;bool&gt; includeLatestBuilds = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(valuetype System.Guid project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, valuetype System.Nullable`1&lt;bool&gt; includeAllProperties, valuetype System.Nullable`1&lt;bool&gt; includeLatestBuilds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.Guid,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, includeAllProperties, includeLatestBuilds, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="includeAllProperties" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="includeLatestBuilds" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTime"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter"></param>
+        <param name="notBuiltAfter"></param>
+        <param name="includeAllProperties"></param>
+        <param name="includeLatestBuilds"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, Nullable&lt;bool&gt; includeAllProperties = null, Nullable&lt;bool&gt; includeLatestBuilds = null, Nullable&lt;Guid&gt; taskIdFilter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, valuetype System.Nullable`1&lt;bool&gt; includeAllProperties, valuetype System.Nullable`1&lt;bool&gt; includeLatestBuilds, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskIdFilter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Guid},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, includeAllProperties, includeLatestBuilds, taskIdFilter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="includeAllProperties" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="includeLatestBuilds" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="taskIdFilter" Type="System.Nullable&lt;System.Guid&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">If specified, filters to definitions whose names match this pattern.</param>
+        <param name="repositoryId">A repository ID. If specified, filters to definitions that use this repository.</param>
+        <param name="repositoryType">If specified, filters to definitions that have a repository of this type.</param>
+        <param name="queryOrder">Indicates the order in which definitions should be returned.</param>
+        <param name="top">The maximum number of definitions to return.</param>
+        <param name="continuationToken">A continuation token, returned by a previous call to this method, that can be used to return the next set of definitions.</param>
+        <param name="minMetricsTime">If specified, indicates the date from which metrics should be included.</param>
+        <param name="definitionIds">A comma-delimited list that specifies the IDs of definitions to retrieve.</param>
+        <param name="path">If specified, filters to definitions under this folder.</param>
+        <param name="builtAfter">If specified, filters to definitions that have builds after this date.</param>
+        <param name="notBuiltAfter">If specified, filters to definitions that do not have builds after this date.</param>
+        <param name="includeAllProperties">Indicates whether the full definitions should be returned. By default, shallow representations of the definitions are returned.</param>
+        <param name="includeLatestBuilds">Indicates whether to return the latest and latest completed builds for this definition.</param>
+        <param name="taskIdFilter">If specified, filters to definitions that use the specified task.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets a list of definitions.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (string project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, Nullable&lt;bool&gt; includeAllProperties = null, Nullable&lt;bool&gt; includeLatestBuilds = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(string project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, valuetype System.Nullable`1&lt;bool&gt; includeAllProperties, valuetype System.Nullable`1&lt;bool&gt; includeLatestBuilds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, includeAllProperties, includeLatestBuilds, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="includeAllProperties" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="includeLatestBuilds" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTime"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter"></param>
+        <param name="notBuiltAfter"></param>
+        <param name="includeAllProperties"></param>
+        <param name="includeLatestBuilds"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (Guid project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, Nullable&lt;bool&gt; includeAllProperties = null, Nullable&lt;bool&gt; includeLatestBuilds = null, Nullable&lt;Guid&gt; taskIdFilter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(valuetype System.Guid project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, valuetype System.Nullable`1&lt;bool&gt; includeAllProperties, valuetype System.Nullable`1&lt;bool&gt; includeLatestBuilds, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskIdFilter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.Guid,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Guid},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, includeAllProperties, includeLatestBuilds, taskIdFilter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="includeAllProperties" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="includeLatestBuilds" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="taskIdFilter" Type="System.Nullable&lt;System.Guid&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="name">If specified, filters to definitions whose names match this pattern.</param>
+        <param name="repositoryId">A repository ID. If specified, filters to definitions that use this repository.</param>
+        <param name="repositoryType">If specified, filters to definitions that have a repository of this type.</param>
+        <param name="queryOrder">Indicates the order in which definitions should be returned.</param>
+        <param name="top">The maximum number of definitions to return.</param>
+        <param name="continuationToken">A continuation token, returned by a previous call to this method, that can be used to return the next set of definitions.</param>
+        <param name="minMetricsTime">If specified, indicates the date from which metrics should be included.</param>
+        <param name="definitionIds">A comma-delimited list that specifies the IDs of definitions to retrieve.</param>
+        <param name="path">If specified, filters to definitions under this folder.</param>
+        <param name="builtAfter">If specified, filters to definitions that have builds after this date.</param>
+        <param name="notBuiltAfter">If specified, filters to definitions that do not have builds after this date.</param>
+        <param name="includeAllProperties">Indicates whether the full definitions should be returned. By default, shallow representations of the definitions are returned.</param>
+        <param name="includeLatestBuilds">Indicates whether to return the latest and latest completed builds for this definition.</param>
+        <param name="taskIdFilter">If specified, filters to definitions that use the specified task.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets a list of definitions.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync (string project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTime = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, Nullable&lt;bool&gt; includeAllProperties = null, Nullable&lt;bool&gt; includeLatestBuilds = null, Nullable&lt;Guid&gt; taskIdFilter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync(string project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTime, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, valuetype System.Nullable`1&lt;bool&gt; includeAllProperties, valuetype System.Nullable`1&lt;bool&gt; includeLatestBuilds, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskIdFilter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Guid},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTime, definitionIds, path, builtAfter, notBuiltAfter, includeAllProperties, includeLatestBuilds, taskIdFilter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="includeAllProperties" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="includeLatestBuilds" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="taskIdFilter" Type="System.Nullable&lt;System.Guid&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="name">If specified, filters to definitions whose names match this pattern.</param>
+        <param name="repositoryId">A repository ID. If specified, filters to definitions that use this repository.</param>
+        <param name="repositoryType">If specified, filters to definitions that have a repository of this type.</param>
+        <param name="queryOrder">Indicates the order in which definitions should be returned.</param>
+        <param name="top">The maximum number of definitions to return.</param>
+        <param name="continuationToken">A continuation token, returned by a previous call to this method, that can be used to return the next set of definitions.</param>
+        <param name="minMetricsTime">If specified, indicates the date from which metrics should be included.</param>
+        <param name="definitionIds">A comma-delimited list that specifies the IDs of definitions to retrieve.</param>
+        <param name="path">If specified, filters to definitions under this folder.</param>
+        <param name="builtAfter">If specified, filters to definitions that have builds after this date.</param>
+        <param name="notBuiltAfter">If specified, filters to definitions that do not have builds after this date.</param>
+        <param name="includeAllProperties">Indicates whether the full definitions should be returned. By default, shallow representations of the definitions are returned.</param>
+        <param name="includeLatestBuilds">Indicates whether to return the latest and latest completed builds for this definition.</param>
+        <param name="taskIdFilter">If specified, filters to definitions that use the specified task.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets a list of definitions.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync2">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync2 (string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync2(string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync2(System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync2 : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync2 : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync2 (name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync2">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync2 (Guid project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync2(valuetype System.Guid project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync2(System.Guid,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync2 : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync2 : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync2 (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefinitionsAsync2">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync2 (string project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt; GetDefinitionsAsync2(string project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetDefinitionsAsync2(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetDefinitionsAsync2 : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;&#xA;override this.GetDefinitionsAsync2 : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;" Usage="buildHttpClientCompatBase.GetDefinitionsAsync2 (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionReference&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds">To be added.</param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFullDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync (string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync(string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetFullDefinitionsAsync(System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetFullDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;&#xA;override this.GetFullDefinitionsAsync : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;" Usage="buildHttpClientCompatBase.GetFullDefinitionsAsync (name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFullDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync (Guid project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync(valuetype System.Guid project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetFullDefinitionsAsync(System.Guid,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetFullDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;&#xA;override this.GetFullDefinitionsAsync : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;" Usage="buildHttpClientCompatBase.GetFullDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFullDefinitionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync (string project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync(string project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetFullDefinitionsAsync(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetFullDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;&#xA;override this.GetFullDefinitionsAsync : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;" Usage="buildHttpClientCompatBase.GetFullDefinitionsAsync (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds">To be added.</param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFullDefinitionsAsync2">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync2 (string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync2(string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetFullDefinitionsAsync2(System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetFullDefinitionsAsync2 : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;&#xA;override this.GetFullDefinitionsAsync2 : string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;" Usage="buildHttpClientCompatBase.GetFullDefinitionsAsync2 (name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFullDefinitionsAsync2">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync2 (Guid project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync2(valuetype System.Guid project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetFullDefinitionsAsync2(System.Guid,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetFullDefinitionsAsync2 : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;&#xA;override this.GetFullDefinitionsAsync2 : Guid * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;" Usage="buildHttpClientCompatBase.GetFullDefinitionsAsync2 (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds"></param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFullDefinitionsAsync2">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync2 (string project, string name = null, string repositoryId = null, string repositoryType = null, Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder = null, Nullable&lt;int&gt; top = null, string continuationToken = null, Nullable&lt;DateTime&gt; minMetricsTimeInUtc = null, System.Collections.Generic.IEnumerable&lt;int&gt; definitionIds = null, string path = null, Nullable&lt;DateTime&gt; builtAfter = null, Nullable&lt;DateTime&gt; notBuiltAfter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt; GetFullDefinitionsAsync2(string project, string name, string repositoryId, string repositoryType, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; queryOrder, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; minMetricsTimeInUtc, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; definitionIds, string path, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; builtAfter, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBuiltAfter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.GetFullDefinitionsAsync2(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetFullDefinitionsAsync2 : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;&#xA;override this.GetFullDefinitionsAsync2 : string * string * string * string * Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt; * Nullable&lt;int&gt; * string * Nullable&lt;DateTime&gt; * seq&lt;int&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;" Usage="buildHttpClientCompatBase.GetFullDefinitionsAsync2 (project, name, repositoryId, repositoryType, queryOrder, top, continuationToken, minMetricsTimeInUtc, definitionIds, path, builtAfter, notBuiltAfter, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Build.WebApi.BuildDefinition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="repositoryId" Type="System.String" />
+        <Parameter Name="repositoryType" Type="System.String" />
+        <Parameter Name="queryOrder" Type="System.Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.DefinitionQueryOrder&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="minMetricsTimeInUtc" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="definitionIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="builtAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="notBuiltAfter" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="name"></param>
+        <param name="repositoryId"></param>
+        <param name="repositoryType"></param>
+        <param name="queryOrder"></param>
+        <param name="top"></param>
+        <param name="continuationToken"></param>
+        <param name="minMetricsTimeInUtc"></param>
+        <param name="definitionIds">To be added.</param>
+        <param name="path"></param>
+        <param name="builtAfter">To be added.</param>
+        <param name="notBuiltAfter">To be added.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Gets definitions, optionally filtered by name
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueBuildAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, Nullable&lt;bool&gt; ignoreWarnings = null, string checkInTicket = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, valuetype System.Nullable`1&lt;bool&gt; ignoreWarnings, string checkInTicket, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.QueueBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Nullable{System.Boolean},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&#xA;override this.QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="buildHttpClientCompatBase.QueueBuildAsync (build, ignoreWarnings, checkInTicket, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="ignoreWarnings" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="checkInTicket" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="ignoreWarnings"></param>
+        <param name="checkInTicket"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Queues a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueBuildAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, Guid project, Nullable&lt;bool&gt; ignoreWarnings = null, string checkInTicket = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, valuetype System.Guid project, valuetype System.Nullable`1&lt;bool&gt; ignoreWarnings, string checkInTicket, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.QueueBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Guid,System.Nullable{System.Boolean},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Guid * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&#xA;override this.QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Guid * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="buildHttpClientCompatBase.QueueBuildAsync (build, project, ignoreWarnings, checkInTicket, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="ignoreWarnings" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="checkInTicket" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="project">Project ID</param>
+        <param name="ignoreWarnings"></param>
+        <param name="checkInTicket"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Queues a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueBuildAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, string project, Nullable&lt;bool&gt; ignoreWarnings = null, string checkInTicket = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; QueueBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, string project, valuetype System.Nullable`1&lt;bool&gt; ignoreWarnings, string checkInTicket, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.QueueBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.String,System.Nullable{System.Boolean},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * string * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&#xA;override this.QueueBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * string * Nullable&lt;bool&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="buildHttpClientCompatBase.QueueBuildAsync (build, project, ignoreWarnings, checkInTicket, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="ignoreWarnings" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="checkInTicket" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build"></param>
+        <param name="project">Project ID or project name</param>
+        <param name="ignoreWarnings"></param>
+        <param name="checkInTicket"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Queues a build
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_BuildsApiVersion">
+      <MemberSignature Language="C#" Value="protected static readonly Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion s_BuildsApiVersion;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion s_BuildsApiVersion" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.s_BuildsApiVersion" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly s_BuildsApiVersion As ApiResourceVersion " />
+      <MemberSignature Language="F#" Value=" staticval mutable s_BuildsApiVersion : Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.s_BuildsApiVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_DefinitionsApiVersion">
+      <MemberSignature Language="C#" Value="protected static readonly Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion s_DefinitionsApiVersion;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion s_DefinitionsApiVersion" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.s_DefinitionsApiVersion" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly s_DefinitionsApiVersion As ApiResourceVersion " />
+      <MemberSignature Language="F#" Value=" staticval mutable s_DefinitionsApiVersion : Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.s_DefinitionsApiVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBuildAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&#xA;override this.UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="buildHttpClientCompatBase.UpdateBuildAsync (build, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build">The build.</param>
+        <param name="buildId">The ID of the build.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Updates a build.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBuildAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, Guid project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, valuetype System.Guid project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&#xA;override this.UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="buildHttpClientCompatBase.UpdateBuildAsync (build, project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build">The build.</param>
+        <param name="project">Project ID</param>
+        <param name="buildId">The ID of the build.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Updates a build.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBuildAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, string project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, string project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientCompatBase.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;&#xA;override this.UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="buildHttpClientCompatBase.UpdateBuildAsync (build, project, buildId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build">The build.</param>
+        <param name="project">Project ID or project name</param>
+        <param name="buildId">The ID of the build.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Updates a build.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,152 @@
+﻿<Type Name="ChangeQueryResults" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults">
+  <TypeSignature Language="C#" Value="public class ChangeQueryResults : Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChangeQueryResults extends Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChangeQueryResults&#xA;Inherits VersionControlSecuredObject" />
+  <TypeSignature Language="F#" Value="type ChangeQueryResults = class&#xA;    inherit VersionControlSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChangeQueryResults ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeCounts">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.VersionControlChangeType,int&gt; ChangeCounts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.VersionControlChangeType, int32&gt; ChangeCounts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults.ChangeCounts" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeCounts As Dictionary(Of VersionControlChangeType, Integer)" />
+      <MemberSignature Language="F#" Value="member this.ChangeCounts : System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.VersionControlChangeType, int&gt; with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults.ChangeCounts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="changeCounts")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.VersionControlChangeType,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Total counts for each type of change
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoreResultsAvailable">
+      <MemberSignature Language="C#" Value="public bool MoreResultsAvailable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MoreResultsAvailable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults.MoreResultsAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Property MoreResultsAvailable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MoreResultsAvailable : bool with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults.MoreResultsAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="moreResultsAvailable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            True if there are more results available to fetch (we're returning the max # of items requested)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.Change&gt; Results { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.Change&gt; Results" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults.Results" />
+      <MemberSignature Language="VB.NET" Value="Public Property Results As IEnumerable(Of Change)" />
+      <MemberSignature Language="F#" Value="member this.Results : seq&lt;Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.Change&gt; with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults.Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="results")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.Change&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The change entries (results) from this query
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredObject">
+      <MemberSignature Language="C#" Value="public override void SetSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeQueryResults.SetSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetSecuredObject (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="override this.SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit" Usage="changeQueryResults.SetSecuredObject securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

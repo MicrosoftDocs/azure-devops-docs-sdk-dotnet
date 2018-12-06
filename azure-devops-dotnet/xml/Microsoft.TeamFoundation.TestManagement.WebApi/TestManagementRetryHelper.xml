@@ -1,0 +1,101 @@
+﻿<Type Name="TestManagementRetryHelper" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper">
+  <TypeSignature Language="C#" Value="public class TestManagementRetryHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TestManagementRetryHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class TestManagementRetryHelper" />
+  <TypeSignature Language="F#" Value="type TestManagementRetryHelper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestManagementRetryHelper (int maxRetries, Nullable&lt;TimeSpan&gt; minBackoff = null, Nullable&lt;TimeSpan&gt; maxBackoff = null, Nullable&lt;TimeSpan&gt; deltaBackoff = null, Func&lt;Exception,bool&gt; canRetryDelegate = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 maxRetries, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; minBackoff, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; maxBackoff, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; deltaBackoff, class System.Func`2&lt;class System.Exception, bool&gt; canRetryDelegate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper.#ctor(System.Int32,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Func{System.Exception,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (maxRetries As Integer, Optional minBackoff As Nullable(Of TimeSpan) = null, Optional maxBackoff As Nullable(Of TimeSpan) = null, Optional deltaBackoff As Nullable(Of TimeSpan) = null, Optional canRetryDelegate As Func(Of Exception, Boolean) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper : int * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Func&lt;Exception, bool&gt; -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper (maxRetries, minBackoff, maxBackoff, deltaBackoff, canRetryDelegate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="maxRetries" Type="System.Int32" />
+        <Parameter Name="minBackoff" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="maxBackoff" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="deltaBackoff" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="canRetryDelegate" Type="System.Func&lt;System.Exception,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="maxRetries">To be added.</param>
+        <param name="minBackoff">To be added.</param>
+        <param name="maxBackoff">To be added.</param>
+        <param name="deltaBackoff">To be added.</param>
+        <param name="canRetryDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; Invoke&lt;T&gt; (Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; function);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; Invoke&lt;T&gt;(class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; function) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper.Invoke``1(System.Func{System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke(Of T) (function As Func(Of Task(Of T))) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Invoke : Func&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="testManagementRetryHelper.Invoke function" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="function">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sleep">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task Sleep (int remainingRetries);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task Sleep(int32 remainingRetries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper.Sleep(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function Sleep (remainingRetries As Integer) As Task" />
+      <MemberSignature Language="F#" Value="abstract member Sleep : int -&gt; System.Threading.Tasks.Task&#xA;override this.Sleep : int -&gt; System.Threading.Tasks.Task" Usage="testManagementRetryHelper.Sleep remainingRetries" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="remainingRetries" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="remainingRetries">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

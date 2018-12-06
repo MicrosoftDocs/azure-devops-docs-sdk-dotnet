@@ -1,0 +1,302 @@
+﻿<Type Name="PolicyEvaluationRecord" FullName="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord">
+  <TypeSignature Language="C#" Value="public class PolicyEvaluationRecord : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolicyEvaluationRecord extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord" />
+  <TypeSignature Language="VB.NET" Value="Public Class PolicyEvaluationRecord&#xA;Inherits BaseSecuredObject" />
+  <TypeSignature Language="F#" Value="type PolicyEvaluationRecord = class&#xA;    inherit BaseSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This record encapsulates the current state of a policy as it applies to one specific pull request. Each pull request
+            has a unique PolicyEvaluationRecord for each pull request which the policy applies to.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyEvaluationRecord ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyEvaluationRecord (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.#ctor(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord" Usage="new Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord securedObject" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtifactId">
+      <MemberSignature Language="C#" Value="public string ArtifactId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ArtifactId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.ArtifactId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ArtifactId As String" />
+      <MemberSignature Language="F#" Value="member this.ArtifactId : string with get, set" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.ArtifactId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A string which uniquely identifies the target of a policy evaluation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            To generate an artifact ID for a pull request, use this template:
+            ```
+            vstfs:///CodeReview/CodeReviewId/{projectId}/{pullRequestId}
+            ```
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedDate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CompletedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CompletedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.CompletedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompletedDate As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.CompletedDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.CompletedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Time when this policy finished evaluating on this pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Configuration">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration Configuration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration Configuration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.Configuration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Configuration As PolicyConfiguration" />
+      <MemberSignature Language="F#" Value="member this.Configuration : Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration with get, set" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.Configuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Contains all configuration data for the policy which is being evaluated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>This contains policy configuration options for a policy as the policy's display name, policy scope, and settings
+            which vary based on the type of policy.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As JObject" />
+      <MemberSignature Language="F#" Value="member this.Context : Newtonsoft.Json.Linq.JObject with get, set" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Internal context data of this policy evaluation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            The contents of this JSON object are internal to the running policy.
+            It may contain things such as a build ID, a digital signature, or any other thing(s) which are needed
+            for the policy to approve or reject a pull request.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluationId">
+      <MemberSignature Language="C#" Value="public Guid EvaluationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid EvaluationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.EvaluationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property EvaluationId As Guid" />
+      <MemberSignature Language="F#" Value="member this.EvaluationId : Guid with get, set" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.EvaluationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Guid which uniquely identifies this evaluation record (one policy running on one pull request).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Links">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.ReferenceLinks Links { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.ReferenceLinks Links" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.Links" />
+      <MemberSignature Language="VB.NET" Value="Public Property Links As ReferenceLinks" />
+      <MemberSignature Language="F#" Value="member this.Links : Microsoft.VisualStudio.Services.WebApi.ReferenceLinks with get, set" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.Links" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="_links")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.ReferenceLinks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Links to other related objects
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartedDate">
+      <MemberSignature Language="C#" Value="public DateTime StartedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StartedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.StartedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartedDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.StartedDate : DateTime with get, set" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.StartedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Time when this policy was first evaluated on this pull request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus&gt; Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus&gt; Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Property Status As Nullable(Of PolicyEvaluationStatus)" />
+      <MemberSignature Language="F#" Value="member this.Status : Nullable&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus&gt; with get, set" Usage="Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationRecord.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Policy.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyEvaluationStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Status of the policy (Running, Approved, Failed, etc.)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

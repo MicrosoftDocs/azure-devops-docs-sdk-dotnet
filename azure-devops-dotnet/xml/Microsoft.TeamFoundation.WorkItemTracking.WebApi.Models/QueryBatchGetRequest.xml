@@ -1,0 +1,125 @@
+﻿<Type Name="QueryBatchGetRequest" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest">
+  <TypeSignature Language="C#" Value="public class QueryBatchGetRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryBatchGetRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryBatchGetRequest" />
+  <TypeSignature Language="F#" Value="type QueryBatchGetRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Describes a request to get a list of queries
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QueryBatchGetRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorPolicy">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryErrorPolicy ErrorPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryErrorPolicy ErrorPolicy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest.ErrorPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorPolicy As QueryErrorPolicy" />
+      <MemberSignature Language="F#" Value="member this.ErrorPolicy : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryErrorPolicy with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest.ErrorPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryErrorPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The flag to control error policy in a query batch request. Possible options are { Fail, Omit }.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expand">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryExpand Expand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryExpand Expand" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest.Expand" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expand As QueryExpand" />
+      <MemberSignature Language="F#" Value="member this.Expand : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryExpand with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest.Expand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="$expand")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryExpand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The expand parameters for queries. Possible options are { None, Wiql, Clauses, All, Minimal }
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ids">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Guid&gt; Ids { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Guid&gt; Ids" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest.Ids" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ids As IEnumerable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.Ids : seq&lt;Guid&gt; with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.QueryBatchGetRequest.Ids" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The requested query ids
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

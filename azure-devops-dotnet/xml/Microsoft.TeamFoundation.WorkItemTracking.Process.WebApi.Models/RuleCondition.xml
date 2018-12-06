@@ -1,0 +1,124 @@
+﻿<Type Name="RuleCondition" FullName="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition">
+  <TypeSignature Language="C#" Value="public class RuleCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleCondition extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuleCondition" />
+  <TypeSignature Language="F#" Value="type RuleCondition = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines a condition on a field when the rule should be triggered. 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionType">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleConditionType ConditionType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleConditionType ConditionType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition.ConditionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConditionType As RuleConditionType" />
+      <MemberSignature Language="F#" Value="member this.ConditionType : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleConditionType with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition.ConditionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleConditionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Type of condition.
+            $When. This condition limits the execution of its children to cases when another field has a particular value, i.e. when the Is value of the referenced field is equal to the given literal value.
+            $WhenNot.This condition limits the execution of its children to cases when another field does not have a particular value, i.e.when the Is value of the referenced field is not equal to the given literal value.
+            $WhenChanged.This condition limits the execution of its children to cases when another field has changed, i.e.when the Is value of the referenced field is not equal to the Was value of that field.
+            $WhenNotChanged.This condition limits the execution of its children to cases when another field has not changed, i.e.when the Is value of the referenced field is equal to the Was value of that field.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Field">
+      <MemberSignature Language="C#" Value="public string Field { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Field" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition.Field" />
+      <MemberSignature Language="VB.NET" Value="Public Property Field As String" />
+      <MemberSignature Language="F#" Value="member this.Field : string with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition.Field" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Field that defines condition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.RuleCondition.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Value of field to define the condition for rule.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

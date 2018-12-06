@@ -1,0 +1,276 @@
+﻿<Type Name="ITestHttpClient" FullName="Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient">
+  <TypeSignature Language="C#" Value="public interface ITestHttpClient" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITestHttpClient" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITestHttpClient" />
+  <TypeSignature Language="F#" Value="type ITestHttpClient = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateAgentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt; CreateAgentAsync (Microsoft.TeamFoundation.Test.WebApi.TestAgent testAgent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt; CreateAgentAsync(class Microsoft.TeamFoundation.Test.WebApi.TestAgent testAgent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.CreateAgentAsync(Microsoft.TeamFoundation.Test.WebApi.TestAgent)" />
+      <MemberSignature Language="F#" Value="abstract member CreateAgentAsync : Microsoft.TeamFoundation.Test.WebApi.TestAgent -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;" Usage="iTestHttpClient.CreateAgentAsync testAgent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testAgent" Type="Microsoft.TeamFoundation.Test.WebApi.TestAgent" />
+      </Parameters>
+      <Docs>
+        <param name="testAgent">TestAgent object</param>
+        <summary>
+            Sends REST based msg to Server for creating new entry of Test Agent.
+            This API can be consumed in Registration Process.
+            </summary>
+        <returns>TestAgent Object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAgentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteAgentAsync (int id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAgentAsync(int32 id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.DeleteAgentAsync(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteAgentAsync (id As Integer) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAgentAsync : int -&gt; System.Threading.Tasks.Task" Usage="iTestHttpClient.DeleteAgentAsync id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="id">TestAgent Id</param>
+        <summary>
+            Sends REST based msg to Server for deleting an existing entry of Test Agent
+            This API can be consume in UnRegisteration process
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAgentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt; GetAgentAsync (int id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt; GetAgentAsync(int32 id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.GetAgentAsync(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAgentAsync (id As Integer) As Task(Of TestAgent)" />
+      <MemberSignature Language="F#" Value="abstract member GetAgentAsync : int -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;" Usage="iTestHttpClient.GetAgentAsync id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAgent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="id">TestAgent Id</param>
+        <summary>
+            Sends REST based msg to Server for getting TestAgent object based on TestAgentId
+            This API can be consumed in Query process
+            </summary>
+        <returns>Test Agent object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommandAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt; GetCommandAsync (int testAgentId, Nullable&lt;long&gt; lastCommandId = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt; GetCommandAsync(int32 testAgentId, valuetype System.Nullable`1&lt;int64&gt; lastCommandId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.GetCommandAsync(System.Int32,System.Nullable{System.Int64},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetCommandAsync : int * Nullable&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt;" Usage="iTestHttpClient.GetCommandAsync (testAgentId, lastCommandId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestExecutionServiceCommand&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testAgentId" Type="System.Int32" />
+        <Parameter Name="lastCommandId" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testAgentId">The test agent which calls this api.</param>
+        <param name="lastCommandId">The last command Id which agent has already read.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>
+            Gets test message that is in queue after lastCommandId.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRerunConfigurationAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt; GetRerunConfigurationAsync (Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration testRunExecutionConfiguration, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt; GetRerunConfigurationAsync(class Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration testRunExecutionConfiguration, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.GetRerunConfigurationAsync(Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetRerunConfigurationAsync : Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt;" Usage="iTestHttpClient.GetRerunConfigurationAsync (testRunExecutionConfiguration, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testRunExecutionConfiguration" Type="Microsoft.TeamFoundation.Test.WebApi.TestRunExecutionConfiguration" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testRunExecutionConfiguration"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] http://(tfsserver):8080/tfs/DefaultCollection/_apis/test/TestExecutionConfiguration/ Request: Json of TestRun
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSliceAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt; GetSliceAsync (int testAgentId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt; GetSliceAsync(int32 testAgentId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.GetSliceAsync(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSliceAsync (testAgentId As Integer) As Task(Of TestAutomationRunSlice)" />
+      <MemberSignature Language="F#" Value="abstract member GetSliceAsync : int -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt;" Usage="iTestHttpClient.GetSliceAsync testAgentId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testAgentId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="testAgentId">the unique ID of the agent</param>
+        <summary>
+            Sends a Rest based request to the server asking for a test task.
+            </summary>
+        <returns>
+            returns a task which holds a new test task in the result.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpClient">
+      <MemberSignature Language="C#" Value="public System.Net.Http.HttpClient HttpClient { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.HttpClient HttpClient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.HttpClient" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpClient As HttpClient" />
+      <MemberSignature Language="F#" Value="member this.HttpClient : System.Net.Http.HttpClient" Usage="Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.HttpClient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Handle to HttpClient
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSliceAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpdateSliceAsync (Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice sliceUpdatePackage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task UpdateSliceAsync(class Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice sliceUpdatePackage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.UpdateSliceAsync(Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateSliceAsync (sliceUpdatePackage As TestAutomationRunSlice) As Task" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSliceAsync : Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice -&gt; System.Threading.Tasks.Task" Usage="iTestHttpClient.UpdateSliceAsync sliceUpdatePackage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sliceUpdatePackage" Type="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice" />
+      </Parameters>
+      <Docs>
+        <param name="sliceUpdatePackage">The update slice result.</param>
+        <summary>
+            Sends a Rest based request to the server for updating slice results
+            </summary>
+        <returns>Returns a task for the rest call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt; UpdateTestRunAsync (Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun distributedTestRun, string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt; UpdateTestRunAsync(class Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun distributedTestRun, string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.ITestHttpClient.UpdateTestRunAsync(Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestRunAsync : Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt;" Usage="iTestHttpClient.UpdateTestRunAsync (distributedTestRun, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="distributedTestRun" Type="Microsoft.TeamFoundation.Test.WebApi.DistributedTestRun" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="distributedTestRun">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

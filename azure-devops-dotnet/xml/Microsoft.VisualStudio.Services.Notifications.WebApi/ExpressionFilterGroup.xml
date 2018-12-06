@@ -1,0 +1,260 @@
+﻿<Type Name="ExpressionFilterGroup" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup">
+  <TypeSignature Language="C#" Value="public class ExpressionFilterGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressionFilterGroup extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpressionFilterGroup" />
+  <TypeSignature Language="F#" Value="type ExpressionFilterGroup = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a hierarchy of SubscritionFilterClauses that have been grouped together 
+            through either adding a group in the WebUI or using parethesis in the Subscription condition string
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionFilterGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionFilterGroup (int firstRow, int lastRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 firstRow, int32 lastRow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (firstRow As Integer, lastRow As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup : int * int -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup" Usage="new Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup (firstRow, lastRow)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="firstRow" Type="System.Int32" />
+        <Parameter Name="lastRow" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="firstRow">To be added.</param>
+        <param name="lastRow">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssignLevels">
+      <MemberSignature Language="C#" Value="public static int AssignLevels (System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt; groups);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 AssignLevels(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt; groups) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.AssignLevels(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AssignLevels (groups As IEnumerable(Of ExpressionFilterGroup)) As Integer" />
+      <MemberSignature Language="F#" Value="static member AssignLevels : seq&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt; -&gt; int" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.AssignLevels groups" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groups" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="groups"></param>
+        <summary>
+            Recursively assigns levels based on the group hierarchy
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.Contains(Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (group As ExpressionFilterGroup) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup -&gt; bool" Usage="expressionFilterGroup.Contains group" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup" />
+      </Parameters>
+      <Docs>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (int row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.Contains(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (row As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : int -&gt; bool" Usage="expressionFilterGroup.Contains row" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public int End { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 End" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.End" />
+      <MemberSignature Language="VB.NET" Value="Public Property End As Integer" />
+      <MemberSignature Language="F#" Value="member this.End : int with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="end")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The index of the last FilterClause in this group
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindContaining">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt; FindContaining (System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt; groups, int row);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt; FindContaining(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt; groups, int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.FindContaining(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindContaining (groups As IEnumerable(Of ExpressionFilterGroup), row As Integer) As IEnumerable(Of ExpressionFilterGroup)" />
+      <MemberSignature Language="F#" Value="static member FindContaining : seq&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt; * int -&gt; seq&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt;" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.FindContaining (groups, row)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groups" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt;" />
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="groups"></param>
+        <param name="row"></param>
+        <summary>
+            Find the parent group for the current group
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public int Level { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Level" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.Level" />
+      <MemberSignature Language="VB.NET" Value="Public Property Level As Integer" />
+      <MemberSignature Language="F#" Value="member this.Level : int with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.Level" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="level")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Level of the group, since groups can be nested for each nested group the level will increase by 1
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public int Start { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Start" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Property Start As Integer" />
+      <MemberSignature Language="F#" Value="member this.Start : int with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="start")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The index of the first FilterClause in this group
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

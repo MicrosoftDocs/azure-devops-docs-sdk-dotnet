@@ -1,0 +1,131 @@
+﻿<Type Name="HistoryEntry" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry">
+  <TypeSignature Language="C#" Value="public class HistoryEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HistoryEntry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class HistoryEntry" />
+  <TypeSignature Language="F#" Value="type HistoryEntry = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.TfsHistoryEntry))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HistoryEntry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeList">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeList ChangeList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeList ChangeList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry.ChangeList" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeList As ChangeList" />
+      <MemberSignature Language="F#" Value="member this.ChangeList : Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeList with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry.ChangeList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="changeList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.ChangeList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Change list (changeset/commit/shelveset) for this point in history
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemChangeType">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.VersionControlChangeType ItemChangeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.VersionControlChangeType ItemChangeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry.ItemChangeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemChangeType As VersionControlChangeType" />
+      <MemberSignature Language="F#" Value="member this.ItemChangeType : Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.VersionControlChangeType with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry.ItemChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="itemChangeType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.VersionControlChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The change made to the item from this change list (only relevant for File history, not folders)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerItem">
+      <MemberSignature Language="C#" Value="public string ServerItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry.ServerItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerItem As String" />
+      <MemberSignature Language="F#" Value="member this.ServerItem : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.Legacy.HistoryEntry.ServerItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="serverItem")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The path of the item at this point in history (only relevant for File history, not folders)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

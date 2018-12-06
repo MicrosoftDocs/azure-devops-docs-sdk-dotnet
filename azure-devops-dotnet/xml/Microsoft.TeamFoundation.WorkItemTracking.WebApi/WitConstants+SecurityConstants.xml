@@ -1,0 +1,304 @@
+﻿<Type Name="WitConstants+SecurityConstants" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants+SecurityConstants">
+  <TypeSignature Language="C#" Value="public class WitConstants.SecurityConstants" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit WitConstants/SecurityConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class WitConstants.SecurityConstants" />
+  <TypeSignature Language="F#" Value="type WitConstants.SecurityConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityConstants ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommonStructureNodeSecurityNamespaceGuid">
+      <MemberSignature Language="C#" Value="public static readonly Guid CommonStructureNodeSecurityNamespaceGuid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid CommonStructureNodeSecurityNamespaceGuid" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.CommonStructureNodeSecurityNamespaceGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommonStructureNodeSecurityNamespaceGuid As Guid " />
+      <MemberSignature Language="F#" Value=" staticval mutable CommonStructureNodeSecurityNamespaceGuid : Guid" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.CommonStructureNodeSecurityNamespaceGuid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Security namespace for area nodes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossProjectQueryPermission">
+      <MemberSignature Language="C#" Value="public const int CrossProjectQueryPermission = 32;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CrossProjectQueryPermission = (32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.CrossProjectQueryPermission" />
+      <MemberSignature Language="VB.NET" Value="Public Const CrossProjectQueryPermission As Integer  = 32" />
+      <MemberSignature Language="F#" Value="val mutable CrossProjectQueryPermission : int" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.CrossProjectQueryPermission" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRootClassificationNodeToken">
+      <MemberSignature Language="C#" Value="public string GetRootClassificationNodeToken (Guid nodeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRootClassificationNodeToken(valuetype System.Guid nodeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.GetRootClassificationNodeToken(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRootClassificationNodeToken (nodeId As Guid) As String" />
+      <MemberSignature Language="F#" Value="member this.GetRootClassificationNodeToken : Guid -&gt; string" Usage="securityConstants.GetRootClassificationNodeToken nodeId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="nodeId">Guid of root level node</param>
+        <summary>
+            Gets security token for root level classification nodes (area node and iteration node).
+            Note: This will return invalid token for any node other than root-node (it will not throw exception or return null).
+            Example to get root level area node: witClient.GetClassificationNodeAsync(projectId, TreeStructureGroup.Areas, depth: 0).SyncResult().Identifier;
+            Example to get root level Iteration node: witClient.GetClassificationNodeAsync(projectId, TreeStructureGroup.Iterations, depth: 0).SyncResult().Identifier;
+            </summary>
+        <returns>Security token for the given root node.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSharedQueriesFolderToken">
+      <MemberSignature Language="C#" Value="public string GetSharedQueriesFolderToken (Guid projectId, Guid sharedQueriesFolderId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetSharedQueriesFolderToken(valuetype System.Guid projectId, valuetype System.Guid sharedQueriesFolderId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.GetSharedQueriesFolderToken(System.Guid,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSharedQueriesFolderToken (projectId As Guid, sharedQueriesFolderId As Guid) As String" />
+      <MemberSignature Language="F#" Value="member this.GetSharedQueriesFolderToken : Guid * Guid -&gt; string" Usage="securityConstants.GetSharedQueriesFolderToken (projectId, sharedQueriesFolderId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectId" Type="System.Guid" />
+        <Parameter Name="sharedQueriesFolderId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="projectId">Project guid.</param>
+        <param name="sharedQueriesFolderId">guid of shared query folder of the project.</param>
+        <summary>
+            Gets security token for shared query folder.
+            Note: This will return invalid token for any query guid other than shared query folder guid (it will not throw exception or return null).
+            Example to get SharedQueryFolderGuid: witClient.GetQueriesAsync(projectId, depth: 1).SyncResult().First(s =&gt; s.IsPublic.Value);
+            </summary>
+        <returns>security token for shared query folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IterationNodeSecurityNamespaceGuid">
+      <MemberSignature Language="C#" Value="public static readonly Guid IterationNodeSecurityNamespaceGuid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid IterationNodeSecurityNamespaceGuid" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.IterationNodeSecurityNamespaceGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IterationNodeSecurityNamespaceGuid As Guid " />
+      <MemberSignature Language="F#" Value=" staticval mutable IterationNodeSecurityNamespaceGuid : Guid" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.IterationNodeSecurityNamespaceGuid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Security namespace guid for iteration nodes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryItemRootToken">
+      <MemberSignature Language="C#" Value="public const string QueryItemRootToken;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string QueryItemRootToken" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.QueryItemRootToken" />
+      <MemberSignature Language="VB.NET" Value="Public Const QueryItemRootToken As String " />
+      <MemberSignature Language="F#" Value="val mutable QueryItemRootToken : string" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.QueryItemRootToken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryItemSecurityNamespaceGuid">
+      <MemberSignature Language="C#" Value="public static readonly Guid QueryItemSecurityNamespaceGuid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid QueryItemSecurityNamespaceGuid" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.QueryItemSecurityNamespaceGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QueryItemSecurityNamespaceGuid As Guid " />
+      <MemberSignature Language="F#" Value=" staticval mutable QueryItemSecurityNamespaceGuid : Guid" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.QueryItemSecurityNamespaceGuid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkItemReadPermission">
+      <MemberSignature Language="C#" Value="public const int WorkItemReadPermission = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WorkItemReadPermission = (16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemReadPermission" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkItemReadPermission As Integer  = 16" />
+      <MemberSignature Language="F#" Value="val mutable WorkItemReadPermission : int" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemReadPermission" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkItemTrackingArtifactUriQueryToken">
+      <MemberSignature Language="C#" Value="public static readonly string WorkItemTrackingArtifactUriQueryToken;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string WorkItemTrackingArtifactUriQueryToken" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemTrackingArtifactUriQueryToken" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WorkItemTrackingArtifactUriQueryToken As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable WorkItemTrackingArtifactUriQueryToken : string" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemTrackingArtifactUriQueryToken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkItemTrackingNamespaceId">
+      <MemberSignature Language="C#" Value="public static readonly Guid WorkItemTrackingNamespaceId;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid WorkItemTrackingNamespaceId" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemTrackingNamespaceId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WorkItemTrackingNamespaceId As Guid " />
+      <MemberSignature Language="F#" Value=" staticval mutable WorkItemTrackingNamespaceId : Guid" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemTrackingNamespaceId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkItemTrackingReadAcrossProjectPermission">
+      <MemberSignature Language="C#" Value="public const int WorkItemTrackingReadAcrossProjectPermission = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WorkItemTrackingReadAcrossProjectPermission = (2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemTrackingReadAcrossProjectPermission" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkItemTrackingReadAcrossProjectPermission As Integer  = 2" />
+      <MemberSignature Language="F#" Value="val mutable WorkItemTrackingReadAcrossProjectPermission : int" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemTrackingReadAcrossProjectPermission" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkItemTrackingRootToken">
+      <MemberSignature Language="C#" Value="public const string WorkItemTrackingRootToken;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WorkItemTrackingRootToken" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemTrackingRootToken" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkItemTrackingRootToken As String " />
+      <MemberSignature Language="F#" Value="val mutable WorkItemTrackingRootToken : string" Usage="Microsoft.TeamFoundation.WorkItemTracking.WebApi.WitConstants.SecurityConstants.WorkItemTrackingRootToken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

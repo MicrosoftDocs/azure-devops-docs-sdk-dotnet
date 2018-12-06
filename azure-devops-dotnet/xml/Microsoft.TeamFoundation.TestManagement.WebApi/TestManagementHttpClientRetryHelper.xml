@@ -1,0 +1,225 @@
+﻿<Type Name="TestManagementHttpClientRetryHelper" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper">
+  <TypeSignature Language="C#" Value="public class TestManagementHttpClientRetryHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TestManagementHttpClientRetryHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class TestManagementHttpClientRetryHelper" />
+  <TypeSignature Language="F#" Value="type TestManagementHttpClientRetryHelper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestManagementHttpClientRetryHelper (Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient httpClient, Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper retryHelper = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient httpClient, class Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper retryHelper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper.#ctor(Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient,Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (httpClient As TestManagementHttpClient, Optional retryHelper As TestManagementRetryHelper = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper : Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient * Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper (httpClient, retryHelper)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpClient" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient" />
+        <Parameter Name="retryHelper" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper" />
+      </Parameters>
+      <Docs>
+        <param name="httpClient">To be added.</param>
+        <param name="retryHelper">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTestResultsToTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; AddTestResultsToTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, Guid project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; AddTestResultsToTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, valuetype System.Guid project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper.AddTestResultsToTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[],System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.AddTestResultsToTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="testManagementHttpClientRetryHelper.AddTestResultsToTestRunAsync (results, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[]" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTestResultsToTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; AddTestResultsToTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, string project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; AddTestResultsToTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, string project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper.AddTestResultsToTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[],System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.AddTestResultsToTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="testManagementHttpClientRetryHelper.AddTestResultsToTestRunAsync (results, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[]" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; CreateTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel runCreateModel, Guid projectId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; CreateTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel runCreateModel, valuetype System.Guid projectId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper.CreateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.CreateTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="testManagementHttpClientRetryHelper.CreateTestRunAsync (runCreateModel, projectId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runCreateModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel" />
+        <Parameter Name="projectId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="runCreateModel">To be added.</param>
+        <param name="projectId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; CreateTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel runCreateModel, string projectId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; CreateTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel runCreateModel, string projectId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper.CreateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.CreateTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="testManagementHttpClientRetryHelper.CreateTestRunAsync (runCreateModel, projectId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runCreateModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel" />
+        <Parameter Name="projectId" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="runCreateModel">To be added.</param>
+        <param name="projectId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; UpdateTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel runUpdateModel, Guid project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; UpdateTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel runUpdateModel, valuetype System.Guid project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper.UpdateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="testManagementHttpClientRetryHelper.UpdateTestRunAsync (runUpdateModel, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runUpdateModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="runUpdateModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; UpdateTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel runUpdateModel, string project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; UpdateTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel runUpdateModel, string project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClientRetryHelper.UpdateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="testManagementHttpClientRetryHelper.UpdateTestRunAsync (runUpdateModel, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runUpdateModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="runUpdateModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

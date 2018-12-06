@@ -1,0 +1,202 @@
+﻿<Type Name="IdentityRefWithVote" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote">
+  <TypeSignature Language="C#" Value="public class IdentityRefWithVote : Microsoft.VisualStudio.Services.WebApi.IdentityRef" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityRefWithVote extends Microsoft.VisualStudio.Services.WebApi.IdentityRef" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote" />
+  <TypeSignature Language="VB.NET" Value="Public Class IdentityRefWithVote&#xA;Inherits IdentityRef" />
+  <TypeSignature Language="F#" Value="type IdentityRefWithVote = class&#xA;    inherit IdentityRef" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.IdentityRef</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptIn)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Identity information including a vote on a pull request.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IdentityRefWithVote ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IdentityRefWithVote (Microsoft.VisualStudio.Services.WebApi.IdentityRef identity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualStudio.Services.WebApi.IdentityRef identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.#ctor(Microsoft.VisualStudio.Services.WebApi.IdentityRef)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityRef)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote : Microsoft.VisualStudio.Services.WebApi.IdentityRef -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote" Usage="new Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote identity" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="Microsoft.VisualStudio.Services.WebApi.IdentityRef" />
+      </Parameters>
+      <Docs>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequired">
+      <MemberSignature Language="C#" Value="public bool IsRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.IsRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.IsRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(DefaultValueHandling=Newtonsoft.Json.DefaultValueHandling.Ignore, PropertyName="isRequired")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isRequired")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if this is a required reviewer for this pull request.
+            <br />
+            Branches can have policies that require particular reviewers are required for pull requests.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReviewerUrl">
+      <MemberSignature Language="C#" Value="public string ReviewerUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReviewerUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.ReviewerUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReviewerUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ReviewerUrl : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.ReviewerUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reviewerUrl")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="reviewerUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            URL to retrieve information about this identity
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vote">
+      <MemberSignature Language="C#" Value="public short Vote { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 Vote" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.Vote" />
+      <MemberSignature Language="VB.NET" Value="Public Property Vote As Short" />
+      <MemberSignature Language="F#" Value="member this.Vote : int16 with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.Vote" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="vote")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="vote")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Vote on a pull request:<br />
+            10 - approved
+            5 - approved with suggestions
+            0 - no vote
+            -5 - waiting for author
+            -10 - rejected
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VotedFor">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote[] VotedFor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote[] VotedFor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.VotedFor" />
+      <MemberSignature Language="VB.NET" Value="Public Property VotedFor As IdentityRefWithVote()" />
+      <MemberSignature Language="F#" Value="member this.VotedFor : Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote[] with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote.VotedFor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(DefaultValueHandling=Newtonsoft.Json.DefaultValueHandling.Ignore, PropertyName="votedFor")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="votedFor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.IdentityRefWithVote[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Groups or teams that that this reviewer contributed to.
+            <br />
+            Groups and teams can be reviewers on pull requests but can not vote directly.  When a member of
+            the group or team votes, that vote is rolled up into the group or team vote.  VotedFor is a list
+            of such votes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

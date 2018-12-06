@@ -1,0 +1,150 @@
+﻿<Type Name="XPathSubscriptionExpression" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression">
+  <TypeSignature Language="C#" Value="public class XPathSubscriptionExpression : Microsoft.VisualStudio.Services.Notifications.WebApi.PathSubscriptionExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi XPathSubscriptionExpression extends Microsoft.VisualStudio.Services.Notifications.WebApi.PathSubscriptionExpression" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class XPathSubscriptionExpression&#xA;Inherits PathSubscriptionExpression" />
+  <TypeSignature Language="F#" Value="type XPathSubscriptionExpression = class&#xA;    inherit PathSubscriptionExpression" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.Notifications.WebApi.PathSubscriptionExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This class is responsible for translating both ways between XPath stored in the dabases into a readable FilterName/Operator/FilterValue
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XPathSubscriptionExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression Parse (string xpath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression Parse(string xpath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (xpath As String) As XPathSubscriptionExpression" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression.Parse xpath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xpath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xpath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseLastXPathFilter">
+      <MemberSignature Language="C#" Value="public static bool ParseLastXPathFilter (string xpath, out string path, out string filter, out string postFilterPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ParseLastXPathFilter(string xpath, [out] string&amp; path, [out] string&amp; filter, [out] string&amp; postFilterPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression.ParseLastXPathFilter(System.String,System.String@,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseLastXPathFilter (xpath As String, ByRef path As String, ByRef filter As String, ByRef postFilterPath As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ParseLastXPathFilter : string *  *  *  -&gt; bool" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression.ParseLastXPathFilter (xpath, path, filter, postFilterPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xpath" Type="System.String" />
+        <Parameter Name="path" Type="System.String" RefType="out" />
+        <Parameter Name="filter" Type="System.String" RefType="out" />
+        <Parameter Name="postFilterPath" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="xpath">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="filter">To be added.</param>
+        <param name="postFilterPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParsePath">
+      <MemberSignature Language="C#" Value="public override Microsoft.VisualStudio.Services.Notifications.WebApi.PathSubscriptionExpression ParsePath (string xpath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.VisualStudio.Services.Notifications.WebApi.PathSubscriptionExpression ParsePath(string xpath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression.ParsePath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ParsePath (xpath As String) As PathSubscriptionExpression" />
+      <MemberSignature Language="F#" Value="override this.ParsePath : string -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.PathSubscriptionExpression" Usage="xPathSubscriptionExpression.ParsePath xpath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.PathSubscriptionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xpath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xpath">xpath string to parse</param>
+        <summary>
+            Parse a simple xpath expression. This will look for the last xpath Filter and
+            give you the path before the filter, information about the filter, and the path after the filter
+            </summary>
+        <returns>XPathSubscriptionExpression</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPath">
+      <MemberSignature Language="C#" Value="public override string ToPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.XPathSubscriptionExpression.ToPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToPath () As String" />
+      <MemberSignature Language="F#" Value="override this.ToPath : unit -&gt; string" Usage="xPathSubscriptionExpression.ToPath " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Translates the field query (FieldName, operator, FieldValue) into a valid XPath, e.g. "CoreFields/IntegerFields/Field[Name='ID']/NewValue" = '1' for WorkItemTracking.
+            Will escape special characters in FieldName if needed
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

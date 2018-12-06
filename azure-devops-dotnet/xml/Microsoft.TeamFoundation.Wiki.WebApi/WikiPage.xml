@@ -1,0 +1,347 @@
+﻿<Type Name="WikiPage" FullName="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage">
+  <TypeSignature Language="C#" Value="public class WikiPage : Microsoft.TeamFoundation.Wiki.WebApi.WikiPageCreateOrUpdateParameters, Microsoft.TeamFoundation.Wiki.WebApi.IBaseResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WikiPage extends Microsoft.TeamFoundation.Wiki.WebApi.WikiPageCreateOrUpdateParameters implements class Microsoft.TeamFoundation.Wiki.WebApi.IBaseResource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage" />
+  <TypeSignature Language="VB.NET" Value="Public Class WikiPage&#xA;Inherits WikiPageCreateOrUpdateParameters&#xA;Implements IBaseResource" />
+  <TypeSignature Language="F#" Value="type WikiPage = class&#xA;    inherit WikiPageCreateOrUpdateParameters&#xA;    interface IBaseResource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Wiki.WebApi.WikiPageCreateOrUpdateParameters</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.Wiki.WebApi.IBaseResource</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Defines a page in a wiki.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WikiPage (string path, bool isParentPage, int order, Microsoft.TeamFoundation.SourceControl.WebApi.GitItem item = null, bool isNonConformant = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool isParentPage, int32 order, class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem item, bool isNonConformant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.#ctor(System.String,System.Boolean,System.Int32,Microsoft.TeamFoundation.SourceControl.WebApi.GitItem,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, isParentPage As Boolean, order As Integer, Optional item As GitItem = null, Optional isNonConformant As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Wiki.WebApi.WikiPage : string * bool * int * Microsoft.TeamFoundation.SourceControl.WebApi.GitItem * bool -&gt; Microsoft.TeamFoundation.Wiki.WebApi.WikiPage" Usage="new Microsoft.TeamFoundation.Wiki.WebApi.WikiPage (path, isParentPage, order, item, isNonConformant)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="isParentPage" Type="System.Boolean" />
+        <Parameter Name="order" Type="System.Int32" />
+        <Parameter Name="item" Type="Microsoft.TeamFoundation.SourceControl.WebApi.GitItem" />
+        <Parameter Name="isNonConformant" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="isParentPage">To be added.</param>
+        <param name="order">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="isNonConformant">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GitItemPath">
+      <MemberSignature Language="C#" Value="public string GitItemPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GitItemPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.GitItemPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GitItemPath As String" />
+      <MemberSignature Language="F#" Value="member this.GitItemPath : string" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.GitItemPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="gitItemPath")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Path of the git item corresponding to the wiki page stored in the backing Git repository.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalItem">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitItem InternalItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem InternalItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.InternalItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InternalItem As GitItem" />
+      <MemberSignature Language="F#" Value="member this.InternalItem : Microsoft.TeamFoundation.SourceControl.WebApi.GitItem" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.InternalItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.IgnoreDataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNonConformant">
+      <MemberSignature Language="C#" Value="public bool IsNonConformant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNonConformant" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.IsNonConformant" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNonConformant As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNonConformant : bool" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.IsNonConformant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isNonConformant")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            True if a page is non-conforming, i.e. 1) if the name doesn't match page naming standards. 2) if the page does not have a valid entry in the appropriate order file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsParentPage">
+      <MemberSignature Language="C#" Value="public bool IsParentPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsParentPage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.IsParentPage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsParentPage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsParentPage : bool" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.IsParentPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isParentPage")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            True if this page has subpages under its path.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.Order" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="order")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Order of the wiki page, relative to other pages in the same hierarchy level.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="path")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Path of the wiki page.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteUrl">
+      <MemberSignature Language="C#" Value="public string RemoteUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RemoteUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.RemoteUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemoteUrl As String" />
+      <MemberSignature Language="F#" Value="member this.RemoteUrl : string with get, set" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.RemoteUrl" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.Wiki.WebApi.IBaseResource.RemoteUrl</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="remoteUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Remote web url to the wiki page.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredObject">
+      <MemberSignature Language="C#" Value="public override void SetSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.SetSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetSecuredObject (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="override this.SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit" Usage="wikiPage.SetSecuredObject securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubPages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.Wiki.WebApi.WikiPage&gt; SubPages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.Wiki.WebApi.WikiPage&gt; SubPages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.SubPages" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubPages As IList(Of WikiPage)" />
+      <MemberSignature Language="F#" Value="member this.SubPages : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.Wiki.WebApi.WikiPage&gt; with get, set" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.SubPages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="subPages")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.Wiki.WebApi.WikiPage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of subpages of the current page.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.Url" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.Wiki.WebApi.IBaseResource.Url</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            REST url for this wiki page.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

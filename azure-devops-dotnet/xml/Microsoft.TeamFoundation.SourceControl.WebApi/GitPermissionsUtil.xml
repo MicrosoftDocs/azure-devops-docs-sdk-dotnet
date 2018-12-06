@@ -1,0 +1,147 @@
+﻿<Type Name="GitPermissionsUtil" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil">
+  <TypeSignature Language="C#" Value="public static class GitPermissionsUtil" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GitPermissionsUtil extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil" />
+  <TypeSignature Language="VB.NET" Value="Public Class GitPermissionsUtil" />
+  <TypeSignature Language="F#" Value="type GitPermissionsUtil = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetProjectIdFromToken">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;Guid&gt; GetProjectIdFromToken (string securityToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.Guid&gt; GetProjectIdFromToken(string securityToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetProjectIdFromToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProjectIdFromToken (securityToken As String) As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="static member GetProjectIdFromToken : string -&gt; Nullable&lt;Guid&gt;" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetProjectIdFromToken securityToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="securityToken">To be added.</param>
+        <summary>
+            Get project Guid from a canonicalized token.
+            <param name="securityToken"> a Git Repositories Security Token that is already canonicalized by
+            <see cref="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CalculateSecurable(System.String,System.Guid,System.String)" /> in the form:
+            repoV2/f7aa0cd2-5bb1-4fc7-87fc-3ca29a266aad/622eb04c-9538-4e64-bb8e-4287eb20436d/refs/heads/6d0061007300740065007200/</param></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRefNameFromToken">
+      <MemberSignature Language="C#" Value="public static string GetRefNameFromToken (string securityToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRefNameFromToken(string securityToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetRefNameFromToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRefNameFromToken (securityToken As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetRefNameFromToken : string -&gt; string" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetRefNameFromToken securityToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="securityToken">To be added.</param>
+        <summary>
+            Get readble ref name from a canonicalized token.
+            e.g.: return "refs/heads/master" from "repoV2/f7aa0cd2-5bb1-4fc7-87fc-3ca29a266aad/622eb04c-9538-4e64-bb8e-4287eb20436d/refs/heads/6d0061007300740065007200"
+            <param name="securityToken"> a Git Repositories Security Token that is already canonicalized</param></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRepoIdFromToken">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;Guid&gt; GetRepoIdFromToken (string securityToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.Guid&gt; GetRepoIdFromToken(string securityToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetRepoIdFromToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRepoIdFromToken (securityToken As String) As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="static member GetRepoIdFromToken : string -&gt; Nullable&lt;Guid&gt;" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetRepoIdFromToken securityToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="securityToken">To be added.</param>
+        <summary>
+            Get repo Guid from a canonicalized token.
+            <param name="securityToken"> a Git Repositories Security Token that is already canonicalized by
+            <see cref="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CalculateSecurable(System.String,System.Guid,System.String)" /> in the form:
+            repoV2/f7aa0cd2-5bb1-4fc7-87fc-3ca29a266aad/622eb04c-9538-4e64-bb8e-4287eb20436d/refs/heads/6d0061007300740065007200/</param></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenScope">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope GetTokenScope (string securityToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope GetTokenScope(string securityToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetTokenScope(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTokenScope (securityToken As String) As GitPermissionScope" />
+      <MemberSignature Language="F#" Value="static member GetTokenScope : string -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetTokenScope securityToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="securityToken">To be added.</param>
+        <summary>
+            Infers the <see cref="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionScope" /> from how many sub-tokens in the provided security token.
+            <param name="securityToken"> a Git Repositories Security Token that is already canonicalized by
+            <see cref="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitUtils.CalculateSecurable(System.String,System.Guid,System.String)" /> in the form:
+            repoV2/f7aa0cd2-5bb1-4fc7-87fc-3ca29a266aad/622eb04c-9538-4e64-bb8e-4287eb20436d/refs/heads/6d0061007300740065007200/</param></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

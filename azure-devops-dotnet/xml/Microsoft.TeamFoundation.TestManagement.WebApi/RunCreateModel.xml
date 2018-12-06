@@ -1,0 +1,1013 @@
+﻿<Type Name="RunCreateModel" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel">
+  <TypeSignature Language="C#" Value="public class RunCreateModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunCreateModel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel" />
+  <TypeSignature Language="VB.NET" Value="Public Class RunCreateModel" />
+  <TypeSignature Language="F#" Value="type RunCreateModel = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Test run create details.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RunCreateModel (string name = &quot;&quot;, string iteration = &quot;&quot;, int[] pointIds = null, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference plan = null, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference testSettings = null, int buildId = 0, string state = &quot;&quot;, Nullable&lt;bool&gt; isAutomated = null, string errorMessage = &quot;&quot;, string dueDate = &quot;&quot;, string type = &quot;&quot;, string controller = &quot;&quot;, string buildDropLocation = &quot;&quot;, string comment = &quot;&quot;, string testEnvironmentId = &quot;&quot;, string startedDate = &quot;&quot;, string completedDate = &quot;&quot;, int[] configIds = null, Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter filter = null, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlTestEnvironment = null, Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails environmentDetails = null, Microsoft.VisualStudio.Services.WebApi.IdentityRef owner = null, string buildPlatform = &quot;&quot;, string buildFlavor = &quot;&quot;, string releaseUri = &quot;&quot;, string releaseEnvironmentUri = &quot;&quot;, Nullable&lt;TimeSpan&gt; runTimeout = null, string testconfigurationsMapping = &quot;&quot;, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlAutEnvironment = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string iteration, int32[] pointIds, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference plan, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference testSettings, int32 buildId, string state, valuetype System.Nullable`1&lt;bool&gt; isAutomated, string errorMessage, string dueDate, string type, string controller, string buildDropLocation, string comment, string testEnvironmentId, string startedDate, string completedDate, int32[] configIds, class Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter filter, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlTestEnvironment, class Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails environmentDetails, class Microsoft.VisualStudio.Services.WebApi.IdentityRef owner, string buildPlatform, string buildFlavor, string releaseUri, string releaseEnvironmentUri, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; runTimeout, string testconfigurationsMapping, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlAutEnvironment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.#ctor(System.String,System.String,System.Int32[],Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,System.Int32,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32[],Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails,Microsoft.VisualStudio.Services.WebApi.IdentityRef,System.String,System.String,System.String,System.String,System.Nullable{System.TimeSpan},System.String,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = &quot;&quot;, Optional iteration As String = &quot;&quot;, Optional pointIds As Integer() = null, Optional plan As ShallowReference = null, Optional testSettings As ShallowReference = null, Optional buildId As Integer = 0, Optional state As String = &quot;&quot;, Optional isAutomated As Nullable(Of Boolean) = null, Optional errorMessage As String = &quot;&quot;, Optional dueDate As String = &quot;&quot;, Optional type As String = &quot;&quot;, Optional controller As String = &quot;&quot;, Optional buildDropLocation As String = &quot;&quot;, Optional comment As String = &quot;&quot;, Optional testEnvironmentId As String = &quot;&quot;, Optional startedDate As String = &quot;&quot;, Optional completedDate As String = &quot;&quot;, Optional configIds As Integer() = null, Optional filter As RunFilter = null, Optional dtlTestEnvironment As ShallowReference = null, Optional environmentDetails As DtlEnvironmentDetails = null, Optional owner As IdentityRef = null, Optional buildPlatform As String = &quot;&quot;, Optional buildFlavor As String = &quot;&quot;, Optional releaseUri As String = &quot;&quot;, Optional releaseEnvironmentUri As String = &quot;&quot;, Optional runTimeout As Nullable(Of TimeSpan) = null, Optional testconfigurationsMapping As String = &quot;&quot;, Optional dtlAutEnvironment As ShallowReference = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel : string * string * int[] * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * int * string * Nullable&lt;bool&gt; * string * string * string * string * string * string * string * string * string * int[] * Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails * Microsoft.VisualStudio.Services.WebApi.IdentityRef * string * string * string * string * Nullable&lt;TimeSpan&gt; * string * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel (name, iteration, pointIds, plan, testSettings, buildId, state, isAutomated, errorMessage, dueDate, type, controller, buildDropLocation, comment, testEnvironmentId, startedDate, completedDate, configIds, filter, dtlTestEnvironment, environmentDetails, owner, buildPlatform, buildFlavor, releaseUri, releaseEnvironmentUri, runTimeout, testconfigurationsMapping, dtlAutEnvironment)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="iteration" Type="System.String" />
+        <Parameter Name="pointIds" Type="System.Int32[]" />
+        <Parameter Name="plan" Type="Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" />
+        <Parameter Name="testSettings" Type="Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" />
+        <Parameter Name="buildId" Type="System.Int32" />
+        <Parameter Name="state" Type="System.String" />
+        <Parameter Name="isAutomated" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="errorMessage" Type="System.String" />
+        <Parameter Name="dueDate" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="controller" Type="System.String" />
+        <Parameter Name="buildDropLocation" Type="System.String" />
+        <Parameter Name="comment" Type="System.String" />
+        <Parameter Name="testEnvironmentId" Type="System.String" />
+        <Parameter Name="startedDate" Type="System.String" />
+        <Parameter Name="completedDate" Type="System.String" />
+        <Parameter Name="configIds" Type="System.Int32[]" />
+        <Parameter Name="filter" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter" />
+        <Parameter Name="dtlTestEnvironment" Type="Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" />
+        <Parameter Name="environmentDetails" Type="Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails" />
+        <Parameter Name="owner" Type="Microsoft.VisualStudio.Services.WebApi.IdentityRef" />
+        <Parameter Name="buildPlatform" Type="System.String" />
+        <Parameter Name="buildFlavor" Type="System.String" />
+        <Parameter Name="releaseUri" Type="System.String" />
+        <Parameter Name="releaseEnvironmentUri" Type="System.String" />
+        <Parameter Name="runTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="testconfigurationsMapping" Type="System.String" />
+        <Parameter Name="dtlAutEnvironment" Type="Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="iteration">To be added.</param>
+        <param name="pointIds">To be added.</param>
+        <param name="plan">To be added.</param>
+        <param name="testSettings">To be added.</param>
+        <param name="buildId">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="isAutomated">To be added.</param>
+        <param name="errorMessage">To be added.</param>
+        <param name="dueDate">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="controller">To be added.</param>
+        <param name="buildDropLocation">To be added.</param>
+        <param name="comment">To be added.</param>
+        <param name="testEnvironmentId">To be added.</param>
+        <param name="startedDate">To be added.</param>
+        <param name="completedDate">To be added.</param>
+        <param name="configIds">To be added.</param>
+        <param name="filter">To be added.</param>
+        <param name="dtlTestEnvironment">To be added.</param>
+        <param name="environmentDetails">To be added.</param>
+        <param name="owner">To be added.</param>
+        <param name="buildPlatform">To be added.</param>
+        <param name="buildFlavor">To be added.</param>
+        <param name="releaseUri">To be added.</param>
+        <param name="releaseEnvironmentUri">To be added.</param>
+        <param name="runTimeout">To be added.</param>
+        <param name="testconfigurationsMapping">To be added.</param>
+        <param name="dtlAutEnvironment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Automated">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Automated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Automated" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Automated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Automated As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Automated : Nullable&lt;bool&gt;" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Automated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            true if test run is automated, false otherwise.
+            By default it will be false.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Build">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference Build { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference Build" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Build" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Build As ShallowReference" />
+      <MemberSignature Language="F#" Value="member this.Build : Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Build" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An abstracted reference to the build that it belongs.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildDropLocation">
+      <MemberSignature Language="C#" Value="public string BuildDropLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BuildDropLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.BuildDropLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildDropLocation As String" />
+      <MemberSignature Language="F#" Value="member this.BuildDropLocation : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.BuildDropLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Drop location of the build used for test run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildFlavor">
+      <MemberSignature Language="C#" Value="public string BuildFlavor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BuildFlavor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.BuildFlavor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildFlavor As String" />
+      <MemberSignature Language="F#" Value="member this.BuildFlavor : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.BuildFlavor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Flavor of the build used for test run. (E.g: Release, Debug)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildPlatform">
+      <MemberSignature Language="C#" Value="public string BuildPlatform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BuildPlatform" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.BuildPlatform" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildPlatform As String" />
+      <MemberSignature Language="F#" Value="member this.BuildPlatform : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.BuildPlatform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Platform of the build used for test run. (E.g.: x86, amd64)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildReference">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.BuildConfiguration BuildReference { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.BuildConfiguration BuildReference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.BuildReference" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildReference As BuildConfiguration" />
+      <MemberSignature Language="F#" Value="member this.BuildReference : Microsoft.TeamFoundation.TestManagement.WebApi.BuildConfiguration with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.BuildReference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.BuildConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public string Comment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comment As String" />
+      <MemberSignature Language="F#" Value="member this.Comment : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Comment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Comments entered by those analyzing the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompleteDate">
+      <MemberSignature Language="C#" Value="public string CompleteDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CompleteDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.CompleteDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompleteDate As String" />
+      <MemberSignature Language="F#" Value="member this.CompleteDate : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.CompleteDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Completed date time of the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationIds">
+      <MemberSignature Language="C#" Value="public int[] ConfigurationIds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] ConfigurationIds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ConfigurationIds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConfigurationIds As Integer()" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationIds : int[]" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ConfigurationIds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            IDs of the test configurations associated with the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Controller">
+      <MemberSignature Language="C#" Value="public string Controller { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Controller" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Controller" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controller As String" />
+      <MemberSignature Language="F#" Value="member this.Controller : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Controller" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of the test controller used for automated run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomTestFields">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CustomTestField&gt; CustomTestFields { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.CustomTestField&gt; CustomTestFields" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.CustomTestFields" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomTestFields As List(Of CustomTestField)" />
+      <MemberSignature Language="F#" Value="member this.CustomTestFields : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CustomTestField&gt; with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.CustomTestFields" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CustomTestField&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DtlAutEnvironment">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference DtlAutEnvironment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference DtlAutEnvironment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.DtlAutEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DtlAutEnvironment As ShallowReference" />
+      <MemberSignature Language="F#" Value="member this.DtlAutEnvironment : Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.DtlAutEnvironment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An abstracted reference to DtlAutEnvironment.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DtlTestEnvironment">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference DtlTestEnvironment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference DtlTestEnvironment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.DtlTestEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DtlTestEnvironment As ShallowReference" />
+      <MemberSignature Language="F#" Value="member this.DtlTestEnvironment : Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.DtlTestEnvironment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An abstracted reference to DtlTestEnvironment.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DueDate">
+      <MemberSignature Language="C#" Value="public string DueDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DueDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.DueDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DueDate As String" />
+      <MemberSignature Language="F#" Value="member this.DueDate : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.DueDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Due date and time for test run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnvironmentDetails">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails EnvironmentDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails EnvironmentDetails" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.EnvironmentDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvironmentDetails As DtlEnvironmentDetails" />
+      <MemberSignature Language="F#" Value="member this.EnvironmentDetails : Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.EnvironmentDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorMessage">
+      <MemberSignature Language="C#" Value="public string ErrorMessage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Error message associated with the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter Filter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter Filter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filter As RunFilter" />
+      <MemberSignature Language="F#" Value="member this.Filter : Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Iteration">
+      <MemberSignature Language="C#" Value="public string Iteration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Iteration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Iteration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Iteration As String" />
+      <MemberSignature Language="F#" Value="member this.Iteration : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Iteration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The iteration in which to create the run.
+            Root iteration of the team project will be default
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of the test run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef Owner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef Owner" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.Owner : Microsoft.VisualStudio.Services.WebApi.IdentityRef" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Display name of the owner of the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Plan">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference Plan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference Plan" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Plan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Plan As ShallowReference" />
+      <MemberSignature Language="F#" Value="member this.Plan : Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Plan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An abstracted reference to the plan that it belongs.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointIds">
+      <MemberSignature Language="C#" Value="public int[] PointIds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] PointIds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.PointIds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointIds As Integer()" />
+      <MemberSignature Language="F#" Value="member this.PointIds : int[]" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.PointIds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            IDs of the test points to use in the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseEnvironmentUri">
+      <MemberSignature Language="C#" Value="public string ReleaseEnvironmentUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReleaseEnvironmentUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ReleaseEnvironmentUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReleaseEnvironmentUri As String" />
+      <MemberSignature Language="F#" Value="member this.ReleaseEnvironmentUri : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ReleaseEnvironmentUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            URI of release environment associated with the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseReference">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ReleaseReference ReleaseReference { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ReleaseReference ReleaseReference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ReleaseReference" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReleaseReference As ReleaseReference" />
+      <MemberSignature Language="F#" Value="member this.ReleaseReference : Microsoft.TeamFoundation.TestManagement.WebApi.ReleaseReference with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ReleaseReference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ReleaseReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseUri">
+      <MemberSignature Language="C#" Value="public string ReleaseUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReleaseUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ReleaseUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReleaseUri As String" />
+      <MemberSignature Language="F#" Value="member this.ReleaseUri : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.ReleaseUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            URI of release associated with the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan RunTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RunTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.RunTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RunTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.RunTimeout : TimeSpan" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.RunTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceWorkflow">
+      <MemberSignature Language="C#" Value="public string SourceWorkflow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceWorkflow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.SourceWorkflow" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceWorkflow As String" />
+      <MemberSignature Language="F#" Value="member this.SourceWorkflow : string with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.SourceWorkflow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDate">
+      <MemberSignature Language="C#" Value="public string StartDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StartDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.StartDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartDate As String" />
+      <MemberSignature Language="F#" Value="member this.StartDate : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.StartDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Start date time of the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public string State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As String" />
+      <MemberSignature Language="F#" Value="member this.State : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The state of the run.
+            Valid states - NotStarted, InProgress, Waiting
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestConfigurationsMapping">
+      <MemberSignature Language="C#" Value="public string TestConfigurationsMapping { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TestConfigurationsMapping" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.TestConfigurationsMapping" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TestConfigurationsMapping As String" />
+      <MemberSignature Language="F#" Value="member this.TestConfigurationsMapping : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.TestConfigurationsMapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestEnvironmentId">
+      <MemberSignature Language="C#" Value="public string TestEnvironmentId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TestEnvironmentId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.TestEnvironmentId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TestEnvironmentId As String" />
+      <MemberSignature Language="F#" Value="member this.TestEnvironmentId : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.TestEnvironmentId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ID of the test environment associated with the run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestSettings">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference TestSettings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference TestSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.TestSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TestSettings As ShallowReference" />
+      <MemberSignature Language="F#" Value="member this.TestSettings : Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.TestSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An abstracted reference to the test settings resource.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

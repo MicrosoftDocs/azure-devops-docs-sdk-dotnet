@@ -1,0 +1,921 @@
+﻿<Type Name="NotificationHttpClient" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient">
+  <TypeSignature Language="C#" Value="public class NotificationHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotificationHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class NotificationHttpClient&#xA;Inherits VssHttpClientBase" />
+  <TypeSignature Language="F#" Value="type NotificationHttpClient = class&#xA;    inherit VssHttpClientBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient" Usage="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient (baseUrl, credentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient" Usage="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient (baseUrl, credentials, settings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient" Usage="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient (baseUrl, credentials, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationHttpClient (Uri baseUrl, System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, pipeline As HttpMessageHandler, disposeHandler As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient : Uri * System.Net.Http.HttpMessageHandler * bool -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient" Usage="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient (baseUrl, pipeline, disposeHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="pipeline" Type="System.Net.Http.HttpMessageHandler" />
+        <Parameter Name="disposeHandler" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="pipeline">To be added.</param>
+        <param name="disposeHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationHttpClient (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient" Usage="new Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient (baseUrl, credentials, settings, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSubscriptionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt; CreateSubscriptionAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters createParameters, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt; CreateSubscriptionAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters createParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.CreateSubscriptionAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.CreateSubscriptionAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;" Usage="notificationHttpClient.CreateSubscriptionAsync (createParameters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="createParameters" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="createParameters"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a new subscription.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSubscriptionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteSubscriptionAsync (string subscriptionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteSubscriptionAsync(string subscriptionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.DeleteSubscriptionAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.DeleteSubscriptionAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="notificationHttpClient.DeleteSubscriptionAsync (subscriptionId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a subscription.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventTypeAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventType&gt; GetEventTypeAsync (string eventType, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventType&gt; GetEventTypeAsync(string eventType, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.GetEventTypeAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetEventTypeAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventType&gt;" Usage="notificationHttpClient.GetEventTypeAsync (eventType, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventType" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="eventType"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a specific event type.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNotificationReasonsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationReason&gt; GetNotificationReasonsAsync (int notificationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationReason&gt; GetNotificationReasonsAsync(int32 notificationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.GetNotificationReasonsAsync(System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetNotificationReasonsAsync : int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationReason&gt;" Usage="notificationHttpClient.GetNotificationReasonsAsync (notificationId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationReason&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="notificationId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="notificationId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSettingsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings&gt; GetSettingsAsync (object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings&gt; GetSettingsAsync(object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.GetSettingsAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetSettingsAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings&gt;" Usage="notificationHttpClient.GetSettingsAsync (userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriberAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriber&gt; GetSubscriberAsync (Guid subscriberId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriber&gt; GetSubscriberAsync(valuetype System.Guid subscriberId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.GetSubscriberAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetSubscriberAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriber&gt;" Usage="notificationHttpClient.GetSubscriberAsync (subscriberId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriber&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriberId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriberId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriptionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt; GetSubscriptionAsync (string subscriptionId, Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags&gt; queryFlags = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt; GetSubscriptionAsync(string subscriptionId, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags&gt; queryFlags, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.GetSubscriptionAsync(System.String,System.Nullable{Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetSubscriptionAsync : string * Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;" Usage="notificationHttpClient.GetSubscriptionAsync (subscriptionId, queryFlags, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="queryFlags" Type="System.Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionId"></param>
+        <param name="queryFlags"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a notification subscription by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriptionDiagnosticsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics&gt; GetSubscriptionDiagnosticsAsync (string subscriptionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics&gt; GetSubscriptionDiagnosticsAsync(string subscriptionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.GetSubscriptionDiagnosticsAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetSubscriptionDiagnosticsAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics&gt;" Usage="notificationHttpClient.GetSubscriptionDiagnosticsAsync (subscriptionId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubscriptionTemplatesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionTemplate&gt;&gt; GetSubscriptionTemplatesAsync (object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionTemplate&gt;&gt; GetSubscriptionTemplatesAsync(object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.GetSubscriptionTemplatesAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetSubscriptionTemplatesAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionTemplate&gt;&gt;" Usage="notificationHttpClient.GetSubscriptionTemplatesAsync (userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionTemplate&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get available subscription templates.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListEventTypesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventType&gt;&gt; ListEventTypesAsync (string publisherId = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventType&gt;&gt; ListEventTypesAsync(string publisherId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.ListEventTypesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.ListEventTypesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventType&gt;&gt;" Usage="notificationHttpClient.ListEventTypesAsync (publisherId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventType&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="publisherId" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="publisherId">Limit to event types for this publisher</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] List available event types for this service. Optionally filter by only event types for the specified publisher.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListLogsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.INotificationDiagnosticLog&gt;&gt; ListLogsAsync (Guid source, Nullable&lt;Guid&gt; entryId = null, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.INotificationDiagnosticLog&gt;&gt; ListLogsAsync(valuetype System.Guid source, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; entryId, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.ListLogsAsync(System.Guid,System.Nullable{System.Guid},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.ListLogsAsync : Guid * Nullable&lt;Guid&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.INotificationDiagnosticLog&gt;&gt;" Usage="notificationHttpClient.ListLogsAsync (source, entryId, startTime, endTime, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.INotificationDiagnosticLog&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Guid" />
+        <Parameter Name="entryId" Type="System.Nullable&lt;System.Guid&gt;" />
+        <Parameter Name="startTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="endTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="source"></param>
+        <param name="entryId"></param>
+        <param name="startTime"></param>
+        <param name="endTime"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] List diagnostic logs this service.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListNotificationReasonsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationReason&gt;&gt; ListNotificationReasonsAsync (Nullable&lt;int&gt; notificationIds = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationReason&gt;&gt; ListNotificationReasonsAsync(valuetype System.Nullable`1&lt;int32&gt; notificationIds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.ListNotificationReasonsAsync(System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.ListNotificationReasonsAsync : Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationReason&gt;&gt;" Usage="notificationHttpClient.ListNotificationReasonsAsync (notificationIds, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationReason&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="notificationIds" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="notificationIds"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListSubscriptionsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;&gt; ListSubscriptionsAsync (Nullable&lt;Guid&gt; targetId = null, System.Collections.Generic.IEnumerable&lt;string&gt; ids = null, Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags&gt; queryFlags = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;&gt; ListSubscriptionsAsync(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; targetId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ids, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags&gt; queryFlags, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.ListSubscriptionsAsync(System.Nullable{System.Guid},System.Collections.Generic.IEnumerable{System.String},System.Nullable{Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.ListSubscriptionsAsync : Nullable&lt;Guid&gt; * seq&lt;string&gt; * Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;&gt;" Usage="notificationHttpClient.ListSubscriptionsAsync (targetId, ids, queryFlags, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetId" Type="System.Nullable&lt;System.Guid&gt;" />
+        <Parameter Name="ids" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="queryFlags" Type="System.Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQueryFlags&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="targetId"></param>
+        <param name="ids"></param>
+        <param name="queryFlags"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformBatchNotificationOperationsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PerformBatchNotificationOperationsAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.BatchNotificationOperation operation, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task PerformBatchNotificationOperationsAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.BatchNotificationOperation operation, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.PerformBatchNotificationOperationsAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.BatchNotificationOperation,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.PerformBatchNotificationOperationsAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.BatchNotificationOperation * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="notificationHttpClient.PerformBatchNotificationOperationsAsync (operation, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.BatchNotificationOperation" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operation"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublishEventAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent&gt; PublishEventAsync (Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent notificationEvent, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent&gt; PublishEventAsync(class Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent notificationEvent, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.PublishEventAsync(Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.PublishEventAsync : Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent&gt;" Usage="notificationHttpClient.PublishEventAsync (notificationEvent, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="notificationEvent" Type="Microsoft.VisualStudio.Services.Notifications.VssNotificationEvent" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="notificationEvent"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Publish an event.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryEventTypesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventField&gt;&gt; QueryEventTypesAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.FieldValuesQuery inputValuesQuery, string eventType, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventField&gt;&gt; QueryEventTypesAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.FieldValuesQuery inputValuesQuery, string eventType, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.QueryEventTypesAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.FieldValuesQuery,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.QueryEventTypesAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.FieldValuesQuery * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventField&gt;&gt;" Usage="notificationHttpClient.QueryEventTypesAsync (inputValuesQuery, eventType, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationEventField&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputValuesQuery" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.FieldValuesQuery" />
+        <Parameter Name="eventType" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="inputValuesQuery"></param>
+        <param name="eventType"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryStatisticsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatistic&gt;&gt; QueryStatisticsAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatisticsQuery statisticsQuery, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatistic&gt;&gt; QueryStatisticsAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatisticsQuery statisticsQuery, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.QueryStatisticsAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatisticsQuery,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.QueryStatisticsAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatisticsQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatistic&gt;&gt;" Usage="notificationHttpClient.QueryStatisticsAsync (statisticsQuery, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatistic&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statisticsQuery" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationStatisticsQuery" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="statisticsQuery"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuerySubscriptionsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;&gt; QuerySubscriptionsAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQuery subscriptionQuery, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;&gt; QuerySubscriptionsAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQuery subscriptionQuery, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.QuerySubscriptionsAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQuery,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.QuerySubscriptionsAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;&gt;" Usage="notificationHttpClient.QuerySubscriptionsAsync (subscriptionQuery, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionQuery" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionQuery" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionQuery"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Query for subscriptions. A subscription is returned if it matches one or more of the specified conditions.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformEventAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformResult&gt; TransformEventAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformRequest transformRequest, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformResult&gt; TransformEventAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformRequest transformRequest, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.TransformEventAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformRequest,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.TransformEventAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformRequest * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformResult&gt;" Usage="notificationHttpClient.TransformEventAsync (transformRequest, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transformRequest" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.EventTransformRequest" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="transformRequest">Object to be transformed.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Tranform a notification event.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSettingsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings&gt; UpdateSettingsAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettingsUpdateParameters updateParameters, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings&gt; UpdateSettingsAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettingsUpdateParameters updateParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.UpdateSettingsAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettingsUpdateParameters,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateSettingsAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettingsUpdateParameters * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings&gt;" Usage="notificationHttpClient.UpdateSettingsAsync (updateParameters, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateParameters" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettingsUpdateParameters" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="updateParameters"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSubscriberAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriber&gt; UpdateSubscriberAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters updateParameters, Guid subscriberId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriber&gt; UpdateSubscriberAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters updateParameters, valuetype System.Guid subscriberId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.UpdateSubscriberAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateSubscriberAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriber&gt;" Usage="notificationHttpClient.UpdateSubscriberAsync (updateParameters, subscriberId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriber&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateParameters" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberUpdateParameters" />
+        <Parameter Name="subscriberId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="updateParameters"></param>
+        <param name="subscriberId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSubscriptionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt; UpdateSubscriptionAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionUpdateParameters updateParameters, string subscriptionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt; UpdateSubscriptionAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionUpdateParameters updateParameters, string subscriptionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.UpdateSubscriptionAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionUpdateParameters,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateSubscriptionAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionUpdateParameters * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;" Usage="notificationHttpClient.UpdateSubscriptionAsync (updateParameters, subscriptionId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateParameters" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionUpdateParameters" />
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="updateParameters"></param>
+        <param name="subscriptionId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update an existing subscription. Depending on the type of subscription and permissions, the caller can update the description, filter settings, channel (delivery) settings and more.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSubscriptionDiagnosticsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics&gt; UpdateSubscriptionDiagnosticsAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.UpdateSubscripitonDiagnosticsParameters updateParameters, string subscriptionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics&gt; UpdateSubscriptionDiagnosticsAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.UpdateSubscripitonDiagnosticsParameters updateParameters, string subscriptionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.UpdateSubscriptionDiagnosticsAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.UpdateSubscripitonDiagnosticsParameters,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateSubscriptionDiagnosticsAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.UpdateSubscripitonDiagnosticsParameters * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics&gt;" Usage="notificationHttpClient.UpdateSubscriptionDiagnosticsAsync (updateParameters, subscriptionId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateParameters" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.UpdateSubscripitonDiagnosticsParameters" />
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="updateParameters"></param>
+        <param name="subscriptionId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API]
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSubscriptionUserSettingsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings&gt; UpdateSubscriptionUserSettingsAsync (Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings userSettings, string subscriptionId, Guid userId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings&gt; UpdateSubscriptionUserSettingsAsync(class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings userSettings, string subscriptionId, valuetype System.Guid userId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.Clients.NotificationHttpClient.UpdateSubscriptionUserSettingsAsync(Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.UpdateSubscriptionUserSettingsAsync : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings&gt;" Usage="notificationHttpClient.UpdateSubscriptionUserSettingsAsync (userSettings, subscriptionId, userId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userSettings" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings" />
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="userId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userSettings"></param>
+        <param name="subscriptionId"></param>
+        <param name="userId">ID of the user</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update the specified user's settings for the specified subscription. This API is typically used to opt in or out of a shared subscription. User settings can only be applied to shared subscriptions, like team subscriptions or default subscriptions.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

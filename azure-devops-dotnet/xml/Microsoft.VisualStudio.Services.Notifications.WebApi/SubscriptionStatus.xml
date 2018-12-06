@@ -1,0 +1,448 @@
+﻿<Type Name="SubscriptionStatus" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus">
+  <TypeSignature Language="C#" Value="public enum SubscriptionStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubscriptionStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SubscriptionStatus" />
+  <TypeSignature Language="F#" Value="type SubscriptionStatus = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Subscription status values. A value greater than or equal to zero indicates the subscription is enabled. A negative value indicates the subscription is disabled.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus Disabled = int16(-1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = -1" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled, typically by the owner of the subscription, and will not produce any notifications.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledArgumentException">
+      <MemberSignature Language="C#" Value="DisabledArgumentException" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledArgumentException = int16(-12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledArgumentException" />
+      <MemberSignature Language="VB.NET" Value="DisabledArgumentException" />
+      <MemberSignature Language="F#" Value="DisabledArgumentException = -12" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledArgumentException" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-12</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because of an Argument Exception while processing the subscription</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledAsDuplicateOfDefault">
+      <MemberSignature Language="C#" Value="DisabledAsDuplicateOfDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledAsDuplicateOfDefault = int16(-3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledAsDuplicateOfDefault" />
+      <MemberSignature Language="VB.NET" Value="DisabledAsDuplicateOfDefault" />
+      <MemberSignature Language="F#" Value="DisabledAsDuplicateOfDefault = -3" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledAsDuplicateOfDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-3</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because it is a duplicate of a default subscription.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledByAdmin">
+      <MemberSignature Language="C#" Value="DisabledByAdmin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledByAdmin = int16(-2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledByAdmin" />
+      <MemberSignature Language="VB.NET" Value="DisabledByAdmin" />
+      <MemberSignature Language="F#" Value="DisabledByAdmin = -2" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledByAdmin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled by an administrator, not the subscription's subscriber.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledBySystem">
+      <MemberSignature Language="C#" Value="DisabledBySystem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledBySystem = int16(-9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledBySystem" />
+      <MemberSignature Language="VB.NET" Value="DisabledBySystem" />
+      <MemberSignature Language="F#" Value="DisabledBySystem = -9" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledBySystem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-9</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled service due to failures.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledFromProbation">
+      <MemberSignature Language="C#" Value="DisabledFromProbation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledFromProbation = int16(-9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledFromProbation" />
+      <MemberSignature Language="VB.NET" Value="DisabledFromProbation" />
+      <MemberSignature Language="F#" Value="DisabledFromProbation = -9" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledFromProbation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-9</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled service due to failures.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledInactiveIdentity">
+      <MemberSignature Language="C#" Value="DisabledInactiveIdentity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledInactiveIdentity = int16(-8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledInactiveIdentity" />
+      <MemberSignature Language="VB.NET" Value="DisabledInactiveIdentity" />
+      <MemberSignature Language="F#" Value="DisabledInactiveIdentity = -8" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledInactiveIdentity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-8</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because the identity is no longer active</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledInvalidPathClause">
+      <MemberSignature Language="C#" Value="DisabledInvalidPathClause" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledInvalidPathClause = int16(-4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledInvalidPathClause" />
+      <MemberSignature Language="VB.NET" Value="DisabledInvalidPathClause" />
+      <MemberSignature Language="F#" Value="DisabledInvalidPathClause = -4" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledInvalidPathClause" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-4</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because it has an invalid filter expression.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledInvalidRoleExpression">
+      <MemberSignature Language="C#" Value="DisabledInvalidRoleExpression" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledInvalidRoleExpression = int16(-5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledInvalidRoleExpression" />
+      <MemberSignature Language="VB.NET" Value="DisabledInvalidRoleExpression" />
+      <MemberSignature Language="F#" Value="DisabledInvalidRoleExpression = -5" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledInvalidRoleExpression" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-5</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because it has an invalid role expression.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledMessageQueueNotSupported">
+      <MemberSignature Language="C#" Value="DisabledMessageQueueNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledMessageQueueNotSupported = int16(-7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledMessageQueueNotSupported" />
+      <MemberSignature Language="VB.NET" Value="DisabledMessageQueueNotSupported" />
+      <MemberSignature Language="F#" Value="DisabledMessageQueueNotSupported = -7" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledMessageQueueNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-7</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because message queue is not supported.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledMissingIdentity">
+      <MemberSignature Language="C#" Value="DisabledMissingIdentity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledMissingIdentity = int16(-6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledMissingIdentity" />
+      <MemberSignature Language="VB.NET" Value="DisabledMissingIdentity" />
+      <MemberSignature Language="F#" Value="DisabledMissingIdentity = -6" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledMissingIdentity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-6</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because its subscriber is unknown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledMissingPermissions">
+      <MemberSignature Language="C#" Value="DisabledMissingPermissions" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledMissingPermissions = int16(-10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledMissingPermissions" />
+      <MemberSignature Language="VB.NET" Value="DisabledMissingPermissions" />
+      <MemberSignature Language="F#" Value="DisabledMissingPermissions = -10" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledMissingPermissions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-10</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because the identity does not have the appropriate permissions</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledProjectInvalid">
+      <MemberSignature Language="C#" Value="DisabledProjectInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus DisabledProjectInvalid = int16(-11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledProjectInvalid" />
+      <MemberSignature Language="VB.NET" Value="DisabledProjectInvalid" />
+      <MemberSignature Language="F#" Value="DisabledProjectInvalid = -11" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.DisabledProjectInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-11</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because the project is invalid</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="Enabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus Enabled = int16(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 0" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.Enabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Subscription is active.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnabledOnProbation">
+      <MemberSignature Language="C#" Value="EnabledOnProbation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus EnabledOnProbation = int16(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.EnabledOnProbation" />
+      <MemberSignature Language="VB.NET" Value="EnabledOnProbation" />
+      <MemberSignature Language="F#" Value="EnabledOnProbation = 1" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.EnabledOnProbation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Subscription is active, but is on probation due to failed deliveries or other issues with the subscription.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JailedByNotificationsVolume">
+      <MemberSignature Language="C#" Value="JailedByNotificationsVolume" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus JailedByNotificationsVolume = int16(-200)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.JailedByNotificationsVolume" />
+      <MemberSignature Language="VB.NET" Value="JailedByNotificationsVolume" />
+      <MemberSignature Language="F#" Value="JailedByNotificationsVolume = -200" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.JailedByNotificationsVolume" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-200</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled because it generated a high volume of notifications.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingDeletion">
+      <MemberSignature Language="C#" Value="PendingDeletion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus PendingDeletion = int16(-100)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.PendingDeletion" />
+      <MemberSignature Language="VB.NET" Value="PendingDeletion" />
+      <MemberSignature Language="F#" Value="PendingDeletion = -100" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus.PendingDeletion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>-100</MemberValue>
+      <Docs>
+        <summary>Subscription is disabled and will be deleted.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

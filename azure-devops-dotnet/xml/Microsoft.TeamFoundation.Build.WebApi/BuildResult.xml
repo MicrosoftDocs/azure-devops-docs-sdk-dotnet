@@ -1,0 +1,165 @@
+﻿<Type Name="BuildResult" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildResult">
+  <TypeSignature Language="C#" Value="public enum BuildResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.BuildResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BuildResult" />
+  <TypeSignature Language="F#" Value="type BuildResult = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This is not a Flags enum because we don't want to set multiple statuses on a build.
+            However, when adding values, please stick to powers of 2 as if it were a Flags enum
+            This will ensure that things that key off multiple result types (like labelling sources) continue to work
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Canceled">
+      <MemberSignature Language="C#" Value="Canceled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult Canceled = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildResult.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 32" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildResult.Canceled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildResult</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>
+            The build was canceled before starting.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Failed">
+      <MemberSignature Language="C#" Value="Failed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult Failed = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildResult.Failed" />
+      <MemberSignature Language="VB.NET" Value="Failed" />
+      <MemberSignature Language="F#" Value="Failed = 8" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildResult.Failed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildResult</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+            The build completed unsuccessfully.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildResult.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildResult.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildResult</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            No result
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PartiallySucceeded">
+      <MemberSignature Language="C#" Value="PartiallySucceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult PartiallySucceeded = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildResult.PartiallySucceeded" />
+      <MemberSignature Language="VB.NET" Value="PartiallySucceeded" />
+      <MemberSignature Language="F#" Value="PartiallySucceeded = 4" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildResult.PartiallySucceeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildResult</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The build completed compilation successfully but had other errors.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Succeeded">
+      <MemberSignature Language="C#" Value="Succeeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult Succeeded = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildResult.Succeeded" />
+      <MemberSignature Language="VB.NET" Value="Succeeded" />
+      <MemberSignature Language="F#" Value="Succeeded = 2" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildResult.Succeeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildResult</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The build completed successfully.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

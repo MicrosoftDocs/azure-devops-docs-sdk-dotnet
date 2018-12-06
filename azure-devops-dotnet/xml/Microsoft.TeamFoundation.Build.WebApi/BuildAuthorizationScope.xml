@@ -1,0 +1,85 @@
+﻿<Type Name="BuildAuthorizationScope" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope">
+  <TypeSignature Language="C#" Value="public enum BuildAuthorizationScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildAuthorizationScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BuildAuthorizationScope" />
+  <TypeSignature Language="F#" Value="type BuildAuthorizationScope = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the desired scope of authorization for a build.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Project">
+      <MemberSignature Language="C#" Value="Project" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope Project = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope.Project" />
+      <MemberSignature Language="VB.NET" Value="Project" />
+      <MemberSignature Language="F#" Value="Project = 2" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope.Project" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The identity used should have build service account permissions scoped to the project in which the build
+            definition resides. This is useful for isolation of build jobs to a particular team project to avoid any
+            unintentional escalation of privilege attacks during a build.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectCollection">
+      <MemberSignature Language="C#" Value="ProjectCollection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope ProjectCollection = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope.ProjectCollection" />
+      <MemberSignature Language="VB.NET" Value="ProjectCollection" />
+      <MemberSignature Language="F#" Value="ProjectCollection = 1" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope.ProjectCollection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.BuildAuthorizationScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The identity used should have build service account permissions scoped to the project collection. This is 
+            useful when resources for a single build are spread across multiple projects.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

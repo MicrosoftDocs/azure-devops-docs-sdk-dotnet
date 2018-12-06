@@ -1,0 +1,187 @@
+﻿<Type Name="TeamContext" FullName="Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext">
+  <TypeSignature Language="C#" Value="public class TeamContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TeamContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class TeamContext" />
+  <TypeSignature Language="F#" Value="type TeamContext = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The Team Context for an operation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamContext (Guid projectId, Nullable&lt;Guid&gt; teamId = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid projectId, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; teamId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.#ctor(System.Guid,System.Nullable{System.Guid})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (projectId As Guid, Optional teamId As Nullable(Of Guid) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext : Guid * Nullable&lt;Guid&gt; -&gt; Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext" Usage="new Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext (projectId, teamId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectId" Type="System.Guid" />
+        <Parameter Name="teamId" Type="System.Nullable&lt;System.Guid&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="projectId">To be added.</param>
+        <param name="teamId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamContext (string project, string team = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string project, string team) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (project As String, Optional team As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext : string * string -&gt; Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext" Usage="new Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext (project, team)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="team" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="team">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Project">
+      <MemberSignature Language="C#" Value="public string Project { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Project" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.Project" />
+      <MemberSignature Language="VB.NET" Value="Public Property Project As String" />
+      <MemberSignature Language="F#" Value="member this.Project : string with get, set" Usage="Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.Project" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The team project Id or name.  Ignored if ProjectId is set.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectId">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; ProjectId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; ProjectId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.ProjectId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.ProjectId : Nullable&lt;Guid&gt; with get, set" Usage="Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.ProjectId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Team Project ID.  Required if Project is not set.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Team">
+      <MemberSignature Language="C#" Value="public string Team { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Team" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.Team" />
+      <MemberSignature Language="VB.NET" Value="Public Property Team As String" />
+      <MemberSignature Language="F#" Value="member this.Team : string with get, set" Usage="Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.Team" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Team Id or name.  Ignored if TeamId is set.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TeamId">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; TeamId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; TeamId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.TeamId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TeamId As Nullable(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.TeamId : Nullable&lt;Guid&gt; with get, set" Usage="Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext.TeamId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Team Id
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,116 @@
+﻿<Type Name="BuildTrigger" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildTrigger">
+  <TypeSignature Language="C#" Value="public abstract class BuildTrigger : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BuildTrigger extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BuildTrigger&#xA;Inherits BaseSecuredObject" />
+  <TypeSignature Language="F#" Value="type BuildTrigger = class&#xA;    inherit BaseSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.BuildTriggerJsonConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ScheduleTrigger))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a trigger for a buld definition.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BuildTrigger (Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType triggerType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType triggerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildTrigger.#ctor(Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (triggerType As DefinitionTriggerType)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.BuildTrigger : Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType -&gt; Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" Usage="new Microsoft.TeamFoundation.Build.WebApi.BuildTrigger triggerType" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="triggerType" Type="Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType" />
+      </Parameters>
+      <Docs>
+        <param name="triggerType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected internal BuildTrigger (Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType triggerType, Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType triggerType, class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildTrigger.#ctor(Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType,Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (triggerType As DefinitionTriggerType, securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.BuildTrigger : Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType * Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" Usage="new Microsoft.TeamFoundation.Build.WebApi.BuildTrigger (triggerType, securedObject)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="triggerType" Type="Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType" />
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="triggerType">To be added.</param>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggerType">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType TriggerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType TriggerType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildTrigger.TriggerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TriggerType As DefinitionTriggerType" />
+      <MemberSignature Language="F#" Value="member this.TriggerType : Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType" Usage="Microsoft.TeamFoundation.Build.WebApi.BuildTrigger.TriggerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The type of the trigger.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

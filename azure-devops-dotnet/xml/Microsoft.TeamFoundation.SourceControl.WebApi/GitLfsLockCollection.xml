@@ -1,0 +1,160 @@
+﻿<Type Name="GitLfsLockCollection" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection">
+  <TypeSignature Language="C#" Value="public class GitLfsLockCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GitLfsLockCollection extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class GitLfsLockCollection" />
+  <TypeSignature Language="F#" Value="type GitLfsLockCollection = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.Internal.ClientIgnore</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitLfsLockCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locks">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; Locks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; Locks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.Locks" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locks As IEnumerable(Of GitLfsLock)" />
+      <MemberSignature Language="F#" Value="member this.Locks : seq&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.Locks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="locks")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When returning all locks matching a criteria, we return an array of locks.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextCursor">
+      <MemberSignature Language="C#" Value="public string NextCursor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NextCursor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.NextCursor" />
+      <MemberSignature Language="VB.NET" Value="Public Property NextCursor As String" />
+      <MemberSignature Language="F#" Value="member this.NextCursor : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.NextCursor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="next_cursor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>
+            This must be a string type in order for the LFS client to parse the JSON
+            correctly. (It requires quotation marks around the value.)
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ours">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; Ours { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; Ours" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.Ours" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ours As IEnumerable(Of GitLfsLock)" />
+      <MemberSignature Language="F#" Value="member this.Ours : seq&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.Ours" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="ours")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When we verify locks, we split the locks into "ours" and "theirs"
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Theirs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; Theirs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; Theirs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.Theirs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Theirs As IEnumerable(Of GitLfsLock)" />
+      <MemberSignature Language="F#" Value="member this.Theirs : seq&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt; with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLockCollection.Theirs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="theirs")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitLfsLock&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When we verify locks, we split the locks into "ours" and "theirs"
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

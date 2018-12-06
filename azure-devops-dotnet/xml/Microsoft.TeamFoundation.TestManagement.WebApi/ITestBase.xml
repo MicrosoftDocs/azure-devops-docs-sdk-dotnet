@@ -1,0 +1,172 @@
+﻿<Type Name="ITestBase" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase">
+  <TypeSignature Language="C#" Value="public interface ITestBase" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITestBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITestBase" />
+  <TypeSignature Language="F#" Value="type ITestBase = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Actions">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.TestActionCollection Actions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.TestActionCollection Actions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase.Actions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Actions As TestActionCollection" />
+      <MemberSignature Language="F#" Value="member this.Actions : Microsoft.TeamFoundation.TestManagement.WebApi.TestActionCollection" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase.Actions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestActionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The actions required to complete the test case.  Could be a mixture of
+            groups, manual steps and shared step sets.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            The returned collection is modifiable, and on save those changes will
+            be sent to the server
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSharedStepReference">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ISharedStep CreateSharedStepReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.TestManagement.WebApi.ISharedStep CreateSharedStepReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase.CreateSharedStepReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSharedStepReference () As ISharedStep" />
+      <MemberSignature Language="F#" Value="abstract member CreateSharedStepReference : unit -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.ISharedStep" Usage="iTestBase.CreateSharedStepReference " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ISharedStep</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a reference to a new shared step.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestStep">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep CreateTestStep ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep CreateTestStep() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase.CreateTestStep" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateTestStep () As ITestStep" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestStep : unit -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep" Usage="iTestBase.CreateTestStep " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.ITestStep</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new test step.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateXmlFromActions">
+      <MemberSignature Language="C#" Value="public string GenerateXmlFromActions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateXmlFromActions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase.GenerateXmlFromActions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateXmlFromActions () As String" />
+      <MemberSignature Language="F#" Value="abstract member GenerateXmlFromActions : unit -&gt; string" Usage="iTestBase.GenerateXmlFromActions " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Generate xml for all actions
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadActions">
+      <MemberSignature Language="C#" Value="public void LoadActions (string xmlString, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentLink&gt; links);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadActions(string xmlString, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentLink&gt; links) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase.LoadActions(System.String,System.Collections.Generic.IList{Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentLink})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadActions (xmlString As String, links As IList(Of TestAttachmentLink))" />
+      <MemberSignature Language="F#" Value="abstract member LoadActions : string * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentLink&gt; -&gt; unit" Usage="iTestBase.LoadActions (xmlString, links)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlString" Type="System.String" />
+        <Parameter Name="links" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentLink&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="xmlString">To be added.</param>
+        <param name="links">To be added.</param>
+        <summary>
+            Load actions with teststeps and attachments
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveActions">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument SaveActions (Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument json);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument SaveActions(class Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument json) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestBase.SaveActions(Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveActions (json As JsonPatchDocument) As JsonPatchDocument" />
+      <MemberSignature Language="F#" Value="abstract member SaveActions : Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument -&gt; Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument" Usage="iTestBase.SaveActions json" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="json" Type="Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument" />
+      </Parameters>
+      <Docs>
+        <param name="json">To be added.</param>
+        <summary>
+            Save all actions teststep and attachment as relations into json object
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

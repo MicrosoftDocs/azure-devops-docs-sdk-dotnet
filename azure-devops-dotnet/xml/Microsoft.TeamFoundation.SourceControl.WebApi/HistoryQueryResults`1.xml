@@ -1,0 +1,111 @@
+﻿<Type Name="HistoryQueryResults&lt;T&gt;" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.HistoryQueryResults&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class HistoryQueryResults&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HistoryQueryResults`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.HistoryQueryResults`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class HistoryQueryResults(Of T)" />
+  <TypeSignature Language="F#" Value="type HistoryQueryResults&lt;'T&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("This is unused as of Dev15 M108 and may be deleted in the future")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.SourceControl.WebApi.GitHistoryQueryResults))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HistoryQueryResults ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.HistoryQueryResults`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoreResultsAvailable">
+      <MemberSignature Language="C#" Value="public bool MoreResultsAvailable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MoreResultsAvailable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.HistoryQueryResults`1.MoreResultsAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Property MoreResultsAvailable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MoreResultsAvailable : bool with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.HistoryQueryResults&lt;'T&gt;.MoreResultsAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            True if there are more results available to fetch (we're returning the max # of items requested)
+            A more RESTy solution would be to include a Link header
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.HistoryEntry&lt;T&gt;&gt; Results { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.HistoryEntry`1&lt;!T&gt;&gt; Results" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.HistoryQueryResults`1.Results" />
+      <MemberSignature Language="VB.NET" Value="Public Property Results As IEnumerable(Of HistoryEntry(Of T))" />
+      <MemberSignature Language="F#" Value="member this.Results : seq&lt;Microsoft.TeamFoundation.SourceControl.WebApi.HistoryEntry&lt;'T&gt;&gt; with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.HistoryQueryResults&lt;'T&gt;.Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.HistoryEntry&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The history entries (results) from this query
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

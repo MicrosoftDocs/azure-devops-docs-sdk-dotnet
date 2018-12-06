@@ -1,0 +1,400 @@
+﻿<Type Name="GitRefUpdateStatus" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus">
+  <TypeSignature Language="C#" Value="public enum GitRefUpdateStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GitRefUpdateStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GitRefUpdateStatus" />
+  <TypeSignature Language="F#" Value="type GitRefUpdateStatus = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Represents the possible outcomes from a request to update a ref in a repository.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateBranchPermissionRequired">
+      <MemberSignature Language="C#" Value="CreateBranchPermissionRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus CreateBranchPermissionRequired = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.CreateBranchPermissionRequired" />
+      <MemberSignature Language="VB.NET" Value="CreateBranchPermissionRequired" />
+      <MemberSignature Language="F#" Value="CreateBranchPermissionRequired = 8" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.CreateBranchPermissionRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+            The ref update request could not be completed because the user lacks the permission to 
+            create a branch
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTagPermissionRequired">
+      <MemberSignature Language="C#" Value="CreateTagPermissionRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus CreateTagPermissionRequired = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.CreateTagPermissionRequired" />
+      <MemberSignature Language="VB.NET" Value="CreateTagPermissionRequired" />
+      <MemberSignature Language="F#" Value="CreateTagPermissionRequired = 9" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.CreateTagPermissionRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>
+            The ref update request could not be completed because the user lacks the permission to
+            create a tag
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForcePushRequired">
+      <MemberSignature Language="C#" Value="ForcePushRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus ForcePushRequired = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.ForcePushRequired" />
+      <MemberSignature Language="VB.NET" Value="ForcePushRequired" />
+      <MemberSignature Language="F#" Value="ForcePushRequired = 1" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.ForcePushRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Indicates that the ref update request could not be completed because part of the graph
+            would be disconnected by this change, and the caller does not have ForcePush permission
+            on the repository.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidRefName">
+      <MemberSignature Language="C#" Value="InvalidRefName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus InvalidRefName = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.InvalidRefName" />
+      <MemberSignature Language="VB.NET" Value="InvalidRefName" />
+      <MemberSignature Language="F#" Value="InvalidRefName = 3" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.InvalidRefName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Indicates that the ref update request could not be completed because the ref name
+            presented in the request was not valid.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="Locked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus Locked = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.Locked" />
+      <MemberSignature Language="VB.NET" Value="Locked" />
+      <MemberSignature Language="F#" Value="Locked = 11" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.Locked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>
+            The ref update could not be completed because the ref is locked by another user.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ManageNotePermissionRequired">
+      <MemberSignature Language="C#" Value="ManageNotePermissionRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus ManageNotePermissionRequired = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.ManageNotePermissionRequired" />
+      <MemberSignature Language="VB.NET" Value="ManageNotePermissionRequired" />
+      <MemberSignature Language="F#" Value="ManageNotePermissionRequired = 7" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.ManageNotePermissionRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+            The ref update request could not be completed because the user lacks note creation permissions
+            required to write this note
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RefNameConflict">
+      <MemberSignature Language="C#" Value="RefNameConflict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus RefNameConflict = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.RefNameConflict" />
+      <MemberSignature Language="VB.NET" Value="RefNameConflict" />
+      <MemberSignature Language="F#" Value="RefNameConflict = 12" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.RefNameConflict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>
+            The ref update could not be completed because, in case-insensitive mode,
+            the ref name conflicts with an existing, differently-cased ref name.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectedByPlugin">
+      <MemberSignature Language="C#" Value="RejectedByPlugin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus RejectedByPlugin = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.RejectedByPlugin" />
+      <MemberSignature Language="VB.NET" Value="RejectedByPlugin" />
+      <MemberSignature Language="F#" Value="RejectedByPlugin = 10" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.RejectedByPlugin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>
+            The ref update could not be completed because it was rejected by the plugin.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectedByPolicy">
+      <MemberSignature Language="C#" Value="RejectedByPolicy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus RejectedByPolicy = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.RejectedByPolicy" />
+      <MemberSignature Language="VB.NET" Value="RejectedByPolicy" />
+      <MemberSignature Language="F#" Value="RejectedByPolicy = 13" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.RejectedByPolicy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>
+            The ref update could not be completed because it was rejected by policy.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaleOldObjectId">
+      <MemberSignature Language="C#" Value="StaleOldObjectId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus StaleOldObjectId = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.StaleOldObjectId" />
+      <MemberSignature Language="VB.NET" Value="StaleOldObjectId" />
+      <MemberSignature Language="F#" Value="StaleOldObjectId = 2" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.StaleOldObjectId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Indicates that the ref update request could not be completed because the old object ID
+            presented in the request was not the object ID of the ref when the database attempted
+            the update. The most likely scenario is that the caller lost a race to update the ref.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Succeeded">
+      <MemberSignature Language="C#" Value="Succeeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus Succeeded = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.Succeeded" />
+      <MemberSignature Language="VB.NET" Value="Succeeded" />
+      <MemberSignature Language="F#" Value="Succeeded = 0" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.Succeeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Indicates that the ref update request was completed successfully.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SucceededCorruptRef">
+      <MemberSignature Language="C#" Value="SucceededCorruptRef" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus SucceededCorruptRef = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.SucceededCorruptRef" />
+      <MemberSignature Language="VB.NET" Value="SucceededCorruptRef" />
+      <MemberSignature Language="F#" Value="SucceededCorruptRef = 15" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.SucceededCorruptRef" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>
+            Indicates that the ref update request was completed successfully,
+            but the passed-in ref was corrupt - as in, the old object ID was bad.
+            
+            This should only happen during deletes.
+            </summary>
+        <remarks>
+            Core git (and GitHub by extension) returns "warning: Allowing deletion of corrupt ref." 
+            in this case as of 3/5/2015
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SucceededNonExistentRef">
+      <MemberSignature Language="C#" Value="SucceededNonExistentRef" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus SucceededNonExistentRef = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.SucceededNonExistentRef" />
+      <MemberSignature Language="VB.NET" Value="SucceededNonExistentRef" />
+      <MemberSignature Language="F#" Value="SucceededNonExistentRef = 14" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.SucceededNonExistentRef" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>
+            Indicates that the ref update request was completed successfully,
+            but the ref doesn't actually exist so no changes were made.
+            
+            This should only happen during deletes.
+            </summary>
+        <remarks>
+            Core git (and GitHub by extension) returns "warning: Deleting a non-existent ref." 
+            in this case as of 3/5/2015
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unprocessed">
+      <MemberSignature Language="C#" Value="Unprocessed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus Unprocessed = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.Unprocessed" />
+      <MemberSignature Language="VB.NET" Value="Unprocessed" />
+      <MemberSignature Language="F#" Value="Unprocessed = 4" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.Unprocessed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The request was not processed
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnresolvableToCommit">
+      <MemberSignature Language="C#" Value="UnresolvableToCommit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus UnresolvableToCommit = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.UnresolvableToCommit" />
+      <MemberSignature Language="VB.NET" Value="UnresolvableToCommit" />
+      <MemberSignature Language="F#" Value="UnresolvableToCommit = 5" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.UnresolvableToCommit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            The ref update request could not be completed because the new object ID for the ref
+            could not be resolved to a commit object (potentially through any number of tags)
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePermissionRequired">
+      <MemberSignature Language="C#" Value="WritePermissionRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus WritePermissionRequired = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.WritePermissionRequired" />
+      <MemberSignature Language="VB.NET" Value="WritePermissionRequired" />
+      <MemberSignature Language="F#" Value="WritePermissionRequired = 6" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus.WritePermissionRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRefUpdateStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            The ref update request could not be completed because the user lacks write permissions
+            required to write this ref
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

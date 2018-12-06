@@ -1,0 +1,125 @@
+﻿<Type Name="GatedCheckInTrigger" FullName="Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger">
+  <TypeSignature Language="C#" Value="public sealed class GatedCheckInTrigger : Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GatedCheckInTrigger extends Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GatedCheckInTrigger&#xA;Inherits BuildTrigger" />
+  <TypeSignature Language="F#" Value="type GatedCheckInTrigger = class&#xA;    inherit BuildTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Build.WebApi.BuildTrigger</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a gated check-in trigger.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GatedCheckInTrigger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathFilters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; PathFilters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; PathFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger.PathFilters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathFilters As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PathFilters : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger.PathFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of filters that describe which paths will trigger builds.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunContinuousIntegration">
+      <MemberSignature Language="C#" Value="public bool RunContinuousIntegration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RunContinuousIntegration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger.RunContinuousIntegration" />
+      <MemberSignature Language="VB.NET" Value="Public Property RunContinuousIntegration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RunContinuousIntegration : bool with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger.RunContinuousIntegration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether CI triggers should run after the gated check-in succeeds.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseWorkspaceMappings">
+      <MemberSignature Language="C#" Value="public bool UseWorkspaceMappings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseWorkspaceMappings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger.UseWorkspaceMappings" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseWorkspaceMappings As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseWorkspaceMappings : bool with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger.UseWorkspaceMappings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether to take workspace mappings into account when determining whether a build should run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

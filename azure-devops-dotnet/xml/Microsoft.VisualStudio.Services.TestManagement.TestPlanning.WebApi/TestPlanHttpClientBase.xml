@@ -1,0 +1,1697 @@
+﻿<Type Name="TestPlanHttpClientBase" FullName="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase">
+  <TypeSignature Language="C#" Value="public abstract class TestPlanHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TestPlanHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TestPlanHttpClientBase&#xA;Inherits VssHttpClientBase" />
+  <TypeSignature Language="F#" Value="type TestPlanHttpClientBase = class&#xA;    inherit VssHttpClientBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("E4C27205-9D23-4C98-B958-D798BC3F9CD4")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestPlanHttpClientBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials -&gt; Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase" Usage="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase (baseUrl, credentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestPlanHttpClientBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings -&gt; Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase" Usage="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase (baseUrl, credentials, settings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestPlanHttpClientBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase" Usage="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase (baseUrl, credentials, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestPlanHttpClientBase (Uri baseUrl, System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, pipeline As HttpMessageHandler, disposeHandler As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase : Uri * System.Net.Http.HttpMessageHandler * bool -&gt; Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase" Usage="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase (baseUrl, pipeline, disposeHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="pipeline" Type="System.Net.Http.HttpMessageHandler" />
+        <Parameter Name="disposeHandler" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="pipeline">To be added.</param>
+        <param name="disposeHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestPlanHttpClientBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase" Usage="new Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase (baseUrl, credentials, settings, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestConfigurationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; CreateTestConfigurationAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters testConfigurationCreateUpdateParameters, Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; CreateTestConfigurationAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters testConfigurationCreateUpdateParameters, valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestConfigurationAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestConfigurationAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&#xA;override this.CreateTestConfigurationAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;" Usage="testPlanHttpClientBase.CreateTestConfigurationAsync (testConfigurationCreateUpdateParameters, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testConfigurationCreateUpdateParameters" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testConfigurationCreateUpdateParameters">
+          <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters" />
+        </param>
+        <param name="project">Project ID</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a test configuration.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestConfigurationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; CreateTestConfigurationAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters testConfigurationCreateUpdateParameters, string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; CreateTestConfigurationAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters testConfigurationCreateUpdateParameters, string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestConfigurationAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestConfigurationAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&#xA;override this.CreateTestConfigurationAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;" Usage="testPlanHttpClientBase.CreateTestConfigurationAsync (testConfigurationCreateUpdateParameters, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testConfigurationCreateUpdateParameters" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testConfigurationCreateUpdateParameters">
+          <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters" />
+        </param>
+        <param name="project">Project ID or project name</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a test configuration.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestPlanAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; CreateTestPlanAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams testPlanCreateParams, Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; CreateTestPlanAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams testPlanCreateParams, valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestPlanAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestPlanAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&#xA;override this.CreateTestPlanAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;" Usage="testPlanHttpClientBase.CreateTestPlanAsync (testPlanCreateParams, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testPlanCreateParams" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testPlanCreateParams">A testPlanCreateParams object.<see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams" /></param>
+        <param name="project">Project ID</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a test plan.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestPlanAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; CreateTestPlanAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams testPlanCreateParams, string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; CreateTestPlanAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams testPlanCreateParams, string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestPlanAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestPlanAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&#xA;override this.CreateTestPlanAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;" Usage="testPlanHttpClientBase.CreateTestPlanAsync (testPlanCreateParams, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testPlanCreateParams" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testPlanCreateParams">A testPlanCreateParams object.<see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams" /></param>
+        <param name="project">Project ID or project name</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a test plan.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestSuiteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; CreateTestSuiteAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams testSuiteCreateParams, Guid project, int planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; CreateTestSuiteAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams testSuiteCreateParams, valuetype System.Guid project, int32 planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestSuiteAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestSuiteAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&#xA;override this.CreateTestSuiteAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;" Usage="testPlanHttpClientBase.CreateTestSuiteAsync (testSuiteCreateParams, project, planId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testSuiteCreateParams" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testSuiteCreateParams">Parameters for suite creation</param>
+        <param name="project">Project ID</param>
+        <param name="planId">ID of the test plan that contains the suites.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestSuiteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; CreateTestSuiteAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams testSuiteCreateParams, string project, int planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; CreateTestSuiteAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams testSuiteCreateParams, string project, int32 planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestSuiteAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestSuiteAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&#xA;override this.CreateTestSuiteAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;" Usage="testPlanHttpClientBase.CreateTestSuiteAsync (testSuiteCreateParams, project, planId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testSuiteCreateParams" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteCreateParams" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testSuiteCreateParams">Parameters for suite creation</param>
+        <param name="project">Project ID or project name</param>
+        <param name="planId">ID of the test plan that contains the suites.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestVariableAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; CreateTestVariableAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters testVariableCreateUpdateParameters, Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; CreateTestVariableAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters testVariableCreateUpdateParameters, valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestVariableAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestVariableAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&#xA;override this.CreateTestVariableAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;" Usage="testPlanHttpClientBase.CreateTestVariableAsync (testVariableCreateUpdateParameters, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testVariableCreateUpdateParameters" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testVariableCreateUpdateParameters">
+          <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters" />
+        </param>
+        <param name="project">Project ID</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a test variable.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestVariableAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; CreateTestVariableAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters testVariableCreateUpdateParameters, string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; CreateTestVariableAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters testVariableCreateUpdateParameters, string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestVariableAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestVariableAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&#xA;override this.CreateTestVariableAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;" Usage="testPlanHttpClientBase.CreateTestVariableAsync (testVariableCreateUpdateParameters, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testVariableCreateUpdateParameters" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testVariableCreateUpdateParameters">
+          <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters" />
+        </param>
+        <param name="project">Project ID or project name</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a test variable.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestCaseAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestCaseAsync (Guid project, int testCaseId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestCaseAsync(valuetype System.Guid project, int32 testCaseId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestCaseAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestCaseAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestCaseAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestCaseAsync (project, testCaseId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="testCaseId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="testCaseId">Id of test case to be deleted.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a test case.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestCaseAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestCaseAsync (string project, int testCaseId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestCaseAsync(string project, int32 testCaseId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestCaseAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestCaseAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestCaseAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestCaseAsync (project, testCaseId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="testCaseId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="testCaseId">Id of test case to be deleted.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a test case.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestConfgurationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestConfgurationAsync (Guid project, int testConfiguartionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestConfgurationAsync(valuetype System.Guid project, int32 testConfiguartionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestConfgurationAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestConfgurationAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestConfgurationAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestConfgurationAsync (project, testConfiguartionId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="testConfiguartionId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="testConfiguartionId">ID of the test configuration to delete.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a test configuration by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestConfgurationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestConfgurationAsync (string project, int testConfiguartionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestConfgurationAsync(string project, int32 testConfiguartionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestConfgurationAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestConfgurationAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestConfgurationAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestConfgurationAsync (project, testConfiguartionId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="testConfiguartionId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="testConfiguartionId">ID of the test configuration to delete.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a test configuration by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestPlanAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestPlanAsync (Guid project, int planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestPlanAsync(valuetype System.Guid project, int32 planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestPlanAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestPlanAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestPlanAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestPlanAsync (project, planId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="planId">ID of the test plan to be deleted.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a test plan.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestPlanAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestPlanAsync (string project, int planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestPlanAsync(string project, int32 planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestPlanAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestPlanAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestPlanAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestPlanAsync (project, planId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="planId">ID of the test plan to be deleted.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a test plan.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestSuiteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestSuiteAsync (Guid project, int planId, int suiteId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestSuiteAsync(valuetype System.Guid project, int32 planId, int32 suiteId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestSuiteAsync(System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestSuiteAsync : Guid * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestSuiteAsync : Guid * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestSuiteAsync (project, planId, suiteId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="planId">ID of the test plan that contains the suite.</param>
+        <param name="suiteId">ID of the test suite to delete.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestSuiteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestSuiteAsync (string project, int planId, int suiteId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestSuiteAsync(string project, int32 planId, int32 suiteId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestSuiteAsync(System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestSuiteAsync : string * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestSuiteAsync : string * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestSuiteAsync (project, planId, suiteId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="planId">ID of the test plan that contains the suite.</param>
+        <param name="suiteId">ID of the test suite to delete.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestVariableAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestVariableAsync (Guid project, int testVariableId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestVariableAsync(valuetype System.Guid project, int32 testVariableId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestVariableAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestVariableAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestVariableAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestVariableAsync (project, testVariableId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="testVariableId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="testVariableId">ID of the test variable to delete.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a test variable by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTestVariableAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTestVariableAsync (string project, int testVariableId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTestVariableAsync(string project, int32 testVariableId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestVariableAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTestVariableAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTestVariableAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testPlanHttpClientBase.DeleteTestVariableAsync (project, testVariableId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="testVariableId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="testVariableId">ID of the test variable to delete.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a test variable by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSuiteEntriesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt; GetSuiteEntriesAsync (Guid project, int suiteId, Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt; suiteEntryType = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt; GetSuiteEntriesAsync(valuetype System.Guid project, int32 suiteId, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt; suiteEntryType, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetSuiteEntriesAsync(System.Guid,System.Int32,System.Nullable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetSuiteEntriesAsync : Guid * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;&#xA;override this.GetSuiteEntriesAsync : Guid * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;" Usage="testPlanHttpClientBase.GetSuiteEntriesAsync (project, suiteId, suiteEntryType, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="suiteEntryType" Type="System.Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="suiteId">Id of the parent suite.</param>
+        <param name="suiteEntryType"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of test suite entries in the test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSuiteEntriesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt; GetSuiteEntriesAsync (string project, int suiteId, Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt; suiteEntryType = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt; GetSuiteEntriesAsync(string project, int32 suiteId, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt; suiteEntryType, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetSuiteEntriesAsync(System.String,System.Int32,System.Nullable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetSuiteEntriesAsync : string * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;&#xA;override this.GetSuiteEntriesAsync : string * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;" Usage="testPlanHttpClientBase.GetSuiteEntriesAsync (project, suiteId, suiteEntryType, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="suiteEntryType" Type="System.Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="suiteId">Id of the parent suite.</param>
+        <param name="suiteEntryType"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of test suite entries in the test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSuitesByTestCaseIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt; GetSuitesByTestCaseIdAsync (int testCaseId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt; GetSuitesByTestCaseIdAsync(int32 testCaseId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetSuitesByTestCaseIdAsync(System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetSuitesByTestCaseIdAsync : int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;&#xA;override this.GetSuitesByTestCaseIdAsync : int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;" Usage="testPlanHttpClientBase.GetSuitesByTestCaseIdAsync (testCaseId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testCaseId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testCaseId">ID of the test case for which suites need to be fetched.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Find the list of all test suites in which a given test case is present. This is helpful if you need to find out which test suites are using a test case, when you need to make changes to a test case.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestConfigurationByIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; GetTestConfigurationByIdAsync (Guid project, int testConfigurationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; GetTestConfigurationByIdAsync(valuetype System.Guid project, int32 testConfigurationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestConfigurationByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestConfigurationByIdAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&#xA;override this.GetTestConfigurationByIdAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;" Usage="testPlanHttpClientBase.GetTestConfigurationByIdAsync (project, testConfigurationId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="testConfigurationId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="testConfigurationId">ID of the test configuration to get.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a test configuration
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestConfigurationByIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; GetTestConfigurationByIdAsync (string project, int testConfigurationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; GetTestConfigurationByIdAsync(string project, int32 testConfigurationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestConfigurationByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestConfigurationByIdAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&#xA;override this.GetTestConfigurationByIdAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;" Usage="testPlanHttpClientBase.GetTestConfigurationByIdAsync (project, testConfigurationId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="testConfigurationId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="testConfigurationId">ID of the test configuration to get.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a test configuration
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestConfigurationsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt; GetTestConfigurationsAsync (Guid project, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt; GetTestConfigurationsAsync(valuetype System.Guid project, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestConfigurationsAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestConfigurationsAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt;&#xA;override this.GetTestConfigurationsAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt;" Usage="testPlanHttpClientBase.GetTestConfigurationsAsync (project, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="continuationToken">If the list of configurations returned is not complete, a continuation token to query next batch of configurations is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test configurations.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of test configurations.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestConfigurationsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt; GetTestConfigurationsAsync (string project, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt; GetTestConfigurationsAsync(string project, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestConfigurationsAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestConfigurationsAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt;&#xA;override this.GetTestConfigurationsAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt;" Usage="testPlanHttpClientBase.GetTestConfigurationsAsync (project, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="continuationToken">If the list of configurations returned is not complete, a continuation token to query next batch of configurations is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test configurations.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of test configurations.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestPlanByIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; GetTestPlanByIdAsync (Guid project, int planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; GetTestPlanByIdAsync(valuetype System.Guid project, int32 planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestPlanByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestPlanByIdAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&#xA;override this.GetTestPlanByIdAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;" Usage="testPlanHttpClientBase.GetTestPlanByIdAsync (project, planId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="planId">ID of the test plan to get.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a test plan by Id.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestPlanByIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; GetTestPlanByIdAsync (string project, int planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; GetTestPlanByIdAsync(string project, int32 planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestPlanByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestPlanByIdAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&#xA;override this.GetTestPlanByIdAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;" Usage="testPlanHttpClientBase.GetTestPlanByIdAsync (project, planId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="planId">ID of the test plan to get.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a test plan by Id.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestPlansAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt; GetTestPlansAsync (Guid project, string owner = null, string continuationToken = null, Nullable&lt;bool&gt; includePlanDetails = null, Nullable&lt;bool&gt; filterActivePlans = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt; GetTestPlansAsync(valuetype System.Guid project, string owner, string continuationToken, valuetype System.Nullable`1&lt;bool&gt; includePlanDetails, valuetype System.Nullable`1&lt;bool&gt; filterActivePlans, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestPlansAsync(System.Guid,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestPlansAsync : Guid * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt;&#xA;override this.GetTestPlansAsync : Guid * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt;" Usage="testPlanHttpClientBase.GetTestPlansAsync (project, owner, continuationToken, includePlanDetails, filterActivePlans, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="owner" Type="System.String" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="includePlanDetails" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="filterActivePlans" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="owner">Filter for test plan by owner ID or name</param>
+        <param name="continuationToken">If the list of plans returned is not complete, a continuation token to query next batch of plans is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test plans.</param>
+        <param name="includePlanDetails">Get all properties of the test plan</param>
+        <param name="filterActivePlans">Get just the active plans</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of test plans
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestPlansAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt; GetTestPlansAsync (string project, string owner = null, string continuationToken = null, Nullable&lt;bool&gt; includePlanDetails = null, Nullable&lt;bool&gt; filterActivePlans = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt; GetTestPlansAsync(string project, string owner, string continuationToken, valuetype System.Nullable`1&lt;bool&gt; includePlanDetails, valuetype System.Nullable`1&lt;bool&gt; filterActivePlans, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestPlansAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestPlansAsync : string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt;&#xA;override this.GetTestPlansAsync : string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt;" Usage="testPlanHttpClientBase.GetTestPlansAsync (project, owner, continuationToken, includePlanDetails, filterActivePlans, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="owner" Type="System.String" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="includePlanDetails" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="filterActivePlans" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="owner">Filter for test plan by owner ID or name</param>
+        <param name="continuationToken">If the list of plans returned is not complete, a continuation token to query next batch of plans is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test plans.</param>
+        <param name="includePlanDetails">Get all properties of the test plan</param>
+        <param name="filterActivePlans">Get just the active plans</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of test plans
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestSuiteByIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; GetTestSuiteByIdAsync (Guid project, int planId, int suiteId, Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; expand = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; GetTestSuiteByIdAsync(valuetype System.Guid project, int32 planId, int32 suiteId, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; expand, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestSuiteByIdAsync(System.Guid,System.Int32,System.Int32,System.Nullable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestSuiteByIdAsync : Guid * int * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&#xA;override this.GetTestSuiteByIdAsync : Guid * int * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;" Usage="testPlanHttpClientBase.GetTestSuiteByIdAsync (project, planId, suiteId, expand, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="planId">ID of the test plan that contains the suites.</param>
+        <param name="suiteId">ID of the suite to get.</param>
+        <param name="expand">Include the children suites and testers details</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get test suite by suite id.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestSuiteByIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; GetTestSuiteByIdAsync (string project, int planId, int suiteId, Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; expand = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; GetTestSuiteByIdAsync(string project, int32 planId, int32 suiteId, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; expand, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestSuiteByIdAsync(System.String,System.Int32,System.Int32,System.Nullable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestSuiteByIdAsync : string * int * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&#xA;override this.GetTestSuiteByIdAsync : string * int * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;" Usage="testPlanHttpClientBase.GetTestSuiteByIdAsync (project, planId, suiteId, expand, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="planId">ID of the test plan that contains the suites.</param>
+        <param name="suiteId">ID of the suite to get.</param>
+        <param name="expand">Include the children suites and testers details</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get test suite by suite id.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestSuitesForPlanAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt; GetTestSuitesForPlanAsync (Guid project, int planId, Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; expand = null, string continuationToken = null, Nullable&lt;bool&gt; asTreeView = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt; GetTestSuitesForPlanAsync(valuetype System.Guid project, int32 planId, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; expand, string continuationToken, valuetype System.Nullable`1&lt;bool&gt; asTreeView, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestSuitesForPlanAsync(System.Guid,System.Int32,System.Nullable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand},System.String,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestSuitesForPlanAsync : Guid * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; * string * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;&#xA;override this.GetTestSuitesForPlanAsync : Guid * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; * string * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;" Usage="testPlanHttpClientBase.GetTestSuitesForPlanAsync (project, planId, expand, continuationToken, asTreeView, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="asTreeView" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="planId">ID of the test plan for which suites are requested.</param>
+        <param name="expand">Include the children suites and testers details.</param>
+        <param name="continuationToken">If the list of suites returned is not complete, a continuation token to query next batch of suites is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test suites.</param>
+        <param name="asTreeView">If the suites returned should be in a tree structure.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get test suites for plan.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestSuitesForPlanAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt; GetTestSuitesForPlanAsync (string project, int planId, Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; expand = null, string continuationToken = null, Nullable&lt;bool&gt; asTreeView = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt; GetTestSuitesForPlanAsync(string project, int32 planId, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; expand, string continuationToken, valuetype System.Nullable`1&lt;bool&gt; asTreeView, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestSuitesForPlanAsync(System.String,System.Int32,System.Nullable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand},System.String,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestSuitesForPlanAsync : string * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; * string * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;&#xA;override this.GetTestSuitesForPlanAsync : string * int * Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt; * string * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;" Usage="testPlanHttpClientBase.GetTestSuitesForPlanAsync (project, planId, expand, continuationToken, asTreeView, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteExpand&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="asTreeView" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="planId">ID of the test plan for which suites are requested.</param>
+        <param name="expand">Include the children suites and testers details.</param>
+        <param name="continuationToken">If the list of suites returned is not complete, a continuation token to query next batch of suites is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test suites.</param>
+        <param name="asTreeView">If the suites returned should be in a tree structure.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get test suites for plan.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestVariableByIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; GetTestVariableByIdAsync (Guid project, int testVariableId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; GetTestVariableByIdAsync(valuetype System.Guid project, int32 testVariableId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestVariableByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestVariableByIdAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&#xA;override this.GetTestVariableByIdAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;" Usage="testPlanHttpClientBase.GetTestVariableByIdAsync (project, testVariableId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="testVariableId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="testVariableId">ID of the test variable to get.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a test variable by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestVariableByIdAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; GetTestVariableByIdAsync (string project, int testVariableId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; GetTestVariableByIdAsync(string project, int32 testVariableId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestVariableByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestVariableByIdAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&#xA;override this.GetTestVariableByIdAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;" Usage="testPlanHttpClientBase.GetTestVariableByIdAsync (project, testVariableId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="testVariableId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="testVariableId">ID of the test variable to get.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a test variable by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestVariablesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt; GetTestVariablesAsync (Guid project, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt; GetTestVariablesAsync(valuetype System.Guid project, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestVariablesAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestVariablesAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt;&#xA;override this.GetTestVariablesAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt;" Usage="testPlanHttpClientBase.GetTestVariablesAsync (project, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="continuationToken">If the list of variables returned is not complete, a continuation token to query next batch of variables is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test variables.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of test variables.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestVariablesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt; GetTestVariablesAsync (string project, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt; GetTestVariablesAsync(string project, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetTestVariablesAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestVariablesAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt;&#xA;override this.GetTestVariablesAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt;" Usage="testPlanHttpClientBase.GetTestVariablesAsync (project, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="continuationToken">If the list of variables returned is not complete, a continuation token to query next batch of variables is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test variables.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get a list of test variables.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReorderSuiteEntriesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt; ReorderSuiteEntriesAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt; suiteEntries, Guid project, int suiteId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt; ReorderSuiteEntriesAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt; suiteEntries, valuetype System.Guid project, int32 suiteId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.ReorderSuiteEntriesAsync(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams},System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReorderSuiteEntriesAsync : seq&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt; * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;&#xA;override this.ReorderSuiteEntriesAsync : seq&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt; * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;" Usage="testPlanHttpClientBase.ReorderSuiteEntriesAsync (suiteEntries, project, suiteId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="suiteEntries" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt;" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="suiteEntries">List of <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry" /> to reorder.</param>
+        <param name="project">Project ID</param>
+        <param name="suiteId">Id of the parent test suite.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Reorder test suite entries in the test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReorderSuiteEntriesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt; ReorderSuiteEntriesAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt; suiteEntries, string project, int suiteId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt; ReorderSuiteEntriesAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt; suiteEntries, string project, int32 suiteId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.ReorderSuiteEntriesAsync(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams},System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReorderSuiteEntriesAsync : seq&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt; * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;&#xA;override this.ReorderSuiteEntriesAsync : seq&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt; * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;" Usage="testPlanHttpClientBase.ReorderSuiteEntriesAsync (suiteEntries, project, suiteId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="suiteEntries" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryUpdateParams&gt;" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="suiteEntries">List of <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry" /> to reorder.</param>
+        <param name="project">Project ID or project name</param>
+        <param name="suiteId">Id of the parent test suite.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Reorder test suite entries in the test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestConfigurationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; UpdateTestConfigurationAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters testConfigurationCreateUpdateParameters, Guid project, int testConfiguartionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; UpdateTestConfigurationAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters testConfigurationCreateUpdateParameters, valuetype System.Guid project, int32 testConfiguartionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.UpdateTestConfigurationAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestConfigurationAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&#xA;override this.UpdateTestConfigurationAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;" Usage="testPlanHttpClientBase.UpdateTestConfigurationAsync (testConfigurationCreateUpdateParameters, project, testConfiguartionId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testConfigurationCreateUpdateParameters" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="testConfiguartionId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testConfigurationCreateUpdateParameters">
+          <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters" />
+        </param>
+        <param name="project">Project ID</param>
+        <param name="testConfiguartionId">ID of the test configuration to update.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update a test configuration by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestConfigurationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; UpdateTestConfigurationAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters testConfigurationCreateUpdateParameters, string project, int testConfiguartionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt; UpdateTestConfigurationAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters testConfigurationCreateUpdateParameters, string project, int32 testConfiguartionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.UpdateTestConfigurationAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestConfigurationAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;&#xA;override this.UpdateTestConfigurationAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;" Usage="testPlanHttpClientBase.UpdateTestConfigurationAsync (testConfigurationCreateUpdateParameters, project, testConfiguartionId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testConfigurationCreateUpdateParameters" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="testConfiguartionId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testConfigurationCreateUpdateParameters">
+          <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters" />
+        </param>
+        <param name="project">Project ID or project name</param>
+        <param name="testConfiguartionId">ID of the test configuration to update.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update a test configuration by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestPlanAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; UpdateTestPlanAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams testPlanUpdateParams, Guid project, int planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; UpdateTestPlanAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams testPlanUpdateParams, valuetype System.Guid project, int32 planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.UpdateTestPlanAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestPlanAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&#xA;override this.UpdateTestPlanAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;" Usage="testPlanHttpClientBase.UpdateTestPlanAsync (testPlanUpdateParams, project, planId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testPlanUpdateParams" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testPlanUpdateParams">A testPlanUpdateParams object.<see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams" /></param>
+        <param name="project">Project ID</param>
+        <param name="planId">ID of the test plan to be updated.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update a test plan.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestPlanAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; UpdateTestPlanAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams testPlanUpdateParams, string project, int planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt; UpdateTestPlanAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams testPlanUpdateParams, string project, int32 planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.UpdateTestPlanAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestPlanAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;&#xA;override this.UpdateTestPlanAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;" Usage="testPlanHttpClientBase.UpdateTestPlanAsync (testPlanUpdateParams, project, planId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testPlanUpdateParams" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testPlanUpdateParams">A testPlanUpdateParams object.<see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanUpdateParams" /></param>
+        <param name="project">Project ID or project name</param>
+        <param name="planId">ID of the test plan to be updated.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update a test plan.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestSuiteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; UpdateTestSuiteAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams testSuiteUpdateParams, Guid project, int planId, int suiteId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; UpdateTestSuiteAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams testSuiteUpdateParams, valuetype System.Guid project, int32 planId, int32 suiteId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.UpdateTestSuiteAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams,System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestSuiteAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams * Guid * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&#xA;override this.UpdateTestSuiteAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams * Guid * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;" Usage="testPlanHttpClientBase.UpdateTestSuiteAsync (testSuiteUpdateParams, project, planId, suiteId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testSuiteUpdateParams" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testSuiteUpdateParams">Parameters for suite updation</param>
+        <param name="project">Project ID</param>
+        <param name="planId">ID of the test plan that contains the suites.</param>
+        <param name="suiteId">ID of the parent suite.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestSuiteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; UpdateTestSuiteAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams testSuiteUpdateParams, string project, int planId, int suiteId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt; UpdateTestSuiteAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams testSuiteUpdateParams, string project, int32 planId, int32 suiteId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.UpdateTestSuiteAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams,System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestSuiteAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams * string * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;&#xA;override this.UpdateTestSuiteAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams * string * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;" Usage="testPlanHttpClientBase.UpdateTestSuiteAsync (testSuiteUpdateParams, project, planId, suiteId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuite&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testSuiteUpdateParams" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestSuiteUpdateParams" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="planId" Type="System.Int32" />
+        <Parameter Name="suiteId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testSuiteUpdateParams">Parameters for suite updation</param>
+        <param name="project">Project ID or project name</param>
+        <param name="planId">ID of the test plan that contains the suites.</param>
+        <param name="suiteId">ID of the parent suite.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update test suite.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestVariableAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; UpdateTestVariableAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters testVariableCreateUpdateParameters, Guid project, int testVariableId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; UpdateTestVariableAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters testVariableCreateUpdateParameters, valuetype System.Guid project, int32 testVariableId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.UpdateTestVariableAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestVariableAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&#xA;override this.UpdateTestVariableAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;" Usage="testPlanHttpClientBase.UpdateTestVariableAsync (testVariableCreateUpdateParameters, project, testVariableId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testVariableCreateUpdateParameters" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="testVariableId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testVariableCreateUpdateParameters">
+          <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters" />
+        </param>
+        <param name="project">Project ID</param>
+        <param name="testVariableId">ID of the test variable to update.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update a test variable by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestVariableAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; UpdateTestVariableAsync (Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters testVariableCreateUpdateParameters, string project, int testVariableId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt; UpdateTestVariableAsync(class Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters testVariableCreateUpdateParameters, string project, int32 testVariableId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.UpdateTestVariableAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestVariableAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;&#xA;override this.UpdateTestVariableAsync : Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;" Usage="testPlanHttpClientBase.UpdateTestVariableAsync (testVariableCreateUpdateParameters, project, testVariableId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testVariableCreateUpdateParameters" Type="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="testVariableId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testVariableCreateUpdateParameters">
+          <see cref="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters" />
+        </param>
+        <param name="project">Project ID or project name</param>
+        <param name="testVariableId">ID of the test variable to update.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update a test variable by its ID.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

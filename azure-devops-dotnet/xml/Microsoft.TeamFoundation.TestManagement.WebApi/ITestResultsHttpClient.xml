@@ -1,0 +1,1016 @@
+﻿<Type Name="ITestResultsHttpClient" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient">
+  <TypeSignature Language="C#" Value="public interface ITestResultsHttpClient" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITestResultsHttpClient" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITestResultsHttpClient" />
+  <TypeSignature Language="F#" Value="type ITestResultsHttpClient = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddTestResultsToTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; AddTestResultsToTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, Guid project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; AddTestResultsToTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, valuetype System.Guid project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.AddTestResultsToTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[],System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member AddTestResultsToTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="iTestResultsHttpClient.AddTestResultsToTestRunAsync (results, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[]" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTestResultsToTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; AddTestResultsToTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, string project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; AddTestResultsToTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, string project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.AddTestResultsToTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[],System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member AddTestResultsToTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="iTestResultsHttpClient.AddTestResultsToTestRunAsync (results, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[]" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestResultAttachmentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestResultAttachmentAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, Guid project, int runId, int testCaseResultId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestResultAttachmentAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, valuetype System.Guid project, int32 runId, int32 testCaseResultId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.CreateTestResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestResultAttachmentAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel * Guid * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;" Usage="iTestResultsHttpClient.CreateTestResultAttachmentAsync (attachmentRequestModel, project, runId, testCaseResultId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachmentRequestModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="testCaseResultId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="attachmentRequestModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="testCaseResultId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestResultAttachmentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestResultAttachmentAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, string project, int runId, int testCaseResultId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestResultAttachmentAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, string project, int32 runId, int32 testCaseResultId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.CreateTestResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestResultAttachmentAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel * string * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;" Usage="iTestResultsHttpClient.CreateTestResultAttachmentAsync (attachmentRequestModel, project, runId, testCaseResultId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachmentRequestModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="testCaseResultId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="attachmentRequestModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="testCaseResultId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; CreateTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel testRun, Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; CreateTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel testRun, valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.CreateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="iTestResultsHttpClient.CreateTestRunAsync (testRun, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testRun" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testRun">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; CreateTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel testRun, string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; CreateTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel testRun, string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.CreateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="iTestResultsHttpClient.CreateTestRunAsync (testRun, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testRun" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="testRun">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestRunAttachmentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestRunAttachmentAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, Guid project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestRunAttachmentAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, valuetype System.Guid project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.CreateTestRunAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestRunAttachmentAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;" Usage="iTestResultsHttpClient.CreateTestRunAttachmentAsync (attachmentRequestModel, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachmentRequestModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="attachmentRequestModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestRunAttachmentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestRunAttachmentAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, string project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestRunAttachmentAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, string project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.CreateTestRunAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestRunAttachmentAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;" Usage="iTestResultsHttpClient.CreateTestRunAttachmentAsync (attachmentRequestModel, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachmentRequestModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="attachmentRequestModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestSubResultAttachmentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestSubResultAttachmentAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, Guid project, int runId, int testCaseResultId, int testSubResultId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestSubResultAttachmentAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, valuetype System.Guid project, int32 runId, int32 testCaseResultId, int32 testSubResultId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.CreateTestSubResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.Guid,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestSubResultAttachmentAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel * Guid * int * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;" Usage="iTestResultsHttpClient.CreateTestSubResultAttachmentAsync (attachmentRequestModel, project, runId, testCaseResultId, testSubResultId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachmentRequestModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="testCaseResultId" Type="System.Int32" />
+        <Parameter Name="testSubResultId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="attachmentRequestModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="testCaseResultId">To be added.</param>
+        <param name="testSubResultId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTestSubResultAttachmentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestSubResultAttachmentAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, string project, int runId, int testCaseResultId, int testSubResultId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt; CreateTestSubResultAttachmentAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel attachmentRequestModel, string project, int32 runId, int32 testCaseResultId, int32 testSubResultId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.CreateTestSubResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.String,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTestSubResultAttachmentAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel * string * int * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;" Usage="iTestResultsHttpClient.CreateTestSubResultAttachmentAsync (attachmentRequestModel, project, runId, testCaseResultId, testSubResultId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachmentRequestModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="testCaseResultId" Type="System.Int32" />
+        <Parameter Name="testSubResultId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="attachmentRequestModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="testCaseResultId">To be added.</param>
+        <param name="testSubResultId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestResultAttachmentContentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetTestResultAttachmentContentAsync (Guid project, int runId, int testCaseResultId, int attachmentId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetTestResultAttachmentContentAsync(valuetype System.Guid project, int32 runId, int32 testCaseResultId, int32 attachmentId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestResultAttachmentContentAsync(System.Guid,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestResultAttachmentContentAsync : Guid * int * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iTestResultsHttpClient.GetTestResultAttachmentContentAsync (project, runId, testCaseResultId, attachmentId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="testCaseResultId" Type="System.Int32" />
+        <Parameter Name="attachmentId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="testCaseResultId">To be added.</param>
+        <param name="attachmentId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestResultAttachmentContentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetTestResultAttachmentContentAsync (string project, int runId, int testCaseResultId, int attachmentId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetTestResultAttachmentContentAsync(string project, int32 runId, int32 testCaseResultId, int32 attachmentId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestResultAttachmentContentAsync(System.String,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestResultAttachmentContentAsync : string * int * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iTestResultsHttpClient.GetTestResultAttachmentContentAsync (project, runId, testCaseResultId, attachmentId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="testCaseResultId" Type="System.Int32" />
+        <Parameter Name="attachmentId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="testCaseResultId">To be added.</param>
+        <param name="attachmentId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestResultAttachmentsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt; GetTestResultAttachmentsAsync (Guid project, int runId, int testCaseResultId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt; GetTestResultAttachmentsAsync(valuetype System.Guid project, int32 runId, int32 testCaseResultId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestResultAttachmentsAsync(System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestResultAttachmentsAsync : Guid * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt;" Usage="iTestResultsHttpClient.GetTestResultAttachmentsAsync (project, runId, testCaseResultId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="testCaseResultId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="testCaseResultId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestResultAttachmentsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt; GetTestResultAttachmentsAsync (string project, int runId, int testCaseResultId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt; GetTestResultAttachmentsAsync(string project, int32 runId, int32 testCaseResultId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestResultAttachmentsAsync(System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestResultAttachmentsAsync : string * int * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt;" Usage="iTestResultsHttpClient.GetTestResultAttachmentsAsync (project, runId, testCaseResultId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="testCaseResultId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="testCaseResultId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestResultsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; GetTestResultsAsync (Guid project, int runId, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails&gt; detailsToInclude = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; GetTestResultsAsync(valuetype System.Guid project, int32 runId, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails&gt; detailsToInclude, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestResultsAsync(System.Guid,System.Int32,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestResultsAsync : Guid * int * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="iTestResultsHttpClient.GetTestResultsAsync (project, runId, detailsToInclude, skip, top, outcomes, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="detailsToInclude" Type="System.Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails&gt;" />
+        <Parameter Name="skip" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="outcomes" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="detailsToInclude">To be added.</param>
+        <param name="skip">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="outcomes">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestResultsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; GetTestResultsAsync (string project, int runId, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails&gt; detailsToInclude = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; GetTestResultsAsync(string project, int32 runId, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails&gt; detailsToInclude, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestResultsAsync(System.String,System.Int32,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestResultsAsync : string * int * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="iTestResultsHttpClient.GetTestResultsAsync (project, runId, detailsToInclude, skip, top, outcomes, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="detailsToInclude" Type="System.Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ResultDetails&gt;" />
+        <Parameter Name="skip" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="outcomes" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="detailsToInclude">To be added.</param>
+        <param name="skip">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="outcomes">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestRunAttachmentsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt; GetTestRunAttachmentsAsync (Guid project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt; GetTestRunAttachmentsAsync(valuetype System.Guid project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestRunAttachmentsAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestRunAttachmentsAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt;" Usage="iTestResultsHttpClient.GetTestRunAttachmentsAsync (project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestRunAttachmentsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt; GetTestRunAttachmentsAsync (string project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt; GetTestRunAttachmentsAsync(string project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestRunAttachmentsAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestRunAttachmentsAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt;" Usage="iTestResultsHttpClient.GetTestRunAttachmentsAsync (project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachment&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestRunByIdAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; GetTestRunByIdAsync (Guid project, int runId, Nullable&lt;bool&gt; includeDetails = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; GetTestRunByIdAsync(valuetype System.Guid project, int32 runId, valuetype System.Nullable`1&lt;bool&gt; includeDetails, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestRunByIdAsync(System.Guid,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestRunByIdAsync : Guid * int * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="iTestResultsHttpClient.GetTestRunByIdAsync (project, runId, includeDetails, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="includeDetails" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="includeDetails">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestRunByIdAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; GetTestRunByIdAsync (string project, int runId, Nullable&lt;bool&gt; includeDetails = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; GetTestRunByIdAsync(string project, int32 runId, valuetype System.Nullable`1&lt;bool&gt; includeDetails, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestRunByIdAsync(System.String,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestRunByIdAsync : string * int * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="iTestResultsHttpClient.GetTestRunByIdAsync (project, runId, includeDetails, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="includeDetails" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="includeDetails">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestSettingsByIdAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings&gt; GetTestSettingsByIdAsync (Guid project, int testSettingsId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings&gt; GetTestSettingsByIdAsync(valuetype System.Guid project, int32 testSettingsId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestSettingsByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestSettingsByIdAsync : Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings&gt;" Usage="iTestResultsHttpClient.GetTestSettingsByIdAsync (project, testSettingsId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="testSettingsId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="testSettingsId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTestSettingsByIdAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings&gt; GetTestSettingsByIdAsync (string project, int testSettingsId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings&gt; GetTestSettingsByIdAsync(string project, int32 testSettingsId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.GetTestSettingsByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetTestSettingsByIdAsync : string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings&gt;" Usage="iTestResultsHttpClient.GetTestSettingsByIdAsync (project, testSettingsId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="testSettingsId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="testSettingsId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryResultTrendForBuildAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedDataForResultTrend&gt;&gt; QueryResultTrendForBuildAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter filter, Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedDataForResultTrend&gt;&gt; QueryResultTrendForBuildAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter filter, valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.QueryResultTrendForBuildAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueryResultTrendForBuildAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedDataForResultTrend&gt;&gt;" Usage="iTestResultsHttpClient.QueryResultTrendForBuildAsync (filter, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedDataForResultTrend&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="filter">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryResultTrendForReleaseAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedDataForResultTrend&gt;&gt; QueryResultTrendForReleaseAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter filter, Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedDataForResultTrend&gt;&gt; QueryResultTrendForReleaseAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter filter, valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.QueryResultTrendForReleaseAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueryResultTrendForReleaseAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedDataForResultTrend&gt;&gt;" Usage="iTestResultsHttpClient.QueryResultTrendForReleaseAsync (filter, project, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedDataForResultTrend&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestResultTrendFilter" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="filter">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryTestRunsAsync2">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2 (Guid project, DateTime minLastUpdatedDate, DateTime maxLastUpdatedDate, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; state = null, System.Collections.Generic.IEnumerable&lt;int&gt; planIds = null, Nullable&lt;bool&gt; isAutomated = null, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; publishContext = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildDefIds = null, string branchName = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseDefIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvDefIds = null, string runTitle = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2(valuetype System.Guid project, valuetype System.DateTime minLastUpdatedDate, valuetype System.DateTime maxLastUpdatedDate, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; state, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; planIds, valuetype System.Nullable`1&lt;bool&gt; isAutomated, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; publishContext, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildDefIds, string branchName, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseDefIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseEnvIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseEnvDefIds, string runTitle, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.QueryTestRunsAsync2(System.Guid,System.DateTime,System.DateTime,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState},System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueryTestRunsAsync2 : Guid * DateTime * DateTime * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; * seq&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;" Usage="iTestResultsHttpClient.QueryTestRunsAsync2 (project, minLastUpdatedDate, maxLastUpdatedDate, state, planIds, isAutomated, publishContext, buildIds, buildDefIds, branchName, releaseIds, releaseDefIds, releaseEnvIds, releaseEnvDefIds, runTitle, top, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="minLastUpdatedDate" Type="System.DateTime" />
+        <Parameter Name="maxLastUpdatedDate" Type="System.DateTime" />
+        <Parameter Name="state" Type="System.Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt;" />
+        <Parameter Name="planIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="isAutomated" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="publishContext" Type="System.Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt;" />
+        <Parameter Name="buildIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="buildDefIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="branchName" Type="System.String" />
+        <Parameter Name="releaseIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="releaseDefIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="releaseEnvIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="releaseEnvDefIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="runTitle" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="minLastUpdatedDate">To be added.</param>
+        <param name="maxLastUpdatedDate">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="planIds">To be added.</param>
+        <param name="isAutomated">To be added.</param>
+        <param name="publishContext">To be added.</param>
+        <param name="buildIds">To be added.</param>
+        <param name="buildDefIds">To be added.</param>
+        <param name="branchName">To be added.</param>
+        <param name="releaseIds">To be added.</param>
+        <param name="releaseDefIds">To be added.</param>
+        <param name="releaseEnvIds">To be added.</param>
+        <param name="releaseEnvDefIds">To be added.</param>
+        <param name="runTitle">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryTestRunsAsync2">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2 (string project, DateTime minLastUpdatedDate, DateTime maxLastUpdatedDate, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; state = null, System.Collections.Generic.IEnumerable&lt;int&gt; planIds = null, Nullable&lt;bool&gt; isAutomated = null, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; publishContext = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildDefIds = null, string branchName = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseDefIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvDefIds = null, string runTitle = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2(string project, valuetype System.DateTime minLastUpdatedDate, valuetype System.DateTime maxLastUpdatedDate, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; state, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; planIds, valuetype System.Nullable`1&lt;bool&gt; isAutomated, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; publishContext, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildDefIds, string branchName, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseDefIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseEnvIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseEnvDefIds, string runTitle, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.QueryTestRunsAsync2(System.String,System.DateTime,System.DateTime,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState},System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueryTestRunsAsync2 : string * DateTime * DateTime * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; * seq&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;" Usage="iTestResultsHttpClient.QueryTestRunsAsync2 (project, minLastUpdatedDate, maxLastUpdatedDate, state, planIds, isAutomated, publishContext, buildIds, buildDefIds, branchName, releaseIds, releaseDefIds, releaseEnvIds, releaseEnvDefIds, runTitle, top, continuationToken, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="minLastUpdatedDate" Type="System.DateTime" />
+        <Parameter Name="maxLastUpdatedDate" Type="System.DateTime" />
+        <Parameter Name="state" Type="System.Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt;" />
+        <Parameter Name="planIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="isAutomated" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="publishContext" Type="System.Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt;" />
+        <Parameter Name="buildIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="buildDefIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="branchName" Type="System.String" />
+        <Parameter Name="releaseIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="releaseDefIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="releaseEnvIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="releaseEnvDefIds" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="runTitle" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">To be added.</param>
+        <param name="minLastUpdatedDate">To be added.</param>
+        <param name="maxLastUpdatedDate">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="planIds">To be added.</param>
+        <param name="isAutomated">To be added.</param>
+        <param name="publishContext">To be added.</param>
+        <param name="buildIds">To be added.</param>
+        <param name="buildDefIds">To be added.</param>
+        <param name="branchName">To be added.</param>
+        <param name="releaseIds">To be added.</param>
+        <param name="releaseDefIds">To be added.</param>
+        <param name="releaseEnvIds">To be added.</param>
+        <param name="releaseEnvDefIds">To be added.</param>
+        <param name="runTitle">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestResultsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; UpdateTestResultsAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, Guid project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; UpdateTestResultsAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, valuetype System.Guid project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.UpdateTestResultsAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[],System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestResultsAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="iTestResultsHttpClient.UpdateTestResultsAsync (results, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[]" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestResultsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; UpdateTestResultsAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, string project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; UpdateTestResultsAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] results, string project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.UpdateTestResultsAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[],System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestResultsAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[] * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="iTestResultsHttpClient.UpdateTestResultsAsync (results, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[]" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; UpdateTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel runUpdateModel, Guid project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; UpdateTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel runUpdateModel, valuetype System.Guid project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.UpdateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel * Guid * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="iTestResultsHttpClient.UpdateTestRunAsync (runUpdateModel, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runUpdateModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel" />
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="runUpdateModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTestRunAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; UpdateTestRunAsync (Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel runUpdateModel, string project, int runId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt; UpdateTestRunAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel runUpdateModel, string project, int32 runId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.UpdateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTestRunAsync : Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel * string * int * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;" Usage="iTestResultsHttpClient.UpdateTestRunAsync (runUpdateModel, project, runId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runUpdateModel" Type="Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel" />
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="runId" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="runUpdateModel">To be added.</param>
+        <param name="project">To be added.</param>
+        <param name="runId">To be added.</param>
+        <param name="userState">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

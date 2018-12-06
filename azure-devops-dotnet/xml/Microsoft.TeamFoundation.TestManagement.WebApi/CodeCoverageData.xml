@@ -1,0 +1,130 @@
+﻿<Type Name="CodeCoverageData" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData">
+  <TypeSignature Language="C#" Value="public sealed class CodeCoverageData : Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementBaseSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeCoverageData extends Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementBaseSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeCoverageData&#xA;Inherits TestManagementBaseSecuredObject" />
+  <TypeSignature Language="F#" Value="type CodeCoverageData = class&#xA;    inherit TestManagementBaseSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementBaseSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the build configuration (platform, flavor) and coverage data for the build
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeCoverageData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildFlavor">
+      <MemberSignature Language="C#" Value="public string BuildFlavor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BuildFlavor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData.BuildFlavor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildFlavor As String" />
+      <MemberSignature Language="F#" Value="member this.BuildFlavor : string with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData.BuildFlavor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Flavor of build for which data is retrieved/published
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildPlatform">
+      <MemberSignature Language="C#" Value="public string BuildPlatform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BuildPlatform" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData.BuildPlatform" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildPlatform As String" />
+      <MemberSignature Language="F#" Value="member this.BuildPlatform : string with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData.BuildPlatform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Platform of build for which data is retrieved/published
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoverageStats">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageStatistics&gt; CoverageStats { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageStatistics&gt; CoverageStats" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData.CoverageStats" />
+      <MemberSignature Language="VB.NET" Value="Public Property CoverageStats As IList(Of CodeCoverageStatistics)" />
+      <MemberSignature Language="F#" Value="member this.CoverageStats : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageStatistics&gt; with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageData.CoverageStats" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.CodeCoverageStatistics&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of coverage data for the build
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,106 @@
+﻿<Type Name="SubscriptionEvaluationRequest" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionEvaluationRequest">
+  <TypeSignature Language="C#" Value="public class SubscriptionEvaluationRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubscriptionEvaluationRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionEvaluationRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class SubscriptionEvaluationRequest" />
+  <TypeSignature Language="F#" Value="type SubscriptionEvaluationRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientIncludeModel</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Encapsulates the properties of a SubscriptionEvaluationRequest.
+            It defines the subscription to be evaluated and time interval for events used in evaluation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SubscriptionEvaluationRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionEvaluationRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinEventsCreatedDate">
+      <MemberSignature Language="C#" Value="public DateTime MinEventsCreatedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinEventsCreatedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionEvaluationRequest.MinEventsCreatedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinEventsCreatedDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.MinEventsCreatedDate : DateTime with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionEvaluationRequest.MinEventsCreatedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The min created date for the events used for matching in UTC. Use all events created since this date
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscriptionCreateParameters">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters SubscriptionCreateParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters SubscriptionCreateParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionEvaluationRequest.SubscriptionCreateParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubscriptionCreateParameters As NotificationSubscriptionCreateParameters" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionCreateParameters : Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionEvaluationRequest.SubscriptionCreateParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriptionCreateParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

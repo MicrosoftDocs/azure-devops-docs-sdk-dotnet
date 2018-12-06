@@ -1,0 +1,242 @@
+﻿<Type Name="GitItem" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitItem">
+  <TypeSignature Language="C#" Value="public class GitItem : Microsoft.TeamFoundation.SourceControl.WebApi.ItemModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GitItem extends Microsoft.TeamFoundation.SourceControl.WebApi.ItemModel" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class GitItem&#xA;Inherits ItemModel" />
+  <TypeSignature Language="F#" Value="type GitItem = class&#xA;    inherit ItemModel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.SourceControl.WebApi.ItemModel</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.SourceControl.WebApi.GitItemsCollection))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GitItem (string itemPath, string objectId, Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType objectType, string commitId, int mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string itemPath, string objectId, valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType objectType, string commitId, int32 mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.#ctor(System.String,System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemPath As String, objectId As String, objectType As GitObjectType, commitId As String, mode As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.SourceControl.WebApi.GitItem : string * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType * string * int -&gt; Microsoft.TeamFoundation.SourceControl.WebApi.GitItem" Usage="new Microsoft.TeamFoundation.SourceControl.WebApi.GitItem (itemPath, objectId, objectType, commitId, mode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="itemPath" Type="System.String" />
+        <Parameter Name="objectId" Type="System.String" />
+        <Parameter Name="objectType" Type="Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType" />
+        <Parameter Name="commitId" Type="System.String" />
+        <Parameter Name="mode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="itemPath">To be added.</param>
+        <param name="objectId">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="commitId">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommitId">
+      <MemberSignature Language="C#" Value="public string CommitId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CommitId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.CommitId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommitId As String" />
+      <MemberSignature Language="F#" Value="member this.CommitId : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.CommitId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SHA1 of commit item was fetched at
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GitObjectType">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType GitObjectType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType GitObjectType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.GitObjectType" />
+      <MemberSignature Language="VB.NET" Value="Public Property GitObjectType As GitObjectType" />
+      <MemberSignature Language="F#" Value="member this.GitObjectType : Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.GitObjectType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitObjectType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Type of object (Commit, Tree, Blob, Tag, ...)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatestProcessedChange">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef LatestProcessedChange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef LatestProcessedChange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.LatestProcessedChange" />
+      <MemberSignature Language="VB.NET" Value="Public Property LatestProcessedChange As GitCommitRef" />
+      <MemberSignature Language="F#" Value="member this.LatestProcessedChange : Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.LatestProcessedChange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Shallow ref to commit that last changed this item
+            Only populated if latestProcessedChange is requested
+            May not be accurate if latest change is not yet cached
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectId">
+      <MemberSignature Language="C#" Value="public string ObjectId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ObjectId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.ObjectId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ObjectId As String" />
+      <MemberSignature Language="F#" Value="member this.ObjectId : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.ObjectId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Git object id
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalObjectId">
+      <MemberSignature Language="C#" Value="public string OriginalObjectId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OriginalObjectId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.OriginalObjectId" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginalObjectId As String" />
+      <MemberSignature Language="F#" Value="member this.OriginalObjectId : string with get, set" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.OriginalObjectId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Git object id
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredObject">
+      <MemberSignature Language="C#" Value="public override void SetSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitItem.SetSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetSecuredObject (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="override this.SetSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit" Usage="gitItem.SetSecuredObject securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

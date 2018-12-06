@@ -1,0 +1,132 @@
+﻿<Type Name="VariableMultipliersAgentExecutionOptions" FullName="Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions">
+  <TypeSignature Language="C#" Value="public class VariableMultipliersAgentExecutionOptions : Microsoft.TeamFoundation.Build.WebApi.AgentTargetExecutionOptions, Microsoft.TeamFoundation.Build.WebApi.IVariableMultiplierExecutionOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VariableMultipliersAgentExecutionOptions extends Microsoft.TeamFoundation.Build.WebApi.AgentTargetExecutionOptions implements class Microsoft.TeamFoundation.Build.WebApi.IVariableMultiplierExecutionOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class VariableMultipliersAgentExecutionOptions&#xA;Inherits AgentTargetExecutionOptions&#xA;Implements IVariableMultiplierExecutionOptions" />
+  <TypeSignature Language="F#" Value="type VariableMultipliersAgentExecutionOptions = class&#xA;    inherit AgentTargetExecutionOptions&#xA;    interface IVariableMultiplierExecutionOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Build.WebApi.AgentTargetExecutionOptions</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.Build.WebApi.IVariableMultiplierExecutionOptions</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents options for running a phase based on values specified by a list of variables.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VariableMultipliersAgentExecutionOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueOnError">
+      <MemberSignature Language="C#" Value="public bool ContinueOnError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContinueOnError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions.ContinueOnError" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContinueOnError As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContinueOnError : bool with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions.ContinueOnError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether failure on one agent should prevent the phase from running on other agents.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrency">
+      <MemberSignature Language="C#" Value="public int MaxConcurrency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions.MaxConcurrency" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrency As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrency : int with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions.MaxConcurrency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The maximum number of agents to use in parallel.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multipliers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; Multipliers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Multipliers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions.Multipliers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Multipliers As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Multipliers : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.VariableMultipliersAgentExecutionOptions.Multipliers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The list of variables used to determine the matrix of phases to run.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

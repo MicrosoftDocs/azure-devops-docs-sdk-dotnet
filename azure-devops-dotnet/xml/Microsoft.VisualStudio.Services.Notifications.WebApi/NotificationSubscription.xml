@@ -1,0 +1,585 @@
+﻿<Type Name="NotificationSubscription" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription">
+  <TypeSignature Language="C#" Value="public class NotificationSubscription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotificationSubscription extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription" />
+  <TypeSignature Language="VB.NET" Value="Public Class NotificationSubscription" />
+  <TypeSignature Language="F#" Value="type NotificationSubscription = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationSubscription ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdminSettings">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionAdminSettings AdminSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionAdminSettings AdminSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.AdminSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdminSettings As SubscriptionAdminSettings" />
+      <MemberSignature Language="F#" Value="member this.AdminSettings : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionAdminSettings with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.AdminSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionAdminSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Admin-managed settings for the subscription. Only applies when the subscriber is a group.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Channel">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.ISubscriptionChannel Channel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.Notifications.WebApi.ISubscriptionChannel Channel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Channel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Channel As ISubscriptionChannel" />
+      <MemberSignature Language="F#" Value="member this.Channel : Microsoft.VisualStudio.Services.Notifications.WebApi.ISubscriptionChannel with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Channel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionChannelConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.ISubscriptionChannel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Channel for delivering notifications triggered by the subscription.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Description of the subscription. Typically describes filter criteria which helps identity the subscription.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Diagnostics">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics Diagnostics { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics Diagnostics" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Diagnostics" />
+      <MemberSignature Language="VB.NET" Value="Public Property Diagnostics As SubscriptionDiagnostics" />
+      <MemberSignature Language="F#" Value="member this.Diagnostics : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Diagnostics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionDiagnostics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Diagnostics for this subscription.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; ExtendedProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; ExtendedProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.ExtendedProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtendedProperties As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.ExtendedProperties : System.Collections.Generic.Dictionary&lt;string, string&gt; with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.ExtendedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Any extra properties like detailed description for different contexts, user/group contexts
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.ISubscriptionFilter Filter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.Notifications.WebApi.ISubscriptionFilter Filter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter As ISubscriptionFilter" />
+      <MemberSignature Language="F#" Value="member this.Filter : Microsoft.VisualStudio.Services.Notifications.WebApi.ISubscriptionFilter with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFilterConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.ISubscriptionFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Matching criteria for the subscription.
+            <see cref="T:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilter" /></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags Flags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags Flags" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As SubscriptionFlags" />
+      <MemberSignature Language="F#" Value="member this.Flags : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Read-only indicators that further describe the subscription.  
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Subscription identifier.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedBy">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef LastModifiedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef LastModifiedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.LastModifiedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedBy As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedBy : Microsoft.VisualStudio.Services.WebApi.IdentityRef with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.LastModifiedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            User that last modified (or created) the subscription.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Links">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.ReferenceLinks Links { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.ReferenceLinks Links" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Links" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Links As ReferenceLinks" />
+      <MemberSignature Language="F#" Value="member this.Links : Microsoft.VisualStudio.Services.WebApi.ReferenceLinks" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Links" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="_links")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.ReferenceLinks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Links to related resources, APIs, and views for the subscription.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedDate">
+      <MemberSignature Language="C#" Value="public DateTime ModifiedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ModifiedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.ModifiedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModifiedDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ModifiedDate : DateTime with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.ModifiedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Date when the subscription was last modified. If the subscription has not been updated since it was created, this value will indicate when the subscription was created. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Permissions">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionPermissions Permissions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionPermissions Permissions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Permissions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Permissions As SubscriptionPermissions" />
+      <MemberSignature Language="F#" Value="member this.Permissions : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionPermissions with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Permissions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionPermissions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The permissions the user have for this subscriptions.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionScope Scope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionScope Scope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As SubscriptionScope" />
+      <MemberSignature Language="F#" Value="member this.Scope : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionScope with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Scope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The container in which events must be published from in order to be matched by the subscription. If empty, the scope is the current host (typically an account or project collection).
+            For example, a subscription scoped to project A will not produce notifications for events published from project B.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Property Status As SubscriptionStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Status of the subscription. Typically indicates whether the subscription is enabled or not.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusMessage">
+      <MemberSignature Language="C#" Value="public string StatusMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StatusMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.StatusMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusMessage As String" />
+      <MemberSignature Language="F#" Value="member this.StatusMessage : string with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.StatusMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Message that provides more details about the status of the subscription.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscriber">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef Subscriber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef Subscriber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Subscriber" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subscriber As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.Subscriber : Microsoft.VisualStudio.Services.WebApi.IdentityRef with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Subscriber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            User or group that will receive notifications for events matching the subscription's filter criteria.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueId">
+      <MemberSignature Language="C#" Value="public string UniqueId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UniqueId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.UniqueId" />
+      <MemberSignature Language="VB.NET" Value="Public Property UniqueId As String" />
+      <MemberSignature Language="F#" Value="member this.UniqueId : string with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.UniqueId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Subscription unique identifier.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            REST API URL of the subscriotion.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserSettings">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings UserSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings UserSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.UserSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserSettings As SubscriptionUserSettings" />
+      <MemberSignature Language="F#" Value="member this.UserSettings : Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscription.UserSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionUserSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            User-managed settings for the subscription. Only applies when the subscriber is a group. Typically used to indicate whether the calling user is opted in or out of a group subscription.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

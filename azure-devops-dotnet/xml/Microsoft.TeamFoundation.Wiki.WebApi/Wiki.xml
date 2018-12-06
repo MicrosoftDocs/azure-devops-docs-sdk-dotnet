@@ -1,0 +1,130 @@
+﻿<Type Name="Wiki" FullName="Microsoft.TeamFoundation.Wiki.WebApi.Wiki">
+  <TypeSignature Language="C#" Value="public class Wiki : Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Wiki extends Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Wiki.WebApi.Wiki" />
+  <TypeSignature Language="VB.NET" Value="Public Class Wiki&#xA;Inherits WikiCreateParameters" />
+  <TypeSignature Language="F#" Value="type Wiki = class&#xA;    inherit WikiCreateParameters" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Defines a wiki repository which encapsulates the git repository backing the wiki.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Wiki ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.Wiki.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadCommit">
+      <MemberSignature Language="C#" Value="public string HeadCommit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HeadCommit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.Wiki.HeadCommit" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeadCommit As String" />
+      <MemberSignature Language="F#" Value="member this.HeadCommit : string with get, set" Usage="Microsoft.TeamFoundation.Wiki.WebApi.Wiki.HeadCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="headCommit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The head commit associated with the git repository backing up the wiki.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Guid Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.Wiki.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As Guid" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid with get, set" Usage="Microsoft.TeamFoundation.Wiki.WebApi.Wiki.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The ID of the wiki which is same as the ID of the Git repository that it is backed by.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Repository">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository Repository { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository Repository" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Wiki.WebApi.Wiki.Repository" />
+      <MemberSignature Language="VB.NET" Value="Public Property Repository As GitRepository" />
+      <MemberSignature Language="F#" Value="member this.Repository : Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository with get, set" Usage="Microsoft.TeamFoundation.Wiki.WebApi.Wiki.Repository" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Wiki.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="repository")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The git repository that backs up the wiki.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

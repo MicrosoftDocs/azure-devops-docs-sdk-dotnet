@@ -1,0 +1,192 @@
+﻿<Type Name="BuildCompletedEvent" FullName="Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent">
+  <TypeSignature Language="C#" Value="public class BuildCompletedEvent : Microsoft.TeamFoundation.Build.WebApi.Events.BuildUpdatedEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildCompletedEvent extends Microsoft.TeamFoundation.Build.WebApi.Events.BuildUpdatedEvent" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildCompletedEvent&#xA;Inherits BuildUpdatedEvent" />
+  <TypeSignature Language="F#" Value="type BuildCompletedEvent = class&#xA;    inherit BuildUpdatedEvent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Build.WebApi.Events.BuildUpdatedEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ServiceEventObject</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildCompletedEvent (Microsoft.TeamFoundation.Build.WebApi.Build build);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.Build.WebApi.Build build) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.#ctor(Microsoft.TeamFoundation.Build.WebApi.Build)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent : Microsoft.TeamFoundation.Build.WebApi.Build -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent build" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+      </Parameters>
+      <Docs>
+        <param name="build">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Changes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt; Changes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Change&gt; Changes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.Changes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Changes As List(Of Change)" />
+      <MemberSignature Language="F#" Value="member this.Changes : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.Changes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Changes associated with a build used for build notifications
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PullRequest">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.PullRequest PullRequest { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Build.WebApi.PullRequest PullRequest" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.PullRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Property PullRequest As PullRequest" />
+      <MemberSignature Language="F#" Value="member this.PullRequest : Microsoft.TeamFoundation.Build.WebApi.PullRequest with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.PullRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Build.WebApi.PullRequest</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Pull request for the build used for build notifications
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestResults">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedResultsAnalysis TestResults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedResultsAnalysis TestResults" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.TestResults" />
+      <MemberSignature Language="VB.NET" Value="Public Property TestResults As AggregatedResultsAnalysis" />
+      <MemberSignature Language="F#" Value="member this.TestResults : Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedResultsAnalysis with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.TestResults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.AggregatedResultsAnalysis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Test results associated with a build used for build notifications
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimelineRecords">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.TimelineRecord&gt; TimelineRecords { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.TimelineRecord&gt; TimelineRecords" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.TimelineRecords" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimelineRecords As List(Of TimelineRecord)" />
+      <MemberSignature Language="F#" Value="member this.TimelineRecords : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.TimelineRecord&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.TimelineRecords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.TimelineRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Timeline records associated with a build used for build notifications
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.AssociatedWorkItem&gt; WorkItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.AssociatedWorkItem&gt; WorkItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.WorkItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkItems As List(Of AssociatedWorkItem)" />
+      <MemberSignature Language="F#" Value="member this.WorkItems : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.AssociatedWorkItem&gt; with get, set" Usage="Microsoft.TeamFoundation.Build.WebApi.Events.BuildCompletedEvent.WorkItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.AssociatedWorkItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Work items associated with a build used for build notifications
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,377 @@
+﻿<Type Name="TestOutcome" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome">
+  <TypeSignature Language="C#" Value="public enum TestOutcome" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TestOutcome extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TestOutcome" />
+  <TypeSignature Language="F#" Value="type TestOutcome = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="Aborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Aborted = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 6" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Aborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            Test was aborted. 
+            This was not caused by a user gesture, but rather by a framework decision.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Blocked">
+      <MemberSignature Language="C#" Value="Blocked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Blocked = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Blocked" />
+      <MemberSignature Language="VB.NET" Value="Blocked" />
+      <MemberSignature Language="F#" Value="Blocked = 7" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Blocked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+            Test had it chance for been executed but was not, as ITestElement.IsRunnable == false.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Error = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 10" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>
+            There was a system error while we were trying to execute a test.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Failed">
+      <MemberSignature Language="C#" Value="Failed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Failed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Failed" />
+      <MemberSignature Language="VB.NET" Value="Failed" />
+      <MemberSignature Language="F#" Value="Failed = 3" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Failed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Test was executed, but there were issues.
+            Issues may involve exceptions or failed assertions.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inconclusive">
+      <MemberSignature Language="C#" Value="Inconclusive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Inconclusive = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Inconclusive" />
+      <MemberSignature Language="VB.NET" Value="Inconclusive" />
+      <MemberSignature Language="F#" Value="Inconclusive = 4" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Inconclusive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            Test has completed, but we can't say if it passed or failed.
+            May be used for aborted tests...
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InProgress">
+      <MemberSignature Language="C#" Value="InProgress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome InProgress = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.InProgress" />
+      <MemberSignature Language="VB.NET" Value="InProgress" />
+      <MemberSignature Language="F#" Value="InProgress = 13" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.InProgress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>
+            Test is currently executing. Added this for TCM charts
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxValue">
+      <MemberSignature Language="C#" Value="MaxValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome MaxValue = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="MaxValue" />
+      <MemberSignature Language="F#" Value="MaxValue = 14" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.MaxValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Test has not been completed, or the test type does not report
+            pass/failure.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotApplicable">
+      <MemberSignature Language="C#" Value="NotApplicable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome NotApplicable = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.NotApplicable" />
+      <MemberSignature Language="VB.NET" Value="NotApplicable" />
+      <MemberSignature Language="F#" Value="NotApplicable = 11" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.NotApplicable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>
+            Test is Not Applicable for execution.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotExecuted">
+      <MemberSignature Language="C#" Value="NotExecuted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome NotExecuted = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.NotExecuted" />
+      <MemberSignature Language="VB.NET" Value="NotExecuted" />
+      <MemberSignature Language="F#" Value="NotExecuted = 8" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.NotExecuted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+            Test was not executed. 
+            This was caused by a user gesture - e.g. user hit stop button.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotImpacted">
+      <MemberSignature Language="C#" Value="NotImpacted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome NotImpacted = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.NotImpacted" />
+      <MemberSignature Language="VB.NET" Value="NotImpacted" />
+      <MemberSignature Language="F#" Value="NotImpacted = 14" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.NotImpacted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>
+            Test is not impacted. Added fot TIA.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Passed">
+      <MemberSignature Language="C#" Value="Passed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Passed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Passed" />
+      <MemberSignature Language="VB.NET" Value="Passed" />
+      <MemberSignature Language="F#" Value="Passed = 2" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Passed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Test was executed w/o any issues.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Paused">
+      <MemberSignature Language="C#" Value="Paused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Paused = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Paused" />
+      <MemberSignature Language="VB.NET" Value="Paused" />
+      <MemberSignature Language="F#" Value="Paused = 12" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Paused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>
+            Test is paused.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="Timeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Timeout = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Timeout" />
+      <MemberSignature Language="F#" Value="Timeout = 5" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Timeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            The test timed out
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Unspecified = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Only used during an update to preserve the existing value.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Warning">
+      <MemberSignature Language="C#" Value="Warning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome Warning = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 9" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome.Warning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>
+            To be used by Run level results.
+            This is not a failure.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

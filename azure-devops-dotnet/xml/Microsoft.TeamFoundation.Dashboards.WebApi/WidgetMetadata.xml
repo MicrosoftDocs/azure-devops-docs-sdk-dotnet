@@ -1,0 +1,773 @@
+﻿<Type Name="WidgetMetadata" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata">
+  <TypeSignature Language="C#" Value="public class WidgetMetadata : Microsoft.TeamFoundation.Dashboards.WebApi.DashboardSecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WidgetMetadata extends Microsoft.TeamFoundation.Dashboards.WebApi.DashboardSecuredObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class WidgetMetadata&#xA;Inherits DashboardSecuredObject" />
+  <TypeSignature Language="F#" Value="type WidgetMetadata = class&#xA;    inherit DashboardSecuredObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.Dashboards.WebApi.DashboardSecuredObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Contribution based information describing Dashboard Widgets.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WidgetMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedSizes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetSize&gt; AllowedSizes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetSize&gt; AllowedSizes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.AllowedSizes" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowedSizes As IEnumerable(Of WidgetSize)" />
+      <MemberSignature Language="F#" Value="member this.AllowedSizes : seq&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetSize&gt; with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.AllowedSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetSize&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sizes supported by the Widget.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnalyticsServiceRequired">
+      <MemberSignature Language="C#" Value="public bool AnalyticsServiceRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AnalyticsServiceRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.AnalyticsServiceRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnalyticsServiceRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AnalyticsServiceRequired : bool with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.AnalyticsServiceRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Opt-in boolean that indicates if the widget requires the Analytics Service to function.
+            Widgets requiring the analytics service are hidden from the catalog if the Analytics Service is not available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Even if a widget specifies an invalid size we don't consider it invalid as long as it has at least one valid size.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanStoreCrossProjectSettings">
+      <MemberSignature Language="C#" Value="public bool CanStoreCrossProjectSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanStoreCrossProjectSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CanStoreCrossProjectSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanStoreCrossProjectSettings As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanStoreCrossProjectSettings : bool with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CanStoreCrossProjectSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.IgnoreDataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Advanced widgets can store settings referring across projects
+            Non member users can only access information within the current project.
+            Where this is opted in, and "hasNoCrossProjectReferences" is set true, the framework will selectively permit trusted single project configurations. 
+            If active, and hasNoCrossProjectReferences is false or null, widget settings will be cleared.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CatalogIconUrl">
+      <MemberSignature Language="C#" Value="public string CatalogIconUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CatalogIconUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CatalogIconUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property CatalogIconUrl As String" />
+      <MemberSignature Language="F#" Value="member this.CatalogIconUrl : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CatalogIconUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Resource for an icon in the widget catalog.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CatalogInfoUrl">
+      <MemberSignature Language="C#" Value="public string CatalogInfoUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CatalogInfoUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CatalogInfoUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property CatalogInfoUrl As String" />
+      <MemberSignature Language="F#" Value="member this.CatalogInfoUrl : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CatalogInfoUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Opt-in URL string pointing at widget information. Defaults to extension marketplace URL if omitted
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneWithSecuredObject">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata CloneWithSecuredObject (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata CloneWithSecuredObject(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CloneWithSecuredObject(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneWithSecuredObject (securedObject As ISecuredObject) As WidgetMetadata" />
+      <MemberSignature Language="F#" Value="member this.CloneWithSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata" Usage="widgetMetadata.CloneWithSecuredObject securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationContributionId">
+      <MemberSignature Language="C#" Value="public string ConfigurationContributionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationContributionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ConfigurationContributionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationContributionId As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationContributionId : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ConfigurationContributionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The id of the underlying contribution defining the supplied Widget custom configuration UI. Null if custom configuration UI is not available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationContributionRelativeId">
+      <MemberSignature Language="C#" Value="public string ConfigurationContributionRelativeId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationContributionRelativeId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ConfigurationContributionRelativeId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationContributionRelativeId As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationContributionRelativeId : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ConfigurationContributionRelativeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The relative id of the underlying contribution defining the supplied Widget custom configuration UI. Null if custom configuration UI is not available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationRequired">
+      <MemberSignature Language="C#" Value="public bool ConfigurationRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConfigurationRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ConfigurationRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationRequired : bool with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ConfigurationRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if the widget requires configuration before being added to dashboard.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentUri">
+      <MemberSignature Language="C#" Value="public Uri ContentUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ContentUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ContentUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.ContentUri : Uri with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ContentUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Uri for the widget content to be loaded from .
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContributionId">
+      <MemberSignature Language="C#" Value="public string ContributionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContributionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ContributionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContributionId As String" />
+      <MemberSignature Language="F#" Value="member this.ContributionId : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.ContributionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The id of the underlying contribution defining the supplied Widget.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDisabledInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata CreateDisabledInstance (string contributionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata CreateDisabledInstance(string contributionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CreateDisabledInstance(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDisabledInstance (contributionId As String) As WidgetMetadata" />
+      <MemberSignature Language="F#" Value="static member CreateDisabledInstance : string -&gt; Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.CreateDisabledInstance contributionId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contributionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contributionId">To be added.</param>
+        <summary>
+            Produces a canonical "Disabled" Metadata entry.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSettings">
+      <MemberSignature Language="C#" Value="public string DefaultSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.DefaultSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultSettings As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultSettings : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.DefaultSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optional default settings to be copied into widget settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Summary information describing the widget.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Widgets can be disabled by the app store.
+            
+             We'll need to gracefully handle for:
+             - persistence (Allow)
+             - Requests (Tag as disabled, and provide context)
+             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNameConfigurable">
+      <MemberSignature Language="C#" Value="public bool IsNameConfigurable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNameConfigurable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.IsNameConfigurable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsNameConfigurable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNameConfigurable : bool with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.IsNameConfigurable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Opt-out boolean that indicates if the widget supports widget name/title configuration. Widgets ignoring the name should set it to false in the manifest.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsValid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsValid () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValid : unit -&gt; bool" Usage="widgetMetadata.IsValid " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVisibleFromCatalog">
+      <MemberSignature Language="C#" Value="public bool IsVisibleFromCatalog { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVisibleFromCatalog" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.IsVisibleFromCatalog" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsVisibleFromCatalog As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsVisibleFromCatalog : bool with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.IsVisibleFromCatalog" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Opt-out boolean indicating if the widget is hidden from the catalog.
+             Commonly, this is used to allow developers to disable creation of a deprecated widget.
+             A widget must have a functional default state, or have a configuration experience, in order to be visible from the catalog.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightboxOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Dashboards.WebApi.LightboxOptions LightboxOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Dashboards.WebApi.LightboxOptions LightboxOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.LightboxOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property LightboxOptions As LightboxOptions" />
+      <MemberSignature Language="F#" Value="member this.LightboxOptions : Microsoft.TeamFoundation.Dashboards.WebApi.LightboxOptions with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.LightboxOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Dashboards.WebApi.LightboxOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Opt-in properties for customizing widget presentation in a "lightbox" dialog.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadingImageUrl">
+      <MemberSignature Language="C#" Value="public string LoadingImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LoadingImageUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.LoadingImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoadingImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.LoadingImageUrl : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.LoadingImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Resource for a loading placeholder image on dashboard
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            User facing name of the widget type. Each widget must use a unique value here.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublisherName">
+      <MemberSignature Language="C#" Value="public string PublisherName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PublisherName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.PublisherName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublisherName As String" />
+      <MemberSignature Language="F#" Value="member this.PublisherName : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.PublisherName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Publisher Name of this kind of widget.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSecuredChildren">
+      <MemberSignature Language="C#" Value="protected override void SetSecuredChildren (Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetSecuredChildren(class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.SetSecuredChildren(Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetSecuredChildren (securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="override this.SetSecuredChildren : Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit" Usage="widgetMetadata.SetSecuredChildren securedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedScopes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope&gt; SupportedScopes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope&gt; SupportedScopes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.SupportedScopes" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportedScopes As IEnumerable(Of WidgetScope)" />
+      <MemberSignature Language="F#" Value="member this.SupportedScopes : seq&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope&gt; with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.SupportedScopes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Data contract required for the widget to function and to work in its container. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Targets">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; Targets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Targets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.Targets" />
+      <MemberSignature Language="VB.NET" Value="Public Property Targets As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Targets : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.Targets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Contribution target IDs
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeId">
+      <MemberSignature Language="C#" Value="public string TypeId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.TypeId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeId As String" />
+      <MemberSignature Language="F#" Value="member this.TypeId : string with get, set" Usage="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadata.TypeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Dashboards.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Deprecated: locally unique developer-facing id of this kind of widget.
+            ContributionId provides a globally unique identifier for widget types.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

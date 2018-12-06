@@ -1,0 +1,95 @@
+﻿<Type Name="VersionControlSecuredObjectExtensions" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObjectExtensions">
+  <TypeSignature Language="C#" Value="public static class VersionControlSecuredObjectExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VersionControlSecuredObjectExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObjectExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module VersionControlSecuredObjectExtensions" />
+  <TypeSignature Language="F#" Value="type VersionControlSecuredObjectExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetSecuredObject&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetSecuredObject&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; securableObjects, Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) where T : Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSecuredObject&lt;(class Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; securableObjects, class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObjectExtensions.SetSecuredObject``1(System.Collections.Generic.IEnumerable{``0},Microsoft.VisualStudio.Services.WebApi.ISecuredObject)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetSecuredObject(Of T As VersionControlSecuredObject) (securableObjects As IEnumerable(Of T), securedObject As ISecuredObject)" />
+      <MemberSignature Language="F#" Value="static member SetSecuredObject : seq&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject)&gt; * Microsoft.VisualStudio.Services.WebApi.ISecuredObject -&gt; unit (requires 'T :&gt; Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject)" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObjectExtensions.SetSecuredObject (securableObjects, securedObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="securableObjects" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="securableObjects">To be added.</param>
+        <param name="securedObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSecuredDictionary&lt;TSource,TKey,TElement&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;TKey,TElement&gt; ToSecuredDictionary&lt;TSource,TKey,TElement&gt; (this System.Collections.Generic.IEnumerable&lt;TSource&gt; source, Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject, Func&lt;TSource,TKey&gt; keySelector, Func&lt;TSource,TElement&gt; elementSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TElement&gt; ToSecuredDictionary&lt;TSource, TKey, TElement&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class Microsoft.VisualStudio.Services.WebApi.ISecuredObject securedObject, class System.Func`2&lt;!!TSource, !!TKey&gt; keySelector, class System.Func`2&lt;!!TSource, !!TElement&gt; elementSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObjectExtensions.ToSecuredDictionary``3(System.Collections.Generic.IEnumerable{``0},Microsoft.VisualStudio.Services.WebApi.ISecuredObject,System.Func{``0,``1},System.Func{``0,``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSecuredDictionary(Of TSource, TKey, TElement) (source As IEnumerable(Of TSource), securedObject As ISecuredObject, keySelector As Func(Of TSource, TKey), elementSelector As Func(Of TSource, TElement)) As IDictionary(Of TKey, TElement)" />
+      <MemberSignature Language="F#" Value="static member ToSecuredDictionary : seq&lt;'Source&gt; * Microsoft.VisualStudio.Services.WebApi.ISecuredObject * Func&lt;'Source, 'Key&gt; * Func&lt;'Source, 'Element&gt; -&gt; System.Collections.Generic.IDictionary&lt;'Key, 'Element&gt;" Usage="Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlSecuredObjectExtensions.ToSecuredDictionary (source, securedObject, keySelector, elementSelector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.SourceControl.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;TKey,TElement&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TElement" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="securedObject" Type="Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+        <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
+        <Parameter Name="elementSelector" Type="System.Func&lt;TSource,TElement&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="TElement">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="securedObject">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <param name="elementSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

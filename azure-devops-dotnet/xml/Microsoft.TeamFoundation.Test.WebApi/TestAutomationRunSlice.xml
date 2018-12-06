@@ -1,0 +1,331 @@
+﻿<Type Name="TestAutomationRunSlice" FullName="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice">
+  <TypeSignature Language="C#" Value="public sealed class TestAutomationRunSlice" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TestAutomationRunSlice extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TestAutomationRunSlice" />
+  <TypeSignature Language="F#" Value="type TestAutomationRunSlice = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the Slice of work that needs to be executed by Automation Test Agent.
+            Data is categorized as below
+              Slice related information e.g. Identity/Type etc
+              Agent related information: Currently none.
+              TestRun related information e.g. TcmRunId/ProjectName/TestContainers etc
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TestAutomationRunSlice ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public int Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As Integer" />
+      <MemberSignature Language="F#" Value="member this.Id : int with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Id of Slice Sent to ExecutionHost
+            </summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastPhaseResults">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Test.WebApi.SlicedTestData&gt; LastPhaseResults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Test.WebApi.SlicedTestData&gt; LastPhaseResults" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.LastPhaseResults" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastPhaseResults As List(Of SlicedTestData)" />
+      <MemberSignature Language="F#" Value="member this.LastPhaseResults : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Test.WebApi.SlicedTestData&gt; with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.LastPhaseResults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Test.WebApi.SlicedTestData&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Results from the previous slice in jason format. 
+            e.g. Results from DiscoverySlice can be used by ExecutionSlice.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Messages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Test.WebApi.Message&gt; Messages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Test.WebApi.Message&gt; Messages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Messages" />
+      <MemberSignature Language="VB.NET" Value="Public Property Messages As List(Of Message)" />
+      <MemberSignature Language="F#" Value="member this.Messages : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Test.WebApi.Message&gt; with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Messages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Test.WebApi.Message&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Important messages related to the execution of the slice.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Requirements">
+      <MemberSignature Language="C#" Value="public string Requirements { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Requirements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Requirements" />
+      <MemberSignature Language="VB.NET" Value="Public Property Requirements As String" />
+      <MemberSignature Language="F#" Value="member this.Requirements : string with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Requirements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of requirements on the slice that should be met for it to be assigned
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public string Results { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Results" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Results" />
+      <MemberSignature Language="VB.NET" Value="Public Property Results As String" />
+      <MemberSignature Language="F#" Value="member this.Results : string with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Results of the slice
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Test.WebApi.AutomatedTestRunSliceStatus Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.Test.WebApi.AutomatedTestRunSliceStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Property Status As AutomatedTestRunSliceStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.TeamFoundation.Test.WebApi.AutomatedTestRunSliceStatus with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Test.WebApi.AutomatedTestRunSliceStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Status of the slice
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestConfigId">
+      <MemberSignature Language="C#" Value="public int TestConfigId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TestConfigId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.TestConfigId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TestConfigId As Integer" />
+      <MemberSignature Language="F#" Value="member this.TestConfigId : int with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.TestConfigId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            config Id of Executing Slice
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestConfigurationsMapping">
+      <MemberSignature Language="C#" Value="public string TestConfigurationsMapping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TestConfigurationsMapping" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.TestConfigurationsMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Property TestConfigurationsMapping As String" />
+      <MemberSignature Language="F#" Value="member this.TestConfigurationsMapping : string with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.TestConfigurationsMapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=true, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Test Configurations mapping
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestRunInformation">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Test.WebApi.TestRunInformation TestRunInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.Test.WebApi.TestRunInformation TestRunInformation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.TestRunInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property TestRunInformation As TestRunInformation" />
+      <MemberSignature Language="F#" Value="member this.TestRunInformation : Microsoft.TeamFoundation.Test.WebApi.TestRunInformation with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.TestRunInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Test.WebApi.TestRunInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TestRunInformation should capture any information related to the TestRun 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Test.WebApi.AutomatedTestRunSliceType Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.Test.WebApi.AutomatedTestRunSliceType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As AutomatedTestRunSliceType" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.TeamFoundation.Test.WebApi.AutomatedTestRunSliceType with get, set" Usage="Microsoft.TeamFoundation.Test.WebApi.TestAutomationRunSlice.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Test.WebApi</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.Test.WebApi.AutomatedTestRunSliceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The type of slice being worked on
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
