@@ -303,6 +303,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.ApiResourceLocation&gt; Options ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.ApiResourceLocation&gt; Options() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Function Options () As Task(Of ApiResourceLocation)" />
+      <MemberSignature Language="F#" Value="member this.Options : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.ApiResourceLocation&gt;" Usage="projectHttpClient.Options " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.ApiResourceLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="QueueCreateProject">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueCreateProject (Microsoft.TeamFoundation.Core.WebApi.TeamProject projectToCreate, object userState = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueCreateProject(class Microsoft.TeamFoundation.Core.WebApi.TeamProject projectToCreate, object userState) cil managed" />
@@ -358,6 +379,34 @@
             Queue a project deletion.
             </summary>
         <returns>Reference to the delete operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueDeleteProject">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueDeleteProject (Guid projectId, bool hardDelete, object userState = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueDeleteProject(valuetype System.Guid projectId, bool hardDelete, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.QueueDeleteProject(System.Guid,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueueDeleteProject (projectId As Guid, hardDelete As Boolean, Optional userState As Object = null) As Task(Of OperationReference)" />
+      <MemberSignature Language="F#" Value="member this.QueueDeleteProject : Guid * bool * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt;" Usage="projectHttpClient.QueueDeleteProject (projectId, hardDelete, userState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectId" Type="System.Guid" />
+        <Parameter Name="hardDelete" Type="System.Boolean" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="projectId">To be added.</param>
+        <param name="hardDelete">To be added.</param>
+        <param name="userState">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

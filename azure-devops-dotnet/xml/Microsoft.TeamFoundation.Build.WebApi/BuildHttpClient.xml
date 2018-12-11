@@ -177,12 +177,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="definition">To be added.</param>
-        <param name="definitionToCloneId">To be added.</param>
-        <param name="definitionToCloneRevision">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="definition">The definition.</param>
+        <param name="definitionToCloneId"></param>
+        <param name="definitionToCloneRevision"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Creates a new definition.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2015,13 +2017,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="build">To be added.</param>
-        <param name="ignoreWarnings">To be added.</param>
-        <param name="checkInTicket">To be added.</param>
-        <param name="sourceBuildId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="build"></param>
+        <param name="ignoreWarnings"></param>
+        <param name="checkInTicket"></param>
+        <param name="sourceBuildId"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Queues a build
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2275,6 +2279,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="UpdateBuildAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync (Microsoft.TeamFoundation.Build.WebApi.Build build, Nullable&lt;bool&gt; retry = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Build&gt; UpdateBuildAsync(class Microsoft.TeamFoundation.Build.WebApi.Build build, valuetype System.Nullable`1&lt;bool&gt; retry, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClient.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.UpdateBuildAsync : Microsoft.TeamFoundation.Build.WebApi.Build * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;" Usage="buildHttpClient.UpdateBuildAsync (build, retry, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Build.WebApi.Build&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="Microsoft.TeamFoundation.Build.WebApi.Build" />
+        <Parameter Name="retry" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="build">The build.</param>
+        <param name="retry"></param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Updates a build.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="UpdateBuildPropertiesAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.PropertiesCollection&gt; UpdateBuildPropertiesAsync (Microsoft.VisualStudio.Services.WebApi.PropertiesCollection properties, Guid project, int buildId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.PropertiesCollection&gt; UpdateBuildPropertiesAsync(class Microsoft.VisualStudio.Services.WebApi.PropertiesCollection properties, valuetype System.Guid project, int32 buildId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -2359,10 +2394,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="definition">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="definition">The new version of the defintion.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Updates an existing definition.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

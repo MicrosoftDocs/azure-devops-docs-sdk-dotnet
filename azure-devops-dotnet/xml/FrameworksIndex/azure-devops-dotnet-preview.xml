@@ -405,6 +405,7 @@
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClient.RemoveBuildPropertiesAsync(Microsoft.VisualStudio.Services.WebApi.PropertiesCollection,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClient.RemoveDefinitionPropertiesAsync(Microsoft.VisualStudio.Services.WebApi.PropertiesCollection,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClient.RemoveDefinitionPropertiesAsync(Microsoft.VisualStudio.Services.WebApi.PropertiesCollection,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClient.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClient.UpdateBuildPropertiesAsync(Microsoft.VisualStudio.Services.WebApi.PropertiesCollection,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClient.UpdateBuildPropertiesAsync(Microsoft.VisualStudio.Services.WebApi.PropertiesCollection,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClient.UpdateDefinitionAsync(Microsoft.TeamFoundation.Build.WebApi.BuildDefinition,System.Object,System.Threading.CancellationToken)" />
@@ -427,6 +428,8 @@
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.AddDefinitionTagsAsync(System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.AuthorizeDefinitionResourcesAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Build.WebApi.DefinitionResourceReference},System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.AuthorizeDefinitionResourcesAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Build.WebApi.DefinitionResourceReference},System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.AuthorizeProjectResourcesAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Build.WebApi.DefinitionResourceReference},System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.AuthorizeProjectResourcesAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Build.WebApi.DefinitionResourceReference},System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.CreateArtifactAsync(Microsoft.TeamFoundation.Build.WebApi.BuildArtifact,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.CreateArtifactAsync(Microsoft.TeamFoundation.Build.WebApi.BuildArtifact,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.CreateDefinitionAsync(Microsoft.TeamFoundation.Build.WebApi.BuildDefinition,System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
@@ -526,6 +529,8 @@
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.GetPathContentsAsync(System.String,System.String,System.Nullable{System.Guid},System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.GetProjectMetricsAsync(System.Guid,System.String,System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.GetProjectMetricsAsync(System.String,System.String,System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.GetProjectResourcesAsync(System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.GetProjectResourcesAsync(System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.GetPullRequestAsync(System.Guid,System.String,System.String,System.String,System.Nullable{System.Guid},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.GetPullRequestAsync(System.String,System.String,System.String,System.String,System.Nullable{System.Guid},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.GetResourceUsageAsync(System.Object,System.Threading.CancellationToken)" />
@@ -555,8 +560,6 @@
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.RestoreWebhooksAsync(System.Collections.Generic.List{Microsoft.TeamFoundation.Build.WebApi.DefinitionTriggerType},System.String,System.String,System.Nullable{System.Guid},System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.SaveTemplateAsync(Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionTemplate,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.SaveTemplateAsync(Microsoft.TeamFoundation.Build.WebApi.BuildDefinitionTemplate,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.Guid,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.UpdateBuildAsync(Microsoft.TeamFoundation.Build.WebApi.Build,System.String,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.UpdateBuildPropertiesAsync(Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.UpdateBuildPropertiesAsync(Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.Build.WebApi.BuildHttpClientBase.UpdateBuildsAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Build.WebApi.Build},System.Guid,System.Object,System.Threading.CancellationToken)" />
@@ -897,6 +900,8 @@
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.MetricsResource" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.Options" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.OptionsResource" />
+      <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.ProjectAuthorizedResources" />
+      <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.ProjectAuthorizedResourcesResource" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.ProjectMetrics" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.ProjectMetricsLocationString" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.PropertiesResource" />
@@ -937,10 +942,6 @@
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.TagsLocationIdString" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.Templates" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.TemplatesResource" />
-      <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.TicketedArtifacts" />
-      <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.TicketedArtifactsResource" />
-      <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.TicketedLogs" />
-      <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.TicketedLogsResource" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.Timelines" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.TimelinesResource" />
       <Member Id="F:Microsoft.TeamFoundation.Build.WebApi.BuildResourceIds.Usage" />
@@ -1993,6 +1994,7 @@
       <Member Id="P:Microsoft.TeamFoundation.Build.WebApi.TimelineRecord.ErrorCount" />
       <Member Id="P:Microsoft.TeamFoundation.Build.WebApi.TimelineRecord.FinishTime" />
       <Member Id="P:Microsoft.TeamFoundation.Build.WebApi.TimelineRecord.Id" />
+      <Member Id="P:Microsoft.TeamFoundation.Build.WebApi.TimelineRecord.Identifier" />
       <Member Id="P:Microsoft.TeamFoundation.Build.WebApi.TimelineRecord.Issues" />
       <Member Id="P:Microsoft.TeamFoundation.Build.WebApi.TimelineRecord.LastModified" />
       <Member Id="P:Microsoft.TeamFoundation.Build.WebApi.TimelineRecord.Links" />
@@ -2572,6 +2574,10 @@
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.IdentityRefOrJValueConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)" />
       <Member Id="P:Microsoft.TeamFoundation.Core.WebApi.IdentityRefOrJValueConverter.CanWrite" />
     </Type>
+    <Type Name="Microsoft.TeamFoundation.Core.WebApi.InvalidProjectDeleteException" Id="T:Microsoft.TeamFoundation.Core.WebApi.InvalidProjectDeleteException">
+      <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.InvalidProjectDeleteException.#ctor" />
+      <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.InvalidProjectDeleteException.#ctor(System.String)" />
+    </Type>
     <Type Name="Microsoft.TeamFoundation.Core.WebApi.InvalidProjectNameException" Id="T:Microsoft.TeamFoundation.Core.WebApi.InvalidProjectNameException">
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.InvalidProjectNameException.#ctor" />
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.InvalidProjectNameException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
@@ -2676,7 +2682,9 @@
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.GetProjectHistory(System.Int64,System.Object)" />
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.GetProjects(System.Nullable{Microsoft.TeamFoundation.Core.WebApi.ProjectState},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.String)" />
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.GetProjects(System.Nullable{Microsoft.TeamFoundation.Core.WebApi.ProjectState},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.String,System.Nullable{System.Boolean})" />
+      <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.Options" />
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.QueueCreateProject(Microsoft.TeamFoundation.Core.WebApi.TeamProject,System.Object)" />
+      <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.QueueDeleteProject(System.Guid,System.Boolean,System.Object)" />
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.QueueDeleteProject(System.Guid,System.Object)" />
       <Member Id="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.UpdateProject(System.Guid,Microsoft.TeamFoundation.Core.WebApi.TeamProject,System.Object)" />
       <Member Id="P:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.TranslatedExceptions" />
@@ -4993,6 +5001,8 @@
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase.GetMergeRequestAsync(System.Guid,System.String,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase.GetMergeRequestAsync(System.String,System.Guid,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase.GetMergeRequestAsync(System.String,System.String,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase.GetPolicyConfigurationsAsync(System.Guid,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase.GetPolicyConfigurationsAsync(System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase.GetPullRequestAsync(System.Guid,System.Guid,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase.GetPullRequestAsync(System.Guid,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase.GetPullRequestAsync(System.Guid,System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
@@ -5524,6 +5534,11 @@
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetRefNameFromToken(System.String)" />
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetRepoIdFromToken(System.String)" />
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPermissionsUtil.GetTokenScope(System.String)" />
+    </Type>
+    <Type Name="Microsoft.TeamFoundation.SourceControl.WebApi.GitPolicyConfigurationResponse" Id="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitPolicyConfigurationResponse">
+      <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPolicyConfigurationResponse.#ctor" />
+      <Member Id="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPolicyConfigurationResponse.ContinuationToken" />
+      <Member Id="P:Microsoft.TeamFoundation.SourceControl.WebApi.GitPolicyConfigurationResponse.PolicyConfigurations" />
     </Type>
     <Type Name="Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest" Id="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest">
       <Member Id="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitPullRequest.#ctor" />
@@ -7324,6 +7339,7 @@
       <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.DistributedTestRunCreateModel.PointIds" />
       <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.DistributedTestRunCreateModel.ReleaseEnvironmentUri" />
       <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.DistributedTestRunCreateModel.ReleaseUri" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.DistributedTestRunCreateModel.RunProperties" />
       <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.DistributedTestRunCreateModel.RunTimeout" />
       <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.DistributedTestRunCreateModel.SourceFilter" />
       <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.DistributedTestRunCreateModel.TestCaseFilter" />
@@ -7367,6 +7383,20 @@
       <Member Id="M:Microsoft.TeamFoundation.Test.WebApi.RunFilter.#ctor" />
       <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunFilter.SourceFilter" />
       <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunFilter.TestCaseFilter" />
+    </Type>
+    <Type Name="Microsoft.TeamFoundation.Test.WebApi.RunProperties" Id="T:Microsoft.TeamFoundation.Test.WebApi.RunProperties">
+      <Member Id="M:Microsoft.TeamFoundation.Test.WebApi.RunProperties.#ctor" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.BaseLineBuildId" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.IsCustomSlicingEnabled" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.IsRerunEnabled" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.IsTestImpactOn" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.IsTimeBasedSlicing" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.MaxAgents" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.NumberOfTestCasesPerSlice" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.RerunFailedTestCasesMaxLimit" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.RerunFailedThreshold" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.RerunMaxAttempts" />
+      <Member Id="P:Microsoft.TeamFoundation.Test.WebApi.RunProperties.SliceTime" />
     </Type>
     <Type Name="Microsoft.TeamFoundation.Test.WebApi.ShallowReference" Id="T:Microsoft.TeamFoundation.Test.WebApi.ShallowReference">
       <Member Id="M:Microsoft.TeamFoundation.Test.WebApi.ShallowReference.#ctor" />
@@ -8579,10 +8609,35 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.CreateTestConfigurationAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.CreateTestConfigurationAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.CreateTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.CreateTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.CreateTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel,System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.CreateTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel,System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.CreateTestVariableAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestVariable,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.CreateTestVariableAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestVariable,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.DeleteTestConfigurationAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.DeleteTestConfigurationAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.DeleteTestPlanAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.DeleteTestPlanAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.DeleteTestSuiteAsync(System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.DeleteTestSuiteAsync(System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.DeleteTestVariableAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.DeleteTestVariableAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetPlanByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetPlanByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetPlansAsync(System.Guid,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetPlansAsync(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetResultGroupsByBuildAsync(System.Guid,System.Int32,System.String,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetResultGroupsByBuildAsync(System.String,System.Int32,System.String,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetResultGroupsByReleaseAsync(System.Guid,System.Int32,System.String,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetResultGroupsByReleaseAsync(System.String,System.Int32,System.String,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetSuitesByTestCaseIdAsync(System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestConfigurationByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestConfigurationByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestConfigurationsAsync(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestConfigurationsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestResultDetailsForBuildAsync(System.Guid,System.Int32,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestResultDetailsForBuildAsync(System.String,System.Int32,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestResultDetailsForReleaseAsync(System.Guid,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
@@ -8592,9 +8647,25 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestRunByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestRunByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestSuiteByIdAsync(System.Guid,System.Int32,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestSuiteByIdAsync(System.Guid,System.Int32,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestSuiteByIdAsync(System.String,System.Int32,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestSuiteByIdAsync(System.String,System.Int32,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestSuitesForPlanAsync(System.Guid,System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestSuitesForPlanAsync(System.Guid,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestSuitesForPlanAsync(System.String,System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestSuitesForPlanAsync(System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestVariableByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestVariableByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestVariablesAsync(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.GetTestVariablesAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.UpdateTestConfigurationAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.UpdateTestConfigurationAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.UpdateTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.UpdateTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.UpdateTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel,System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.UpdateTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel,System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.UpdateTestVariableAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestVariable,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestCompatHttpClientBase.UpdateTestVariableAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestVariable,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration" Id="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration">
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration.#ctor" />
@@ -8690,12 +8761,8 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CloneTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestPlanCloneRequest,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CloneTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestSuiteCloneRequest,System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CloneTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestSuiteCloneRequest,System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestConfigurationAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration,System.Guid,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestConfigurationAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestIterationResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.Guid,System.Int32,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestIterationResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.String,System.Int32,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel,System.Guid,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel,System.Guid,System.Object,System.Threading.CancellationToken)" />
@@ -8707,30 +8774,18 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestSettingsAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestSubResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.Guid,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestSubResultAttachmentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestAttachmentRequestModel,System.String,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel,System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel,System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestVariableAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestVariable,System.Guid,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.CreateTestVariableAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestVariable,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteSharedParameterAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteSharedParameterAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteSharedStepAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteSharedStepAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestCaseAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestCaseAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestConfigurationAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestConfigurationAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestMethodToWorkItemLinkAsync(System.Guid,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestMethodToWorkItemLinkAsync(System.String,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestPlanAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestPlanAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestRunAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestRunAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestSettingsAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestSettingsAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestSuiteAsync(System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestSuiteAsync(System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestVariableAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.DeleteTestVariableAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetActionResultsAsync(System.Guid,System.Int32,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetActionResultsAsync(System.String,System.Int32,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetBugsLinkedToTestResultAsync(System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
@@ -8743,10 +8798,6 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetCodeCoverageSummaryAsync(System.String,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetLinkedWorkItemsByQueryAsync(Microsoft.TeamFoundation.TestManagement.WebApi.LinkedWorkItemsQuery,System.Guid,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetLinkedWorkItemsByQueryAsync(Microsoft.TeamFoundation.TestManagement.WebApi.LinkedWorkItemsQuery,System.String,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetPlanByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetPlanByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetPlansAsync(System.Guid,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetPlansAsync(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetPointAsync(System.Guid,System.Int32,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetPointAsync(System.String,System.Int32,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetPointsAsync(System.Guid,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
@@ -8763,15 +8814,10 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetResultRetentionSettingsAsync(System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetSuiteEntriesAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetSuiteEntriesAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetSuitesByTestCaseIdAsync(System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestCaseByIdAsync(System.Guid,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestCaseByIdAsync(System.String,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestCasesAsync(System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestCasesAsync(System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestConfigurationByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestConfigurationByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestConfigurationsAsync(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestConfigurationsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestIterationAsync(System.Guid,System.Int32,System.Int32,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestIterationAsync(System.String,System.Int32,System.Int32,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestIterationsAsync(System.Guid,System.Int32,System.Int32,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
@@ -8823,14 +8869,6 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestSubResultAttachmentsAsync(System.String,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestSubResultAttachmentZipAsync(System.Guid,System.Int32,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestSubResultAttachmentZipAsync(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestSuiteByIdAsync(System.Guid,System.Int32,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestSuiteByIdAsync(System.String,System.Int32,System.Int32,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestSuitesForPlanAsync(System.Guid,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestSuitesForPlanAsync(System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestVariableByIdAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestVariableByIdAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestVariablesAsync(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.GetTestVariablesAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.PublishTestResultDocumentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestResultDocument,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.PublishTestResultDocumentAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestResultDocument,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.QueryCustomFieldsAsync(System.Guid,Microsoft.TeamFoundation.TestManagement.WebApi.CustomTestFieldScope,System.Object,System.Threading.CancellationToken)" />
@@ -8867,10 +8905,6 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateResultRetentionSettingsAsync(Microsoft.TeamFoundation.TestManagement.WebApi.ResultRetentionSettings,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateSuiteTestCasesAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteTestCaseUpdateModel,System.Guid,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateSuiteTestCasesAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteTestCaseUpdateModel,System.String,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestConfigurationAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestConfigurationAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestConfiguration,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestPlanAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestPointsAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PointUpdateModel,System.Guid,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestPointsAsync(Microsoft.TeamFoundation.TestManagement.WebApi.PointUpdateModel,System.String,System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestResultsAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult[],System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
@@ -8878,10 +8912,6 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestRunAsync(Microsoft.TeamFoundation.TestManagement.WebApi.RunUpdateModel,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestSessionAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestSession,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel,System.Guid,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestSuiteAsync(Microsoft.TeamFoundation.TestManagement.WebApi.SuiteUpdateModel,System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestVariableAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestVariable,System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase.UpdateTestVariableAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestVariable,System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.TeamFoundation.TestManagement.WebApi.TestIterationDetailsModel" Id="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestIterationDetailsModel">
       <Member Id="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestIterationDetailsModel.ActionResults" />
@@ -8943,6 +8973,7 @@
       <Member Id="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestLogStoreEndpointDetails.#ctor" />
       <Member Id="P:Microsoft.TeamFoundation.TestManagement.WebApi.TestLogStoreEndpointDetails.EndpointSASUri" />
       <Member Id="P:Microsoft.TeamFoundation.TestManagement.WebApi.TestLogStoreEndpointDetails.EndpointType" />
+      <Member Id="P:Microsoft.TeamFoundation.TestManagement.WebApi.TestLogStoreEndpointDetails.Status" />
     </Type>
     <Type Name="Microsoft.TeamFoundation.TestManagement.WebApi.TestLogStoreEndpointType" Id="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestLogStoreEndpointType">
       <Member Id="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestLogStoreEndpointType.File" />
@@ -8970,6 +9001,7 @@
     <Type Name="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementConstants" Id="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementConstants">
       <Member Id="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementConstants.BulkUpdatePublishResultIdsUrlLimit" />
       <Member Id="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementConstants.maxHierarchyLevelForSubresults" />
+      <Member Id="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementConstants.maxSubResultPerLevel" />
       <Member Id="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementConstants.PublishHierarchicalResultsPageSize" />
       <Member Id="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementConstants.PublishResultsPageSize" />
       <Member Id="F:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementConstants.UnspecifiedPriority" />
@@ -13037,6 +13069,7 @@
       <Member Id="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemType.IsDisabled" />
       <Member Id="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemType.Name" />
       <Member Id="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemType.ReferenceName" />
+      <Member Id="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemType.States" />
       <Member Id="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemType.Transitions" />
       <Member Id="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemType.XmlForm" />
     </Type>
@@ -15237,9 +15270,20 @@
       <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteOperationInformation.destinationTestSuite" />
       <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteOperationInformation.sourceTestSuite" />
     </Type>
+    <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteParams" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteParams">
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteParams.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteParams.cloneOptions" />
+      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteParams.destinationTestSuite" />
+      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteParams.sourceTestSuite" />
+    </Type>
     <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestPlanCloneParams" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestPlanCloneParams">
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestPlanCloneParams.#ctor" />
       <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestPlanCloneParams.Project" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestSuiteInfo" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestSuiteInfo">
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestSuiteInfo.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestSuiteInfo.id" />
+      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.DestinationTestSuiteInfo.Project" />
     </Type>
     <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestPlanInfo" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestPlanInfo">
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestPlanInfo.#ctor" />
@@ -15250,6 +15294,10 @@
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestplanResponse.#ctor" />
       <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestplanResponse.Project" />
       <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestplanResponse.suiteIds" />
+    </Type>
+    <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestSuiteInfo" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestSuiteInfo">
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestSuiteInfo.#ctor" />
+      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SourceTestSuiteInfo.id" />
     </Type>
     <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry">
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntry.#ctor" />
@@ -15332,6 +15380,10 @@
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CloneTestPlanAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestPlanParams,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CloneTestPlanAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestPlanParams,System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CloneTestSuiteAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteParams,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CloneTestSuiteAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.CloneTestSuiteParams,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestConfigurationAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters,System.Guid,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestConfigurationAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestConfigurationCreateUpdateParameters,System.String,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.CreateTestPlanAsync(Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanCreateParams,System.Guid,System.Object,System.Threading.CancellationToken)" />
@@ -15350,6 +15402,10 @@
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestSuiteAsync(System.String,System.Int32,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestVariableAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.DeleteTestVariableAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetCloneInformationAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetCloneInformationAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetSuiteCloneInformationAsync(System.Guid,System.Int32,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetSuiteCloneInformationAsync(System.String,System.Int32,System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetSuiteEntriesAsync(System.Guid,System.Int32,System.Nullable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetSuiteEntriesAsync(System.String,System.Int32,System.Nullable{Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.SuiteEntryTypes},System.Object,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanHttpClientBase.GetSuitesByTestCaseIdAsync(System.Int32,System.Object,System.Threading.CancellationToken)" />
@@ -15395,10 +15451,16 @@
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestConfigurationLocationIdString" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestConfigurationResource" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestPlan" />
+      <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestPlanClone" />
+      <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestPlanCloneOperationLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestPlanCloneResource" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestPlanLocationIdString" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestPlanResource" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestSuiteByCase" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestSuiteByCaseString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestSuiteClone" />
+      <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestSuiteCloneOperationLocationIdString" />
+      <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestSuiteCloneResource" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestSuiteEntryProject" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestSuiteEntryProjectLocationIdString" />
       <Member Id="F:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestPlanResourceIds.TestSuiteEntryResource" />
@@ -15469,23 +15531,6 @@
       <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters.Description" />
       <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters.Name" />
       <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.TestVariableCreateUpdateParameters.Values" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone">
-    <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.CloneTestSuiteParams" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.CloneTestSuiteParams">
-      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.CloneTestSuiteParams.#ctor" />
-      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.CloneTestSuiteParams.cloneOptions" />
-      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.CloneTestSuiteParams.destinationTestSuite" />
-      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.CloneTestSuiteParams.sourceTestSuite" />
-    </Type>
-    <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.DestinationTestSuiteInfo" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.DestinationTestSuiteInfo">
-      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.DestinationTestSuiteInfo.#ctor" />
-      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.DestinationTestSuiteInfo.id" />
-      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.DestinationTestSuiteInfo.Project" />
-    </Type>
-    <Type Name="Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.SourceTestSuiteInfo" Id="T:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.SourceTestSuiteInfo">
-      <Member Id="M:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.SourceTestSuiteInfo.#ctor" />
-      <Member Id="P:Microsoft.VisualStudio.Services.TestManagement.TestPlanning.WebApi.Contracts.Clone.SourceTestSuiteInfo.id" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.VisualStudio.Services.TestResults.WebApi">
