@@ -1,4 +1,6 @@
 ## .NET SDK for Azure DevOps
+[![Build Status](https://apidrop.visualstudio.com/Content%20CI/_apis/build/status/PROD/GitHub_MicrosoftDocs_azure-devops-docs-sdk-dotnet/9bc0bbde-bfc4-adc2-75d5-c487f466b459_master_Microsoft.VisualStudio.Services.ExtensionManagement.WebApi)](https://apidrop.visualstudio.com/Content%20CI/_build/latest?definitionId=1438)
+
 This repository contains C# samples that show you how to integrate with Azure DevOps using our [public client libraries](https://www.nuget.org/profiles/nugetvss). 
 
 ## About our client libraries
