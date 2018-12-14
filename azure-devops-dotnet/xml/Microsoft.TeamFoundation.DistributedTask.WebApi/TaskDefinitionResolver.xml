@@ -1,0 +1,101 @@
+﻿<Type Name="TaskDefinitionResolver" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinitionResolver">
+  <TypeSignature Language="C#" Value="public class TaskDefinitionResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskDefinitionResolver extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinitionResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaskDefinitionResolver" />
+  <TypeSignature Language="F#" Value="type TaskDefinitionResolver = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskDefinitionResolver (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt; allTasks);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt; allTasks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinitionResolver.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (allTasks As IList(Of TaskDefinition))" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinitionResolver : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinitionResolver" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinitionResolver allTasks" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="allTasks" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="allTasks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolveTaskReference">
+      <MemberSignature Language="C#" Value="public bool TryResolveTaskReference (Guid taskId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec versionSpec, out Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition taskDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryResolveTaskReference(valuetype System.Guid taskId, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec versionSpec, [out] class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&amp; taskDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinitionResolver.TryResolveTaskReference(System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryResolveTaskReference (taskId As Guid, versionSpec As TaskVersionSpec, ByRef taskDefinition As TaskDefinition) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryResolveTaskReference : Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec *  -&gt; bool" Usage="taskDefinitionResolver.TryResolveTaskReference (taskId, versionSpec, taskDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskId" Type="System.Guid" />
+        <Parameter Name="versionSpec" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec" />
+        <Parameter Name="taskDefinition" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="taskId">To be added.</param>
+        <param name="versionSpec">To be added.</param>
+        <param name="taskDefinition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolveTaskReference">
+      <MemberSignature Language="C#" Value="public bool TryResolveTaskReference (Guid taskId, string versionSpec, out Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition taskDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryResolveTaskReference(valuetype System.Guid taskId, string versionSpec, [out] class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&amp; taskDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinitionResolver.TryResolveTaskReference(System.Guid,System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryResolveTaskReference (taskId As Guid, versionSpec As String, ByRef taskDefinition As TaskDefinition) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryResolveTaskReference : Guid * string *  -&gt; bool" Usage="taskDefinitionResolver.TryResolveTaskReference (taskId, versionSpec, taskDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskId" Type="System.Guid" />
+        <Parameter Name="versionSpec" Type="System.String" />
+        <Parameter Name="taskDefinition" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="taskId">To be added.</param>
+        <param name="versionSpec">To be added.</param>
+        <param name="taskDefinition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

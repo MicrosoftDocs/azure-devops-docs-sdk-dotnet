@@ -1,0 +1,119 @@
+﻿<Type Name="GraphCondition&lt;TInstance&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition&lt;TInstance&gt;">
+  <TypeSignature Language="C#" Value="public abstract class GraphCondition&lt;TInstance&gt; where TInstance : IGraphNodeInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GraphCondition`1&lt;(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance) TInstance&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class GraphCondition(Of TInstance)" />
+  <TypeSignature Language="F#" Value="type GraphCondition&lt;'Instance (requires 'Instance :&gt; IGraphNodeInstance)&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TInstance">
+      <Constraints>
+        <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TInstance">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static string Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition`1.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As String" />
+      <MemberSignature Language="F#" Value="member this.Default : string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition&lt;'Instance (requires 'Instance :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance)&gt;.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the default condition if none is specified
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_parsedCondition">
+      <MemberSignature Language="C#" Value="protected readonly Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode m_parsedCondition;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode m_parsedCondition" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition`1.m_parsedCondition" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly m_parsedCondition As IExpressionNode " />
+      <MemberSignature Language="F#" Value="val mutable m_parsedCondition : Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition&lt;'Instance (requires 'Instance :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance)&gt;.m_parsedCondition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresOutputs">
+      <MemberSignature Language="C#" Value="public bool RequiresOutputs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequiresOutputs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition`1.RequiresOutputs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiresOutputs As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresOutputs : bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition&lt;'Instance (requires 'Instance :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance)&gt;.RequiresOutputs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not dependency outputs are used within the condition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresVariables">
+      <MemberSignature Language="C#" Value="public bool RequiresVariables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequiresVariables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition`1.RequiresVariables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiresVariables As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresVariables : bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.GraphCondition&lt;'Instance (requires 'Instance :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance)&gt;.RequiresVariables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not variables are used within the condition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

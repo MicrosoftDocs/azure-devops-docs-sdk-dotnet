@@ -1,0 +1,71 @@
+﻿<Type Name="ITaskTemplateProvider" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider">
+  <TypeSignature Language="C#" Value="public interface ITaskTemplateProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITaskTemplateProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITaskTemplateProvider" />
+  <TypeSignature Language="F#" Value="type ITaskTemplateProvider = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanResolve">
+      <MemberSignature Language="C#" Value="public bool CanResolve (Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateReference template);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanResolve(class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateReference template) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider.CanResolve(Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanResolve (template As TaskTemplateReference) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanResolve : Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateReference -&gt; bool" Usage="iTaskTemplateProvider.CanResolve template" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="template" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateReference" />
+      </Parameters>
+      <Docs>
+        <param name="template">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveTasks">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; ResolveTasks (Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep template);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; ResolveTasks(class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep template) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider.ResolveTasks(Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveTasks (template As TaskTemplateStep) As IList(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member ResolveTasks : Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="iTaskTemplateProvider.ResolveTasks template" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="template" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep" />
+      </Parameters>
+      <Docs>
+        <param name="template">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

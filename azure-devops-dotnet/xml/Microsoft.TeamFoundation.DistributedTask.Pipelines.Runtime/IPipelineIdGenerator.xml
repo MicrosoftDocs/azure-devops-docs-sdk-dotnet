@@ -1,0 +1,393 @@
+﻿<Type Name="IPipelineIdGenerator" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator">
+  <TypeSignature Language="C#" Value="public interface IPipelineIdGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPipelineIdGenerator" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPipelineIdGenerator" />
+  <TypeSignature Language="F#" Value="type IPipelineIdGenerator = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetInstanceId">
+      <MemberSignature Language="C#" Value="public Guid GetInstanceId (params string[] segments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid GetInstanceId(string[] segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetInstanceId(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstanceId (ParamArray segments As String()) As Guid" />
+      <MemberSignature Language="F#" Value="abstract member GetInstanceId : string[] -&gt; Guid" Usage="iPipelineIdGenerator.GetInstanceId segments" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segments" Type="System.String[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="segments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstanceName">
+      <MemberSignature Language="C#" Value="public string GetInstanceName (params string[] segments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetInstanceName(string[] segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetInstanceName(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstanceName (ParamArray segments As String()) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetInstanceName : string[] -&gt; string" Usage="iPipelineIdGenerator.GetInstanceName segments" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segments" Type="System.String[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="segments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobIdentifier">
+      <MemberSignature Language="C#" Value="public string GetJobIdentifier (string stageName, string phaseName, string jobName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetJobIdentifier(string stageName, string phaseName, string jobName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetJobIdentifier(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetJobIdentifier (stageName As String, phaseName As String, jobName As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetJobIdentifier : string * string * string -&gt; string" Usage="iPipelineIdGenerator.GetJobIdentifier (stageName, phaseName, jobName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobInstanceId">
+      <MemberSignature Language="C#" Value="public Guid GetJobInstanceId (string stageName, string phaseName, string jobName, int attempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid GetJobInstanceId(string stageName, string phaseName, string jobName, int32 attempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetJobInstanceId(System.String,System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetJobInstanceId (stageName As String, phaseName As String, jobName As String, attempt As Integer) As Guid" />
+      <MemberSignature Language="F#" Value="abstract member GetJobInstanceId : string * string * string * int -&gt; Guid" Usage="iPipelineIdGenerator.GetJobInstanceId (stageName, phaseName, jobName, attempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="attempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="attempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobInstanceName">
+      <MemberSignature Language="C#" Value="public string GetJobInstanceName (string stageName, string phaseName, string jobName, int attempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetJobInstanceName(string stageName, string phaseName, string jobName, int32 attempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetJobInstanceName(System.String,System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetJobInstanceName (stageName As String, phaseName As String, jobName As String, attempt As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetJobInstanceName : string * string * string * int -&gt; string" Usage="iPipelineIdGenerator.GetJobInstanceName (stageName, phaseName, jobName, attempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="attempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="attempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseIdentifier">
+      <MemberSignature Language="C#" Value="public string GetPhaseIdentifier (string stageName, string phaseName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPhaseIdentifier(string stageName, string phaseName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetPhaseIdentifier(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPhaseIdentifier (stageName As String, phaseName As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetPhaseIdentifier : string * string -&gt; string" Usage="iPipelineIdGenerator.GetPhaseIdentifier (stageName, phaseName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseInstanceId">
+      <MemberSignature Language="C#" Value="public Guid GetPhaseInstanceId (string stageName, string phaseName, int attempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid GetPhaseInstanceId(string stageName, string phaseName, int32 attempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetPhaseInstanceId(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPhaseInstanceId (stageName As String, phaseName As String, attempt As Integer) As Guid" />
+      <MemberSignature Language="F#" Value="abstract member GetPhaseInstanceId : string * string * int -&gt; Guid" Usage="iPipelineIdGenerator.GetPhaseInstanceId (stageName, phaseName, attempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="attempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="attempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseInstanceName">
+      <MemberSignature Language="C#" Value="public string GetPhaseInstanceName (string stageName, string phaseName, int attempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPhaseInstanceName(string stageName, string phaseName, int32 attempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetPhaseInstanceName(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPhaseInstanceName (stageName As String, phaseName As String, attempt As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetPhaseInstanceName : string * string * int -&gt; string" Usage="iPipelineIdGenerator.GetPhaseInstanceName (stageName, phaseName, attempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="attempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="attempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageIdentifier">
+      <MemberSignature Language="C#" Value="public string GetStageIdentifier (string stageName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetStageIdentifier(string stageName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetStageIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStageIdentifier (stageName As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetStageIdentifier : string -&gt; string" Usage="iPipelineIdGenerator.GetStageIdentifier stageName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageInstanceId">
+      <MemberSignature Language="C#" Value="public Guid GetStageInstanceId (string stageName, int attempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid GetStageInstanceId(string stageName, int32 attempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetStageInstanceId(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStageInstanceId (stageName As String, attempt As Integer) As Guid" />
+      <MemberSignature Language="F#" Value="abstract member GetStageInstanceId : string * int -&gt; Guid" Usage="iPipelineIdGenerator.GetStageInstanceId (stageName, attempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="attempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="attempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageInstanceName">
+      <MemberSignature Language="C#" Value="public string GetStageInstanceName (string stageName, int attempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetStageInstanceName(string stageName, int32 attempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetStageInstanceName(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStageInstanceName (stageName As String, attempt As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetStageInstanceName : string * int -&gt; string" Usage="iPipelineIdGenerator.GetStageInstanceName (stageName, attempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="attempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="attempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskInstanceId">
+      <MemberSignature Language="C#" Value="public Guid GetTaskInstanceId (string stageName, string phaseName, string jobName, int jobAttempt, string name3);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid GetTaskInstanceId(string stageName, string phaseName, string jobName, int32 jobAttempt, string name3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetTaskInstanceId(System.String,System.String,System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTaskInstanceId (stageName As String, phaseName As String, jobName As String, jobAttempt As Integer, name3 As String) As Guid" />
+      <MemberSignature Language="F#" Value="abstract member GetTaskInstanceId : string * string * string * int * string -&gt; Guid" Usage="iPipelineIdGenerator.GetTaskInstanceId (stageName, phaseName, jobName, jobAttempt, name3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobAttempt" Type="System.Int32" />
+        <Parameter Name="name3" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="jobAttempt">To be added.</param>
+        <param name="name3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskInstanceName">
+      <MemberSignature Language="C#" Value="public string GetTaskInstanceName (string stageName, string phaseName, string jobName, int jobAttempt, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTaskInstanceName(string stageName, string phaseName, string jobName, int32 jobAttempt, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator.GetTaskInstanceName(System.String,System.String,System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTaskInstanceName (stageName As String, phaseName As String, jobName As String, jobAttempt As Integer, name As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetTaskInstanceName : string * string * string * int * string -&gt; string" Usage="iPipelineIdGenerator.GetTaskInstanceName (stageName, phaseName, jobName, jobAttempt, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobAttempt" Type="System.Int32" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="jobAttempt">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

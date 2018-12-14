@@ -1,0 +1,157 @@
+﻿<Type Name="FunctionInfo&lt;T&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class FunctionInfo&lt;T&gt; : Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo where T : FunctionNodenew()" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FunctionInfo`1&lt;.ctor (class Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode) T&gt; extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class FunctionInfo(Of T)&#xA;Implements IFunctionInfo" />
+  <TypeSignature Language="F#" Value="type FunctionInfo&lt;'T (requires 'T :&gt; FunctionNode and 'T : (new : unit -&gt; 'T))&gt; = class&#xA;    interface IFunctionInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FunctionInfo (string name, int minParameters, int maxParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 minParameters, int32 maxParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo`1.#ctor(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, minParameters As Integer, maxParameters As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode and 'T : (new : unit -&gt; 'T))&gt; : string * int * int -&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode and 'T : (new : unit -&gt; 'T))&gt;" Usage="new Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode and 'T : (new : unit -&gt; 'T))&gt; (name, minParameters, maxParameters)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="minParameters" Type="System.Int32" />
+        <Parameter Name="maxParameters" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="minParameters">To be added.</param>
+        <param name="maxParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNode">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode CreateNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode CreateNode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo`1.CreateNode" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateNode () As FunctionNode" />
+      <MemberSignature Language="F#" Value="abstract member CreateNode : unit -&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode&#xA;override this.CreateNode : unit -&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode" Usage="functionInfo.CreateNode " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo.CreateNode</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxParameters">
+      <MemberSignature Language="C#" Value="public int MaxParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo`1.MaxParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxParameters As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxParameters : int" Usage="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode and 'T : (new : unit -&gt; 'T))&gt;.MaxParameters" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo.MaxParameters</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinParameters">
+      <MemberSignature Language="C#" Value="public int MinParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo`1.MinParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinParameters As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinParameters : int" Usage="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode and 'T : (new : unit -&gt; 'T))&gt;.MinParameters" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo.MinParameters</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo`1.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionInfo&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode and 'T : (new : unit -&gt; 'T))&gt;.Name" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo.Name</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

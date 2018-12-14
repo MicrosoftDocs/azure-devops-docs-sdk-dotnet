@@ -1,0 +1,84 @@
+﻿<Type Name="ITaskStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore">
+  <TypeSignature Language="C#" Value="public interface ITaskStore" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITaskStore" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITaskStore" />
+  <TypeSignature Language="F#" Value="type ITaskStore = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides a contract for resolving tasks from a given store.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResolveTask">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask (Guid taskId, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask(valuetype System.Guid taskId, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore.ResolveTask(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveTask (taskId As Guid, version As String) As TaskDefinition" />
+      <MemberSignature Language="F#" Value="abstract member ResolveTask : Guid * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" Usage="iTaskStore.ResolveTask (taskId, version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskId" Type="System.Guid" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="taskId">The unique identifier of the task</param>
+        <param name="version">The version of the task which is desired</param>
+        <summary>
+            Resolves a task from the store using the unqiue identifier and version.
+            </summary>
+        <returns>The closest matching task definition if found; otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveTask">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask (string name, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask(string name, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore.ResolveTask(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveTask (name As String, version As String) As TaskDefinition" />
+      <MemberSignature Language="F#" Value="abstract member ResolveTask : string * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" Usage="iTaskStore.ResolveTask (name, version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the task</param>
+        <param name="version">The version of the task which is desired</param>
+        <summary>
+            Resolves a task from the store using the specified name and version.
+            </summary>
+        <returns>The closest matching task definition if found; otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

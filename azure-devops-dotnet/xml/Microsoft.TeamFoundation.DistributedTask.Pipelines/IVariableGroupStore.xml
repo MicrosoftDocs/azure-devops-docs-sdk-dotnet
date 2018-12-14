@@ -1,0 +1,118 @@
+﻿<Type Name="IVariableGroupStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore">
+  <TypeSignature Language="C#" Value="public interface IVariableGroupStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVariableGroupStore implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVariableGroupStore&#xA;Implements IStepProvider" />
+  <TypeSignature Language="F#" Value="type IVariableGroupStore = interface&#xA;    interface IStepProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup Get (Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference queue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup Get(class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference queue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (queue As VariableGroupReference) As VariableGroup" />
+      <MemberSignature Language="F#" Value="abstract member Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup" Usage="iVariableGroupStore.Get queue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queue" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference" />
+      </Parameters>
+      <Docs>
+        <param name="queue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthorizedReferences">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt; GetAuthorizedReferences ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt; GetAuthorizedReferences() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.GetAuthorizedReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAuthorizedReferences () As IList(Of VariableGroupReference)" />
+      <MemberSignature Language="F#" Value="abstract member GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt;" Usage="iVariableGroupStore.GetAuthorizedReferences " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValueProvider">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider GetValueProvider (Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference queue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider GetValueProvider(class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference queue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.GetValueProvider(Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValueProvider (queue As VariableGroupReference) As IVariableValueProvider" />
+      <MemberSignature Language="F#" Value="abstract member GetValueProvider : Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider" Usage="iVariableGroupStore.GetValueProvider queue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queue" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference" />
+      </Parameters>
+      <Docs>
+        <param name="queue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolver">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver Resolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver Resolver" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.Resolver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resolver As IVariableGroupResolver" />
+      <MemberSignature Language="F#" Value="member this.Resolver : Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.Resolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <c>IVariableGroupsResolver</c> used by this store, if any.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

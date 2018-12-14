@@ -1,0 +1,414 @@
+﻿<Type Name="TaskAgentPool" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool">
+  <TypeSignature Language="C#" Value="public class TaskAgentPool : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPoolReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskAgentPool extends Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPoolReference" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaskAgentPool&#xA;Inherits TaskAgentPoolReference" />
+  <TypeSignature Language="F#" Value="type TaskAgentPool = class&#xA;    inherit TaskAgentPoolReference" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPoolReference</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskAgentPool (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool name" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdministratorsGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef AdministratorsGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef AdministratorsGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AdministratorsGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdministratorsGroup As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.AdministratorsGroup : Microsoft.VisualStudio.Services.WebApi.IdentityRef" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AdministratorsGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property is no longer used and will be removed in a future version.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the administrators group for this agent pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentCloudId">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; AgentCloudId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; AgentCloudId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AgentCloudId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AgentCloudId As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.AgentCloudId : Nullable&lt;int&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AgentCloudId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an agentCloudId
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoProvision">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AutoProvision { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AutoProvision" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AutoProvision" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoProvision As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AutoProvision : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AutoProvision" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether or not a queue should be automatically provisioned for
+            each project collection or not.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSize">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AutoSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AutoSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AutoSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether or not the pool should autosize itself based on the
+            Agent Cloud Provider settings
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TaskAgentPool" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool" Usage="taskAgentPool.Clone " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef CreatedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef CreatedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.CreatedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedBy As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.CreatedBy : Microsoft.VisualStudio.Services.WebApi.IdentityRef with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.CreatedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the identity who created this pool. The creator of the pool is automatically added into the 
+            administrators group for the pool on creation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedOn">
+      <MemberSignature Language="C#" Value="public DateTime CreatedOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreatedOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.CreatedOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedOn As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreatedOn : DateTime" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.CreatedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the date/time of the pool creation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupScopeId">
+      <MemberSignature Language="C#" Value="public Guid GroupScopeId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid GroupScopeId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.GroupScopeId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupScopeId As Guid" />
+      <MemberSignature Language="F#" Value="member this.GroupScopeId : Guid" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.GroupScopeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property is no longer used and will be removed in a future version.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the scope identifier for groups/roles which are owned by this pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef Owner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef Owner" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public Property Owner As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.Owner : Microsoft.VisualStudio.Services.WebApi.IdentityRef with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the identity who owns or administrates this pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.PropertiesCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.PropertiesCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As PropertiesCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.VisualStudio.Services.WebApi.PropertiesCollection" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.PropertiesCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a collection of properties which may be used to extend the storage fields available
+            for a given machine instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provisioned">
+      <MemberSignature Language="C#" Value="public bool Provisioned { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Provisioned" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.Provisioned" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provisioned As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Provisioned : bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.Provisioned" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property is no longer used and will be removed in a future version.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not roles have been provisioned for this pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceAccountsGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.WebApi.IdentityRef ServiceAccountsGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.Services.WebApi.IdentityRef ServiceAccountsGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.ServiceAccountsGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceAccountsGroup As IdentityRef" />
+      <MemberSignature Language="F#" Value="member this.ServiceAccountsGroup : Microsoft.VisualStudio.Services.WebApi.IdentityRef" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.ServiceAccountsGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property is no longer used and will be removed in a future version.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.Services.WebApi.IdentityRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the service accounts group for this agent pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetSize">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; TargetSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; TargetSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.TargetSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetSize As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.TargetSize : Nullable&lt;int&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.TargetSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating target parallelism
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

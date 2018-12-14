@@ -1,0 +1,97 @@
+﻿<Type Name="ITaskTemplateStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore">
+  <TypeSignature Language="C#" Value="public interface ITaskTemplateStore" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITaskTemplateStore" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITaskTemplateStore" />
+  <TypeSignature Language="F#" Value="type ITaskTemplateStore = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides a mechanism for task templates to be resolved at build time.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddProvider">
+      <MemberSignature Language="C#" Value="public void AddProvider (Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddProvider(class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore.AddProvider(Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddProvider (provider As ITaskTemplateProvider)" />
+      <MemberSignature Language="F#" Value="abstract member AddProvider : Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider -&gt; unit" Usage="iTaskTemplateStore.AddProvider provider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProvider">
+      <MemberSignature Language="C#" Value="public void AddProvider (Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateResolver provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddProvider(class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateResolver provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore.AddProvider(Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddProvider (provider As ITaskTemplateResolver)" />
+      <MemberSignature Language="F#" Value="abstract member AddProvider : Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateResolver -&gt; unit" Usage="iTaskTemplateStore.AddProvider provider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateResolver" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveTasks">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; ResolveTasks (Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep step);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; ResolveTasks(class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep step) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore.ResolveTasks(Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveTasks (step As TaskTemplateStep) As IEnumerable(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member ResolveTasks : Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep -&gt; seq&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="iTaskTemplateStore.ResolveTasks step" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="step" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskTemplateStep" />
+      </Parameters>
+      <Docs>
+        <param name="step">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

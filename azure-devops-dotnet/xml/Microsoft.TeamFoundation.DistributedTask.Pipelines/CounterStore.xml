@@ -1,0 +1,108 @@
+﻿<Type Name="CounterStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore">
+  <TypeSignature Language="C#" Value="public class CounterStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CounterStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class CounterStore&#xA;Implements ICounterStore" />
+  <TypeSignature Language="F#" Value="type CounterStore = class&#xA;    interface ICounterStore" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides a default implementation of a counter store. 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CounterStore (System.Collections.Generic.IDictionary&lt;string,int&gt; counters = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterResolver resolver = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, int32&gt; counters, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore.#ctor(System.Collections.Generic.IDictionary{System.String,System.Int32},Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional counters As IDictionary(Of String, Integer) = null, Optional resolver As ICounterResolver = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore : System.Collections.Generic.IDictionary&lt;string, int&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterResolver -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore (counters, resolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="counters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Int32&gt;" />
+        <Parameter Name="resolver" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterResolver" />
+      </Parameters>
+      <Docs>
+        <param name="counters">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Counters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,int&gt; Counters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, int32&gt; Counters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore.Counters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Counters As IReadOnlyDictionary(Of String, Integer)" />
+      <MemberSignature Language="F#" Value="member this.Counters : System.Collections.Generic.IReadOnlyDictionary&lt;string, int&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore.Counters" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore.Counters</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="public int Increment (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, string prefix, int seed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Increment(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, string prefix, int32 seed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.CounterStore.Increment(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Increment (context As IPipelineContext, prefix As String, seed As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Increment : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * string * int -&gt; int&#xA;override this.Increment : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * string * int -&gt; int" Usage="counterStore.Increment (context, prefix, seed)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore.Increment(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.String,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="seed" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <param name="seed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

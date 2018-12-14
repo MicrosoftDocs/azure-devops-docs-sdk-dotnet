@@ -1,0 +1,931 @@
+﻿<Type Name="ServiceEndpointHttpClientBase" FullName="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase">
+  <TypeSignature Language="C#" Value="public abstract class ServiceEndpointHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServiceEndpointHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceEndpointHttpClientBase&#xA;Inherits VssHttpClientBase" />
+  <TypeSignature Language="F#" Value="type ServiceEndpointHttpClientBase = class&#xA;    inherit VssHttpClientBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet">
+      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("1814AB31-2F4F-4A9F-8761-F4D77DC5A5D7")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceEndpointHttpClientBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials -&gt; Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase" Usage="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase (baseUrl, credentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceEndpointHttpClientBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings -&gt; Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase" Usage="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase (baseUrl, credentials, settings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceEndpointHttpClientBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase" Usage="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase (baseUrl, credentials, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceEndpointHttpClientBase (Uri baseUrl, System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Net.Http.HttpMessageHandler pipeline, bool disposeHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.#ctor(System.Uri,System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, pipeline As HttpMessageHandler, disposeHandler As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase : Uri * System.Net.Http.HttpMessageHandler * bool -&gt; Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase" Usage="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase (baseUrl, pipeline, disposeHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="pipeline" Type="System.Net.Http.HttpMessageHandler" />
+        <Parameter Name="disposeHandler" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="pipeline">To be added.</param>
+        <param name="disposeHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceEndpointHttpClientBase (Uri baseUrl, Microsoft.VisualStudio.Services.Common.VssCredentials credentials, Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class Microsoft.VisualStudio.Services.Common.VssCredentials credentials, class Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings settings, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.#ctor(System.Uri,Microsoft.VisualStudio.Services.Common.VssCredentials,Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, credentials As VssCredentials, settings As VssHttpRequestSettings, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase : Uri * Microsoft.VisualStudio.Services.Common.VssCredentials * Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase" Usage="new Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase (baseUrl, credentials, settings, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
+        <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="settings">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpointExecutionRecordsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt; AddServiceEndpointExecutionRecordsAsync (Guid project, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput input, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt; AddServiceEndpointExecutionRecordsAsync(valuetype System.Guid project, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput input, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.AddServiceEndpointExecutionRecordsAsync(System.Guid,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member AddServiceEndpointExecutionRecordsAsync : Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;&#xA;override this.AddServiceEndpointExecutionRecordsAsync : Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;" Usage="serviceEndpointHttpClientBase.AddServiceEndpointExecutionRecordsAsync (project, input, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="input" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="input">Service endpoint execution records to add.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Add service endpoint execution records.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpointExecutionRecordsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt; AddServiceEndpointExecutionRecordsAsync (string project, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput input, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt; AddServiceEndpointExecutionRecordsAsync(string project, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput input, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.AddServiceEndpointExecutionRecordsAsync(System.String,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member AddServiceEndpointExecutionRecordsAsync : string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;&#xA;override this.AddServiceEndpointExecutionRecordsAsync : string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;" Usage="serviceEndpointHttpClientBase.AddServiceEndpointExecutionRecordsAsync (project, input, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="input" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecordsInput" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="input">Service endpoint execution records to add.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Add service endpoint execution records.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceEndpointAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; CreateServiceEndpointAsync (Guid project, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint endpoint, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; CreateServiceEndpointAsync(valuetype System.Guid project, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint endpoint, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.CreateServiceEndpointAsync(System.Guid,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateServiceEndpointAsync : Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&#xA;override this.CreateServiceEndpointAsync : Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;" Usage="serviceEndpointHttpClientBase.CreateServiceEndpointAsync (project, endpoint, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="endpoint" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="endpoint">Service endpoint to create.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a service endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceEndpointAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; CreateServiceEndpointAsync (string project, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint endpoint, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; CreateServiceEndpointAsync(string project, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint endpoint, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.CreateServiceEndpointAsync(System.String,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateServiceEndpointAsync : string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&#xA;override this.CreateServiceEndpointAsync : string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;" Usage="serviceEndpointHttpClientBase.CreateServiceEndpointAsync (project, endpoint, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="endpoint" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="endpoint">Service endpoint to create.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Create a service endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteServiceEndpointAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteServiceEndpointAsync (Guid project, Guid endpointId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteServiceEndpointAsync(valuetype System.Guid project, valuetype System.Guid endpointId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.DeleteServiceEndpointAsync(System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteServiceEndpointAsync : Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteServiceEndpointAsync : Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="serviceEndpointHttpClientBase.DeleteServiceEndpointAsync (project, endpointId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="endpointId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="endpointId">Id of the service endpoint to delete.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a service endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteServiceEndpointAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteServiceEndpointAsync (string project, Guid endpointId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteServiceEndpointAsync(string project, valuetype System.Guid endpointId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.DeleteServiceEndpointAsync(System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteServiceEndpointAsync : string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteServiceEndpointAsync : string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="serviceEndpointHttpClientBase.DeleteServiceEndpointAsync (project, endpointId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="endpointId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="endpointId">Id of the service endpoint to delete.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Delete a service endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteServiceEndpointRequestAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt; ExecuteServiceEndpointRequestAsync (Guid project, string endpointId, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest serviceEndpointRequest, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt; ExecuteServiceEndpointRequestAsync(valuetype System.Guid project, string endpointId, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest serviceEndpointRequest, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.ExecuteServiceEndpointRequestAsync(System.Guid,System.String,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteServiceEndpointRequestAsync : Guid * string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt;&#xA;override this.ExecuteServiceEndpointRequestAsync : Guid * string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt;" Usage="serviceEndpointHttpClientBase.ExecuteServiceEndpointRequestAsync (project, endpointId, serviceEndpointRequest, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="endpointId" Type="System.String" />
+        <Parameter Name="serviceEndpointRequest" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="endpointId">Id of the service endpoint.</param>
+        <param name="serviceEndpointRequest">Service endpoint request.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Proxy for a GET request defined by a service endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteServiceEndpointRequestAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt; ExecuteServiceEndpointRequestAsync (string project, string endpointId, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest serviceEndpointRequest, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt; ExecuteServiceEndpointRequestAsync(string project, string endpointId, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest serviceEndpointRequest, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.ExecuteServiceEndpointRequestAsync(System.String,System.String,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteServiceEndpointRequestAsync : string * string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt;&#xA;override this.ExecuteServiceEndpointRequestAsync : string * string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt;" Usage="serviceEndpointHttpClientBase.ExecuteServiceEndpointRequestAsync (project, endpointId, serviceEndpointRequest, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequestResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="endpointId" Type="System.String" />
+        <Parameter Name="serviceEndpointRequest" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointRequest" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="endpointId">Id of the service endpoint.</param>
+        <param name="serviceEndpointRequest">Service endpoint request.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Proxy for a GET request defined by a service endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointDetailsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; GetServiceEndpointDetailsAsync (Guid project, Guid endpointId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; GetServiceEndpointDetailsAsync(valuetype System.Guid project, valuetype System.Guid endpointId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointDetailsAsync(System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointDetailsAsync : Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&#xA;override this.GetServiceEndpointDetailsAsync : Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointDetailsAsync (project, endpointId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="endpointId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="endpointId">Id of the service endpoint.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the service endpoint details.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointDetailsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; GetServiceEndpointDetailsAsync (string project, Guid endpointId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; GetServiceEndpointDetailsAsync(string project, valuetype System.Guid endpointId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointDetailsAsync(System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointDetailsAsync : string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&#xA;override this.GetServiceEndpointDetailsAsync : string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointDetailsAsync (project, endpointId, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="endpointId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="endpointId">Id of the service endpoint.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the service endpoint details.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointExecutionRecordsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt; GetServiceEndpointExecutionRecordsAsync (Guid project, Guid endpointId, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt; GetServiceEndpointExecutionRecordsAsync(valuetype System.Guid project, valuetype System.Guid endpointId, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointExecutionRecordsAsync(System.Guid,System.Guid,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointExecutionRecordsAsync : Guid * Guid * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;&#xA;override this.GetServiceEndpointExecutionRecordsAsync : Guid * Guid * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointExecutionRecordsAsync (project, endpointId, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="endpointId" Type="System.Guid" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="endpointId">Id of the service endpoint.</param>
+        <param name="top">Number of service endpoint execution records to get.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get service endpoint execution records.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointExecutionRecordsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt; GetServiceEndpointExecutionRecordsAsync (string project, Guid endpointId, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt; GetServiceEndpointExecutionRecordsAsync(string project, valuetype System.Guid endpointId, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointExecutionRecordsAsync(System.String,System.Guid,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointExecutionRecordsAsync : string * Guid * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;&#xA;override this.GetServiceEndpointExecutionRecordsAsync : string * Guid * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointExecutionRecordsAsync (project, endpointId, top, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointExecutionRecord&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="endpointId" Type="System.Guid" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="endpointId">Id of the service endpoint.</param>
+        <param name="top">Number of service endpoint execution records to get.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get service endpoint execution records.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; GetServiceEndpointsAsync (Guid project, string type = null, System.Collections.Generic.IEnumerable&lt;string&gt; authSchemes = null, System.Collections.Generic.IEnumerable&lt;Guid&gt; endpointIds = null, Nullable&lt;bool&gt; includeFailed = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; GetServiceEndpointsAsync(valuetype System.Guid project, string type, class System.Collections.Generic.IEnumerable`1&lt;string&gt; authSchemes, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Guid&gt; endpointIds, valuetype System.Nullable`1&lt;bool&gt; includeFailed, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointsAsync(System.Guid,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Guid},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointsAsync : Guid * string * seq&lt;string&gt; * seq&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;&#xA;override this.GetServiceEndpointsAsync : Guid * string * seq&lt;string&gt; * seq&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointsAsync (project, type, authSchemes, endpointIds, includeFailed, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="authSchemes" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="endpointIds" Type="System.Collections.Generic.IEnumerable&lt;System.Guid&gt;" />
+        <Parameter Name="includeFailed" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="type">Type of the service endpoints.</param>
+        <param name="authSchemes">Authorization schemes used for service endpoints.</param>
+        <param name="endpointIds">Ids of the service endpoints.</param>
+        <param name="includeFailed">Failed flag for service endpoints.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the service endpoints.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; GetServiceEndpointsAsync (string project, string type = null, System.Collections.Generic.IEnumerable&lt;string&gt; authSchemes = null, System.Collections.Generic.IEnumerable&lt;Guid&gt; endpointIds = null, Nullable&lt;bool&gt; includeFailed = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; GetServiceEndpointsAsync(string project, string type, class System.Collections.Generic.IEnumerable`1&lt;string&gt; authSchemes, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Guid&gt; endpointIds, valuetype System.Nullable`1&lt;bool&gt; includeFailed, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointsAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Guid},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointsAsync : string * string * seq&lt;string&gt; * seq&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;&#xA;override this.GetServiceEndpointsAsync : string * string * seq&lt;string&gt; * seq&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointsAsync (project, type, authSchemes, endpointIds, includeFailed, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="authSchemes" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="endpointIds" Type="System.Collections.Generic.IEnumerable&lt;System.Guid&gt;" />
+        <Parameter Name="includeFailed" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="type">Type of the service endpoints.</param>
+        <param name="authSchemes">Authorization schemes used for service endpoints.</param>
+        <param name="endpointIds">Ids of the service endpoints.</param>
+        <param name="includeFailed">Failed flag for service endpoints.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the service endpoints.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointsByNamesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; GetServiceEndpointsByNamesAsync (Guid project, System.Collections.Generic.IEnumerable&lt;string&gt; endpointNames, string type = null, System.Collections.Generic.IEnumerable&lt;string&gt; authSchemes = null, Nullable&lt;bool&gt; includeFailed = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; GetServiceEndpointsByNamesAsync(valuetype System.Guid project, class System.Collections.Generic.IEnumerable`1&lt;string&gt; endpointNames, string type, class System.Collections.Generic.IEnumerable`1&lt;string&gt; authSchemes, valuetype System.Nullable`1&lt;bool&gt; includeFailed, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointsByNamesAsync(System.Guid,System.Collections.Generic.IEnumerable{System.String},System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointsByNamesAsync : Guid * seq&lt;string&gt; * string * seq&lt;string&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;&#xA;override this.GetServiceEndpointsByNamesAsync : Guid * seq&lt;string&gt; * string * seq&lt;string&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointsByNamesAsync (project, endpointNames, type, authSchemes, includeFailed, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="endpointNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="authSchemes" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="includeFailed" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="endpointNames">Names of the service endpoints.</param>
+        <param name="type">Type of the service endpoints.</param>
+        <param name="authSchemes">Authorization schemes used for service endpoints.</param>
+        <param name="includeFailed">Failed flag for service endpoints.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the service endpoints by name.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointsByNamesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; GetServiceEndpointsByNamesAsync (string project, System.Collections.Generic.IEnumerable&lt;string&gt; endpointNames, string type = null, System.Collections.Generic.IEnumerable&lt;string&gt; authSchemes = null, Nullable&lt;bool&gt; includeFailed = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; GetServiceEndpointsByNamesAsync(string project, class System.Collections.Generic.IEnumerable`1&lt;string&gt; endpointNames, string type, class System.Collections.Generic.IEnumerable`1&lt;string&gt; authSchemes, valuetype System.Nullable`1&lt;bool&gt; includeFailed, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointsByNamesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointsByNamesAsync : string * seq&lt;string&gt; * string * seq&lt;string&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;&#xA;override this.GetServiceEndpointsByNamesAsync : string * seq&lt;string&gt; * string * seq&lt;string&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointsByNamesAsync (project, endpointNames, type, authSchemes, includeFailed, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="endpointNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="authSchemes" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="includeFailed" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="endpointNames">Names of the service endpoints.</param>
+        <param name="type">Type of the service endpoints.</param>
+        <param name="authSchemes">Authorization schemes used for service endpoints.</param>
+        <param name="includeFailed">Failed flag for service endpoints.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get the service endpoints by name.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointTypesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointType&gt;&gt; GetServiceEndpointTypesAsync (string type = null, string scheme = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointType&gt;&gt; GetServiceEndpointTypesAsync(string type, string scheme, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.GetServiceEndpointTypesAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceEndpointTypesAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointType&gt;&gt;&#xA;override this.GetServiceEndpointTypesAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointType&gt;&gt;" Usage="serviceEndpointHttpClientBase.GetServiceEndpointTypesAsync (type, scheme, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointType&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="scheme" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type of service endpoint.</param>
+        <param name="scheme">Scheme of service endpoint.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Get service endpoint types.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryServiceEndpointAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt; QueryServiceEndpointAsync (Guid project, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding binding, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;string&gt;&gt; QueryServiceEndpointAsync(valuetype System.Guid project, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding binding, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.QueryServiceEndpointAsync(System.Guid,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueryServiceEndpointAsync : Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt;&#xA;override this.QueryServiceEndpointAsync : Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt;" Usage="serviceEndpointHttpClientBase.QueryServiceEndpointAsync (project, binding, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.Obsolete("Use ExecuteServiceEndpointRequest API Instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="binding" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="binding">Describes the data source to fetch.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Proxy for a GET request defined by a service endpoint. The request is authorized using a data source in service endpoint. The response is filtered using an XPath/Json based selector.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryServiceEndpointAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt; QueryServiceEndpointAsync (string project, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding binding, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;string&gt;&gt; QueryServiceEndpointAsync(string project, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding binding, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.QueryServiceEndpointAsync(System.String,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member QueryServiceEndpointAsync : string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt;&#xA;override this.QueryServiceEndpointAsync : string * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt;" Usage="serviceEndpointHttpClientBase.QueryServiceEndpointAsync (project, binding, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.Obsolete("Use ExecuteServiceEndpointRequest API Instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="binding" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.DataSourceBinding" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="binding">Describes the data source to fetch.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Proxy for a GET request defined by a service endpoint. The request is authorized using a data source in service endpoint. The response is filtered using an XPath/Json based selector.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateServiceEndpointAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; UpdateServiceEndpointAsync (Guid project, Guid endpointId, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint endpoint, string operation = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; UpdateServiceEndpointAsync(valuetype System.Guid project, valuetype System.Guid endpointId, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint endpoint, string operation, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.UpdateServiceEndpointAsync(System.Guid,System.Guid,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateServiceEndpointAsync : Guid * Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&#xA;override this.UpdateServiceEndpointAsync : Guid * Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;" Usage="serviceEndpointHttpClientBase.UpdateServiceEndpointAsync (project, endpointId, endpoint, operation, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="endpointId" Type="System.Guid" />
+        <Parameter Name="endpoint" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint" />
+        <Parameter Name="operation" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="endpointId">Id of the service endpoint to update.</param>
+        <param name="endpoint">Service endpoint to update.</param>
+        <param name="operation">Operation for the service endpoint.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update a service endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateServiceEndpointAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; UpdateServiceEndpointAsync (string project, Guid endpointId, Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint endpoint, string operation = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; UpdateServiceEndpointAsync(string project, valuetype System.Guid endpointId, class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint endpoint, string operation, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.UpdateServiceEndpointAsync(System.String,System.Guid,Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateServiceEndpointAsync : string * Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&#xA;override this.UpdateServiceEndpointAsync : string * Guid * Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;" Usage="serviceEndpointHttpClientBase.UpdateServiceEndpointAsync (project, endpointId, endpoint, operation, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="endpointId" Type="System.Guid" />
+        <Parameter Name="endpoint" Type="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint" />
+        <Parameter Name="operation" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="endpointId">Id of the service endpoint to update.</param>
+        <param name="endpoint">Service endpoint to update.</param>
+        <param name="operation">Operation for the service endpoint.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update a service endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateServiceEndpointsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; UpdateServiceEndpointsAsync (Guid project, System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; endpoints, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; UpdateServiceEndpointsAsync(valuetype System.Guid project, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; endpoints, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.UpdateServiceEndpointsAsync(System.Guid,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateServiceEndpointsAsync : Guid * seq&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;&#xA;override this.UpdateServiceEndpointsAsync : Guid * seq&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;" Usage="serviceEndpointHttpClientBase.UpdateServiceEndpointsAsync (project, endpoints, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.Guid" />
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID</param>
+        <param name="endpoints">Names of the service endpoints to update.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update the service endpoints.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateServiceEndpointsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; UpdateServiceEndpointsAsync (string project, System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; endpoints, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt; UpdateServiceEndpointsAsync(string project, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; endpoints, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase.UpdateServiceEndpointsAsync(System.String,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateServiceEndpointsAsync : string * seq&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;&#xA;override this.UpdateServiceEndpointsAsync : string * seq&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;" Usage="serviceEndpointHttpClientBase.UpdateServiceEndpointsAsync (project, endpoints, userState, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="project" Type="System.String" />
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpoint&gt;" />
+        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="project">Project ID or project name</param>
+        <param name="endpoints">Names of the service endpoints to update.</param>
+        <param name="userState"></param>
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
+        <summary>
+            [Preview API] Update the service endpoints.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

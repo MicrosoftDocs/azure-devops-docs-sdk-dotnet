@@ -1,0 +1,156 @@
+﻿<Type Name="PhaseDependency" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency">
+  <TypeSignature Language="C#" Value="public sealed class PhaseDependency" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PhaseDependency extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PhaseDependency" />
+  <TypeSignature Language="F#" Value="type PhaseDependency = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhaseDependency ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public string Event { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Event" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Property Event As String" />
+      <MemberSignature Language="F#" Value="member this.Event : string with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.Event" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency (Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase dependency);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency op_Implicit(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase dependency) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.op_Implicit(Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase)~Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (dependency As Phase) As PhaseDependency" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.op_Implicit dependency" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependency" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase" />
+      </Parameters>
+      <Docs>
+        <param name="dependency">The phase which should be converted to a dependency</param>
+        <summary>
+            Implicitly converts a <c>Phase</c> to a <c>PhaseDependency</c> to enable easier modeling of graphs.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhaseCompleted">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency PhaseCompleted (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency PhaseCompleted(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.PhaseCompleted(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PhaseCompleted (name As String) As PhaseDependency" />
+      <MemberSignature Language="F#" Value="static member PhaseCompleted : string -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.PhaseCompleted name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public string Scope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As String" />
+      <MemberSignature Language="F#" Value="member this.Scope : string with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PhaseDependency.Scope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

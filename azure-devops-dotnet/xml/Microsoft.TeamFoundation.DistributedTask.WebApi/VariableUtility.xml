@@ -1,0 +1,444 @@
+﻿<Type Name="VariableUtility" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility">
+  <TypeSignature Language="C#" Value="public static class VariableUtility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VariableUtility extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility" />
+  <TypeSignature Language="VB.NET" Value="Public Class VariableUtility" />
+  <TypeSignature Language="F#" Value="type VariableUtility = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExpandConditionVariables">
+      <MemberSignature Language="C#" Value="public static string ExpandConditionVariables (string condition, System.Collections.Generic.IDictionary&lt;string,string&gt; additionalVariableReplacements, bool useMachineVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExpandConditionVariables(string condition, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; additionalVariableReplacements, bool useMachineVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandConditionVariables(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandConditionVariables (condition As String, additionalVariableReplacements As IDictionary(Of String, String), useMachineVariables As Boolean) As String" />
+      <MemberSignature Language="F#" Value="static member ExpandConditionVariables : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * bool -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandConditionVariables (condition, additionalVariableReplacements, useMachineVariables)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="condition" Type="System.String" />
+        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="condition">Task condition</param>
+        <param name="additionalVariableReplacements">List of variables and their replacement values</param>
+        <param name="useMachineVariables">To be added.</param>
+        <summary>
+            Replaces variable references of the form variables['variable_name'] with corresponding replacement values
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static Newtonsoft.Json.Linq.JToken ExpandVariables (Newtonsoft.Json.Linq.JToken token, System.Collections.Generic.IDictionary&lt;string,string&gt; replacementDictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.Linq.JToken ExpandVariables(class Newtonsoft.Json.Linq.JToken token, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; replacementDictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(Newtonsoft.Json.Linq.JToken,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (token As JToken, replacementDictionary As IDictionary(Of String, String)) As JToken" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : Newtonsoft.Json.Linq.JToken * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Newtonsoft.Json.Linq.JToken" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (token, replacementDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="replacementDictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="token">root token must be a JObject or JArray</param>
+        <param name="replacementDictionary">key value variables to replace in the $(xxx) format</param>
+        <summary>
+            Replaces variables by recursively cloning tokens in a JObject or JArray by 
+            Walks tokens and uses ExpandVariables(string, vars) to resolve all string tokens
+            </summary>
+        <returns>root token of cloned tree</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static Newtonsoft.Json.Linq.JToken ExpandVariables (Newtonsoft.Json.Linq.JToken token, System.Collections.Generic.IList&lt;System.Collections.Generic.IDictionary&lt;string,string&gt;&gt; replacementsList);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.Linq.JToken ExpandVariables(class Newtonsoft.Json.Linq.JToken token, class System.Collections.Generic.IList`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, string&gt;&gt; replacementsList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(Newtonsoft.Json.Linq.JToken,System.Collections.Generic.IList{System.Collections.Generic.IDictionary{System.String,System.String}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (token As JToken, replacementsList As IList(Of IDictionary(Of String, String))) As JToken" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : Newtonsoft.Json.Linq.JToken * System.Collections.Generic.IList&lt;System.Collections.Generic.IDictionary&lt;string, string&gt;&gt; -&gt; Newtonsoft.Json.Linq.JToken" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (token, replacementsList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="replacementsList" Type="System.Collections.Generic.IList&lt;System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="token">root token must be a JObject or JArray</param>
+        <param name="replacementsList">list of replacement key value pairs in the $(xxx) format</param>
+        <summary>
+            Replaces multiple variable sets by recursively cloning tokens in a JObject or JArray.
+            Walks tokens and uses ExpandVariables(string, vars) for each set of variables on all string tokens
+            </summary>
+        <returns>root token of cloned tree</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static string ExpandVariables (string input, System.Collections.Generic.IDictionary&lt;string,string&gt; additionalVariableReplacements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExpandVariables(string input, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; additionalVariableReplacements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (input As String, additionalVariableReplacements As IDictionary(Of String, String)) As String" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (input, additionalVariableReplacements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <param name="additionalVariableReplacements">To be added.</param>
+        <summary>
+            An overload method for ExpandVariables
+            Expand variables in the input provided using the dictionary and the machine's environment variables
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static Newtonsoft.Json.Linq.JToken ExpandVariables (Newtonsoft.Json.Linq.JToken token, Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary additionalVariableReplacements, bool useMachineVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.Linq.JToken ExpandVariables(class Newtonsoft.Json.Linq.JToken token, class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary additionalVariableReplacements, bool useMachineVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(Newtonsoft.Json.Linq.JToken,Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (token As JToken, additionalVariableReplacements As VariablesDictionary, useMachineVariables As Boolean) As JToken" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : Newtonsoft.Json.Linq.JToken * Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary * bool -&gt; Newtonsoft.Json.Linq.JToken" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (token, additionalVariableReplacements, useMachineVariables)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <param name="additionalVariableReplacements">To be added.</param>
+        <param name="useMachineVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static Newtonsoft.Json.Linq.JToken ExpandVariables (Newtonsoft.Json.Linq.JToken token, System.Collections.Generic.IDictionary&lt;string,string&gt; replacementDictionary, bool useMachineVariables = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.Linq.JToken ExpandVariables(class Newtonsoft.Json.Linq.JToken token, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; replacementDictionary, bool useMachineVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(Newtonsoft.Json.Linq.JToken,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (token As JToken, replacementDictionary As IDictionary(Of String, String), Optional useMachineVariables As Boolean = true) As JToken" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : Newtonsoft.Json.Linq.JToken * System.Collections.Generic.IDictionary&lt;string, string&gt; * bool -&gt; Newtonsoft.Json.Linq.JToken" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (token, replacementDictionary, useMachineVariables)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="replacementDictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="token">root token must be a JObject or JArray</param>
+        <param name="replacementDictionary">key value variables to replace in the $(xxx) format</param>
+        <param name="useMachineVariables">To be added.</param>
+        <summary>
+            Replaces variables by recursively cloning tokens in a JObject or JArray by 
+            Walks tokens and uses ExpandVariables(string, vars) to resolve all string tokens
+            </summary>
+        <returns>root token of cloned tree</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static string ExpandVariables (string input, Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary additionalVariableReplacements, bool useMachineVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExpandVariables(string input, class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary additionalVariableReplacements, bool useMachineVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (input As String, additionalVariableReplacements As VariablesDictionary, useMachineVariables As Boolean) As String" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : string * Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary * bool -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (input, additionalVariableReplacements, useMachineVariables)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
+        <param name="additionalVariableReplacements">To be added.</param>
+        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
+        <summary>
+            Replaces variable references of the form $(variable) with the corresponding replacement value. Values 
+            populated into the environment directly are used first. If no value is found in the automation environment
+            then the machine environment variables will be used as a fall back.
+            </summary>
+        <returns>A new value with all variables expanded to their current value based on the environment</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static string ExpandVariables (string input, System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; additionalVariableReplacements, bool useMachineVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExpandVariables(string input, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; additionalVariableReplacements, bool useMachineVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (input As String, additionalVariableReplacements As IDictionary(Of String, VariableValue), useMachineVariables As Boolean) As String" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : string * System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; * bool -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (input, additionalVariableReplacements, useMachineVariables)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
+        <param name="additionalVariableReplacements">To be added.</param>
+        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
+        <summary>
+            Replaces variable references of the form $(variable) with the corresponding replacement value. Values 
+            populated into the environment directly are used first. If no value is found in the automation environment
+            then the machine environment variables will be used as a fall back.
+            </summary>
+        <returns>A new value with all variables expanded to their current value based on the environment</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static string ExpandVariables (string input, System.Collections.Generic.IDictionary&lt;string,string&gt; additionalVariableReplacements, bool useMachineVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExpandVariables(string input, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; additionalVariableReplacements, bool useMachineVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (input As String, additionalVariableReplacements As IDictionary(Of String, String), useMachineVariables As Boolean) As String" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * bool -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (input, additionalVariableReplacements, useMachineVariables)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
+        <param name="additionalVariableReplacements">To be added.</param>
+        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
+        <summary>
+            Replaces variable references of the form $(variable) with the corresponding replacement value. Values 
+            populated into the environment directly are used first. If no value is found in the automation environment
+            then the machine environment variables will be used as a fall back.
+            </summary>
+        <returns>A new value with all variables expanded to their current value based on the environment</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static string ExpandVariables (string input, Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary additionalVariableReplacements, bool useMachineVariables, bool maskSecrets = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExpandVariables(string input, class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary additionalVariableReplacements, bool useMachineVariables, bool maskSecrets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (input As String, additionalVariableReplacements As VariablesDictionary, useMachineVariables As Boolean, Optional maskSecrets As Boolean = false) As String" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : string * Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary * bool * bool -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (input, additionalVariableReplacements, useMachineVariables, maskSecrets)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+        <Parameter Name="maskSecrets" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
+        <param name="additionalVariableReplacements">To be added.</param>
+        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
+        <param name="maskSecrets">To be added.</param>
+        <summary>
+            Replaces variable references of the form $(variable) with the corresponding replacement value. Values 
+            populated into the environment directly are used first. If no value is found in the automation environment
+            then the machine environment variables will be used as a fall back.
+            </summary>
+        <returns>A new value with all variables expanded to their current value based on the environment</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public static string ExpandVariables (string input, System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; additionalVariableReplacements, bool useMachineVariables, bool maskSecrets = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExpandVariables(string input, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; additionalVariableReplacements, bool useMachineVariables, bool maskSecrets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables(System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue},System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandVariables (input As String, additionalVariableReplacements As IDictionary(Of String, VariableValue), useMachineVariables As Boolean, Optional maskSecrets As Boolean = false) As String" />
+      <MemberSignature Language="F#" Value="static member ExpandVariables : string * System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; * bool * bool -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.ExpandVariables (input, additionalVariableReplacements, useMachineVariables, maskSecrets)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+        <Parameter Name="maskSecrets" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
+        <param name="additionalVariableReplacements">To be added.</param>
+        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
+        <param name="maskSecrets">To be added.</param>
+        <summary>
+            Replaces variable references of the form $(variable) with the corresponding replacement value. Values 
+            populated into the environment directly are used first. If no value is found in the automation environment
+            then the machine environment variables will be used as a fall back.
+            </summary>
+        <returns>A new value with all variables expanded to their current value based on the environment</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnableAccessTokenType">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.WebApi.EnableAccessTokenType GetEnableAccessTokenType (System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.EnableAccessTokenType GetEnableAccessTokenType(class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.GetEnableAccessTokenType(System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnableAccessTokenType (variables As IDictionary(Of String, VariableValue)) As EnableAccessTokenType" />
+      <MemberSignature Language="F#" Value="static member GetEnableAccessTokenType : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.EnableAccessTokenType" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.GetEnableAccessTokenType variables" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.EnableAccessTokenType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variables">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVariable">
+      <MemberSignature Language="C#" Value="public static bool IsVariable (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsVariable(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.IsVariable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsVariable (value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsVariable : string -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.IsVariable value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareReplacementStringForConditions">
+      <MemberSignature Language="C#" Value="public static string PrepareReplacementStringForConditions (string replacementValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PrepareReplacementStringForConditions(string replacementValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.PrepareReplacementStringForConditions(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrepareReplacementStringForConditions (replacementValue As String) As String" />
+      <MemberSignature Language="F#" Value="static member PrepareReplacementStringForConditions : string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility.PrepareReplacementStringForConditions replacementValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="replacementValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="replacementValue">input replacement value</param>
+        <summary>
+            Prepare replacement string from the given input. For a normal input, add ' around it.
+            Convert a variable of format ${var} to variables['var'] to suit custom conditions
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

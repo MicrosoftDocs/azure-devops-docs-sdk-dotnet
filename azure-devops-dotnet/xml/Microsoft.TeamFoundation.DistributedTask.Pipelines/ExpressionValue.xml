@@ -1,0 +1,216 @@
+﻿<Type Name="ExpressionValue" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue">
+  <TypeSignature Language="C#" Value="public abstract class ExpressionValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionValue extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpressionValue" />
+  <TypeSignature Language="F#" Value="type ExpressionValue = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides a mechanism for performing delayed evaluation of a value based on the environment context as runtime.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExpressionValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExpression&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt; FromExpression&lt;T&gt; (string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;!!T&gt; FromExpression&lt;T&gt;(string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.FromExpression``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExpression(Of T) (expression As String) As ExpressionValue(Of T)" />
+      <MemberSignature Language="F#" Value="static member FromExpression : string -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.FromExpression expression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="expression">To be added.</param>
+        <summary>
+            Creates an ExpressionValue from expression string. 
+            Returns null if argument is not an expression
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromLiteral&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt; FromLiteral&lt;T&gt; (T literal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;!!T&gt; FromLiteral&lt;T&gt;(!!T literal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.FromLiteral``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromLiteral(Of T) (literal As T) As ExpressionValue(Of T)" />
+      <MemberSignature Language="F#" Value="static member FromLiteral : 'T -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.FromLiteral literal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="literal" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="literal">To be added.</param>
+        <summary>
+            Creates an ExpressionValue from literal. 
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromToken">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;string&gt; FromToken (string token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;string&gt; FromToken(string token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.FromToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromToken (token As String) As ExpressionValue(Of String)" />
+      <MemberSignature Language="F#" Value="static member FromToken : string -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;string&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.FromToken token" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>
+            When T is String, we cannot distiguish between literals and expressions solely by type. 
+            Use this function when parsing and you want to err on the side of expressions.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpression">
+      <MemberSignature Language="C#" Value="public static bool IsExpression (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsExpression(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.IsExpression(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsExpression (value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsExpression : string -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.IsExpression value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimExpression">
+      <MemberSignature Language="C#" Value="protected static string TrimExpression (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string TrimExpression(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TrimExpression(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function TrimExpression (value As String) As String" />
+      <MemberSignature Language="F#" Value="static member TrimExpression : string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TrimExpression value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryParse&lt;T&gt; (string expression, out Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse&lt;T&gt;(string expression, [out] class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;!!T&gt;&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TryParse``1(System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse(Of T) (expression As String, ByRef value As ExpressionValue(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TryParse (expression, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="value" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The expected type of the expression result</typeparam>
+        <param name="expression">The expression string</param>
+        <param name="value">The value which was parsed, if any</param>
+        <summary>
+            Attempts to parse the specified string as an expression value.
+            </summary>
+        <returns>True if the value was successfully parsed; otherwise, false</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

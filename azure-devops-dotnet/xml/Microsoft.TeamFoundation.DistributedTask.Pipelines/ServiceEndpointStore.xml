@@ -1,0 +1,154 @@
+﻿<Type Name="ServiceEndpointStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore">
+  <TypeSignature Language="C#" Value="public class ServiceEndpointStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceEndpointStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceEndpointStore&#xA;Implements IServiceEndpointStore" />
+  <TypeSignature Language="F#" Value="type ServiceEndpointStore = class&#xA;    interface IServiceEndpointStore" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceEndpointStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; endpoints, Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver resolver = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; endpoints, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint},Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpoints As IList(Of ServiceEndpoint), Optional resolver As IServiceEndpointResolver = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore (endpoints, resolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt;" />
+        <Parameter Name="resolver" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver" />
+      </Parameters>
+      <Docs>
+        <param name="endpoints">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authorize">
+      <MemberSignature Language="C#" Value="public void Authorize (Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Authorize(class Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore.Authorize(Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Authorize (reference As ServiceEndpointReference)" />
+      <MemberSignature Language="F#" Value="abstract member Authorize : Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference -&gt; unit&#xA;override this.Authorize : Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference -&gt; unit" Usage="serviceEndpointStore.Authorize reference" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore.Authorize(Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference" />
+      </Parameters>
+      <Docs>
+        <param name="reference">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint Get (Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint Get(class Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (reference As ServiceEndpointReference) As ServiceEndpoint" />
+      <MemberSignature Language="F#" Value="abstract member Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&#xA;override this.Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint" Usage="serviceEndpointStore.Get reference" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference" />
+      </Parameters>
+      <Docs>
+        <param name="reference">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthorizedReferences">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt; GetAuthorizedReferences ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt; GetAuthorizedReferences() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore.GetAuthorizedReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAuthorizedReferences () As IList(Of ServiceEndpointReference)" />
+      <MemberSignature Language="F#" Value="abstract member GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt;&#xA;override this.GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt;" Usage="serviceEndpointStore.GetAuthorizedReferences " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore.GetAuthorizedReferences</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolver">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver Resolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver Resolver" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore.Resolver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resolver As IServiceEndpointResolver" />
+      <MemberSignature Language="F#" Value="member this.Resolver : Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointStore.Resolver" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore.Resolver</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Get the endpoint resolver configured for this store.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

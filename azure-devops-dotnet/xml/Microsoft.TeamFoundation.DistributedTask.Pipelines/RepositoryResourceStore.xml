@@ -1,0 +1,109 @@
+﻿<Type Name="RepositoryResourceStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResourceStore">
+  <TypeSignature Language="C#" Value="public class RepositoryResourceStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.InMemoryResourceStore&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt;, Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RepositoryResourceStore extends Microsoft.TeamFoundation.DistributedTask.Pipelines.InMemoryResourceStore`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt; implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResourceStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class RepositoryResourceStore&#xA;Inherits InMemoryResourceStore(Of RepositoryResource)&#xA;Implements IRepositoryStore" />
+  <TypeSignature Language="F#" Value="type RepositoryResourceStore = class&#xA;    inherit InMemoryResourceStore&lt;RepositoryResource&gt;&#xA;    interface IRepositoryStore&#xA;    interface IStepProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.Pipelines.InMemoryResourceStore&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RepositoryResourceStore (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt; repositories);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt; repositories) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResourceStore.#ctor(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (repositories As IEnumerable(Of RepositoryResource))" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResourceStore : seq&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResourceStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResourceStore repositories" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="repositories" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="repositories">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostSteps">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPostSteps (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPostSteps(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResourceStore.GetPostSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPostSteps (context As IPipelineContext, steps As IReadOnlyList(Of JobStep)) As IList(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member GetPostSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;&#xA;override this.GetPostSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="repositoryResourceStore.GetPostSteps (context, steps)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider.GetPostSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="steps">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreSteps">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPreSteps (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPreSteps(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResourceStore.GetPreSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPreSteps (context As IPipelineContext, steps As IReadOnlyList(Of JobStep)) As IList(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member GetPreSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;&#xA;override this.GetPreSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="repositoryResourceStore.GetPreSteps (context, steps)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider.GetPreSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="steps">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

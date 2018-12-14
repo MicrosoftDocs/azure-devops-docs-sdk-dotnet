@@ -1,0 +1,317 @@
+﻿<Type Name="JobEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment">
+  <TypeSignature Language="C#" Value="public sealed class JobEnvironment : ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JobEnvironment extends System.Object implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JobEnvironment&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type JobEnvironment = class&#xA;    interface ICloneable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the context of variables and vectors for a job request.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobEnvironment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new <c>JobEnvironment</c> with empty collections of repositories, vectors, 
+            and variables.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobEnvironment (Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment environment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment environment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.#ctor(Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (environment As PlanEnvironment)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment : Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment environment" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="environment" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment" />
+      </Parameters>
+      <Docs>
+        <param name="environment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobEnvironment (System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskhints, Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources resources);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskhints, class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources resources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.#ctor(System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue},System.Collections.Generic.List{Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint},Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (variables As IDictionary(Of String, VariableValue), maskhints As List(Of MaskHint), resources As JobResources)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; * System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment (variables, maskhints, resources)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+        <Parameter Name="maskhints" Type="System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt;" />
+        <Parameter Name="resources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources" />
+      </Parameters>
+      <Docs>
+        <param name="variables">To be added.</param>
+        <param name="maskhints">To be added.</param>
+        <param name="resources">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As JobEnvironment" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment" Usage="jobEnvironment.Clone " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a deep copy of the job environment.
+            </summary>
+        <returns>A deep copy of the job environment</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoints">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; Endpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; Endpoints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Endpoints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As List(Of ServiceEndpoint)" />
+      <MemberSignature Language="F#" Value="member this.Endpoints : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Endpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the collection of endpoints associated with the current context.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extract">
+      <MemberSignature Language="C#" Value="public void Extract (System.Collections.Generic.Dictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, System.Collections.Generic.HashSet&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskhints, Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources jobResources);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Extract(class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, class System.Collections.Generic.HashSet`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskhints, class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources jobResources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Extract(System.Collections.Generic.Dictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue},System.Collections.Generic.HashSet{Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint},Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources)" />
+      <MemberSignature Language="F#" Value="member this.Extract : System.Collections.Generic.Dictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; * System.Collections.Generic.HashSet&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources -&gt; unit" Usage="jobEnvironment.Extract (variables, maskhints, jobResources)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variables" Type="System.Collections.Generic.Dictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+        <Parameter Name="maskhints" Type="System.Collections.Generic.HashSet&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt;" />
+        <Parameter Name="jobResources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources" />
+      </Parameters>
+      <Docs>
+        <param name="variables">To be added.</param>
+        <param name="maskhints">To be added.</param>
+        <param name="jobResources">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskHints">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; MaskHints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; MaskHints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.MaskHints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaskHints As List(Of MaskHint)" />
+      <MemberSignature Language="F#" Value="member this.MaskHints : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.MaskHints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the collection of mask hints
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.JobOption&gt; Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, class Microsoft.TeamFoundation.DistributedTask.WebApi.JobOption&gt; Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Options" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As IDictionary(Of Guid, JobOption)" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Collections.Generic.IDictionary&lt;Guid, Microsoft.TeamFoundation.DistributedTask.WebApi.JobOption&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.JobOption&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the collection of options associated with the current context. (Deprecated, use by 1.x agent)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureFiles">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; SecureFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; SecureFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.SecureFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecureFiles As List(Of SecureFile)" />
+      <MemberSignature Language="F#" Value="member this.SecureFiles : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.SecureFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the collection of secure files associated with the current context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ICloneable.Clone">
+      <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint SystemConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint SystemConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.SystemConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property SystemConnection As ServiceEndpoint" />
+      <MemberSignature Language="F#" Value="member this.SystemConnection : Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.SystemConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the endpoint used for communicating back to the calling service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Variables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Variables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Variables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Variables : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Variables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the collection of variables associated with the current context.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

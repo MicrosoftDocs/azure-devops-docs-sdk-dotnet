@@ -1,0 +1,330 @@
+﻿<Type Name="GraphNodeInstance&lt;TNode&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;TNode&gt;">
+  <TypeSignature Language="C#" Value="public abstract class GraphNodeInstance&lt;TNode&gt; : Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance where TNode : IGraphNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GraphNodeInstance`1&lt;(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode) TNode&gt; extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class GraphNodeInstance(Of TNode)&#xA;Implements IGraphNodeInstance" />
+  <TypeSignature Language="F#" Value="type GraphNodeInstance&lt;'Node (requires 'Node :&gt; IGraphNode)&gt; = class&#xA;    interface IGraphNodeInstance" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TNode">
+      <Constraints>
+        <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TNode">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Attempt">
+      <MemberSignature Language="C#" Value="public int Attempt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Attempt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.Attempt" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attempt As Integer" />
+      <MemberSignature Language="F#" Value="member this.Attempt : int with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.Attempt" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.Attempt</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Definition">
+      <MemberSignature Language="C#" Value="public TNode Definition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TNode Definition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.Definition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Definition As TNode" />
+      <MemberSignature Language="F#" Value="member this.Definition : 'Node" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.Definition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the structure defined in the pipeline definition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinishTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; FinishTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; FinishTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.FinishTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property FinishTime As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.FinishTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.FinishTime" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.FinishTime</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identifier">
+      <MemberSignature Language="C#" Value="public string Identifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Identifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.Identifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identifier As String" />
+      <MemberSignature Language="F#" Value="member this.Identifier : string with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.Identifier" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.Identifier</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the identifier of the node.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.Name" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.Name</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name of the node.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Outputs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; Outputs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; Outputs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.Outputs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Outputs As IDictionary(Of String, VariableValue)" />
+      <MemberSignature Language="F#" Value="member this.Outputs : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.Outputs" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.Outputs</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the collection of output variables emitted by the instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetSecretsAccessed">
+      <MemberSignature Language="C#" Value="public void ResetSecretsAccessed ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetSecretsAccessed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.ResetSecretsAccessed" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetSecretsAccessed ()" />
+      <MemberSignature Language="F#" Value="abstract member ResetSecretsAccessed : unit -&gt; unit&#xA;override this.ResetSecretsAccessed : unit -&gt; unit" Usage="graphNodeInstance.ResetSecretsAccessed " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.ResetSecretsAccessed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; Result { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; Result" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As Nullable(Of TaskResult)" />
+      <MemberSignature Language="F#" Value="member this.Result : Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.Result" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.Result</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the result of the instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecretsAccessed">
+      <MemberSignature Language="C#" Value="public bool SecretsAccessed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SecretsAccessed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.SecretsAccessed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecretsAccessed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SecretsAccessed : bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.SecretsAccessed" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.SecretsAccessed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartTime As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.StartTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.StartTime" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.StartTime</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As PipelineState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;'Node (requires 'Node :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode)&gt;.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,226 @@
+﻿<Type Name="VariableGroupStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore">
+  <TypeSignature Language="C#" Value="public class VariableGroupStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VariableGroupStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class VariableGroupStore&#xA;Implements IVariableGroupStore" />
+  <TypeSignature Language="F#" Value="type VariableGroupStore = class&#xA;    interface IVariableGroupStore&#xA;    interface IStepProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VariableGroupStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; resources, Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver resolver = null, params Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[] valueProviders);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; resources, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver resolver, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[] valueProviders) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup},Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver,Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resources As IList(Of VariableGroup), Optional resolver As IVariableGroupResolver = null, ParamArray valueProviders As IVariableValueProvider())" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver * Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[] -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore (resources, resolver, valueProviders)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resources" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" />
+        <Parameter Name="resolver" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver" />
+        <Parameter Name="valueProviders" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="resources">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <param name="valueProviders">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup Get (Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup Get(class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (reference As VariableGroupReference) As VariableGroup" />
+      <MemberSignature Language="F#" Value="abstract member Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&#xA;override this.Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup" Usage="variableGroupStore.Get reference" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference" />
+      </Parameters>
+      <Docs>
+        <param name="reference">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthorizedReferences">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt; GetAuthorizedReferences ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt; GetAuthorizedReferences() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.GetAuthorizedReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAuthorizedReferences () As IList(Of VariableGroupReference)" />
+      <MemberSignature Language="F#" Value="abstract member GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt;&#xA;override this.GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt;" Usage="variableGroupStore.GetAuthorizedReferences " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.GetAuthorizedReferences</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostSteps">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPostSteps (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPostSteps(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.GetPostSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPostSteps (context As IPipelineContext, steps As IReadOnlyList(Of JobStep)) As IList(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member GetPostSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;&#xA;override this.GetPostSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="variableGroupStore.GetPostSteps (context, steps)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider.GetPostSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="steps">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreSteps">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPreSteps (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPreSteps(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.GetPreSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPreSteps (context As IPipelineContext, steps As IReadOnlyList(Of JobStep)) As IList(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member GetPreSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;&#xA;override this.GetPreSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="variableGroupStore.GetPreSteps (context, steps)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider.GetPreSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="steps">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValueProvider">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider GetValueProvider (Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider GetValueProvider(class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.GetValueProvider(Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValueProvider (group As VariableGroupReference) As IVariableValueProvider" />
+      <MemberSignature Language="F#" Value="abstract member GetValueProvider : Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider&#xA;override this.GetValueProvider : Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider" Usage="variableGroupStore.GetValueProvider group" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.GetValueProvider(Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference" />
+      </Parameters>
+      <Docs>
+        <param name="group">The target variable group</param>
+        <summary>
+            Gets the value provider which may be used to retrieve values for the variable group from the data store.
+            </summary>
+        <returns>A provider suitable for retrieving values from the variable group</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolver">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver Resolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver Resolver" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.Resolver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resolver As IVariableGroupResolver" />
+      <MemberSignature Language="F#" Value="member this.Resolver : Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.Resolver" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore.Resolver</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Get the variable group resolver configured for this store.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,53 @@
+﻿<Type Name="IInputValidator" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.IInputValidator">
+  <TypeSignature Language="C#" Value="public interface IInputValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInputValidator" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.IInputValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInputValidator" />
+  <TypeSignature Language="F#" Value="type IInputValidator = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides a contract validators must implement to participate in input validation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationResult Validate (Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationResult Validate(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.IInputValidator.Validate(Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Validate (context As InputValidationContext) As InputValidationResult" />
+      <MemberSignature Language="F#" Value="abstract member Validate : Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationContext -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationResult" Usage="iInputValidator.Validate context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.InputValidationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current input validation context</param>
+        <summary>
+            Validates the input value using the provided context.
+            </summary>
+        <returns>A result which indicates success or failure of the validation in addition to detailed reason on failure</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

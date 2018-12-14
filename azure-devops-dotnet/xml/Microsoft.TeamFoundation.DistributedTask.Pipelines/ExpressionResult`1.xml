@@ -1,0 +1,141 @@
+﻿<Type Name="ExpressionResult&lt;T&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionResult&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionResult`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionResult(Of T)" />
+  <TypeSignature Language="F#" Value="type ExpressionResult&lt;'T&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T"></typeparam>
+    <summary>
+            Represents the result of an <c>ExpressionValue&lt;T&gt;</c> evaluation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionResult (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt; : 'T -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt; value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">The resolved value</param>
+        <summary>
+            Initializes a new <c>ExpressionResult</c> instance with the specified value. The value is implicilty treated as 
+            non-secret.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionResult (T value, bool containsSecrets);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T value, bool containsSecrets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1.#ctor(`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As T, containsSecrets As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt; : 'T * bool -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt; (value, containsSecrets)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="containsSecrets" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The resolved value</param>
+        <param name="containsSecrets">True if secrets were accessed while resolving the value; otherwise, false</param>
+        <summary>
+            Initializes a new <c>ExpressionResult</c> instance with the specified values.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsSecrets">
+      <MemberSignature Language="C#" Value="public bool ContainsSecrets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContainsSecrets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1.ContainsSecrets" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainsSecrets As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContainsSecrets : bool with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;.ContainsSecrets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether or not secrets were accessed while resolving <see cref="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1.Value" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public T Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the literal value result.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

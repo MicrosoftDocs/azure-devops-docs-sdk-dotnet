@@ -1,0 +1,322 @@
+﻿<Type Name="VariableGroupUtility" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility">
+  <TypeSignature Language="C#" Value="public static class VariableGroupUtility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VariableGroupUtility extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility" />
+  <TypeSignature Language="VB.NET" Value="Public Module VariableGroupUtility" />
+  <TypeSignature Language="F#" Value="type VariableGroupUtility = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Utility class to perform operations on Variable groups.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearSecrets">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; ClearSecrets (System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; ClearSecrets(class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.ClearSecrets(System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ClearSecrets (variables As IDictionary(Of String, VariableValue)) As IDictionary(Of String, VariableValue)" />
+      <MemberSignature Language="F#" Value="static member ClearSecrets : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; -&gt; System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.ClearSecrets variables" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variables">Variable set</param>
+        <summary>
+            Replace all secrets in variables with null
+            </summary>
+        <returns>Dictionary of variables</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearSecrets">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; ClearSecrets (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; variableGroups);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; ClearSecrets(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; variableGroups) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.ClearSecrets(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ClearSecrets (variableGroups As IList(Of VariableGroup)) As IList(Of VariableGroup)" />
+      <MemberSignature Language="F#" Value="static member ClearSecrets : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.ClearSecrets variableGroups" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableGroups" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variableGroups">Variable groups to be cleared for secret variables</param>
+        <summary>
+            Replace secret values in group variables with null
+            </summary>
+        <returns>List of cleared variable groups</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue Clone (this Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue Clone(class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.Clone(Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Clone (value As VariableValue) As VariableValue" />
+      <MemberSignature Language="F#" Value="static member Clone : Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.Clone value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneVariableGroups">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; CloneVariableGroups (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; CloneVariableGroups(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.CloneVariableGroups(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneVariableGroups (source As IList(Of VariableGroup)) As IList(Of VariableGroup)" />
+      <MemberSignature Language="F#" Value="static member CloneVariableGroups : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.CloneVariableGroups source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source"></param>
+        <summary>
+            Get list of cloned variable groups
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillSecrets">
+      <MemberSignature Language="C#" Value="public static void FillSecrets (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; sourceGroups, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; targetGroups);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FillSecrets(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; sourceGroups, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; targetGroups) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.FillSecrets(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FillSecrets (sourceGroups As IList(Of VariableGroup), targetGroups As IList(Of VariableGroup))" />
+      <MemberSignature Language="F#" Value="static member FillSecrets : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; -&gt; unit" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.FillSecrets (sourceGroups, targetGroups)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceGroups" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" />
+        <Parameter Name="targetGroups" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sourceGroups">Source variable groups</param>
+        <param name="targetGroups">Target variable groups</param>
+        <summary>
+            Copies secrets from source variable groups to target variable groups
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSecret">
+      <MemberSignature Language="C#" Value="public static bool HasSecret (System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasSecret(class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.HasSecret(System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasSecret (variables As IDictionary(Of String, VariableValue)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasSecret : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.HasSecret variables" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variables">Variable set to be checked for secret variable</param>
+        <summary>
+            Check if variable set contains any secret variable
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSecret">
+      <MemberSignature Language="C#" Value="public static bool HasSecret (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; variableGroups);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasSecret(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; variableGroups) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.HasSecret(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup})" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasSecret (variableGroups As IList(Of VariableGroup)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasSecret : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.HasSecret variableGroups" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableGroups" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variableGroups">Variable groups to check if contains any secret variable</param>
+        <summary>
+            Check if any secret variable exists in variable group
+            </summary>
+        <returns>Result</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSecretWithValue">
+      <MemberSignature Language="C#" Value="public static bool HasSecretWithValue (System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasSecretWithValue(class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.HasSecretWithValue(System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasSecretWithValue (variables As IDictionary(Of String, VariableValue)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasSecretWithValue : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.HasSecretWithValue variables" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variables">Variable set to check for any secret value</param>
+        <summary>
+            Check if Variables has any secret value
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSecretWithValue">
+      <MemberSignature Language="C#" Value="public static bool HasSecretWithValue (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; variableGroups);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasSecretWithValue(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; variableGroups) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.HasSecretWithValue(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup})" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasSecretWithValue (variableGroups As IList(Of VariableGroup)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasSecretWithValue : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.HasSecretWithValue variableGroups" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableGroups" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variableGroups">Variable groups to check if contains any secret variable with value.</param>
+        <summary>
+            Check if any variable group has variable with secret value
+            </summary>
+        <returns>Result</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateVariablesAndProviderData">
+      <MemberSignature Language="C#" Value="public static void PopulateVariablesAndProviderData (this Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup group, string variablesJson, string providerDataJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PopulateVariablesAndProviderData(class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup group, string variablesJson, string providerDataJson) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.PopulateVariablesAndProviderData(Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub PopulateVariablesAndProviderData (group As VariableGroup, variablesJson As String, providerDataJson As String)" />
+      <MemberSignature Language="F#" Value="static member PopulateVariablesAndProviderData : Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup * string * string -&gt; unit" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.PopulateVariablesAndProviderData (group, variablesJson, providerDataJson)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup" RefType="this" />
+        <Parameter Name="variablesJson" Type="System.String" />
+        <Parameter Name="providerDataJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="group">To be added.</param>
+        <param name="variablesJson">To be added.</param>
+        <param name="providerDataJson">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateVariablesAndProviderData">
+      <MemberSignature Language="C#" Value="public static void PopulateVariablesAndProviderData (this Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupParameters variableGroupParameters, string variablesJson, string providerDataJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PopulateVariablesAndProviderData(class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupParameters variableGroupParameters, string variablesJson, string providerDataJson) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.PopulateVariablesAndProviderData(Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupParameters,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="static member PopulateVariablesAndProviderData : Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupParameters * string * string -&gt; unit" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupUtility.PopulateVariablesAndProviderData (variableGroupParameters, variablesJson, providerDataJson)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableGroupParameters" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroupParameters" RefType="this" />
+        <Parameter Name="variablesJson" Type="System.String" />
+        <Parameter Name="providerDataJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="variableGroupParameters">To be added.</param>
+        <param name="variablesJson">To be added.</param>
+        <param name="providerDataJson">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,167 @@
+﻿<Type Name="IResourceStoreExtensions" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions">
+  <TypeSignature Language="C#" Value="public static class IResourceStoreExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IResourceStoreExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module IResourceStoreExtensions" />
+  <TypeSignature Language="F#" Value="type IResourceStoreExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEndpoint">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint GetEndpoint (this Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint GetEndpoint(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetEndpoint(Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEndpoint (store As IResourceStore, reference As ServiceEndpointReference) As ServiceEndpoint" />
+      <MemberSignature Language="F#" Value="static member GetEndpoint : Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetEndpoint (store, reference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" RefType="this" />
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference" />
+      </Parameters>
+      <Docs>
+        <param name="store">The resource store which should be queried</param>
+        <param name="reference">The service endpoint reference which should be resolved</param>
+        <summary>
+            Retrieves a service endpoint from the store using the provided reference.
+            </summary>
+        <returns>A <c>ServiceEndpoint</c> instance matching the specified reference if found; otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFile">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile GetFile (this Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile GetFile(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, class Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetFile(Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFile (store As IResourceStore, reference As SecureFileReference) As SecureFile" />
+      <MemberSignature Language="F#" Value="static member GetFile : Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetFile (store, reference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" RefType="this" />
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference" />
+      </Parameters>
+      <Docs>
+        <param name="store">The resource store which should be queried</param>
+        <param name="reference">The secure file reference which should be resolved</param>
+        <summary>
+            Retrieves a secure file from the store using the provided reference.
+            </summary>
+        <returns>A <c>SecureFile</c> instance matching the specified reference if found; otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobResources">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources GetJobResources (this Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources resources);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources GetJobResources(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources resources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetJobResources(Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetJobResources (store As IResourceStore, resources As PipelineResources) As JobResources" />
+      <MemberSignature Language="F#" Value="static member GetJobResources : Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetJobResources (store, resources)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" RefType="this" />
+        <Parameter Name="resources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources" />
+      </Parameters>
+      <Docs>
+        <param name="store">The store which contains the resources</param>
+        <param name="resources">The resources which should be included with the job</param>
+        <summary>
+            Extracts the full resources from the <paramref name="store" /> which are referenced in the 
+            <paramref name="resources" /> collection.
+            </summary>
+        <returns>A new <c>JobResources</c> instance with the filtered set of resources from the store</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueue">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue GetQueue (this Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue GetQueue(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, class Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetQueue(Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetQueue (store As IResourceStore, reference As AgentQueueReference) As TaskAgentQueue" />
+      <MemberSignature Language="F#" Value="static member GetQueue : Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetQueue (store, reference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" RefType="this" />
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference" />
+      </Parameters>
+      <Docs>
+        <param name="store">The resource store which should be queried</param>
+        <param name="reference">The agent queue reference which should be resolved</param>
+        <summary>
+            Retrieves an agent queue from the store using the provided reference.
+            </summary>
+        <returns>A <c>TaskAgentQueue</c> instance matching the specified reference if found; otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariableGroup">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup GetVariableGroup (this Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup GetVariableGroup(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore store, class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetVariableGroup(Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVariableGroup (store As IResourceStore, reference As VariableGroupReference) As VariableGroup" />
+      <MemberSignature Language="F#" Value="static member GetVariableGroup : Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStoreExtensions.GetVariableGroup (store, reference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" RefType="this" />
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference" />
+      </Parameters>
+      <Docs>
+        <param name="store">The resource store which should be queried</param>
+        <param name="reference">The variable group reference which should be resolved</param>
+        <summary>
+            Retrieves a variable group from the store using the provided reference.
+            </summary>
+        <returns>A <c>VariableGroup</c> instance matching the specified reference if found; otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

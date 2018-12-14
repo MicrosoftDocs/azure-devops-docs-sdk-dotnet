@@ -1,0 +1,763 @@
+﻿<Type Name="PipelineUtilities" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities">
+  <TypeSignature Language="C#" Value="public static class PipelineUtilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PipelineUtilities extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities" />
+  <TypeSignature Language="VB.NET" Value="Public Class PipelineUtilities" />
+  <TypeSignature Language="F#" Value="type PipelineUtilities = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetInstanceId">
+      <MemberSignature Language="C#" Value="public static Guid GetInstanceId (string identifier, bool preserveCase = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetInstanceId(string identifier, bool preserveCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetInstanceId(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInstanceId (identifier As String, Optional preserveCase As Boolean = false) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetInstanceId : string * bool -&gt; Guid" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetInstanceId (identifier, preserveCase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identifier" Type="System.String" />
+        <Parameter Name="preserveCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">To be added.</param>
+        <param name="preserveCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetInstanceName (params string[] segments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetInstanceName(string[] segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetInstanceName(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInstanceName (ParamArray segments As String()) As String" />
+      <MemberSignature Language="F#" Value="static member GetInstanceName : string[] -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetInstanceName segments" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segments" Type="System.String[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="segments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobIdentifier">
+      <MemberSignature Language="C#" Value="public static string GetJobIdentifier (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetJobIdentifier(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobIdentifier(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetJobIdentifier (stage As StageInstance, phase As PhaseInstance, job As JobInstance) As String" />
+      <MemberSignature Language="F#" Value="static member GetJobIdentifier : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobIdentifier (stage, phase, job)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+        <Parameter Name="job" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <param name="job">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobIdentifier">
+      <MemberSignature Language="C#" Value="public static string GetJobIdentifier (string stageName, string phaseName, string jobName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetJobIdentifier(string stageName, string phaseName, string jobName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobIdentifier(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetJobIdentifier (stageName As String, phaseName As String, jobName As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetJobIdentifier : string * string * string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobIdentifier (stageName, phaseName, jobName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobInstanceId">
+      <MemberSignature Language="C#" Value="public static Guid GetJobInstanceId (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job, bool preserveCase = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetJobInstanceId(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job, bool preserveCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceId(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetJobInstanceId (stage As StageInstance, phase As PhaseInstance, job As JobInstance, Optional preserveCase As Boolean = false) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetJobInstanceId : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance * bool -&gt; Guid" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceId (stage, phase, job, preserveCase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+        <Parameter Name="job" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance" />
+        <Parameter Name="preserveCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <param name="job">To be added.</param>
+        <param name="preserveCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobInstanceId">
+      <MemberSignature Language="C#" Value="public static Guid GetJobInstanceId (string stageName, string phaseName, string jobName, int jobAttempt, bool preserveCase = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetJobInstanceId(string stageName, string phaseName, string jobName, int32 jobAttempt, bool preserveCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceId(System.String,System.String,System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetJobInstanceId (stageName As String, phaseName As String, jobName As String, jobAttempt As Integer, Optional preserveCase As Boolean = false) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetJobInstanceId : string * string * string * int * bool -&gt; Guid" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceId (stageName, phaseName, jobName, jobAttempt, preserveCase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobAttempt" Type="System.Int32" />
+        <Parameter Name="preserveCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="jobAttempt">To be added.</param>
+        <param name="preserveCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetJobInstanceName (Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord job);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetJobInstanceName(class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord job) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceName(Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetJobInstanceName (job As TimelineRecord) As String" />
+      <MemberSignature Language="F#" Value="static member GetJobInstanceName : Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceName job" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="job" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord" />
+      </Parameters>
+      <Docs>
+        <param name="job">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetJobInstanceName (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetJobInstanceName(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceName(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetJobInstanceName (stage As StageInstance, phase As PhaseInstance, job As JobInstance) As String" />
+      <MemberSignature Language="F#" Value="static member GetJobInstanceName : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceName (stage, phase, job)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+        <Parameter Name="job" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <param name="job">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJobInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetJobInstanceName (string stageName, string phaseName, string jobName, int jobAttempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetJobInstanceName(string stageName, string phaseName, string jobName, int32 jobAttempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceName(System.String,System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetJobInstanceName (stageName As String, phaseName As String, jobName As String, jobAttempt As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member GetJobInstanceName : string * string * string * int -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetJobInstanceName (stageName, phaseName, jobName, jobAttempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobAttempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="jobAttempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public static string GetName (string identifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetName(string identifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetName (identifier As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetName : string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetName identifier" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseIdentifier">
+      <MemberSignature Language="C#" Value="public static string GetPhaseIdentifier (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPhaseIdentifier(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseIdentifier(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPhaseIdentifier (stage As StageInstance, phase As PhaseInstance) As String" />
+      <MemberSignature Language="F#" Value="static member GetPhaseIdentifier : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseIdentifier (stage, phase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseIdentifier">
+      <MemberSignature Language="C#" Value="public static string GetPhaseIdentifier (string stageName, string phaseName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPhaseIdentifier(string stageName, string phaseName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseIdentifier(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPhaseIdentifier (stageName As String, phaseName As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetPhaseIdentifier : string * string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseIdentifier (stageName, phaseName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseInstanceId">
+      <MemberSignature Language="C#" Value="public static Guid GetPhaseInstanceId (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, bool preserveCase = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetPhaseInstanceId(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, bool preserveCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseInstanceId(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPhaseInstanceId (stage As StageInstance, phase As PhaseInstance, Optional preserveCase As Boolean = false) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetPhaseInstanceId : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance * bool -&gt; Guid" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseInstanceId (stage, phase, preserveCase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+        <Parameter Name="preserveCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <param name="preserveCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseInstanceId">
+      <MemberSignature Language="C#" Value="public static Guid GetPhaseInstanceId (string stageName, string phaseName, int phaseAttempt, bool preserveCase = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetPhaseInstanceId(string stageName, string phaseName, int32 phaseAttempt, bool preserveCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseInstanceId(System.String,System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPhaseInstanceId (stageName As String, phaseName As String, phaseAttempt As Integer, Optional preserveCase As Boolean = false) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetPhaseInstanceId : string * string * int * bool -&gt; Guid" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseInstanceId (stageName, phaseName, phaseAttempt, preserveCase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="phaseAttempt" Type="System.Int32" />
+        <Parameter Name="preserveCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="phaseAttempt">To be added.</param>
+        <param name="preserveCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetPhaseInstanceName (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPhaseInstanceName(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseInstanceName(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPhaseInstanceName (stage As StageInstance, phase As PhaseInstance) As String" />
+      <MemberSignature Language="F#" Value="static member GetPhaseInstanceName : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseInstanceName (stage, phase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhaseInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetPhaseInstanceName (string stageName, string phaseName, int phaseAttempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPhaseInstanceName(string stageName, string phaseName, int32 phaseAttempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseInstanceName(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPhaseInstanceName (stageName As String, phaseName As String, phaseAttempt As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member GetPhaseInstanceName : string * string * int -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetPhaseInstanceName (stageName, phaseName, phaseAttempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="phaseAttempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="phaseAttempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageIdentifier">
+      <MemberSignature Language="C#" Value="public static string GetStageIdentifier (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStageIdentifier(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageIdentifier(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStageIdentifier (stage As StageInstance) As String" />
+      <MemberSignature Language="F#" Value="static member GetStageIdentifier : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageIdentifier stage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageIdentifier">
+      <MemberSignature Language="C#" Value="public static string GetStageIdentifier (string stageName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStageIdentifier(string stageName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStageIdentifier (stageName As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetStageIdentifier : string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageIdentifier stageName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageInstanceId">
+      <MemberSignature Language="C#" Value="public static Guid GetStageInstanceId (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, bool preserveCase = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetStageInstanceId(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, bool preserveCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceId(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStageInstanceId (stage As StageInstance, Optional preserveCase As Boolean = false) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetStageInstanceId : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * bool -&gt; Guid" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceId (stage, preserveCase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="preserveCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="preserveCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageInstanceId">
+      <MemberSignature Language="C#" Value="public static Guid GetStageInstanceId (string stageName, int stageAttempt, bool preserveCase = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetStageInstanceId(string stageName, int32 stageAttempt, bool preserveCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceId(System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStageInstanceId (stageName As String, stageAttempt As Integer, Optional preserveCase As Boolean = false) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetStageInstanceId : string * int * bool -&gt; Guid" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceId (stageName, stageAttempt, preserveCase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="stageAttempt" Type="System.Int32" />
+        <Parameter Name="preserveCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="stageAttempt">To be added.</param>
+        <param name="preserveCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetStageInstanceName (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStageInstanceName(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceName(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStageInstanceName (stage As StageInstance) As String" />
+      <MemberSignature Language="F#" Value="static member GetStageInstanceName : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceName stage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetStageInstanceName (string stageName, int stageAttempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStageInstanceName(string stageName, int32 stageAttempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceName(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStageInstanceName (stageName As String, stageAttempt As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member GetStageInstanceName : string * int -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceName (stageName, stageAttempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="stageAttempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="stageAttempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStageInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetStageInstanceName (string stageName, int stageAttempt, bool includeDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStageInstanceName(string stageName, int32 stageAttempt, bool includeDefault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceName(System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStageInstanceName (stageName As String, stageAttempt As Integer, includeDefault As Boolean) As String" />
+      <MemberSignature Language="F#" Value="static member GetStageInstanceName : string * int * bool -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetStageInstanceName (stageName, stageAttempt, includeDefault)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="stageAttempt" Type="System.Int32" />
+        <Parameter Name="includeDefault" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="stageAttempt">To be added.</param>
+        <param name="includeDefault">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskInstanceId">
+      <MemberSignature Language="C#" Value="public static Guid GetTaskInstanceId (string stageName, string phaseName, string jobName, int jobAttempt, string taskName, bool preserveCase = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetTaskInstanceId(string stageName, string phaseName, string jobName, int32 jobAttempt, string taskName, bool preserveCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetTaskInstanceId(System.String,System.String,System.String,System.Int32,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTaskInstanceId (stageName As String, phaseName As String, jobName As String, jobAttempt As Integer, taskName As String, Optional preserveCase As Boolean = false) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetTaskInstanceId : string * string * string * int * string * bool -&gt; Guid" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetTaskInstanceId (stageName, phaseName, jobName, jobAttempt, taskName, preserveCase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobAttempt" Type="System.Int32" />
+        <Parameter Name="taskName" Type="System.String" />
+        <Parameter Name="preserveCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="jobAttempt">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <param name="preserveCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetTaskInstanceName (Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord jobRecord, Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord taskRecord);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTaskInstanceName(class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord jobRecord, class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord taskRecord) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetTaskInstanceName(Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord,Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTaskInstanceName (jobRecord As TimelineRecord, taskRecord As TimelineRecord) As String" />
+      <MemberSignature Language="F#" Value="static member GetTaskInstanceName : Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord * Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetTaskInstanceName (jobRecord, taskRecord)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="jobRecord" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord" />
+        <Parameter Name="taskRecord" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord" />
+      </Parameters>
+      <Docs>
+        <param name="jobRecord">To be added.</param>
+        <param name="taskRecord">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskInstanceName">
+      <MemberSignature Language="C#" Value="public static string GetTaskInstanceName (string stageName, string phaseName, string jobName, int jobAttempt, string taskName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTaskInstanceName(string stageName, string phaseName, string jobName, int32 jobAttempt, string taskName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetTaskInstanceName(System.String,System.String,System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTaskInstanceName (stageName As String, phaseName As String, jobName As String, jobAttempt As Integer, taskName As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetTaskInstanceName : string * string * string * int * string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.GetTaskInstanceName (stageName, phaseName, jobName, jobAttempt, taskName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stageName" Type="System.String" />
+        <Parameter Name="phaseName" Type="System.String" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobAttempt" Type="System.Int32" />
+        <Parameter Name="taskName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stageName">To be added.</param>
+        <param name="phaseName">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="jobAttempt">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeResult">
+      <MemberSignature Language="C#" Value="public static Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult MergeResult (Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult childResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult MergeResult(valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result, valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult childResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.MergeResult(Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MergeResult (result As TaskResult, childResult As TaskResult) As TaskResult" />
+      <MemberSignature Language="F#" Value="static member MergeResult : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities.MergeResult (result, childResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult" />
+        <Parameter Name="childResult" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <param name="childResult">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

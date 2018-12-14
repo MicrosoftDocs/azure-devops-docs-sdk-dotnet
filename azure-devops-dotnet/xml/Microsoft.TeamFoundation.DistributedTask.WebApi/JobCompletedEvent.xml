@@ -1,0 +1,154 @@
+﻿<Type Name="JobCompletedEvent" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent">
+  <TypeSignature Language="C#" Value="public sealed class JobCompletedEvent : Microsoft.TeamFoundation.DistributedTask.WebApi.JobEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JobCompletedEvent extends Microsoft.TeamFoundation.DistributedTask.WebApi.JobEvent" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JobCompletedEvent&#xA;Inherits JobEvent" />
+  <TypeSignature Language="F#" Value="type JobCompletedEvent = class&#xA;    inherit JobEvent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.WebApi.JobEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobCompletedEvent (Guid jobId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid jobId, valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent.#ctor(System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (jobId As Guid, result As TaskResult)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent : Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent (jobId, result)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="result" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult" />
+      </Parameters>
+      <Docs>
+        <param name="jobId">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobCompletedEvent (long requestId, Guid jobId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 requestId, valuetype System.Guid jobId, valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent.#ctor(System.Int64,System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (requestId As Long, jobId As Guid, result As TaskResult)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent : int64 * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent (requestId, jobId, result)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="requestId" Type="System.Int64" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="result" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult" />
+      </Parameters>
+      <Docs>
+        <param name="requestId">To be added.</param>
+        <param name="jobId">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobCompletedEvent (long requestId, Guid jobId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result, System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; outputVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 requestId, valuetype System.Guid jobId, valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; outputVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent.#ctor(System.Int64,System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult,System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (requestId As Long, jobId As Guid, result As TaskResult, outputVariables As IDictionary(Of String, VariableValue))" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent : int64 * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult * System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent (requestId, jobId, result, outputVariables)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="requestId" Type="System.Int64" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="result" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult" />
+        <Parameter Name="outputVariables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="requestId">To be added.</param>
+        <param name="jobId">To be added.</param>
+        <param name="result">To be added.</param>
+        <param name="outputVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestId">
+      <MemberSignature Language="C#" Value="public long RequestId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 RequestId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent.RequestId" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestId As Long" />
+      <MemberSignature Language="F#" Value="member this.RequestId : int64 with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent.RequestId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult Result { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult Result" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As TaskResult" />
+      <MemberSignature Language="F#" Value="member this.Result : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobCompletedEvent.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

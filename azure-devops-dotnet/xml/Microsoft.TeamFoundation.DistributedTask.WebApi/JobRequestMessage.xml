@@ -1,0 +1,266 @@
+﻿<Type Name="JobRequestMessage" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage">
+  <TypeSignature Language="C#" Value="public abstract class JobRequestMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JobRequestMessage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class JobRequestMessage" />
+  <TypeSignature Language="F#" Value="type JobRequestMessage = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessageJsonConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected JobRequestMessage (string messageType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string messageType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (messageType As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage messageType" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected JobRequestMessage (string messageType, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference plan, Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference timeline, Guid jobId, string jobName, string jobRefName, Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment environment);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string messageType, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference plan, class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference timeline, valuetype System.Guid jobId, string jobName, string jobRefName, class Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment environment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.#ctor(System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference,Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference,System.Guid,System.String,System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (messageType As String, plan As TaskOrchestrationPlanReference, timeline As TimelineReference, jobId As Guid, jobName As String, jobRefName As String, environment As JobEnvironment)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage : string * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference * Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference * Guid * string * string * Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage (messageType, plan, timeline, jobId, jobName, jobRefName, environment)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageType" Type="System.String" />
+        <Parameter Name="plan" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference" />
+        <Parameter Name="timeline" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="jobName" Type="System.String" />
+        <Parameter Name="jobRefName" Type="System.String" />
+        <Parameter Name="environment" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment" />
+      </Parameters>
+      <Docs>
+        <param name="messageType">To be added.</param>
+        <param name="plan">To be added.</param>
+        <param name="timeline">To be added.</param>
+        <param name="jobId">To be added.</param>
+        <param name="jobName">To be added.</param>
+        <param name="jobRefName">To be added.</param>
+        <param name="environment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Environment">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment Environment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment Environment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.Environment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Environment As JobEnvironment" />
+      <MemberSignature Language="F#" Value="member this.Environment : Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.Environment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobId">
+      <MemberSignature Language="C#" Value="public Guid JobId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid JobId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.JobId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobId As Guid" />
+      <MemberSignature Language="F#" Value="member this.JobId : Guid" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.JobId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobName">
+      <MemberSignature Language="C#" Value="public string JobName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string JobName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.JobName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobName As String" />
+      <MemberSignature Language="F#" Value="member this.JobName : string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.JobName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobRefName">
+      <MemberSignature Language="C#" Value="public string JobRefName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string JobRefName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.JobRefName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobRefName As String" />
+      <MemberSignature Language="F#" Value="member this.JobRefName : string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.JobRefName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageType">
+      <MemberSignature Language="C#" Value="public string MessageType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.MessageType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageType As String" />
+      <MemberSignature Language="F#" Value="member this.MessageType : string" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.MessageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Plan">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference Plan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference Plan" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.Plan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Plan As TaskOrchestrationPlanReference" />
+      <MemberSignature Language="F#" Value="member this.Plan : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.Plan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeline">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference Timeline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference Timeline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.Timeline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeline As TimelineReference" />
+      <MemberSignature Language="F#" Value="member this.Timeline : Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage.Timeline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

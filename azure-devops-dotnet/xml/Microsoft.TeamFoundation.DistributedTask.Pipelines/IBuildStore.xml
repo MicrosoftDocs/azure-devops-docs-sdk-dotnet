@@ -1,0 +1,113 @@
+﻿<Type Name="IBuildStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore">
+  <TypeSignature Language="C#" Value="public interface IBuildStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildStore implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBuildStore&#xA;Implements IStepProvider" />
+  <TypeSignature Language="F#" Value="type IBuildStore = interface&#xA;    interface IStepProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource resource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource resource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore.Add(Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (resource As BuildResource)" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource -&gt; unit" Usage="iBuildStore.Add resource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resource" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource" />
+      </Parameters>
+      <Docs>
+        <param name="resource">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; resources);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; resources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore.Add(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (resources As IEnumerable(Of BuildResource))" />
+      <MemberSignature Language="F#" Value="abstract member Add : seq&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; -&gt; unit" Usage="iBuildStore.Add resources" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resources" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="resources">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource Get (string alias);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource Get(string alias) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (alias As String) As BuildResource" />
+      <MemberSignature Language="F#" Value="abstract member Get : string -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource" Usage="iBuildStore.Get alias" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="alias" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="alias">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAll">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; GetAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; GetAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore.GetAll" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAll () As IEnumerable(Of BuildResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : unit -&gt; seq&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt;" Usage="iBuildStore.GetAll " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,284 @@
+﻿<Type Name="PipelineExecutionContext" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext">
+  <TypeSignature Language="C#" Value="public class PipelineExecutionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PipelineExecutionContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class PipelineExecutionContext" />
+  <TypeSignature Language="F#" Value="type PipelineExecutionContext = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="azure-devops-dotnet">
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides context necessary for the execution of a pipeline.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PipelineExecutionContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new <c>PipelineExecutionContext</c> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PipelineExecutionContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PipelineState)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext state" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState" />
+      </Parameters>
+      <Docs>
+        <param name="state">The current state of the pipeline</param>
+        <summary>
+            Initializes a new <c>PipelineExecutionContext</c> instance with the specified state.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PipelineExecutionContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore, Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources resources);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources resources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (taskStore As ITaskStore, resources As PipelineResources)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext (taskStore, resources)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="taskStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" />
+        <Parameter Name="resources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources" />
+      </Parameters>
+      <Docs>
+        <param name="taskStore">The store which should be utilized for task reference resolution</param>
+        <param name="resources">The additional pre-defined resources which should be utilized for resource resolution, like: Container</param>
+        <summary>
+            Initializes a new <c>PipelineExecutionContext</c> instance using the specified task store.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dependencies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.Pipelines.Expressions.PhaseContext&gt; Dependencies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Expressions.PhaseContext&gt; Dependencies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.Dependencies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dependencies As IDictionary(Of String, PhaseContext)" />
+      <MemberSignature Language="F#" Value="member this.Dependencies : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.Pipelines.Expressions.PhaseContext&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.Dependencies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.Expressions.PhaseContext&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the phase dependencies of the current execution context.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlanId">
+      <MemberSignature Language="C#" Value="public Guid PlanId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid PlanId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.PlanId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlanId As Guid" />
+      <MemberSignature Language="F#" Value="member this.PlanId : Guid with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.PlanId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the unique identifier for the pipeline.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resources">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources Resources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources Resources" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.Resources" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resources As PipelineResources" />
+      <MemberSignature Language="F#" Value="member this.Resources : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.Resources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the resources for the pipeline.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeId">
+      <MemberSignature Language="C#" Value="public Guid ScopeId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ScopeId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.ScopeId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeId As Guid" />
+      <MemberSignature Language="F#" Value="member this.ScopeId : Guid with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.ScopeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the project identifier for the pipeline.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As PipelineState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the current state of the pipeline.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskStore">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore TaskStore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore TaskStore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.TaskStore" />
+      <MemberSignature Language="VB.NET" Value="Public Property TaskStore As ITaskStore" />
+      <MemberSignature Language="F#" Value="member this.TaskStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.TaskStore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the task store implementation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trace">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter Trace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter Trace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.Trace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Trace As IPipelineTraceWriter" />
+      <MemberSignature Language="F#" Value="member this.Trace : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.Trace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; Variables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; Variables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.Variables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As IDictionary(Of String, VariableValue)" />
+      <MemberSignature Language="F#" Value="member this.Variables : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext.Variables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the variables defined in this pipeline.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

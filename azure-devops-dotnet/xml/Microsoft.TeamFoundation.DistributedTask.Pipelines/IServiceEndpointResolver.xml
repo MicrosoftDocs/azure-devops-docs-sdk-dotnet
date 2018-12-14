@@ -1,0 +1,77 @@
+﻿<Type Name="IServiceEndpointResolver" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver">
+  <TypeSignature Language="C#" Value="public interface IServiceEndpointResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServiceEndpointResolver" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IServiceEndpointResolver" />
+  <TypeSignature Language="F#" Value="type IServiceEndpointResolver = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides a mechanism of resolving an <c>ServiceEndpointReference</c> to a <c>ServiceEndpoint</c>.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Authorize">
+      <MemberSignature Language="C#" Value="public void Authorize (Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Authorize(class Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver.Authorize(Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Authorize (reference As ServiceEndpointReference)" />
+      <MemberSignature Language="F#" Value="abstract member Authorize : Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference -&gt; unit" Usage="iServiceEndpointResolver.Authorize reference" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The endpoint reference which should be considered authorized</param>
+        <summary>
+            Adds the endpoint reference as authorized to ensure future retrievals of the endpoint
+            are allowed regardless of security context.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; Resolve (System.Collections.Generic.ICollection&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt; references);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; Resolve(class System.Collections.Generic.ICollection`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt; references) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointResolver.Resolve(System.Collections.Generic.ICollection{Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Resolve (references As ICollection(Of ServiceEndpointReference)) As IList(Of ServiceEndpoint)" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : System.Collections.Generic.ICollection&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt;" Usage="iServiceEndpointResolver.Resolve references" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="references" Type="System.Collections.Generic.ICollection&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ServiceEndpointReference&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="references">The endpoint references which should be resolved</param>
+        <summary>
+            Attempts to resolve endpoint references to <c>ServiceEndpoint</c> instances.
+            </summary>
+        <returns>The resolved service endpoints</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

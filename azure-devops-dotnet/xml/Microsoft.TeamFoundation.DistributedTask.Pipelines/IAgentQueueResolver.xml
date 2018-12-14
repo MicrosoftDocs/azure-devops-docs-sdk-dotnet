@@ -1,0 +1,51 @@
+﻿<Type Name="IAgentQueueResolver" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver">
+  <TypeSignature Language="C#" Value="public interface IAgentQueueResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAgentQueueResolver" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAgentQueueResolver" />
+  <TypeSignature Language="F#" Value="type IAgentQueueResolver = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides a mechanism of resolving an <c>AgentQueueReference</c> to a <c>TaskAgentQueue</c>.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; Resolve (System.Collections.Generic.ICollection&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt; references);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; Resolve(class System.Collections.Generic.ICollection`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt; references) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver.Resolve(System.Collections.Generic.ICollection{Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Resolve (references As ICollection(Of AgentQueueReference)) As IList(Of TaskAgentQueue)" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : System.Collections.Generic.ICollection&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt;" Usage="iAgentQueueResolver.Resolve references" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="references" Type="System.Collections.Generic.ICollection&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="references">The agent queues which should be resolved</param>
+        <summary>
+            Attempts to resolve the agent queue references to <c>TaskAgentQueue</c> instances.
+            </summary>
+        <returns>A list containing the resolved agent queues</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

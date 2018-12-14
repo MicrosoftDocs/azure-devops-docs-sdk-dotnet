@@ -1,0 +1,116 @@
+﻿<Type Name="TaskExecution" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskExecution">
+  <TypeSignature Language="C#" Value="public class TaskExecution" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskExecution extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskExecution" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaskExecution" />
+  <TypeSignature Language="F#" Value="type TaskExecution = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskExecution.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecTask">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskReference ExecTask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskReference ExecTask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskExecution.ExecTask" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExecTask As TaskReference" />
+      <MemberSignature Language="F#" Value="member this.ExecTask : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskReference with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskExecution.ExecTask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The utility task to run.  Specifying this means that this task definition is simply a meta task to call another task.
+            This is useful for tasks that call utility tasks like powershell and commandline
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformInstructions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; PlatformInstructions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; PlatformInstructions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskExecution.PlatformInstructions" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlatformInstructions As Dictionary(Of String, Dictionary(Of String, String))" />
+      <MemberSignature Language="F#" Value="member this.PlatformInstructions : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.Dictionary&lt;string, string&gt;&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskExecution.PlatformInstructions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If a task is going to run code, then this provides the type/script etc... information by platform.
+            For example, it might look like.
+                net45: {
+                    typeName: "Microsoft.TeamFoundation.Automation.Tasks.PowerShellTask",
+                    assemblyName: "Microsoft.TeamFoundation.Automation.Tasks.PowerShell.dll"
+                }
+                net20: {
+                    typeName: "Microsoft.TeamFoundation.Automation.Tasks.PowerShellTask",
+                    assemblyName: "Microsoft.TeamFoundation.Automation.Tasks.PowerShell.dll"
+                }
+                java: {
+                    jar: "powershelltask.tasks.automation.teamfoundation.microsoft.com",
+                }
+                node: {
+                    script: "powershellhost.js",
+                }
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

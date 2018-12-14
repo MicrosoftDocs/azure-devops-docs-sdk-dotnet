@@ -1,0 +1,81 @@
+﻿<Type Name="TaskDefinitionExtensions" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskDefinitionExtensions">
+  <TypeSignature Language="C#" Value="public static class TaskDefinitionExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TaskDefinitionExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskDefinitionExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module TaskDefinitionExtensions" />
+  <TypeSignature Language="F#" Value="type TaskDefinitionExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ComputeDisplayName">
+      <MemberSignature Language="C#" Value="public static string ComputeDisplayName (this Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition taskDefinition, System.Collections.Generic.IDictionary&lt;string,string&gt; inputs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ComputeDisplayName(class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition taskDefinition, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; inputs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskDefinitionExtensions.ComputeDisplayName(Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="F#" Value="static member ComputeDisplayName : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskDefinitionExtensions.ComputeDisplayName (taskDefinition, inputs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskDefinition" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" RefType="this" />
+        <Parameter Name="inputs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="taskDefinition">To be added.</param>
+        <param name="inputs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMinimumAgentVersion">
+      <MemberSignature Language="C#" Value="public static string GetMinimumAgentVersion (this Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition taskDefinition, string currentMinimum);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetMinimumAgentVersion(class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition taskDefinition, string currentMinimum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskDefinitionExtensions.GetMinimumAgentVersion(Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetMinimumAgentVersion : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition * string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskDefinitionExtensions.GetMinimumAgentVersion (taskDefinition, currentMinimum)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskDefinition" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" RefType="this" />
+        <Parameter Name="currentMinimum" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="taskDefinition">To be added.</param>
+        <param name="currentMinimum">To be added.</param>
+        <summary>
+            Returns the maximum of the two versions: the currentMinimum and the task's MinimumAgentVersion
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

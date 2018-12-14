@@ -1,0 +1,101 @@
+﻿<Type Name="ExpressionParser" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionParser">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionParser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionParser" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionParser" />
+  <TypeSignature Language="F#" Value="type ExpressionParser = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionParser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionParser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTree">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode CreateTree (string expression, Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt; namedValues, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt; functions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode CreateTree(string expression, class Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt; namedValues, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt; functions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionParser.CreateTree(System.String,Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo},System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateTree (expression As String, trace As ITraceWriter, namedValues As IEnumerable(Of INamedValueInfo), functions As IEnumerable(Of IFunctionInfo)) As IExpressionNode" />
+      <MemberSignature Language="F#" Value="member this.CreateTree : string * Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * seq&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt; * seq&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode" Usage="expressionParser.CreateTree (expression, trace, namedValues, functions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
+        <Parameter Name="namedValues" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt;" />
+        <Parameter Name="functions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="expression">To be added.</param>
+        <param name="trace">To be added.</param>
+        <param name="namedValues">To be added.</param>
+        <param name="functions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateSyntax">
+      <MemberSignature Language="C#" Value="public void ValidateSyntax (string expression, Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateSyntax(string expression, class Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionParser.ValidateSyntax(System.String,Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateSyntax (expression As String, trace As ITraceWriter)" />
+      <MemberSignature Language="F#" Value="member this.ValidateSyntax : string * Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter -&gt; unit" Usage="expressionParser.ValidateSyntax (expression, trace)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
+      </Parameters>
+      <Docs>
+        <param name="expression">To be added.</param>
+        <param name="trace">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

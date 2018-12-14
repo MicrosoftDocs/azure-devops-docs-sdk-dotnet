@@ -1,0 +1,128 @@
+﻿<Type Name="SecureFileStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore">
+  <TypeSignature Language="C#" Value="public class SecureFileStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecureFileStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecureFileStore&#xA;Implements ISecureFileStore" />
+  <TypeSignature Language="F#" Value="type SecureFileStore = class&#xA;    interface ISecureFileStore" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecureFileStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver resolver = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile},Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (files As IList(Of SecureFile), Optional resolver As ISecureFileResolver = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore (files, resolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="files" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;" />
+        <Parameter Name="resolver" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver" />
+      </Parameters>
+      <Docs>
+        <param name="files">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile Get (Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile Get(class Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (reference As SecureFileReference) As SecureFile" />
+      <MemberSignature Language="F#" Value="abstract member Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&#xA;override this.Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile" Usage="secureFileStore.Get reference" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference" />
+      </Parameters>
+      <Docs>
+        <param name="reference">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthorizedReferences">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference&gt; GetAuthorizedReferences ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference&gt; GetAuthorizedReferences() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore.GetAuthorizedReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAuthorizedReferences () As IList(Of SecureFileReference)" />
+      <MemberSignature Language="F#" Value="abstract member GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference&gt;&#xA;override this.GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference&gt;" Usage="secureFileStore.GetAuthorizedReferences " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore.GetAuthorizedReferences</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolver">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver Resolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver Resolver" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore.Resolver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resolver As ISecureFileResolver" />
+      <MemberSignature Language="F#" Value="member this.Resolver : Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore.Resolver" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore.Resolver</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Get the endpoint resolver configured for this store.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,220 @@
+﻿<Type Name="PhaseExecutionContext" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext">
+  <TypeSignature Language="C#" Value="public class PhaseExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PhaseExecutionContext extends Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class PhaseExecutionContext&#xA;Inherits GraphExecutionContext(Of PhaseInstance)" />
+  <TypeSignature Language="F#" Value="type PhaseExecutionContext = class&#xA;    inherit GraphExecutionContext&lt;PhaseInstance&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TInstance">Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides context necessary for the execution of a pipeline.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhaseExecutionContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; dependencies, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; dependencies, class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance,System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance},Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stage As StageInstance, phase As PhaseInstance, dependencies As IDictionary(Of String, PhaseInstance), expressionOptions As EvaluationOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance * System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext (stage, phase, dependencies, expressionOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+        <Parameter Name="dependencies" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt;" />
+        <Parameter Name="expressionOptions" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <param name="dependencies">To be added.</param>
+        <param name="expressionOptions">To be added.</param>
+        <summary>
+            Initializes a new <c>PipelineExecutionContext</c> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhaseExecutionContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase = null, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; dependencies = null, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; dependencies, class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance,System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance},Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional stage As StageInstance = null, Optional phase As PhaseInstance = null, Optional dependencies As IList(Of PhaseInstance) = null, Optional expressionOptions As EvaluationOptions = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext (stage, phase, dependencies, expressionOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+        <Parameter Name="dependencies" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt;" />
+        <Parameter Name="expressionOptions" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <param name="dependencies">To be added.</param>
+        <param name="expressionOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhaseExecutionContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; dependencies, Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState state, Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore counterStore, Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore resourceStore, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; stepProviders, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator idGenerator, Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions, Microsoft.TeamFoundation.DistributedTask.Pipelines.ExecutionOptions executionOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance phase, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; dependencies, valuetype Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState state, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore counterStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore resourceStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; stepProviders, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator idGenerator, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter trace, class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExecutionOptions executionOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance,System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance},Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState,Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore,System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider},Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator,Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter,Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions,Microsoft.TeamFoundation.DistributedTask.Pipelines.ExecutionOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance * System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState * Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator * Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions * Microsoft.TeamFoundation.DistributedTask.Pipelines.ExecutionOptions -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext (stage, phase, dependencies, state, counterStore, resourceStore, taskStore, stepProviders, idGenerator, trace, expressionOptions, executionOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stage" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
+        <Parameter Name="phase" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" />
+        <Parameter Name="dependencies" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance&gt;" />
+        <Parameter Name="state" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState" />
+        <Parameter Name="counterStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore" />
+        <Parameter Name="resourceStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" />
+        <Parameter Name="taskStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" />
+        <Parameter Name="stepProviders" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt;" />
+        <Parameter Name="idGenerator" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator" />
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter" />
+        <Parameter Name="expressionOptions" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" />
+        <Parameter Name="executionOptions" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExecutionOptions" />
+      </Parameters>
+      <Docs>
+        <param name="stage">To be added.</param>
+        <param name="phase">To be added.</param>
+        <param name="dependencies">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="counterStore">To be added.</param>
+        <param name="resourceStore">To be added.</param>
+        <param name="taskStore">The store which should be utilized for task reference resolution</param>
+        <param name="stepProviders">To be added.</param>
+        <param name="idGenerator">To be added.</param>
+        <param name="trace">To be added.</param>
+        <param name="expressionOptions">To be added.</param>
+        <param name="executionOptions">To be added.</param>
+        <summary>
+            Initializes a new <c>PipelineExecutionContext</c> instance using the specified task store.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateJobContext">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext CreateJobContext (string name, int attempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext CreateJobContext(string name, int32 attempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.CreateJobContext(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateJobContext (name As String, attempt As Integer) As JobExecutionContext" />
+      <MemberSignature Language="F#" Value="member this.CreateJobContext : string * int -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext" Usage="phaseExecutionContext.CreateJobContext (name, attempt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="attempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="attempt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Phase">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance Phase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance Phase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.Phase" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Phase As PhaseInstance" />
+      <MemberSignature Language="F#" Value="member this.Phase : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.Phase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The current phase which is being executed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousAttempt">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseAttempt PreviousAttempt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseAttempt PreviousAttempt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.PreviousAttempt" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreviousAttempt As PhaseAttempt" />
+      <MemberSignature Language="F#" Value="member this.PreviousAttempt : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseAttempt with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.PreviousAttempt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseAttempt</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the previous attempt of the phase if this is a retry of a job which has already executed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stage">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance Stage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance Stage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.Stage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stage As StageInstance" />
+      <MemberSignature Language="F#" Value="member this.Stage : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext.Stage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The current stage which is being executed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

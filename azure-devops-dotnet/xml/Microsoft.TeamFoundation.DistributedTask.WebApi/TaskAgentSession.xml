@@ -1,0 +1,233 @@
+﻿<Type Name="TaskAgentSession" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession">
+  <TypeSignature Language="C#" Value="public class TaskAgentSession" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskAgentSession extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaskAgentSession" />
+  <TypeSignature Language="F#" Value="type TaskAgentSession = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a session for performing message exchanges from an agent.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskAgentSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskAgentSession (string ownerName, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference agent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ownerName, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference agent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.#ctor(System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ownerName As String, agent As TaskAgentReference)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession : string * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession (ownerName, agent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ownerName" Type="System.String" />
+        <Parameter Name="agent" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference" />
+      </Parameters>
+      <Docs>
+        <param name="ownerName">The name of the owner for this session. This should typically be the agent machine</param>
+        <param name="agent">The target agent for the session</param>
+        <summary>
+            Initializes a new <c>TaskAgentSession</c> instance with the specified owner name and agent.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskAgentSession (string ownerName, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference agent, System.Collections.Generic.IDictionary&lt;string,string&gt; systemCapabilities);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ownerName, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference agent, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; systemCapabilities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.#ctor(System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ownerName As String, agent As TaskAgentReference, systemCapabilities As IDictionary(Of String, String))" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession : string * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession (ownerName, agent, systemCapabilities)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ownerName" Type="System.String" />
+        <Parameter Name="agent" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference" />
+        <Parameter Name="systemCapabilities" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="ownerName">The name of the owner for this session. This should typically be the agent machine</param>
+        <param name="agent">The target agent for the session</param>
+        <param name="systemCapabilities">A collection of capabilities to publish on session creation</param>
+        <summary>
+            Initializes a new <c>TaskAgentSession</c> isntance with the specified owner name, agent, and capabilities.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Agent">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference Agent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference Agent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.Agent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Agent As TaskAgentReference" />
+      <MemberSignature Language="F#" Value="member this.Agent : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.Agent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the agent which is the target of the session.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionKey">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSessionKey EncryptionKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSessionKey EncryptionKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.EncryptionKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptionKey As TaskAgentSessionKey" />
+      <MemberSignature Language="F#" Value="member this.EncryptionKey : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSessionKey" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.EncryptionKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSessionKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the key used to encrypt message traffic for this session.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerName">
+      <MemberSignature Language="C#" Value="public string OwnerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OwnerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.OwnerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnerName As String" />
+      <MemberSignature Language="F#" Value="member this.OwnerName : string with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.OwnerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the owner name of this session. Generally this will be the machine of origination.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionId">
+      <MemberSignature Language="C#" Value="public Guid SessionId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid SessionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.SessionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionId As Guid" />
+      <MemberSignature Language="F#" Value="member this.SessionId : Guid" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.SessionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the unique identifier for this session.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemCapabilities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; SystemCapabilities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; SystemCapabilities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.SystemCapabilities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemCapabilities As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.SystemCapabilities : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentSession.SystemCapabilities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the collection of system capabilities used for this session.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

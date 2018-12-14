@@ -1,0 +1,207 @@
+﻿<Type Name="ExpressionValue&lt;T&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionValue&lt;T&gt; : Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionValue`1&lt;T&gt; extends Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionValue(Of T)&#xA;Inherits ExpressionValue" />
+  <TypeSignature Language="F#" Value="type ExpressionValue&lt;'T&gt; = class&#xA;    inherit ExpressionValue" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of value</typeparam>
+    <summary>
+            Provides a mechanism for performing delayed evaluation of a value based on the environment context at runtime.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionValue (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt; : string -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt;" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt; value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The literal value which should be used</param>
+        <summary>
+            Initializes a new <c>ExpressionValue</c> instance with the specified string value. If the value provided is
+            an expression the value will be evaluated at runtime based on the execution context.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionValue (T literalValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T literalValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (literalValue As T)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt; : 'T -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt;" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt; literalValue" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="literalValue" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="literalValue">The literal value which should be used</param>
+        <summary>
+            Initializes a new <c>ExpressionValue</c> instance with the specified literal value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt; GetValue (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1&lt;!T&gt; GetValue(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1.GetValue(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (Optional context As IPipelineContext = null) As ExpressionResult(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetValue : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;" Usage="expressionValue.GetValue context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The execution context used for variable resolution</param>
+        <summary>
+            Retrieves the referenced value from the provided execution context.
+            </summary>
+        <returns>The value of the variable if found; otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt; GetValue (Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1&lt;!T&gt; GetValue(class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1.GetValue(Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (context As PipelineExecutionContext) As ExpressionResult(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetValue : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;" Usage="expressionValue.GetValue context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The execution context used for variable resolution</param>
+        <summary>
+            Retrieves the referenced value from the provided execution context.
+            </summary>
+        <returns>The value of the variable if found; otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt; (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;!T&gt; op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1.op_Implicit(System.String)~Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As ExpressionValue(Of T)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt;.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;!T&gt; op_Implicit(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1.op_Implicit(`0)~Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As T) As ExpressionValue(Of T)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'T -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;'T&gt;.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="expressionValue.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Converts the value to a string representation.
+            </summary>
+        <returns>A string representation of the current value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

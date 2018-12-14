@@ -1,0 +1,145 @@
+﻿<Type Name="ContainerNode" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode">
+  <TypeSignature Language="C#" Value="public abstract class ContainerNode : Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContainerNode extends Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContainerNode&#xA;Inherits ExpressionNode" />
+  <TypeSignature Language="F#" Value="type ContainerNode = class&#xA;    inherit ExpressionNode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ContainerNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddParameter">
+      <MemberSignature Language="C#" Value="public void AddParameter (Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddParameter(class Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode.AddParameter(Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddParameter (node As ExpressionNode)" />
+      <MemberSignature Language="F#" Value="member this.AddParameter : Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode -&gt; unit" Usage="containerNode.AddParameter node" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameters&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;T&gt; GetParameters&lt;T&gt; () where T : Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetParameters&lt;(class Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode.GetParameters``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetParameters(Of T As IExpressionNode) () As IEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="override this.GetParameters : unit -&gt; seq&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode)&gt; (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode)" Usage="containerNode.GetParameters " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode&gt; Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode&gt; Parameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As IReadOnlyList(Of ExpressionNode)" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceParameter">
+      <MemberSignature Language="C#" Value="public void ReplaceParameter (int index, Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceParameter(int32 index, class Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode.ReplaceParameter(System.Int32,Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReplaceParameter (index As Integer, node As ExpressionNode)" />
+      <MemberSignature Language="F#" Value="member this.ReplaceParameter : int * Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode -&gt; unit" Usage="containerNode.ReplaceParameter (index, node)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="node" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

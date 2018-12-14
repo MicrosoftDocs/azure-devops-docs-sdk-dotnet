@@ -1,0 +1,72 @@
+﻿<Type Name="FunctionNode" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode">
+  <TypeSignature Language="C#" Value="public abstract class FunctionNode : Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FunctionNode extends Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FunctionNode&#xA;Inherits ContainerNode" />
+  <TypeSignature Language="F#" Value="type FunctionNode = class&#xA;    inherit ContainerNode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FunctionNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceFullyRealized">
+      <MemberSignature Language="C#" Value="protected override bool TraceFullyRealized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TraceFullyRealized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode.TraceFullyRealized" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TraceFullyRealized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TraceFullyRealized : bool" Usage="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode.TraceFullyRealized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Generally this should not be overridden. True indicates the result of the node is traced as part of the "expanded"
+            (i.e. "realized") trace information. Otherwise the node expression is printed, and parameters to the node may or
+            may not be fully realized - depending on each respective parameter's trace-fully-realized setting.
+            
+            The purpose is so the end user can understand how their expression expanded at run time. For example, consider
+            the expression: eq(variables.publish, 'true'). The runtime-expanded expression may be: eq('true', 'true')
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

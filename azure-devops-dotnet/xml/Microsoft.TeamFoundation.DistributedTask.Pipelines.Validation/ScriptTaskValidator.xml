@@ -1,0 +1,81 @@
+﻿<Type Name="ScriptTaskValidator" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator">
+  <TypeSignature Language="C#" Value="public sealed class ScriptTaskValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptTaskValidator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptTaskValidator" />
+  <TypeSignature Language="F#" Value="type ScriptTaskValidator = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Validates script tasks for bad tokens. For best performance, create one instance and reuse - this is
+            thread safe.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptTaskValidator (Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator.IBadTokenProvider clientTokenPrv = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator/IBadTokenProvider clientTokenPrv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator.IBadTokenProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional clientTokenPrv As ScriptTaskValidator.IBadTokenProvider = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator : Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator.IBadTokenProvider -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator clientTokenPrv" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientTokenPrv" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator+IBadTokenProvider" />
+      </Parameters>
+      <Docs>
+        <param name="clientTokenPrv">
+            If supplied, combined with <see cref="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator.BaseBadTokenProvider" /> to form a single set of bad tokens.
+            </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasBadParamOrArgument">
+      <MemberSignature Language="C#" Value="public bool HasBadParamOrArgument (string exeAndArgs, out string matchedPattern, out string matchedToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasBadParamOrArgument(string exeAndArgs, [out] string&amp; matchedPattern, [out] string&amp; matchedToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ScriptTaskValidator.HasBadParamOrArgument(System.String,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasBadParamOrArgument (exeAndArgs As String, ByRef matchedPattern As String, ByRef matchedToken As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasBadParamOrArgument : string *  *  -&gt; bool" Usage="scriptTaskValidator.HasBadParamOrArgument (exeAndArgs, matchedPattern, matchedToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exeAndArgs" Type="System.String" />
+        <Parameter Name="matchedPattern" Type="System.String" RefType="out" />
+        <Parameter Name="matchedToken" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="exeAndArgs">To be added.</param>
+        <param name="matchedPattern">To be added.</param>
+        <param name="matchedToken">To be added.</param>
+        <summary>
+            Check a string for tokens containing "banned" patterns. This method is thread safe.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,539 @@
+﻿<Type Name="PipelineContextBase" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase">
+  <TypeSignature Language="C#" Value="public abstract class PipelineContextBase : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PipelineContextBase extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PipelineContextBase&#xA;Implements IPipelineContext" />
+  <TypeSignature Language="F#" Value="type PipelineContextBase = class&#xA;    interface IPipelineContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides base functionality for all contexts used during build and execution if a pipeline.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CounterStore">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore CounterStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore CounterStore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.CounterStore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterStore As ICounterStore" />
+      <MemberSignature Language="F#" Value="member this.CounterStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.CounterStore" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.CounterStore</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the counter store for the current context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSecretMasker">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker CreateSecretMasker ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker CreateSecretMasker() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.CreateSecretMasker" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSecretMasker () As ISecretMasker" />
+      <MemberSignature Language="F#" Value="abstract member CreateSecretMasker : unit -&gt; Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker&#xA;override this.CreateSecretMasker : unit -&gt; Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" Usage="pipelineContextBase.CreateSecretMasker " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnvironmentVersion">
+      <MemberSignature Language="C#" Value="public int EnvironmentVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EnvironmentVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.EnvironmentVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvironmentVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.EnvironmentVersion : int" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.EnvironmentVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the version of the environment
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;Newtonsoft.Json.Linq.JObject&gt; Evaluate (Newtonsoft.Json.Linq.JObject value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1&lt;class Newtonsoft.Json.Linq.JObject&gt; Evaluate(class Newtonsoft.Json.Linq.JObject value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.Evaluate(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate (value As JObject) As ExpressionResult(Of JObject)" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : Newtonsoft.Json.Linq.JObject -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;Newtonsoft.Json.Linq.JObject&gt;&#xA;override this.Evaluate : Newtonsoft.Json.Linq.JObject -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="pipelineContextBase.Evaluate value" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.Evaluate(Newtonsoft.Json.Linq.JObject)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;Newtonsoft.Json.Linq.JObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+            Expand all variables and macros present as values (not keys) in a given JObject.
+            Conditionally record unresolved expressions or macros as errors.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt; Evaluate&lt;T&gt; (string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1&lt;!!T&gt; Evaluate&lt;T&gt;(string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.Evaluate``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate(Of T) (expression As String) As ExpressionResult(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : string -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;&#xA;override this.Evaluate : string -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;" Usage="pipelineContextBase.Evaluate expression" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.Evaluate``1(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of result expected</typeparam>
+        <param name="expression">The expression string to evaluate</param>
+        <summary>
+            Evalutes the provided expression using the current context.
+            </summary>
+        <returns>A value indicating the evaluated result and whether or not secrets were accessed during evaluation</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JToken ExpandVariables (Newtonsoft.Json.Linq.JToken value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Newtonsoft.Json.Linq.JToken ExpandVariables(class Newtonsoft.Json.Linq.JToken value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ExpandVariables(Newtonsoft.Json.Linq.JToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExpandVariables (value As JToken) As JToken" />
+      <MemberSignature Language="F#" Value="member this.ExpandVariables : Newtonsoft.Json.Linq.JToken -&gt; Newtonsoft.Json.Linq.JToken" Usage="pipelineContextBase.ExpandVariables value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Newtonsoft.Json.Linq.JToken" />
+      </Parameters>
+      <Docs>
+        <param name="value">The JToken value which contains macros to expand</param>
+        <summary>
+            Expand macros of the format $(variableName) using the current context.
+            </summary>
+        <returns>The evaluated value with all defined macros expanded to the value in the current context</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandVariables">
+      <MemberSignature Language="C#" Value="public string ExpandVariables (string value, bool maskSecrets = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ExpandVariables(string value, bool maskSecrets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ExpandVariables(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExpandVariables (value As String, Optional maskSecrets As Boolean = false) As String" />
+      <MemberSignature Language="F#" Value="abstract member ExpandVariables : string * bool -&gt; string&#xA;override this.ExpandVariables : string * bool -&gt; string" Usage="pipelineContextBase.ExpandVariables (value, maskSecrets)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.ExpandVariables(System.String,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="maskSecrets" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value which contains macros to expand</param>
+        <param name="maskSecrets">True if secrets should be replaced with '***'; otherwise, false</param>
+        <summary>
+            Expand macros of the format $(variableName) using the current context.
+            </summary>
+        <returns>The evaluated value with all defined macros expanded to the value in the current context</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions ExpressionOptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions ExpressionOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ExpressionOptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionOptions As EvaluationOptions" />
+      <MemberSignature Language="F#" Value="member this.ExpressionOptions : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ExpressionOptions" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.ExpressionOptions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the expression evaluation options for this context.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedFunctions">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt; GetSupportedFunctions ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt; GetSupportedFunctions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.GetSupportedFunctions" />
+      <MemberSignature Language="VB.NET" Value="Protected Iterator Overridable Function GetSupportedFunctions () As IEnumerable(Of IFunctionInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetSupportedFunctions : unit -&gt; seq&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt;&#xA;override this.GetSupportedFunctions : unit -&gt; seq&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt;" Usage="pipelineContextBase.GetSupportedFunctions " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase/&lt;GetSupportedFunctions&gt;d__40))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.IFunctionInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedNamedValues">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt; GetSupportedNamedValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt; GetSupportedNamedValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.GetSupportedNamedValues" />
+      <MemberSignature Language="VB.NET" Value="Protected Iterator Overridable Function GetSupportedNamedValues () As IEnumerable(Of INamedValueInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetSupportedNamedValues : unit -&gt; seq&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt;&#xA;override this.GetSupportedNamedValues : unit -&gt; seq&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt;" Usage="pipelineContextBase.GetSupportedNamedValues " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase/&lt;GetSupportedNamedValues&gt;d__41))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencedResources">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources ReferencedResources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources ReferencedResources" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ReferencedResources" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedResources As PipelineResources" />
+      <MemberSignature Language="F#" Value="member this.ReferencedResources : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ReferencedResources" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.ReferencedResources</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the resources referenced within this context.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetSecretsAccessed">
+      <MemberSignature Language="C#" Value="protected virtual void ResetSecretsAccessed ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ResetSecretsAccessed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ResetSecretsAccessed" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ResetSecretsAccessed ()" />
+      <MemberSignature Language="F#" Value="abstract member ResetSecretsAccessed : unit -&gt; unit&#xA;override this.ResetSecretsAccessed : unit -&gt; unit" Usage="pipelineContextBase.ResetSecretsAccessed " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceStore">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore ResourceStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore ResourceStore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ResourceStore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceStore As IResourceStore" />
+      <MemberSignature Language="F#" Value="member this.ResourceStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.ResourceStore" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.ResourceStore</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the resource store for the current context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecretMasker">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker SecretMasker { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker SecretMasker" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.SecretMasker" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecretMasker As ISecretMasker" />
+      <MemberSignature Language="F#" Value="member this.SecretMasker : Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.SecretMasker" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.SecretMasker</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the secret masker for the current context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecretsAccessed">
+      <MemberSignature Language="C#" Value="protected virtual bool SecretsAccessed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SecretsAccessed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.SecretsAccessed" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property SecretsAccessed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SecretsAccessed : bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.SecretsAccessed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating if secret variables have been accessed
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepProviders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; StepProviders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; StepProviders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.StepProviders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepProviders As IReadOnlyList(Of IStepProvider)" />
+      <MemberSignature Language="F#" Value="member this.StepProviders : System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.StepProviders" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.StepProviders</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the step providers for the current context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemVariableNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ISet&lt;string&gt; SystemVariableNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ISet`1&lt;string&gt; SystemVariableNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.SystemVariableNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemVariableNames As ISet(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SystemVariableNames : System.Collections.Generic.ISet&lt;string&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.SystemVariableNames" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.SystemVariableNames</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ISet&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the system variable names for the current context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskStore">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore TaskStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore TaskStore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.TaskStore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskStore As ITaskStore" />
+      <MemberSignature Language="F#" Value="member this.TaskStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.TaskStore" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.TaskStore</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the task store for the current context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trace">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter Trace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter Trace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.Trace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trace As IPipelineTraceWriter" />
+      <MemberSignature Language="F#" Value="member this.Trace : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.Trace" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.Trace</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineTraceWriter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the trace for the current context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; Variables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; Variables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.Variables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As IDictionary(Of String, VariableValue)" />
+      <MemberSignature Language="F#" Value="member this.Variables : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBase.Variables" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext.Variables</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the variables configured on the context
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

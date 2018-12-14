@@ -1,0 +1,717 @@
+﻿<Type Name="ResourceStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore">
+  <TypeSignature Language="C#" Value="public sealed class ResourceStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourceStore&#xA;Implements IResourceStore" />
+  <TypeSignature Language="F#" Value="type ResourceStore = class&#xA;    interface IResourceStore&#xA;    interface IStepProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides a default implementation of a resource store.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceStore ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new <c>ResourceStore</c> instance with no resources.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; endpoints, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues, System.Collections.Generic.IDictionary&lt;string,Guid&gt; endpointAliases = null, System.Collections.Generic.IDictionary&lt;string,Guid&gt; fileAliases = null, System.Collections.Generic.IDictionary&lt;string,int&gt; queueAliases = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; endpoints, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues, class System.Collections.Generic.IDictionary`2&lt;string, valuetype System.Guid&gt; endpointAliases, class System.Collections.Generic.IDictionary`2&lt;string, valuetype System.Guid&gt; fileAliases, class System.Collections.Generic.IDictionary`2&lt;string, int32&gt; queueAliases) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue},System.Collections.Generic.IDictionary{System.String,System.Guid},System.Collections.Generic.IDictionary{System.String,System.Guid},System.Collections.Generic.IDictionary{System.String,System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpoints As IList(Of ServiceEndpoint), files As IList(Of SecureFile), queues As IList(Of TaskAgentQueue), Optional endpointAliases As IDictionary(Of String, Guid) = null, Optional fileAliases As IDictionary(Of String, Guid) = null, Optional queueAliases As IDictionary(Of String, Integer) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; * System.Collections.Generic.IDictionary&lt;string, Guid&gt; * System.Collections.Generic.IDictionary&lt;string, Guid&gt; * System.Collections.Generic.IDictionary&lt;string, int&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore (endpoints, files, queues, endpointAliases, fileAliases, queueAliases)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt;" />
+        <Parameter Name="files" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;" />
+        <Parameter Name="queues" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt;" />
+        <Parameter Name="endpointAliases" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Guid&gt;" />
+        <Parameter Name="fileAliases" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Guid&gt;" />
+        <Parameter Name="queueAliases" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="endpoints">The collection of endpoints available in the store</param>
+        <param name="files">The collection of secure files available in the store</param>
+        <param name="queues">The collection of agent queues available in the store</param>
+        <param name="endpointAliases">An optional set of aliases for service endpoint lookup by name</param>
+        <param name="fileAliases">An optional set of aliases for secure file lookup by name</param>
+        <param name="queueAliases">An optional set of aliases for agent queue lookup by name</param>
+        <summary>
+            Initializes a new <c>ResourceStore</c> instance with the specified resources. If aliases are provided, 
+            an alias overrides lookup by name for the specified resource.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceStore (Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore endpointStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore fileStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore queueStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore variableGroupStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore buildStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore containerStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore repositoryStore = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore endpointStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore fileStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore queueStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore variableGroupStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore buildStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore containerStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore repositoryStore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional endpointStore As IServiceEndpointStore = null, Optional fileStore As ISecureFileStore = null, Optional queueStore As IAgentQueueStore = null, Optional variableGroupStore As IVariableGroupStore = null, Optional buildStore As IBuildStore = null, Optional containerStore As IContainerStore = null, Optional repositoryStore As IRepositoryStore = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore (endpointStore, fileStore, queueStore, variableGroupStore, buildStore, containerStore, repositoryStore)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore" />
+        <Parameter Name="fileStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore" />
+        <Parameter Name="queueStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore" />
+        <Parameter Name="variableGroupStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore" />
+        <Parameter Name="buildStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore" />
+        <Parameter Name="containerStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore" />
+        <Parameter Name="repositoryStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore" />
+      </Parameters>
+      <Docs>
+        <param name="endpointStore">The store for retrieving referenced service endpoints</param>
+        <param name="fileStore">The store for retrieving referenced secure files</param>
+        <param name="queueStore">The store for retrieving referenced agent queues</param>
+        <param name="variableGroupStore">The store for retrieving reference variable groups</param>
+        <param name="buildStore">To be added.</param>
+        <param name="containerStore">To be added.</param>
+        <param name="repositoryStore">To be added.</param>
+        <summary>
+            Initializes a new <c>ResourceStore</c> instance with the specified resources and endpoint store. If 
+            aliases are provided, an alias overrides lookup by name for the specified resource.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; endpoints = null, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files = null, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues = null, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; variableGroups = null, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; builds = null, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt; containers = null, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt; repositories = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; endpoints, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; variableGroups, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; builds, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt; containers, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt; repositories) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional endpoints As IList(Of ServiceEndpoint) = null, Optional files As IList(Of SecureFile) = null, Optional queues As IList(Of TaskAgentQueue) = null, Optional variableGroups As IList(Of VariableGroup) = null, Optional builds As IList(Of BuildResource) = null, Optional containers As IList(Of ContainerResource) = null, Optional repositories As IList(Of RepositoryResource) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore (endpoints, files, queues, variableGroups, builds, containers, repositories)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt;" />
+        <Parameter Name="files" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;" />
+        <Parameter Name="queues" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt;" />
+        <Parameter Name="variableGroups" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt;" />
+        <Parameter Name="builds" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt;" />
+        <Parameter Name="containers" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt;" />
+        <Parameter Name="repositories" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.RepositoryResource&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="endpoints">The collection of endpoints available in the store</param>
+        <param name="files">The collection of secure files available in the store</param>
+        <param name="queues">The collection of agent queues available in the store</param>
+        <param name="variableGroups">The collection of variable groups available in the store</param>
+        <param name="builds">To be added.</param>
+        <param name="containers">To be added.</param>
+        <param name="repositories">To be added.</param>
+        <summary>
+            Initializes a new <c>ResourceStore</c> instance with the specified resources. If aliases are provided, 
+            an alias overrides lookup by name for the specified resource.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Builds">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore Builds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore Builds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Builds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builds As IBuildStore" />
+      <MemberSignature Language="F#" Value="member this.Builds : Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Builds" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.Builds</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the store used for retrieving build resources.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Containers">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore Containers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore Containers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Containers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Containers As IContainerStore" />
+      <MemberSignature Language="F#" Value="member this.Containers : Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Containers" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.Containers</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the store used for retrieving container resources.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoints">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore Endpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore Endpoints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Endpoints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As IServiceEndpointStore" />
+      <MemberSignature Language="F#" Value="member this.Endpoints : Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Endpoints" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.Endpoints</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IServiceEndpointStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the store used for retrieving service endpoints.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Files">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore Files { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore Files" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Files" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Files As ISecureFileStore" />
+      <MemberSignature Language="F#" Value="member this.Files : Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Files" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.Files</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the store used for retrieving secure files.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthorizedResources">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources GetAuthorizedResources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources GetAuthorizedResources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetAuthorizedResources" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAuthorizedResources () As PipelineResources" />
+      <MemberSignature Language="F#" Value="abstract member GetAuthorizedResources : unit -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources&#xA;override this.GetAuthorizedResources : unit -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources" Usage="resourceStore.GetAuthorizedResources " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetAuthorizedResources</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets all resources currently in the resource store.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEndpoint">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint GetEndpoint (Guid endpointId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint GetEndpoint(valuetype System.Guid endpointId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetEndpoint(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEndpoint (endpointId As Guid) As ServiceEndpoint" />
+      <MemberSignature Language="F#" Value="abstract member GetEndpoint : Guid -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&#xA;override this.GetEndpoint : Guid -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint" Usage="resourceStore.GetEndpoint endpointId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetEndpoint(System.Guid)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="endpointId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEndpoint">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint GetEndpoint (string endpointId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint GetEndpoint(string endpointId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetEndpoint(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEndpoint (endpointId As String) As ServiceEndpoint" />
+      <MemberSignature Language="F#" Value="abstract member GetEndpoint : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&#xA;override this.GetEndpoint : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint" Usage="resourceStore.GetEndpoint endpointId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetEndpoint(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="endpointId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFile">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile GetFile (Guid fileId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile GetFile(valuetype System.Guid fileId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetFile(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFile (fileId As Guid) As SecureFile" />
+      <MemberSignature Language="F#" Value="abstract member GetFile : Guid -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&#xA;override this.GetFile : Guid -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile" Usage="resourceStore.GetFile fileId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetFile(System.Guid)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="fileId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFile">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile GetFile (string fileId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile GetFile(string fileId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFile (fileId As String) As SecureFile" />
+      <MemberSignature Language="F#" Value="abstract member GetFile : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&#xA;override this.GetFile : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile" Usage="resourceStore.GetFile fileId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetFile(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostSteps">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPostSteps (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPostSteps(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetPostSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPostSteps (context As IPipelineContext, steps As IReadOnlyList(Of JobStep)) As IList(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member GetPostSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;&#xA;override this.GetPostSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="resourceStore.GetPostSteps (context, steps)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider.GetPostSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">The execution context</param>
+        <param name="steps">To be added.</param>
+        <summary>
+            Get steps that are run after all other steps.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreSteps">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPreSteps (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetPreSteps(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetPreSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPreSteps (context As IPipelineContext, steps As IReadOnlyList(Of JobStep)) As IList(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member GetPreSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;&#xA;override this.GetPreSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="resourceStore.GetPreSteps (context, steps)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider.GetPreSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,System.Collections.Generic.IReadOnlyList{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">The execution context</param>
+        <param name="steps">The current set of steps for the job</param>
+        <summary>
+            Gets the steps, if any, which should be inserted into the job based on the resources configured.
+            </summary>
+        <returns>A list of steps which should be prepended to the job</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueue">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue GetQueue (int queueId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue GetQueue(int32 queueId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetQueue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQueue (queueId As Integer) As TaskAgentQueue" />
+      <MemberSignature Language="F#" Value="abstract member GetQueue : int -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&#xA;override this.GetQueue : int -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue" Usage="resourceStore.GetQueue queueId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetQueue(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="queueId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueue">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue GetQueue (string queueId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue GetQueue(string queueId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetQueue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQueue (queueId As String) As TaskAgentQueue" />
+      <MemberSignature Language="F#" Value="abstract member GetQueue : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&#xA;override this.GetQueue : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue" Usage="resourceStore.GetQueue queueId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetQueue(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="queueId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariableGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup GetVariableGroup (int groupId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup GetVariableGroup(int32 groupId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetVariableGroup(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetVariableGroup (groupId As Integer) As VariableGroup" />
+      <MemberSignature Language="F#" Value="abstract member GetVariableGroup : int -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&#xA;override this.GetVariableGroup : int -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup" Usage="resourceStore.GetVariableGroup groupId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetVariableGroup(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariableGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup GetVariableGroup (string groupId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup GetVariableGroup(string groupId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.GetVariableGroup(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetVariableGroup (groupId As String) As VariableGroup" />
+      <MemberSignature Language="F#" Value="abstract member GetVariableGroup : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&#xA;override this.GetVariableGroup : string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup" Usage="resourceStore.GetVariableGroup groupId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.GetVariableGroup(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeEndpoints">
+      <MemberSignature Language="C#" Value="protected void InitializeEndpoints (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; endpoints, System.Collections.Generic.IDictionary&lt;string,Guid&gt; endpointAliases);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeEndpoints(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; endpoints, class System.Collections.Generic.IDictionary`2&lt;string, valuetype System.Guid&gt; endpointAliases) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.InitializeEndpoints(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint},System.Collections.Generic.IDictionary{System.String,System.Guid})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InitializeEndpoints (endpoints As IList(Of ServiceEndpoint), endpointAliases As IDictionary(Of String, Guid))" />
+      <MemberSignature Language="F#" Value="member this.InitializeEndpoints : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt; * System.Collections.Generic.IDictionary&lt;string, Guid&gt; -&gt; unit" Usage="resourceStore.InitializeEndpoints (endpoints, endpointAliases)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint&gt;" />
+        <Parameter Name="endpointAliases" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Guid&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="endpoints">To be added.</param>
+        <param name="endpointAliases">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeFiles">
+      <MemberSignature Language="C#" Value="protected void InitializeFiles (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, System.Collections.Generic.IDictionary&lt;string,Guid&gt; fileAliases);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeFiles(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, class System.Collections.Generic.IDictionary`2&lt;string, valuetype System.Guid&gt; fileAliases) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.InitializeFiles(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile},System.Collections.Generic.IDictionary{System.String,System.Guid})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InitializeFiles (files As IList(Of SecureFile), fileAliases As IDictionary(Of String, Guid))" />
+      <MemberSignature Language="F#" Value="member this.InitializeFiles : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; * System.Collections.Generic.IDictionary&lt;string, Guid&gt; -&gt; unit" Usage="resourceStore.InitializeFiles (files, fileAliases)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="files" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;" />
+        <Parameter Name="fileAliases" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Guid&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="files">To be added.</param>
+        <param name="fileAliases">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeQueues">
+      <MemberSignature Language="C#" Value="protected void InitializeQueues (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues, System.Collections.Generic.IDictionary&lt;string,int&gt; queueAliases);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeQueues(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues, class System.Collections.Generic.IDictionary`2&lt;string, int32&gt; queueAliases) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.InitializeQueues(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue},System.Collections.Generic.IDictionary{System.String,System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InitializeQueues (queues As IList(Of TaskAgentQueue), queueAliases As IDictionary(Of String, Integer))" />
+      <MemberSignature Language="F#" Value="member this.InitializeQueues : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; * System.Collections.Generic.IDictionary&lt;string, int&gt; -&gt; unit" Usage="resourceStore.InitializeQueues (queues, queueAliases)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queues" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt;" />
+        <Parameter Name="queueAliases" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="queues">To be added.</param>
+        <param name="queueAliases">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Queues">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore Queues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore Queues" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Queues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Queues As IAgentQueueStore" />
+      <MemberSignature Language="F#" Value="member this.Queues : Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Queues" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.Queues</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the store used for retrieving agent queues.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Repositories">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore Repositories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore Repositories" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Repositories" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Repositories As IRepositoryStore" />
+      <MemberSignature Language="F#" Value="member this.Repositories : Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.Repositories" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.Repositories</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IRepositoryStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the store used for retrieving repository resources.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableGroups">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore VariableGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore VariableGroups" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.VariableGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VariableGroups As IVariableGroupStore" />
+      <MemberSignature Language="F#" Value="member this.VariableGroups : Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceStore.VariableGroups" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore.VariableGroups</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the store used for retrieving variable groups.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

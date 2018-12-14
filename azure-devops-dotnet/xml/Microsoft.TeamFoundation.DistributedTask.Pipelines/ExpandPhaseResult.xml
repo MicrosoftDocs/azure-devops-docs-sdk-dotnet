@@ -1,0 +1,155 @@
+﻿<Type Name="ExpandPhaseResult" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult">
+  <TypeSignature Language="C#" Value="public class ExpandPhaseResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpandPhaseResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpandPhaseResult" />
+  <TypeSignature Language="F#" Value="type ExpandPhaseResult = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet">
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the runtime values of a phase which has been expanded for execution.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpandPhaseResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new <c>ExpandPhaseResult</c> innstance with a default maximum concurrency of 1.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpandPhaseResult (Microsoft.TeamFoundation.DistributedTask.Pipelines.Job job);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Job job) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Job)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult : Microsoft.TeamFoundation.DistributedTask.Pipelines.Job -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult job" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="job" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Job" />
+      </Parameters>
+      <Docs>
+        <param name="job">The job which was created as a result of phase expansion</param>
+        <summary>
+            Initializes a new <c>ExpandPhaseResult</c> innstance with a default maximum concurrency of 1 and the
+            specified job.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueOnError">
+      <MemberSignature Language="C#" Value="public bool ContinueOnError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContinueOnError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.ContinueOnError" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContinueOnError As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContinueOnError : bool with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.ContinueOnError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the execution behavior when an error is encountered.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Jobs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt; Jobs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt; Jobs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.Jobs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Jobs As IList(Of JobInstance)" />
+      <MemberSignature Language="F#" Value="member this.Jobs : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.Jobs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the list of jobs for this phase.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrency">
+      <MemberSignature Language="C#" Value="public int MaxConcurrency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.MaxConcurrency" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrency As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrency : int with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.MaxConcurrency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum concurrency for the jobs.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

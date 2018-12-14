@@ -1,0 +1,488 @@
+﻿<Type Name="ExpressionNode" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode">
+  <TypeSignature Language="C#" Value="public abstract class ExpressionNode : Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionNode extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpressionNode&#xA;Implements IExpressionNode" />
+  <TypeSignature Language="F#" Value="type ExpressionNode = class&#xA;    interface IExpressionNode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExpressionNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMemoryCounter">
+      <MemberSignature Language="C#" Value="protected Microsoft.TeamFoundation.DistributedTask.Expressions.MemoryCounter CreateMemoryCounter (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.TeamFoundation.DistributedTask.Expressions.MemoryCounter CreateMemoryCounter(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.CreateMemoryCounter(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreateMemoryCounter (context As EvaluationContext) As MemoryCounter" />
+      <MemberSignature Language="F#" Value="member this.CreateMemoryCounter : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext -&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.MemoryCounter" Usage="expressionNode.CreateMemoryCounter context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Expressions.MemoryCounter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult Evaluate (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult Evaluate(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.Evaluate(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate (context As EvaluationContext) As EvaluationResult" />
+      <MemberSignature Language="F#" Value="member this.Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext -&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult" Usage="expressionNode.Evaluate context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            This function is intended only for ExpressionNode authors to call. The EvaluationContext
+            caches result-state specific to the evaluation instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public object Evaluate (Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Evaluate(class Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.Evaluate(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object,Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate (trace As ITraceWriter, secretMasker As ISecretMasker, state As Object, Optional options As EvaluationOptions = null) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions -&gt; obj&#xA;override this.Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions -&gt; obj" Usage="expressionNode.Evaluate (trace, secretMasker, state, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode.Evaluate(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object,Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
+        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" />
+        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="trace">To be added.</param>
+        <param name="secretMasker">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>
+            INode entry point.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Evaluate&lt;T&gt; (Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Evaluate&lt;T&gt;(class Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.Evaluate``1(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate(Of T) (trace As ITraceWriter, secretMasker As ISecretMasker, state As Object) As T" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj -&gt; 'T&#xA;override this.Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj -&gt; 'T" Usage="expressionNode.Evaluate (trace, secretMasker, state)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode.Evaluate``1(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
+        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="trace">To be added.</param>
+        <param name="secretMasker">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>
+            INode entry point.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Evaluate&lt;T&gt; (Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Evaluate&lt;T&gt;(class Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.Evaluate``1(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object,Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate(Of T) (trace As ITraceWriter, secretMasker As ISecretMasker, state As Object, Optional options As EvaluationOptions = null) As T" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions -&gt; 'T&#xA;override this.Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions -&gt; 'T" Usage="expressionNode.Evaluate (trace, secretMasker, state, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode.Evaluate``1(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object,Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
+        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" />
+        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="trace">To be added.</param>
+        <param name="secretMasker">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>
+            INode entry point.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateBoolean">
+      <MemberSignature Language="C#" Value="public bool EvaluateBoolean (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EvaluateBoolean(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.EvaluateBoolean(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateBoolean (context As EvaluationContext) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EvaluateBoolean : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext -&gt; bool" Usage="expressionNode.EvaluateBoolean context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            This function is intended only for ExpressionNode authors to call during evaluation.
+            The EvaluationContext caches result-state specific to the evaluation instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateBoolean">
+      <MemberSignature Language="C#" Value="public bool EvaluateBoolean (Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EvaluateBoolean(class Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.EvaluateBoolean(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateBoolean (trace As ITraceWriter, secretMasker As ISecretMasker, state As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateBoolean : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj -&gt; bool&#xA;override this.EvaluateBoolean : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj -&gt; bool" Usage="expressionNode.EvaluateBoolean (trace, secretMasker, state)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode.EvaluateBoolean(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
+        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="trace">To be added.</param>
+        <param name="secretMasker">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>
+            INode entry point.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateCore">
+      <MemberSignature Language="C#" Value="protected abstract object EvaluateCore (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object EvaluateCore(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.EvaluateCore(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function EvaluateCore (context As EvaluationContext) As Object" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateCore : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext -&gt; obj" Usage="expressionNode.EvaluateCore context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateDateTime">
+      <MemberSignature Language="C#" Value="public DateTimeOffset EvaluateDateTime (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTimeOffset EvaluateDateTime(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.EvaluateDateTime(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateDateTime (context As EvaluationContext) As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.EvaluateDateTime : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext -&gt; DateTimeOffset" Usage="expressionNode.EvaluateDateTime context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            This function is intended only for ExpressionNode authors to call during evaluation.
+            The EvaluationContext caches result-state specific to the evaluation instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateNumber">
+      <MemberSignature Language="C#" Value="public decimal EvaluateNumber (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Decimal EvaluateNumber(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.EvaluateNumber(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateNumber (context As EvaluationContext) As Decimal" />
+      <MemberSignature Language="F#" Value="member this.EvaluateNumber : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext -&gt; decimal" Usage="expressionNode.EvaluateNumber context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            This function is intended only for ExpressionNode authors to call during evaluation.
+            The EvaluationContext caches result-state specific to the evaluation instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateString">
+      <MemberSignature Language="C#" Value="public string EvaluateString (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string EvaluateString(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.EvaluateString(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateString (context As EvaluationContext) As String" />
+      <MemberSignature Language="F#" Value="member this.EvaluateString : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext -&gt; string" Usage="expressionNode.EvaluateString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            This function is intended only for ExpressionNode authors to call during evaluation.
+            The EvaluationContext caches result-state specific to the evaluation instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateVersion">
+      <MemberSignature Language="C#" Value="public Version EvaluateVersion (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Version EvaluateVersion(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.EvaluateVersion(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateVersion (context As EvaluationContext) As Version" />
+      <MemberSignature Language="F#" Value="member this.EvaluateVersion : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext -&gt; Version" Usage="expressionNode.EvaluateVersion context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            This function is intended only for ExpressionNode authors to call during evaluation.
+            The EvaluationContext caches result-state specific to the evaluation instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameters&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;T&gt; GetParameters&lt;T&gt; () where T : Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetParameters&lt;(class Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.GetParameters``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetParameters(Of T As IExpressionNode) () As IEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetParameters : unit -&gt; seq&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode)&gt; (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode)&#xA;override this.GetParameters : unit -&gt; seq&lt;'T (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode)&gt; (requires 'T :&gt; Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode)" Usage="expressionNode.GetParameters " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode.GetParameters``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="protected internal string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.Name" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name is used for tracing. Normally the parser will set the name. However if a node
+            is added manually, then the name may not be set and will fallback to the type name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceFullyRealized">
+      <MemberSignature Language="C#" Value="protected abstract bool TraceFullyRealized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TraceFullyRealized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.TraceFullyRealized" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property TraceFullyRealized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TraceFullyRealized : bool" Usage="Microsoft.TeamFoundation.DistributedTask.Expressions.ExpressionNode.TraceFullyRealized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the evalation result should be stored on the context and used
+            when the realized result is traced.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

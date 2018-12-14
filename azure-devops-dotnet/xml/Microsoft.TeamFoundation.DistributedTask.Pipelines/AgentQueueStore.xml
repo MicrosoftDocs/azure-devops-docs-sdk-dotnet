@@ -1,0 +1,154 @@
+﻿<Type Name="AgentQueueStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore">
+  <TypeSignature Language="C#" Value="public class AgentQueueStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AgentQueueStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class AgentQueueStore&#xA;Implements IAgentQueueStore" />
+  <TypeSignature Language="F#" Value="type AgentQueueStore = class&#xA;    interface IAgentQueueStore" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AgentQueueStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues, Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver resolver = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue},Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queues As IList(Of TaskAgentQueue), Optional resolver As IAgentQueueResolver = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore (queues, resolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="queues" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt;" />
+        <Parameter Name="resolver" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver" />
+      </Parameters>
+      <Docs>
+        <param name="queues">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authorize">
+      <MemberSignature Language="C#" Value="public void Authorize (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Authorize(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; queues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore.Authorize(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Authorize (queues As IList(Of TaskAgentQueue))" />
+      <MemberSignature Language="F#" Value="abstract member Authorize : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; -&gt; unit&#xA;override this.Authorize : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt; -&gt; unit" Usage="agentQueueStore.Authorize queues" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore.Authorize(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queues" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="queues">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue Get (Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue Get(class Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (reference As AgentQueueReference) As TaskAgentQueue" />
+      <MemberSignature Language="F#" Value="abstract member Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue&#xA;override this.Get : Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue" Usage="agentQueueStore.Get reference" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore.Get(Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference" />
+      </Parameters>
+      <Docs>
+        <param name="reference">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthorizedReferences">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt; GetAuthorizedReferences ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt; GetAuthorizedReferences() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore.GetAuthorizedReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAuthorizedReferences () As IList(Of AgentQueueReference)" />
+      <MemberSignature Language="F#" Value="abstract member GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt;&#xA;override this.GetAuthorizedReferences : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt;" Usage="agentQueueStore.GetAuthorizedReferences " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore.GetAuthorizedReferences</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolver">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver Resolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver Resolver" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore.Resolver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resolver As IAgentQueueResolver" />
+      <MemberSignature Language="F#" Value="member this.Resolver : Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentQueueStore.Resolver" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueStore.Resolver</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.IAgentQueueResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Get the queue resolver configured for this store.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

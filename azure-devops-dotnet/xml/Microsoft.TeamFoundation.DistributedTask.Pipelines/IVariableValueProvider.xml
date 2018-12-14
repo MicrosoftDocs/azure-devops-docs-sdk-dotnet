@@ -1,0 +1,125 @@
+﻿<Type Name="IVariableValueProvider" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider">
+  <TypeSignature Language="C#" Value="public interface IVariableValueProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVariableValueProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVariableValueProvider" />
+  <TypeSignature Language="F#" Value="type IVariableValueProvider = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSteps">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetSteps (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference group, System.Collections.Generic.IEnumerable&lt;string&gt; keys);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt; GetSteps(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context, class Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference group, class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider.GetSteps(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext,Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSteps (context As IPipelineContext, group As VariableGroupReference, keys As IEnumerable(Of String)) As IList(Of TaskStep)" />
+      <MemberSignature Language="F#" Value="abstract member GetSteps : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext * Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference * seq&lt;string&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;" Usage="iVariableValueProvider.GetSteps (context, group, keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStep&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="group" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupReference" />
+        <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="group">To be added.</param>
+        <param name="keys">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; GetValues (Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup group, Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint endpoint, System.Collections.Generic.IEnumerable&lt;string&gt; keys, bool includeSecrets);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; GetValues(class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup group, class Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint endpoint, class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys, bool includeSecrets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider.GetValues(Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup,Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint,System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValues (group As VariableGroup, endpoint As ServiceEndpoint, keys As IEnumerable(Of String), includeSecrets As Boolean) As IDictionary(Of String, VariableValue)" />
+      <MemberSignature Language="F#" Value="abstract member GetValues : Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup * Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint * seq&lt;string&gt; * bool -&gt; System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Usage="iVariableValueProvider.GetValues (group, endpoint, keys, includeSecrets)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup" />
+        <Parameter Name="endpoint" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.ServiceEndpoint" />
+        <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="includeSecrets" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="group">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <param name="keys">To be added.</param>
+        <param name="includeSecrets">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupType">
+      <MemberSignature Language="C#" Value="public string GroupType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GroupType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider.GroupType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupType As String" />
+      <MemberSignature Language="F#" Value="member this.GroupType : string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider.GroupType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldGetValues">
+      <MemberSignature Language="C#" Value="public bool ShouldGetValues (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldGetValues(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider.ShouldGetValues(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldGetValues (context As IPipelineContext) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ShouldGetValues : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext -&gt; bool" Usage="iVariableValueProvider.ShouldGetValues context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

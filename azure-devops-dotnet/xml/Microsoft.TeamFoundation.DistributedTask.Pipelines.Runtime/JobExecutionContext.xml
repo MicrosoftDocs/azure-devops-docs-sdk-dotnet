@@ -1,0 +1,156 @@
+﻿<Type Name="JobExecutionContext" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext">
+  <TypeSignature Language="C#" Value="public sealed class JobExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PipelineExecutionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JobExecutionContext extends Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PipelineExecutionContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JobExecutionContext&#xA;Inherits PipelineExecutionContext" />
+  <TypeSignature Language="F#" Value="type JobExecutionContext = class&#xA;    inherit PipelineExecutionContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PipelineExecutionContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobExecutionContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState state, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator idGenerator = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState state, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator idGenerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PipelineState, Optional idGenerator As IPipelineIdGenerator = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext (state, idGenerator)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineState" />
+        <Parameter Name="idGenerator" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.IPipelineIdGenerator" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <param name="idGenerator">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobExecutionContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext context, Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job, System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext context, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext,Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance,System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As PhaseExecutionContext, job As JobInstance, variables As IDictionary(Of String, VariableValue))" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext * Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance * System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext (context, job, variables)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext" />
+        <Parameter Name="job" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance" />
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="job">To be added.</param>
+        <param name="variables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobExecutionContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext context, string name, int attempt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext context, string name, int32 attempt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As PhaseExecutionContext, name As String, attempt As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext * string * int -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext (context, name, attempt)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseExecutionContext" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="attempt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="attempt">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Job">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance Job { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance Job" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.Job" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Job As JobInstance" />
+      <MemberSignature Language="F#" Value="member this.Job : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.Job" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Phase">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance Phase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance Phase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.Phase" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Phase As PhaseInstance" />
+      <MemberSignature Language="F#" Value="member this.Phase : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.Phase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PhaseInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stage">
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance Stage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance Stage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.Stage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stage As StageInstance" />
+      <MemberSignature Language="F#" Value="member this.Stage : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobExecutionContext.Stage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

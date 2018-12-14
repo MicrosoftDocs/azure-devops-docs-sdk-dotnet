@@ -1,0 +1,165 @@
+﻿<Type Name="GraphExecutionContext&lt;TInstance&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext&lt;TInstance&gt;">
+  <TypeSignature Language="C#" Value="public abstract class GraphExecutionContext&lt;TInstance&gt; : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PipelineExecutionContext where TInstance : IGraphNodeInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GraphExecutionContext`1&lt;(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance) TInstance&gt; extends Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PipelineExecutionContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class GraphExecutionContext(Of TInstance)&#xA;Inherits PipelineExecutionContext" />
+  <TypeSignature Language="F#" Value="type GraphExecutionContext&lt;'Instance (requires 'Instance :&gt; IGraphNodeInstance)&gt; = class&#xA;    inherit PipelineExecutionContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TInstance">
+      <Constraints>
+        <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.PipelineExecutionContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TInstance">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateSecretMasker">
+      <MemberSignature Language="C#" Value="public override Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker CreateSecretMasker ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker CreateSecretMasker() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1.CreateSecretMasker" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateSecretMasker () As ISecretMasker" />
+      <MemberSignature Language="F#" Value="override this.CreateSecretMasker : unit -&gt; Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" Usage="graphExecutionContext.CreateSecretMasker " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dependencies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,TInstance&gt; Dependencies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, !TInstance&gt; Dependencies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1.Dependencies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dependencies As IDictionary(Of String, TInstance)" />
+      <MemberSignature Language="F#" Value="member this.Dependencies : System.Collections.Generic.IDictionary&lt;string, 'Instance (requires 'Instance :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance)&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext&lt;'Instance (requires 'Instance :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance)&gt;.Dependencies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,TInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedNamedValues">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt; GetSupportedNamedValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt; GetSupportedNamedValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1.GetSupportedNamedValues" />
+      <MemberSignature Language="VB.NET" Value="Protected Iterator Overrides Function GetSupportedNamedValues () As IEnumerable(Of INamedValueInfo)" />
+      <MemberSignature Language="F#" Value="override this.GetSupportedNamedValues : unit -&gt; seq&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt;" Usage="graphExecutionContext.GetSupportedNamedValues " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1/&lt;GetSupportedNamedValues&gt;d__11))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Expressions.INamedValueInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Node">
+      <MemberSignature Language="C#" Value="protected TInstance Node { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TInstance Node" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1.Node" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Node As TInstance" />
+      <MemberSignature Language="F#" Value="member this.Node : 'Instance" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext&lt;'Instance (requires 'Instance :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance)&gt;.Node" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the target node for this execution context.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetSecretsAccessed">
+      <MemberSignature Language="C#" Value="protected override void ResetSecretsAccessed ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ResetSecretsAccessed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1.ResetSecretsAccessed" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ResetSecretsAccessed ()" />
+      <MemberSignature Language="F#" Value="override this.ResetSecretsAccessed : unit -&gt; unit" Usage="graphExecutionContext.ResetSecretsAccessed " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecretsAccessed">
+      <MemberSignature Language="C#" Value="protected override bool SecretsAccessed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SecretsAccessed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext`1.SecretsAccessed" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SecretsAccessed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SecretsAccessed : bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphExecutionContext&lt;'Instance (requires 'Instance :&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance)&gt;.SecretsAccessed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not secret variables have been accessed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
