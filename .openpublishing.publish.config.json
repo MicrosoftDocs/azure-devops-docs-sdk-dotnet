@@ -39,7 +39,8 @@
         "SourceXmlFolder": "azure-devops-dotnet/xml",
         "OutputYamlFolder": "azure-devops-dotnet/api",
         "Flatten": true,
-        "id": "azure-devops-docs-sdk-dotnet"
+        "id": "azure-devops-docs-sdk-dotnet",
+        "SDPMode": true
       },
       "SplitTOC": [
         "azure-devops-dotnet/api/azure-devops-docs-sdk-dotnet/toc.yml"
@@ -93,13 +94,9 @@
       "path_to_root": "_dependentPackages/ECMA2Yaml",
       "target_framework": "net45",
       "version": "latest"
-    },
-    {
-      "id": "memberpage.plugins",
-      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
-      "path_to_root": "_dependentPackages/memberpage.plugins",
-      "target_framework": "net45",
-      "version": "latest"
     }
-  ]
+  ],
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
