@@ -1,4 +1,4 @@
-﻿<Type Name="ISecureFileResolver" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver">
+<Type Name="ISecureFileResolver" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver">
   <TypeSignature Language="C#" Value="public interface ISecureFileResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecureFileResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver" />
@@ -10,8 +10,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,6 +41,7 @@
       </Parameters>
       <Docs>
         <param name="references">To be added.</param>
+        <param name="reference">The file references which should be resolved</param>
         <summary>
             Attempts to resolve secure file references to a <c>SecureFile</c> instances.
             </summary>

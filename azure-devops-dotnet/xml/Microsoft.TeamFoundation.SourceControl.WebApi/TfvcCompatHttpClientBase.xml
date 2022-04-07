@@ -1,4 +1,4 @@
-﻿<Type Name="TfvcCompatHttpClientBase" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase">
+<Type Name="TfvcCompatHttpClientBase" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase">
   <TypeSignature Language="C#" Value="public class TfvcCompatHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TfvcCompatHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -92,8 +93,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -149,8 +151,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -165,9 +168,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync (string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync (string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync(string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemAsync(System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemAsync (path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TfvcItem)" />
       <MemberSignature Language="F#" Value="abstract member GetItemAsync : string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&#xA;override this.GetItemAsync : string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;" Usage="tfvcCompatHttpClientBase.GetItemAsync (path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -177,10 +181,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -202,8 +208,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -213,9 +219,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync (Guid project, string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync (Guid project, string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync(valuetype System.Guid project, string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemAsync(System.Guid,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemAsync (project As Guid, path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TfvcItem)" />
       <MemberSignature Language="F#" Value="abstract member GetItemAsync : Guid * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&#xA;override this.GetItemAsync : Guid * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;" Usage="tfvcCompatHttpClientBase.GetItemAsync (project, path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -225,10 +232,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -252,8 +261,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -263,9 +272,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync (string project, string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync (string project, string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt; GetItemAsync(string project, string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemAsync (project As String, path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TfvcItem)" />
       <MemberSignature Language="F#" Value="abstract member GetItemAsync : string * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&#xA;override this.GetItemAsync : string * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;" Usage="tfvcCompatHttpClientBase.GetItemAsync (project, path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -275,10 +285,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -302,8 +314,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -313,9 +325,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemContentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemContentAsync (string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemContentAsync (string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemContentAsync(string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemContentAsync(System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemContentAsync (path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemContentAsync : string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemContentAsync : string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemContentAsync (path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -325,10 +338,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -350,8 +365,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -361,9 +376,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemContentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemContentAsync (Guid project, string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemContentAsync (Guid project, string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemContentAsync(valuetype System.Guid project, string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemContentAsync(System.Guid,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemContentAsync (project As Guid, path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemContentAsync : Guid * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemContentAsync : Guid * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemContentAsync (project, path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -373,10 +389,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -400,8 +418,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -411,9 +429,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemContentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemContentAsync (string project, string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemContentAsync (string project, string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemContentAsync(string project, string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemContentAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemContentAsync (project As String, path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemContentAsync : string * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemContentAsync : string * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemContentAsync (project, path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -423,10 +442,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -450,8 +471,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -461,9 +482,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemTextAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemTextAsync (string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemTextAsync (string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemTextAsync(string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemTextAsync(System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemTextAsync (path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemTextAsync : string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemTextAsync : string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemTextAsync (path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -473,10 +495,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -498,8 +522,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -509,9 +533,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemTextAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemTextAsync (Guid project, string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemTextAsync (Guid project, string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemTextAsync(valuetype System.Guid project, string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemTextAsync(System.Guid,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemTextAsync (project As Guid, path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemTextAsync : Guid * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemTextAsync : Guid * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemTextAsync (project, path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -521,10 +546,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -548,8 +575,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -559,9 +586,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemTextAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemTextAsync (string project, string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemTextAsync (string project, string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemTextAsync(string project, string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemTextAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemTextAsync (project As String, path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemTextAsync : string * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemTextAsync : string * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemTextAsync (project, path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -571,10 +599,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -598,8 +628,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -609,9 +639,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemZipAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemZipAsync (string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemZipAsync (string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemZipAsync(string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemZipAsync(System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemZipAsync (path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemZipAsync : string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemZipAsync : string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemZipAsync (path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -621,10 +652,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -646,8 +679,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -657,9 +690,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemZipAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemZipAsync (Guid project, string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemZipAsync (Guid project, string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemZipAsync(valuetype System.Guid project, string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemZipAsync(System.Guid,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemZipAsync (project As Guid, path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemZipAsync : Guid * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemZipAsync : Guid * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemZipAsync (project, path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -669,10 +703,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -696,8 +732,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.
@@ -707,9 +743,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemZipAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemZipAsync (string project, string path, string fileName = null, Nullable&lt;bool&gt; download = null, string scopePath = null, Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel = null, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetItemZipAsync (string project, string path, string fileName = default, bool? download = default, string scopePath = default, Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType? recursionLevel = default, Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetItemZipAsync(string project, string path, string fileName, valuetype System.Nullable`1&lt;bool&gt; download, string scopePath, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; recursionLevel, class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcCompatHttpClientBase.GetItemZipAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType},Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemZipAsync (project As String, path As String, Optional fileName As String = Nothing, Optional download As Nullable(Of Boolean) = Nothing, Optional scopePath As String = Nothing, Optional recursionLevel As Nullable(Of VersionControlRecursionType) = Nothing, Optional versionDescriptor As TfvcVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetItemZipAsync : string * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetItemZipAsync : string * string * string * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.TeamFoundation.SourceControl.WebApi.VersionControlRecursionType&gt; * Microsoft.TeamFoundation.SourceControl.WebApi.TfvcVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="tfvcCompatHttpClientBase.GetItemZipAsync (project, path, fileName, download, scopePath, recursionLevel, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -719,10 +756,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -746,8 +785,8 @@
         <param name="download">If true, create a downloadable attachment.</param>
         <param name="scopePath">Version control path of a folder to return multiple items.</param>
         <param name="recursionLevel">None (just the item), or OneLevel (contents of a folder).</param>
-        <param name="versionDescriptor"></param>
-        <param name="userState"></param>
+        <param name="versionDescriptor" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Item Metadata and/or Content for a single item. The download parameter is to indicate whether the content should be available as a download or just sent as a stream in the response. Doesn't apply to zipped content which is always returned as a download.

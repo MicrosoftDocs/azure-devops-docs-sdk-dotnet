@@ -1,4 +1,4 @@
-﻿<Type Name="PullRequestTrigger" FullName="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger">
+<Type Name="PullRequestTrigger" FullName="Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger">
   <TypeSignature Language="C#" Value="public class PullRequestTrigger : Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PullRequestTrigger extends Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -43,7 +44,7 @@
       </Docs>
     </Member>
     <Member MemberName="AutoCancel">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AutoCancel { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? AutoCancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AutoCancel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger.AutoCancel" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoCancel As Nullable(Of Boolean)" />
@@ -55,7 +56,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="AutoCancel")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="AutoCancel")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="AutoCancel")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -128,7 +130,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,7 +178,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

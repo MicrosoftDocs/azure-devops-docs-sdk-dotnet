@@ -1,4 +1,4 @@
-﻿<Type Name="PipelineUtilities" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities">
+<Type Name="PipelineUtilities" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities">
   <TypeSignature Language="C#" Value="public static class PipelineUtilities" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PipelineUtilities extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineUtilities" />
@@ -60,8 +60,9 @@
       <Parameters>
         <Parameter Name="segments" Type="System.String[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

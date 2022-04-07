@@ -1,4 +1,4 @@
-﻿<Type Name="EvaluationResult" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult">
+<Type Name="EvaluationResult" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult">
   <TypeSignature Language="C#" Value="public sealed class EvaluationResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EvaluationResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -90,7 +91,7 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
@@ -252,7 +253,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryConvertToDateTime(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult.TryConvertToDateTime(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext,System.DateTimeOffset@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryConvertToDateTime (context As EvaluationContext, ByRef result As DateTimeOffset) As Boolean" />
-      <MemberSignature Language="F#" Value="member this.TryConvertToDateTime : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext *  -&gt; bool" Usage="evaluationResult.TryConvertToDateTime (context, result)" />
+      <MemberSignature Language="F#" Value="member this.TryConvertToDateTime : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext * DateTimeOffset -&gt; bool" Usage="evaluationResult.TryConvertToDateTime (context, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -262,8 +263,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" />
-        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
@@ -278,7 +279,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryConvertToNull(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult.TryConvertToNull(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryConvertToNull (context As EvaluationContext, ByRef result As Object) As Boolean" />
-      <MemberSignature Language="F#" Value="member this.TryConvertToNull : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext *  -&gt; bool" Usage="evaluationResult.TryConvertToNull (context, result)" />
+      <MemberSignature Language="F#" Value="member this.TryConvertToNull : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext * obj -&gt; bool" Usage="evaluationResult.TryConvertToNull (context, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -305,7 +306,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryConvertToNumber(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context, [out] valuetype System.Decimal&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult.TryConvertToNumber(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext,System.Decimal@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryConvertToNumber (context As EvaluationContext, ByRef result As Decimal) As Boolean" />
-      <MemberSignature Language="F#" Value="member this.TryConvertToNumber : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext *  -&gt; bool" Usage="evaluationResult.TryConvertToNumber (context, result)" />
+      <MemberSignature Language="F#" Value="member this.TryConvertToNumber : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext * decimal -&gt; bool" Usage="evaluationResult.TryConvertToNumber (context, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -332,7 +333,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryConvertToString(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context, [out] string&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult.TryConvertToString(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryConvertToString (context As EvaluationContext, ByRef result As String) As Boolean" />
-      <MemberSignature Language="F#" Value="member this.TryConvertToString : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext *  -&gt; bool" Usage="evaluationResult.TryConvertToString (context, result)" />
+      <MemberSignature Language="F#" Value="member this.TryConvertToString : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext * string -&gt; bool" Usage="evaluationResult.TryConvertToString (context, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -359,7 +360,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryConvertToVersion(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext context, [out] class System.Version&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationResult.TryConvertToVersion(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext,System.Version@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryConvertToVersion (context As EvaluationContext, ByRef result As Version) As Boolean" />
-      <MemberSignature Language="F#" Value="member this.TryConvertToVersion : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext *  -&gt; bool" Usage="evaluationResult.TryConvertToVersion (context, result)" />
+      <MemberSignature Language="F#" Value="member this.TryConvertToVersion : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationContext * Version -&gt; bool" Usage="evaluationResult.TryConvertToVersion (context, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>

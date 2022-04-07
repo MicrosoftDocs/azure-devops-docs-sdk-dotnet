@@ -1,4 +1,4 @@
-﻿<Type Name="TaskAgent" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent">
+<Type Name="TaskAgent" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent">
   <TypeSignature Language="C#" Value="public class TaskAgent : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskAgent extends Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentReference implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent" />
@@ -19,7 +19,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -61,7 +62,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -89,7 +91,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -117,7 +120,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -167,7 +171,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -195,7 +200,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -210,11 +216,15 @@
       </Docs>
     </Member>
     <Member MemberName="MaxParallelism">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxParallelism { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxParallelism" />
+      <MemberSignature Language="C#" Value="public int MaxParallelism { get; set; }" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxParallelism" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent.MaxParallelism" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaxParallelism As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.MaxParallelism : Nullable&lt;int&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent.MaxParallelism" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxParallelism As Integer" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.MaxParallelism : int with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent.MaxParallelism" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public int? MaxParallelism { get; set; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxParallelism" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxParallelism As Nullable(Of Integer)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.MaxParallelism : Nullable&lt;int&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent.MaxParallelism" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -223,11 +233,13 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">System.Int32</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet-preview">System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -251,7 +263,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -290,7 +303,7 @@
       </Docs>
     </Member>
     <Member MemberName="StatusChangedOn">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StatusChangedOn { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StatusChangedOn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StatusChangedOn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent.StatusChangedOn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusChangedOn As Nullable(Of DateTime)" />
@@ -303,7 +316,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -322,6 +336,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="F#" Value="override this.System.ICloneable.Clone : unit -&gt; obj" Usage="taskAgent.System.ICloneable.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>

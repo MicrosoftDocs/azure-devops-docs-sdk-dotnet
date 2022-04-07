@@ -1,4 +1,4 @@
-﻿<Type Name="WorkItemTrackingProcessHttpClient" FullName="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient">
+<Type Name="WorkItemTrackingProcessHttpClient" FullName="Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient">
   <TypeSignature Language="C#" Value="public class WorkItemTrackingProcessHttpClient : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClientCompatBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkItemTrackingProcessHttpClient extends Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClientCompatBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient" />
@@ -13,8 +13,9 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("5264459E-E5E0-4BD8-B118-0985E68A4EC5")</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("5264459E-E5E0-4BD8-B118-0985E68A4EC5")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("5264459E-E5E0-4BD8-B118-0985E68A4EC5")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -84,8 +85,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -139,8 +141,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -155,9 +158,10 @@
       </Docs>
     </Member>
     <Member MemberName="AddBehaviorToWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; AddBehaviorToWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior behavior, Guid processId, string witRefNameForBehaviors, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; AddBehaviorToWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior behavior, Guid processId, string witRefNameForBehaviors, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; AddBehaviorToWorkItemTypeAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior behavior, valuetype System.Guid processId, string witRefNameForBehaviors, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.AddBehaviorToWorkItemTypeAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddBehaviorToWorkItemTypeAsync (behavior As WorkItemTypeBehavior, processId As Guid, witRefNameForBehaviors As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkItemTypeBehavior)" />
       <MemberSignature Language="F#" Value="member this.AddBehaviorToWorkItemTypeAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt;" Usage="workItemTrackingProcessHttpClient.AddBehaviorToWorkItemTypeAsync (behavior, processId, witRefNameForBehaviors, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -175,10 +179,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="behavior"></param>
+        <param name="behavior" />
         <param name="processId">The ID of the process</param>
         <param name="witRefNameForBehaviors">Work item type reference name for the behavior</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Adds a behavior to the work item type of the process.
@@ -188,9 +192,10 @@
       </Docs>
     </Member>
     <Member MemberName="AddFieldToWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; AddFieldToWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.AddProcessWorkItemTypeFieldRequest field, Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; AddFieldToWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.AddProcessWorkItemTypeFieldRequest field, Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; AddFieldToWorkItemTypeAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.AddProcessWorkItemTypeFieldRequest field, valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.AddFieldToWorkItemTypeAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.AddProcessWorkItemTypeFieldRequest,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddFieldToWorkItemTypeAsync (field As AddProcessWorkItemTypeFieldRequest, processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessWorkItemTypeField)" />
       <MemberSignature Language="F#" Value="member this.AddFieldToWorkItemTypeAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.AddProcessWorkItemTypeFieldRequest * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt;" Usage="workItemTrackingProcessHttpClient.AddFieldToWorkItemTypeAsync (field, processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -208,10 +213,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="field"></param>
+        <param name="field" />
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Adds a field to a work item type.
@@ -221,9 +226,10 @@
       </Docs>
     </Member>
     <Member MemberName="AddGroupAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; AddGroupAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, Guid processId, string witRefName, string pageId, string sectionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; AddGroupAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, Guid processId, string witRefName, string pageId, string sectionId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; AddGroupAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, valuetype System.Guid processId, string witRefName, string pageId, string sectionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.AddGroupAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group,System.Guid,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddGroupAsync (group As Group, processId As Guid, witRefName As String, pageId As String, sectionId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Group)" />
       <MemberSignature Language="F#" Value="member this.AddGroupAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group * Guid * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt;" Usage="workItemTrackingProcessHttpClient.AddGroupAsync (group, processId, witRefName, pageId, sectionId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -248,7 +254,7 @@
         <param name="witRefName">The reference name of the work item type.</param>
         <param name="pageId">The ID of the page to add the group to.</param>
         <param name="sectionId">The ID of the section to add the group to.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Adds a group to the work item form.
@@ -258,9 +264,10 @@
       </Docs>
     </Member>
     <Member MemberName="AddPageAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page&gt; AddPageAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page page, Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page&gt; AddPageAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page page, Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page&gt; AddPageAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page page, valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.AddPageAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPageAsync (page As Page, processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Page)" />
       <MemberSignature Language="F#" Value="member this.AddPageAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page&gt;" Usage="workItemTrackingProcessHttpClient.AddPageAsync (page, processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -281,7 +288,7 @@
         <param name="page">The page.</param>
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Adds a page to the work item form.
@@ -291,9 +298,10 @@
       </Docs>
     </Member>
     <Member MemberName="AddProcessWorkItemTypeRuleAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; AddProcessWorkItemTypeRuleAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessRuleRequest processRuleCreate, Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; AddProcessWorkItemTypeRuleAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessRuleRequest processRuleCreate, Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; AddProcessWorkItemTypeRuleAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessRuleRequest processRuleCreate, valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.AddProcessWorkItemTypeRuleAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessRuleRequest,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddProcessWorkItemTypeRuleAsync (processRuleCreate As CreateProcessRuleRequest, processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessRule)" />
       <MemberSignature Language="F#" Value="member this.AddProcessWorkItemTypeRuleAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessRuleRequest * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt;" Usage="workItemTrackingProcessHttpClient.AddProcessWorkItemTypeRuleAsync (processRuleCreate, processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -311,10 +319,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="processRuleCreate"></param>
+        <param name="processRuleCreate" />
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Adds a rule to work item type in the process.
@@ -324,9 +332,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateControlInGroupAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; CreateControlInGroupAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, Guid processId, string witRefName, string groupId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; CreateControlInGroupAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, Guid processId, string witRefName, string groupId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; CreateControlInGroupAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, valuetype System.Guid processId, string witRefName, string groupId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.CreateControlInGroupAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control,System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateControlInGroupAsync (control As Control, processId As Guid, witRefName As String, groupId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Control)" />
       <MemberSignature Language="F#" Value="member this.CreateControlInGroupAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control * Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt;" Usage="workItemTrackingProcessHttpClient.CreateControlInGroupAsync (control, processId, witRefName, groupId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -349,7 +358,7 @@
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
         <param name="groupId">The ID of the group to add the control to.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a control in a group.
@@ -359,9 +368,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateListAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; CreateListAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList picklist, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; CreateListAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList picklist, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; CreateListAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList picklist, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.CreateListAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateListAsync (picklist As PickList, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PickList)" />
       <MemberSignature Language="F#" Value="member this.CreateListAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt;" Usage="workItemTrackingProcessHttpClient.CreateListAsync (picklist, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -378,7 +388,7 @@
       </Parameters>
       <Docs>
         <param name="picklist">Picklist</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a picklist.
@@ -388,9 +398,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateNewProcessAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; CreateNewProcessAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessModel createRequest, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; CreateNewProcessAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessModel createRequest, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; CreateNewProcessAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessModel createRequest, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.CreateNewProcessAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessModel,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateNewProcessAsync (createRequest As CreateProcessModel, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessInfo)" />
       <MemberSignature Language="F#" Value="member this.CreateNewProcessAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessModel * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt;" Usage="workItemTrackingProcessHttpClient.CreateNewProcessAsync (createRequest, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -407,7 +418,7 @@
       </Parameters>
       <Docs>
         <param name="createRequest">CreateProcessModel.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a process.
@@ -417,9 +428,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateProcessBehaviorAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; CreateProcessBehaviorAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorCreateRequest behavior, Guid processId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; CreateProcessBehaviorAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorCreateRequest behavior, Guid processId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; CreateProcessBehaviorAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorCreateRequest behavior, valuetype System.Guid processId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.CreateProcessBehaviorAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorCreateRequest,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateProcessBehaviorAsync (behavior As ProcessBehaviorCreateRequest, processId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessBehavior)" />
       <MemberSignature Language="F#" Value="member this.CreateProcessBehaviorAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorCreateRequest * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt;" Usage="workItemTrackingProcessHttpClient.CreateProcessBehaviorAsync (behavior, processId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -436,9 +448,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="behavior"></param>
+        <param name="behavior" />
         <param name="processId">The ID of the process</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a single behavior in the given process.
@@ -448,9 +460,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateProcessWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; CreateProcessWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessWorkItemTypeRequest workItemType, Guid processId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; CreateProcessWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessWorkItemTypeRequest workItemType, Guid processId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; CreateProcessWorkItemTypeAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessWorkItemTypeRequest workItemType, valuetype System.Guid processId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.CreateProcessWorkItemTypeAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessWorkItemTypeRequest,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateProcessWorkItemTypeAsync (workItemType As CreateProcessWorkItemTypeRequest, processId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessWorkItemType)" />
       <MemberSignature Language="F#" Value="member this.CreateProcessWorkItemTypeAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.CreateProcessWorkItemTypeRequest * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt;" Usage="workItemTrackingProcessHttpClient.CreateProcessWorkItemTypeAsync (workItemType, processId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -467,9 +480,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="workItemType"></param>
+        <param name="workItemType" />
         <param name="processId">The ID of the process on which to create work item type.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a work item type in the process.
@@ -479,9 +492,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateStateDefinitionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; CreateStateDefinitionAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel stateModel, Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; CreateStateDefinitionAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel stateModel, Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; CreateStateDefinitionAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel stateModel, valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.CreateStateDefinitionAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateStateDefinitionAsync (stateModel As WorkItemStateInputModel, processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkItemStateResultModel)" />
       <MemberSignature Language="F#" Value="member this.CreateStateDefinitionAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt;" Usage="workItemTrackingProcessHttpClient.CreateStateDefinitionAsync (stateModel, processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -499,10 +513,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="stateModel"></param>
+        <param name="stateModel" />
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a state definition in the work item type of the process.
@@ -512,9 +526,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteListAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteListAsync (Guid listId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteListAsync (Guid listId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteListAsync(valuetype System.Guid listId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.DeleteListAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteListAsync (listId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteListAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.DeleteListAsync (listId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -531,7 +546,7 @@
       </Parameters>
       <Docs>
         <param name="listId">The ID of the list</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a picklist.
@@ -541,9 +556,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteProcessBehaviorAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProcessBehaviorAsync (Guid processId, string behaviorRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProcessBehaviorAsync (Guid processId, string behaviorRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteProcessBehaviorAsync(valuetype System.Guid processId, string behaviorRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.DeleteProcessBehaviorAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteProcessBehaviorAsync (processId As Guid, behaviorRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteProcessBehaviorAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.DeleteProcessBehaviorAsync (processId, behaviorRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -562,7 +578,7 @@
       <Docs>
         <param name="processId">The ID of the process</param>
         <param name="behaviorRefName">The reference name of the behavior</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a behavior in the process.
@@ -572,9 +588,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteProcessByIdAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProcessByIdAsync (Guid processTypeId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProcessByIdAsync (Guid processTypeId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteProcessByIdAsync(valuetype System.Guid processTypeId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.DeleteProcessByIdAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteProcessByIdAsync (processTypeId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteProcessByIdAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.DeleteProcessByIdAsync (processTypeId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -590,8 +607,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="processTypeId"></param>
-        <param name="userState"></param>
+        <param name="processTypeId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a process of a specific ID.
@@ -601,9 +618,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteProcessWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProcessWorkItemTypeAsync (Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProcessWorkItemTypeAsync (Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteProcessWorkItemTypeAsync(valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.DeleteProcessWorkItemTypeAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteProcessWorkItemTypeAsync (processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteProcessWorkItemTypeAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.DeleteProcessWorkItemTypeAsync (processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -622,7 +640,7 @@
       <Docs>
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a work itewm type in the process.
@@ -632,9 +650,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteProcessWorkItemTypeRuleAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProcessWorkItemTypeRuleAsync (Guid processId, string witRefName, Guid ruleId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProcessWorkItemTypeRuleAsync (Guid processId, string witRefName, Guid ruleId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteProcessWorkItemTypeRuleAsync(valuetype System.Guid processId, string witRefName, valuetype System.Guid ruleId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.DeleteProcessWorkItemTypeRuleAsync(System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteProcessWorkItemTypeRuleAsync (processId As Guid, witRefName As String, ruleId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteProcessWorkItemTypeRuleAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.DeleteProcessWorkItemTypeRuleAsync (processId, witRefName, ruleId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -655,7 +674,7 @@
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="ruleId">The ID of the rule</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a rule from the work item type in the process.
@@ -665,9 +684,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteStateDefinitionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteStateDefinitionAsync (Guid processId, string witRefName, Guid stateId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteStateDefinitionAsync (Guid processId, string witRefName, Guid stateId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteStateDefinitionAsync(valuetype System.Guid processId, string witRefName, valuetype System.Guid stateId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.DeleteStateDefinitionAsync(System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteStateDefinitionAsync (processId As Guid, witRefName As String, stateId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteStateDefinitionAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.DeleteStateDefinitionAsync (processId, witRefName, stateId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -688,7 +708,7 @@
         <param name="processId">ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="stateId">ID of the state</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a state definition in the work item type of the process.
@@ -698,9 +718,10 @@
       </Docs>
     </Member>
     <Member MemberName="EditProcessAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; EditProcessAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessModel updateRequest, Guid processTypeId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; EditProcessAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessModel updateRequest, Guid processTypeId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; EditProcessAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessModel updateRequest, valuetype System.Guid processTypeId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.EditProcessAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessModel,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EditProcessAsync (updateRequest As UpdateProcessModel, processTypeId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessInfo)" />
       <MemberSignature Language="F#" Value="member this.EditProcessAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessModel * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt;" Usage="workItemTrackingProcessHttpClient.EditProcessAsync (updateRequest, processTypeId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -717,9 +738,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="updateRequest"></param>
-        <param name="processTypeId"></param>
-        <param name="userState"></param>
+        <param name="updateRequest" />
+        <param name="processTypeId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Edit a process of a specific ID.
@@ -729,9 +750,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAllWorkItemTypeFieldsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt;&gt; GetAllWorkItemTypeFieldsAsync (Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt;&gt; GetAllWorkItemTypeFieldsAsync (Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt;&gt; GetAllWorkItemTypeFieldsAsync(valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetAllWorkItemTypeFieldsAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAllWorkItemTypeFieldsAsync (processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ProcessWorkItemTypeField))" />
       <MemberSignature Language="F#" Value="member this.GetAllWorkItemTypeFieldsAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt;&gt;" Usage="workItemTrackingProcessHttpClient.GetAllWorkItemTypeFieldsAsync (processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -750,7 +772,7 @@
       <Docs>
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a list of all fields in a work item type.
@@ -760,9 +782,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBehaviorForWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; GetBehaviorForWorkItemTypeAsync (Guid processId, string witRefNameForBehaviors, string behaviorRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; GetBehaviorForWorkItemTypeAsync (Guid processId, string witRefNameForBehaviors, string behaviorRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; GetBehaviorForWorkItemTypeAsync(valuetype System.Guid processId, string witRefNameForBehaviors, string behaviorRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetBehaviorForWorkItemTypeAsync(System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBehaviorForWorkItemTypeAsync (processId As Guid, witRefNameForBehaviors As String, behaviorRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkItemTypeBehavior)" />
       <MemberSignature Language="F#" Value="member this.GetBehaviorForWorkItemTypeAsync : Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt;" Usage="workItemTrackingProcessHttpClient.GetBehaviorForWorkItemTypeAsync (processId, witRefNameForBehaviors, behaviorRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -783,7 +806,7 @@
         <param name="processId">The ID of the process</param>
         <param name="witRefNameForBehaviors">Work item type reference name for the behavior</param>
         <param name="behaviorRefName">The reference name of the behavior</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a behavior for the work item type of the process.
@@ -793,9 +816,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBehaviorsForWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt;&gt; GetBehaviorsForWorkItemTypeAsync (Guid processId, string witRefNameForBehaviors, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt;&gt; GetBehaviorsForWorkItemTypeAsync (Guid processId, string witRefNameForBehaviors, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt;&gt; GetBehaviorsForWorkItemTypeAsync(valuetype System.Guid processId, string witRefNameForBehaviors, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetBehaviorsForWorkItemTypeAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBehaviorsForWorkItemTypeAsync (processId As Guid, witRefNameForBehaviors As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of WorkItemTypeBehavior))" />
       <MemberSignature Language="F#" Value="member this.GetBehaviorsForWorkItemTypeAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt;&gt;" Usage="workItemTrackingProcessHttpClient.GetBehaviorsForWorkItemTypeAsync (processId, witRefNameForBehaviors, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -814,7 +838,7 @@
       <Docs>
         <param name="processId">The ID of the process</param>
         <param name="witRefNameForBehaviors">Work item type reference name for the behavior</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a list of all behaviors for the work item type of the process.
@@ -824,9 +848,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetFormLayoutAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.FormLayout&gt; GetFormLayoutAsync (Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.FormLayout&gt; GetFormLayoutAsync (Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.FormLayout&gt; GetFormLayoutAsync(valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetFormLayoutAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFormLayoutAsync (processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of FormLayout)" />
       <MemberSignature Language="F#" Value="member this.GetFormLayoutAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.FormLayout&gt;" Usage="workItemTrackingProcessHttpClient.GetFormLayoutAsync (processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -845,7 +870,7 @@
       <Docs>
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Gets the form layout.
@@ -855,9 +880,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetListAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; GetListAsync (Guid listId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; GetListAsync (Guid listId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; GetListAsync(valuetype System.Guid listId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetListAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetListAsync (listId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PickList)" />
       <MemberSignature Language="F#" Value="member this.GetListAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt;" Usage="workItemTrackingProcessHttpClient.GetListAsync (listId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -874,7 +900,7 @@
       </Parameters>
       <Docs>
         <param name="listId">The ID of the list</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a picklist.
@@ -884,9 +910,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetListOfProcessesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt;&gt; GetListOfProcessesAsync (Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel&gt; expand = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt;&gt; GetListOfProcessesAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel? expand = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt;&gt; GetListOfProcessesAsync(valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel&gt; expand, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetListOfProcessesAsync(System.Nullable{Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetListOfProcessesAsync (Optional expand As Nullable(Of GetProcessExpandLevel) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ProcessInfo))" />
       <MemberSignature Language="F#" Value="member this.GetListOfProcessesAsync : Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt;&gt;" Usage="workItemTrackingProcessHttpClient.GetListOfProcessesAsync (expand, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -902,8 +929,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="expand"></param>
-        <param name="userState"></param>
+        <param name="expand" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get list of all processes including system and inherited.
@@ -913,9 +940,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetListsMetadataAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickListMetadata&gt;&gt; GetListsMetadataAsync (object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickListMetadata&gt;&gt; GetListsMetadataAsync (object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickListMetadata&gt;&gt; GetListsMetadataAsync(object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetListsMetadataAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetListsMetadataAsync (Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of PickListMetadata))" />
       <MemberSignature Language="F#" Value="member this.GetListsMetadataAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickListMetadata&gt;&gt;" Usage="workItemTrackingProcessHttpClient.GetListsMetadataAsync (userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -930,7 +958,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns meta data of the picklist.
@@ -940,9 +968,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessBehaviorAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; GetProcessBehaviorAsync (Guid processId, string behaviorRefName, Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand&gt; expand = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; GetProcessBehaviorAsync (Guid processId, string behaviorRefName, Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand? expand = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; GetProcessBehaviorAsync(valuetype System.Guid processId, string behaviorRefName, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand&gt; expand, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetProcessBehaviorAsync(System.Guid,System.String,System.Nullable{Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessBehaviorAsync (processId As Guid, behaviorRefName As String, Optional expand As Nullable(Of GetBehaviorsExpand) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessBehavior)" />
       <MemberSignature Language="F#" Value="member this.GetProcessBehaviorAsync : Guid * string * Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt;" Usage="workItemTrackingProcessHttpClient.GetProcessBehaviorAsync (processId, behaviorRefName, expand, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -962,8 +991,8 @@
       <Docs>
         <param name="processId">The ID of the process</param>
         <param name="behaviorRefName">The reference name of the behavior</param>
-        <param name="expand"></param>
-        <param name="userState"></param>
+        <param name="expand" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a behavior of the process.
@@ -973,9 +1002,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessBehaviorsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt;&gt; GetProcessBehaviorsAsync (Guid processId, Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand&gt; expand = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt;&gt; GetProcessBehaviorsAsync (Guid processId, Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand? expand = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt;&gt; GetProcessBehaviorsAsync(valuetype System.Guid processId, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand&gt; expand, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetProcessBehaviorsAsync(System.Guid,System.Nullable{Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessBehaviorsAsync (processId As Guid, Optional expand As Nullable(Of GetBehaviorsExpand) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ProcessBehavior))" />
       <MemberSignature Language="F#" Value="member this.GetProcessBehaviorsAsync : Guid * Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetBehaviorsExpand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt;&gt;" Usage="workItemTrackingProcessHttpClient.GetProcessBehaviorsAsync (processId, expand, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -993,8 +1023,8 @@
       </Parameters>
       <Docs>
         <param name="processId">The ID of the process</param>
-        <param name="expand"></param>
-        <param name="userState"></param>
+        <param name="expand" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a list of all behaviors in the process.
@@ -1004,9 +1034,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessByItsIdAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; GetProcessByItsIdAsync (Guid processTypeId, Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel&gt; expand = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; GetProcessByItsIdAsync (Guid processTypeId, Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel? expand = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt; GetProcessByItsIdAsync(valuetype System.Guid processTypeId, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel&gt; expand, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetProcessByItsIdAsync(System.Guid,System.Nullable{Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessByItsIdAsync (processTypeId As Guid, Optional expand As Nullable(Of GetProcessExpandLevel) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessInfo)" />
       <MemberSignature Language="F#" Value="member this.GetProcessByItsIdAsync : Guid * Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetProcessExpandLevel&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessInfo&gt;" Usage="workItemTrackingProcessHttpClient.GetProcessByItsIdAsync (processTypeId, expand, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1023,9 +1054,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="processTypeId"></param>
-        <param name="expand"></param>
-        <param name="userState"></param>
+        <param name="processTypeId" />
+        <param name="expand" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a single process of a specified ID.
@@ -1035,9 +1066,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; GetProcessWorkItemTypeAsync (Guid processId, string witRefName, Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand&gt; expand = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; GetProcessWorkItemTypeAsync (Guid processId, string witRefName, Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand? expand = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; GetProcessWorkItemTypeAsync(valuetype System.Guid processId, string witRefName, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand&gt; expand, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetProcessWorkItemTypeAsync(System.Guid,System.String,System.Nullable{Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessWorkItemTypeAsync (processId As Guid, witRefName As String, Optional expand As Nullable(Of GetWorkItemTypeExpand) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessWorkItemType)" />
       <MemberSignature Language="F#" Value="member this.GetProcessWorkItemTypeAsync : Guid * string * Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt;" Usage="workItemTrackingProcessHttpClient.GetProcessWorkItemTypeAsync (processId, witRefName, expand, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1058,7 +1090,7 @@
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="expand">Flag to determine what properties of work item type to return</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a single work item type in a process.
@@ -1068,9 +1100,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessWorkItemTypeRuleAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; GetProcessWorkItemTypeRuleAsync (Guid processId, string witRefName, Guid ruleId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; GetProcessWorkItemTypeRuleAsync (Guid processId, string witRefName, Guid ruleId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; GetProcessWorkItemTypeRuleAsync(valuetype System.Guid processId, string witRefName, valuetype System.Guid ruleId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetProcessWorkItemTypeRuleAsync(System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessWorkItemTypeRuleAsync (processId As Guid, witRefName As String, ruleId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessRule)" />
       <MemberSignature Language="F#" Value="member this.GetProcessWorkItemTypeRuleAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt;" Usage="workItemTrackingProcessHttpClient.GetProcessWorkItemTypeRuleAsync (processId, witRefName, ruleId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1091,7 +1124,7 @@
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="ruleId">The ID of the rule</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a single rule in the work item type of the process.
@@ -1101,9 +1134,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessWorkItemTypeRulesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt;&gt; GetProcessWorkItemTypeRulesAsync (Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt;&gt; GetProcessWorkItemTypeRulesAsync (Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt;&gt; GetProcessWorkItemTypeRulesAsync(valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetProcessWorkItemTypeRulesAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessWorkItemTypeRulesAsync (processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ProcessRule))" />
       <MemberSignature Language="F#" Value="member this.GetProcessWorkItemTypeRulesAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt;&gt;" Usage="workItemTrackingProcessHttpClient.GetProcessWorkItemTypeRulesAsync (processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1122,7 +1156,7 @@
       <Docs>
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a list of all rules in the work item type of the process.
@@ -1132,9 +1166,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessWorkItemTypesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt;&gt; GetProcessWorkItemTypesAsync (Guid processId, Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand&gt; expand = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt;&gt; GetProcessWorkItemTypesAsync (Guid processId, Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand? expand = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt;&gt; GetProcessWorkItemTypesAsync(valuetype System.Guid processId, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand&gt; expand, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetProcessWorkItemTypesAsync(System.Guid,System.Nullable{Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessWorkItemTypesAsync (processId As Guid, Optional expand As Nullable(Of GetWorkItemTypeExpand) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ProcessWorkItemType))" />
       <MemberSignature Language="F#" Value="member this.GetProcessWorkItemTypesAsync : Guid * Nullable&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.GetWorkItemTypeExpand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt;&gt;" Usage="workItemTrackingProcessHttpClient.GetProcessWorkItemTypesAsync (processId, expand, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1153,7 +1188,7 @@
       <Docs>
         <param name="processId">The ID of the process</param>
         <param name="expand">Flag to determine what properties of work item type to return</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a list of all work item types in a process.
@@ -1163,9 +1198,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetStateDefinitionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; GetStateDefinitionAsync (Guid processId, string witRefName, Guid stateId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; GetStateDefinitionAsync (Guid processId, string witRefName, Guid stateId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; GetStateDefinitionAsync(valuetype System.Guid processId, string witRefName, valuetype System.Guid stateId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetStateDefinitionAsync(System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStateDefinitionAsync (processId As Guid, witRefName As String, stateId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkItemStateResultModel)" />
       <MemberSignature Language="F#" Value="member this.GetStateDefinitionAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt;" Usage="workItemTrackingProcessHttpClient.GetStateDefinitionAsync (processId, witRefName, stateId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1186,7 +1222,7 @@
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="stateId">The ID of the state</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a single state definition in a work item type of the process.
@@ -1196,9 +1232,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetStateDefinitionsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt;&gt; GetStateDefinitionsAsync (Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt;&gt; GetStateDefinitionsAsync (Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt;&gt; GetStateDefinitionsAsync(valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetStateDefinitionsAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStateDefinitionsAsync (processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of WorkItemStateResultModel))" />
       <MemberSignature Language="F#" Value="member this.GetStateDefinitionsAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt;&gt;" Usage="workItemTrackingProcessHttpClient.GetStateDefinitionsAsync (processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1217,7 +1254,7 @@
       <Docs>
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a list of all state definitions in a work item type of the process.
@@ -1227,9 +1264,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWorkItemTypeFieldAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; GetWorkItemTypeFieldAsync (Guid processId, string witRefName, string fieldRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; GetWorkItemTypeFieldAsync (Guid processId, string witRefName, string fieldRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; GetWorkItemTypeFieldAsync(valuetype System.Guid processId, string witRefName, string fieldRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.GetWorkItemTypeFieldAsync(System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWorkItemTypeFieldAsync (processId As Guid, witRefName As String, fieldRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessWorkItemTypeField)" />
       <MemberSignature Language="F#" Value="member this.GetWorkItemTypeFieldAsync : Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt;" Usage="workItemTrackingProcessHttpClient.GetWorkItemTypeFieldAsync (processId, witRefName, fieldRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1250,7 +1288,7 @@
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
         <param name="fieldRefName">The reference name of the field.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns a field in a work item type.
@@ -1260,9 +1298,10 @@
       </Docs>
     </Member>
     <Member MemberName="HideStateDefinitionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; HideStateDefinitionAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.HideStateModel hideStateModel, Guid processId, string witRefName, Guid stateId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; HideStateDefinitionAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.HideStateModel hideStateModel, Guid processId, string witRefName, Guid stateId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; HideStateDefinitionAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.HideStateModel hideStateModel, valuetype System.Guid processId, string witRefName, valuetype System.Guid stateId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.HideStateDefinitionAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.HideStateModel,System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HideStateDefinitionAsync (hideStateModel As HideStateModel, processId As Guid, witRefName As String, stateId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkItemStateResultModel)" />
       <MemberSignature Language="F#" Value="member this.HideStateDefinitionAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.HideStateModel * Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt;" Usage="workItemTrackingProcessHttpClient.HideStateDefinitionAsync (hideStateModel, processId, witRefName, stateId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1281,11 +1320,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="hideStateModel"></param>
+        <param name="hideStateModel" />
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="stateId">The ID of the state</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Hides a state definition in the work item type of the process.Only states with customizationType:System can be hidden.
@@ -1295,9 +1334,10 @@
       </Docs>
     </Member>
     <Member MemberName="MoveControlToGroupAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; MoveControlToGroupAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, Guid processId, string witRefName, string groupId, string controlId, string removeFromGroupId = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; MoveControlToGroupAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, Guid processId, string witRefName, string groupId, string controlId, string removeFromGroupId = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; MoveControlToGroupAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, valuetype System.Guid processId, string witRefName, string groupId, string controlId, string removeFromGroupId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.MoveControlToGroupAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control,System.Guid,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveControlToGroupAsync (control As Control, processId As Guid, witRefName As String, groupId As String, controlId As String, Optional removeFromGroupId As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Control)" />
       <MemberSignature Language="F#" Value="member this.MoveControlToGroupAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control * Guid * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt;" Usage="workItemTrackingProcessHttpClient.MoveControlToGroupAsync (control, processId, witRefName, groupId, controlId, removeFromGroupId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1324,7 +1364,7 @@
         <param name="groupId">The ID of the group to move the control to.</param>
         <param name="controlId">The ID of the control.</param>
         <param name="removeFromGroupId">The group ID to remove the control from.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Moves a control to a specified group.
@@ -1334,9 +1374,10 @@
       </Docs>
     </Member>
     <Member MemberName="MoveGroupToPageAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; MoveGroupToPageAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, Guid processId, string witRefName, string pageId, string sectionId, string groupId, string removeFromPageId, string removeFromSectionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; MoveGroupToPageAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, Guid processId, string witRefName, string pageId, string sectionId, string groupId, string removeFromPageId, string removeFromSectionId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; MoveGroupToPageAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, valuetype System.Guid processId, string witRefName, string pageId, string sectionId, string groupId, string removeFromPageId, string removeFromSectionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.MoveGroupToPageAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group,System.Guid,System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveGroupToPageAsync (group As Group, processId As Guid, witRefName As String, pageId As String, sectionId As String, groupId As String, removeFromPageId As String, removeFromSectionId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Group)" />
       <MemberSignature Language="F#" Value="member this.MoveGroupToPageAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group * Guid * string * string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt;" Usage="workItemTrackingProcessHttpClient.MoveGroupToPageAsync (group, processId, witRefName, pageId, sectionId, groupId, removeFromPageId, removeFromSectionId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1367,7 +1408,7 @@
         <param name="groupId">The ID of the group.</param>
         <param name="removeFromPageId">ID of the page to remove the group from.</param>
         <param name="removeFromSectionId">ID of the section to remove the group from.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Moves a group to a different page and section.
@@ -1377,9 +1418,10 @@
       </Docs>
     </Member>
     <Member MemberName="MoveGroupToSectionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; MoveGroupToSectionAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, Guid processId, string witRefName, string pageId, string sectionId, string groupId, string removeFromSectionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; MoveGroupToSectionAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, Guid processId, string witRefName, string pageId, string sectionId, string groupId, string removeFromSectionId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; MoveGroupToSectionAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, valuetype System.Guid processId, string witRefName, string pageId, string sectionId, string groupId, string removeFromSectionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.MoveGroupToSectionAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group,System.Guid,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveGroupToSectionAsync (group As Group, processId As Guid, witRefName As String, pageId As String, sectionId As String, groupId As String, removeFromSectionId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Group)" />
       <MemberSignature Language="F#" Value="member this.MoveGroupToSectionAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group * Guid * string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt;" Usage="workItemTrackingProcessHttpClient.MoveGroupToSectionAsync (group, processId, witRefName, pageId, sectionId, groupId, removeFromSectionId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1408,7 +1450,7 @@
         <param name="sectionId">The ID of the section the group is in.</param>
         <param name="groupId">The ID of the group.</param>
         <param name="removeFromSectionId">ID of the section to remove the group from.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Moves a group to a different section.
@@ -1418,9 +1460,10 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveBehaviorFromWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveBehaviorFromWorkItemTypeAsync (Guid processId, string witRefNameForBehaviors, string behaviorRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveBehaviorFromWorkItemTypeAsync (Guid processId, string witRefNameForBehaviors, string behaviorRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveBehaviorFromWorkItemTypeAsync(valuetype System.Guid processId, string witRefNameForBehaviors, string behaviorRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.RemoveBehaviorFromWorkItemTypeAsync(System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveBehaviorFromWorkItemTypeAsync (processId As Guid, witRefNameForBehaviors As String, behaviorRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.RemoveBehaviorFromWorkItemTypeAsync : Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.RemoveBehaviorFromWorkItemTypeAsync (processId, witRefNameForBehaviors, behaviorRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1441,7 +1484,7 @@
         <param name="processId">The ID of the process</param>
         <param name="witRefNameForBehaviors">Work item type reference name for the behavior</param>
         <param name="behaviorRefName">The reference name of the behavior</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a behavior for the work item type of the process.
@@ -1451,9 +1494,10 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveControlFromGroupAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveControlFromGroupAsync (Guid processId, string witRefName, string groupId, string controlId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveControlFromGroupAsync (Guid processId, string witRefName, string groupId, string controlId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveControlFromGroupAsync(valuetype System.Guid processId, string witRefName, string groupId, string controlId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.RemoveControlFromGroupAsync(System.Guid,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveControlFromGroupAsync (processId As Guid, witRefName As String, groupId As String, controlId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.RemoveControlFromGroupAsync : Guid * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.RemoveControlFromGroupAsync (processId, witRefName, groupId, controlId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1476,7 +1520,7 @@
         <param name="witRefName">The reference name of the work item type.</param>
         <param name="groupId">The ID of the group.</param>
         <param name="controlId">The ID of the control to remove.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a control from the work item form.
@@ -1486,9 +1530,10 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveGroupAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveGroupAsync (Guid processId, string witRefName, string pageId, string sectionId, string groupId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveGroupAsync (Guid processId, string witRefName, string pageId, string sectionId, string groupId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveGroupAsync(valuetype System.Guid processId, string witRefName, string pageId, string sectionId, string groupId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.RemoveGroupAsync(System.Guid,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveGroupAsync (processId As Guid, witRefName As String, pageId As String, sectionId As String, groupId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.RemoveGroupAsync : Guid * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.RemoveGroupAsync (processId, witRefName, pageId, sectionId, groupId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1513,7 +1558,7 @@
         <param name="pageId">The ID of the page the group is in</param>
         <param name="sectionId">The ID of the section to the group is in</param>
         <param name="groupId">The ID of the group</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a group from the work item form.
@@ -1523,9 +1568,10 @@
       </Docs>
     </Member>
     <Member MemberName="RemovePageAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemovePageAsync (Guid processId, string witRefName, string pageId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemovePageAsync (Guid processId, string witRefName, string pageId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemovePageAsync(valuetype System.Guid processId, string witRefName, string pageId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.RemovePageAsync(System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemovePageAsync (processId As Guid, witRefName As String, pageId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.RemovePageAsync : Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.RemovePageAsync (processId, witRefName, pageId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1546,7 +1592,7 @@
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="pageId">The ID of the page</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a page from the work item form
@@ -1556,9 +1602,10 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveWorkItemTypeFieldAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveWorkItemTypeFieldAsync (Guid processId, string witRefName, string fieldRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveWorkItemTypeFieldAsync (Guid processId, string witRefName, string fieldRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveWorkItemTypeFieldAsync(valuetype System.Guid processId, string witRefName, string fieldRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.RemoveWorkItemTypeFieldAsync(System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveWorkItemTypeFieldAsync (processId As Guid, witRefName As String, fieldRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.RemoveWorkItemTypeFieldAsync : Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workItemTrackingProcessHttpClient.RemoveWorkItemTypeFieldAsync (processId, witRefName, fieldRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1579,7 +1626,7 @@
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
         <param name="fieldRefName">The reference name of the field.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Removes a field from a work item type. Does not permanently delete the field.
@@ -1589,9 +1636,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateBehaviorToWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; UpdateBehaviorToWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior behavior, Guid processId, string witRefNameForBehaviors, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; UpdateBehaviorToWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior behavior, Guid processId, string witRefNameForBehaviors, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt; UpdateBehaviorToWorkItemTypeAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior behavior, valuetype System.Guid processId, string witRefNameForBehaviors, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateBehaviorToWorkItemTypeAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateBehaviorToWorkItemTypeAsync (behavior As WorkItemTypeBehavior, processId As Guid, witRefNameForBehaviors As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkItemTypeBehavior)" />
       <MemberSignature Language="F#" Value="member this.UpdateBehaviorToWorkItemTypeAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemTypeBehavior&gt;" Usage="workItemTrackingProcessHttpClient.UpdateBehaviorToWorkItemTypeAsync (behavior, processId, witRefNameForBehaviors, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1609,10 +1657,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="behavior"></param>
+        <param name="behavior" />
         <param name="processId">The ID of the process</param>
         <param name="witRefNameForBehaviors">Work item type reference name for the behavior</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a behavior for the work item type of the process.
@@ -1622,9 +1670,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateControlAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; UpdateControlAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, Guid processId, string witRefName, string groupId, string controlId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; UpdateControlAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, Guid processId, string witRefName, string groupId, string controlId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt; UpdateControlAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control control, valuetype System.Guid processId, string witRefName, string groupId, string controlId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateControlAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control,System.Guid,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateControlAsync (control As Control, processId As Guid, witRefName As String, groupId As String, controlId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Control)" />
       <MemberSignature Language="F#" Value="member this.UpdateControlAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control * Guid * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Control&gt;" Usage="workItemTrackingProcessHttpClient.UpdateControlAsync (control, processId, witRefName, groupId, controlId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1649,7 +1698,7 @@
         <param name="witRefName">The reference name of the work item type.</param>
         <param name="groupId">The ID of the group.</param>
         <param name="controlId">The ID of the control.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a control on the work item form.
@@ -1659,9 +1708,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateGroupAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; UpdateGroupAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, Guid processId, string witRefName, string pageId, string sectionId, string groupId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; UpdateGroupAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, Guid processId, string witRefName, string pageId, string sectionId, string groupId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt; UpdateGroupAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group group, valuetype System.Guid processId, string witRefName, string pageId, string sectionId, string groupId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateGroupAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group,System.Guid,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateGroupAsync (group As Group, processId As Guid, witRefName As String, pageId As String, sectionId As String, groupId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Group)" />
       <MemberSignature Language="F#" Value="member this.UpdateGroupAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group * Guid * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Group&gt;" Usage="workItemTrackingProcessHttpClient.UpdateGroupAsync (group, processId, witRefName, pageId, sectionId, groupId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1688,7 +1738,7 @@
         <param name="pageId">The ID of the page the group is in.</param>
         <param name="sectionId">The ID of the section the group is in.</param>
         <param name="groupId">The ID of the group.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a group in the work item form.
@@ -1698,9 +1748,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateListAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; UpdateListAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList picklist, Guid listId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; UpdateListAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList picklist, Guid listId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt; UpdateListAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList picklist, valuetype System.Guid listId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateListAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateListAsync (picklist As PickList, listId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PickList)" />
       <MemberSignature Language="F#" Value="member this.UpdateListAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.PickList&gt;" Usage="workItemTrackingProcessHttpClient.UpdateListAsync (picklist, listId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1717,9 +1768,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="picklist"></param>
+        <param name="picklist" />
         <param name="listId">The ID of the list</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a list.
@@ -1729,9 +1780,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdatePageAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page&gt; UpdatePageAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page page, Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page&gt; UpdatePageAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page page, Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page&gt; UpdatePageAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page page, valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdatePageAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdatePageAsync (page As Page, processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Page)" />
       <MemberSignature Language="F#" Value="member this.UpdatePageAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.Page&gt;" Usage="workItemTrackingProcessHttpClient.UpdatePageAsync (page, processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1752,7 +1804,7 @@
         <param name="page">The page</param>
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a page on the work item form
@@ -1762,9 +1814,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateProcessBehaviorAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; UpdateProcessBehaviorAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorUpdateRequest behaviorData, Guid processId, string behaviorRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; UpdateProcessBehaviorAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorUpdateRequest behaviorData, Guid processId, string behaviorRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt; UpdateProcessBehaviorAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorUpdateRequest behaviorData, valuetype System.Guid processId, string behaviorRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateProcessBehaviorAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorUpdateRequest,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateProcessBehaviorAsync (behaviorData As ProcessBehaviorUpdateRequest, processId As Guid, behaviorRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessBehavior)" />
       <MemberSignature Language="F#" Value="member this.UpdateProcessBehaviorAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehaviorUpdateRequest * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessBehavior&gt;" Usage="workItemTrackingProcessHttpClient.UpdateProcessBehaviorAsync (behaviorData, processId, behaviorRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1782,10 +1835,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="behaviorData"></param>
+        <param name="behaviorData" />
         <param name="processId">The ID of the process</param>
         <param name="behaviorRefName">The reference name of the behavior</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Replaces a behavior in the process.
@@ -1795,9 +1848,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateProcessWorkItemTypeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; UpdateProcessWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeRequest workItemTypeUpdate, Guid processId, string witRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; UpdateProcessWorkItemTypeAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeRequest workItemTypeUpdate, Guid processId, string witRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt; UpdateProcessWorkItemTypeAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeRequest workItemTypeUpdate, valuetype System.Guid processId, string witRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateProcessWorkItemTypeAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeRequest,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateProcessWorkItemTypeAsync (workItemTypeUpdate As UpdateProcessWorkItemTypeRequest, processId As Guid, witRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessWorkItemType)" />
       <MemberSignature Language="F#" Value="member this.UpdateProcessWorkItemTypeAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeRequest * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemType&gt;" Usage="workItemTrackingProcessHttpClient.UpdateProcessWorkItemTypeAsync (workItemTypeUpdate, processId, witRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1815,10 +1869,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="workItemTypeUpdate"></param>
+        <param name="workItemTypeUpdate" />
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a work item type of the process.
@@ -1828,9 +1882,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateProcessWorkItemTypeRuleAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; UpdateProcessWorkItemTypeRuleAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessRuleRequest processRule, Guid processId, string witRefName, Guid ruleId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; UpdateProcessWorkItemTypeRuleAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessRuleRequest processRule, Guid processId, string witRefName, Guid ruleId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt; UpdateProcessWorkItemTypeRuleAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessRuleRequest processRule, valuetype System.Guid processId, string witRefName, valuetype System.Guid ruleId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateProcessWorkItemTypeRuleAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessRuleRequest,System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateProcessWorkItemTypeRuleAsync (processRule As UpdateProcessRuleRequest, processId As Guid, witRefName As String, ruleId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessRule)" />
       <MemberSignature Language="F#" Value="member this.UpdateProcessWorkItemTypeRuleAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessRuleRequest * Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessRule&gt;" Usage="workItemTrackingProcessHttpClient.UpdateProcessWorkItemTypeRuleAsync (processRule, processId, witRefName, ruleId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1849,11 +1904,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="processRule"></param>
+        <param name="processRule" />
         <param name="processId">The ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="ruleId">The ID of the rule</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a rule in the work item type of the process.
@@ -1863,9 +1918,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateStateDefinitionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; UpdateStateDefinitionAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel stateModel, Guid processId, string witRefName, Guid stateId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; UpdateStateDefinitionAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel stateModel, Guid processId, string witRefName, Guid stateId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt; UpdateStateDefinitionAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel stateModel, valuetype System.Guid processId, string witRefName, valuetype System.Guid stateId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateStateDefinitionAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel,System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateStateDefinitionAsync (stateModel As WorkItemStateInputModel, processId As Guid, witRefName As String, stateId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WorkItemStateResultModel)" />
       <MemberSignature Language="F#" Value="member this.UpdateStateDefinitionAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateInputModel * Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.WorkItemStateResultModel&gt;" Usage="workItemTrackingProcessHttpClient.UpdateStateDefinitionAsync (stateModel, processId, witRefName, stateId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1884,11 +1940,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="stateModel"></param>
+        <param name="stateModel" />
         <param name="processId">ID of the process</param>
         <param name="witRefName">The reference name of the work item type</param>
         <param name="stateId">ID of the state</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a given state definition in the work item type of the process.
@@ -1898,9 +1954,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateWorkItemTypeFieldAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; UpdateWorkItemTypeFieldAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeFieldRequest field, Guid processId, string witRefName, string fieldRefName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; UpdateWorkItemTypeFieldAsync (Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeFieldRequest field, Guid processId, string witRefName, string fieldRefName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt; UpdateWorkItemTypeFieldAsync(class Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeFieldRequest field, valuetype System.Guid processId, string witRefName, string fieldRefName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.WorkItemTrackingProcessHttpClient.UpdateWorkItemTypeFieldAsync(Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeFieldRequest,System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateWorkItemTypeFieldAsync (field As UpdateProcessWorkItemTypeFieldRequest, processId As Guid, witRefName As String, fieldRefName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessWorkItemTypeField)" />
       <MemberSignature Language="F#" Value="member this.UpdateWorkItemTypeFieldAsync : Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.UpdateProcessWorkItemTypeFieldRequest * Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.WorkItemTracking.Process.WebApi.Models.ProcessWorkItemTypeField&gt;" Usage="workItemTrackingProcessHttpClient.UpdateWorkItemTypeFieldAsync (field, processId, witRefName, fieldRefName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1919,11 +1976,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="field"></param>
+        <param name="field" />
         <param name="processId">The ID of the process.</param>
         <param name="witRefName">The reference name of the work item type.</param>
         <param name="fieldRefName">The reference name of the field.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Updates a field in a work item type.

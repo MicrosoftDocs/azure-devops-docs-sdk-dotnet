@@ -1,4 +1,4 @@
-﻿<Type Name="TaskVersionSpec" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec">
+<Type Name="TaskVersionSpec" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec">
   <TypeSignature Language="C#" Value="public sealed class TaskVersionSpec" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TaskVersionSpec extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec" />
@@ -59,7 +59,7 @@
       </Docs>
     </Member>
     <Member MemberName="Major">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Major { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Major { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Major" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec.Major" />
       <MemberSignature Language="VB.NET" Value="Public Property Major As Nullable(Of Integer)" />
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="definitions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt;" />
+        <Parameter Name="definitions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="definitions">To be added.</param>
@@ -134,7 +134,7 @@
       </Docs>
     </Member>
     <Member MemberName="Minor">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Minor { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Minor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Minor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec.Minor" />
       <MemberSignature Language="VB.NET" Value="Public Property Minor As Nullable(Of Integer)" />
@@ -210,7 +210,7 @@
       </Docs>
     </Member>
     <Member MemberName="Patch">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Patch { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Patch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Patch" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec.Patch" />
       <MemberSignature Language="VB.NET" Value="Public Property Patch As Nullable(Of Integer)" />
@@ -261,7 +261,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string version, [out] class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec&amp; versionSpec) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec.TryParse(System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (version As String, ByRef versionSpec As TaskVersionSpec) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec.TryParse (version, versionSpec)" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * TaskVersionSpec -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersionSpec.TryParse (version, versionSpec)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>

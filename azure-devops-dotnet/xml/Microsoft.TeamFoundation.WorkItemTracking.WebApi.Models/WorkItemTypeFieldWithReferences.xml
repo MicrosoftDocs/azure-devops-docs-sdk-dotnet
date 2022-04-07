@@ -1,4 +1,4 @@
-﻿<Type Name="WorkItemTypeFieldWithReferences" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTypeFieldWithReferences">
+<Type Name="WorkItemTypeFieldWithReferences" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTypeFieldWithReferences">
   <TypeSignature Language="C#" Value="public class WorkItemTypeFieldWithReferences : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTypeFieldInstanceBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkItemTypeFieldWithReferences extends Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTypeFieldInstanceBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTypeFieldWithReferences" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -98,10 +99,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.WorkItemTracking.WebApi.ValueArrayConverter))</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.WorkItemTracking.WebApi.ValueArrayConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.WorkItemTracking.WebApi.ValueArrayConverter))&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -128,14 +131,17 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-latest;azure-devops-dotnet">
-          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.WorkItemTracking.WebApi.WorkItemFieldValueConverter))</AttributeName>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.WorkItemTracking.WebApi.WorkItemFieldValueConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.WorkItemTracking.WebApi.WorkItemFieldValueConverter))&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Core.WebApi.IdentityRefOrJValueConverter))</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Core.WebApi.IdentityRefOrJValueConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Core.WebApi.IdentityRefOrJValueConverter))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

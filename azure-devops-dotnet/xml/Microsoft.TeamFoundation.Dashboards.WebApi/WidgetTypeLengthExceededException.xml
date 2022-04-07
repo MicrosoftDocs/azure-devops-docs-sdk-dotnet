@@ -1,4 +1,4 @@
-﻿<Type Name="WidgetTypeLengthExceededException" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypeLengthExceededException">
+<Type Name="WidgetTypeLengthExceededException" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypeLengthExceededException">
   <TypeSignature Language="C#" Value="public class WidgetTypeLengthExceededException : Microsoft.TeamFoundation.TeamFoundationServerException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WidgetTypeLengthExceededException extends Microsoft.TeamFoundation.TeamFoundationServerException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypeLengthExceededException" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,6 +45,7 @@
       <MemberSignature Language="C#" Value="public WidgetTypeLengthExceededException (Microsoft.VisualStudio.Services.WebApi.WrappedException wrappedException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualStudio.Services.WebApi.WrappedException wrappedException) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypeLengthExceededException.#ctor(Microsoft.VisualStudio.Services.WebApi.WrappedException)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (wrappedException As WrappedException)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypeLengthExceededException : Microsoft.VisualStudio.Services.WebApi.WrappedException -&gt; Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypeLengthExceededException" Usage="new Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypeLengthExceededException wrappedException" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -53,14 +55,15 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="wrappedException" Type="Microsoft.VisualStudio.Services.WebApi.WrappedException" />
       </Parameters>
       <Docs>
-        <param name="wrappedException"></param>
+        <param name="wrappedException" />
         <summary>
             This overload gets called when a WrappedException is unwrapped.  In this case we
             want to keep the orignal message intact.

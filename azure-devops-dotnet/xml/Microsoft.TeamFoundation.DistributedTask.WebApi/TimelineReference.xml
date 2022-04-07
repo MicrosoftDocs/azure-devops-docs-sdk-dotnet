@@ -1,4 +1,4 @@
-﻿<Type Name="TimelineReference" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference">
+<Type Name="TimelineReference" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference">
   <TypeSignature Language="C#" Value="public class TimelineReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TimelineReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,11 +42,14 @@
       </Docs>
     </Member>
     <Member MemberName="ChangeId">
-      <MemberSignature Language="C#" Value="public int ChangeId { get; set; }" />
+      <MemberSignature Language="C#" Value="public int ChangeId { get; }" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ChangeId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference.ChangeId" />
-      <MemberSignature Language="VB.NET" Value="Public Property ChangeId As Integer" />
-      <MemberSignature Language="F#" Value="member this.ChangeId : int with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference.ChangeId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeId As Integer" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.ChangeId : int" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference.ChangeId" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public int ChangeId { get; set; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeId As Integer" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.ChangeId : int with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference.ChangeId" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -54,7 +58,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Order=2)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Order=2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Order=2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -67,11 +72,14 @@
       </Docs>
     </Member>
     <Member MemberName="Id">
-      <MemberSignature Language="C#" Value="public Guid Id { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid Id { get; }" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference.Id" />
-      <MemberSignature Language="VB.NET" Value="Public Property Id As Guid" />
-      <MemberSignature Language="F#" Value="member this.Id : Guid with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference.Id" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public Guid Id { get; set; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As Guid" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference.Id" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -80,7 +88,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Order=1)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Order=1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Order=1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,7 +115,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Order=3)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Order=3)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Order=3)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

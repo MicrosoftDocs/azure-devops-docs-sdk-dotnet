@@ -1,4 +1,4 @@
-﻿<Type Name="ExtensionManifestMethods" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifestMethods">
+<Type Name="ExtensionManifestMethods" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifestMethods">
   <TypeSignature Language="C#" Value="public static class ExtensionManifestMethods" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ExtensionManifestMethods extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifestMethods" />
@@ -19,9 +19,10 @@
   </Docs>
   <Members>
     <Member MemberName="GetTemplateUriProperty">
-      <MemberSignature Language="C#" Value="public static string GetTemplateUriProperty (this Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest extensionManifest, string uriTemplate, object replacementValues, Microsoft.VisualStudio.Services.WebApi.MustacheTemplateParser customTemplateParser = null, System.Collections.Generic.Dictionary&lt;string,object&gt; additionalEvaluationData = null);" />
+      <MemberSignature Language="C#" Value="public static string GetTemplateUriProperty (this Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest extensionManifest, string uriTemplate, object replacementValues, Microsoft.VisualStudio.Services.WebApi.MustacheTemplateParser customTemplateParser = default, System.Collections.Generic.Dictionary&lt;string,object&gt; additionalEvaluationData = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTemplateUriProperty(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest extensionManifest, string uriTemplate, object replacementValues, class Microsoft.VisualStudio.Services.WebApi.MustacheTemplateParser customTemplateParser, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; additionalEvaluationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifestMethods.GetTemplateUriProperty(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest,System.String,System.Object,Microsoft.VisualStudio.Services.WebApi.MustacheTemplateParser,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTemplateUriProperty (extensionManifest As ExtensionManifest, uriTemplate As String, replacementValues As Object, Optional customTemplateParser As MustacheTemplateParser = Nothing, Optional additionalEvaluationData As Dictionary(Of String, Object) = Nothing) As String" />
       <MemberSignature Language="F#" Value="static member GetTemplateUriProperty : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest * string * obj * Microsoft.VisualStudio.Services.WebApi.MustacheTemplateParser * System.Collections.Generic.Dictionary&lt;string, obj&gt; -&gt; string" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifestMethods.GetTemplateUriProperty (extensionManifest, uriTemplate, replacementValues, customTemplateParser, additionalEvaluationData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -40,11 +41,11 @@
         <Parameter Name="additionalEvaluationData" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
+        <param name="additionalEvaluationData">To be added.</param>
         <param name="extensionManifest">ExtensionManifest to complete the URI from</param>
         <param name="uriTemplate">Templated value of the URI</param>
         <param name="replacementValues">Replacement values to use in the template translation</param>
         <param name="customTemplateParser">Optional template parser that can be used in place of the default</param>
-        <param name="additionalEvaluationData">To be added.</param>
         <summary>
             Get a contribution property value and resolve it as a mustache template, using the given replacements object
             </summary>

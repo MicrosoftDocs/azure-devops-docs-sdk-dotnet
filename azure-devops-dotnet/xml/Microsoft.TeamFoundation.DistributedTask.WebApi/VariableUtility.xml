@@ -1,4 +1,4 @@
-﻿<Type Name="VariableUtility" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility">
+<Type Name="VariableUtility" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility">
   <TypeSignature Language="C#" Value="public static class VariableUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VariableUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.VariableUtility" />
@@ -39,9 +39,9 @@
         <Parameter Name="useMachineVariables" Type="System.Boolean" />
       </Parameters>
       <Docs>
+        <param name="useMachineVariables">To be added.</param>
         <param name="condition">Task condition</param>
         <param name="additionalVariableReplacements">List of variables and their replacement values</param>
-        <param name="useMachineVariables">To be added.</param>
         <summary>
             Replaces variable references of the form variables['variable_name'] with corresponding replacement values
             </summary>
@@ -64,8 +64,8 @@
         <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
-        <Parameter Name="replacementDictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="replacementDictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="token">root token must be a JObject or JArray</param>
@@ -153,9 +153,9 @@
         <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
-        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" />
-        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="token">To be added.</param>
@@ -181,14 +181,14 @@
         <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
-        <Parameter Name="replacementDictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="replacementDictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
+        <param name="useMachineVariables">To be added.</param>
         <param name="token">root token must be a JObject or JArray</param>
         <param name="replacementDictionary">key value variables to replace in the $(xxx) format</param>
-        <param name="useMachineVariables">To be added.</param>
         <summary>
             Replaces variables by recursively cloning tokens in a JObject or JArray by 
             Walks tokens and uses ExpandVariables(string, vars) to resolve all string tokens
@@ -212,9 +212,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" />
-        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" />
-        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" Index="2" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
@@ -244,9 +244,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" />
-        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
-        <Parameter Name="useMachineVariables" Type="System.Boolean" />
+        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" Index="2" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
@@ -282,8 +282,8 @@
         <Parameter Name="useMachineVariables" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
         <param name="additionalVariableReplacements">To be added.</param>
+        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
         <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
         <summary>
             Replaces variable references of the form $(variable) with the corresponding replacement value. Values 
@@ -309,16 +309,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" />
-        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" />
-        <Parameter Name="useMachineVariables" Type="System.Boolean" />
-        <Parameter Name="maskSecrets" Type="System.Boolean" />
+        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="additionalVariableReplacements" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariablesDictionary" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="maskSecrets" Type="System.Boolean" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
         <param name="additionalVariableReplacements">To be added.</param>
-        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
         <param name="maskSecrets">To be added.</param>
+        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
+        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
         <summary>
             Replaces variable references of the form $(variable) with the corresponding replacement value. Values 
             populated into the environment directly are used first. If no value is found in the automation environment
@@ -343,16 +343,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" />
-        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
-        <Parameter Name="useMachineVariables" Type="System.Boolean" />
-        <Parameter Name="maskSecrets" Type="System.Boolean" />
+        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="additionalVariableReplacements" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="useMachineVariables" Type="System.Boolean" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="maskSecrets" Type="System.Boolean" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
         <param name="additionalVariableReplacements">To be added.</param>
-        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
         <param name="maskSecrets">To be added.</param>
+        <param name="input">The value which should be analyzed for environment variables and updated accordingly</param>
+        <param name="useMachineVariables">Use the machine's environment variables when it is true</param>
         <summary>
             Replaces variable references of the form $(variable) with the corresponding replacement value. Values 
             populated into the environment directly are used first. If no value is found in the automation environment

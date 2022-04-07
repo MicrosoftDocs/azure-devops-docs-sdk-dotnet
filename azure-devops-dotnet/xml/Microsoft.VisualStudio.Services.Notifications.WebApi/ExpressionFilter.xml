@@ -1,4 +1,4 @@
-﻿<Type Name="ExpressionFilter" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilter">
+<Type Name="ExpressionFilter" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilter">
   <TypeSignature Language="C#" Value="public class ExpressionFilter : Microsoft.VisualStudio.Services.Notifications.WebApi.BaseSubscriptionFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressionFilter extends Microsoft.VisualStudio.Services.Notifications.WebApi.BaseSubscriptionFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilter" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,10 +42,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ExpressionFilter (string eventType, Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterModel filterModel = null);" />
+      <MemberSignature Language="C#" Value="public ExpressionFilter (string eventType, Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterModel filterModel = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventType, class Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterModel filterModel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilter.#ctor(System.String,Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterModel)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (eventType As String, Optional filterModel As ExpressionFilterModel = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventType As String, Optional filterModel As ExpressionFilterModel = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilter : string * Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterModel -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilter" Usage="new Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilter (eventType, filterModel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -77,10 +78,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="criteria")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="criteria")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="criteria")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,7 +109,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

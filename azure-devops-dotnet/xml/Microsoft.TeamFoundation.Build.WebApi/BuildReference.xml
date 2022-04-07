@@ -1,4 +1,4 @@
-﻿<Type Name="BuildReference" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildReference">
+<Type Name="BuildReference" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildReference">
   <TypeSignature Language="C#" Value="public class BuildReference : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildReference extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.BuildReference" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,7 +57,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -84,7 +86,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -99,7 +102,7 @@
       </Docs>
     </Member>
     <Member MemberName="FinishTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; FinishTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? FinishTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; FinishTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildReference.FinishTime" />
       <MemberSignature Language="VB.NET" Value="Public Property FinishTime As Nullable(Of DateTime)" />
@@ -112,7 +115,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,13 +144,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DataAnnotations.Key</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DataAnnotations.Key]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DataAnnotations.Key&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -184,7 +191,7 @@
       </Docs>
     </Member>
     <Member MemberName="QueueTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; QueueTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? QueueTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; QueueTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildReference.QueueTime" />
       <MemberSignature Language="VB.NET" Value="Public Property QueueTime As Nullable(Of DateTime)" />
@@ -197,7 +204,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -225,10 +233,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -243,7 +253,7 @@
       </Docs>
     </Member>
     <Member MemberName="Result">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; Result { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.BuildResult? Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildResult&gt; Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildReference.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As Nullable(Of BuildResult)" />
@@ -256,7 +266,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -271,7 +282,7 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildReference.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As Nullable(Of DateTime)" />
@@ -284,7 +295,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -299,7 +311,7 @@
       </Docs>
     </Member>
     <Member MemberName="Status">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; Status { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.Build.WebApi.BuildStatus? Status { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Build.WebApi.BuildStatus&gt; Status" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.BuildReference.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As Nullable(Of BuildStatus)" />
@@ -312,7 +324,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

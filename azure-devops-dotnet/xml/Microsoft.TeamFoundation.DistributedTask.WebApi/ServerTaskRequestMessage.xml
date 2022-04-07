@@ -1,4 +1,4 @@
-﻿<Type Name="ServerTaskRequestMessage" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.ServerTaskRequestMessage">
+<Type Name="ServerTaskRequestMessage" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.ServerTaskRequestMessage">
   <TypeSignature Language="C#" Value="public sealed class ServerTaskRequestMessage : Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServerTaskRequestMessage extends Microsoft.TeamFoundation.DistributedTask.WebApi.JobRequestMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.ServerTaskRequestMessage" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,6 +28,7 @@
       <MemberSignature Language="C#" Value="public ServerTaskRequestMessage (Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference plan, Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference timeline, Guid jobId, string jobName, string jobRefName, Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment environment, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskInstance taskInstance, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition taskDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference plan, class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference timeline, valuetype System.Guid jobId, string jobName, string jobRefName, class Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment environment, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskInstance taskInstance, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition taskDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.ServerTaskRequestMessage.#ctor(Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference,Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference,System.Guid,System.String,System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskInstance,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (plan As TaskOrchestrationPlanReference, timeline As TimelineReference, jobId As Guid, jobName As String, jobRefName As String, environment As JobEnvironment, taskInstance As TaskInstance, taskDefinition As TaskDefinition)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.ServerTaskRequestMessage : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference * Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference * Guid * string * string * Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskInstance * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.ServerTaskRequestMessage" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.ServerTaskRequestMessage (plan, timeline, jobId, jobName, jobRefName, environment, taskInstance, taskDefinition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -71,7 +73,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -97,7 +100,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

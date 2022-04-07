@@ -1,4 +1,4 @@
-﻿<Type Name="TaskAgentHttpClient" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient">
+<Type Name="TaskAgentHttpClient" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient">
   <TypeSignature Language="C#" Value="public class TaskAgentHttpClient : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskAgentHttpClient extends Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("A85B8835-C1A1-4AAC-AE97-1C3D0BA72DBD")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("A85B8835-C1A1-4AAC-AE97-1C3D0BA72DBD")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("A85B8835-C1A1-4AAC-AE97-1C3D0BA72DBD")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -88,8 +89,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -145,8 +147,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -161,9 +164,10 @@
       </Docs>
     </Member>
     <Member MemberName="FinishAgentRequestAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; FinishAgentRequestAsync (int poolId, long requestId, Guid lockToken, DateTime finishTime, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; FinishAgentRequestAsync (int poolId, long requestId, Guid lockToken, DateTime finishTime, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; FinishAgentRequestAsync(int32 poolId, int64 requestId, valuetype System.Guid lockToken, valuetype System.DateTime finishTime, valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult result, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.FinishAgentRequestAsync(System.Int32,System.Int64,System.Guid,System.DateTime,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FinishAgentRequestAsync (poolId As Integer, requestId As Long, lockToken As Guid, finishTime As DateTime, result As TaskResult, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskAgentJobRequest)" />
       <MemberSignature Language="F#" Value="member this.FinishAgentRequestAsync : int * int64 * Guid * DateTime * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt;" Usage="taskAgentHttpClient.FinishAgentRequestAsync (poolId, requestId, lockToken, finishTime, result, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -197,9 +201,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAgentsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent&gt;&gt; GetAgentsAsync (int poolId, string agentName = null, Nullable&lt;bool&gt; includeCapabilities = null, Nullable&lt;bool&gt; includeAssignedRequest = null, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = null, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&gt; demands = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent&gt;&gt; GetAgentsAsync (int poolId, string agentName = default, bool? includeCapabilities = default, bool? includeAssignedRequest = default, System.Collections.Generic.IEnumerable&lt;string&gt; propertyFilters = default, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&gt; demands = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent&gt;&gt; GetAgentsAsync(int32 poolId, string agentName, valuetype System.Nullable`1&lt;bool&gt; includeCapabilities, valuetype System.Nullable`1&lt;bool&gt; includeAssignedRequest, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertyFilters, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&gt; demands, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetAgentsAsync(System.Int32,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.WebApi.Demand},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAgentsAsync (poolId As Integer, Optional agentName As String = Nothing, Optional includeCapabilities As Nullable(Of Boolean) = Nothing, Optional includeAssignedRequest As Nullable(Of Boolean) = Nothing, Optional propertyFilters As IEnumerable(Of String) = Nothing, Optional demands As IEnumerable(Of Demand) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskAgent))" />
       <MemberSignature Language="F#" Value="override this.GetAgentsAsync : int * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * seq&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent&gt;&gt;" Usage="taskAgentHttpClient.GetAgentsAsync (poolId, agentName, includeCapabilities, includeAssignedRequest, propertyFilters, demands, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -260,9 +265,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentGroupsMetricsAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt; GetDeploymentGroupsMetricsAsync2 (Guid project, string deploymentGroupName = null, string continuationToken = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt; GetDeploymentGroupsMetricsAsync2 (Guid project, string deploymentGroupName = default, string continuationToken = default, int? top = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt; GetDeploymentGroupsMetricsAsync2(valuetype System.Guid project, string deploymentGroupName, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetDeploymentGroupsMetricsAsync2(System.Guid,System.String,System.String,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentGroupsMetricsAsync2 (project As Guid, Optional deploymentGroupName As String = Nothing, Optional continuationToken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of DeploymentGroupMetrics))" />
       <MemberSignature Language="F#" Value="abstract member GetDeploymentGroupsMetricsAsync2 : Guid * string * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt;&#xA;override this.GetDeploymentGroupsMetricsAsync2 : Guid * string * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt;" Usage="taskAgentHttpClient.GetDeploymentGroupsMetricsAsync2 (project, deploymentGroupName, continuationToken, top, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -283,10 +289,10 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="deploymentGroupName"></param>
-        <param name="continuationToken"></param>
-        <param name="top"></param>
-        <param name="userState"></param>
+        <param name="deploymentGroupName" />
+        <param name="continuationToken" />
+        <param name="top" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -296,9 +302,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentGroupsMetricsAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt; GetDeploymentGroupsMetricsAsync2 (string project, string deploymentGroupName = null, string continuationToken = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt; GetDeploymentGroupsMetricsAsync2 (string project, string deploymentGroupName = default, string continuationToken = default, int? top = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt; GetDeploymentGroupsMetricsAsync2(string project, string deploymentGroupName, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetDeploymentGroupsMetricsAsync2(System.String,System.String,System.String,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentGroupsMetricsAsync2 (project As String, Optional deploymentGroupName As String = Nothing, Optional continuationToken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of DeploymentGroupMetrics))" />
       <MemberSignature Language="F#" Value="abstract member GetDeploymentGroupsMetricsAsync2 : string * string * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt;&#xA;override this.GetDeploymentGroupsMetricsAsync2 : string * string * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupMetrics&gt;&gt;" Usage="taskAgentHttpClient.GetDeploymentGroupsMetricsAsync2 (project, deploymentGroupName, continuationToken, top, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -319,10 +326,10 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="deploymentGroupName"></param>
-        <param name="continuationToken"></param>
-        <param name="top"></param>
-        <param name="userState"></param>
+        <param name="deploymentGroupName" />
+        <param name="continuationToken" />
+        <param name="top" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -332,9 +339,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentTargetsAsyncWithContinuationToken">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken (Guid project, int deploymentGroupId, System.Collections.Generic.IEnumerable&lt;string&gt; tags = null, string name = null, Nullable&lt;bool&gt; partialNameMatch = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; expand = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; agentStatus = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; agentJobResult = null, string continuationToken = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken (Guid project, int deploymentGroupId, System.Collections.Generic.IEnumerable&lt;string&gt; tags = default, string name = default, bool? partialNameMatch = default, Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands? expand = default, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter? agentStatus = default, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter? agentJobResult = default, string continuationToken = default, int? top = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken(valuetype System.Guid project, int32 deploymentGroupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags, string name, valuetype System.Nullable`1&lt;bool&gt; partialNameMatch, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; expand, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; agentStatus, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; agentJobResult, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetDeploymentTargetsAsyncWithContinuationToken(System.Guid,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String,System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter},System.String,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentTargetsAsyncWithContinuationToken (project As Guid, deploymentGroupId As Integer, Optional tags As IEnumerable(Of String) = Nothing, Optional name As String = Nothing, Optional partialNameMatch As Nullable(Of Boolean) = Nothing, Optional expand As Nullable(Of DeploymentTargetExpands) = Nothing, Optional agentStatus As Nullable(Of TaskAgentStatusFilter) = Nothing, Optional agentJobResult As Nullable(Of TaskAgentJobResultFilter) = Nothing, Optional continuationToken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of DeploymentMachine))" />
       <MemberSignature Language="F#" Value="abstract member GetDeploymentTargetsAsyncWithContinuationToken : Guid * int * seq&lt;string&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;&#xA;override this.GetDeploymentTargetsAsyncWithContinuationToken : Guid * int * seq&lt;string&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;" Usage="taskAgentHttpClient.GetDeploymentTargetsAsyncWithContinuationToken (project, deploymentGroupId, tags, name, partialNameMatch, expand, agentStatus, agentJobResult, continuationToken, top, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -345,31 +353,41 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="deploymentGroupId" Type="System.Int32" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="partialNameMatch" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt;" />
-        <Parameter Name="agentStatus" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt;" />
-        <Parameter Name="agentJobResult" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="deploymentGroupId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="partialNameMatch" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt;" Index="5" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="agentStatus" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt;" Index="6" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="agentJobResult" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt;" Index="7" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="continuationToken" Type="System.String" Index="8" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="9" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="userState" Type="System.Object" Index="10" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="11" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="deploymentGroupId"></param>
-        <param name="tags"></param>
-        <param name="name"></param>
-        <param name="partialNameMatch"></param>
-        <param name="expand"></param>
-        <param name="agentStatus"></param>
-        <param name="agentJobResult"></param>
-        <param name="continuationToken"></param>
-        <param name="top"></param>
-        <param name="userState"></param>
+        <param name="deploymentGroupId">
+        </param>
+        <param name="tags">
+        </param>
+        <param name="name">
+        </param>
+        <param name="partialNameMatch">
+        </param>
+        <param name="expand">
+        </param>
+        <param name="agentStatus">
+        </param>
+        <param name="agentJobResult">
+        </param>
+        <param name="continuationToken">
+        </param>
+        <param name="top">
+        </param>
+        <param name="userState">
+        </param>
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -379,9 +397,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentTargetsAsyncWithContinuationToken">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken (string project, int deploymentGroupId, System.Collections.Generic.IEnumerable&lt;string&gt; tags = null, string name = null, Nullable&lt;bool&gt; partialNameMatch = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; expand = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; agentStatus = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; agentJobResult = null, string continuationToken = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken (string project, int deploymentGroupId, System.Collections.Generic.IEnumerable&lt;string&gt; tags = default, string name = default, bool? partialNameMatch = default, Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands? expand = default, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter? agentStatus = default, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter? agentJobResult = default, string continuationToken = default, int? top = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken(string project, int32 deploymentGroupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags, string name, valuetype System.Nullable`1&lt;bool&gt; partialNameMatch, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; expand, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; agentStatus, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; agentJobResult, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetDeploymentTargetsAsyncWithContinuationToken(System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String,System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter},System.String,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentTargetsAsyncWithContinuationToken (project As String, deploymentGroupId As Integer, Optional tags As IEnumerable(Of String) = Nothing, Optional name As String = Nothing, Optional partialNameMatch As Nullable(Of Boolean) = Nothing, Optional expand As Nullable(Of DeploymentTargetExpands) = Nothing, Optional agentStatus As Nullable(Of TaskAgentStatusFilter) = Nothing, Optional agentJobResult As Nullable(Of TaskAgentJobResultFilter) = Nothing, Optional continuationToken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of DeploymentMachine))" />
       <MemberSignature Language="F#" Value="abstract member GetDeploymentTargetsAsyncWithContinuationToken : string * int * seq&lt;string&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;&#xA;override this.GetDeploymentTargetsAsyncWithContinuationToken : string * int * seq&lt;string&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;" Usage="taskAgentHttpClient.GetDeploymentTargetsAsyncWithContinuationToken (project, deploymentGroupId, tags, name, partialNameMatch, expand, agentStatus, agentJobResult, continuationToken, top, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -392,31 +411,41 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="deploymentGroupId" Type="System.Int32" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="partialNameMatch" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt;" />
-        <Parameter Name="agentStatus" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt;" />
-        <Parameter Name="agentJobResult" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="deploymentGroupId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="partialNameMatch" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt;" Index="5" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="agentStatus" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt;" Index="6" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="agentJobResult" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt;" Index="7" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="continuationToken" Type="System.String" Index="8" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="9" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="userState" Type="System.Object" Index="10" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="11" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="deploymentGroupId"></param>
-        <param name="tags"></param>
-        <param name="name"></param>
-        <param name="partialNameMatch"></param>
-        <param name="expand"></param>
-        <param name="agentStatus"></param>
-        <param name="agentJobResult"></param>
-        <param name="continuationToken"></param>
-        <param name="top"></param>
-        <param name="userState"></param>
+        <param name="deploymentGroupId">
+        </param>
+        <param name="tags">
+        </param>
+        <param name="name">
+        </param>
+        <param name="partialNameMatch">
+        </param>
+        <param name="expand">
+        </param>
+        <param name="agentStatus">
+        </param>
+        <param name="agentJobResult">
+        </param>
+        <param name="continuationToken">
+        </param>
+        <param name="top">
+        </param>
+        <param name="userState">
+        </param>
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -426,9 +455,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentTargetsAsyncWithContinuationToken">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken (Guid project, int deploymentGroupId, System.Collections.Generic.IEnumerable&lt;string&gt; tags = null, string name = null, Nullable&lt;bool&gt; partialNameMatch = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; expand = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; agentStatus = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; agentJobResult = null, string continuationToken = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Nullable&lt;bool&gt; enabled = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken (Guid project, int deploymentGroupId, System.Collections.Generic.IEnumerable&lt;string&gt; tags = default, string name = default, bool? partialNameMatch = default, Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands? expand = default, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter? agentStatus = default, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter? agentJobResult = default, string continuationToken = default, int? top = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, bool? enabled = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken(valuetype System.Guid project, int32 deploymentGroupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags, string name, valuetype System.Nullable`1&lt;bool&gt; partialNameMatch, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; expand, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; agentStatus, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; agentJobResult, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Nullable`1&lt;bool&gt; enabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetDeploymentTargetsAsyncWithContinuationToken(System.Guid,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String,System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter},System.String,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentTargetsAsyncWithContinuationToken (project As Guid, deploymentGroupId As Integer, Optional tags As IEnumerable(Of String) = Nothing, Optional name As String = Nothing, Optional partialNameMatch As Nullable(Of Boolean) = Nothing, Optional expand As Nullable(Of DeploymentTargetExpands) = Nothing, Optional agentStatus As Nullable(Of TaskAgentStatusFilter) = Nothing, Optional agentJobResult As Nullable(Of TaskAgentJobResultFilter) = Nothing, Optional continuationToken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing) As Task(Of IPagedList(Of DeploymentMachine))" />
       <MemberSignature Language="F#" Value="abstract member GetDeploymentTargetsAsyncWithContinuationToken : Guid * int * seq&lt;string&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;&#xA;override this.GetDeploymentTargetsAsyncWithContinuationToken : Guid * int * seq&lt;string&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;" Usage="taskAgentHttpClient.GetDeploymentTargetsAsyncWithContinuationToken (project, deploymentGroupId, tags, name, partialNameMatch, expand, agentStatus, agentJobResult, continuationToken, top, userState, cancellationToken, enabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -439,34 +469,34 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="deploymentGroupId" Type="System.Int32" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="partialNameMatch" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt;" />
-        <Parameter Name="agentStatus" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt;" />
-        <Parameter Name="agentJobResult" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="deploymentGroupId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="partialNameMatch" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt;" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="agentStatus" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt;" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="agentJobResult" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt;" Index="7" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="continuationToken" Type="System.String" Index="8" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="9" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="10" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="11" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" Index="12" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="project">Project ID</param>
-        <param name="deploymentGroupId"></param>
-        <param name="tags"></param>
-        <param name="name"></param>
-        <param name="partialNameMatch"></param>
-        <param name="expand"></param>
-        <param name="agentStatus"></param>
-        <param name="agentJobResult"></param>
-        <param name="continuationToken"></param>
-        <param name="top"></param>
-        <param name="userState"></param>
-        <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <param name="enabled">To be added.</param>
+        <param name="project">Project ID</param>
+        <param name="deploymentGroupId" />
+        <param name="tags" />
+        <param name="name" />
+        <param name="partialNameMatch" />
+        <param name="expand" />
+        <param name="agentStatus" />
+        <param name="agentJobResult" />
+        <param name="continuationToken" />
+        <param name="top" />
+        <param name="userState" />
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
             </summary>
@@ -475,9 +505,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentTargetsAsyncWithContinuationToken">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken (string project, int deploymentGroupId, System.Collections.Generic.IEnumerable&lt;string&gt; tags = null, string name = null, Nullable&lt;bool&gt; partialNameMatch = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; expand = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; agentStatus = null, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; agentJobResult = null, string continuationToken = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Nullable&lt;bool&gt; enabled = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken (string project, int deploymentGroupId, System.Collections.Generic.IEnumerable&lt;string&gt; tags = default, string name = default, bool? partialNameMatch = default, Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands? expand = default, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter? agentStatus = default, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter? agentJobResult = default, string continuationToken = default, int? top = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, bool? enabled = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt; GetDeploymentTargetsAsyncWithContinuationToken(string project, int32 deploymentGroupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags, string name, valuetype System.Nullable`1&lt;bool&gt; partialNameMatch, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; expand, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; agentStatus, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; agentJobResult, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Nullable`1&lt;bool&gt; enabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetDeploymentTargetsAsyncWithContinuationToken(System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String,System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter},System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter},System.String,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeploymentTargetsAsyncWithContinuationToken (project As String, deploymentGroupId As Integer, Optional tags As IEnumerable(Of String) = Nothing, Optional name As String = Nothing, Optional partialNameMatch As Nullable(Of Boolean) = Nothing, Optional expand As Nullable(Of DeploymentTargetExpands) = Nothing, Optional agentStatus As Nullable(Of TaskAgentStatusFilter) = Nothing, Optional agentJobResult As Nullable(Of TaskAgentJobResultFilter) = Nothing, Optional continuationToken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing) As Task(Of IPagedList(Of DeploymentMachine))" />
       <MemberSignature Language="F#" Value="abstract member GetDeploymentTargetsAsyncWithContinuationToken : string * int * seq&lt;string&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;&#xA;override this.GetDeploymentTargetsAsyncWithContinuationToken : string * int * seq&lt;string&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt; * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt; * string * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;" Usage="taskAgentHttpClient.GetDeploymentTargetsAsyncWithContinuationToken (project, deploymentGroupId, tags, name, partialNameMatch, expand, agentStatus, agentJobResult, continuationToken, top, userState, cancellationToken, enabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -488,34 +519,34 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="deploymentGroupId" Type="System.Int32" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="partialNameMatch" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt;" />
-        <Parameter Name="agentStatus" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt;" />
-        <Parameter Name="agentJobResult" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="deploymentGroupId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="partialNameMatch" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentTargetExpands&gt;" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="agentStatus" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentStatusFilter&gt;" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="agentJobResult" Type="System.Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobResultFilter&gt;" Index="7" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="continuationToken" Type="System.String" Index="8" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="9" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="10" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="11" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" Index="12" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="project">Project ID or project name</param>
-        <param name="deploymentGroupId"></param>
-        <param name="tags"></param>
-        <param name="name"></param>
-        <param name="partialNameMatch"></param>
-        <param name="expand"></param>
-        <param name="agentStatus"></param>
-        <param name="agentJobResult"></param>
-        <param name="continuationToken"></param>
-        <param name="top"></param>
-        <param name="userState"></param>
-        <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <param name="enabled">To be added.</param>
+        <param name="project">Project ID or project name</param>
+        <param name="deploymentGroupId" />
+        <param name="tags" />
+        <param name="name" />
+        <param name="partialNameMatch" />
+        <param name="expand" />
+        <param name="agentStatus" />
+        <param name="agentJobResult" />
+        <param name="continuationToken" />
+        <param name="top" />
+        <param name="userState" />
+        <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
             </summary>
@@ -527,6 +558,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;T&gt;&gt; GetPagedList&lt;T&gt; (System.Net.Http.HttpResponseMessage responseMessage, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;!!T&gt;&gt; GetPagedList&lt;T&gt;(class System.Net.Http.HttpResponseMessage responseMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetPagedList``1(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetPagedList(Of T) (responseMessage As HttpResponseMessage, cancellationToken As CancellationToken) As Task(Of IPagedList(Of T))" />
       <MemberSignature Language="F#" Value="member this.GetPagedList : System.Net.Http.HttpResponseMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;'T&gt;&gt;" Usage="taskAgentHttpClient.GetPagedList (responseMessage, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -554,9 +586,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSecureFileAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; GetSecureFileAsync (Guid project, Guid secureFileId, Nullable&lt;bool&gt; includeDownloadTicket = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; GetSecureFileAsync (Guid project, Guid secureFileId, bool? includeDownloadTicket = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; GetSecureFileAsync(valuetype System.Guid project, valuetype System.Guid secureFileId, valuetype System.Nullable`1&lt;bool&gt; includeDownloadTicket, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetSecureFileAsync(System.Guid,System.Guid,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecureFileAsync (project As Guid, secureFileId As Guid, Optional includeDownloadTicket As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SecureFile)" />
       <MemberSignature Language="F#" Value="override this.GetSecureFileAsync : Guid * Guid * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;" Usage="taskAgentHttpClient.GetSecureFileAsync (project, secureFileId, includeDownloadTicket, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -578,7 +611,7 @@
         <param name="project">Project ID</param>
         <param name="secureFileId">The unique secure file Id</param>
         <param name="includeDownloadTicket">If includeDownloadTicket is true and the caller has permissions, a download ticket is included in the response.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a secure file
@@ -588,9 +621,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSecureFilesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesAsync (Guid project, string namePattern = null, Nullable&lt;bool&gt; includeDownloadTickets = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesAsync (Guid project, string namePattern = default, bool? includeDownloadTickets = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesAsync(valuetype System.Guid project, string namePattern, valuetype System.Nullable`1&lt;bool&gt; includeDownloadTickets, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetSecureFilesAsync(System.Guid,System.String,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecureFilesAsync (project As Guid, Optional namePattern As String = Nothing, Optional includeDownloadTickets As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of SecureFile))" />
       <MemberSignature Language="F#" Value="override this.GetSecureFilesAsync : Guid * string * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt;" Usage="taskAgentHttpClient.GetSecureFilesAsync (project, namePattern, includeDownloadTickets, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -612,7 +646,7 @@
         <param name="project">Project ID</param>
         <param name="namePattern">Name of the secure file to match. Can include wildcards to match multiple files.</param>
         <param name="includeDownloadTickets">If includeDownloadTickets is true and the caller has permissions, a download ticket for each secure file is included in the response.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get secure files
@@ -622,9 +656,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSecureFilesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesAsync (string project, string namePattern = null, Nullable&lt;bool&gt; includeDownloadTickets = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesAsync (string project, string namePattern = default, bool? includeDownloadTickets = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesAsync(string project, string namePattern, valuetype System.Nullable`1&lt;bool&gt; includeDownloadTickets, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetSecureFilesAsync(System.String,System.String,System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecureFilesAsync (project As String, Optional namePattern As String = Nothing, Optional includeDownloadTickets As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of SecureFile))" />
       <MemberSignature Language="F#" Value="override this.GetSecureFilesAsync : string * string * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt;" Usage="taskAgentHttpClient.GetSecureFilesAsync (project, namePattern, includeDownloadTickets, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -646,7 +681,7 @@
         <param name="project">Project ID or project name</param>
         <param name="namePattern">Name of the secure file to match. Can include wildcards to match multiple files.</param>
         <param name="includeDownloadTickets">If includeDownloadTickets is true and the caller has permissions, a download ticket for each secure file is included in the response.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get secure files
@@ -656,9 +691,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSecureFilesByIdsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesByIdsAsync (Guid project, System.Collections.Generic.IEnumerable&lt;Guid&gt; secureFileIds, Nullable&lt;bool&gt; includeDownloadTickets = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesByIdsAsync (Guid project, System.Collections.Generic.IEnumerable&lt;Guid&gt; secureFileIds, bool? includeDownloadTickets = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesByIdsAsync(valuetype System.Guid project, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Guid&gt; secureFileIds, valuetype System.Nullable`1&lt;bool&gt; includeDownloadTickets, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetSecureFilesByIdsAsync(System.Guid,System.Collections.Generic.IEnumerable{System.Guid},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecureFilesByIdsAsync (project As Guid, secureFileIds As IEnumerable(Of Guid), Optional includeDownloadTickets As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of SecureFile))" />
       <MemberSignature Language="F#" Value="override this.GetSecureFilesByIdsAsync : Guid * seq&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt;" Usage="taskAgentHttpClient.GetSecureFilesByIdsAsync (project, secureFileIds, includeDownloadTickets, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -680,7 +716,7 @@
         <param name="project">Project ID</param>
         <param name="secureFileIds">A list of secure file Ids</param>
         <param name="includeDownloadTickets">If includeDownloadTickets is true and the caller has permissions, a download ticket for each secure file is included in the response.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get secure files
@@ -690,9 +726,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSecureFilesByIdsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesByIdsAsync (string project, System.Collections.Generic.IEnumerable&lt;Guid&gt; secureFileIds, Nullable&lt;bool&gt; includeDownloadTickets = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesByIdsAsync (string project, System.Collections.Generic.IEnumerable&lt;Guid&gt; secureFileIds, bool? includeDownloadTickets = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt; GetSecureFilesByIdsAsync(string project, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Guid&gt; secureFileIds, valuetype System.Nullable`1&lt;bool&gt; includeDownloadTickets, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetSecureFilesByIdsAsync(System.String,System.Collections.Generic.IEnumerable{System.Guid},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecureFilesByIdsAsync (project As String, secureFileIds As IEnumerable(Of Guid), Optional includeDownloadTickets As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of SecureFile))" />
       <MemberSignature Language="F#" Value="override this.GetSecureFilesByIdsAsync : string * seq&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt;&gt;" Usage="taskAgentHttpClient.GetSecureFilesByIdsAsync (project, secureFileIds, includeDownloadTickets, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -714,7 +751,7 @@
         <param name="project">Project ID or project name</param>
         <param name="secureFileIds">A list of secure file Ids</param>
         <param name="includeDownloadTickets">If includeDownloadTickets is true and the caller has permissions, a download ticket for each secure file is included in the response.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get secure files
@@ -724,9 +761,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTaskContentZipAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetTaskContentZipAsync (Guid taskId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersion version, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetTaskContentZipAsync (Guid taskId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersion version, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetTaskContentZipAsync(valuetype System.Guid taskId, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersion version, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.GetTaskContentZipAsync(System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersion,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTaskContentZipAsync (taskId As Guid, version As TaskVersion, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="override this.GetTaskContentZipAsync : Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskVersion * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="taskAgentHttpClient.GetTaskContentZipAsync (taskId, version, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -754,9 +792,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueueAgentRequestByPoolAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; QueueAgentRequestByPoolAsync (int poolId, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&gt; demands, Guid serviceOwner, Guid hostId, Guid scopeIdentifier, string hubName, Guid planId, Guid jobId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; QueueAgentRequestByPoolAsync (int poolId, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&gt; demands, Guid serviceOwner, Guid hostId, Guid scopeIdentifier, string hubName, Guid planId, Guid jobId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; QueueAgentRequestByPoolAsync(int32 poolId, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&gt; demands, valuetype System.Guid serviceOwner, valuetype System.Guid hostId, valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid jobId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.QueueAgentRequestByPoolAsync(System.Int32,System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.Demand},System.Guid,System.Guid,System.Guid,System.String,System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueueAgentRequestByPoolAsync (poolId As Integer, demands As IList(Of Demand), serviceOwner As Guid, hostId As Guid, scopeIdentifier As Guid, hubName As String, planId As Guid, jobId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskAgentJobRequest)" />
       <MemberSignature Language="F#" Value="override this.QueueAgentRequestByPoolAsync : int * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&gt; * Guid * Guid * Guid * string * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt;" Usage="taskAgentHttpClient.QueueAgentRequestByPoolAsync (poolId, demands, serviceOwner, hostId, scopeIdentifier, hubName, planId, jobId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -796,9 +835,10 @@
       </Docs>
     </Member>
     <Member MemberName="RenewAgentRequestAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; RenewAgentRequestAsync (int poolId, long requestId, Guid lockToken, Nullable&lt;DateTime&gt; expiresOn = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; RenewAgentRequestAsync (int poolId, long requestId, Guid lockToken, DateTime? expiresOn = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt; RenewAgentRequestAsync(int32 poolId, int64 requestId, valuetype System.Guid lockToken, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; expiresOn, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.RenewAgentRequestAsync(System.Int32,System.Int64,System.Guid,System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RenewAgentRequestAsync (poolId As Integer, requestId As Long, lockToken As Guid, Optional expiresOn As Nullable(Of DateTime) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskAgentJobRequest)" />
       <MemberSignature Language="F#" Value="member this.RenewAgentRequestAsync : int * int64 * Guid * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentJobRequest&gt;" Usage="taskAgentHttpClient.RenewAgentRequestAsync (poolId, requestId, lockToken, expiresOn, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -830,9 +870,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceAgentAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent&gt; ReplaceAgentAsync (int poolId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent agent, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent&gt; ReplaceAgentAsync (int poolId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent agent, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent&gt; ReplaceAgentAsync(int32 poolId, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent agent, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.ReplaceAgentAsync(System.Int32,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReplaceAgentAsync (poolId As Integer, agent As TaskAgent, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskAgent)" />
       <MemberSignature Language="F#" Value="override this.ReplaceAgentAsync : int * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgent&gt;" Usage="taskAgentHttpClient.ReplaceAgentAsync (poolId, agent, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -860,9 +901,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpRequestMessage message, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.SendAsync``1(System.Net.Http.HttpRequestMessage,System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (message As HttpRequestMessage, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="taskAgentHttpClient.SendAsync (message, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -894,9 +936,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="taskAgentHttpClient.SendAsync (method, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -938,9 +981,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; additionalHeaders, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, additionalHeaders As IEnumerable(Of KeyValuePair(Of String, String)), locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="taskAgentHttpClient.SendAsync (method, additionalHeaders, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -984,9 +1028,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendMessageAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendMessageAsync (int poolId, long requestId, Microsoft.TeamFoundation.DistributedTask.WebApi.AgentJobRequestMessage request, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendMessageAsync (int poolId, long requestId, Microsoft.TeamFoundation.DistributedTask.WebApi.AgentJobRequestMessage request, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendMessageAsync(int32 poolId, int64 requestId, class Microsoft.TeamFoundation.DistributedTask.WebApi.AgentJobRequestMessage request, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.SendMessageAsync(System.Int32,System.Int64,Microsoft.TeamFoundation.DistributedTask.WebApi.AgentJobRequestMessage,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendMessageAsync (poolId As Integer, requestId As Long, request As AgentJobRequestMessage, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="override this.SendMessageAsync : int * int64 * Microsoft.TeamFoundation.DistributedTask.WebApi.AgentJobRequestMessage * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskAgentHttpClient.SendMessageAsync (poolId, requestId, request, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1016,9 +1061,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendMessageAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendMessageAsync (int poolId, long requestId, Microsoft.TeamFoundation.DistributedTask.WebApi.JobCancelMessage cancel, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendMessageAsync (int poolId, long requestId, Microsoft.TeamFoundation.DistributedTask.WebApi.JobCancelMessage cancel, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendMessageAsync(int32 poolId, int64 requestId, class Microsoft.TeamFoundation.DistributedTask.WebApi.JobCancelMessage cancel, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.SendMessageAsync(System.Int32,System.Int64,Microsoft.TeamFoundation.DistributedTask.WebApi.JobCancelMessage,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendMessageAsync (poolId As Integer, requestId As Long, cancel As JobCancelMessage, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="override this.SendMessageAsync : int * int64 * Microsoft.TeamFoundation.DistributedTask.WebApi.JobCancelMessage * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskAgentHttpClient.SendMessageAsync (poolId, requestId, cancel, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1048,9 +1094,10 @@
       </Docs>
     </Member>
     <Member MemberName="UploadTaskZipAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt; UploadTaskZipAsync (Guid taskId, System.IO.Stream fileStream, bool overwrite = false, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt; UploadTaskZipAsync (Guid taskId, System.IO.Stream fileStream, bool overwrite = false, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.Http.HttpResponseMessage&gt; UploadTaskZipAsync(valuetype System.Guid taskId, class System.IO.Stream fileStream, bool overwrite, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient.UploadTaskZipAsync(System.Guid,System.IO.Stream,System.Boolean,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UploadTaskZipAsync (taskId As Guid, fileStream As Stream, Optional overwrite As Boolean = false, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpResponseMessage)" />
       <MemberSignature Language="F#" Value="member this.UploadTaskZipAsync : Guid * System.IO.Stream * bool * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;" Usage="taskAgentHttpClient.UploadTaskZipAsync (taskId, fileStream, overwrite, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

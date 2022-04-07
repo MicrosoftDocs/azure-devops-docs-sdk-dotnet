@@ -1,4 +1,4 @@
-﻿<Type Name="IdentityMruHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.IdentityMruHttpClient">
+<Type Name="IdentityMruHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.IdentityMruHttpClient">
   <TypeSignature Language="C#" Value="public class IdentityMruHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityMruHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.IdentityMruHttpClient" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -91,8 +93,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -148,8 +151,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -164,9 +168,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIdentityMruAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateIdentityMruAsync (Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateIdentityMruAsync (Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CreateIdentityMruAsync(class Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.IdentityMruHttpClient.CreateIdentityMruAsync(Microsoft.TeamFoundation.Core.WebApi.IdentityData,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateIdentityMruAsync (mruData As IdentityData, mruName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.CreateIdentityMruAsync : Microsoft.TeamFoundation.Core.WebApi.IdentityData * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="identityMruHttpClient.CreateIdentityMruAsync (mruData, mruName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -184,9 +189,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="mruData"></param>
-        <param name="mruName"></param>
-        <param name="userState"></param>
+        <param name="mruData" />
+        <param name="mruName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -196,9 +201,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteIdentityMruAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteIdentityMruAsync (Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteIdentityMruAsync (Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteIdentityMruAsync(class Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.IdentityMruHttpClient.DeleteIdentityMruAsync(Microsoft.TeamFoundation.Core.WebApi.IdentityData,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteIdentityMruAsync (mruData As IdentityData, mruName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteIdentityMruAsync : Microsoft.TeamFoundation.Core.WebApi.IdentityData * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="identityMruHttpClient.DeleteIdentityMruAsync (mruData, mruName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -216,9 +222,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="mruData"></param>
-        <param name="mruName"></param>
-        <param name="userState"></param>
+        <param name="mruData" />
+        <param name="mruName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -228,9 +234,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetIdentityMruAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.IdentityRef&gt;&gt; GetIdentityMruAsync (string mruName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.IdentityRef&gt;&gt; GetIdentityMruAsync (string mruName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.WebApi.IdentityRef&gt;&gt; GetIdentityMruAsync(string mruName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.IdentityMruHttpClient.GetIdentityMruAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIdentityMruAsync (mruName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of IdentityRef))" />
       <MemberSignature Language="F#" Value="member this.GetIdentityMruAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.WebApi.IdentityRef&gt;&gt;" Usage="identityMruHttpClient.GetIdentityMruAsync (mruName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -247,8 +254,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="mruName"></param>
-        <param name="userState"></param>
+        <param name="mruName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -258,9 +265,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateIdentityMruAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpdateIdentityMruAsync (Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpdateIdentityMruAsync (Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UpdateIdentityMruAsync(class Microsoft.TeamFoundation.Core.WebApi.IdentityData mruData, string mruName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.IdentityMruHttpClient.UpdateIdentityMruAsync(Microsoft.TeamFoundation.Core.WebApi.IdentityData,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateIdentityMruAsync (mruData As IdentityData, mruName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.UpdateIdentityMruAsync : Microsoft.TeamFoundation.Core.WebApi.IdentityData * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="identityMruHttpClient.UpdateIdentityMruAsync (mruData, mruName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -278,9 +286,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="mruData"></param>
-        <param name="mruName"></param>
-        <param name="userState"></param>
+        <param name="mruData" />
+        <param name="mruName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]

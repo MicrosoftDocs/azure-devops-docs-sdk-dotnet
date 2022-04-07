@@ -1,4 +1,4 @@
-﻿<Type Name="TaskHttpClientBase" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase">
+<Type Name="TaskHttpClientBase" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase">
   <TypeSignature Language="C#" Value="public abstract class TaskHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TaskHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase" />
@@ -83,8 +83,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -140,8 +141,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -156,9 +158,10 @@
       </Docs>
     </Member>
     <Member MemberName="AppendLogContentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt; AppendLogContentAsync (Guid scopeIdentifier, string hubName, Guid planId, int logId, System.IO.Stream uploadStream, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt; AppendLogContentAsync (Guid scopeIdentifier, string hubName, Guid planId, int logId, System.IO.Stream uploadStream, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt; AppendLogContentAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, int32 logId, class System.IO.Stream uploadStream, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.AppendLogContentAsync(System.Guid,System.String,System.Guid,System.Int32,System.IO.Stream,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AppendLogContentAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, logId As Integer, uploadStream As Stream, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskLog)" />
       <MemberSignature Language="F#" Value="abstract member AppendLogContentAsync : Guid * string * Guid * int * System.IO.Stream * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;&#xA;override this.AppendLogContentAsync : Guid * string * Guid * int * System.IO.Stream * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;" Usage="taskHttpClientBase.AppendLogContentAsync (scopeIdentifier, hubName, planId, logId, uploadStream, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -181,10 +184,10 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="logId"></param>
+        <param name="planId" />
+        <param name="logId" />
         <param name="uploadStream">Stream to upload</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -194,9 +197,10 @@
       </Docs>
     </Member>
     <Member MemberName="AppendTimelineRecordFeedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task AppendTimelineRecordFeedAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecordFeedLinesWrapper lines, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task AppendTimelineRecordFeedAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecordFeedLinesWrapper lines, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task AppendTimelineRecordFeedAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, valuetype System.Guid recordId, class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecordFeedLinesWrapper lines, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.AppendTimelineRecordFeedAsync(System.Guid,System.String,System.Guid,System.Guid,System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecordFeedLinesWrapper,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AppendTimelineRecordFeedAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, recordId As Guid, lines As TimelineRecordFeedLinesWrapper, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member AppendTimelineRecordFeedAsync : Guid * string * Guid * Guid * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecordFeedLinesWrapper * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.AppendTimelineRecordFeedAsync : Guid * string * Guid * Guid * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecordFeedLinesWrapper * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskHttpClientBase.AppendTimelineRecordFeedAsync (scopeIdentifier, hubName, planId, timelineId, recordId, lines, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -205,30 +209,31 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="scopeIdentifier" Type="System.Guid" />
-        <Parameter Name="hubName" Type="System.String" />
-        <Parameter Name="planId" Type="System.Guid" />
-        <Parameter Name="timelineId" Type="System.Guid" />
-        <Parameter Name="recordId" Type="System.Guid" />
-        <Parameter Name="lines" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecordFeedLinesWrapper" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="scopeIdentifier" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="hubName" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="planId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="timelineId" Type="System.Guid" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="recordId" Type="System.Guid" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="lines" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecordFeedLinesWrapper" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="7" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="recordId"></param>
-        <param name="lines"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="recordId" />
+        <param name="lines" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -238,9 +243,10 @@
       </Docs>
     </Member>
     <Member MemberName="AppendTimelineRecordFeedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task AppendTimelineRecordFeedAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;System.Collections.Generic.IEnumerable&lt;string&gt;&gt; lines, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task AppendTimelineRecordFeedAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;System.Collections.Generic.IEnumerable&lt;string&gt;&gt; lines, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task AppendTimelineRecordFeedAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, valuetype System.Guid recordId, class Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper`1&lt;class System.Collections.Generic.IEnumerable`1&lt;string&gt;&gt; lines, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.AppendTimelineRecordFeedAsync(System.Guid,System.String,System.Guid,System.Guid,System.Guid,Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper{System.Collections.Generic.IEnumerable{System.String}},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AppendTimelineRecordFeedAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, recordId As Guid, lines As VssJsonCollectionWrapper(Of IEnumerable(Of String)), Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member AppendTimelineRecordFeedAsync : Guid * string * Guid * Guid * Guid * Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;seq&lt;string&gt;&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.AppendTimelineRecordFeedAsync : Guid * string * Guid * Guid * Guid * Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;seq&lt;string&gt;&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskHttpClientBase.AppendTimelineRecordFeedAsync (scopeIdentifier, hubName, planId, timelineId, recordId, lines, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -249,30 +255,36 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="scopeIdentifier" Type="System.Guid" />
-        <Parameter Name="hubName" Type="System.String" />
-        <Parameter Name="planId" Type="System.Guid" />
-        <Parameter Name="timelineId" Type="System.Guid" />
-        <Parameter Name="recordId" Type="System.Guid" />
-        <Parameter Name="lines" Type="Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;System.Collections.Generic.IEnumerable&lt;System.String&gt;&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="scopeIdentifier" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="hubName" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="planId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="timelineId" Type="System.Guid" Index="3" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="recordId" Type="System.Guid" Index="4" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="lines" Type="Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;System.Collections.Generic.IEnumerable&lt;System.String&gt;&gt;" Index="5" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="userState" Type="System.Object" Index="6" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="7" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="recordId"></param>
-        <param name="lines"></param>
-        <param name="userState"></param>
+        <param name="planId">
+        </param>
+        <param name="timelineId">
+        </param>
+        <param name="recordId">
+        </param>
+        <param name="lines">
+        </param>
+        <param name="userState">
+        </param>
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary />
         <returns>To be added.</returns>
@@ -280,9 +292,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAttachmentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt; CreateAttachmentAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, string type, string name, System.IO.Stream uploadStream, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt; CreateAttachmentAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, string type, string name, System.IO.Stream uploadStream, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt; CreateAttachmentAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, valuetype System.Guid recordId, string type, string name, class System.IO.Stream uploadStream, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.CreateAttachmentAsync(System.Guid,System.String,System.Guid,System.Guid,System.Guid,System.String,System.String,System.IO.Stream,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAttachmentAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, recordId As Guid, type As String, name As String, uploadStream As Stream, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskAttachment)" />
       <MemberSignature Language="F#" Value="abstract member CreateAttachmentAsync : Guid * string * Guid * Guid * Guid * string * string * System.IO.Stream * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&#xA;override this.CreateAttachmentAsync : Guid * string * Guid * Guid * Guid * string * string * System.IO.Stream * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;" Usage="taskHttpClientBase.CreateAttachmentAsync (scopeIdentifier, hubName, planId, timelineId, recordId, type, name, uploadStream, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -308,13 +321,13 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="recordId"></param>
-        <param name="type"></param>
-        <param name="name"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="recordId" />
+        <param name="type" />
+        <param name="name" />
         <param name="uploadStream">Stream to upload</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -324,9 +337,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateLogAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt; CreateLogAsync (Guid scopeIdentifier, string hubName, Guid planId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog log, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt; CreateLogAsync (Guid scopeIdentifier, string hubName, Guid planId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog log, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt; CreateLogAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog log, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.CreateLogAsync(System.Guid,System.String,System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateLogAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, log As TaskLog, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskLog)" />
       <MemberSignature Language="F#" Value="abstract member CreateLogAsync : Guid * string * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;&#xA;override this.CreateLogAsync : Guid * string * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;" Usage="taskHttpClientBase.CreateLogAsync (scopeIdentifier, hubName, planId, log, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -348,9 +362,9 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="log"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="log" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -360,9 +374,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateTimelineAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt; CreateTimelineAsync (Guid scopeIdentifier, string hubName, Guid planId, Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline timeline, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt; CreateTimelineAsync (Guid scopeIdentifier, string hubName, Guid planId, Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline timeline, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt; CreateTimelineAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, class Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline timeline, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.CreateTimelineAsync(System.Guid,System.String,System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateTimelineAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timeline As Timeline, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Timeline)" />
       <MemberSignature Language="F#" Value="abstract member CreateTimelineAsync : Guid * string * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;&#xA;override this.CreateTimelineAsync : Guid * string * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;" Usage="taskHttpClientBase.CreateTimelineAsync (scopeIdentifier, hubName, planId, timeline, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -384,9 +399,9 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timeline"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timeline" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -396,9 +411,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteTimelineAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTimelineAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTimelineAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTimelineAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.DeleteTimelineAsync(System.Guid,System.String,System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteTimelineAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteTimelineAsync : Guid * string * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTimelineAsync : Guid * string * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskHttpClientBase.DeleteTimelineAsync (scopeIdentifier, hubName, planId, timelineId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -420,9 +436,9 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -432,9 +448,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAttachmentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt; GetAttachmentAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, string type, string name, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt; GetAttachmentAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, string type, string name, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt; GetAttachmentAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, valuetype System.Guid recordId, string type, string name, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetAttachmentAsync(System.Guid,System.String,System.Guid,System.Guid,System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttachmentAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, recordId As Guid, type As String, name As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskAttachment)" />
       <MemberSignature Language="F#" Value="abstract member GetAttachmentAsync : Guid * string * Guid * Guid * Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&#xA;override this.GetAttachmentAsync : Guid * string * Guid * Guid * Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;" Usage="taskHttpClientBase.GetAttachmentAsync (scopeIdentifier, hubName, planId, timelineId, recordId, type, name, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -459,12 +476,12 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="recordId"></param>
-        <param name="type"></param>
-        <param name="name"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="recordId" />
+        <param name="type" />
+        <param name="name" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -474,9 +491,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAttachmentContentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetAttachmentContentAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, string type, string name, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetAttachmentContentAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, string type, string name, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetAttachmentContentAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, valuetype System.Guid recordId, string type, string name, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetAttachmentContentAsync(System.Guid,System.String,System.Guid,System.Guid,System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttachmentContentAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, recordId As Guid, type As String, name As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member GetAttachmentContentAsync : Guid * string * Guid * Guid * Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetAttachmentContentAsync : Guid * string * Guid * Guid * Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="taskHttpClientBase.GetAttachmentContentAsync (scopeIdentifier, hubName, planId, timelineId, recordId, type, name, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -501,12 +519,12 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="recordId"></param>
-        <param name="type"></param>
-        <param name="name"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="recordId" />
+        <param name="type" />
+        <param name="name" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -516,9 +534,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAttachmentsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt; GetAttachmentsAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, string type, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt; GetAttachmentsAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Guid recordId, string type, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt; GetAttachmentsAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, valuetype System.Guid recordId, string type, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetAttachmentsAsync(System.Guid,System.String,System.Guid,System.Guid,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttachmentsAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, recordId As Guid, type As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskAttachment))" />
       <MemberSignature Language="F#" Value="abstract member GetAttachmentsAsync : Guid * string * Guid * Guid * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt;&#xA;override this.GetAttachmentsAsync : Guid * string * Guid * Guid * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt;" Usage="taskHttpClientBase.GetAttachmentsAsync (scopeIdentifier, hubName, planId, timelineId, recordId, type, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -542,11 +561,11 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="recordId"></param>
-        <param name="type"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="recordId" />
+        <param name="type" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -556,9 +575,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetLogAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt; GetLogAsync (Guid scopeIdentifier, string hubName, Guid planId, int logId, Nullable&lt;long&gt; startLine = null, Nullable&lt;long&gt; endLine = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt; GetLogAsync (Guid scopeIdentifier, string hubName, Guid planId, int logId, long? startLine = default, long? endLine = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;string&gt;&gt; GetLogAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, int32 logId, valuetype System.Nullable`1&lt;int64&gt; startLine, valuetype System.Nullable`1&lt;int64&gt; endLine, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetLogAsync(System.Guid,System.String,System.Guid,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLogAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, logId As Integer, Optional startLine As Nullable(Of Long) = Nothing, Optional endLine As Nullable(Of Long) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of String))" />
       <MemberSignature Language="F#" Value="abstract member GetLogAsync : Guid * string * Guid * int * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt;&#xA;override this.GetLogAsync : Guid * string * Guid * int * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;string&gt;&gt;" Usage="taskHttpClientBase.GetLogAsync (scopeIdentifier, hubName, planId, logId, startLine, endLine, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -582,11 +602,11 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="logId"></param>
-        <param name="startLine"></param>
-        <param name="endLine"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="logId" />
+        <param name="startLine" />
+        <param name="endLine" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -596,9 +616,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetLogsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;&gt; GetLogsAsync (Guid scopeIdentifier, string hubName, Guid planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;&gt; GetLogsAsync (Guid scopeIdentifier, string hubName, Guid planId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;&gt; GetLogsAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetLogsAsync(System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLogsAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskLog))" />
       <MemberSignature Language="F#" Value="abstract member GetLogsAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;&gt;&#xA;override this.GetLogsAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskLog&gt;&gt;" Usage="taskHttpClientBase.GetLogsAsync (scopeIdentifier, hubName, planId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -619,8 +640,8 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -630,9 +651,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlan&gt; GetPlanAsync (Guid scopeIdentifier, string hubName, Guid planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlan&gt; GetPlanAsync (Guid scopeIdentifier, string hubName, Guid planId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlan&gt; GetPlanAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetPlanAsync(System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPlanAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskOrchestrationPlan)" />
       <MemberSignature Language="F#" Value="abstract member GetPlanAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlan&gt;&#xA;override this.GetPlanAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlan&gt;" Usage="taskHttpClientBase.GetPlanAsync (scopeIdentifier, hubName, planId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -642,7 +664,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -658,8 +681,8 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -669,9 +692,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPlanAttachmentsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt; GetPlanAttachmentsAsync (Guid scopeIdentifier, string hubName, Guid planId, string type, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt; GetPlanAttachmentsAsync (Guid scopeIdentifier, string hubName, Guid planId, string type, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt; GetPlanAttachmentsAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, string type, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetPlanAttachmentsAsync(System.Guid,System.String,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPlanAttachmentsAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, type As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskAttachment))" />
       <MemberSignature Language="F#" Value="abstract member GetPlanAttachmentsAsync : Guid * string * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt;&#xA;override this.GetPlanAttachmentsAsync : Guid * string * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAttachment&gt;&gt;" Usage="taskHttpClientBase.GetPlanAttachmentsAsync (scopeIdentifier, hubName, planId, type, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -693,9 +717,9 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="type"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="type" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -705,9 +729,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPlanGroupsQueueMetricsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanGroupsQueueMetrics&gt;&gt; GetPlanGroupsQueueMetricsAsync (Guid scopeIdentifier, string hubName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanGroupsQueueMetrics&gt;&gt; GetPlanGroupsQueueMetricsAsync (Guid scopeIdentifier, string hubName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanGroupsQueueMetrics&gt;&gt; GetPlanGroupsQueueMetricsAsync(valuetype System.Guid scopeIdentifier, string hubName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetPlanGroupsQueueMetricsAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPlanGroupsQueueMetricsAsync (scopeIdentifier As Guid, hubName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskOrchestrationPlanGroupsQueueMetrics))" />
       <MemberSignature Language="F#" Value="abstract member GetPlanGroupsQueueMetricsAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanGroupsQueueMetrics&gt;&gt;&#xA;override this.GetPlanGroupsQueueMetricsAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanGroupsQueueMetrics&gt;&gt;" Usage="taskHttpClientBase.GetPlanGroupsQueueMetricsAsync (scopeIdentifier, hubName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -717,7 +742,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -732,7 +758,7 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -742,9 +768,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetQueuedPlanGroupAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt; GetQueuedPlanGroupAsync (Guid scopeIdentifier, string hubName, string planGroup, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt; GetQueuedPlanGroupAsync (Guid scopeIdentifier, string hubName, string planGroup, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt; GetQueuedPlanGroupAsync(valuetype System.Guid scopeIdentifier, string hubName, string planGroup, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetQueuedPlanGroupAsync(System.Guid,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetQueuedPlanGroupAsync (scopeIdentifier As Guid, hubName As String, planGroup As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TaskOrchestrationQueuedPlanGroup)" />
       <MemberSignature Language="F#" Value="abstract member GetQueuedPlanGroupAsync : Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt;&#xA;override this.GetQueuedPlanGroupAsync : Guid * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt;" Usage="taskHttpClientBase.GetQueuedPlanGroupAsync (scopeIdentifier, hubName, planGroup, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -754,7 +781,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -770,8 +798,8 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planGroup"></param>
-        <param name="userState"></param>
+        <param name="planGroup" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -781,9 +809,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetQueuedPlanGroupsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt;&gt; GetQueuedPlanGroupsAsync (Guid scopeIdentifier, string hubName, Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.PlanGroupStatus&gt; statusFilter = null, Nullable&lt;int&gt; count = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt;&gt; GetQueuedPlanGroupsAsync (Guid scopeIdentifier, string hubName, Microsoft.TeamFoundation.DistributedTask.WebApi.PlanGroupStatus? statusFilter = default, int? count = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt;&gt; GetQueuedPlanGroupsAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.PlanGroupStatus&gt; statusFilter, valuetype System.Nullable`1&lt;int32&gt; count, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetQueuedPlanGroupsAsync(System.Guid,System.String,System.Nullable{Microsoft.TeamFoundation.DistributedTask.WebApi.PlanGroupStatus},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetQueuedPlanGroupsAsync (scopeIdentifier As Guid, hubName As String, Optional statusFilter As Nullable(Of PlanGroupStatus) = Nothing, Optional count As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskOrchestrationQueuedPlanGroup))" />
       <MemberSignature Language="F#" Value="abstract member GetQueuedPlanGroupsAsync : Guid * string * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.PlanGroupStatus&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt;&gt;&#xA;override this.GetQueuedPlanGroupsAsync : Guid * string * Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.PlanGroupStatus&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationQueuedPlanGroup&gt;&gt;" Usage="taskHttpClientBase.GetQueuedPlanGroupsAsync (scopeIdentifier, hubName, statusFilter, count, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -793,7 +822,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -810,9 +840,9 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="statusFilter"></param>
-        <param name="count"></param>
-        <param name="userState"></param>
+        <param name="statusFilter" />
+        <param name="count" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -822,9 +852,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRecordsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; GetRecordsAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Nullable&lt;int&gt; changeId = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; GetRecordsAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, int? changeId = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; GetRecordsAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, valuetype System.Nullable`1&lt;int32&gt; changeId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetRecordsAsync(System.Guid,System.String,System.Guid,System.Guid,System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecordsAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, Optional changeId As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TimelineRecord))" />
       <MemberSignature Language="F#" Value="abstract member GetRecordsAsync : Guid * string * Guid * Guid * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt;&#xA;override this.GetRecordsAsync : Guid * string * Guid * Guid * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt;" Usage="taskHttpClientBase.GetRecordsAsync (scopeIdentifier, hubName, planId, timelineId, changeId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -847,10 +878,10 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="changeId"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="changeId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -860,9 +891,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTimelineAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt; GetTimelineAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Nullable&lt;int&gt; changeId = null, Nullable&lt;bool&gt; includeRecords = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt; GetTimelineAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, int? changeId = default, bool? includeRecords = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt; GetTimelineAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, valuetype System.Nullable`1&lt;int32&gt; changeId, valuetype System.Nullable`1&lt;bool&gt; includeRecords, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetTimelineAsync(System.Guid,System.String,System.Guid,System.Guid,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTimelineAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, Optional changeId As Nullable(Of Integer) = Nothing, Optional includeRecords As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Timeline)" />
       <MemberSignature Language="F#" Value="abstract member GetTimelineAsync : Guid * string * Guid * Guid * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;&#xA;override this.GetTimelineAsync : Guid * string * Guid * Guid * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;" Usage="taskHttpClientBase.GetTimelineAsync (scopeIdentifier, hubName, planId, timelineId, changeId, includeRecords, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -886,11 +918,11 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="changeId"></param>
-        <param name="includeRecords"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="changeId" />
+        <param name="includeRecords" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -900,9 +932,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTimelinesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;&gt; GetTimelinesAsync (Guid scopeIdentifier, string hubName, Guid planId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;&gt; GetTimelinesAsync (Guid scopeIdentifier, string hubName, Guid planId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;&gt; GetTimelinesAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.GetTimelinesAsync(System.Guid,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTimelinesAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of Timeline))" />
       <MemberSignature Language="F#" Value="abstract member GetTimelinesAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;&gt;&#xA;override this.GetTimelinesAsync : Guid * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Timeline&gt;&gt;" Usage="taskHttpClientBase.GetTimelinesAsync (scopeIdentifier, hubName, planId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -923,8 +956,8 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -934,9 +967,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateRecordsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; UpdateRecordsAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; records, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; UpdateRecordsAsync (Guid scopeIdentifier, string hubName, Guid planId, Guid timelineId, Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; records, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; UpdateRecordsAsync(valuetype System.Guid scopeIdentifier, string hubName, valuetype System.Guid planId, valuetype System.Guid timelineId, class Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; records, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskHttpClientBase.UpdateRecordsAsync(System.Guid,System.String,System.Guid,System.Guid,Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper{System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord}},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateRecordsAsync (scopeIdentifier As Guid, hubName As String, planId As Guid, timelineId As Guid, records As VssJsonCollectionWrapper(Of IEnumerable(Of TimelineRecord)), Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TimelineRecord))" />
       <MemberSignature Language="F#" Value="abstract member UpdateRecordsAsync : Guid * string * Guid * Guid * Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;seq&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt;&#xA;override this.UpdateRecordsAsync : Guid * string * Guid * Guid * Microsoft.VisualStudio.Services.WebApi.VssJsonCollectionWrapper&lt;seq&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineRecord&gt;&gt;" Usage="taskHttpClientBase.UpdateRecordsAsync (scopeIdentifier, hubName, planId, timelineId, records, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -959,10 +993,10 @@
       <Docs>
         <param name="scopeIdentifier">The project GUID to scope the request</param>
         <param name="hubName">The name of the server hub: "build" for the Build server or "rm" for the Release Management server</param>
-        <param name="planId"></param>
-        <param name="timelineId"></param>
-        <param name="records"></param>
-        <param name="userState"></param>
+        <param name="planId" />
+        <param name="timelineId" />
+        <param name="records" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]

@@ -1,4 +1,4 @@
-﻿<Type Name="Demand" FullName="Microsoft.TeamFoundation.Build.WebApi.Demand">
+<Type Name="Demand" FullName="Microsoft.TeamFoundation.Build.WebApi.Demand">
   <TypeSignature Language="C#" Value="public abstract class Demand : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Demand extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.Demand" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.DemandJsonConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.DemandJsonConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.DemandJsonConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -216,7 +217,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class Microsoft.TeamFoundation.Build.WebApi.Demand&amp; demand) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Demand.TryParse(System.String,Microsoft.TeamFoundation.Build.WebApi.Demand@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef demand As Demand) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.TeamFoundation.Build.WebApi.Demand.TryParse (input, demand)" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * Demand -&gt; bool" Usage="Microsoft.TeamFoundation.Build.WebApi.Demand.TryParse (input, demand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
@@ -231,8 +232,8 @@
         <Parameter Name="demand" Type="Microsoft.TeamFoundation.Build.WebApi.Demand" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="input"></param>
-        <param name="demand"></param>
+        <param name="input" />
+        <param name="demand" />
         <summary>
             Parses a string into a Demand instance.
             </summary>

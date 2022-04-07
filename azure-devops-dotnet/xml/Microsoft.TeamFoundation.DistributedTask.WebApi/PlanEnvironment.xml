@@ -1,4 +1,4 @@
-﻿<Type Name="PlanEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment">
+<Type Name="PlanEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment">
   <TypeSignature Language="C#" Value="public sealed class PlanEnvironment : Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PlanEnvironment extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment" />
@@ -19,7 +19,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -72,7 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.OrchestrationProcessType Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment.Microsoft#TeamFoundation#DistributedTask#WebApi#IOrchestrationEnvironment#ProcessType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ProcessType As OrchestrationProcessType Implements IOrchestrationEnvironment.ProcessType" />
-      <MemberSignature Language="F#" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType : Microsoft.TeamFoundation.DistributedTask.WebApi.OrchestrationProcessType" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType</InterfaceMember>
@@ -96,7 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.Variables" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.PlanEnvironment.Microsoft#TeamFoundation#DistributedTask#WebApi#IOrchestrationEnvironment#Variables" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Variables As IDictionary(Of String, VariableValue) Implements IOrchestrationEnvironment.Variables" />
-      <MemberSignature Language="F#" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.Variables" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.Variables : System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.Variables" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.Variables</InterfaceMember>

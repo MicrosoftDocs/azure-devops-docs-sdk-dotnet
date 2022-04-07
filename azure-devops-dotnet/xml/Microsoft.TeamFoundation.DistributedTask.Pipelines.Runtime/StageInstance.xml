@@ -1,4 +1,4 @@
-﻿<Type Name="StageInstance" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance">
+<Type Name="StageInstance" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance">
   <TypeSignature Language="C#" Value="public sealed class StageInstance : Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StageInstance extends Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" />
@@ -16,11 +16,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,6 +50,7 @@
       <MemberSignature Language="C#" Value="public StageInstance (Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage stage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage stage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stage As Stage)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance : Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance stage" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -87,6 +90,7 @@
       <MemberSignature Language="C#" Value="public StageInstance (Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage stage, int attempt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage stage, int32 attempt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stage As Stage, attempt As Integer)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance : Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage * int -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.StageInstance (stage, attempt)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

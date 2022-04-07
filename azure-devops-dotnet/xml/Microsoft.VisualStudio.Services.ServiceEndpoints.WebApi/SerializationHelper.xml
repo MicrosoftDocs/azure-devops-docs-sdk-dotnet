@@ -1,4 +1,4 @@
-﻿<Type Name="SerializationHelper" FullName="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper">
+<Type Name="SerializationHelper" FullName="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper">
   <TypeSignature Language="C#" Value="public static class SerializationHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SerializationHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper" />
@@ -22,7 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(class System.Collections.Generic.ISet`1&lt;!!T&gt;&amp; source, class System.Collections.Generic.IList`1&lt;!!T&gt;&amp; target, bool clearSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy``1(System.Collections.Generic.ISet{``0}@,System.Collections.Generic.IList{``0}@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy(Of T) (ByRef source As ISet(Of T), ByRef target As IList(Of T), Optional clearSource As Boolean = false)" />
-      <MemberSignature Language="F#" Value="static member Copy :  *  * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, clearSource)" />
+      <MemberSignature Language="F#" Value="static member Copy : ISet * IList * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, clearSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
@@ -53,7 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(class System.Collections.Generic.List`1&lt;!!T&gt;&amp; source, class System.Collections.Generic.List`1&lt;!!T&gt;&amp; target, bool clearSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy``1(System.Collections.Generic.List{``0}@,System.Collections.Generic.List{``0}@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy(Of T) (ByRef source As List(Of T), ByRef target As List(Of T), Optional clearSource As Boolean = false)" />
-      <MemberSignature Language="F#" Value="static member Copy :  *  * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, clearSource)" />
+      <MemberSignature Language="F#" Value="static member Copy : List * List * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, clearSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
@@ -84,7 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(class System.Collections.Generic.IList`1&lt;!!T&gt;&amp; source, class System.Collections.Generic.ISet`1&lt;!!T&gt;&amp; target, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, bool clearSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy``1(System.Collections.Generic.IList{``0}@,System.Collections.Generic.ISet{``0}@,System.Collections.Generic.IEqualityComparer{``0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy(Of T) (ByRef source As IList(Of T), ByRef target As ISet(Of T), comparer As IEqualityComparer(Of T), Optional clearSource As Boolean = false)" />
-      <MemberSignature Language="F#" Value="static member Copy :  *  * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, comparer, clearSource)" />
+      <MemberSignature Language="F#" Value="static member Copy : IList * ISet * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, comparer, clearSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
@@ -117,7 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;TKey, TValue&gt;(class System.Collections.Generic.Dictionary`2&lt;!!TKey, !!TValue&gt;&amp; source, class System.Collections.Generic.Dictionary`2&lt;!!TKey, !!TValue&gt;&amp; target, bool clearSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy``2(System.Collections.Generic.Dictionary{``0,``1}@,System.Collections.Generic.Dictionary{``0,``1}@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy(Of TKey, TValue) (ByRef source As Dictionary(Of TKey, TValue), ByRef target As Dictionary(Of TKey, TValue), Optional clearSource As Boolean = false)" />
-      <MemberSignature Language="F#" Value="static member Copy :  *  * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, clearSource)" />
+      <MemberSignature Language="F#" Value="static member Copy : Dictionary * Dictionary * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, clearSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
@@ -150,7 +150,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;TKey, TValue&gt;(class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TValue&gt;&amp; source, class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TValue&gt;&amp; target, bool clearSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy``2(System.Collections.Generic.IDictionary{``0,``1}@,System.Collections.Generic.IDictionary{``0,``1}@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy(Of TKey, TValue) (ByRef source As IDictionary(Of TKey, TValue), ByRef target As IDictionary(Of TKey, TValue), Optional clearSource As Boolean = false)" />
-      <MemberSignature Language="F#" Value="static member Copy :  *  * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, clearSource)" />
+      <MemberSignature Language="F#" Value="static member Copy : IDictionary * IDictionary * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, clearSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
@@ -183,7 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;TKey, TValue&gt;(class System.Collections.Generic.Dictionary`2&lt;!!TKey, !!TValue&gt;&amp; source, class System.Collections.Generic.Dictionary`2&lt;!!TKey, !!TValue&gt;&amp; target, class System.Collections.Generic.IEqualityComparer`1&lt;!!TKey&gt; comparer, bool clearSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy``2(System.Collections.Generic.Dictionary{``0,``1}@,System.Collections.Generic.Dictionary{``0,``1}@,System.Collections.Generic.IEqualityComparer{``0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy(Of TKey, TValue) (ByRef source As Dictionary(Of TKey, TValue), ByRef target As Dictionary(Of TKey, TValue), comparer As IEqualityComparer(Of TKey), Optional clearSource As Boolean = false)" />
-      <MemberSignature Language="F#" Value="static member Copy :  *  * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, comparer, clearSource)" />
+      <MemberSignature Language="F#" Value="static member Copy : Dictionary * Dictionary * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, comparer, clearSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>
@@ -218,7 +218,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;TKey, TValue&gt;(class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TValue&gt;&amp; source, class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TValue&gt;&amp; target, class System.Collections.Generic.IEqualityComparer`1&lt;!!TKey&gt; comparer, bool clearSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy``2(System.Collections.Generic.IDictionary{``0,``1}@,System.Collections.Generic.IDictionary{``0,``1}@,System.Collections.Generic.IEqualityComparer{``0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy(Of TKey, TValue) (ByRef source As IDictionary(Of TKey, TValue), ByRef target As IDictionary(Of TKey, TValue), comparer As IEqualityComparer(Of TKey), Optional clearSource As Boolean = false)" />
-      <MemberSignature Language="F#" Value="static member Copy :  *  * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, comparer, clearSource)" />
+      <MemberSignature Language="F#" Value="static member Copy : IDictionary * IDictionary * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * bool -&gt; unit" Usage="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.SerializationHelper.Copy (source, target, comparer, clearSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi</AssemblyName>

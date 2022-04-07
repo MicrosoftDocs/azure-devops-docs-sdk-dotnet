@@ -1,4 +1,4 @@
-﻿<Type Name="IGraphNodeInstance" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance">
+<Type Name="IGraphNodeInstance" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance">
   <TypeSignature Language="C#" Value="public interface IGraphNodeInstance" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGraphNodeInstance" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance" />
@@ -10,8 +10,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName="FinishTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; FinishTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? FinishTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; FinishTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.FinishTime" />
       <MemberSignature Language="VB.NET" Value="Public Property FinishTime As Nullable(Of DateTime)" />
@@ -140,7 +141,7 @@
       </Docs>
     </Member>
     <Member MemberName="Result">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; Result { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult? Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As Nullable(Of TaskResult)" />
@@ -180,7 +181,7 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As Nullable(Of DateTime)" />

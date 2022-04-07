@@ -1,4 +1,4 @@
-﻿<Type Name="SecureFileStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore">
+<Type Name="SecureFileStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore">
   <TypeSignature Language="C#" Value="public class SecureFileStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecureFileStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileStore" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore" />
@@ -17,8 +17,9 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,10 +28,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SecureFileStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver resolver = null);" />
+      <MemberSignature Language="C#" Value="public SecureFileStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver resolver = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; files, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile},Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (files As IList(Of SecureFile), Optional resolver As ISecureFileResolver = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (files As IList(Of SecureFile), Optional resolver As ISecureFileResolver = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.SecureFile&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecureFileResolver -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.SecureFileStore (files, resolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

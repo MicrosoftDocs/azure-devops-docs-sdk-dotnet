@@ -1,4 +1,4 @@
-﻿<Type Name="ExpressionValue" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue">
+<Type Name="ExpressionValue" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue">
   <TypeSignature Language="C#" Value="public abstract class ExpressionValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionValue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -60,7 +61,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="expression" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -91,7 +92,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="literal" Type="T" />
+        <Parameter Name="literal" Type="T" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -118,7 +119,7 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="token" Type="System.String" />
+        <Parameter Name="token" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="token">To be added.</param>
@@ -156,21 +157,21 @@
       </Docs>
     </Member>
     <Member MemberName="TrimExpression">
-      <MemberSignature Language="C#" Value="protected static string TrimExpression (string value);" />
-      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string TrimExpression(string value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TrimExpression(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Protected Shared Function TrimExpression (value As String) As String" />
-      <MemberSignature Language="F#" Value="static member TrimExpression : string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TrimExpression value" />
+      <MemberSignature Language="C#" Value="protected static string TrimExpression (string value);" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string TrimExpression(string value) cil managed" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TrimExpression(System.String)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function TrimExpression (value As String) As String" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="static member TrimExpression : string -&gt; string" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TrimExpression value" FrameworkAlternate="azure-devops-dotnet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -184,7 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse&lt;T&gt;(string expression, [out] class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;!!T&gt;&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TryParse``1(System.String,Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue{``0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse(Of T) (expression As String, ByRef value As ExpressionValue(Of T)) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TryParse (expression, value)" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * ExpressionValue -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue.TryParse (expression, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>

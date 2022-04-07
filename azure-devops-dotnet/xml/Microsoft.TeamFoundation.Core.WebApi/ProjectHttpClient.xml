@@ -1,4 +1,4 @@
-﻿<Type Name="ProjectHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient">
+<Type Name="ProjectHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient">
   <TypeSignature Language="C#" Value="public class ProjectHttpClient : Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ProjectHttpClient extends Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -90,8 +91,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -147,8 +149,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -163,10 +166,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProject">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProject&gt; GetProject (string id, Nullable&lt;bool&gt; includeCapabilities = null, bool includeHistory = false, object userState = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProject&gt; GetProject (string id, bool? includeCapabilities = default, bool includeHistory = false, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Core.WebApi.TeamProject&gt; GetProject(string id, valuetype System.Nullable`1&lt;bool&gt; includeCapabilities, bool includeHistory, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.GetProject(System.String,System.Nullable{System.Boolean},System.Boolean,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetProject (id As String, Optional includeCapabilities As Nullable(Of Boolean) = null, Optional includeHistory As Boolean = false, Optional userState As Object = null) As Task(Of TeamProject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProject (id As String, Optional includeCapabilities As Nullable(Of Boolean) = Nothing, Optional includeHistory As Boolean = false, Optional userState As Object = Nothing) As Task(Of TeamProject)" />
       <MemberSignature Language="F#" Value="member this.GetProject : string * Nullable&lt;bool&gt; * bool * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProject&gt;" Usage="projectHttpClient.GetProject (id, includeCapabilities, includeHistory, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -187,7 +190,7 @@
         <param name="id">The name or id of the project.</param>
         <param name="includeCapabilities">Include capabilities (such as source control) in the team project result.</param>
         <param name="includeHistory">Search within renamed projects (that had such name in the past).</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <summary>
             Get project with the specified id or name, optionally including capabilities.
             </summary>
@@ -196,10 +199,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectHistory">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjectHistory (long minRevision, object userState = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjectHistory (long minRevision, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjectHistory(int64 minRevision, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.GetProjectHistory(System.Int64,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetProjectHistory (minRevision As Long, Optional userState As Object = null) As Task(Of IEnumerable(Of TeamProjectReference))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProjectHistory (minRevision As Long, Optional userState As Object = Nothing) As Task(Of IEnumerable(Of TeamProjectReference))" />
       <MemberSignature Language="F#" Value="member this.GetProjectHistory : int64 * obj -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt;" Usage="projectHttpClient.GetProjectHistory (minRevision, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -209,10 +212,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("Use GetProjectHistoryEntriesAsync instead")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use GetProjectHistoryEntriesAsync instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use GetProjectHistoryEntriesAsync instead")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -224,7 +229,7 @@
       </Parameters>
       <Docs>
         <param name="minRevision">Starting revision for the changes to return</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <summary>
             Get recorded project changes since the provided revision (inclusive).
             </summary>
@@ -233,11 +238,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjects">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects (Nullable&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt; stateFilter, Nullable&lt;int&gt; top, Nullable&lt;int&gt; skip, object userState, string continuationToken);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects (Microsoft.TeamFoundation.Core.WebApi.ProjectState? stateFilter = default, int? top = default, int? skip = default, object userState = default, string continuationToken = default);" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects(valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt; stateFilter, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip, object userState, string continuationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.GetProjects(System.Nullable{Microsoft.TeamFoundation.Core.WebApi.ProjectState},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjects (stateFilter As Nullable(Of ProjectState), top As Nullable(Of Integer), skip As Nullable(Of Integer), userState As Object, continuationToken As String) As Task(Of IPagedList(Of TeamProjectReference))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjects (Optional stateFilter As Nullable(Of ProjectState) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional continuationToken As String = Nothing) As Task(Of IPagedList(Of TeamProjectReference))" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="F#" Value="override this.GetProjects : Nullable&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt;" Usage="projectHttpClient.GetProjects (stateFilter, top, skip, userState, continuationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects (Microsoft.TeamFoundation.Core.WebApi.ProjectState? stateFilter, int? top, int? skip, object userState, string continuationToken);" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjects (stateFilter As Nullable(Of ProjectState), top As Nullable(Of Integer), skip As Nullable(Of Integer), userState As Object, continuationToken As String) As Task(Of IPagedList(Of TeamProjectReference))" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
@@ -255,11 +262,11 @@
         <Parameter Name="continuationToken" Type="System.String" />
       </Parameters>
       <Docs>
+        <param name="continuationToken">To be added.</param>
         <param name="stateFilter">Filter on team projects in a specific team project state.</param>
         <param name="top">Number of team projects to return (default: 100)</param>
         <param name="skip">Number of team projects to skip.</param>
-        <param name="userState"></param>
-        <param name="continuationToken">To be added.</param>
+        <param name="userState" />
         <summary>
             Get projects with the specified state.
             </summary>
@@ -268,10 +275,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjects">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects (Nullable&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt; stateFilter = null, Nullable&lt;int&gt; top = null, Nullable&lt;int&gt; skip = null, object userState = null, string continuationToken = null, Nullable&lt;bool&gt; getDefaultTeamImageUrl = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects (Microsoft.TeamFoundation.Core.WebApi.ProjectState? stateFilter = default, int? top = default, int? skip = default, object userState = default, string continuationToken = default, bool? getDefaultTeamImageUrl = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects(valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt; stateFilter, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip, object userState, string continuationToken, valuetype System.Nullable`1&lt;bool&gt; getDefaultTeamImageUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.GetProjects(System.Nullable{Microsoft.TeamFoundation.Core.WebApi.ProjectState},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.String,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjects (Optional stateFilter As Nullable(Of ProjectState) = null, Optional top As Nullable(Of Integer) = null, Optional skip As Nullable(Of Integer) = null, Optional userState As Object = null, Optional continuationToken As String = null, Optional getDefaultTeamImageUrl As Nullable(Of Boolean) = null) As Task(Of IPagedList(Of TeamProjectReference))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjects (Optional stateFilter As Nullable(Of ProjectState) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional continuationToken As String = Nothing, Optional getDefaultTeamImageUrl As Nullable(Of Boolean) = Nothing) As Task(Of IPagedList(Of TeamProjectReference))" />
       <MemberSignature Language="F#" Value="override this.GetProjects : Nullable&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * string * Nullable&lt;bool&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt;" Usage="projectHttpClient.GetProjects (stateFilter, top, skip, userState, continuationToken, getDefaultTeamImageUrl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -282,19 +289,19 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stateFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt;" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="skip" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="getDefaultTeamImageUrl" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="stateFilter" Type="System.Nullable&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="skip" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="continuationToken" Type="System.String" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="getDefaultTeamImageUrl" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
+        <param name="continuationToken">To be added.</param>
         <param name="stateFilter">Filter on team projects in a specific team project state.</param>
         <param name="top">Number of team projects to return (default: 100)</param>
         <param name="skip">Number of team projects to skip.</param>
-        <param name="userState"></param>
-        <param name="continuationToken">To be added.</param>
+        <param name="userState" />
         <param name="getDefaultTeamImageUrl">Project references can include their DefaultTeamImageUrl</param>
         <summary>
             Get projects with the specified state.
@@ -325,10 +332,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueueCreateProject">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueCreateProject (Microsoft.TeamFoundation.Core.WebApi.TeamProject projectToCreate, object userState = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueCreateProject (Microsoft.TeamFoundation.Core.WebApi.TeamProject projectToCreate, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueCreateProject(class Microsoft.TeamFoundation.Core.WebApi.TeamProject projectToCreate, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.QueueCreateProject(Microsoft.TeamFoundation.Core.WebApi.TeamProject,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function QueueCreateProject (projectToCreate As TeamProject, Optional userState As Object = null) As Task(Of OperationReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueueCreateProject (projectToCreate As TeamProject, Optional userState As Object = Nothing) As Task(Of OperationReference)" />
       <MemberSignature Language="F#" Value="member this.QueueCreateProject : Microsoft.TeamFoundation.Core.WebApi.TeamProject * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt;" Usage="projectHttpClient.QueueCreateProject (projectToCreate, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -345,7 +352,7 @@
       </Parameters>
       <Docs>
         <param name="projectToCreate">The project to create.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <summary>
             Queue a project creation with a specific Name, Abbreviation, Capabilities.VersionControl, Capabilities.ProcessTemplate, and optionally Description.
             </summary>
@@ -354,10 +361,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueueDeleteProject">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueDeleteProject (Guid projectId, object userState = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueDeleteProject (Guid projectId, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueDeleteProject(valuetype System.Guid projectId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.QueueDeleteProject(System.Guid,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function QueueDeleteProject (projectId As Guid, Optional userState As Object = null) As Task(Of OperationReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueueDeleteProject (projectId As Guid, Optional userState As Object = Nothing) As Task(Of OperationReference)" />
       <MemberSignature Language="F#" Value="member this.QueueDeleteProject : Guid * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt;" Usage="projectHttpClient.QueueDeleteProject (projectId, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -374,7 +381,7 @@
       </Parameters>
       <Docs>
         <param name="projectId">The project id of the project to delete.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <summary>
             Queue a project deletion.
             </summary>
@@ -383,10 +390,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueueDeleteProject">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueDeleteProject (Guid projectId, bool hardDelete, object userState = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueDeleteProject (Guid projectId, bool hardDelete, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Operations.OperationReference&gt; QueueDeleteProject(valuetype System.Guid projectId, bool hardDelete, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.QueueDeleteProject(System.Guid,System.Boolean,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function QueueDeleteProject (projectId As Guid, hardDelete As Boolean, Optional userState As Object = null) As Task(Of OperationReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueueDeleteProject (projectId As Guid, hardDelete As Boolean, Optional userState As Object = Nothing) As Task(Of OperationReference)" />
       <MemberSignature Language="F#" Value="member this.QueueDeleteProject : Guid * bool * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt;" Usage="projectHttpClient.QueueDeleteProject (projectId, hardDelete, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -397,9 +404,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="projectId" Type="System.Guid" />
-        <Parameter Name="hardDelete" Type="System.Boolean" />
-        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="projectId" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="hardDelete" Type="System.Boolean" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="projectId">To be added.</param>
@@ -432,10 +439,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateProject">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; UpdateProject (Guid projectToUpdateId, Microsoft.TeamFoundation.Core.WebApi.TeamProject projectUpdate, object userState = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt; UpdateProject (Guid projectToUpdateId, Microsoft.TeamFoundation.Core.WebApi.TeamProject projectUpdate, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Operations.OperationReference&gt; UpdateProject(valuetype System.Guid projectToUpdateId, class Microsoft.TeamFoundation.Core.WebApi.TeamProject projectUpdate, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClient.UpdateProject(System.Guid,Microsoft.TeamFoundation.Core.WebApi.TeamProject,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function UpdateProject (projectToUpdateId As Guid, projectUpdate As TeamProject, Optional userState As Object = null) As Task(Of OperationReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateProject (projectToUpdateId As Guid, projectUpdate As TeamProject, Optional userState As Object = Nothing) As Task(Of OperationReference)" />
       <MemberSignature Language="F#" Value="member this.UpdateProject : Guid * Microsoft.TeamFoundation.Core.WebApi.TeamProject * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Operations.OperationReference&gt;" Usage="projectHttpClient.UpdateProject (projectToUpdateId, projectUpdate, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -454,7 +461,7 @@
       <Docs>
         <param name="projectToUpdateId">The project id of the project to update.</param>
         <param name="projectUpdate">The updated project.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <summary>
             Update an existing project's name, abbreviation, or description.
             </summary>

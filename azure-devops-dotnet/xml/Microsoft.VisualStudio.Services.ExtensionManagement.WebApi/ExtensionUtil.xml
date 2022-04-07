@@ -1,4 +1,4 @@
-﻿<Type Name="ExtensionUtil" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil">
+<Type Name="ExtensionUtil" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil">
   <TypeSignature Language="C#" Value="public static class ExtensionUtil" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ExtensionUtil extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil" />
@@ -38,8 +38,8 @@
         <Parameter Name="extensionIdentifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="list"></param>
-        <param name="extensionIdentifier"></param>
+        <param name="list" />
+        <param name="extensionIdentifier" />
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,7 +63,7 @@
         <Parameter Name="extensionFlags" Type="Microsoft.VisualStudio.Services.Gallery.WebApi.PublishedExtensionFlags" />
       </Parameters>
       <Docs>
-        <param name="extensionFlags"></param>
+        <param name="extensionFlags" />
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -90,19 +90,19 @@
         <Parameter Name="supportsExternalReference" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="extensionIdentifier"></param>
-        <param name="contributionId"></param>
-        <param name="supportsExternalReference"></param>
+        <param name="extensionIdentifier" />
+        <param name="contributionId" />
+        <param name="supportsExternalReference" />
         <summary />
         <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadManifest">
-      <MemberSignature Language="C#" Value="public static Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest LoadManifest (string publisherName, string extensionName, string version, System.IO.Stream manifestStream, System.Collections.Generic.IDictionary&lt;string,object&gt; extraProperties = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest LoadManifest (string publisherName, string extensionName, string version, System.IO.Stream manifestStream, System.Collections.Generic.IDictionary&lt;string,object&gt; extraProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest LoadManifest(string publisherName, string extensionName, string version, class System.IO.Stream manifestStream, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; extraProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.LoadManifest(System.String,System.String,System.String,System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadManifest (publisherName As String, extensionName As String, version As String, manifestStream As Stream, Optional extraProperties As IDictionary(Of String, Object) = null) As ExtensionManifest" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadManifest (publisherName As String, extensionName As String, version As String, manifestStream As Stream, Optional extraProperties As IDictionary(Of String, Object) = Nothing) As ExtensionManifest" />
       <MemberSignature Language="F#" Value="static member LoadManifest : string * string * string * System.IO.Stream * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.LoadManifest (publisherName, extensionName, version, manifestStream, extraProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -113,18 +113,23 @@
         <ReturnType>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="publisherName" Type="System.String" />
-        <Parameter Name="extensionName" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="manifestStream" Type="System.IO.Stream" />
-        <Parameter Name="extraProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="publisherName" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="extensionName" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="manifestStream" Type="System.IO.Stream" Index="3" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="extraProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="version"></param>
-        <param name="manifestStream"></param>
-        <param name="extraProperties"></param>
+        <param name="publisherName">
+        </param>
+        <param name="extensionName">
+        </param>
+        <param name="version">
+        </param>
+        <param name="manifestStream">
+        </param>
+        <param name="extraProperties">
+        </param>
         <summary>
             Given a serialized manifest stream this method will deserialize the manifest
             and fill in all the run time properties of the contributions
@@ -143,10 +148,10 @@
       </Docs>
     </Member>
     <Member MemberName="LoadManifest">
-      <MemberSignature Language="C#" Value="public static Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest LoadManifest (string publisherName, string extensionName, string version, System.IO.Stream manifestStream, System.Collections.Generic.IDictionary&lt;string,object&gt; extraProperties = null, bool addLicensingConstraints = false);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest LoadManifest (string publisherName, string extensionName, string version, System.IO.Stream manifestStream, System.Collections.Generic.IDictionary&lt;string,object&gt; extraProperties = default, bool addLicensingConstraints = false);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest LoadManifest(string publisherName, string extensionName, string version, class System.IO.Stream manifestStream, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; extraProperties, bool addLicensingConstraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.LoadManifest(System.String,System.String,System.String,System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadManifest (publisherName As String, extensionName As String, version As String, manifestStream As Stream, Optional extraProperties As IDictionary(Of String, Object) = null, Optional addLicensingConstraints As Boolean = false) As ExtensionManifest" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadManifest (publisherName As String, extensionName As String, version As String, manifestStream As Stream, Optional extraProperties As IDictionary(Of String, Object) = Nothing, Optional addLicensingConstraints As Boolean = false) As ExtensionManifest" />
       <MemberSignature Language="F#" Value="static member LoadManifest : string * string * string * System.IO.Stream * System.Collections.Generic.IDictionary&lt;string, obj&gt; * bool -&gt; Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionUtil.LoadManifest (publisherName, extensionName, version, manifestStream, extraProperties, addLicensingConstraints)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -157,20 +162,20 @@
         <ReturnType>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManifest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="publisherName" Type="System.String" />
-        <Parameter Name="extensionName" Type="System.String" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="manifestStream" Type="System.IO.Stream" />
-        <Parameter Name="extraProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
-        <Parameter Name="addLicensingConstraints" Type="System.Boolean" />
+        <Parameter Name="publisherName" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="extensionName" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="manifestStream" Type="System.IO.Stream" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="extraProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="addLicensingConstraints" Type="System.Boolean" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="version"></param>
-        <param name="manifestStream"></param>
-        <param name="extraProperties"></param>
         <param name="addLicensingConstraints">To be added.</param>
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="version" />
+        <param name="manifestStream" />
+        <param name="extraProperties" />
         <summary>
             Given a serialized manifest stream this method will deserialize the manifest
             and fill in all the run time properties of the contributions

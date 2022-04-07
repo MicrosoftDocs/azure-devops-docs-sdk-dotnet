@@ -1,4 +1,4 @@
-﻿<Type Name="PipelineEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineEnvironment">
+<Type Name="PipelineEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineEnvironment">
   <TypeSignature Language="C#" Value="public sealed class PipelineEnvironment : Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PipelineEnvironment extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineEnvironment" />
@@ -19,10 +19,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -59,7 +61,7 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="variables">To be added.</param>
@@ -79,8 +81,8 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
-        <Parameter Name="resources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources" />
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="resources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources" Index="1" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="variables">To be added.</param>
@@ -116,7 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.OrchestrationProcessType Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineEnvironment.Microsoft#TeamFoundation#DistributedTask#WebApi#IOrchestrationEnvironment#ProcessType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ProcessType As OrchestrationProcessType Implements IOrchestrationEnvironment.ProcessType" />
-      <MemberSignature Language="F#" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType : Microsoft.TeamFoundation.DistributedTask.WebApi.OrchestrationProcessType" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationEnvironment.ProcessType</InterfaceMember>
@@ -243,7 +245,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Obsolete("This property is obsolete. Use UserVariables and/or SystemVariables instead")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is obsolete. Use UserVariables and/or SystemVariables instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is obsolete. Use UserVariables and/or SystemVariables instead")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -270,10 +273,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(1)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="Version")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="Version")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="Version")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

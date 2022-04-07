@@ -1,4 +1,4 @@
-﻿<Type Name="FeatureManagementHttpClient" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient">
+<Type Name="FeatureManagementHttpClient" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient">
   <TypeSignature Language="C#" Value="public class FeatureManagementHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FeatureManagementHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient" />
@@ -84,7 +84,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -141,7 +142,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -156,9 +158,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetFeatureAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature&gt; GetFeatureAsync (string featureId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature&gt; GetFeatureAsync (string featureId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature&gt; GetFeatureAsync(string featureId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.GetFeatureAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFeatureAsync (featureId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributedFeature)" />
       <MemberSignature Language="F#" Value="member this.GetFeatureAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature&gt;" Usage="featureManagementHttpClient.GetFeatureAsync (featureId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -176,7 +179,7 @@
       </Parameters>
       <Docs>
         <param name="featureId">The contribution id of the feature</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a specific feature by its id
@@ -186,9 +189,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetFeaturesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature&gt;&gt; GetFeaturesAsync (string targetContributionId = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature&gt;&gt; GetFeaturesAsync (string targetContributionId = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature&gt;&gt; GetFeaturesAsync(string targetContributionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.GetFeaturesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFeaturesAsync (Optional targetContributionId As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ContributedFeature))" />
       <MemberSignature Language="F#" Value="member this.GetFeaturesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeature&gt;&gt;" Usage="featureManagementHttpClient.GetFeaturesAsync (targetContributionId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -206,7 +210,7 @@
       </Parameters>
       <Docs>
         <param name="targetContributionId">Optional target contribution. If null/empty, return all features. If specified include the features that target the specified contribution.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a list of all defined features
@@ -216,9 +220,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetFeatureStateAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; GetFeatureStateAsync (string featureId, string userScope, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; GetFeatureStateAsync (string featureId, string userScope, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; GetFeatureStateAsync(string featureId, string userScope, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.GetFeatureStateAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFeatureStateAsync (featureId As String, userScope As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributedFeatureState)" />
       <MemberSignature Language="F#" Value="member this.GetFeatureStateAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt;" Usage="featureManagementHttpClient.GetFeatureStateAsync (featureId, userScope, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -238,7 +243,7 @@
       <Docs>
         <param name="featureId">Contribution id of the feature</param>
         <param name="userScope">User-Scope at which to get the value. Should be "me" for the current user or "host" for all users.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the state of the specified feature for the given user/all-users scope
@@ -248,9 +253,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetFeatureStateForScopeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; GetFeatureStateForScopeAsync (string featureId, string userScope, string scopeName, string scopeValue, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; GetFeatureStateForScopeAsync (string featureId, string userScope, string scopeName, string scopeValue, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; GetFeatureStateForScopeAsync(string featureId, string userScope, string scopeName, string scopeValue, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.GetFeatureStateForScopeAsync(System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFeatureStateForScopeAsync (featureId As String, userScope As String, scopeName As String, scopeValue As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributedFeatureState)" />
       <MemberSignature Language="F#" Value="member this.GetFeatureStateForScopeAsync : string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt;" Usage="featureManagementHttpClient.GetFeatureStateForScopeAsync (featureId, userScope, scopeName, scopeValue, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -274,7 +280,7 @@
         <param name="userScope">User-Scope at which to get the value. Should be "me" for the current user or "host" for all users.</param>
         <param name="scopeName">Scope at which to get the feature setting for (e.g. "project" or "team")</param>
         <param name="scopeValue">Value of the scope (e.g. the project or team id)</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the state of the specified feature for the given named scope
@@ -284,9 +290,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueryFeatureStatesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.QueryFeatureStatesAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryFeatureStatesAsync (query As ContributedFeatureStateQuery, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributedFeatureStateQuery)" />
       <MemberSignature Language="F#" Value="member this.QueryFeatureStatesAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt;" Usage="featureManagementHttpClient.QueryFeatureStatesAsync (query, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -304,7 +311,7 @@
       </Parameters>
       <Docs>
         <param name="query">Features to query along with current scope values</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the effective state for a list of feature ids
@@ -314,9 +321,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueryFeatureStatesForDefaultScopeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesForDefaultScopeAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, string userScope, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesForDefaultScopeAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, string userScope, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesForDefaultScopeAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, string userScope, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.QueryFeatureStatesForDefaultScopeAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryFeatureStatesForDefaultScopeAsync (query As ContributedFeatureStateQuery, userScope As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributedFeatureStateQuery)" />
       <MemberSignature Language="F#" Value="member this.QueryFeatureStatesForDefaultScopeAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt;" Usage="featureManagementHttpClient.QueryFeatureStatesForDefaultScopeAsync (query, userScope, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -335,8 +343,8 @@
       </Parameters>
       <Docs>
         <param name="query">Query describing the features to query.</param>
-        <param name="userScope"></param>
-        <param name="userState"></param>
+        <param name="userScope" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the states of the specified features for the default scope
@@ -346,9 +354,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueryFeatureStatesForNamedScopeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesForNamedScopeAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, string userScope, string scopeName, string scopeValue, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesForNamedScopeAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, string userScope, string scopeName, string scopeValue, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt; QueryFeatureStatesForNamedScopeAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery query, string userScope, string scopeName, string scopeValue, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.QueryFeatureStatesForNamedScopeAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryFeatureStatesForNamedScopeAsync (query As ContributedFeatureStateQuery, userScope As String, scopeName As String, scopeValue As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributedFeatureStateQuery)" />
       <MemberSignature Language="F#" Value="member this.QueryFeatureStatesForNamedScopeAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureStateQuery&gt;" Usage="featureManagementHttpClient.QueryFeatureStatesForNamedScopeAsync (query, userScope, scopeName, scopeValue, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -369,10 +378,10 @@
       </Parameters>
       <Docs>
         <param name="query">Query describing the features to query.</param>
-        <param name="userScope"></param>
-        <param name="scopeName"></param>
-        <param name="scopeValue"></param>
-        <param name="userState"></param>
+        <param name="userScope" />
+        <param name="scopeName" />
+        <param name="scopeValue" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the states of the specified features for the specific named scope
@@ -382,9 +391,10 @@
       </Docs>
     </Member>
     <Member MemberName="SetFeatureStateAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; SetFeatureStateAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState feature, string featureId, string userScope, string reason = null, string reasonCode = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; SetFeatureStateAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState feature, string featureId, string userScope, string reason = default, string reasonCode = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; SetFeatureStateAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState feature, string featureId, string userScope, string reason, string reasonCode, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.SetFeatureStateAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetFeatureStateAsync (feature As ContributedFeatureState, featureId As String, userScope As String, Optional reason As String = Nothing, Optional reasonCode As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributedFeatureState)" />
       <MemberSignature Language="F#" Value="member this.SetFeatureStateAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt;" Usage="featureManagementHttpClient.SetFeatureStateAsync (feature, featureId, userScope, reason, reasonCode, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -410,7 +420,7 @@
         <param name="userScope">User-Scope at which to set the value. Should be "me" for the current user or "host" for all users.</param>
         <param name="reason">Reason for changing the state</param>
         <param name="reasonCode">Short reason code</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Set the state of a feature
@@ -420,9 +430,10 @@
       </Docs>
     </Member>
     <Member MemberName="SetFeatureStateForScopeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; SetFeatureStateForScopeAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState feature, string featureId, string userScope, string scopeName, string scopeValue, string reason = null, string reasonCode = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; SetFeatureStateForScopeAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState feature, string featureId, string userScope, string scopeName, string scopeValue, string reason = default, string reasonCode = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt; SetFeatureStateForScopeAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState feature, string featureId, string userScope, string scopeName, string scopeValue, string reason, string reasonCode, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.FeatureManagementHttpClient.SetFeatureStateForScopeAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState,System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetFeatureStateForScopeAsync (feature As ContributedFeatureState, featureId As String, userScope As String, scopeName As String, scopeValue As String, Optional reason As String = Nothing, Optional reasonCode As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributedFeatureState)" />
       <MemberSignature Language="F#" Value="member this.SetFeatureStateForScopeAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState * string * string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.FeatureManagement.ContributedFeatureState&gt;" Usage="featureManagementHttpClient.SetFeatureStateForScopeAsync (feature, featureId, userScope, scopeName, scopeValue, reason, reasonCode, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -452,7 +463,7 @@
         <param name="scopeValue">Value of the scope (e.g. the project or team id)</param>
         <param name="reason">Reason for changing the state</param>
         <param name="reasonCode">Short reason code</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Set the state of a feature at a specific scope

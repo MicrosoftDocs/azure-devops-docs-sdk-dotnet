@@ -1,4 +1,4 @@
-﻿<Type Name="TeamCompatHttpClientBase" FullName="Microsoft.TeamFoundation.Core.WebApi.TeamCompatHttpClientBase">
+<Type Name="TeamCompatHttpClientBase" FullName="Microsoft.TeamFoundation.Core.WebApi.TeamCompatHttpClientBase">
   <TypeSignature Language="C#" Value="public abstract class TeamCompatHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TeamCompatHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.TeamCompatHttpClientBase" />
@@ -83,8 +83,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -140,8 +141,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -156,9 +158,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTeamMembersAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.WebApi.IdentityRef&gt;&gt; GetTeamMembersAsync (string projectId, string teamId, Nullable&lt;int&gt; top, Nullable&lt;int&gt; skip, object userState, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.WebApi.IdentityRef&gt;&gt; GetTeamMembersAsync (string projectId, string teamId, int? top, int? skip, object userState, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.VisualStudio.Services.WebApi.IdentityRef&gt;&gt; GetTeamMembersAsync(string projectId, string teamId, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.TeamCompatHttpClientBase.GetTeamMembersAsync(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTeamMembersAsync (projectId As String, teamId As String, top As Nullable(Of Integer), skip As Nullable(Of Integer), userState As Object, cancellationToken As CancellationToken) As Task(Of IEnumerable(Of IdentityRef))" />
       <MemberSignature Language="F#" Value="member this.GetTeamMembersAsync : string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.VisualStudio.Services.WebApi.IdentityRef&gt;&gt;" Usage="teamCompatHttpClientBase.GetTeamMembersAsync (projectId, teamId, top, skip, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -168,10 +171,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("Use GetTeamMembersWithExtendedPropertiesAsync method", false)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use GetTeamMembersWithExtendedPropertiesAsync method", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use GetTeamMembersWithExtendedPropertiesAsync method", false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -188,9 +193,9 @@
       <Docs>
         <param name="projectId">The name or ID (GUID) of the team project the team belongs to.</param>
         <param name="teamId">The name or ID (GUID) of the team .</param>
-        <param name="top"></param>
-        <param name="skip"></param>
-        <param name="userState"></param>
+        <param name="top" />
+        <param name="skip" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a list of members for a specific team.
@@ -200,9 +205,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTeamsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.WebApiTeam&gt;&gt; GetTeamsAsync (string projectId, Nullable&lt;int&gt; top, Nullable&lt;int&gt; skip, object userState, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.WebApiTeam&gt;&gt; GetTeamsAsync (string projectId, int? top, int? skip, object userState, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Core.WebApi.WebApiTeam&gt;&gt; GetTeamsAsync(string projectId, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.TeamCompatHttpClientBase.GetTeamsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTeamsAsync (projectId As String, top As Nullable(Of Integer), skip As Nullable(Of Integer), userState As Object, cancellationToken As CancellationToken) As Task(Of List(Of WebApiTeam))" />
       <MemberSignature Language="F#" Value="abstract member GetTeamsAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.WebApiTeam&gt;&gt;&#xA;override this.GetTeamsAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.WebApiTeam&gt;&gt;" Usage="teamCompatHttpClientBase.GetTeamsAsync (projectId, top, skip, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -212,10 +218,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -229,10 +237,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="projectId"></param>
+        <param name="projectId" />
         <param name="top">Maximum number of teams to return.</param>
         <param name="skip">Number of teams to skip.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a list of teams.

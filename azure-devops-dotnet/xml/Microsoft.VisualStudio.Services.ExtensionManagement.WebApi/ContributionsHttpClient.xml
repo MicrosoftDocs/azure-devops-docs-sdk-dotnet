@@ -1,4 +1,4 @@
-﻿<Type Name="ContributionsHttpClient" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient">
+<Type Name="ContributionsHttpClient" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient">
   <TypeSignature Language="C#" Value="public class ContributionsHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContributionsHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("8477AEC9-A4C7-4BD4-A456-BA4C53C989CB")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("8477AEC9-A4C7-4BD4-A456-BA4C53C989CB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("8477AEC9-A4C7-4BD4-A456-BA4C53C989CB")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -89,7 +90,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -146,7 +148,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -161,10 +164,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetInstalledExtensionByNameAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync (string publisherName, string extensionName, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync(string publisherName, string extensionName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assetTypes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync (string publisherName, string extensionName, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync(string publisherName, string extensionName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assetTypes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.GetInstalledExtensionByNameAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetInstalledExtensionByNameAsync : string * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&#xA;override this.GetInstalledExtensionByNameAsync : string * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;" Usage="contributionsHttpClient.GetInstalledExtensionByNameAsync (publisherName, extensionName, assetTypes, userState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstalledExtensionByNameAsync (publisherName As String, extensionName As String, Optional assetTypes As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstalledExtension)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.GetInstalledExtensionByNameAsync : string * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;" Usage="contributionsHttpClient.GetInstalledExtensionByNameAsync (publisherName, extensionName, assetTypes, userState, cancellationToken)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync (string publisherName, string extensionName, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync(string publisherName, string extensionName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assetTypes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInstalledExtensionByNameAsync (publisherName As String, extensionName As String, Optional assetTypes As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstalledExtension)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="abstract member GetInstalledExtensionByNameAsync : string * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&#xA;override this.GetInstalledExtensionByNameAsync : string * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;" Usage="contributionsHttpClient.GetInstalledExtensionByNameAsync (publisherName, extensionName, assetTypes, userState, cancellationToken)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
@@ -182,10 +190,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="assetTypes"></param>
-        <param name="userState"></param>
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="assetTypes" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -195,10 +203,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetInstalledExtensionsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; contributionIds = null, Nullable&lt;bool&gt; includeDisabledApps = null, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; contributionIds, valuetype System.Nullable`1&lt;bool&gt; includeDisabledApps, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assetTypes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; contributionIds = default, bool? includeDisabledApps = default, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; contributionIds, valuetype System.Nullable`1&lt;bool&gt; includeDisabledApps, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assetTypes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.GetInstalledExtensionsAsync(System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetInstalledExtensionsAsync : seq&lt;string&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt;&#xA;override this.GetInstalledExtensionsAsync : seq&lt;string&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt;" Usage="contributionsHttpClient.GetInstalledExtensionsAsync (contributionIds, includeDisabledApps, assetTypes, userState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstalledExtensionsAsync (Optional contributionIds As IEnumerable(Of String) = Nothing, Optional includeDisabledApps As Nullable(Of Boolean) = Nothing, Optional assetTypes As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of InstalledExtension))" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.GetInstalledExtensionsAsync : seq&lt;string&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt;" Usage="contributionsHttpClient.GetInstalledExtensionsAsync (contributionIds, includeDisabledApps, assetTypes, userState, cancellationToken)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; contributionIds = default, bool? includeDisabledApps = default, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; contributionIds, valuetype System.Nullable`1&lt;bool&gt; includeDisabledApps, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assetTypes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInstalledExtensionsAsync (Optional contributionIds As IEnumerable(Of String) = Nothing, Optional includeDisabledApps As Nullable(Of Boolean) = Nothing, Optional assetTypes As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of InstalledExtension))" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="abstract member GetInstalledExtensionsAsync : seq&lt;string&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt;&#xA;override this.GetInstalledExtensionsAsync : seq&lt;string&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt;" Usage="contributionsHttpClient.GetInstalledExtensionsAsync (contributionIds, includeDisabledApps, assetTypes, userState, cancellationToken)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
@@ -216,10 +229,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="contributionIds"></param>
-        <param name="includeDisabledApps"></param>
-        <param name="assetTypes"></param>
-        <param name="userState"></param>
+        <param name="contributionIds" />
+        <param name="includeDisabledApps" />
+        <param name="assetTypes" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -229,10 +242,15 @@
       </Docs>
     </Member>
     <Member MemberName="QueryContributionNodesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt; QueryContributionNodesAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery query, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt; QueryContributionNodesAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery query, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt; QueryContributionNodesAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery query, object userState = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt; QueryContributionNodesAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery query, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.QueryContributionNodesAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member QueryContributionNodesAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt;&#xA;override this.QueryContributionNodesAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt;" Usage="contributionsHttpClient.QueryContributionNodesAsync (query, userState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryContributionNodesAsync (query As ContributionNodeQuery, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributionNodeQueryResult)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.QueryContributionNodesAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt;" Usage="contributionsHttpClient.QueryContributionNodesAsync (query, userState, cancellationToken)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt; QueryContributionNodesAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery query, object userState = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt; QueryContributionNodesAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery query, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryContributionNodesAsync (query As ContributionNodeQuery, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ContributionNodeQueryResult)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="abstract member QueryContributionNodesAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt;&#xA;override this.QueryContributionNodesAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionNodeQueryResult&gt;" Usage="contributionsHttpClient.QueryContributionNodesAsync (query, userState, cancellationToken)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
@@ -248,8 +266,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="query"></param>
-        <param name="userState"></param>
+        <param name="query" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Query for contribution nodes and provider details according the parameters in the passed in query object.
@@ -259,10 +277,15 @@
       </Docs>
     </Member>
     <Member MemberName="QueryDataProvidersAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt; QueryDataProvidersAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery query, string scopeName = null, string scopeValue = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt; QueryDataProvidersAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery query, string scopeName, string scopeValue, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt; QueryDataProvidersAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery query, string scopeName = default, string scopeValue = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt; QueryDataProvidersAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery query, string scopeName, string scopeValue, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionsHttpClient.QueryDataProvidersAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member QueryDataProvidersAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt;&#xA;override this.QueryDataProvidersAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt;" Usage="contributionsHttpClient.QueryDataProvidersAsync (query, scopeName, scopeValue, userState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryDataProvidersAsync (query As DataProviderQuery, Optional scopeName As String = Nothing, Optional scopeValue As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DataProviderResult)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.QueryDataProvidersAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt;" Usage="contributionsHttpClient.QueryDataProvidersAsync (query, scopeName, scopeValue, userState, cancellationToken)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt; QueryDataProvidersAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery query, string scopeName = default, string scopeValue = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt; QueryDataProvidersAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery query, string scopeName, string scopeValue, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryDataProvidersAsync (query As DataProviderQuery, Optional scopeName As String = Nothing, Optional scopeValue As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DataProviderResult)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="abstract member QueryDataProvidersAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt;&#xA;override this.QueryDataProvidersAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderQuery * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.DataProviderResult&gt;" Usage="contributionsHttpClient.QueryDataProvidersAsync (query, scopeName, scopeValue, userState, cancellationToken)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.ExtensionManagement.WebApi</AssemblyName>
@@ -280,10 +303,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="query"></param>
-        <param name="scopeName"></param>
-        <param name="scopeValue"></param>
-        <param name="userState"></param>
+        <param name="query" />
+        <param name="scopeName" />
+        <param name="scopeValue" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]

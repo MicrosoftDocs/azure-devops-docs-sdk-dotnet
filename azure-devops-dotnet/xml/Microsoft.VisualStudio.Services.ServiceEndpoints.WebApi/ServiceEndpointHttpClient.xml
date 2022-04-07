@@ -1,4 +1,4 @@
-﻿<Type Name="ServiceEndpointHttpClient" FullName="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClient">
+<Type Name="ServiceEndpointHttpClient" FullName="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClient">
   <TypeSignature Language="C#" Value="public class ServiceEndpointHttpClient : Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceEndpointHttpClient extends Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi.ServiceEndpointHttpClient" />
@@ -79,8 +79,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -134,8 +135,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

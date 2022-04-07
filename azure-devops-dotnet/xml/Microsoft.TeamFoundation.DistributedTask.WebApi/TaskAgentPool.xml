@@ -1,4 +1,4 @@
-﻿<Type Name="TaskAgentPool" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool">
+<Type Name="TaskAgentPool" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool">
   <TypeSignature Language="C#" Value="public class TaskAgentPool : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPoolReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskAgentPool extends Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPoolReference" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -58,10 +59,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This property is no longer used and will be removed in a future version.", false)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is no longer used and will be removed in a future version.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is no longer used and will be removed in a future version.", false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -76,7 +79,7 @@
       </Docs>
     </Member>
     <Member MemberName="AgentCloudId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; AgentCloudId { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? AgentCloudId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; AgentCloudId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AgentCloudId" />
       <MemberSignature Language="VB.NET" Value="Public Property AgentCloudId As Nullable(Of Integer)" />
@@ -88,7 +91,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,7 +107,7 @@
       </Docs>
     </Member>
     <Member MemberName="AutoProvision">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AutoProvision { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? AutoProvision { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AutoProvision" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AutoProvision" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoProvision As Nullable(Of Boolean)" />
@@ -116,7 +120,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,7 +137,7 @@
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AutoSize { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? AutoSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AutoSize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Nullable(Of Boolean)" />
@@ -144,7 +149,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -164,7 +170,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As TaskAgentPool" />
-      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool" Usage="taskAgentPool.Clone " />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool" Usage="taskAgentPool.Clone " FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool" Usage="taskAgentPool.Clone " FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -195,7 +202,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -224,7 +232,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -252,10 +261,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This property is no longer used and will be removed in a future version.", false)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is no longer used and will be removed in a future version.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is no longer used and will be removed in a future version.", false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -283,7 +294,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -335,10 +347,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This property is no longer used and will be removed in a future version.", false)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is no longer used and will be removed in a future version.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is no longer used and will be removed in a future version.", false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -366,10 +380,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This property is no longer used and will be removed in a future version.", false)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is no longer used and will be removed in a future version.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is no longer used and will be removed in a future version.", false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -384,7 +400,7 @@
       </Docs>
     </Member>
     <Member MemberName="TargetSize">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; TargetSize { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? TargetSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; TargetSize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentPool.TargetSize" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetSize As Nullable(Of Integer)" />
@@ -396,7 +412,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

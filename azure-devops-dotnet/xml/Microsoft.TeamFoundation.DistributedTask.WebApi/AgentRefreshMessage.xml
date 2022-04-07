@@ -1,4 +1,4 @@
-﻿<Type Name="AgentRefreshMessage" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.AgentRefreshMessage">
+<Type Name="AgentRefreshMessage" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.AgentRefreshMessage">
   <TypeSignature Language="C#" Value="public sealed class AgentRefreshMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AgentRefreshMessage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.AgentRefreshMessage" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -24,10 +25,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AgentRefreshMessage (int agentId, string targetVersion, Nullable&lt;TimeSpan&gt; timeout = null);" />
+      <MemberSignature Language="C#" Value="public AgentRefreshMessage (int agentId, string targetVersion, TimeSpan? timeout = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 agentId, string targetVersion, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.AgentRefreshMessage.#ctor(System.Int32,System.String,System.Nullable{System.TimeSpan})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (agentId As Integer, targetVersion As String, Optional timeout As Nullable(Of TimeSpan) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (agentId As Integer, targetVersion As String, Optional timeout As Nullable(Of TimeSpan) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.AgentRefreshMessage : int * string * Nullable&lt;TimeSpan&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.AgentRefreshMessage" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.AgentRefreshMessage (agentId, targetVersion, timeout)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -62,7 +63,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,7 +110,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,7 +137,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

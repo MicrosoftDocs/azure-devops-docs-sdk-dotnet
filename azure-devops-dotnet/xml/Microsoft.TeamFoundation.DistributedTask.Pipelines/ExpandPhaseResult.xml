@@ -1,4 +1,4 @@
-﻿<Type Name="ExpandPhaseResult" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult">
+<Type Name="ExpandPhaseResult" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult">
   <TypeSignature Language="C#" Value="public class ExpandPhaseResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpandPhaseResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute FrameworkAlternate="azure-devops-dotnet">
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -51,6 +53,7 @@
       <MemberSignature Language="C#" Value="public ExpandPhaseResult (Microsoft.TeamFoundation.DistributedTask.Pipelines.Job job);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Job job) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Job)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (job As Job)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult : Microsoft.TeamFoundation.DistributedTask.Pipelines.Job -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult job" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -58,7 +61,7 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="job" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Job" />
+        <Parameter Name="job" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Job" Index="0" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="job">The job which was created as a result of phase expansion</param>
@@ -83,7 +86,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -98,11 +102,15 @@
       </Docs>
     </Member>
     <Member MemberName="Jobs">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt; Jobs { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt; Jobs" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Job&gt; Jobs { get; }" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Job&gt; Jobs" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.Jobs" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Jobs As IList(Of JobInstance)" />
-      <MemberSignature Language="F#" Value="member this.Jobs : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.Jobs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Jobs As IList(Of Job)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Jobs : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Job&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.Jobs" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt; Jobs { get; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt; Jobs" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Jobs As IList(Of JobInstance)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Jobs : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpandPhaseResult.Jobs" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -110,7 +118,8 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Job&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet-preview">System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -134,10 +143,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet">
-          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(1)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

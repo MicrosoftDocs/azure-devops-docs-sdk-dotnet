@@ -1,4 +1,4 @@
-﻿<Type Name="PlanUpdateModel" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel">
+<Type Name="PlanUpdateModel" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel">
   <TypeSignature Language="C#" Value="public class PlanUpdateModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlanUpdateModel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,10 +27,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PlanUpdateModel (string name = &quot;&quot;, string description = &quot;&quot;, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference area = null, string iteration = &quot;&quot;, Microsoft.VisualStudio.Services.WebApi.IdentityRef owner = null, string startDate = &quot;&quot;, string endDate = &quot;&quot;, Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment manualTestEnvironment = null, Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment automatedTestEnvironment = null, Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings manualTestSettings = null, Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings automatedTestSettings = null, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference build = null, string state = &quot;&quot;, string status = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public PlanUpdateModel (string name = &quot;&quot;, string description = &quot;&quot;, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference area = default, string iteration = &quot;&quot;, Microsoft.VisualStudio.Services.WebApi.IdentityRef owner = default, string startDate = &quot;&quot;, string endDate = &quot;&quot;, Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment manualTestEnvironment = default, Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment automatedTestEnvironment = default, Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings manualTestSettings = default, Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings automatedTestSettings = default, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference build = default, string state = &quot;&quot;, string status = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string description, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference area, string iteration, class Microsoft.VisualStudio.Services.WebApi.IdentityRef owner, string startDate, string endDate, class Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment manualTestEnvironment, class Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment automatedTestEnvironment, class Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings manualTestSettings, class Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings automatedTestSettings, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference build, string state, string status) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel.#ctor(System.String,System.String,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,System.String,Microsoft.VisualStudio.Services.WebApi.IdentityRef,System.String,System.String,Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment,Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment,Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings,Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = &quot;&quot;, Optional description As String = &quot;&quot;, Optional area As ShallowReference = null, Optional iteration As String = &quot;&quot;, Optional owner As IdentityRef = null, Optional startDate As String = &quot;&quot;, Optional endDate As String = &quot;&quot;, Optional manualTestEnvironment As TestEnvironment = null, Optional automatedTestEnvironment As TestEnvironment = null, Optional manualTestSettings As TestSettings = null, Optional automatedTestSettings As TestSettings = null, Optional build As ShallowReference = null, Optional state As String = &quot;&quot;, Optional status As String = &quot;&quot;)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = &quot;&quot;, Optional description As String = &quot;&quot;, Optional area As ShallowReference = Nothing, Optional iteration As String = &quot;&quot;, Optional owner As IdentityRef = Nothing, Optional startDate As String = &quot;&quot;, Optional endDate As String = &quot;&quot;, Optional manualTestEnvironment As TestEnvironment = Nothing, Optional automatedTestEnvironment As TestEnvironment = Nothing, Optional manualTestSettings As TestSettings = Nothing, Optional automatedTestSettings As TestSettings = Nothing, Optional build As ShallowReference = Nothing, Optional state As String = &quot;&quot;, Optional status As String = &quot;&quot;)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel : string * string * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * string * Microsoft.VisualStudio.Services.WebApi.IdentityRef * string * string * Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment * Microsoft.TeamFoundation.TestManagement.WebApi.TestEnvironment * Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings * Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * string * string -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.PlanUpdateModel (name, description, area, iteration, owner, startDate, endDate, manualTestEnvironment, automatedTestEnvironment, manualTestSettings, automatedTestSettings, build, state, status)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -86,7 +87,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="area")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="area")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="area")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -114,10 +116,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="automatedTestEnvironment")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="automatedTestEnvironment")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="automatedTestEnvironment")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,10 +147,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="automatedTestSettings")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="automatedTestSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="automatedTestSettings")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -172,7 +178,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="build")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="build")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="build")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -200,7 +207,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="buildDefinition")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="buildDefinition")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="buildDefinition")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -228,7 +236,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="configurationIds")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="configurationIds")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="configurationIds")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -256,7 +265,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="description")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="description")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="description")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -284,7 +294,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="endDate")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="endDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="endDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -311,7 +322,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="iteration")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="iteration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="iteration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -339,10 +351,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="manualTestEnvironment")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="manualTestEnvironment")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="manualTestEnvironment")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -368,10 +382,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="manualTestSettings")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="manualTestSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="manualTestSettings")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -397,7 +413,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="name")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -425,7 +442,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="owner")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="owner")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="owner")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -453,7 +471,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="releaseEnvironmentDefinition")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="releaseEnvironmentDefinition")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="releaseEnvironmentDefinition")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -481,7 +500,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="startDate")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="startDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="startDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -508,7 +528,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="state")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -536,10 +557,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="status")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="status")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientInternalUseOnly(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -564,7 +587,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="testOutcomeSettings")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="testOutcomeSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="testOutcomeSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

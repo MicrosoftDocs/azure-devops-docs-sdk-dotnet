@@ -1,4 +1,4 @@
-﻿<Type Name="JobEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment">
+<Type Name="JobEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment">
   <TypeSignature Language="C#" Value="public sealed class JobEnvironment : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JobEnvironment extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment" />
@@ -19,7 +19,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -146,6 +147,7 @@
       <MemberSignature Language="C#" Value="public void Extract (System.Collections.Generic.Dictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, System.Collections.Generic.HashSet&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskhints, Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources jobResources);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Extract(class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, class System.Collections.Generic.HashSet`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskhints, class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources jobResources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.Extract(System.Collections.Generic.Dictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue},System.Collections.Generic.HashSet{Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint},Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Extract (variables As Dictionary(Of String, VariableValue), maskhints As HashSet(Of MaskHint), jobResources As JobResources)" />
       <MemberSignature Language="F#" Value="member this.Extract : System.Collections.Generic.Dictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; * System.Collections.Generic.HashSet&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources -&gt; unit" Usage="jobEnvironment.Extract (variables, maskhints, jobResources)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -243,6 +245,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.JobEnvironment.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="F#" Value="abstract member System.ICloneable.Clone : unit -&gt; obj&#xA;override this.System.ICloneable.Clone : unit -&gt; obj" Usage="jobEnvironment.System.ICloneable.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -276,7 +279,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

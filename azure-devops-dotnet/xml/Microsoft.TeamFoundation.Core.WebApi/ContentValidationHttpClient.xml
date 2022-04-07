@@ -1,4 +1,4 @@
-﻿<Type Name="ContentValidationHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.ContentValidationHttpClient">
+<Type Name="ContentValidationHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.ContentValidationHttpClient">
   <TypeSignature Language="C#" Value="public class ContentValidationHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentValidationHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.ContentValidationHttpClient" />
@@ -13,8 +13,9 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("contentValidation")</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("contentValidation")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("contentValidation")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -84,8 +85,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -139,8 +141,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -155,9 +158,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateTakedownStatusAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpdateTakedownStatusAsync (Guid sourceProjectId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpdateTakedownStatusAsync (Guid sourceProjectId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UpdateTakedownStatusAsync(valuetype System.Guid sourceProjectId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ContentValidationHttpClient.UpdateTakedownStatusAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateTakedownStatusAsync (sourceProjectId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.UpdateTakedownStatusAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="contentValidationHttpClient.UpdateTakedownStatusAsync (sourceProjectId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -165,8 +169,9 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -178,8 +183,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="sourceProjectId"></param>
-        <param name="userState"></param>
+        <param name="sourceProjectId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]

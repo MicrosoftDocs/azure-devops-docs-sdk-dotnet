@@ -1,4 +1,4 @@
-﻿<Type Name="TfvcHttpClient" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient">
+<Type Name="TfvcHttpClient" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient">
   <TypeSignature Language="C#" Value="public class TfvcHttpClient : Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TfvcHttpClient extends Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(22, 80)</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(22, 80)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(22, 80)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("8AA40520-446D-40E6-89F6-9C9F9CE44C48")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("8AA40520-446D-40E6-89F6-9C9F9CE44C48")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("8AA40520-446D-40E6-89F6-9C9F9CE44C48")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -91,8 +93,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -148,8 +151,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -192,9 +196,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetChangesetChangesPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt;&gt; GetChangesetChangesPagedAsync (int id, int top, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt;&gt; GetChangesetChangesPagedAsync (int id, int top, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt;&gt; GetChangesetChangesPagedAsync(int32 id, int32 top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.GetChangesetChangesPagedAsync(System.Int32,System.Int32,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChangesetChangesPagedAsync (id As Integer, top As Integer, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TfvcChange))" />
       <MemberSignature Language="F#" Value="abstract member GetChangesetChangesPagedAsync : int * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt;&gt;&#xA;override this.GetChangesetChangesPagedAsync : int * int * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcChange&gt;&gt;" Usage="tfvcHttpClient.GetChangesetChangesPagedAsync (id, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -204,7 +209,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -258,9 +264,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsByChangesetPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync (int top, int baseChangeset, string scopePath = null, Nullable&lt;int&gt; targetChangeset = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync (int top, int baseChangeset, string scopePath = default, int? targetChangeset = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync(int32 top, int32 baseChangeset, string scopePath, valuetype System.Nullable`1&lt;int32&gt; targetChangeset, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.GetItemsByChangesetPagedAsync(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsByChangesetPagedAsync (top As Integer, baseChangeset As Integer, Optional scopePath As String = Nothing, Optional targetChangeset As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TfvcItemPreviousHash))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsByChangesetPagedAsync : int * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt;&#xA;override this.GetItemsByChangesetPagedAsync : int * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt;" Usage="tfvcHttpClient.GetItemsByChangesetPagedAsync (top, baseChangeset, scopePath, targetChangeset, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -270,7 +277,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -303,9 +311,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsByChangesetPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync (Guid project, int top, int baseChangeset, string scopePath = null, Nullable&lt;int&gt; targetChangeset = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync (Guid project, int top, int baseChangeset, string scopePath = default, int? targetChangeset = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync(valuetype System.Guid project, int32 top, int32 baseChangeset, string scopePath, valuetype System.Nullable`1&lt;int32&gt; targetChangeset, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.GetItemsByChangesetPagedAsync(System.Guid,System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsByChangesetPagedAsync (project As Guid, top As Integer, baseChangeset As Integer, Optional scopePath As String = Nothing, Optional targetChangeset As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TfvcItemPreviousHash))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsByChangesetPagedAsync : Guid * int * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt;&#xA;override this.GetItemsByChangesetPagedAsync : Guid * int * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt;" Usage="tfvcHttpClient.GetItemsByChangesetPagedAsync (project, top, baseChangeset, scopePath, targetChangeset, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -315,7 +324,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -350,9 +360,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsByChangesetPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync (string project, int top, int baseChangeset, string scopePath = null, Nullable&lt;int&gt; targetChangeset = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync (string project, int top, int baseChangeset, string scopePath = default, int? targetChangeset = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt; GetItemsByChangesetPagedAsync(string project, int32 top, int32 baseChangeset, string scopePath, valuetype System.Nullable`1&lt;int32&gt; targetChangeset, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.GetItemsByChangesetPagedAsync(System.String,System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsByChangesetPagedAsync (project As String, top As Integer, baseChangeset As Integer, Optional scopePath As String = Nothing, Optional targetChangeset As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TfvcItemPreviousHash))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsByChangesetPagedAsync : string * int * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt;&#xA;override this.GetItemsByChangesetPagedAsync : string * int * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItemPreviousHash&gt;&gt;" Usage="tfvcHttpClient.GetItemsByChangesetPagedAsync (project, top, baseChangeset, scopePath, targetChangeset, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -362,7 +373,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -397,9 +409,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync (int top, string scopePath = null, Nullable&lt;int&gt; changeset = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync (int top, string scopePath = default, int? changeset = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync(int32 top, string scopePath, valuetype System.Nullable`1&lt;int32&gt; changeset, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.GetItemsPagedAsync(System.Int32,System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsPagedAsync (top As Integer, Optional scopePath As String = Nothing, Optional changeset As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TfvcItem))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt;" Usage="tfvcHttpClient.GetItemsPagedAsync (top, scopePath, changeset, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -409,7 +422,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -440,9 +454,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync (Guid project, int top, string scopePath = null, Nullable&lt;int&gt; changeset = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync (Guid project, int top, string scopePath = default, int? changeset = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync(valuetype System.Guid project, int32 top, string scopePath, valuetype System.Nullable`1&lt;int32&gt; changeset, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.GetItemsPagedAsync(System.Guid,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsPagedAsync (project As Guid, top As Integer, Optional scopePath As String = Nothing, Optional changeset As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TfvcItem))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : Guid * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : Guid * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt;" Usage="tfvcHttpClient.GetItemsPagedAsync (project, top, scopePath, changeset, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -452,7 +467,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -485,9 +501,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync (string project, int top, string scopePath = null, Nullable&lt;int&gt; changeset = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync (string project, int top, string scopePath = default, int? changeset = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt; GetItemsPagedAsync(string project, int32 top, string scopePath, valuetype System.Nullable`1&lt;int32&gt; changeset, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.GetItemsPagedAsync(System.String,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsPagedAsync (project As String, top As Integer, Optional scopePath As String = Nothing, Optional changeset As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TfvcItem))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : string * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : string * int * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.TfvcItem&gt;&gt;" Usage="tfvcHttpClient.GetItemsPagedAsync (project, top, scopePath, changeset, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -497,7 +514,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -533,6 +551,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;T&gt;&gt; GetPagedList&lt;T&gt; (System.Net.Http.HttpResponseMessage responseMessage, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;!!T&gt;&gt; GetPagedList&lt;T&gt;(class System.Net.Http.HttpResponseMessage responseMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.GetPagedList``1(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetPagedList(Of T) (responseMessage As HttpResponseMessage, cancellationToken As CancellationToken) As Task(Of IPagedList(Of T))" />
       <MemberSignature Language="F#" Value="member this.GetPagedList : System.Net.Http.HttpResponseMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;'T&gt;&gt;" Usage="tfvcHttpClient.GetPagedList (responseMessage, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -560,9 +579,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpRequestMessage message, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.SendAsync``1(System.Net.Http.HttpRequestMessage,System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (message As HttpRequestMessage, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="tfvcHttpClient.SendAsync (message, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -594,9 +614,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="tfvcHttpClient.SendAsync (method, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -638,9 +659,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; additionalHeaders, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.TfvcHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, additionalHeaders As IEnumerable(Of KeyValuePair(Of String, String)), locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="tfvcHttpClient.SendAsync (method, additionalHeaders, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

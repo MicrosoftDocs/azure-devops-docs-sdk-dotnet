@@ -1,4 +1,4 @@
-﻿<Type Name="RunCreateModel" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel">
+<Type Name="RunCreateModel" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel">
   <TypeSignature Language="C#" Value="public class RunCreateModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunCreateModel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,10 +27,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RunCreateModel (string name = &quot;&quot;, string iteration = &quot;&quot;, int[] pointIds = null, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference plan = null, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference testSettings = null, int buildId = 0, string state = &quot;&quot;, Nullable&lt;bool&gt; isAutomated = null, string errorMessage = &quot;&quot;, string dueDate = &quot;&quot;, string type = &quot;&quot;, string controller = &quot;&quot;, string buildDropLocation = &quot;&quot;, string comment = &quot;&quot;, string testEnvironmentId = &quot;&quot;, string startedDate = &quot;&quot;, string completedDate = &quot;&quot;, int[] configIds = null, Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter filter = null, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlTestEnvironment = null, Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails environmentDetails = null, Microsoft.VisualStudio.Services.WebApi.IdentityRef owner = null, string buildPlatform = &quot;&quot;, string buildFlavor = &quot;&quot;, string releaseUri = &quot;&quot;, string releaseEnvironmentUri = &quot;&quot;, Nullable&lt;TimeSpan&gt; runTimeout = null, string testconfigurationsMapping = &quot;&quot;, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlAutEnvironment = null);" />
+      <MemberSignature Language="C#" Value="public RunCreateModel (string name = &quot;&quot;, string iteration = &quot;&quot;, int[] pointIds = default, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference plan = default, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference testSettings = default, int buildId = 0, string state = &quot;&quot;, bool? isAutomated = default, string errorMessage = &quot;&quot;, string dueDate = &quot;&quot;, string type = &quot;&quot;, string controller = &quot;&quot;, string buildDropLocation = &quot;&quot;, string comment = &quot;&quot;, string testEnvironmentId = &quot;&quot;, string startedDate = &quot;&quot;, string completedDate = &quot;&quot;, int[] configIds = default, Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter filter = default, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlTestEnvironment = default, Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails environmentDetails = default, Microsoft.VisualStudio.Services.WebApi.IdentityRef owner = default, string buildPlatform = &quot;&quot;, string buildFlavor = &quot;&quot;, string releaseUri = &quot;&quot;, string releaseEnvironmentUri = &quot;&quot;, TimeSpan? runTimeout = default, string testconfigurationsMapping = &quot;&quot;, Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlAutEnvironment = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string iteration, int32[] pointIds, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference plan, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference testSettings, int32 buildId, string state, valuetype System.Nullable`1&lt;bool&gt; isAutomated, string errorMessage, string dueDate, string type, string controller, string buildDropLocation, string comment, string testEnvironmentId, string startedDate, string completedDate, int32[] configIds, class Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter filter, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlTestEnvironment, class Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails environmentDetails, class Microsoft.VisualStudio.Services.WebApi.IdentityRef owner, string buildPlatform, string buildFlavor, string releaseUri, string releaseEnvironmentUri, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; runTimeout, string testconfigurationsMapping, class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference dtlAutEnvironment) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.#ctor(System.String,System.String,System.Int32[],Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,System.Int32,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32[],Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference,Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails,Microsoft.VisualStudio.Services.WebApi.IdentityRef,System.String,System.String,System.String,System.String,System.Nullable{System.TimeSpan},System.String,Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = &quot;&quot;, Optional iteration As String = &quot;&quot;, Optional pointIds As Integer() = null, Optional plan As ShallowReference = null, Optional testSettings As ShallowReference = null, Optional buildId As Integer = 0, Optional state As String = &quot;&quot;, Optional isAutomated As Nullable(Of Boolean) = null, Optional errorMessage As String = &quot;&quot;, Optional dueDate As String = &quot;&quot;, Optional type As String = &quot;&quot;, Optional controller As String = &quot;&quot;, Optional buildDropLocation As String = &quot;&quot;, Optional comment As String = &quot;&quot;, Optional testEnvironmentId As String = &quot;&quot;, Optional startedDate As String = &quot;&quot;, Optional completedDate As String = &quot;&quot;, Optional configIds As Integer() = null, Optional filter As RunFilter = null, Optional dtlTestEnvironment As ShallowReference = null, Optional environmentDetails As DtlEnvironmentDetails = null, Optional owner As IdentityRef = null, Optional buildPlatform As String = &quot;&quot;, Optional buildFlavor As String = &quot;&quot;, Optional releaseUri As String = &quot;&quot;, Optional releaseEnvironmentUri As String = &quot;&quot;, Optional runTimeout As Nullable(Of TimeSpan) = null, Optional testconfigurationsMapping As String = &quot;&quot;, Optional dtlAutEnvironment As ShallowReference = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = &quot;&quot;, Optional iteration As String = &quot;&quot;, Optional pointIds As Integer() = Nothing, Optional plan As ShallowReference = Nothing, Optional testSettings As ShallowReference = Nothing, Optional buildId As Integer = 0, Optional state As String = &quot;&quot;, Optional isAutomated As Nullable(Of Boolean) = Nothing, Optional errorMessage As String = &quot;&quot;, Optional dueDate As String = &quot;&quot;, Optional type As String = &quot;&quot;, Optional controller As String = &quot;&quot;, Optional buildDropLocation As String = &quot;&quot;, Optional comment As String = &quot;&quot;, Optional testEnvironmentId As String = &quot;&quot;, Optional startedDate As String = &quot;&quot;, Optional completedDate As String = &quot;&quot;, Optional configIds As Integer() = Nothing, Optional filter As RunFilter = Nothing, Optional dtlTestEnvironment As ShallowReference = Nothing, Optional environmentDetails As DtlEnvironmentDetails = Nothing, Optional owner As IdentityRef = Nothing, Optional buildPlatform As String = &quot;&quot;, Optional buildFlavor As String = &quot;&quot;, Optional releaseUri As String = &quot;&quot;, Optional releaseEnvironmentUri As String = &quot;&quot;, Optional runTimeout As Nullable(Of TimeSpan) = Nothing, Optional testconfigurationsMapping As String = &quot;&quot;, Optional dtlAutEnvironment As ShallowReference = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel : string * string * int[] * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * int * string * Nullable&lt;bool&gt; * string * string * string * string * string * string * string * string * string * int[] * Microsoft.TeamFoundation.TestManagement.WebApi.RunFilter * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference * Microsoft.TeamFoundation.TestManagement.WebApi.DtlEnvironmentDetails * Microsoft.VisualStudio.Services.WebApi.IdentityRef * string * string * string * string * Nullable&lt;TimeSpan&gt; * string * Microsoft.TeamFoundation.TestManagement.WebApi.ShallowReference -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel (name, iteration, pointIds, plan, testSettings, buildId, state, isAutomated, errorMessage, dueDate, type, controller, buildDropLocation, comment, testEnvironmentId, startedDate, completedDate, configIds, filter, dtlTestEnvironment, environmentDetails, owner, buildPlatform, buildFlavor, releaseUri, releaseEnvironmentUri, runTimeout, testconfigurationsMapping, dtlAutEnvironment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -103,7 +104,7 @@
       </Docs>
     </Member>
     <Member MemberName="Automated">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Automated { get; }" />
+      <MemberSignature Language="C#" Value="public bool? Automated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Automated" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Automated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Automated As Nullable(Of Boolean)" />
@@ -116,7 +117,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -145,7 +147,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -173,7 +176,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -201,7 +205,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -229,7 +234,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -256,7 +262,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -282,7 +289,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -310,7 +318,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -338,7 +347,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -366,7 +376,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -394,7 +405,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -420,7 +432,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -448,7 +461,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -476,7 +490,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -504,7 +519,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -530,7 +546,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -558,7 +575,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -584,7 +602,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -600,11 +619,14 @@
       </Docs>
     </Member>
     <Member MemberName="Name">
-      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Name { get; }" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Name" />
-      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
-      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Name" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.TestManagement.WebApi.RunCreateModel.Name" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
@@ -613,7 +635,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -641,7 +664,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -669,7 +693,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -697,7 +722,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -725,7 +751,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -752,7 +779,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -778,7 +806,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -806,7 +835,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -832,7 +862,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -858,7 +889,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -886,7 +918,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -915,7 +948,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -941,7 +975,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -969,7 +1004,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -997,7 +1033,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

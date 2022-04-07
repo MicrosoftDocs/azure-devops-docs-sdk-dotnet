@@ -1,4 +1,4 @@
-﻿<Type Name="IVariableGroupResolver" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver">
+<Type Name="IVariableGroupResolver" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver">
   <TypeSignature Language="C#" Value="public interface IVariableGroupResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVariableGroupResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver" />
@@ -10,8 +10,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,6 +41,7 @@
       </Parameters>
       <Docs>
         <param name="references">To be added.</param>
+        <param name="reference">The variable groups which should be resolved</param>
         <summary>
             Attempts to resolve variable group references to <c>VariableGroup</c> instances.
             </summary>

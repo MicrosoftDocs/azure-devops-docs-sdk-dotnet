@@ -1,4 +1,4 @@
-﻿<Type Name="TaskAgentHttpClientCompatBase" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase">
+<Type Name="TaskAgentHttpClientCompatBase" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase">
   <TypeSignature Language="C#" Value="public abstract class TaskAgentHttpClientCompatBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TaskAgentHttpClientCompatBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("A85B8835-C1A1-4AAC-AE97-1C3D0BA72DBD")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("A85B8835-C1A1-4AAC-AE97-1C3D0BA72DBD")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("A85B8835-C1A1-4AAC-AE97-1C3D0BA72DBD")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -88,8 +89,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -145,8 +147,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -161,9 +164,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteTaskGroupAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTaskGroupAsync (Guid project, Guid taskGroupId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTaskGroupAsync (Guid project, Guid taskGroupId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTaskGroupAsync(valuetype System.Guid project, valuetype System.Guid taskGroupId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase.DeleteTaskGroupAsync(System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteTaskGroupAsync (project As Guid, taskGroupId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteTaskGroupAsync : Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTaskGroupAsync : Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskAgentHttpClientCompatBase.DeleteTaskGroupAsync (project, taskGroupId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -182,8 +186,8 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="taskGroupId"></param>
-        <param name="userState"></param>
+        <param name="taskGroupId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -193,9 +197,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteTaskGroupAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTaskGroupAsync (string project, Guid taskGroupId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTaskGroupAsync (string project, Guid taskGroupId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTaskGroupAsync(string project, valuetype System.Guid taskGroupId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase.DeleteTaskGroupAsync(System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteTaskGroupAsync (project As String, taskGroupId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteTaskGroupAsync : string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTaskGroupAsync : string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskAgentHttpClientCompatBase.DeleteTaskGroupAsync (project, taskGroupId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -214,8 +219,8 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="taskGroupId"></param>
-        <param name="userState"></param>
+        <param name="taskGroupId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -225,9 +230,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTaskGroupsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync (Guid project, Nullable&lt;Guid&gt; taskGroupId = null, Nullable&lt;bool&gt; expanded = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync (Guid project, Guid? taskGroupId = default, bool? expanded = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync(valuetype System.Guid project, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskGroupId, valuetype System.Nullable`1&lt;bool&gt; expanded, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase.GetTaskGroupsAsync(System.Guid,System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTaskGroupsAsync (project As Guid, Optional taskGroupId As Nullable(Of Guid) = Nothing, Optional expanded As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskGroup))" />
       <MemberSignature Language="F#" Value="abstract member GetTaskGroupsAsync : Guid * Nullable&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt;&#xA;override this.GetTaskGroupsAsync : Guid * Nullable&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt;" Usage="taskAgentHttpClientCompatBase.GetTaskGroupsAsync (project, taskGroupId, expanded, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -247,9 +253,9 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="taskGroupId"></param>
-        <param name="expanded"></param>
-        <param name="userState"></param>
+        <param name="taskGroupId" />
+        <param name="expanded" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -259,9 +265,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTaskGroupsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync (string project, Nullable&lt;Guid&gt; taskGroupId = null, Nullable&lt;bool&gt; expanded = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync (string project, Guid? taskGroupId = default, bool? expanded = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync(string project, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskGroupId, valuetype System.Nullable`1&lt;bool&gt; expanded, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase.GetTaskGroupsAsync(System.String,System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTaskGroupsAsync (project As String, Optional taskGroupId As Nullable(Of Guid) = Nothing, Optional expanded As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskGroup))" />
       <MemberSignature Language="F#" Value="abstract member GetTaskGroupsAsync : string * Nullable&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt;&#xA;override this.GetTaskGroupsAsync : string * Nullable&lt;Guid&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt;" Usage="taskAgentHttpClientCompatBase.GetTaskGroupsAsync (project, taskGroupId, expanded, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -281,9 +288,9 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="taskGroupId"></param>
-        <param name="expanded"></param>
-        <param name="userState"></param>
+        <param name="taskGroupId" />
+        <param name="expanded" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -293,9 +300,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTaskGroupsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync (Guid project, Nullable&lt;Guid&gt; taskGroupId = null, Nullable&lt;bool&gt; expanded = null, Nullable&lt;Guid&gt; taskIdFilter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync (Guid project, Guid? taskGroupId = default, bool? expanded = default, Guid? taskIdFilter = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync(valuetype System.Guid project, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskGroupId, valuetype System.Nullable`1&lt;bool&gt; expanded, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskIdFilter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase.GetTaskGroupsAsync(System.Guid,System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Nullable{System.Guid},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTaskGroupsAsync (project As Guid, Optional taskGroupId As Nullable(Of Guid) = Nothing, Optional expanded As Nullable(Of Boolean) = Nothing, Optional taskIdFilter As Nullable(Of Guid) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskGroup))" />
       <MemberSignature Language="F#" Value="abstract member GetTaskGroupsAsync : Guid * Nullable&lt;Guid&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt;&#xA;override this.GetTaskGroupsAsync : Guid * Nullable&lt;Guid&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt;" Usage="taskAgentHttpClientCompatBase.GetTaskGroupsAsync (project, taskGroupId, expanded, taskIdFilter, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -316,10 +324,10 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="taskGroupId"></param>
-        <param name="expanded"></param>
-        <param name="taskIdFilter"></param>
-        <param name="userState"></param>
+        <param name="taskGroupId" />
+        <param name="expanded" />
+        <param name="taskIdFilter" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -329,9 +337,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTaskGroupsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync (string project, Nullable&lt;Guid&gt; taskGroupId = null, Nullable&lt;bool&gt; expanded = null, Nullable&lt;Guid&gt; taskIdFilter = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync (string project, Guid? taskGroupId = default, bool? expanded = default, Guid? taskIdFilter = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt; GetTaskGroupsAsync(string project, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskGroupId, valuetype System.Nullable`1&lt;bool&gt; expanded, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; taskIdFilter, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClientCompatBase.GetTaskGroupsAsync(System.String,System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Nullable{System.Guid},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTaskGroupsAsync (project As String, Optional taskGroupId As Nullable(Of Guid) = Nothing, Optional expanded As Nullable(Of Boolean) = Nothing, Optional taskIdFilter As Nullable(Of Guid) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TaskGroup))" />
       <MemberSignature Language="F#" Value="abstract member GetTaskGroupsAsync : string * Nullable&lt;Guid&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt;&#xA;override this.GetTaskGroupsAsync : string * Nullable&lt;Guid&gt; * Nullable&lt;bool&gt; * Nullable&lt;Guid&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskGroup&gt;&gt;" Usage="taskAgentHttpClientCompatBase.GetTaskGroupsAsync (project, taskGroupId, expanded, taskIdFilter, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -352,10 +361,10 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="taskGroupId"></param>
-        <param name="expanded"></param>
-        <param name="taskIdFilter"></param>
-        <param name="userState"></param>
+        <param name="taskGroupId" />
+        <param name="expanded" />
+        <param name="taskIdFilter" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]

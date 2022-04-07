@@ -1,4 +1,4 @@
-﻿<Type Name="PipelineBuilder" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder">
+<Type Name="PipelineBuilder" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder">
   <TypeSignature Language="C#" Value="public class PipelineBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PipelineBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,10 +43,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PipelineBuilder (Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBuilder contextBuilder, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore templateStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore = null);" />
+      <MemberSignature Language="C#" Value="public PipelineBuilder (Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBuilder contextBuilder, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore templateStore = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBuilder contextBuilder, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore templateStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBuilder,Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (contextBuilder As PipelineContextBuilder, Optional templateStore As ITaskTemplateStore = null, Optional packageStore As IPackageStore = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextBuilder As PipelineContextBuilder, Optional templateStore As ITaskTemplateStore = Nothing, Optional packageStore As IPackageStore = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBuilder * Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder (contextBuilder, templateStore, packageStore)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -53,9 +54,9 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="contextBuilder" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBuilder" />
-        <Parameter Name="templateStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore" />
-        <Parameter Name="packageStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore" />
+        <Parameter Name="contextBuilder" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineContextBuilder" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="templateStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="packageStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="contextBuilder">To be added.</param>
@@ -77,11 +78,11 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="taskstore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" />
-        <Parameter Name="secretStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecretStore" />
-        <Parameter Name="resourceStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" />
-        <Parameter Name="templateStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore" />
-        <Parameter Name="packageStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore" />
+        <Parameter Name="taskstore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="secretStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ISecretStore" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="resourceStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" Index="2" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="templateStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore" Index="3" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="packageStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore" Index="4" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="taskstore">The tasks available for use within a pipeline</param>
@@ -97,10 +98,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PipelineBuilder (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore counterStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore resourceStore = null, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; stepProviders = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore templateStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore = null);" />
+      <MemberSignature Language="C#" Value="public PipelineBuilder (Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore counterStore = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore resourceStore = default, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; stepProviders = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore templateStore = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions expressionOptions, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore counterStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore resourceStore, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; stepProviders, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore templateStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder.#ctor(Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions,Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore,System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider},Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional expressionOptions As EvaluationOptions = null, Optional counterStore As ICounterStore = null, Optional resourceStore As IResourceStore = null, Optional stepProviders As IList(Of IStepProvider) = null, Optional taskStore As ITaskStore = null, Optional templateStore As ITaskTemplateStore = null, Optional packageStore As IPackageStore = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional expressionOptions As EvaluationOptions = Nothing, Optional counterStore As ICounterStore = Nothing, Optional resourceStore As IResourceStore = Nothing, Optional stepProviders As IList(Of IStepProvider) = Nothing, Optional taskStore As ITaskStore = Nothing, Optional templateStore As ITaskTemplateStore = Nothing, Optional packageStore As IPackageStore = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder : Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions * Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuilder (expressionOptions, counterStore, resourceStore, stepProviders, taskStore, templateStore, packageStore)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -108,22 +109,23 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="expressionOptions" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" />
-        <Parameter Name="counterStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore" />
-        <Parameter Name="resourceStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" />
-        <Parameter Name="stepProviders" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt;" />
-        <Parameter Name="taskStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" />
-        <Parameter Name="templateStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore" />
-        <Parameter Name="packageStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore" />
+        <Parameter Name="expressionOptions" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="counterStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ICounterStore" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="resourceStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="stepProviders" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="taskStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="templateStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskTemplateStore" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="packageStore" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="expressionOptions">To be added.</param>
         <param name="counterStore">To be added.</param>
-        <param name="resourceStore">The resources available for use within a pipeline</param>
         <param name="stepProviders">To be added.</param>
-        <param name="taskStore">The tasks available for use within a pipeline</param>
         <param name="templateStore">To be added.</param>
         <param name="packageStore">To be added.</param>
+        <param name="resourceStore">The resources available for use within a pipeline</param>
+        <param name="taskStore">The tasks available for use within a pipeline</param>
+        <param name="secretStore">The secret stores available for use within a pipeline</param>
         <summary>
             Initilaizes a new <c>PipelineBuilder</c> instance with the specified services used for resolution of
             resources available to pipelines.
@@ -173,7 +175,7 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" />
+        <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="stages">A list of stages which should be used to build the process</param>
@@ -199,7 +201,7 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="steps" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Step&gt;" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Step&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="steps">A list of steps which should be used to build the process</param>
@@ -225,8 +227,8 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" />
-        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="context">The context which should be used to build the process</param>
@@ -253,8 +255,8 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" />
-        <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
@@ -279,8 +281,8 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" />
-        <Parameter Name="steps" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Step&gt;" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Step&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
@@ -305,8 +307,8 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="environment" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineEnvironment" />
-        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" />
+        <Parameter Name="environment" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineEnvironment" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="environment">The environment which should be used to build the process</param>
@@ -333,8 +335,8 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" />
-        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildOptions" />
+        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildOptions" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="phases">A list of phases which should be used to build the process</param>
@@ -361,8 +363,8 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" />
-        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions" />
+        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions" Index="1" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="phases">A list of phases which should be used to build the process</param>
@@ -390,8 +392,8 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" />
-        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildOptions" />
+        <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildOptions" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="stages">A list of stages which should be used to build the process</param>
@@ -418,8 +420,8 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="steps" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Step&gt;" />
-        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildOptions" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Step&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildOptions" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="steps">A list of steps which should be used to build the process</param>
@@ -446,9 +448,9 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="environment" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineEnvironment" />
-        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" />
-        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions" />
+        <Parameter Name="environment" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineEnvironment" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions" Index="2" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="environment">The environment which should be used to build the process</param>
@@ -649,8 +651,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineValidationError&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" />
-        <Parameter Name="process" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineProcess" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="process" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineProcess" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
@@ -675,8 +677,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineValidationError&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="process" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineProcess" />
-        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildOptions" />
+        <Parameter Name="process" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineProcess" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildOptions" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="process">To be added.</param>

@@ -1,4 +1,4 @@
-﻿<Type Name="SuiteCreateModel" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel">
+<Type Name="SuiteCreateModel" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel">
   <TypeSignature Language="C#" Value="public class SuiteCreateModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SuiteCreateModel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,10 +27,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SuiteCreateModel (string suiteType, string name = &quot;&quot;, string queryString = &quot;&quot;, int[] requirementIds = null);" />
+      <MemberSignature Language="C#" Value="public SuiteCreateModel (string suiteType, string name = &quot;&quot;, string queryString = &quot;&quot;, int[] requirementIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string suiteType, string name, string queryString, int32[] requirementIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel.#ctor(System.String,System.String,System.String,System.Int32[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (suiteType As String, Optional name As String = &quot;&quot;, Optional queryString As String = &quot;&quot;, Optional requirementIds As Integer() = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (suiteType As String, Optional name As String = &quot;&quot;, Optional queryString As String = &quot;&quot;, Optional requirementIds As Integer() = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel : string * string * string * int[] -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.SuiteCreateModel (suiteType, name, queryString, requirementIds)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -66,7 +67,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="name")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -94,7 +96,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="queryString")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="queryString")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="queryString")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -122,7 +125,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="requirementIds")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="requirementIds")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="requirementIds")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -150,7 +154,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="suiteType")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="suiteType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="suiteType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

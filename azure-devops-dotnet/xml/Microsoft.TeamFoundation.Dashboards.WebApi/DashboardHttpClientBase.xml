@@ -1,4 +1,4 @@
-﻿<Type Name="DashboardHttpClientBase" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase">
+<Type Name="DashboardHttpClientBase" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase">
   <TypeSignature Language="C#" Value="public abstract class DashboardHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DashboardHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("31C84E0A-3ECE-48FD-A29D-100849AF99BA")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("31C84E0A-3ECE-48FD-A29D-100849AF99BA")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("31C84E0A-3ECE-48FD-A29D-100849AF99BA")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -88,8 +89,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -145,8 +147,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -161,9 +164,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDashboardAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; CreateDashboardAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard dashboard, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; CreateDashboardAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard dashboard, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; CreateDashboardAsync(class Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard dashboard, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.CreateDashboardAsync(Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDashboardAsync (dashboard As Dashboard, teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Dashboard)" />
       <MemberSignature Language="F#" Value="abstract member CreateDashboardAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt;&#xA;override this.CreateDashboardAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt;" Usage="dashboardHttpClientBase.CreateDashboardAsync (dashboard, teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -183,7 +187,7 @@
       <Docs>
         <param name="dashboard">The initial state of the dashboard</param>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Create the supplied dashboard.
@@ -193,9 +197,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateWidgetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; CreateWidgetAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; CreateWidgetAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; CreateWidgetAsync(class Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.CreateWidgetAsync(Microsoft.TeamFoundation.Dashboards.WebApi.Widget,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateWidgetAsync (widget As Widget, teamContext As TeamContext, dashboardId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Widget)" />
       <MemberSignature Language="F#" Value="abstract member CreateWidgetAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Widget * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt;&#xA;override this.CreateWidgetAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Widget * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt;" Usage="dashboardHttpClientBase.CreateWidgetAsync (widget, teamContext, dashboardId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -217,7 +222,7 @@
         <param name="widget">State of the widget to add</param>
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of dashboard the widget will be added to.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Create a widget on the specified dashboard.
@@ -227,9 +232,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteDashboardAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteDashboardAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteDashboardAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteDashboardAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.DeleteDashboardAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteDashboardAsync (teamContext As TeamContext, dashboardId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteDashboardAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteDashboardAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dashboardHttpClientBase.DeleteDashboardAsync (teamContext, dashboardId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -249,7 +255,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the dashboard to delete.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Delete a dashboard given its ID. This also deletes the widgets associated with this dashboard.
@@ -259,9 +265,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteWidgetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; DeleteWidgetAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, Guid widgetId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; DeleteWidgetAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, Guid widgetId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; DeleteWidgetAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, valuetype System.Guid widgetId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.DeleteWidgetAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteWidgetAsync (teamContext As TeamContext, dashboardId As Guid, widgetId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Dashboard)" />
       <MemberSignature Language="F#" Value="abstract member DeleteWidgetAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt;&#xA;override this.DeleteWidgetAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt;" Usage="dashboardHttpClientBase.DeleteWidgetAsync (teamContext, dashboardId, widgetId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -283,7 +290,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the dashboard containing the widget.</param>
         <param name="widgetId">ID of the widget to update.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Delete the specified widget.
@@ -293,9 +300,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDashboardAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; GetDashboardAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; GetDashboardAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; GetDashboardAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetDashboardAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDashboardAsync (teamContext As TeamContext, dashboardId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Dashboard)" />
       <MemberSignature Language="F#" Value="abstract member GetDashboardAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt;&#xA;override this.GetDashboardAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt;" Usage="dashboardHttpClientBase.GetDashboardAsync (teamContext, dashboardId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -314,8 +322,8 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="dashboardId"></param>
-        <param name="userState"></param>
+        <param name="dashboardId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a dashboard by its ID.
@@ -325,9 +333,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDashboardsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt; GetDashboardsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt; GetDashboardsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt; GetDashboardsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetDashboardsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDashboardsAsync (teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DashboardGroup)" />
       <MemberSignature Language="F#" Value="abstract member GetDashboardsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt;&#xA;override this.GetDashboardsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt;" Usage="dashboardHttpClientBase.GetDashboardsAsync (teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -345,7 +354,7 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a list of dashboards.
@@ -355,9 +364,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWidgetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; GetWidgetAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, Guid widgetId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; GetWidgetAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, Guid widgetId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; GetWidgetAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, valuetype System.Guid widgetId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetWidgetAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWidgetAsync (teamContext As TeamContext, dashboardId As Guid, widgetId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Widget)" />
       <MemberSignature Language="F#" Value="abstract member GetWidgetAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt;&#xA;override this.GetWidgetAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt;" Usage="dashboardHttpClientBase.GetWidgetAsync (teamContext, dashboardId, widgetId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -379,7 +389,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the dashboard containing the widget.</param>
         <param name="widgetId">ID of the widget to read.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the current state of the specified widget.
@@ -389,9 +399,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWidgetMetadataAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync (string contributionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync (string contributionId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync(string contributionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetWidgetMetadataAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWidgetMetadataAsync (contributionId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetMetadataResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetWidgetMetadataAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt;&#xA;override this.GetWidgetMetadataAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt;" Usage="dashboardHttpClientBase.GetWidgetMetadataAsync (contributionId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -409,7 +420,7 @@
       </Parameters>
       <Docs>
         <param name="contributionId">The ID of Contribution for the Widget</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the widget metadata satisfying the specified contribution ID.
@@ -419,9 +430,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWidgetMetadataAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync (Guid project, string contributionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync (Guid project, string contributionId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync(valuetype System.Guid project, string contributionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetWidgetMetadataAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWidgetMetadataAsync (project As Guid, contributionId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetMetadataResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetWidgetMetadataAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt;&#xA;override this.GetWidgetMetadataAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt;" Usage="dashboardHttpClientBase.GetWidgetMetadataAsync (project, contributionId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -432,15 +444,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="contributionId" Type="System.String" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="contributionId" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
         <param name="contributionId">The ID of Contribution for the Widget</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the widget metadata satisfying the specified contribution ID.
@@ -450,9 +462,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWidgetMetadataAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync (string project, string contributionId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync (string project, string contributionId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt; GetWidgetMetadataAsync(string project, string contributionId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetWidgetMetadataAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWidgetMetadataAsync (project As String, contributionId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetMetadataResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetWidgetMetadataAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt;&#xA;override this.GetWidgetMetadataAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt;" Usage="dashboardHttpClientBase.GetWidgetMetadataAsync (project, contributionId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -463,15 +476,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetMetadataResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="contributionId" Type="System.String" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="contributionId" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
         <param name="contributionId">The ID of Contribution for the Widget</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the widget metadata satisfying the specified contribution ID.
@@ -481,9 +494,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWidgetsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; GetWidgetsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, string eTag = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; GetWidgetsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, string eTag = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; GetWidgetsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, string eTag, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetWidgetsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWidgetsAsync (teamContext As TeamContext, dashboardId As Guid, Optional eTag As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetsVersionedList)" />
       <MemberSignature Language="F#" Value="abstract member GetWidgetsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt;&#xA;override this.GetWidgetsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt;" Usage="dashboardHttpClientBase.GetWidgetsAsync (teamContext, dashboardId, eTag, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -505,7 +519,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the dashboard to read.</param>
         <param name="eTag">Dashboard Widgets Version</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get widgets contained on the specified dashboard.
@@ -515,9 +529,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWidgetTypesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync (Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync (Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync(valuetype Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetWidgetTypesAsync(Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWidgetTypesAsync (scope As WidgetScope, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetTypesResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetWidgetTypesAsync : Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt;&#xA;override this.GetWidgetTypesAsync : Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt;" Usage="dashboardHttpClientBase.GetWidgetTypesAsync (scope, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -534,8 +549,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="scope"></param>
-        <param name="userState"></param>
+        <param name="scope" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get all available widget metadata in alphabetical order.
@@ -545,9 +560,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWidgetTypesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync (Guid project, Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync (Guid project, Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync(valuetype System.Guid project, valuetype Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetWidgetTypesAsync(System.Guid,Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWidgetTypesAsync (project As Guid, scope As WidgetScope, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetTypesResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetWidgetTypesAsync : Guid * Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt;&#xA;override this.GetWidgetTypesAsync : Guid * Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt;" Usage="dashboardHttpClientBase.GetWidgetTypesAsync (project, scope, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -558,15 +574,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="scope" Type="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="scope" Type="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="scope"></param>
-        <param name="userState"></param>
+        <param name="scope" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get all available widget metadata in alphabetical order.
@@ -576,9 +592,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWidgetTypesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync (string project, Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync (string project, Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt; GetWidgetTypesAsync(string project, valuetype Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope scope, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.GetWidgetTypesAsync(System.String,Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWidgetTypesAsync (project As String, scope As WidgetScope, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetTypesResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetWidgetTypesAsync : string * Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt;&#xA;override this.GetWidgetTypesAsync : string * Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt;" Usage="dashboardHttpClientBase.GetWidgetTypesAsync (project, scope, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -589,15 +606,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetTypesResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="scope" Type="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="scope" Type="Microsoft.TeamFoundation.Dashboards.WebApi.WidgetScope" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="scope"></param>
-        <param name="userState"></param>
+        <param name="scope" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get all available widget metadata in alphabetical order.
@@ -607,9 +624,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceDashboardAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; ReplaceDashboardAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard dashboard, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; ReplaceDashboardAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard dashboard, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt; ReplaceDashboardAsync(class Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard dashboard, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.ReplaceDashboardAsync(Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReplaceDashboardAsync (dashboard As Dashboard, teamContext As TeamContext, dashboardId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Dashboard)" />
       <MemberSignature Language="F#" Value="abstract member ReplaceDashboardAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt;&#xA;override this.ReplaceDashboardAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard&gt;" Usage="dashboardHttpClientBase.ReplaceDashboardAsync (dashboard, teamContext, dashboardId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -631,7 +649,7 @@
         <param name="dashboard">The Configuration of the dashboard to replace.</param>
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the dashboard to replace.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Replace configuration for the specified dashboard. Replaces Widget list on Dashboard, only if property is supplied.
@@ -641,9 +659,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceDashboardsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt; ReplaceDashboardsAsync (Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup group, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt; ReplaceDashboardsAsync (Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup group, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt; ReplaceDashboardsAsync(class Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup group, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.ReplaceDashboardsAsync(Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReplaceDashboardsAsync (group As DashboardGroup, teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DashboardGroup)" />
       <MemberSignature Language="F#" Value="abstract member ReplaceDashboardsAsync : Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt;&#xA;override this.ReplaceDashboardsAsync : Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroup&gt;" Usage="dashboardHttpClientBase.ReplaceDashboardsAsync (group, teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -661,9 +680,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="group"></param>
+        <param name="group" />
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update the name and position of dashboards in the supplied group, and remove omitted dashboards. Does not modify dashboard content.
@@ -673,9 +692,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceWidgetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; ReplaceWidgetAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, Guid widgetId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; ReplaceWidgetAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, Guid widgetId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; ReplaceWidgetAsync(class Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, valuetype System.Guid widgetId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.ReplaceWidgetAsync(Microsoft.TeamFoundation.Dashboards.WebApi.Widget,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReplaceWidgetAsync (widget As Widget, teamContext As TeamContext, dashboardId As Guid, widgetId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Widget)" />
       <MemberSignature Language="F#" Value="abstract member ReplaceWidgetAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Widget * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt;&#xA;override this.ReplaceWidgetAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Widget * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt;" Usage="dashboardHttpClientBase.ReplaceWidgetAsync (widget, teamContext, dashboardId, widgetId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -699,7 +719,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the dashboard containing the widget.</param>
         <param name="widgetId">ID of the widget to update.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Override the  state of the specified widget.
@@ -709,9 +729,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceWidgetsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; ReplaceWidgetsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; widgets, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, string eTag = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; ReplaceWidgetsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; widgets, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, string eTag = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; ReplaceWidgetsAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; widgets, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, string eTag, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.ReplaceWidgetsAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Dashboards.WebApi.Widget},Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReplaceWidgetsAsync (widgets As IEnumerable(Of Widget), teamContext As TeamContext, dashboardId As Guid, Optional eTag As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetsVersionedList)" />
       <MemberSignature Language="F#" Value="abstract member ReplaceWidgetsAsync : seq&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt;&#xA;override this.ReplaceWidgetsAsync : seq&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt;" Usage="dashboardHttpClientBase.ReplaceWidgetsAsync (widgets, teamContext, dashboardId, eTag, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -735,7 +756,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the Dashboard to modify.</param>
         <param name="eTag">Dashboard Widgets Version</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Replace the widgets on specified dashboard with the supplied widgets.
@@ -745,9 +766,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateWidgetAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; UpdateWidgetAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, Guid widgetId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; UpdateWidgetAsync (Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, Guid widgetId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; UpdateWidgetAsync(class Microsoft.TeamFoundation.Dashboards.WebApi.Widget widget, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, valuetype System.Guid widgetId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.UpdateWidgetAsync(Microsoft.TeamFoundation.Dashboards.WebApi.Widget,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateWidgetAsync (widget As Widget, teamContext As TeamContext, dashboardId As Guid, widgetId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Widget)" />
       <MemberSignature Language="F#" Value="abstract member UpdateWidgetAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Widget * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt;&#xA;override this.UpdateWidgetAsync : Microsoft.TeamFoundation.Dashboards.WebApi.Widget * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt;" Usage="dashboardHttpClientBase.UpdateWidgetAsync (widget, teamContext, dashboardId, widgetId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -771,7 +793,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the dashboard containing the widget.</param>
         <param name="widgetId">ID of the widget to update.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Perform a partial update of the specified widget.
@@ -781,9 +803,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateWidgetsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; UpdateWidgetsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; widgets, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, string eTag = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; UpdateWidgetsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; widgets, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid dashboardId, string eTag = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt; UpdateWidgetsAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; widgets, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid dashboardId, string eTag, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase.UpdateWidgetsAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Dashboards.WebApi.Widget},Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateWidgetsAsync (widgets As IEnumerable(Of Widget), teamContext As TeamContext, dashboardId As Guid, Optional eTag As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WidgetsVersionedList)" />
       <MemberSignature Language="F#" Value="abstract member UpdateWidgetsAsync : seq&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt;&#xA;override this.UpdateWidgetsAsync : seq&lt;Microsoft.TeamFoundation.Dashboards.WebApi.Widget&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Dashboards.WebApi.WidgetsVersionedList&gt;" Usage="dashboardHttpClientBase.UpdateWidgetsAsync (widgets, teamContext, dashboardId, eTag, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -807,7 +830,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="dashboardId">ID of the Dashboard to modify.</param>
         <param name="eTag">Dashboard Widgets Version</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update the supplied widgets on the dashboard using supplied state. State of existing Widgets not passed in the widget list is preserved.

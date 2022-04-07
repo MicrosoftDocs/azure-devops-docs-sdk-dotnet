@@ -1,4 +1,4 @@
-﻿<Type Name="ProjectHttpClientBase" FullName="Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClientBase">
+<Type Name="ProjectHttpClientBase" FullName="Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClientBase">
   <TypeSignature Language="C#" Value="public abstract class ProjectHttpClientBase : Microsoft.TeamFoundation.Core.WebApi.ProjectCompatHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProjectHttpClientBase extends Microsoft.TeamFoundation.Core.WebApi.ProjectCompatHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClientBase" />
@@ -15,13 +15,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientCancellationTimeout(45)</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientCancellationTimeout(45)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientCancellationTimeout(45)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(15, 50)</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(15, 50)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(15, 50)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -94,8 +97,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -151,8 +155,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -167,9 +172,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectHistoryEntriesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectInfo&gt;&gt; GetProjectHistoryEntriesAsync (Nullable&lt;long&gt; minRevision = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectInfo&gt;&gt; GetProjectHistoryEntriesAsync (long? minRevision = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Core.WebApi.ProjectInfo&gt;&gt; GetProjectHistoryEntriesAsync(valuetype System.Nullable`1&lt;int64&gt; minRevision, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClientBase.GetProjectHistoryEntriesAsync(System.Nullable{System.Int64},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectHistoryEntriesAsync (Optional minRevision As Nullable(Of Long) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ProjectInfo))" />
       <MemberSignature Language="F#" Value="abstract member GetProjectHistoryEntriesAsync : Nullable&lt;int64&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectInfo&gt;&gt;&#xA;override this.GetProjectHistoryEntriesAsync : Nullable&lt;int64&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectInfo&gt;&gt;" Usage="projectHttpClientBase.GetProjectHistoryEntriesAsync (minRevision, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -186,8 +192,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="minRevision"></param>
-        <param name="userState"></param>
+        <param name="minRevision" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -197,9 +203,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectPropertiesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectProperty&gt;&gt; GetProjectPropertiesAsync (Guid projectId, System.Collections.Generic.IEnumerable&lt;string&gt; keys = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectProperty&gt;&gt; GetProjectPropertiesAsync (Guid projectId, System.Collections.Generic.IEnumerable&lt;string&gt; keys = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Core.WebApi.ProjectProperty&gt;&gt; GetProjectPropertiesAsync(valuetype System.Guid projectId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClientBase.GetProjectPropertiesAsync(System.Guid,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProjectPropertiesAsync (projectId As Guid, Optional keys As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ProjectProperty))" />
       <MemberSignature Language="F#" Value="abstract member GetProjectPropertiesAsync : Guid * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectProperty&gt;&gt;&#xA;override this.GetProjectPropertiesAsync : Guid * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectProperty&gt;&gt;" Usage="projectHttpClientBase.GetProjectPropertiesAsync (projectId, keys, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -219,7 +226,7 @@
       <Docs>
         <param name="projectId">The team project ID.</param>
         <param name="keys">A comma-delimited string of team project property names. Wildcard characters ("?" and "*") are supported. If no key is specified, all properties will be returned.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a collection of team project properties.
@@ -229,9 +236,10 @@
       </Docs>
     </Member>
     <Member MemberName="SetProjectPropertiesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task SetProjectPropertiesAsync (Guid projectId, Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument patchDocument, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task SetProjectPropertiesAsync (Guid projectId, Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument patchDocument, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SetProjectPropertiesAsync(valuetype System.Guid projectId, class Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument patchDocument, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectHttpClientBase.SetProjectPropertiesAsync(System.Guid,Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetProjectPropertiesAsync (projectId As Guid, patchDocument As JsonPatchDocument, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member SetProjectPropertiesAsync : Guid * Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.SetProjectPropertiesAsync : Guid * Microsoft.VisualStudio.Services.WebApi.Patch.Json.JsonPatchDocument * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="projectHttpClientBase.SetProjectPropertiesAsync (projectId, patchDocument, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -251,7 +259,7 @@
       <Docs>
         <param name="projectId">The team project ID.</param>
         <param name="patchDocument">A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Create, update, and delete team project properties.

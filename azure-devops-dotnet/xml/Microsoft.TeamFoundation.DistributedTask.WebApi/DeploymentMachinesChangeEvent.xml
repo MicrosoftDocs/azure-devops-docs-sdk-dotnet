@@ -1,4 +1,4 @@
-﻿<Type Name="DeploymentMachinesChangeEvent" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachinesChangeEvent">
+<Type Name="DeploymentMachinesChangeEvent" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachinesChangeEvent">
   <TypeSignature Language="C#" Value="public class DeploymentMachinesChangeEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeploymentMachinesChangeEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachinesChangeEvent" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ServiceEventObject</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ServiceEventObject]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ServiceEventObject&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,8 +40,8 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="machineGroupReference" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupReference" />
-        <Parameter Name="machines" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;" />
+        <Parameter Name="machineGroupReference" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupReference" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="machines" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="machineGroupReference">To be added.</param>
@@ -60,8 +62,8 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="machineGroupReference" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupReference" />
-        <Parameter Name="machines" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt;" />
+        <Parameter Name="machineGroupReference" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentGroupReference" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="machines" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="machineGroupReference">To be added.</param>
@@ -84,7 +86,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -97,11 +100,15 @@
       </Docs>
     </Member>
     <Member MemberName="Machines">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt; Machines { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt; Machines" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt; Machines { get; }" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt; Machines" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachinesChangeEvent.Machines" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Machines As IList(Of DeploymentMachineChangedData)" />
-      <MemberSignature Language="F#" Value="member this.Machines : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachinesChangeEvent.Machines" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Machines As IList(Of DeploymentMachine)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Machines : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachinesChangeEvent.Machines" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt; Machines { get; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt; Machines" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Machines As IList(Of DeploymentMachineChangedData)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Machines : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachinesChangeEvent.Machines" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -109,7 +116,8 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachine&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet-preview">System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.DeploymentMachineChangedData&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

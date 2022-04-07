@@ -1,4 +1,4 @@
-﻿<Type Name="TaskOrchestrationPlanReference" FullName="Microsoft.TeamFoundation.Build.WebApi.TaskOrchestrationPlanReference">
+<Type Name="TaskOrchestrationPlanReference" FullName="Microsoft.TeamFoundation.Build.WebApi.TaskOrchestrationPlanReference">
   <TypeSignature Language="C#" Value="public class TaskOrchestrationPlanReference : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskOrchestrationPlanReference extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.TaskOrchestrationPlanReference" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -43,7 +44,7 @@
       </Docs>
     </Member>
     <Member MemberName="OrchestrationType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; OrchestrationType { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? OrchestrationType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; OrchestrationType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Build.WebApi.TaskOrchestrationPlanReference.OrchestrationType" />
       <MemberSignature Language="VB.NET" Value="Public Property OrchestrationType As Nullable(Of Integer)" />
@@ -56,10 +57,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(1)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -89,7 +92,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

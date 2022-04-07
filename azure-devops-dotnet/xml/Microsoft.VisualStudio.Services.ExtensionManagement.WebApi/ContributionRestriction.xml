@@ -1,4 +1,4 @@
-﻿<Type Name="ContributionRestriction" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction">
+<Type Name="ContributionRestriction" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction">
   <TypeSignature Language="C#" Value="public static class ContributionRestriction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ContributionRestriction extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction" />
@@ -64,6 +64,7 @@
       <MemberSignature Language="C#" Value="public static bool HasAnyClaim (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, params string[] claims);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasAnyClaim(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string[] claims) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.HasAnyClaim(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasAnyClaim (contribution As Contribution, ParamArray claims As String()) As Boolean" />
       <MemberSignature Language="F#" Value="static member HasAnyClaim : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution * string[] -&gt; bool" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.HasAnyClaim (contribution, claims)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -74,18 +75,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contribution" Type="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution" />
-        <Parameter Name="claims" Type="System.String[]">
+        <Parameter Name="contribution" Type="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="claims" Type="System.String[]" Index="1" FrameworkAlternate="azure-devops-dotnet-preview">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="contribution"></param>
-        <param name="claims"></param>
+        <param name="contribution" />
+        <param name="claims" />
         <summary>
             Checks the contribution to see it carries any of the the specified claims.
             </summary>
@@ -117,6 +119,7 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;string&gt;&gt; ParseRestrictedClaimGroups (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class System.Collections.Generic.List`1&lt;string&gt;&gt; ParseRestrictedClaimGroups(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.ParseRestrictedClaimGroups(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseRestrictedClaimGroups (contribution As Contribution) As List(Of List(Of String))" />
       <MemberSignature Language="F#" Value="static member ParseRestrictedClaimGroups : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution -&gt; System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;string&gt;&gt;" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionRestriction.ParseRestrictedClaimGroups contribution" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -127,7 +130,7 @@
         <ReturnType>System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;System.String&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contribution" Type="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution" />
+        <Parameter Name="contribution" Type="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="contribution">To be added.</param>

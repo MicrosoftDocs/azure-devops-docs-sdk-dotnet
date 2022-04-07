@@ -1,4 +1,4 @@
-﻿<Type Name="ExtensionManagementHttpClient" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient">
+<Type Name="ExtensionManagementHttpClient" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient">
   <TypeSignature Language="C#" Value="public class ExtensionManagementHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtensionManagementHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(6, 80)</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(6, 80)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(6, 80)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("6C2B0933-3600-42AE-BF8B-93D4F7E83594")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("6C2B0933-3600-42AE-BF8B-93D4F7E83594")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("6C2B0933-3600-42AE-BF8B-93D4F7E83594")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -92,7 +94,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -149,7 +152,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -164,9 +168,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDocumentByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt; CreateDocumentByNameAsync (Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt; CreateDocumentByNameAsync (Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Newtonsoft.Json.Linq.JObject&gt; CreateDocumentByNameAsync(class Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.CreateDocumentByNameAsync(Newtonsoft.Json.Linq.JObject,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateDocumentByNameAsync (doc As JObject, publisherName As String, extensionName As String, scopeType As String, scopeValue As String, collectionName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JObject)" />
       <MemberSignature Language="F#" Value="member this.CreateDocumentByNameAsync : Newtonsoft.Json.Linq.JObject * string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="extensionManagementHttpClient.CreateDocumentByNameAsync (doc, publisherName, extensionName, scopeType, scopeValue, collectionName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -176,7 +181,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -193,13 +199,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="doc"></param>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="scopeType"></param>
-        <param name="scopeValue"></param>
-        <param name="collectionName"></param>
-        <param name="userState"></param>
+        <param name="doc" />
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="scopeType" />
+        <param name="scopeValue" />
+        <param name="collectionName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -209,9 +215,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteDocumentByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteDocumentByNameAsync (string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, string documentId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteDocumentByNameAsync (string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, string documentId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteDocumentByNameAsync(string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, string documentId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.DeleteDocumentByNameAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteDocumentByNameAsync (publisherName As String, extensionName As String, scopeType As String, scopeValue As String, collectionName As String, documentId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteDocumentByNameAsync : string * string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="extensionManagementHttpClient.DeleteDocumentByNameAsync (publisherName, extensionName, scopeType, scopeValue, collectionName, documentId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -221,7 +228,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -238,13 +246,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="scopeType"></param>
-        <param name="scopeValue"></param>
-        <param name="collectionName"></param>
-        <param name="documentId"></param>
-        <param name="userState"></param>
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="scopeType" />
+        <param name="scopeValue" />
+        <param name="collectionName" />
+        <param name="documentId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -254,9 +262,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteRequestAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteRequestAsync (string publisherName, string extensionName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteRequestAsync (string publisherName, string extensionName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteRequestAsync(string publisherName, string extensionName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.DeleteRequestAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteRequestAsync (publisherName As String, extensionName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteRequestAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="extensionManagementHttpClient.DeleteRequestAsync (publisherName, extensionName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -266,7 +275,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -279,9 +289,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="userState"></param>
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -291,9 +301,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAcquisitionOptionsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt; GetAcquisitionOptionsAsync (string itemId, Nullable&lt;bool&gt; testCommerce = null, Nullable&lt;bool&gt; isFreeOrTrialInstall = null, Nullable&lt;bool&gt; isAccountOwner = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt; GetAcquisitionOptionsAsync (string itemId, bool? testCommerce = default, bool? isFreeOrTrialInstall = default, bool? isAccountOwner = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt; GetAcquisitionOptionsAsync(string itemId, valuetype System.Nullable`1&lt;bool&gt; testCommerce, valuetype System.Nullable`1&lt;bool&gt; isFreeOrTrialInstall, valuetype System.Nullable`1&lt;bool&gt; isAccountOwner, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetAcquisitionOptionsAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAcquisitionOptionsAsync (itemId As String, Optional testCommerce As Nullable(Of Boolean) = Nothing, Optional isFreeOrTrialInstall As Nullable(Of Boolean) = Nothing, Optional isAccountOwner As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AcquisitionOptions)" />
       <MemberSignature Language="F#" Value="member this.GetAcquisitionOptionsAsync : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt;" Usage="extensionManagementHttpClient.GetAcquisitionOptionsAsync (itemId, testCommerce, isFreeOrTrialInstall, isAccountOwner, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -301,27 +312,33 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-latest;azure-devops-dotnet">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="azure-devops-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="itemId" Type="System.String" />
-        <Parameter Name="testCommerce" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="isFreeOrTrialInstall" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="isAccountOwner" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="itemId" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="testCommerce" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="isFreeOrTrialInstall" Type="System.Nullable&lt;System.Boolean&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="isAccountOwner" Type="System.Nullable&lt;System.Boolean&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="userState" Type="System.Object" Index="4" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
-        <param name="itemId"></param>
-        <param name="testCommerce"></param>
-        <param name="isFreeOrTrialInstall"></param>
-        <param name="isAccountOwner"></param>
-        <param name="userState"></param>
+        <param name="itemId">
+        </param>
+        <param name="testCommerce">
+        </param>
+        <param name="isFreeOrTrialInstall">
+        </param>
+        <param name="isAccountOwner">
+        </param>
+        <param name="userState">
+        </param>
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -331,9 +348,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAcquisitionOptionsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt; GetAcquisitionOptionsAsync (string itemId, Nullable&lt;bool&gt; testCommerce = null, Nullable&lt;bool&gt; isFreeOrTrialInstall = null, Nullable&lt;bool&gt; isAccountOwner = null, Nullable&lt;bool&gt; isLinked = null, Nullable&lt;bool&gt; isConnectedServer = null, Nullable&lt;bool&gt; isBuyOperationValid = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt; GetAcquisitionOptionsAsync (string itemId, bool? testCommerce = default, bool? isFreeOrTrialInstall = default, bool? isAccountOwner = default, bool? isLinked = default, bool? isConnectedServer = default, bool? isBuyOperationValid = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt; GetAcquisitionOptionsAsync(string itemId, valuetype System.Nullable`1&lt;bool&gt; testCommerce, valuetype System.Nullable`1&lt;bool&gt; isFreeOrTrialInstall, valuetype System.Nullable`1&lt;bool&gt; isAccountOwner, valuetype System.Nullable`1&lt;bool&gt; isLinked, valuetype System.Nullable`1&lt;bool&gt; isConnectedServer, valuetype System.Nullable`1&lt;bool&gt; isBuyOperationValid, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetAcquisitionOptionsAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAcquisitionOptionsAsync (itemId As String, Optional testCommerce As Nullable(Of Boolean) = Nothing, Optional isFreeOrTrialInstall As Nullable(Of Boolean) = Nothing, Optional isAccountOwner As Nullable(Of Boolean) = Nothing, Optional isLinked As Nullable(Of Boolean) = Nothing, Optional isConnectedServer As Nullable(Of Boolean) = Nothing, Optional isBuyOperationValid As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AcquisitionOptions)" />
       <MemberSignature Language="F#" Value="member this.GetAcquisitionOptionsAsync : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt;" Usage="extensionManagementHttpClient.GetAcquisitionOptionsAsync (itemId, testCommerce, isFreeOrTrialInstall, isAccountOwner, isLinked, isConnectedServer, isBuyOperationValid, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -342,32 +360,33 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionOptions&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="itemId" Type="System.String" />
-        <Parameter Name="testCommerce" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="isFreeOrTrialInstall" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="isAccountOwner" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="isLinked" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="isConnectedServer" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="isBuyOperationValid" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="itemId" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="testCommerce" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="isFreeOrTrialInstall" Type="System.Nullable&lt;System.Boolean&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="isAccountOwner" Type="System.Nullable&lt;System.Boolean&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="isLinked" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="isConnectedServer" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="isBuyOperationValid" Type="System.Nullable&lt;System.Boolean&gt;" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="7" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="8" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="itemId"></param>
-        <param name="testCommerce"></param>
-        <param name="isFreeOrTrialInstall"></param>
-        <param name="isAccountOwner"></param>
-        <param name="isLinked"></param>
-        <param name="isConnectedServer"></param>
-        <param name="isBuyOperationValid"></param>
-        <param name="userState"></param>
+        <param name="itemId" />
+        <param name="testCommerce" />
+        <param name="isFreeOrTrialInstall" />
+        <param name="isAccountOwner" />
+        <param name="isLinked" />
+        <param name="isConnectedServer" />
+        <param name="isBuyOperationValid" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -377,9 +396,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDocumentByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt; GetDocumentByNameAsync (string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, string documentId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt; GetDocumentByNameAsync (string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, string documentId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Newtonsoft.Json.Linq.JObject&gt; GetDocumentByNameAsync(string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, string documentId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetDocumentByNameAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDocumentByNameAsync (publisherName As String, extensionName As String, scopeType As String, scopeValue As String, collectionName As String, documentId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JObject)" />
       <MemberSignature Language="F#" Value="member this.GetDocumentByNameAsync : string * string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="extensionManagementHttpClient.GetDocumentByNameAsync (publisherName, extensionName, scopeType, scopeValue, collectionName, documentId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -389,7 +409,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -406,13 +427,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="scopeType"></param>
-        <param name="scopeValue"></param>
-        <param name="collectionName"></param>
-        <param name="documentId"></param>
-        <param name="userState"></param>
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="scopeType" />
+        <param name="scopeValue" />
+        <param name="collectionName" />
+        <param name="documentId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -422,9 +443,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDocumentsByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Newtonsoft.Json.Linq.JObject&gt;&gt; GetDocumentsByNameAsync (string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Newtonsoft.Json.Linq.JObject&gt;&gt; GetDocumentsByNameAsync (string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Newtonsoft.Json.Linq.JObject&gt;&gt; GetDocumentsByNameAsync(string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetDocumentsByNameAsync(System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDocumentsByNameAsync (publisherName As String, extensionName As String, scopeType As String, scopeValue As String, collectionName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of JObject))" />
       <MemberSignature Language="F#" Value="member this.GetDocumentsByNameAsync : string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Newtonsoft.Json.Linq.JObject&gt;&gt;" Usage="extensionManagementHttpClient.GetDocumentsByNameAsync (publisherName, extensionName, scopeType, scopeValue, collectionName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -434,7 +456,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -450,12 +473,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="scopeType"></param>
-        <param name="scopeValue"></param>
-        <param name="collectionName"></param>
-        <param name="userState"></param>
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="scopeType" />
+        <param name="scopeValue" />
+        <param name="collectionName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -465,9 +488,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetInstalledExtensionByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync (string publisherName, string extensionName, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync (string publisherName, string extensionName, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; GetInstalledExtensionByNameAsync(string publisherName, string extensionName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assetTypes, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetInstalledExtensionByNameAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstalledExtensionByNameAsync (publisherName As String, extensionName As String, Optional assetTypes As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstalledExtension)" />
       <MemberSignature Language="F#" Value="member this.GetInstalledExtensionByNameAsync : string * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;" Usage="extensionManagementHttpClient.GetInstalledExtensionByNameAsync (publisherName, extensionName, assetTypes, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -488,8 +512,8 @@
       <Docs>
         <param name="publisherName">Name of the publisher. Example: "fabrikam".</param>
         <param name="extensionName">Name of the extension. Example: "ops-tools".</param>
-        <param name="assetTypes"></param>
-        <param name="userState"></param>
+        <param name="assetTypes" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get an installed extension by its publisher and extension name.
@@ -499,9 +523,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetInstalledExtensionsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync (Nullable&lt;bool&gt; includeDisabledExtensions = null, Nullable&lt;bool&gt; includeErrors = null, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = null, Nullable&lt;bool&gt; includeInstallationIssues = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync (bool? includeDisabledExtensions = default, bool? includeErrors = default, System.Collections.Generic.IEnumerable&lt;string&gt; assetTypes = default, bool? includeInstallationIssues = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; GetInstalledExtensionsAsync(valuetype System.Nullable`1&lt;bool&gt; includeDisabledExtensions, valuetype System.Nullable`1&lt;bool&gt; includeErrors, class System.Collections.Generic.IEnumerable`1&lt;string&gt; assetTypes, valuetype System.Nullable`1&lt;bool&gt; includeInstallationIssues, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetInstalledExtensionsAsync(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstalledExtensionsAsync (Optional includeDisabledExtensions As Nullable(Of Boolean) = Nothing, Optional includeErrors As Nullable(Of Boolean) = Nothing, Optional assetTypes As IEnumerable(Of String) = Nothing, Optional includeInstallationIssues As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of InstalledExtension))" />
       <MemberSignature Language="F#" Value="member this.GetInstalledExtensionsAsync : Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt;" Usage="extensionManagementHttpClient.GetInstalledExtensionsAsync (includeDisabledExtensions, includeErrors, assetTypes, includeInstallationIssues, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -523,9 +548,9 @@
       <Docs>
         <param name="includeDisabledExtensions">If true (the default), include disabled extensions in the results.</param>
         <param name="includeErrors">If true, include installed extensions with errors.</param>
-        <param name="assetTypes"></param>
-        <param name="includeInstallationIssues"></param>
-        <param name="userState"></param>
+        <param name="assetTypes" />
+        <param name="includeInstallationIssues" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] List the installed extensions in the account / project collection.
@@ -535,9 +560,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPoliciesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Gallery.WebApi.UserExtensionPolicy&gt; GetPoliciesAsync (string userId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Gallery.WebApi.UserExtensionPolicy&gt; GetPoliciesAsync (string userId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.Gallery.WebApi.UserExtensionPolicy&gt; GetPoliciesAsync(string userId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetPoliciesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPoliciesAsync (userId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of UserExtensionPolicy)" />
       <MemberSignature Language="F#" Value="member this.GetPoliciesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.Gallery.WebApi.UserExtensionPolicy&gt;" Usage="extensionManagementHttpClient.GetPoliciesAsync (userId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -547,7 +573,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -559,8 +586,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userId"></param>
-        <param name="userState"></param>
+        <param name="userId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -570,9 +597,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRequestsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension&gt;&gt; GetRequestsAsync (object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension&gt;&gt; GetRequestsAsync (object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension&gt;&gt; GetRequestsAsync(object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetRequestsAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequestsAsync (Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of RequestedExtension))" />
       <MemberSignature Language="F#" Value="member this.GetRequestsAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension&gt;&gt;" Usage="extensionManagementHttpClient.GetRequestsAsync (userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -582,7 +610,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -593,7 +622,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -603,9 +632,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetStatesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState&gt;&gt; GetStatesAsync (Nullable&lt;bool&gt; includeDisabled = null, Nullable&lt;bool&gt; includeErrors = null, Nullable&lt;bool&gt; includeInstallationIssues = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState&gt;&gt; GetStatesAsync (bool? includeDisabled = default, bool? includeErrors = default, bool? includeInstallationIssues = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState&gt;&gt; GetStatesAsync(valuetype System.Nullable`1&lt;bool&gt; includeDisabled, valuetype System.Nullable`1&lt;bool&gt; includeErrors, valuetype System.Nullable`1&lt;bool&gt; includeInstallationIssues, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetStatesAsync(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStatesAsync (Optional includeDisabled As Nullable(Of Boolean) = Nothing, Optional includeErrors As Nullable(Of Boolean) = Nothing, Optional includeInstallationIssues As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ExtensionState))" />
       <MemberSignature Language="F#" Value="member this.GetStatesAsync : Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionState&gt;&gt;" Usage="extensionManagementHttpClient.GetStatesAsync (includeDisabled, includeErrors, includeInstallationIssues, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -615,7 +645,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -631,8 +662,8 @@
       <Docs>
         <param name="includeDisabled">If true (the default), include disabled extensions in the results.</param>
         <param name="includeErrors">If true, include installed extensions in an error state in the results.</param>
-        <param name="includeInstallationIssues"></param>
-        <param name="userState"></param>
+        <param name="includeInstallationIssues" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] List state and version information for all installed extensions.
@@ -642,9 +673,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTokenAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetTokenAsync (object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetTokenAsync (object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetTokenAsync(object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.GetTokenAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenAsync (Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetTokenAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="extensionManagementHttpClient.GetTokenAsync (userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -654,7 +686,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -665,7 +698,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -675,9 +708,10 @@
       </Docs>
     </Member>
     <Member MemberName="InstallExtensionByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; InstallExtensionByNameAsync (string publisherName, string extensionName, string version = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; InstallExtensionByNameAsync (string publisherName, string extensionName, string version = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; InstallExtensionByNameAsync(string publisherName, string extensionName, string version, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.InstallExtensionByNameAsync(System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InstallExtensionByNameAsync (publisherName As String, extensionName As String, Optional version As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstalledExtension)" />
       <MemberSignature Language="F#" Value="member this.InstallExtensionByNameAsync : string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;" Usage="extensionManagementHttpClient.InstallExtensionByNameAsync (publisherName, extensionName, version, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -698,8 +732,8 @@
       <Docs>
         <param name="publisherName">Name of the publisher. Example: "fabrikam".</param>
         <param name="extensionName">Name of the extension. Example: "ops-tools".</param>
-        <param name="version"></param>
-        <param name="userState"></param>
+        <param name="version" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Install the specified extension into the account / project collection.
@@ -709,9 +743,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueryCollectionsByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection&gt;&gt; QueryCollectionsByNameAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery collectionQuery, string publisherName, string extensionName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection&gt;&gt; QueryCollectionsByNameAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery collectionQuery, string publisherName, string extensionName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection&gt;&gt; QueryCollectionsByNameAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery collectionQuery, string publisherName, string extensionName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.QueryCollectionsByNameAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryCollectionsByNameAsync (collectionQuery As ExtensionDataCollectionQuery, publisherName As String, extensionName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ExtensionDataCollection))" />
       <MemberSignature Language="F#" Value="member this.QueryCollectionsByNameAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollectionQuery * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionDataCollection&gt;&gt;" Usage="extensionManagementHttpClient.QueryCollectionsByNameAsync (collectionQuery, publisherName, extensionName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -721,7 +756,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -735,10 +771,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="collectionQuery"></param>
+        <param name="collectionQuery" />
         <param name="publisherName">Name of the publisher. Example: "fabrikam".</param>
         <param name="extensionName">Name of the extension. Example: "ops-tools".</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Query for one or more data collections for the specified extension.  Note: the token used for authorization must have been issued on behalf of the specified extension.
@@ -748,9 +784,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueryExtensionsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; QueryExtensionsAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery query, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; QueryExtensionsAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery query, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt; QueryExtensionsAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery query, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.QueryExtensionsAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryExtensionsAsync (query As InstalledExtensionQuery, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of InstalledExtension))" />
       <MemberSignature Language="F#" Value="member this.QueryExtensionsAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtensionQuery * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;&gt;" Usage="extensionManagementHttpClient.QueryExtensionsAsync (query, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -760,7 +797,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -772,8 +810,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="query"></param>
-        <param name="userState"></param>
+        <param name="query" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -783,9 +821,10 @@
       </Docs>
     </Member>
     <Member MemberName="RegisterAuthorizationAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization&gt; RegisterAuthorizationAsync (string publisherName, string extensionName, Guid registrationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization&gt; RegisterAuthorizationAsync (string publisherName, string extensionName, Guid registrationId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization&gt; RegisterAuthorizationAsync(string publisherName, string extensionName, valuetype System.Guid registrationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.RegisterAuthorizationAsync(System.String,System.String,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterAuthorizationAsync (publisherName As String, extensionName As String, registrationId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExtensionAuthorization)" />
       <MemberSignature Language="F#" Value="member this.RegisterAuthorizationAsync : string * string * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionAuthorization&gt;" Usage="extensionManagementHttpClient.RegisterAuthorizationAsync (publisherName, extensionName, registrationId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -795,7 +834,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -809,10 +849,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="registrationId"></param>
-        <param name="userState"></param>
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="registrationId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -822,9 +862,10 @@
       </Docs>
     </Member>
     <Member MemberName="RequestAcquisitionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest&gt; RequestAcquisitionAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest acquisitionRequest, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest&gt; RequestAcquisitionAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest acquisitionRequest, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest&gt; RequestAcquisitionAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest acquisitionRequest, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.RequestAcquisitionAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestAcquisitionAsync (acquisitionRequest As ExtensionAcquisitionRequest, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExtensionAcquisitionRequest)" />
       <MemberSignature Language="F#" Value="member this.RequestAcquisitionAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.AcquisitionRequest.ExtensionAcquisitionRequest&gt;" Usage="extensionManagementHttpClient.RequestAcquisitionAsync (acquisitionRequest, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -834,7 +875,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -846,8 +888,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="acquisitionRequest"></param>
-        <param name="userState"></param>
+        <param name="acquisitionRequest" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -857,9 +899,10 @@
       </Docs>
     </Member>
     <Member MemberName="RequestExtensionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension&gt; RequestExtensionAsync (string publisherName, string extensionName, string requestMessage, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension&gt; RequestExtensionAsync (string publisherName, string extensionName, string requestMessage, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension&gt; RequestExtensionAsync(string publisherName, string extensionName, string requestMessage, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.RequestExtensionAsync(System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestExtensionAsync (publisherName As String, extensionName As String, requestMessage As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of RequestedExtension)" />
       <MemberSignature Language="F#" Value="member this.RequestExtensionAsync : string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.RequestedExtension&gt;" Usage="extensionManagementHttpClient.RequestExtensionAsync (publisherName, extensionName, requestMessage, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -869,7 +912,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -883,10 +927,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="requestMessage"></param>
-        <param name="userState"></param>
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="requestMessage" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -896,9 +940,10 @@
       </Docs>
     </Member>
     <Member MemberName="ResolveAllRequestsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; ResolveAllRequestsAsync (string rejectMessage, string publisherName, string extensionName, Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState state, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; ResolveAllRequestsAsync (string rejectMessage, string publisherName, string extensionName, Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState state, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; ResolveAllRequestsAsync(string rejectMessage, string publisherName, string extensionName, valuetype Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState state, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.ResolveAllRequestsAsync(System.String,System.String,System.String,Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveAllRequestsAsync (rejectMessage As String, publisherName As String, extensionName As String, state As ExtensionRequestState, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.ResolveAllRequestsAsync : string * string * string * Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="extensionManagementHttpClient.ResolveAllRequestsAsync (rejectMessage, publisherName, extensionName, state, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -908,7 +953,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -923,11 +969,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="rejectMessage"></param>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="state"></param>
-        <param name="userState"></param>
+        <param name="rejectMessage" />
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="state" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -937,9 +983,10 @@
       </Docs>
     </Member>
     <Member MemberName="ResolveRequestAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; ResolveRequestAsync (string rejectMessage, string publisherName, string extensionName, string requesterId, Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState state, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; ResolveRequestAsync (string rejectMessage, string publisherName, string extensionName, string requesterId, Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState state, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; ResolveRequestAsync(string rejectMessage, string publisherName, string extensionName, string requesterId, valuetype Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState state, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.ResolveRequestAsync(System.String,System.String,System.String,System.String,Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveRequestAsync (rejectMessage As String, publisherName As String, extensionName As String, requesterId As String, state As ExtensionRequestState, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.ResolveRequestAsync : string * string * string * string * Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionRequestState * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="extensionManagementHttpClient.ResolveRequestAsync (rejectMessage, publisherName, extensionName, requesterId, state, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -949,7 +996,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -965,12 +1013,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="rejectMessage"></param>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="requesterId"></param>
-        <param name="state"></param>
-        <param name="userState"></param>
+        <param name="rejectMessage" />
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="requesterId" />
+        <param name="state" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -980,9 +1028,10 @@
       </Docs>
     </Member>
     <Member MemberName="SetDocumentByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt; SetDocumentByNameAsync (Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt; SetDocumentByNameAsync (Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Newtonsoft.Json.Linq.JObject&gt; SetDocumentByNameAsync(class Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.SetDocumentByNameAsync(Newtonsoft.Json.Linq.JObject,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDocumentByNameAsync (doc As JObject, publisherName As String, extensionName As String, scopeType As String, scopeValue As String, collectionName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JObject)" />
       <MemberSignature Language="F#" Value="member this.SetDocumentByNameAsync : Newtonsoft.Json.Linq.JObject * string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="extensionManagementHttpClient.SetDocumentByNameAsync (doc, publisherName, extensionName, scopeType, scopeValue, collectionName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -992,7 +1041,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1009,13 +1059,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="doc"></param>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="scopeType"></param>
-        <param name="scopeValue"></param>
-        <param name="collectionName"></param>
-        <param name="userState"></param>
+        <param name="doc" />
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="scopeType" />
+        <param name="scopeValue" />
+        <param name="collectionName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -1025,9 +1075,10 @@
       </Docs>
     </Member>
     <Member MemberName="UninstallExtensionByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UninstallExtensionByNameAsync (string publisherName, string extensionName, string reason = null, string reasonCode = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UninstallExtensionByNameAsync (string publisherName, string extensionName, string reason = default, string reasonCode = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UninstallExtensionByNameAsync(string publisherName, string extensionName, string reason, string reasonCode, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.UninstallExtensionByNameAsync(System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UninstallExtensionByNameAsync (publisherName As String, extensionName As String, Optional reason As String = Nothing, Optional reasonCode As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.UninstallExtensionByNameAsync : string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="extensionManagementHttpClient.UninstallExtensionByNameAsync (publisherName, extensionName, reason, reasonCode, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1049,9 +1100,9 @@
       <Docs>
         <param name="publisherName">Name of the publisher. Example: "fabrikam".</param>
         <param name="extensionName">Name of the extension. Example: "ops-tools".</param>
-        <param name="reason"></param>
-        <param name="reasonCode"></param>
-        <param name="userState"></param>
+        <param name="reason" />
+        <param name="reasonCode" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Uninstall the specified extension from the account / project collection.
@@ -1061,9 +1112,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateDocumentByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt; UpdateDocumentByNameAsync (Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt; UpdateDocumentByNameAsync (Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Newtonsoft.Json.Linq.JObject&gt; UpdateDocumentByNameAsync(class Newtonsoft.Json.Linq.JObject doc, string publisherName, string extensionName, string scopeType, string scopeValue, string collectionName, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.UpdateDocumentByNameAsync(Newtonsoft.Json.Linq.JObject,System.String,System.String,System.String,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateDocumentByNameAsync (doc As JObject, publisherName As String, extensionName As String, scopeType As String, scopeValue As String, collectionName As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JObject)" />
       <MemberSignature Language="F#" Value="member this.UpdateDocumentByNameAsync : Newtonsoft.Json.Linq.JObject * string * string * string * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="extensionManagementHttpClient.UpdateDocumentByNameAsync (doc, publisherName, extensionName, scopeType, scopeValue, collectionName, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1073,7 +1125,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1090,13 +1143,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="doc"></param>
-        <param name="publisherName"></param>
-        <param name="extensionName"></param>
-        <param name="scopeType"></param>
-        <param name="scopeValue"></param>
-        <param name="collectionName"></param>
-        <param name="userState"></param>
+        <param name="doc" />
+        <param name="publisherName" />
+        <param name="extensionName" />
+        <param name="scopeType" />
+        <param name="scopeValue" />
+        <param name="collectionName" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -1106,9 +1159,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateInstalledExtensionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; UpdateInstalledExtensionAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension extension, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; UpdateInstalledExtensionAsync (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension extension, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt; UpdateInstalledExtensionAsync(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension extension, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ExtensionManagementHttpClient.UpdateInstalledExtensionAsync(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateInstalledExtensionAsync (extension As InstalledExtension, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InstalledExtension)" />
       <MemberSignature Language="F#" Value="member this.UpdateInstalledExtensionAsync : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.InstalledExtension&gt;" Usage="extensionManagementHttpClient.UpdateInstalledExtensionAsync (extension, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1125,8 +1179,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="extension"></param>
-        <param name="userState"></param>
+        <param name="extension" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update an installed extension. Typically this API is used to enable or disable an extension.

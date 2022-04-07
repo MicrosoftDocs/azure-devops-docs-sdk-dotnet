@@ -1,4 +1,4 @@
-﻿<Type Name="WikiPage" FullName="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage">
+<Type Name="WikiPage" FullName="Microsoft.TeamFoundation.Wiki.WebApi.WikiPage">
   <TypeSignature Language="C#" Value="public class WikiPage : Microsoft.TeamFoundation.Wiki.WebApi.WikiPageCreateOrUpdateParameters, Microsoft.TeamFoundation.Wiki.WebApi.IBaseResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WikiPage extends Microsoft.TeamFoundation.Wiki.WebApi.WikiPageCreateOrUpdateParameters implements class Microsoft.TeamFoundation.Wiki.WebApi.IBaseResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage" />
@@ -19,7 +19,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,10 +31,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WikiPage (string path, bool isParentPage, int order, Microsoft.TeamFoundation.SourceControl.WebApi.GitItem item = null, bool isNonConformant = false);" />
+      <MemberSignature Language="C#" Value="public WikiPage (string path, bool isParentPage, int order, Microsoft.TeamFoundation.SourceControl.WebApi.GitItem item = default, bool isNonConformant = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool isParentPage, int32 order, class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem item, bool isNonConformant) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiPage.#ctor(System.String,System.Boolean,System.Int32,Microsoft.TeamFoundation.SourceControl.WebApi.GitItem,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, isParentPage As Boolean, order As Integer, Optional item As GitItem = null, Optional isNonConformant As Boolean = false)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, isParentPage As Boolean, order As Integer, Optional item As GitItem = Nothing, Optional isNonConformant As Boolean = false)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Wiki.WebApi.WikiPage : string * bool * int * Microsoft.TeamFoundation.SourceControl.WebApi.GitItem * bool -&gt; Microsoft.TeamFoundation.Wiki.WebApi.WikiPage" Usage="new Microsoft.TeamFoundation.Wiki.WebApi.WikiPage (path, isParentPage, order, item, isNonConformant)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -43,7 +44,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -77,7 +79,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="gitItemPath")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="gitItemPath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="gitItemPath")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -105,7 +108,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.IgnoreDataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.IgnoreDataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.IgnoreDataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,7 +135,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isNonConformant")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isNonConformant")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isNonConformant")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -159,7 +164,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isParentPage")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isParentPage")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="isParentPage")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,7 +193,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="order")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="order")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="order")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -215,7 +222,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="path")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="path")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="path")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -246,7 +254,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="remoteUrl")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="remoteUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="remoteUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -298,7 +307,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="subPages")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="subPages")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="subPages")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -329,7 +339,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="url")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="url")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="url")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

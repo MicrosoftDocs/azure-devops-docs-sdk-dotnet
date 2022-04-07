@@ -1,4 +1,4 @@
-﻿<Type Name="BuildTrigger" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildTrigger">
+<Type Name="BuildTrigger" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildTrigger">
   <TypeSignature Language="C#" Value="public abstract class BuildTrigger : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BuildTrigger extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.BuildTrigger" />
@@ -15,22 +15,28 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.BuildTriggerJsonConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.BuildTriggerJsonConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.BuildTriggerJsonConverter))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ContinuousIntegrationTrigger))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.GatedCheckInTrigger))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ScheduleTrigger))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ScheduleTrigger))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ScheduleTrigger))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.PullRequestTrigger))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -98,7 +104,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

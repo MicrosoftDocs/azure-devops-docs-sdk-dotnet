@@ -1,4 +1,4 @@
-﻿<Type Name="WorkHttpClientBase" FullName="Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase">
+<Type Name="WorkHttpClientBase" FullName="Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase">
   <TypeSignature Language="C#" Value="public abstract class WorkHttpClientBase : Microsoft.TeamFoundation.Work.WebApi.WorkCompatHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkHttpClientBase extends Microsoft.TeamFoundation.Work.WebApi.WorkCompatHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("1D4F49F9-02B9-4E26-B826-2CDB6195F2A9")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("1D4F49F9-02B9-4E26-B826-2CDB6195F2A9")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("1D4F49F9-02B9-4E26-B826-2CDB6195F2A9")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -88,8 +89,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -145,8 +147,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -161,9 +164,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreatePlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; CreatePlanAsync (Microsoft.TeamFoundation.Work.WebApi.CreatePlan postedPlan, Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; CreatePlanAsync (Microsoft.TeamFoundation.Work.WebApi.CreatePlan postedPlan, Guid project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Plan&gt; CreatePlanAsync(class Microsoft.TeamFoundation.Work.WebApi.CreatePlan postedPlan, valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.CreatePlanAsync(Microsoft.TeamFoundation.Work.WebApi.CreatePlan,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreatePlanAsync (postedPlan As CreatePlan, project As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Plan)" />
       <MemberSignature Language="F#" Value="abstract member CreatePlanAsync : Microsoft.TeamFoundation.Work.WebApi.CreatePlan * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&#xA;override this.CreatePlanAsync : Microsoft.TeamFoundation.Work.WebApi.CreatePlan * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;" Usage="workHttpClientBase.CreatePlanAsync (postedPlan, project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -183,7 +187,7 @@
       <Docs>
         <param name="postedPlan">Plan definition</param>
         <param name="project">Project ID</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Add a new plan for the team
@@ -193,9 +197,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreatePlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; CreatePlanAsync (Microsoft.TeamFoundation.Work.WebApi.CreatePlan postedPlan, string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; CreatePlanAsync (Microsoft.TeamFoundation.Work.WebApi.CreatePlan postedPlan, string project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Plan&gt; CreatePlanAsync(class Microsoft.TeamFoundation.Work.WebApi.CreatePlan postedPlan, string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.CreatePlanAsync(Microsoft.TeamFoundation.Work.WebApi.CreatePlan,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreatePlanAsync (postedPlan As CreatePlan, project As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Plan)" />
       <MemberSignature Language="F#" Value="abstract member CreatePlanAsync : Microsoft.TeamFoundation.Work.WebApi.CreatePlan * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&#xA;override this.CreatePlanAsync : Microsoft.TeamFoundation.Work.WebApi.CreatePlan * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;" Usage="workHttpClientBase.CreatePlanAsync (postedPlan, project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -215,7 +220,7 @@
       <Docs>
         <param name="postedPlan">Plan definition</param>
         <param name="project">Project ID or project name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Add a new plan for the team
@@ -225,9 +230,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeletePlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeletePlanAsync (Guid project, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeletePlanAsync (Guid project, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeletePlanAsync(valuetype System.Guid project, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.DeletePlanAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeletePlanAsync (project As Guid, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeletePlanAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeletePlanAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workHttpClientBase.DeletePlanAsync (project, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -247,7 +253,7 @@
       <Docs>
         <param name="project">Project ID</param>
         <param name="id">Identifier of the plan</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Delete the specified plan
@@ -257,9 +263,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeletePlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeletePlanAsync (string project, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeletePlanAsync (string project, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeletePlanAsync(string project, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.DeletePlanAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeletePlanAsync (project As String, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeletePlanAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeletePlanAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workHttpClientBase.DeletePlanAsync (project, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -279,7 +286,7 @@
       <Docs>
         <param name="project">Project ID or project name</param>
         <param name="id">Identifier of the plan</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Delete the specified plan
@@ -289,9 +296,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteTeamIterationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTeamIterationAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTeamIterationAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTeamIterationAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.DeleteTeamIterationAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteTeamIterationAsync (teamContext As TeamContext, id As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteTeamIterationAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTeamIterationAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="workHttpClientBase.DeleteTeamIterationAsync (teamContext, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -311,7 +319,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="id">ID of the iteration</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Delete a team's iteration by iterationId
@@ -321,9 +329,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBacklogAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt; GetBacklogAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt; GetBacklogAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt; GetBacklogAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBacklogAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBacklogAsync (teamContext As TeamContext, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BacklogLevelConfiguration)" />
       <MemberSignature Language="F#" Value="abstract member GetBacklogAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt;&#xA;override this.GetBacklogAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt;" Usage="workHttpClientBase.GetBacklogAsync (teamContext, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -343,7 +352,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="id">The id of the backlog level</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a backlog level
@@ -353,9 +362,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBacklogConfigurationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogConfiguration&gt; GetBacklogConfigurationsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogConfiguration&gt; GetBacklogConfigurationsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BacklogConfiguration&gt; GetBacklogConfigurationsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBacklogConfigurationsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBacklogConfigurationsAsync (teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BacklogConfiguration)" />
       <MemberSignature Language="F#" Value="abstract member GetBacklogConfigurationsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogConfiguration&gt;&#xA;override this.GetBacklogConfigurationsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogConfiguration&gt;" Usage="workHttpClientBase.GetBacklogConfigurationsAsync (teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -373,7 +383,7 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Gets backlog configuration for a team
@@ -383,9 +393,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBacklogLevelWorkItemsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelWorkItems&gt; GetBacklogLevelWorkItemsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string backlogId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelWorkItems&gt; GetBacklogLevelWorkItemsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string backlogId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BacklogLevelWorkItems&gt; GetBacklogLevelWorkItemsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string backlogId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBacklogLevelWorkItemsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBacklogLevelWorkItemsAsync (teamContext As TeamContext, backlogId As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BacklogLevelWorkItems)" />
       <MemberSignature Language="F#" Value="abstract member GetBacklogLevelWorkItemsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelWorkItems&gt;&#xA;override this.GetBacklogLevelWorkItemsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelWorkItems&gt;" Usage="workHttpClientBase.GetBacklogLevelWorkItemsAsync (teamContext, backlogId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -404,8 +415,8 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="backlogId"></param>
-        <param name="userState"></param>
+        <param name="backlogId" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a list of work items within a backlog level
@@ -415,9 +426,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBacklogsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt;&gt; GetBacklogsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt;&gt; GetBacklogsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt;&gt; GetBacklogsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBacklogsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBacklogsAsync (teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BacklogLevelConfiguration))" />
       <MemberSignature Language="F#" Value="abstract member GetBacklogsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt;&gt;&#xA;override this.GetBacklogsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BacklogLevelConfiguration&gt;&gt;" Usage="workHttpClientBase.GetBacklogsAsync (teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -435,7 +447,7 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] List all backlog levels
@@ -445,9 +457,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Board&gt; GetBoardAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Board&gt; GetBoardAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Board&gt; GetBoardAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardAsync (teamContext As TeamContext, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Board)" />
       <MemberSignature Language="F#" Value="abstract member GetBoardAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Board&gt;&#xA;override this.GetBoardAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Board&gt;" Usage="workHttpClientBase.GetBoardAsync (teamContext, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -467,7 +480,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="id">identifier for board, either board's backlog level name (Eg:"Stories") or Id</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get board
@@ -477,9 +490,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardCardRuleSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt; GetBoardCardRuleSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt; GetBoardCardRuleSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt; GetBoardCardRuleSettingsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardCardRuleSettingsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardCardRuleSettingsAsync (teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardCardRuleSettings)" />
       <MemberSignature Language="F#" Value="abstract member GetBoardCardRuleSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt;&#xA;override this.GetBoardCardRuleSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt;" Usage="workHttpClientBase.GetBoardCardRuleSettingsAsync (teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -498,8 +512,8 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="board"></param>
-        <param name="userState"></param>
+        <param name="board" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get board card Rule settings for the board id or board by name
@@ -509,9 +523,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardCardSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt; GetBoardCardSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt; GetBoardCardSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt; GetBoardCardSettingsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardCardSettingsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardCardSettingsAsync (teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardCardSettings)" />
       <MemberSignature Language="F#" Value="abstract member GetBoardCardSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt;&#xA;override this.GetBoardCardSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt;" Usage="workHttpClientBase.GetBoardCardSettingsAsync (teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -530,8 +545,8 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="board"></param>
-        <param name="userState"></param>
+        <param name="board" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get board card settings for the board id or board by name
@@ -541,9 +556,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardChartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt; GetBoardChartAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, string name, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt; GetBoardChartAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, string name, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt; GetBoardChartAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, string name, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardChartAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardChartAsync (teamContext As TeamContext, board As String, name As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardChart)" />
       <MemberSignature Language="F#" Value="abstract member GetBoardChartAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt;&#xA;override this.GetBoardChartAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt;" Usage="workHttpClientBase.GetBoardChartAsync (teamContext, board, name, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -565,7 +581,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="board">Identifier for board, either board's backlog level name (Eg:"Stories") or Id</param>
         <param name="name">The chart name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a board chart
@@ -575,9 +591,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardChartsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChartReference&gt;&gt; GetBoardChartsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChartReference&gt;&gt; GetBoardChartsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardChartReference&gt;&gt; GetBoardChartsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardChartsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardChartsAsync (teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardChartReference))" />
       <MemberSignature Language="F#" Value="abstract member GetBoardChartsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChartReference&gt;&gt;&#xA;override this.GetBoardChartsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChartReference&gt;&gt;" Usage="workHttpClientBase.GetBoardChartsAsync (teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -597,7 +614,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="board">Identifier for board, either board's backlog level name (Eg:"Stories") or Id</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get board charts
@@ -607,9 +624,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardColumnsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt; GetBoardColumnsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt; GetBoardColumnsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt; GetBoardColumnsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardColumnsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardColumnsAsync (teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardColumn))" />
       <MemberSignature Language="F#" Value="abstract member GetBoardColumnsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt;&#xA;override this.GetBoardColumnsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt;" Usage="workHttpClientBase.GetBoardColumnsAsync (teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -629,7 +647,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="board">Name or ID of the specific board</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get columns on a board
@@ -639,9 +657,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardMappingParentItemsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.ParentChildWIMap&gt;&gt; GetBoardMappingParentItemsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string childBacklogContextCategoryRefName, System.Collections.Generic.IEnumerable&lt;int&gt; workitemIds, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.ParentChildWIMap&gt;&gt; GetBoardMappingParentItemsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string childBacklogContextCategoryRefName, System.Collections.Generic.IEnumerable&lt;int&gt; workitemIds, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.ParentChildWIMap&gt;&gt; GetBoardMappingParentItemsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string childBacklogContextCategoryRefName, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; workitemIds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardMappingParentItemsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardMappingParentItemsAsync (teamContext As TeamContext, childBacklogContextCategoryRefName As String, workitemIds As IEnumerable(Of Integer), Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ParentChildWIMap))" />
       <MemberSignature Language="F#" Value="abstract member GetBoardMappingParentItemsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.ParentChildWIMap&gt;&gt;&#xA;override this.GetBoardMappingParentItemsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.ParentChildWIMap&gt;&gt;" Usage="workHttpClientBase.GetBoardMappingParentItemsAsync (teamContext, childBacklogContextCategoryRefName, workitemIds, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -661,9 +680,9 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="childBacklogContextCategoryRefName"></param>
-        <param name="workitemIds"></param>
-        <param name="userState"></param>
+        <param name="childBacklogContextCategoryRefName" />
+        <param name="workitemIds" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Returns the list of parent field filter model for the given list of workitem ids
@@ -673,9 +692,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardRowsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt; GetBoardRowsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt; GetBoardRowsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt; GetBoardRowsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardRowsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardRowsAsync (teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardRow))" />
       <MemberSignature Language="F#" Value="abstract member GetBoardRowsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt;&#xA;override this.GetBoardRowsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt;" Usage="workHttpClientBase.GetBoardRowsAsync (teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -695,7 +715,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="board">Name or ID of the specific board</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get rows on a board
@@ -705,9 +725,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardReference&gt;&gt; GetBoardsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardReference&gt;&gt; GetBoardsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardReference&gt;&gt; GetBoardsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardsAsync (teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardReference))" />
       <MemberSignature Language="F#" Value="abstract member GetBoardsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardReference&gt;&gt;&#xA;override this.GetBoardsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardReference&gt;&gt;" Usage="workHttpClientBase.GetBoardsAsync (teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -725,7 +746,7 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get boards
@@ -735,9 +756,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardUserSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt; GetBoardUserSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt; GetBoardUserSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt; GetBoardUserSettingsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetBoardUserSettingsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardUserSettingsAsync (teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardUserSettings)" />
       <MemberSignature Language="F#" Value="abstract member GetBoardUserSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt;&#xA;override this.GetBoardUserSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt;" Usage="workHttpClientBase.GetBoardUserSettingsAsync (teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -757,7 +779,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="board">Board ID or Name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get board user settings for a board id
@@ -767,9 +789,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetCapacitiesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt; GetCapacitiesAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt; GetCapacitiesAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt; GetCapacitiesAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid iterationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetCapacitiesAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCapacitiesAsync (teamContext As TeamContext, iterationId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TeamMemberCapacity))" />
       <MemberSignature Language="F#" Value="abstract member GetCapacitiesAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt;&#xA;override this.GetCapacitiesAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt;" Usage="workHttpClientBase.GetCapacitiesAsync (teamContext, iterationId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -789,7 +812,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="iterationId">ID of the iteration</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a team's capacity
@@ -799,9 +822,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetCapacityAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; GetCapacityAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, Guid teamMemberId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; GetCapacityAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, Guid teamMemberId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; GetCapacityAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid iterationId, valuetype System.Guid teamMemberId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetCapacityAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCapacityAsync (teamContext As TeamContext, iterationId As Guid, teamMemberId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamMemberCapacity)" />
       <MemberSignature Language="F#" Value="abstract member GetCapacityAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&#xA;override this.GetCapacityAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;" Usage="workHttpClientBase.GetCapacityAsync (teamContext, iterationId, teamMemberId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -823,7 +847,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="iterationId">ID of the iteration</param>
         <param name="teamMemberId">ID of the team member</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a team member's capacity
@@ -833,9 +857,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetColumnSuggestedValuesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync (object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync (object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync(object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetColumnSuggestedValuesAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetColumnSuggestedValuesAsync (Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardSuggestedValue))" />
       <MemberSignature Language="F#" Value="abstract member GetColumnSuggestedValuesAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;&#xA;override this.GetColumnSuggestedValuesAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;" Usage="workHttpClientBase.GetColumnSuggestedValuesAsync (userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -851,7 +876,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get available board columns in a project
@@ -861,9 +886,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetColumnSuggestedValuesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync (Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync (Guid project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync(valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetColumnSuggestedValuesAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetColumnSuggestedValuesAsync (project As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardSuggestedValue))" />
       <MemberSignature Language="F#" Value="abstract member GetColumnSuggestedValuesAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;&#xA;override this.GetColumnSuggestedValuesAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;" Usage="workHttpClientBase.GetColumnSuggestedValuesAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -881,7 +907,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get available board columns in a project
@@ -891,9 +917,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetColumnSuggestedValuesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync (string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync (string project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetColumnSuggestedValuesAsync(string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetColumnSuggestedValuesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetColumnSuggestedValuesAsync (project As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardSuggestedValue))" />
       <MemberSignature Language="F#" Value="abstract member GetColumnSuggestedValuesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;&#xA;override this.GetColumnSuggestedValuesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;" Usage="workHttpClientBase.GetColumnSuggestedValuesAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -911,7 +938,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get available board columns in a project
@@ -921,9 +948,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeliveryTimelineDataAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt; GetDeliveryTimelineDataAsync (Guid project, string id, Nullable&lt;int&gt; revision = null, Nullable&lt;DateTime&gt; startDate = null, Nullable&lt;DateTime&gt; endDate = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt; GetDeliveryTimelineDataAsync (Guid project, string id, int? revision = default, DateTime? startDate = default, DateTime? endDate = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt; GetDeliveryTimelineDataAsync(valuetype System.Guid project, string id, valuetype System.Nullable`1&lt;int32&gt; revision, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetDeliveryTimelineDataAsync(System.Guid,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeliveryTimelineDataAsync (project As Guid, id As String, Optional revision As Nullable(Of Integer) = Nothing, Optional startDate As Nullable(Of DateTime) = Nothing, Optional endDate As Nullable(Of DateTime) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DeliveryViewData)" />
       <MemberSignature Language="F#" Value="abstract member GetDeliveryTimelineDataAsync : Guid * string * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt;&#xA;override this.GetDeliveryTimelineDataAsync : Guid * string * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt;" Usage="workHttpClientBase.GetDeliveryTimelineDataAsync (project, id, revision, startDate, endDate, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -949,7 +977,7 @@
         <param name="revision">Revision of the plan for which you want data. If the current plan is a different revision you will get an ViewRevisionMismatchException exception. If you do not supply a revision you will get data for the latest revision.</param>
         <param name="startDate">The start date of timeline</param>
         <param name="endDate">The end date of timeline</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Delivery View Data
@@ -959,9 +987,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeliveryTimelineDataAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt; GetDeliveryTimelineDataAsync (string project, string id, Nullable&lt;int&gt; revision = null, Nullable&lt;DateTime&gt; startDate = null, Nullable&lt;DateTime&gt; endDate = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt; GetDeliveryTimelineDataAsync (string project, string id, int? revision = default, DateTime? startDate = default, DateTime? endDate = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt; GetDeliveryTimelineDataAsync(string project, string id, valuetype System.Nullable`1&lt;int32&gt; revision, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetDeliveryTimelineDataAsync(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeliveryTimelineDataAsync (project As String, id As String, Optional revision As Nullable(Of Integer) = Nothing, Optional startDate As Nullable(Of DateTime) = Nothing, Optional endDate As Nullable(Of DateTime) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DeliveryViewData)" />
       <MemberSignature Language="F#" Value="abstract member GetDeliveryTimelineDataAsync : string * string * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt;&#xA;override this.GetDeliveryTimelineDataAsync : string * string * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.DeliveryViewData&gt;" Usage="workHttpClientBase.GetDeliveryTimelineDataAsync (project, id, revision, startDate, endDate, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -987,7 +1016,7 @@
         <param name="revision">Revision of the plan for which you want data. If the current plan is a different revision you will get an ViewRevisionMismatchException exception. If you do not supply a revision you will get data for the latest revision.</param>
         <param name="startDate">The start date of timeline</param>
         <param name="endDate">The end date of timeline</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get Delivery View Data
@@ -997,9 +1026,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetIterationWorkItemsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.IterationWorkItems&gt; GetIterationWorkItemsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.IterationWorkItems&gt; GetIterationWorkItemsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.IterationWorkItems&gt; GetIterationWorkItemsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid iterationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetIterationWorkItemsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIterationWorkItemsAsync (teamContext As TeamContext, iterationId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IterationWorkItems)" />
       <MemberSignature Language="F#" Value="abstract member GetIterationWorkItemsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.IterationWorkItems&gt;&#xA;override this.GetIterationWorkItemsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.IterationWorkItems&gt;" Usage="workHttpClientBase.GetIterationWorkItemsAsync (teamContext, iterationId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1019,7 +1049,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="iterationId">ID of the iteration</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get work items for iteration
@@ -1029,9 +1059,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; GetPlanAsync (Guid project, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; GetPlanAsync (Guid project, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Plan&gt; GetPlanAsync(valuetype System.Guid project, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetPlanAsync(System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPlanAsync (project As Guid, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Plan)" />
       <MemberSignature Language="F#" Value="abstract member GetPlanAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&#xA;override this.GetPlanAsync : Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;" Usage="workHttpClientBase.GetPlanAsync (project, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1051,7 +1082,7 @@
       <Docs>
         <param name="project">Project ID</param>
         <param name="id">Identifier of the plan</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the information for the specified plan
@@ -1061,9 +1092,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; GetPlanAsync (string project, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; GetPlanAsync (string project, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Plan&gt; GetPlanAsync(string project, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetPlanAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPlanAsync (project As String, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Plan)" />
       <MemberSignature Language="F#" Value="abstract member GetPlanAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&#xA;override this.GetPlanAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;" Usage="workHttpClientBase.GetPlanAsync (project, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1083,7 +1115,7 @@
       <Docs>
         <param name="project">Project ID or project name</param>
         <param name="id">Identifier of the plan</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the information for the specified plan
@@ -1093,9 +1125,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPlansAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt; GetPlansAsync (Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt; GetPlansAsync (Guid project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt; GetPlansAsync(valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetPlansAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPlansAsync (project As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of Plan))" />
       <MemberSignature Language="F#" Value="abstract member GetPlansAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt;&#xA;override this.GetPlansAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt;" Usage="workHttpClientBase.GetPlansAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1113,7 +1146,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the information for all the plans configured for the given team
@@ -1123,9 +1156,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPlansAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt; GetPlansAsync (string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt; GetPlansAsync (string project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt; GetPlansAsync(string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetPlansAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPlansAsync (project As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of Plan))" />
       <MemberSignature Language="F#" Value="abstract member GetPlansAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt;&#xA;override this.GetPlansAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&gt;" Usage="workHttpClientBase.GetPlansAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1143,7 +1177,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get the information for all the plans configured for the given team
@@ -1153,9 +1187,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPredefinedQueriesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt; GetPredefinedQueriesAsync (Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt; GetPredefinedQueriesAsync (Guid project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt; GetPredefinedQueriesAsync(valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetPredefinedQueriesAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPredefinedQueriesAsync (project As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of PredefinedQuery))" />
       <MemberSignature Language="F#" Value="abstract member GetPredefinedQueriesAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt;&#xA;override this.GetPredefinedQueriesAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt;" Usage="workHttpClientBase.GetPredefinedQueriesAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1164,20 +1199,21 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Retrieves the set of known queries
@@ -1187,9 +1223,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPredefinedQueriesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt; GetPredefinedQueriesAsync (string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt; GetPredefinedQueriesAsync (string project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt; GetPredefinedQueriesAsync(string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetPredefinedQueriesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPredefinedQueriesAsync (project As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of PredefinedQuery))" />
       <MemberSignature Language="F#" Value="abstract member GetPredefinedQueriesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt;&#xA;override this.GetPredefinedQueriesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt;" Usage="workHttpClientBase.GetPredefinedQueriesAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1198,20 +1235,21 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Retrieves the set of known queries
@@ -1221,9 +1259,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPredefinedQueryResultsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt; GetPredefinedQueryResultsAsync (Guid project, string id, Nullable&lt;int&gt; top = null, Nullable&lt;bool&gt; includeCompleted = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt; GetPredefinedQueryResultsAsync (Guid project, string id, int? top = default, bool? includeCompleted = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt; GetPredefinedQueryResultsAsync(valuetype System.Guid project, string id, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;bool&gt; includeCompleted, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetPredefinedQueryResultsAsync(System.Guid,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPredefinedQueryResultsAsync (project As Guid, id As String, Optional top As Nullable(Of Integer) = Nothing, Optional includeCompleted As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PredefinedQuery)" />
       <MemberSignature Language="F#" Value="abstract member GetPredefinedQueryResultsAsync : Guid * string * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&#xA;override this.GetPredefinedQueryResultsAsync : Guid * string * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;" Usage="workHttpClientBase.GetPredefinedQueryResultsAsync (project, id, top, includeCompleted, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1232,26 +1271,27 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="includeCompleted" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="includeCompleted" Type="System.Nullable&lt;System.Boolean&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
         <param name="id">Id of the query to run</param>
         <param name="top">The maximum number of items to return</param>
         <param name="includeCompleted">Whether or not to retrieve the 'completed' work items (work items in the 'completed' meta state)</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Retrieves the specified predefined query including the query results
@@ -1261,9 +1301,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPredefinedQueryResultsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt; GetPredefinedQueryResultsAsync (string project, string id, Nullable&lt;int&gt; top = null, Nullable&lt;bool&gt; includeCompleted = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt; GetPredefinedQueryResultsAsync (string project, string id, int? top = default, bool? includeCompleted = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt; GetPredefinedQueryResultsAsync(string project, string id, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;bool&gt; includeCompleted, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetPredefinedQueryResultsAsync(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPredefinedQueryResultsAsync (project As String, id As String, Optional top As Nullable(Of Integer) = Nothing, Optional includeCompleted As Nullable(Of Boolean) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PredefinedQuery)" />
       <MemberSignature Language="F#" Value="abstract member GetPredefinedQueryResultsAsync : string * string * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;&#xA;override this.GetPredefinedQueryResultsAsync : string * string * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;" Usage="workHttpClientBase.GetPredefinedQueryResultsAsync (project, id, top, includeCompleted, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1272,26 +1313,27 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.PredefinedQuery&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="includeCompleted" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="includeCompleted" Type="System.Nullable&lt;System.Boolean&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
         <param name="id">Id of the query to run</param>
         <param name="top">The maximum number of items to return</param>
         <param name="includeCompleted">Whether or not to retrieve the 'completed' work items (work items in the 'completed' meta state)</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Retrieves the specified predefined query including the query results
@@ -1301,9 +1343,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessConfigurationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt; GetProcessConfigurationAsync (Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt; GetProcessConfigurationAsync (Guid project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt; GetProcessConfigurationAsync(valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetProcessConfigurationAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProcessConfigurationAsync (project As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessConfiguration)" />
       <MemberSignature Language="F#" Value="abstract member GetProcessConfigurationAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt;&#xA;override this.GetProcessConfigurationAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt;" Usage="workHttpClientBase.GetProcessConfigurationAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1321,7 +1364,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get process configuration
@@ -1331,9 +1374,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProcessConfigurationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt; GetProcessConfigurationAsync (string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt; GetProcessConfigurationAsync (string project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt; GetProcessConfigurationAsync(string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetProcessConfigurationAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProcessConfigurationAsync (project As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProcessConfiguration)" />
       <MemberSignature Language="F#" Value="abstract member GetProcessConfigurationAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt;&#xA;override this.GetProcessConfigurationAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Contracts.ProcessConfiguration&gt;" Usage="workHttpClientBase.GetProcessConfigurationAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1351,7 +1395,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get process configuration
@@ -1361,9 +1405,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRowSuggestedValuesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync (object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync (object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync(object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetRowSuggestedValuesAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRowSuggestedValuesAsync (Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardSuggestedValue))" />
       <MemberSignature Language="F#" Value="abstract member GetRowSuggestedValuesAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;&#xA;override this.GetRowSuggestedValuesAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;" Usage="workHttpClientBase.GetRowSuggestedValuesAsync (userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1379,7 +1424,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get available board rows in a project
@@ -1389,9 +1434,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRowSuggestedValuesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync (Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync (Guid project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync(valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetRowSuggestedValuesAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRowSuggestedValuesAsync (project As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardSuggestedValue))" />
       <MemberSignature Language="F#" Value="abstract member GetRowSuggestedValuesAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;&#xA;override this.GetRowSuggestedValuesAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;" Usage="workHttpClientBase.GetRowSuggestedValuesAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1409,7 +1455,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get available board rows in a project
@@ -1419,9 +1465,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRowSuggestedValuesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync (string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync (string project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt; GetRowSuggestedValuesAsync(string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetRowSuggestedValuesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRowSuggestedValuesAsync (project As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardSuggestedValue))" />
       <MemberSignature Language="F#" Value="abstract member GetRowSuggestedValuesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;&#xA;override this.GetRowSuggestedValuesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardSuggestedValue&gt;&gt;" Usage="workHttpClientBase.GetRowSuggestedValuesAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1439,7 +1486,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get available board rows in a project
@@ -1449,9 +1496,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTeamDaysOffAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt; GetTeamDaysOffAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt; GetTeamDaysOffAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt; GetTeamDaysOffAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid iterationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetTeamDaysOffAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTeamDaysOffAsync (teamContext As TeamContext, iterationId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamSettingsDaysOff)" />
       <MemberSignature Language="F#" Value="abstract member GetTeamDaysOffAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt;&#xA;override this.GetTeamDaysOffAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt;" Usage="workHttpClientBase.GetTeamDaysOffAsync (teamContext, iterationId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1471,7 +1519,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="iterationId">ID of the iteration</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get team's days off for an iteration
@@ -1481,9 +1529,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTeamFieldValuesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt; GetTeamFieldValuesAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt; GetTeamFieldValuesAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt; GetTeamFieldValuesAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetTeamFieldValuesAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTeamFieldValuesAsync (teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamFieldValues)" />
       <MemberSignature Language="F#" Value="abstract member GetTeamFieldValuesAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt;&#xA;override this.GetTeamFieldValuesAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt;" Usage="workHttpClientBase.GetTeamFieldValuesAsync (teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1501,7 +1550,7 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a collection of team field values
@@ -1511,9 +1560,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTeamIterationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt; GetTeamIterationAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt; GetTeamIterationAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt; GetTeamIterationAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetTeamIterationAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTeamIterationAsync (teamContext As TeamContext, id As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamSettingsIteration)" />
       <MemberSignature Language="F#" Value="abstract member GetTeamIterationAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;&#xA;override this.GetTeamIterationAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;" Usage="workHttpClientBase.GetTeamIterationAsync (teamContext, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1533,7 +1583,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="id">ID of the iteration</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get team's iteration by iterationId
@@ -1543,9 +1593,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTeamIterationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;&gt; GetTeamIterationsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string timeframe = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;&gt; GetTeamIterationsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string timeframe = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;&gt; GetTeamIterationsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string timeframe, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetTeamIterationsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTeamIterationsAsync (teamContext As TeamContext, Optional timeframe As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TeamSettingsIteration))" />
       <MemberSignature Language="F#" Value="abstract member GetTeamIterationsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;&gt;&#xA;override this.GetTeamIterationsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;&gt;" Usage="workHttpClientBase.GetTeamIterationsAsync (teamContext, timeframe, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1565,7 +1616,7 @@
       <Docs>
         <param name="teamContext">The team context for the operation</param>
         <param name="timeframe">A filter for which iterations are returned based on relative time. Only <see cref="F:Microsoft.TeamFoundation.Work.WebApi.TimeFrame.Current" /> is supported currently.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a team's iterations using timeframe filter
@@ -1575,9 +1626,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTeamSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt; GetTeamSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt; GetTeamSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt; GetTeamSettingsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.GetTeamSettingsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTeamSettingsAsync (teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamSetting)" />
       <MemberSignature Language="F#" Value="abstract member GetTeamSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt;&#xA;override this.GetTeamSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt;" Usage="workHttpClientBase.GetTeamSettingsAsync (teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1595,7 +1647,7 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Get a team's settings
@@ -1605,9 +1657,10 @@
       </Docs>
     </Member>
     <Member MemberName="PostTeamIterationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt; PostTeamIterationAsync (Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration iteration, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt; PostTeamIterationAsync (Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration iteration, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt; PostTeamIterationAsync(class Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration iteration, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.PostTeamIterationAsync(Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PostTeamIterationAsync (iteration As TeamSettingsIteration, teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamSettingsIteration)" />
       <MemberSignature Language="F#" Value="abstract member PostTeamIterationAsync : Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;&#xA;override this.PostTeamIterationAsync : Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsIteration&gt;" Usage="workHttpClientBase.PostTeamIterationAsync (iteration, teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1627,7 +1680,7 @@
       <Docs>
         <param name="iteration">Iteration to add</param>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Add an iteration to the team
@@ -1637,9 +1690,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceCapacitiesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt; ReplaceCapacitiesAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; capacities, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt; ReplaceCapacitiesAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; capacities, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt; ReplaceCapacitiesAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; capacities, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid iterationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.ReplaceCapacitiesAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity},Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReplaceCapacitiesAsync (capacities As IEnumerable(Of TeamMemberCapacity), teamContext As TeamContext, iterationId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TeamMemberCapacity))" />
       <MemberSignature Language="F#" Value="abstract member ReplaceCapacitiesAsync : seq&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt;&#xA;override this.ReplaceCapacitiesAsync : seq&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&gt;" Usage="workHttpClientBase.ReplaceCapacitiesAsync (capacities, teamContext, iterationId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1661,7 +1715,7 @@
         <param name="capacities">Team capacity to replace</param>
         <param name="teamContext">The team context for the operation</param>
         <param name="iterationId">ID of the iteration</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Replace a team's capacity
@@ -1671,9 +1725,10 @@
       </Docs>
     </Member>
     <Member MemberName="SetBoardOptionsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; SetBoardOptionsAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; options, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; SetBoardOptionsAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; options, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; SetBoardOptionsAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; options, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.SetBoardOptionsAsync(System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetBoardOptionsAsync (options As IDictionary(Of String, String), teamContext As TeamContext, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Dictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="abstract member SetBoardOptionsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;&#xA;override this.SetBoardOptionsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="workHttpClientBase.SetBoardOptionsAsync (options, teamContext, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1695,7 +1750,7 @@
         <param name="options">options to updated</param>
         <param name="teamContext">The team context for the operation</param>
         <param name="id">identifier for board, either category plural name (Eg:"Stories") or guid</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update board options
@@ -1705,9 +1760,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateBoardCardRuleSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt; UpdateBoardCardRuleSettingsAsync (Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings boardCardRuleSettings, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt; UpdateBoardCardRuleSettingsAsync (Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings boardCardRuleSettings, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt; UpdateBoardCardRuleSettingsAsync(class Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings boardCardRuleSettings, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateBoardCardRuleSettingsAsync(Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateBoardCardRuleSettingsAsync (boardCardRuleSettings As BoardCardRuleSettings, teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardCardRuleSettings)" />
       <MemberSignature Language="F#" Value="abstract member UpdateBoardCardRuleSettingsAsync : Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt;&#xA;override this.UpdateBoardCardRuleSettingsAsync : Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardRuleSettings&gt;" Usage="workHttpClientBase.UpdateBoardCardRuleSettingsAsync (boardCardRuleSettings, teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1726,10 +1782,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="boardCardRuleSettings"></param>
+        <param name="boardCardRuleSettings" />
         <param name="teamContext">The team context for the operation</param>
-        <param name="board"></param>
-        <param name="userState"></param>
+        <param name="board" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update board card Rule settings for the board id or board by name
@@ -1739,9 +1795,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateBoardCardSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt; UpdateBoardCardSettingsAsync (Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings boardCardSettingsToSave, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt; UpdateBoardCardSettingsAsync (Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings boardCardSettingsToSave, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt; UpdateBoardCardSettingsAsync(class Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings boardCardSettingsToSave, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateBoardCardSettingsAsync(Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateBoardCardSettingsAsync (boardCardSettingsToSave As BoardCardSettings, teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardCardSettings)" />
       <MemberSignature Language="F#" Value="abstract member UpdateBoardCardSettingsAsync : Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt;&#xA;override this.UpdateBoardCardSettingsAsync : Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardCardSettings&gt;" Usage="workHttpClientBase.UpdateBoardCardSettingsAsync (boardCardSettingsToSave, teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1760,10 +1817,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="boardCardSettingsToSave"></param>
+        <param name="boardCardSettingsToSave" />
         <param name="teamContext">The team context for the operation</param>
-        <param name="board"></param>
-        <param name="userState"></param>
+        <param name="board" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update board card settings for the board id or board by name
@@ -1773,9 +1830,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateBoardChartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt; UpdateBoardChartAsync (Microsoft.TeamFoundation.Work.WebApi.BoardChart chart, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, string name, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt; UpdateBoardChartAsync (Microsoft.TeamFoundation.Work.WebApi.BoardChart chart, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, string name, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt; UpdateBoardChartAsync(class Microsoft.TeamFoundation.Work.WebApi.BoardChart chart, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, string name, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateBoardChartAsync(Microsoft.TeamFoundation.Work.WebApi.BoardChart,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateBoardChartAsync (chart As BoardChart, teamContext As TeamContext, board As String, name As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardChart)" />
       <MemberSignature Language="F#" Value="abstract member UpdateBoardChartAsync : Microsoft.TeamFoundation.Work.WebApi.BoardChart * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt;&#xA;override this.UpdateBoardChartAsync : Microsoft.TeamFoundation.Work.WebApi.BoardChart * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardChart&gt;" Usage="workHttpClientBase.UpdateBoardChartAsync (chart, teamContext, board, name, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1795,11 +1853,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="chart"></param>
+        <param name="chart" />
         <param name="teamContext">The team context for the operation</param>
         <param name="board">Identifier for board, either board's backlog level name (Eg:"Stories") or Id</param>
         <param name="name">The chart name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update a board chart
@@ -1809,9 +1867,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateBoardColumnsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt; UpdateBoardColumnsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt; boardColumns, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt; UpdateBoardColumnsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt; boardColumns, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt; UpdateBoardColumnsAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt; boardColumns, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateBoardColumnsAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Work.WebApi.BoardColumn},Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateBoardColumnsAsync (boardColumns As IEnumerable(Of BoardColumn), teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardColumn))" />
       <MemberSignature Language="F#" Value="abstract member UpdateBoardColumnsAsync : seq&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt;&#xA;override this.UpdateBoardColumnsAsync : seq&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardColumn&gt;&gt;" Usage="workHttpClientBase.UpdateBoardColumnsAsync (boardColumns, teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1833,7 +1892,7 @@
         <param name="boardColumns">List of board columns to update</param>
         <param name="teamContext">The team context for the operation</param>
         <param name="board">Name or ID of the specific board</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update columns on a board
@@ -1843,9 +1902,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateBoardRowsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt; UpdateBoardRowsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt; boardRows, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt; UpdateBoardRowsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt; boardRows, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt; UpdateBoardRowsAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt; boardRows, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateBoardRowsAsync(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.Work.WebApi.BoardRow},Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateBoardRowsAsync (boardRows As IEnumerable(Of BoardRow), teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of BoardRow))" />
       <MemberSignature Language="F#" Value="abstract member UpdateBoardRowsAsync : seq&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt;&#xA;override this.UpdateBoardRowsAsync : seq&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Work.WebApi.BoardRow&gt;&gt;" Usage="workHttpClientBase.UpdateBoardRowsAsync (boardRows, teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1867,7 +1927,7 @@
         <param name="boardRows">List of board rows to update</param>
         <param name="teamContext">The team context for the operation</param>
         <param name="board">Name or ID of the specific board</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update rows on a board
@@ -1877,9 +1937,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateBoardUserSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt; UpdateBoardUserSettingsAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; boardUserSettings, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt; UpdateBoardUserSettingsAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; boardUserSettings, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt; UpdateBoardUserSettingsAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; boardUserSettings, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateBoardUserSettingsAsync(System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateBoardUserSettingsAsync (boardUserSettings As IDictionary(Of String, String), teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardUserSettings)" />
       <MemberSignature Language="F#" Value="abstract member UpdateBoardUserSettingsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt;&#xA;override this.UpdateBoardUserSettingsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardUserSettings&gt;" Usage="workHttpClientBase.UpdateBoardUserSettingsAsync (boardUserSettings, teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1898,10 +1959,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="boardUserSettings"></param>
+        <param name="boardUserSettings" />
         <param name="teamContext">The team context for the operation</param>
-        <param name="board"></param>
-        <param name="userState"></param>
+        <param name="board" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update board user settings for the board id
@@ -1911,9 +1972,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateCapacityAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; UpdateCapacityAsync (Microsoft.TeamFoundation.Work.WebApi.CapacityPatch patch, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, Guid teamMemberId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; UpdateCapacityAsync (Microsoft.TeamFoundation.Work.WebApi.CapacityPatch patch, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, Guid teamMemberId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt; UpdateCapacityAsync(class Microsoft.TeamFoundation.Work.WebApi.CapacityPatch patch, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid iterationId, valuetype System.Guid teamMemberId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateCapacityAsync(Microsoft.TeamFoundation.Work.WebApi.CapacityPatch,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateCapacityAsync (patch As CapacityPatch, teamContext As TeamContext, iterationId As Guid, teamMemberId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamMemberCapacity)" />
       <MemberSignature Language="F#" Value="abstract member UpdateCapacityAsync : Microsoft.TeamFoundation.Work.WebApi.CapacityPatch * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;&#xA;override this.UpdateCapacityAsync : Microsoft.TeamFoundation.Work.WebApi.CapacityPatch * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamMemberCapacity&gt;" Usage="workHttpClientBase.UpdateCapacityAsync (patch, teamContext, iterationId, teamMemberId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1937,7 +1999,7 @@
         <param name="teamContext">The team context for the operation</param>
         <param name="iterationId">ID of the iteration</param>
         <param name="teamMemberId">ID of the team member</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update a team member's capacity
@@ -1947,9 +2009,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdatePlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; UpdatePlanAsync (Microsoft.TeamFoundation.Work.WebApi.UpdatePlan updatedPlan, Guid project, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; UpdatePlanAsync (Microsoft.TeamFoundation.Work.WebApi.UpdatePlan updatedPlan, Guid project, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Plan&gt; UpdatePlanAsync(class Microsoft.TeamFoundation.Work.WebApi.UpdatePlan updatedPlan, valuetype System.Guid project, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdatePlanAsync(Microsoft.TeamFoundation.Work.WebApi.UpdatePlan,System.Guid,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdatePlanAsync (updatedPlan As UpdatePlan, project As Guid, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Plan)" />
       <MemberSignature Language="F#" Value="abstract member UpdatePlanAsync : Microsoft.TeamFoundation.Work.WebApi.UpdatePlan * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&#xA;override this.UpdatePlanAsync : Microsoft.TeamFoundation.Work.WebApi.UpdatePlan * Guid * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;" Usage="workHttpClientBase.UpdatePlanAsync (updatedPlan, project, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1971,7 +2034,7 @@
         <param name="updatedPlan">Plan definition to be updated</param>
         <param name="project">Project ID</param>
         <param name="id">Identifier of the plan</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update the information for the specified plan
@@ -1981,9 +2044,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdatePlanAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; UpdatePlanAsync (Microsoft.TeamFoundation.Work.WebApi.UpdatePlan updatedPlan, string project, string id, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt; UpdatePlanAsync (Microsoft.TeamFoundation.Work.WebApi.UpdatePlan updatedPlan, string project, string id, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.Plan&gt; UpdatePlanAsync(class Microsoft.TeamFoundation.Work.WebApi.UpdatePlan updatedPlan, string project, string id, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdatePlanAsync(Microsoft.TeamFoundation.Work.WebApi.UpdatePlan,System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdatePlanAsync (updatedPlan As UpdatePlan, project As String, id As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Plan)" />
       <MemberSignature Language="F#" Value="abstract member UpdatePlanAsync : Microsoft.TeamFoundation.Work.WebApi.UpdatePlan * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;&#xA;override this.UpdatePlanAsync : Microsoft.TeamFoundation.Work.WebApi.UpdatePlan * string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.Plan&gt;" Usage="workHttpClientBase.UpdatePlanAsync (updatedPlan, project, id, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2005,7 +2069,7 @@
         <param name="updatedPlan">Plan definition to be updated</param>
         <param name="project">Project ID or project name</param>
         <param name="id">Identifier of the plan</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update the information for the specified plan
@@ -2015,9 +2079,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateTeamDaysOffAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt; UpdateTeamDaysOffAsync (Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOffPatch daysOffPatch, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt; UpdateTeamDaysOffAsync (Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOffPatch daysOffPatch, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, Guid iterationId, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt; UpdateTeamDaysOffAsync(class Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOffPatch daysOffPatch, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, valuetype System.Guid iterationId, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateTeamDaysOffAsync(Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOffPatch,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateTeamDaysOffAsync (daysOffPatch As TeamSettingsDaysOffPatch, teamContext As TeamContext, iterationId As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamSettingsDaysOff)" />
       <MemberSignature Language="F#" Value="abstract member UpdateTeamDaysOffAsync : Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOffPatch * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt;&#xA;override this.UpdateTeamDaysOffAsync : Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOffPatch * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSettingsDaysOff&gt;" Usage="workHttpClientBase.UpdateTeamDaysOffAsync (daysOffPatch, teamContext, iterationId, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2039,7 +2104,7 @@
         <param name="daysOffPatch">Team's days off patch containting a list of start and end dates</param>
         <param name="teamContext">The team context for the operation</param>
         <param name="iterationId">ID of the iteration</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Set a team's days off for an iteration
@@ -2049,9 +2114,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateTeamFieldValuesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt; UpdateTeamFieldValuesAsync (Microsoft.TeamFoundation.Work.WebApi.TeamFieldValuesPatch patch, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt; UpdateTeamFieldValuesAsync (Microsoft.TeamFoundation.Work.WebApi.TeamFieldValuesPatch patch, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt; UpdateTeamFieldValuesAsync(class Microsoft.TeamFoundation.Work.WebApi.TeamFieldValuesPatch patch, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateTeamFieldValuesAsync(Microsoft.TeamFoundation.Work.WebApi.TeamFieldValuesPatch,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateTeamFieldValuesAsync (patch As TeamFieldValuesPatch, teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamFieldValues)" />
       <MemberSignature Language="F#" Value="abstract member UpdateTeamFieldValuesAsync : Microsoft.TeamFoundation.Work.WebApi.TeamFieldValuesPatch * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt;&#xA;override this.UpdateTeamFieldValuesAsync : Microsoft.TeamFoundation.Work.WebApi.TeamFieldValuesPatch * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamFieldValues&gt;" Usage="workHttpClientBase.UpdateTeamFieldValuesAsync (patch, teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2069,9 +2135,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="patch"></param>
+        <param name="patch" />
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update team field values
@@ -2081,9 +2147,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateTeamSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt; UpdateTeamSettingsAsync (Microsoft.TeamFoundation.Work.WebApi.TeamSettingsPatch teamSettingsPatch, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt; UpdateTeamSettingsAsync (Microsoft.TeamFoundation.Work.WebApi.TeamSettingsPatch teamSettingsPatch, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt; UpdateTeamSettingsAsync(class Microsoft.TeamFoundation.Work.WebApi.TeamSettingsPatch teamSettingsPatch, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkHttpClientBase.UpdateTeamSettingsAsync(Microsoft.TeamFoundation.Work.WebApi.TeamSettingsPatch,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateTeamSettingsAsync (teamSettingsPatch As TeamSettingsPatch, teamContext As TeamContext, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamSetting)" />
       <MemberSignature Language="F#" Value="abstract member UpdateTeamSettingsAsync : Microsoft.TeamFoundation.Work.WebApi.TeamSettingsPatch * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt;&#xA;override this.UpdateTeamSettingsAsync : Microsoft.TeamFoundation.Work.WebApi.TeamSettingsPatch * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.TeamSetting&gt;" Usage="workHttpClientBase.UpdateTeamSettingsAsync (teamSettingsPatch, teamContext, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2103,7 +2170,7 @@
       <Docs>
         <param name="teamSettingsPatch">TeamSettings changes</param>
         <param name="teamContext">The team context for the operation</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Update a team's settings

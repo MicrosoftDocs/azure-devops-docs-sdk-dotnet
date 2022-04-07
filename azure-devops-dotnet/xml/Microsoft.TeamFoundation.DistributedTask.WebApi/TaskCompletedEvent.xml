@@ -1,4 +1,4 @@
-﻿<Type Name="TaskCompletedEvent" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskCompletedEvent">
+<Type Name="TaskCompletedEvent" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskCompletedEvent">
   <TypeSignature Language="C#" Value="public sealed class TaskCompletedEvent : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TaskCompletedEvent extends Microsoft.TeamFoundation.DistributedTask.WebApi.TaskEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskCompletedEvent" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,6 +45,7 @@
       <MemberSignature Language="C#" Value="public TaskCompletedEvent (Guid jobId, Guid taskId, Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult taskResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid jobId, valuetype System.Guid taskId, valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult taskResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.TaskCompletedEvent.#ctor(System.Guid,System.Guid,Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (jobId As Guid, taskId As Guid, taskResult As TaskResult)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskCompletedEvent : Guid * Guid * Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskCompletedEvent" Usage="new Microsoft.TeamFoundation.DistributedTask.WebApi.TaskCompletedEvent (jobId, taskId, taskResult)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -78,7 +80,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

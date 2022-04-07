@@ -1,4 +1,4 @@
-﻿<Type Name="IExpressionNode" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode">
+<Type Name="IExpressionNode" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode">
   <TypeSignature Language="C#" Value="public interface IExpressionNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpressionNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode" />
@@ -12,7 +12,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -21,10 +22,10 @@
   </Docs>
   <Members>
     <Member MemberName="Evaluate">
-      <MemberSignature Language="C#" Value="public object Evaluate (Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options = null);" />
+      <MemberSignature Language="C#" Value="public object Evaluate (Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Evaluate(class Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode.Evaluate(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object,Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Evaluate (trace As ITraceWriter, secretMasker As ISecretMasker, state As Object, Optional options As EvaluationOptions = null) As Object" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate (trace As ITraceWriter, secretMasker As ISecretMasker, state As Object, Optional options As EvaluationOptions = Nothing) As Object" />
       <MemberSignature Language="F#" Value="abstract member Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions -&gt; obj" Usage="iExpressionNode.Evaluate (trace, secretMasker, state, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -35,16 +36,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
-        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" />
-        <Parameter Name="state" Type="System.Object" />
-        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" />
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
+        <param name="options">To be added.</param>
         <param name="trace">Optional trace writer</param>
         <param name="secretMasker">Optional secret masker</param>
         <param name="state">State object for custom evaluation function nodes and custom named-value nodes</param>
-        <param name="options">To be added.</param>
         <summary>
             Evaluates the expression and returns the result.
             </summary>
@@ -70,9 +71,9 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
-        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -94,10 +95,10 @@
       </Docs>
     </Member>
     <Member MemberName="Evaluate&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public T Evaluate&lt;T&gt; (Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options = null);" />
+      <MemberSignature Language="C#" Value="public T Evaluate&lt;T&gt; (Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Evaluate&lt;T&gt;(class Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter trace, class Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker secretMasker, object state, class Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Expressions.IExpressionNode.Evaluate``1(Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter,Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker,System.Object,Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Evaluate(Of T) (trace As ITraceWriter, secretMasker As ISecretMasker, state As Object, Optional options As EvaluationOptions = null) As T" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate(Of T) (trace As ITraceWriter, secretMasker As ISecretMasker, state As Object, Optional options As EvaluationOptions = Nothing) As T" />
       <MemberSignature Language="F#" Value="abstract member Evaluate : Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter * Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker * obj * Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions -&gt; 'T" Usage="iExpressionNode.Evaluate (trace, secretMasker, state, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -111,17 +112,17 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" />
-        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" />
-        <Parameter Name="state" Type="System.Object" />
-        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" />
+        <Parameter Name="trace" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.ITraceWriter" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="secretMasker" Type="Microsoft.TeamFoundation.DistributedTask.Logging.ISecretMasker" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="options" Type="Microsoft.TeamFoundation.DistributedTask.Expressions.EvaluationOptions" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
+        <param name="options">To be added.</param>
         <param name="trace">Optional trace writer</param>
         <param name="secretMasker">Optional secret masker</param>
         <param name="state">State object for custom evaluation function nodes and custom named-value nodes</param>
-        <param name="options">To be added.</param>
         <summary>
             Evaluates the expression and attempts to cast or deserialize the result to the specified
             type. The specified type can either be simple type or a JSON-serializable class. Allowed

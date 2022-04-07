@@ -1,4 +1,4 @@
-﻿<Type Name="NotificationAdminSettings" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings">
+<Type Name="NotificationAdminSettings" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings">
   <TypeSignature Language="C#" Value="public class NotificationAdminSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotificationAdminSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings" />
@@ -14,11 +14,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-latest;azure-devops-dotnet">
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientIncludeModel(Microsoft.VisualStudio.Services.WebApi.Internal.RestClientLanguages.TypeScript)</AttributeName>
+    <Attribute FrameworkAlternate="azure-devops-dotnet">
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientIncludeModel(Microsoft.VisualStudio.Services.WebApi.Internal.RestClientLanguages.TypeScript)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientIncludeModel(Microsoft.VisualStudio.Services.WebApi.Internal.RestClientLanguages.TypeScript)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,11 +46,15 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultGroupDeliveryPreference">
-      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference DefaultGroupDeliveryPreference { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference DefaultGroupDeliveryPreference" />
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference DefaultGroupDeliveryPreference { get; set; }" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference DefaultGroupDeliveryPreference" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings.DefaultGroupDeliveryPreference" />
-      <MemberSignature Language="VB.NET" Value="Public Property DefaultGroupDeliveryPreference As DefaultGroupDeliveryPreference" />
-      <MemberSignature Language="F#" Value="member this.DefaultGroupDeliveryPreference : Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings.DefaultGroupDeliveryPreference" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultGroupDeliveryPreference As NotificationSubscriberDeliveryPreference" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.DefaultGroupDeliveryPreference : Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings.DefaultGroupDeliveryPreference" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference DefaultGroupDeliveryPreference { get; set; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference DefaultGroupDeliveryPreference" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultGroupDeliveryPreference As DefaultGroupDeliveryPreference" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.DefaultGroupDeliveryPreference : Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference with get, set" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings.DefaultGroupDeliveryPreference" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualStudio.Services.Notifications.WebApi</AssemblyName>
@@ -57,11 +63,13 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet-preview">Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -86,7 +94,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
@@ -120,6 +128,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference TranslateDefaultGroupDeliveryPreference (Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference defaultGroupDeliveryPreference);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference TranslateDefaultGroupDeliveryPreference(valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference defaultGroupDeliveryPreference) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings.TranslateDefaultGroupDeliveryPreference(Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranslateDefaultGroupDeliveryPreference (defaultGroupDeliveryPreference As DefaultGroupDeliveryPreference) As NotificationSubscriberDeliveryPreference" />
       <MemberSignature Language="F#" Value="static member TranslateDefaultGroupDeliveryPreference : Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference -&gt; Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference" Usage="Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationAdminSettings.TranslateDefaultGroupDeliveryPreference defaultGroupDeliveryPreference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -130,7 +139,7 @@
         <ReturnType>Microsoft.VisualStudio.Services.Notifications.WebApi.NotificationSubscriberDeliveryPreference</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="defaultGroupDeliveryPreference" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference" />
+        <Parameter Name="defaultGroupDeliveryPreference" Type="Microsoft.VisualStudio.Services.Notifications.WebApi.DefaultGroupDeliveryPreference" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="defaultGroupDeliveryPreference">To be added.</param>

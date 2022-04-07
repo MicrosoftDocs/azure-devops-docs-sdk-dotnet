@@ -1,4 +1,4 @@
-﻿<Type Name="WorkCompatHttpClientBase" FullName="Microsoft.TeamFoundation.Work.WebApi.WorkCompatHttpClientBase">
+<Type Name="WorkCompatHttpClientBase" FullName="Microsoft.TeamFoundation.Work.WebApi.WorkCompatHttpClientBase">
   <TypeSignature Language="C#" Value="public abstract class WorkCompatHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkCompatHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Work.WebApi.WorkCompatHttpClientBase" />
@@ -83,8 +83,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -140,8 +141,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -156,9 +158,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBoardFilterSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt; GetBoardFilterSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt; GetBoardFilterSettingsAsync (Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt; GetBoardFilterSettingsAsync(class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkCompatHttpClientBase.GetBoardFilterSettingsAsync(Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoardFilterSettingsAsync (teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardFilterSettings)" />
       <MemberSignature Language="F#" Value="abstract member GetBoardFilterSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt;&#xA;override this.GetBoardFilterSettingsAsync : Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt;" Usage="workCompatHttpClientBase.GetBoardFilterSettingsAsync (teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -168,10 +171,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -185,8 +190,8 @@
       </Parameters>
       <Docs>
         <param name="teamContext">The team context for the operation</param>
-        <param name="board"></param>
-        <param name="userState"></param>
+        <param name="board" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] No longer functional.
@@ -196,9 +201,10 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateBoardFilterSettingsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt; UpdateBoardFilterSettingsAsync (Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings filterSettings, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt; UpdateBoardFilterSettingsAsync (Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings filterSettings, Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt; UpdateBoardFilterSettingsAsync(class Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings filterSettings, class Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext teamContext, string board, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Work.WebApi.WorkCompatHttpClientBase.UpdateBoardFilterSettingsAsync(Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings,Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateBoardFilterSettingsAsync (filterSettings As BoardFilterSettings, teamContext As TeamContext, board As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BoardFilterSettings)" />
       <MemberSignature Language="F#" Value="abstract member UpdateBoardFilterSettingsAsync : Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt;&#xA;override this.UpdateBoardFilterSettingsAsync : Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings * Microsoft.TeamFoundation.Core.WebApi.Types.TeamContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Work.WebApi.BoardFilterSettings&gt;" Usage="workCompatHttpClientBase.UpdateBoardFilterSettingsAsync (filterSettings, teamContext, board, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -208,10 +214,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -225,10 +233,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="filterSettings"></param>
+        <param name="filterSettings" />
         <param name="teamContext">The team context for the operation</param>
-        <param name="board"></param>
-        <param name="userState"></param>
+        <param name="board" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] No longer functional.

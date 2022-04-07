@@ -1,4 +1,4 @@
-﻿<Type Name="AgentJobRequestMessage" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage">
+<Type Name="AgentJobRequestMessage" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage">
   <TypeSignature Language="C#" Value="public sealed class AgentJobRequestMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AgentJobRequestMessage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public AgentJobRequestMessage (Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference plan, Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference timeline, Guid jobId, string jobDisplayName, string jobName, System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskHints, Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources jobResources, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference plan, class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference timeline, valuetype System.Guid jobId, string jobDisplayName, string jobName, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskHints, class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources jobResources, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage.#ctor(Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference,Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference,System.Guid,System.String,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint},Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources,System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (plan As TaskOrchestrationPlanReference, timeline As TimelineReference, jobId As Guid, jobDisplayName As String, jobName As String, variables As IDictionary(Of String, VariableValue), maskHints As IList(Of MaskHint), jobResources As JobResources, steps As IEnumerable(Of JobStep))" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference * Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference * Guid * string * string * System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources * seq&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage (plan, timeline, jobId, jobDisplayName, jobName, variables, maskHints, jobResources, steps)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -37,15 +40,15 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="plan" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference" />
-        <Parameter Name="timeline" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference" />
-        <Parameter Name="jobId" Type="System.Guid" />
-        <Parameter Name="jobDisplayName" Type="System.String" />
-        <Parameter Name="jobName" Type="System.String" />
-        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
-        <Parameter Name="maskHints" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt;" />
-        <Parameter Name="jobResources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources" />
-        <Parameter Name="steps" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" />
+        <Parameter Name="plan" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference" Index="0" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="timeline" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference" Index="1" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="jobId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="jobDisplayName" Type="System.String" Index="3" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="jobName" Type="System.String" Index="4" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Index="5" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="maskHints" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt;" Index="6" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="jobResources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources" Index="7" FrameworkAlternate="azure-devops-dotnet" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" Index="8" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="plan">To be added.</param>
@@ -65,6 +68,7 @@
       <MemberSignature Language="C#" Value="public AgentJobRequestMessage (Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference plan, Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference timeline, Guid jobId, string jobDisplayName, string jobName, string jobContainer, System.Collections.Generic.IDictionary&lt;string,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskHints, Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources jobResources, Microsoft.TeamFoundation.DistributedTask.Pipelines.WorkspaceOptions workspaceOptions, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference plan, class Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference timeline, valuetype System.Guid jobId, string jobDisplayName, string jobName, string jobContainer, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; variables, class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; maskHints, class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources jobResources, class Microsoft.TeamFoundation.DistributedTask.Pipelines.WorkspaceOptions workspaceOptions, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; steps) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage.#ctor(Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference,Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference,System.Guid,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue},System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint},Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources,Microsoft.TeamFoundation.DistributedTask.Pipelines.WorkspaceOptions,System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (plan As TaskOrchestrationPlanReference, timeline As TimelineReference, jobId As Guid, jobDisplayName As String, jobName As String, jobContainer As String, variables As IDictionary(Of String, VariableValue), maskHints As IList(Of MaskHint), jobResources As JobResources, workspaceOptions As WorkspaceOptions, steps As IEnumerable(Of JobStep))" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage : Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference * Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference * Guid * string * string * string * System.Collections.Generic.IDictionary&lt;string, Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt; * System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources * Microsoft.TeamFoundation.DistributedTask.Pipelines.WorkspaceOptions * seq&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt; -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.AgentJobRequestMessage (plan, timeline, jobId, jobDisplayName, jobName, jobContainer, variables, maskHints, jobResources, workspaceOptions, steps)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -72,17 +76,17 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="plan" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference" />
-        <Parameter Name="timeline" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference" />
-        <Parameter Name="jobId" Type="System.Guid" />
-        <Parameter Name="jobDisplayName" Type="System.String" />
-        <Parameter Name="jobName" Type="System.String" />
-        <Parameter Name="jobContainer" Type="System.String" />
-        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" />
-        <Parameter Name="maskHints" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt;" />
-        <Parameter Name="jobResources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources" />
-        <Parameter Name="workspaceOptions" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.WorkspaceOptions" />
-        <Parameter Name="steps" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" />
+        <Parameter Name="plan" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskOrchestrationPlanReference" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="timeline" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TimelineReference" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="jobId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="jobDisplayName" Type="System.String" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="jobName" Type="System.String" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="jobContainer" Type="System.String" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="variables" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.VariableValue&gt;" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="maskHints" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.MaskHint&gt;" Index="7" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="jobResources" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.JobResources" Index="8" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="workspaceOptions" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.WorkspaceOptions" Index="9" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="steps" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.JobStep&gt;" Index="10" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="plan">To be added.</param>
@@ -135,7 +139,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,7 +166,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,7 +193,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -213,7 +220,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -239,7 +247,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -288,7 +297,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -314,7 +324,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -340,7 +351,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -366,7 +378,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -413,7 +426,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -461,7 +475,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

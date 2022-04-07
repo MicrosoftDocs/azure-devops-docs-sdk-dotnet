@@ -1,4 +1,4 @@
-﻿<Type Name="ExpressionValue&lt;T&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;">
+<Type Name="ExpressionValue&lt;T&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class ExpressionValue&lt;T&gt; : Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionValue`1&lt;T&gt; extends Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1" />
@@ -18,10 +18,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,7 +46,7 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="value">The literal value which should be used</param>
@@ -79,10 +81,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetValue">
-      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt; GetValue (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt; GetValue (Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult`1&lt;!T&gt; GetValue(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1.GetValue(Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetValue (Optional context As IPipelineContext = null) As ExpressionResult(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (Optional context As IPipelineContext = Nothing) As ExpressionResult(Of T)" />
       <MemberSignature Language="F#" Value="member this.GetValue : Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;'T&gt;" Usage="expressionValue.GetValue context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -93,7 +95,7 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IPipelineContext" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="context">The execution context used for variable resolution</param>
@@ -119,7 +121,7 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionResult&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineExecutionContext" Index="0" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="context">The execution context used for variable resolution</param>
@@ -145,7 +147,7 @@
         <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>

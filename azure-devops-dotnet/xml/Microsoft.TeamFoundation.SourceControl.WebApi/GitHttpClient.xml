@@ -1,4 +1,4 @@
-﻿<Type Name="GitHttpClient" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient">
+<Type Name="GitHttpClient" FullName="Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient">
   <TypeSignature Language="C#" Value="public class GitHttpClient : Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GitHttpClient extends Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(22, 80)</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(22, 80)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ClientCircuitBreakerSettings(22, 80)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -88,8 +89,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -145,8 +147,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -189,10 +192,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBranchRefsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetBranchRefsAsync (Guid repositoryId, object userState = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetBranchRefsAsync (Guid repositoryId, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetBranchRefsAsync(valuetype System.Guid repositoryId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetBranchRefsAsync(System.Guid,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBranchRefsAsync (repositoryId As Guid, Optional userState As Object = null) As Task(Of List(Of GitRef))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBranchRefsAsync (repositoryId As Guid, Optional userState As Object = Nothing) As Task(Of List(Of GitRef))" />
       <MemberSignature Language="F#" Value="abstract member GetBranchRefsAsync : Guid * obj -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;&#xA;override this.GetBranchRefsAsync : Guid * obj -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;" Usage="gitHttpClient.GetBranchRefsAsync (repositoryId, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -209,7 +212,7 @@
       </Parameters>
       <Docs>
         <param name="repositoryId">Repository Id</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <summary>
             Get the refs that are branches for a specific git repository
             </summary>
@@ -243,9 +246,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (Guid project, Guid repositoryId, string scopePath, Nullable&lt;int&gt; top = null, string continuationToken = null, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (Guid project, Guid repositoryId, string scopePath, int? top = default, string continuationToken = default, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync(valuetype System.Guid project, valuetype System.Guid repositoryId, string scopePath, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, class Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetItemsPagedAsync(System.Guid,System.Guid,System.String,System.Nullable{System.Int32},System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsPagedAsync (project As Guid, repositoryId As Guid, scopePath As String, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional versionDescriptor As GitVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of GitItem))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : Guid * Guid * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : Guid * Guid * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;" Usage="gitHttpClient.GetItemsPagedAsync (project, repositoryId, scopePath, top, continuationToken, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -255,7 +259,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -290,9 +295,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (Guid project, string repositoryId, string scopePath, Nullable&lt;int&gt; top = null, string continuationToken = null, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (Guid project, string repositoryId, string scopePath, int? top = default, string continuationToken = default, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync(valuetype System.Guid project, string repositoryId, string scopePath, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, class Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetItemsPagedAsync(System.Guid,System.String,System.String,System.Nullable{System.Int32},System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsPagedAsync (project As Guid, repositoryId As String, scopePath As String, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional versionDescriptor As GitVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of GitItem))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : Guid * string * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : Guid * string * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;" Usage="gitHttpClient.GetItemsPagedAsync (project, repositoryId, scopePath, top, continuationToken, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -302,7 +308,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -337,9 +344,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (string project, Guid repositoryId, string scopePath, Nullable&lt;int&gt; top = null, string continuationToken = null, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (string project, Guid repositoryId, string scopePath, int? top = default, string continuationToken = default, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync(string project, valuetype System.Guid repositoryId, string scopePath, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, class Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetItemsPagedAsync(System.String,System.Guid,System.String,System.Nullable{System.Int32},System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsPagedAsync (project As String, repositoryId As Guid, scopePath As String, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional versionDescriptor As GitVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of GitItem))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : string * Guid * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : string * Guid * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;" Usage="gitHttpClient.GetItemsPagedAsync (project, repositoryId, scopePath, top, continuationToken, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -349,7 +357,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -384,9 +393,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetItemsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (string project, string repositoryId, string scopePath, Nullable&lt;int&gt; top = null, string continuationToken = null, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync (string project, string repositoryId, string scopePath, int? top = default, string continuationToken = default, Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt; GetItemsPagedAsync(string project, string repositoryId, string scopePath, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, class Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor versionDescriptor, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetItemsPagedAsync(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemsPagedAsync (project As String, repositoryId As String, scopePath As String, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional versionDescriptor As GitVersionDescriptor = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of GitItem))" />
       <MemberSignature Language="F#" Value="abstract member GetItemsPagedAsync : string * string * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;&#xA;override this.GetItemsPagedAsync : string * string * string * Nullable&lt;int&gt; * string * Microsoft.TeamFoundation.SourceControl.WebApi.GitVersionDescriptor * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitItem&gt;&gt;" Usage="gitHttpClient.GetItemsPagedAsync (project, repositoryId, scopePath, top, continuationToken, versionDescriptor, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -396,7 +406,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -434,6 +445,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;T&gt;&gt; GetPagedList&lt;T&gt; (System.Net.Http.HttpResponseMessage responseMessage, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;!!T&gt;&gt; GetPagedList&lt;T&gt;(class System.Net.Http.HttpResponseMessage responseMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPagedList``1(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetPagedList(Of T) (responseMessage As HttpResponseMessage, cancellationToken As CancellationToken) As Task(Of IPagedList(Of T))" />
       <MemberSignature Language="F#" Value="member this.GetPagedList : System.Net.Http.HttpResponseMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;'T&gt;&gt;" Usage="gitHttpClient.GetPagedList (responseMessage, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -461,9 +473,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPullRequestCommitsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (Guid project, Guid repositoryId, int pullRequestId, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (Guid project, Guid repositoryId, int pullRequestId, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync(valuetype System.Guid project, valuetype System.Guid repositoryId, int32 pullRequestId, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPullRequestCommitsPagedAsync(System.Guid,System.Guid,System.Int32,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPullRequestCommitsPagedAsync (project As Guid, repositoryId As Guid, pullRequestId As Integer, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of GitCommitRef))" />
       <MemberSignature Language="F#" Value="abstract member GetPullRequestCommitsPagedAsync : Guid * Guid * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;&#xA;override this.GetPullRequestCommitsPagedAsync : Guid * Guid * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;" Usage="gitHttpClient.GetPullRequestCommitsPagedAsync (project, repositoryId, pullRequestId, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -499,9 +512,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPullRequestCommitsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (Guid project, string repositoryId, int pullRequestId, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (Guid project, string repositoryId, int pullRequestId, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync(valuetype System.Guid project, string repositoryId, int32 pullRequestId, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPullRequestCommitsPagedAsync(System.Guid,System.String,System.Int32,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPullRequestCommitsPagedAsync (project As Guid, repositoryId As String, pullRequestId As Integer, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of GitCommitRef))" />
       <MemberSignature Language="F#" Value="abstract member GetPullRequestCommitsPagedAsync : Guid * string * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;&#xA;override this.GetPullRequestCommitsPagedAsync : Guid * string * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;" Usage="gitHttpClient.GetPullRequestCommitsPagedAsync (project, repositoryId, pullRequestId, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -537,9 +551,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPullRequestCommitsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (string project, Guid repositoryId, int pullRequestId, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (string project, Guid repositoryId, int pullRequestId, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync(string project, valuetype System.Guid repositoryId, int32 pullRequestId, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPullRequestCommitsPagedAsync(System.String,System.Guid,System.Int32,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPullRequestCommitsPagedAsync (project As String, repositoryId As Guid, pullRequestId As Integer, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of GitCommitRef))" />
       <MemberSignature Language="F#" Value="abstract member GetPullRequestCommitsPagedAsync : string * Guid * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;&#xA;override this.GetPullRequestCommitsPagedAsync : string * Guid * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;" Usage="gitHttpClient.GetPullRequestCommitsPagedAsync (project, repositoryId, pullRequestId, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -575,9 +590,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPullRequestCommitsPagedAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (string project, string repositoryId, int pullRequestId, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync (string project, string repositoryId, int pullRequestId, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt; GetPullRequestCommitsPagedAsync(string project, string repositoryId, int32 pullRequestId, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetPullRequestCommitsPagedAsync(System.String,System.String,System.Int32,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPullRequestCommitsPagedAsync (project As String, repositoryId As String, pullRequestId As Integer, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of GitCommitRef))" />
       <MemberSignature Language="F#" Value="abstract member GetPullRequestCommitsPagedAsync : string * string * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;&#xA;override this.GetPullRequestCommitsPagedAsync : string * string * int * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitCommitRef&gt;&gt;" Usage="gitHttpClient.GetPullRequestCommitsPagedAsync (project, repositoryId, pullRequestId, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -613,10 +629,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTagRefsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetTagRefsAsync (Guid repositoryId, object userState = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetTagRefsAsync (Guid repositoryId, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt; GetTagRefsAsync(valuetype System.Guid repositoryId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.GetTagRefsAsync(System.Guid,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTagRefsAsync (repositoryId As Guid, Optional userState As Object = null) As Task(Of List(Of GitRef))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTagRefsAsync (repositoryId As Guid, Optional userState As Object = Nothing) As Task(Of List(Of GitRef))" />
       <MemberSignature Language="F#" Value="abstract member GetTagRefsAsync : Guid * obj -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;&#xA;override this.GetTagRefsAsync : Guid * obj -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRef&gt;&gt;" Usage="gitHttpClient.GetTagRefsAsync (repositoryId, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -633,7 +649,7 @@
       </Parameters>
       <Docs>
         <param name="repositoryId">Repository Id</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <summary>
             Get the refs that are tags for a specific git repository
             </summary>
@@ -642,10 +658,10 @@
       </Docs>
     </Member>
     <Member MemberName="RenameRepositoryAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt; RenameRepositoryAsync (Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository repositoryToRename, string newName, object userState = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt; RenameRepositoryAsync (Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository repositoryToRename, string newName, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt; RenameRepositoryAsync(class Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository repositoryToRename, string newName, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.RenameRepositoryAsync(Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository,System.String,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RenameRepositoryAsync (repositoryToRename As GitRepository, newName As String, Optional userState As Object = null) As Task(Of GitRepository)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RenameRepositoryAsync (repositoryToRename As GitRepository, newName As String, Optional userState As Object = Nothing) As Task(Of GitRepository)" />
       <MemberSignature Language="F#" Value="abstract member RenameRepositoryAsync : Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository * string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt;&#xA;override this.RenameRepositoryAsync : Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository * string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.SourceControl.WebApi.GitRepository&gt;" Usage="gitHttpClient.RenameRepositoryAsync (repositoryToRename, newName, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -662,9 +678,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="repositoryToRename"></param>
-        <param name="newName"></param>
-        <param name="userState"></param>
+        <param name="repositoryToRename" />
+        <param name="newName" />
+        <param name="userState" />
         <summary>
             Rename a repository.  Only the name is observed.  If other properties are passed, the server will ensure they match.
             </summary>
@@ -673,9 +689,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpRequestMessage message, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.SendAsync``1(System.Net.Http.HttpRequestMessage,System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (message As HttpRequestMessage, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="gitHttpClient.SendAsync (message, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -707,9 +724,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="gitHttpClient.SendAsync (method, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -751,9 +769,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; additionalHeaders, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.SourceControl.WebApi.GitHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, additionalHeaders As IEnumerable(Of KeyValuePair(Of String, String)), locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="gitHttpClient.SendAsync (method, additionalHeaders, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

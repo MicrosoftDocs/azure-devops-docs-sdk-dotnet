@@ -1,4 +1,4 @@
-﻿<Type Name="GraphNodeInstance&lt;TNode&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;TNode&gt;">
+<Type Name="GraphNodeInstance&lt;TNode&gt;" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance&lt;TNode&gt;">
   <TypeSignature Language="C#" Value="public abstract class GraphNodeInstance&lt;TNode&gt; : Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance where TNode : IGraphNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GraphNodeInstance`1&lt;(class Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode) TNode&gt; extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNodeInstance" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1" />
@@ -24,8 +24,9 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -49,8 +50,9 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -85,7 +87,7 @@
       </Docs>
     </Member>
     <Member MemberName="FinishTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; FinishTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? FinishTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; FinishTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.FinishTime" />
       <MemberSignature Language="VB.NET" Value="Public Property FinishTime As Nullable(Of DateTime)" />
@@ -99,8 +101,9 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -127,8 +130,9 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -157,8 +161,9 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -221,7 +226,7 @@
       </Docs>
     </Member>
     <Member MemberName="Result">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; Result { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult? Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As Nullable(Of TaskResult)" />
@@ -235,8 +240,9 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -274,7 +280,7 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.GraphNodeInstance`1.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As Nullable(Of DateTime)" />
@@ -288,8 +294,9 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -313,8 +320,9 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,4 +1,4 @@
-﻿<Type Name="ProjectCollectionHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.ProjectCollectionHttpClient">
+<Type Name="ProjectCollectionHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.ProjectCollectionHttpClient">
   <TypeSignature Language="C#" Value="public class ProjectCollectionHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectCollectionHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.ProjectCollectionHttpClient" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -90,8 +91,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -147,8 +149,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -163,10 +166,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectCollection">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectCollection&gt; GetProjectCollection (string id, object userState = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectCollection&gt; GetProjectCollection (string id, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Core.WebApi.TeamProjectCollection&gt; GetProjectCollection(string id, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectCollectionHttpClient.GetProjectCollection(System.String,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetProjectCollection (id As String, Optional userState As Object = null) As Task(Of TeamProjectCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProjectCollection (id As String, Optional userState As Object = Nothing) As Task(Of TeamProjectCollection)" />
       <MemberSignature Language="F#" Value="member this.GetProjectCollection : string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectCollection&gt;" Usage="projectCollectionHttpClient.GetProjectCollection (id, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -183,7 +186,7 @@
       </Parameters>
       <Docs>
         <param name="id">The collection id/name to search for.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <summary>
             Get the project collection with the specified id/name.
             </summary>
@@ -192,10 +195,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjectCollections">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectCollectionReference&gt;&gt; GetProjectCollections (Nullable&lt;int&gt; top = null, Nullable&lt;int&gt; skip = null, object userState = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectCollectionReference&gt;&gt; GetProjectCollections (int? top = default, int? skip = default, object userState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Core.WebApi.TeamProjectCollectionReference&gt;&gt; GetProjectCollections(valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectCollectionHttpClient.GetProjectCollections(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetProjectCollections (Optional top As Nullable(Of Integer) = null, Optional skip As Nullable(Of Integer) = null, Optional userState As Object = null) As Task(Of IEnumerable(Of TeamProjectCollectionReference))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProjectCollections (Optional top As Nullable(Of Integer) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing) As Task(Of IEnumerable(Of TeamProjectCollectionReference))" />
       <MemberSignature Language="F#" Value="member this.GetProjectCollections : Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectCollectionReference&gt;&gt;" Usage="projectCollectionHttpClient.GetProjectCollections (top, skip, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -212,9 +215,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="top"></param>
-        <param name="skip"></param>
-        <param name="userState"></param>
+        <param name="top" />
+        <param name="skip" />
+        <param name="userState" />
         <summary>
             Get all project collections for the requested application.
             </summary>

@@ -1,4 +1,4 @@
-﻿<Type Name="TeamProjectReference" FullName="Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference">
+<Type Name="TeamProjectReference" FullName="Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference">
   <TypeSignature Language="C#" Value="public class TeamProjectReference : Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TeamProjectReference extends System.Object implements class Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference" />
@@ -19,7 +19,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -62,7 +63,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=1)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -89,7 +91,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=8)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=8)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=8)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -117,7 +120,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=3)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=3)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=3)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,9 +142,6 @@
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetToken () As String" />
       <MemberSignature Language="F#" Value="abstract member GetToken : unit -&gt; string&#xA;override this.GetToken : unit -&gt; string" Usage="teamProjectReference.GetToken " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
@@ -169,7 +170,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=0)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -188,6 +190,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#GetToken" />
       <MemberSignature Language="VB.NET" Value="Function GetToken () As String Implements ISecuredObject.GetToken" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken : unit -&gt; string&#xA;override this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken : unit -&gt; string" Usage="teamProjectReference.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken</InterfaceMember>
@@ -212,7 +215,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#NamespaceId" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property NamespaceId As Guid Implements ISecuredObject.NamespaceId" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId : Guid" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId</InterfaceMember>
@@ -236,7 +239,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#RequiredPermissions" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RequiredPermissions As Integer Implements ISecuredObject.RequiredPermissions" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions : int" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions</InterfaceMember>
@@ -269,7 +272,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=2)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -290,9 +294,6 @@
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property NamespaceId As Guid" />
       <MemberSignature Language="F#" Value="member this.NamespaceId : Guid" Usage="Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference.NamespaceId" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
@@ -313,9 +314,6 @@
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property RequiredPermissions As Integer" />
       <MemberSignature Language="F#" Value="member this.RequiredPermissions : int" Usage="Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference.RequiredPermissions" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.Core.WebApi</AssemblyName>
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
@@ -343,7 +341,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=6)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=6)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=6)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -371,7 +370,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Order=5)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Order=5)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Order=5)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -399,7 +399,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=4)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=4)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Order=4)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -427,7 +428,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Order=7)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Order=7)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Order=7)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

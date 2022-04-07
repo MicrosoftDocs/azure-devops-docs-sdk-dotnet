@@ -1,4 +1,4 @@
-﻿<Type Name="BuildResourceStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResourceStore">
+<Type Name="BuildResourceStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResourceStore">
   <TypeSignature Language="C#" Value="public class BuildResourceStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.InMemoryResourceStore&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt;, Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildResourceStore extends Microsoft.TeamFoundation.DistributedTask.Pipelines.InMemoryResourceStore`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource&gt; implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IBuildStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResourceStore" />
@@ -41,8 +41,9 @@
       <Parameters>
         <Parameter Name="builds" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.BuildResource[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

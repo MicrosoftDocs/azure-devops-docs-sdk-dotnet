@@ -1,4 +1,4 @@
-﻿<Type Name="PipelineProcess" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineProcess">
+<Type Name="PipelineProcess" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineProcess">
   <TypeSignature Language="C#" Value="public class PipelineProcess : Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationProcess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PipelineProcess extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationProcess" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineProcess" />
@@ -19,10 +19,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -43,7 +45,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -85,7 +88,7 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" />
+        <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="stages">To be added.</param>
@@ -98,7 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.OrchestrationProcessType Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationProcess.ProcessType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineProcess.Microsoft#TeamFoundation#DistributedTask#WebApi#IOrchestrationProcess#ProcessType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ProcessType As OrchestrationProcessType Implements IOrchestrationProcess.ProcessType" />
-      <MemberSignature Language="F#" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationProcess.ProcessType" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationProcess.ProcessType : Microsoft.TeamFoundation.DistributedTask.WebApi.OrchestrationProcessType" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationProcess.ProcessType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.WebApi.IOrchestrationProcess.ProcessType</InterfaceMember>

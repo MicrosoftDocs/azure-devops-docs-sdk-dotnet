@@ -1,4 +1,4 @@
-﻿<Type Name="ProjectCompatHttpClientBase" FullName="Microsoft.TeamFoundation.Core.WebApi.ProjectCompatHttpClientBase">
+<Type Name="ProjectCompatHttpClientBase" FullName="Microsoft.TeamFoundation.Core.WebApi.ProjectCompatHttpClientBase">
   <TypeSignature Language="C#" Value="public class ProjectCompatHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectCompatHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.ProjectCompatHttpClientBase" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -90,8 +91,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -147,8 +149,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -163,7 +166,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetProjects">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects (Nullable&lt;Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt; stateFilter, Nullable&lt;int&gt; top, Nullable&lt;int&gt; skip, object userState);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects (Microsoft.TeamFoundation.Core.WebApi.ProjectState? stateFilter, int? top, int? skip, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.Core.WebApi.TeamProjectReference&gt;&gt; GetProjects(valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.Core.WebApi.ProjectState&gt; stateFilter, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProjectCompatHttpClientBase.GetProjects(System.Nullable{Microsoft.TeamFoundation.Core.WebApi.ProjectState},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProjects (stateFilter As Nullable(Of ProjectState), top As Nullable(Of Integer), skip As Nullable(Of Integer), userState As Object) As Task(Of IEnumerable(Of TeamProjectReference))" />
@@ -176,10 +179,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -193,9 +198,9 @@
       </Parameters>
       <Docs>
         <param name="stateFilter">Filter on team projects in a specific team project state.</param>
-        <param name="top"></param>
-        <param name="skip"></param>
-        <param name="userState"></param>
+        <param name="top" />
+        <param name="skip" />
+        <param name="userState" />
         <summary>
             Get projects with the specified state.
             </summary>

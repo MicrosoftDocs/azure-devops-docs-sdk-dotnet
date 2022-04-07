@@ -1,4 +1,4 @@
-﻿<Type Name="PipelineResources" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources">
+<Type Name="PipelineResources" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources">
   <TypeSignature Language="C#" Value="public sealed class PipelineResources" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PipelineResources extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -92,11 +94,15 @@
       </Docs>
     </Member>
     <Member MemberName="Containers">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt; Containers { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ISet`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt; Containers" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerReference&gt; Containers { get; }" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ISet`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerReference&gt; Containers" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources.Containers" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Containers As ISet(Of ContainerResource)" />
-      <MemberSignature Language="F#" Value="member this.Containers : System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources.Containers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Containers As ISet(Of ContainerReference)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Containers : System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerReference&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources.Containers" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt; Containers { get; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ISet`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt; Containers" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Containers As ISet(Of ContainerResource)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Containers : System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources.Containers" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -104,7 +110,8 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerReference&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet-preview">System.Collections.Generic.ISet&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

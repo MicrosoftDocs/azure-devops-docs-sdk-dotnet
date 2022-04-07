@@ -1,4 +1,4 @@
-﻿<Type Name="DualIntentSecuredObject" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject">
+<Type Name="DualIntentSecuredObject" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject">
   <TypeSignature Language="C#" Value="public abstract class DualIntentSecuredObject : Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DualIntentSecuredObject extends System.Object implements class Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject" />
@@ -25,7 +25,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DualIntentSecuredObject (Nullable&lt;Guid&gt; filterUnderProjectId);" />
+      <MemberSignature Language="C#" Value="public DualIntentSecuredObject (Guid? filterUnderProjectId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; filterUnderProjectId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.#ctor(System.Nullable{System.Guid})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterUnderProjectId As Nullable(Of Guid))" />
@@ -129,7 +129,7 @@
       </Docs>
     </Member>
     <Member MemberName="m_projectId">
-      <MemberSignature Language="C#" Value="protected Nullable&lt;Guid&gt; m_projectId;" />
+      <MemberSignature Language="C#" Value="protected Guid? m_projectId;" />
       <MemberSignature Language="ILAsm" Value=".field family valuetype System.Nullable`1&lt;valuetype System.Guid&gt; m_projectId" />
       <MemberSignature Language="DocId" Value="F:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.m_projectId" />
       <MemberSignature Language="VB.NET" Value="Protected m_projectId As Nullable(Of Guid) " />
@@ -153,6 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#GetToken" />
       <MemberSignature Language="VB.NET" Value="Function GetToken () As String Implements ISecuredObject.GetToken" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken : unit -&gt; string&#xA;override this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken : unit -&gt; string" Usage="dualIntentSecuredObject.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken</InterfaceMember>
@@ -177,7 +178,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#NamespaceId" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property NamespaceId As Guid Implements ISecuredObject.NamespaceId" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId : Guid" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId</InterfaceMember>
@@ -201,7 +202,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.DualIntentSecuredObject.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#RequiredPermissions" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RequiredPermissions As Integer Implements ISecuredObject.RequiredPermissions" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions : int" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions</InterfaceMember>

@@ -1,4 +1,4 @@
-﻿<Type Name="BuildChangesCalculatedEvent" FullName="Microsoft.TeamFoundation.Build.WebApi.Events.BuildChangesCalculatedEvent">
+<Type Name="BuildChangesCalculatedEvent" FullName="Microsoft.TeamFoundation.Build.WebApi.Events.BuildChangesCalculatedEvent">
   <TypeSignature Language="C#" Value="public class BuildChangesCalculatedEvent : Microsoft.TeamFoundation.Build.WebApi.Events.BuildUpdatedEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildChangesCalculatedEvent extends Microsoft.TeamFoundation.Build.WebApi.Events.BuildUpdatedEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.Events.BuildChangesCalculatedEvent" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Use BuildEvent instead.")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("Use BuildEvent instead.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Use BuildEvent instead.")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public BuildChangesCalculatedEvent (Microsoft.TeamFoundation.Build.WebApi.Build build, System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt; changes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.Build.WebApi.Build build, class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Build.WebApi.Change&gt; changes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Events.BuildChangesCalculatedEvent.#ctor(Microsoft.TeamFoundation.Build.WebApi.Build,System.Collections.Generic.List{Microsoft.TeamFoundation.Build.WebApi.Change})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (build As Build, changes As List(Of Change))" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.BuildChangesCalculatedEvent : Microsoft.TeamFoundation.Build.WebApi.Build * System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Build.WebApi.Change&gt; -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.BuildChangesCalculatedEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.BuildChangesCalculatedEvent (build, changes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -62,7 +65,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

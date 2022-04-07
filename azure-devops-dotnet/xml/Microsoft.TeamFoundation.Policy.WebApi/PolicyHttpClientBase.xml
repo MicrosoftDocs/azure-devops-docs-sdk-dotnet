@@ -1,4 +1,4 @@
-﻿<Type Name="PolicyHttpClientBase" FullName="Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase">
+<Type Name="PolicyHttpClientBase" FullName="Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase">
   <TypeSignature Language="C#" Value="public abstract class PolicyHttpClientBase : Microsoft.TeamFoundation.Policy.WebApi.PolicyCompatHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PolicyHttpClientBase extends Microsoft.TeamFoundation.Policy.WebApi.PolicyCompatHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -90,8 +91,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -147,8 +149,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -191,6 +194,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;T&gt;&gt; GetPagedList&lt;T&gt; (System.Net.Http.HttpResponseMessage responseMessage, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;!!T&gt;&gt; GetPagedList&lt;T&gt;(class System.Net.Http.HttpResponseMessage responseMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase.GetPagedList``1(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetPagedList(Of T) (responseMessage As HttpResponseMessage, cancellationToken As CancellationToken) As Task(Of IPagedList(Of T))" />
       <MemberSignature Language="F#" Value="member this.GetPagedList : System.Net.Http.HttpResponseMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;'T&gt;&gt;" Usage="policyHttpClientBase.GetPagedList (responseMessage, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -218,9 +222,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPolicyConfigurationsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration&gt;&gt; GetPolicyConfigurationsAsync (Guid project, string scope = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration&gt;&gt; GetPolicyConfigurationsAsync (Guid project, string scope = default, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration&gt;&gt; GetPolicyConfigurationsAsync(valuetype System.Guid project, string scope, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase.GetPolicyConfigurationsAsync(System.Guid,System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPolicyConfigurationsAsync (project As Guid, Optional scope As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of PolicyConfiguration))" />
       <MemberSignature Language="F#" Value="override this.GetPolicyConfigurationsAsync : Guid * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration&gt;&gt;" Usage="policyHttpClientBase.GetPolicyConfigurationsAsync (project, scope, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -254,9 +259,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPolicyConfigurationsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration&gt;&gt; GetPolicyConfigurationsAsync (string project, string scope = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration&gt;&gt; GetPolicyConfigurationsAsync (string project, string scope = default, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration&gt;&gt; GetPolicyConfigurationsAsync(string project, string scope, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase.GetPolicyConfigurationsAsync(System.String,System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPolicyConfigurationsAsync (project As String, Optional scope As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of PolicyConfiguration))" />
       <MemberSignature Language="F#" Value="override this.GetPolicyConfigurationsAsync : string * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.Policy.WebApi.PolicyConfiguration&gt;&gt;" Usage="policyHttpClientBase.GetPolicyConfigurationsAsync (project, scope, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -290,9 +296,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpRequestMessage message, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase.SendAsync``1(System.Net.Http.HttpRequestMessage,System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (message As HttpRequestMessage, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="policyHttpClientBase.SendAsync (message, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -324,9 +331,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase.SendAsync``1(System.Net.Http.HttpMethod,System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="policyHttpClientBase.SendAsync (method, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -368,9 +376,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; additionalHeaders, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Policy.WebApi.PolicyHttpClientBase.SendAsync``1(System.Net.Http.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, additionalHeaders As IEnumerable(Of KeyValuePair(Of String, String)), locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="policyHttpClientBase.SendAsync (method, additionalHeaders, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

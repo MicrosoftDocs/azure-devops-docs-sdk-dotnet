@@ -1,4 +1,4 @@
-﻿<Type Name="TaskStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore">
+<Type Name="TaskStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore">
   <TypeSignature Language="C#" Value="public sealed class TaskStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TaskStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore" />
@@ -19,7 +19,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,10 +42,11 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="tasks" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition[]">
+        <Parameter Name="tasks" Type="Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition[]" Index="0" FrameworkAlternate="azure-devops-dotnet-preview">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -67,7 +69,7 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="tasks" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt;" />
+        <Parameter Name="tasks" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet" />
       </Parameters>
       <Docs>
         <param name="tasks">All tasks which should be made available for task resolution</param>
@@ -78,10 +80,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskStore (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt; tasks, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskResolver resolver = null);" />
+      <MemberSignature Language="C#" Value="public TaskStore (System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt; tasks, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskResolver resolver = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt; tasks, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore.#ctor(System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition},Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (tasks As IEnumerable(Of TaskDefinition), Optional resolver As ITaskResolver = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tasks As IEnumerable(Of TaskDefinition), Optional resolver As ITaskResolver = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore : seq&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskResolver -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore (tasks, resolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -89,12 +91,12 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="tasks" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt;" />
-        <Parameter Name="resolver" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskResolver" />
+        <Parameter Name="tasks" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&gt;" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="resolver" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskResolver" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="tasks">All tasks which should be made available for task resolution</param>
         <param name="resolver">To be added.</param>
+        <param name="tasks">All tasks which should be made available for task resolution</param>
         <summary>
             Constructs a new <c>TaskStore</c> instance with the specified tasks.
             </summary>
@@ -124,12 +126,11 @@
     <Member MemberName="ResolveTask">
       <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask (Guid taskId, string version);" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask(valuetype System.Guid taskId, string version) cil managed" FrameworkAlternate="azure-devops-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore.ResolveTask(System.Guid,System.String)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore.ResolveTask(System.Guid,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveTask (taskId As Guid, version As String) As TaskDefinition" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="F#" Value="abstract member ResolveTask : Guid * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&#xA;override this.ResolveTask : Guid * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" Usage="taskStore.ResolveTask (taskId, version)" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask (Guid taskId, string versionSpec);" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask(valuetype System.Guid taskId, string versionSpec) cil managed" FrameworkAlternate="azure-devops-dotnet-preview" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore.ResolveTask(System.Guid,System.String)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveTask (taskId As Guid, versionSpec As String) As TaskDefinition" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberSignature Language="F#" Value="abstract member ResolveTask : Guid * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&#xA;override this.ResolveTask : Guid * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" Usage="taskStore.ResolveTask (taskId, versionSpec)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Method</MemberType>
@@ -150,9 +151,9 @@
         <Parameter Name="versionSpec" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
+        <param name="versionSpec">To be added.</param>
         <param name="taskId">The unique identifier of the task</param>
         <param name="version">The version of the task which is desired</param>
-        <param name="versionSpec">To be added.</param>
         <summary>
             Resolves a task from the store using the unqiue identifier and version.
             </summary>
@@ -163,12 +164,11 @@
     <Member MemberName="ResolveTask">
       <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask (string name, string version);" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask(string name, string version) cil managed" FrameworkAlternate="azure-devops-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore.ResolveTask(System.String,System.String)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore.ResolveTask(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveTask (name As String, version As String) As TaskDefinition" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="F#" Value="abstract member ResolveTask : string * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&#xA;override this.ResolveTask : string * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" Usage="taskStore.ResolveTask (name, version)" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask (string name, string versionSpec);" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition ResolveTask(string name, string versionSpec) cil managed" FrameworkAlternate="azure-devops-dotnet-preview" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.TaskStore.ResolveTask(System.String,System.String)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveTask (name As String, versionSpec As String) As TaskDefinition" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberSignature Language="F#" Value="abstract member ResolveTask : string * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition&#xA;override this.ResolveTask : string * string -&gt; Microsoft.TeamFoundation.DistributedTask.WebApi.TaskDefinition" Usage="taskStore.ResolveTask (name, versionSpec)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Method</MemberType>
@@ -189,9 +189,9 @@
         <Parameter Name="versionSpec" Type="System.String" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
+        <param name="versionSpec">To be added.</param>
         <param name="name">The name of the task</param>
         <param name="version">The version of the task which is desired</param>
-        <param name="versionSpec">To be added.</param>
         <summary>
             Resolves a task from the store using the specified name and version.
             </summary>

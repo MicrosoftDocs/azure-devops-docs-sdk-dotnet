@@ -1,4 +1,4 @@
-﻿<Type Name="ProxyHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.ProxyHttpClient">
+<Type Name="ProxyHttpClient" FullName="Microsoft.TeamFoundation.Core.WebApi.ProxyHttpClient">
   <TypeSignature Language="C#" Value="public class ProxyHttpClient : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProxyHttpClient extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Core.WebApi.ProxyHttpClient" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("79134C72-4A58-4B42-976C-04E7115F32BF")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -88,8 +89,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -145,8 +147,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -161,9 +164,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateProxyAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.Proxy&gt; CreateOrUpdateProxyAsync (Microsoft.TeamFoundation.Core.WebApi.Proxy proxy, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.Proxy&gt; CreateOrUpdateProxyAsync (Microsoft.TeamFoundation.Core.WebApi.Proxy proxy, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Core.WebApi.Proxy&gt; CreateOrUpdateProxyAsync(class Microsoft.TeamFoundation.Core.WebApi.Proxy proxy, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProxyHttpClient.CreateOrUpdateProxyAsync(Microsoft.TeamFoundation.Core.WebApi.Proxy,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateOrUpdateProxyAsync (proxy As Proxy, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Proxy)" />
       <MemberSignature Language="F#" Value="member this.CreateOrUpdateProxyAsync : Microsoft.TeamFoundation.Core.WebApi.Proxy * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Core.WebApi.Proxy&gt;" Usage="proxyHttpClient.CreateOrUpdateProxyAsync (proxy, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -180,8 +184,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="proxy"></param>
-        <param name="userState"></param>
+        <param name="proxy" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -191,9 +195,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteProxyAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProxyAsync (string proxyUrl, string site = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteProxyAsync (string proxyUrl, string site = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteProxyAsync(string proxyUrl, string site, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProxyHttpClient.DeleteProxyAsync(System.String,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteProxyAsync (proxyUrl As String, Optional site As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeleteProxyAsync : string * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="proxyHttpClient.DeleteProxyAsync (proxyUrl, site, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -211,9 +216,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="proxyUrl"></param>
-        <param name="site"></param>
-        <param name="userState"></param>
+        <param name="proxyUrl" />
+        <param name="site" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -223,9 +228,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetProxiesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.Proxy&gt;&gt; GetProxiesAsync (string proxyUrl = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.Proxy&gt;&gt; GetProxiesAsync (string proxyUrl = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Core.WebApi.Proxy&gt;&gt; GetProxiesAsync(string proxyUrl, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Core.WebApi.ProxyHttpClient.GetProxiesAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProxiesAsync (Optional proxyUrl As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of Proxy))" />
       <MemberSignature Language="F#" Value="member this.GetProxiesAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Core.WebApi.Proxy&gt;&gt;" Usage="proxyHttpClient.GetProxiesAsync (proxyUrl, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -242,8 +248,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="proxyUrl"></param>
-        <param name="userState"></param>
+        <param name="proxyUrl" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]

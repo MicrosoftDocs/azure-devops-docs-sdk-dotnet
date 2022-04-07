@@ -1,4 +1,4 @@
-﻿<Type Name="JobEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.JobEnvironment">
+<Type Name="JobEnvironment" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.JobEnvironment">
   <TypeSignature Language="C#" Value="public sealed class JobEnvironment : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JobEnvironment extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.JobEnvironment" />
@@ -19,10 +19,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.LegacyJsonConverter`1&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.JobEnvironment&gt;))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.LegacyJsonConverter&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.JobEnvironment&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.LegacyJsonConverter&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.JobEnvironment&gt;))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -194,6 +196,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.Legacy.JobEnvironment.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="F#" Value="abstract member System.ICloneable.Clone : unit -&gt; obj&#xA;override this.System.ICloneable.Clone : unit -&gt; obj" Usage="jobEnvironment.System.ICloneable.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>

@@ -1,4 +1,4 @@
-﻿<Type Name="DashboardHttpClient" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClient">
+<Type Name="DashboardHttpClient" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClient">
   <TypeSignature Language="C#" Value="public sealed class DashboardHttpClient : Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DashboardHttpClient extends Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Dashboards.WebApi.DashboardHttpClient" />
@@ -85,8 +85,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -142,8 +143,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

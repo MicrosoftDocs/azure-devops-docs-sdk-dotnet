@@ -1,9 +1,13 @@
-﻿<Type Name="Stage" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage">
-  <TypeSignature Language="C#" Value="public class Stage : Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Stage extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode" />
+<Type Name="Stage" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage">
+  <TypeSignature Language="C#" Value="public class Stage" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Stage extends System.Object" FrameworkAlternate="azure-devops-dotnet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage" />
-  <TypeSignature Language="VB.NET" Value="Public Class Stage&#xA;Implements IGraphNode" />
-  <TypeSignature Language="F#" Value="type Stage = class&#xA;    interface IGraphNode" />
+  <TypeSignature Language="VB.NET" Value="Public Class Stage" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="F#" Value="type Stage = class" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="C#" Value="public class Stage : Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Stage extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class Stage&#xA;Implements IGraphNode" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type Stage = class&#xA;    interface IGraphNode" FrameworkAlternate="azure-devops-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
     <AssemblyVersion>16.0.0.0</AssemblyVersion>
@@ -13,16 +17,18 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="azure-devops-dotnet-preview">
       <InterfaceName>Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -59,8 +65,8 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="phases" Type="System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -85,7 +91,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -136,7 +143,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -153,6 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode.Validate(class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext context, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage.Microsoft#TeamFoundation#DistributedTask#Pipelines#IGraphNode#Validate(Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext,Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationResult)" />
       <MemberSignature Language="VB.NET" Value="Sub Validate (context As PipelineBuildContext, result As ValidationResult) Implements IGraphNode.Validate" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode.Validate : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext * Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationResult -&gt; unit&#xA;override this.Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode.Validate : Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext * Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationResult -&gt; unit" Usage="stage.Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode.Validate (context, result)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode.Validate(Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext,Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationResult)</InterfaceMember>
@@ -165,8 +174,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" />
-        <Parameter Name="result" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationResult" />
+        <Parameter Name="context" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineBuildContext" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="result" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationResult" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
@@ -183,7 +192,7 @@
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage.Name" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode.Name</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="azure-devops-dotnet-preview">P:Microsoft.TeamFoundation.DistributedTask.Pipelines.IGraphNode.Name</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -192,7 +201,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -205,11 +215,15 @@
       </Docs>
     </Member>
     <Member MemberName="Phases">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt; Phases { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt; Phases" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt; Phases { get; }" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt; Phases" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage.Phases" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Phases As IList(Of Phase)" />
-      <MemberSignature Language="F#" Value="member this.Phases : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage.Phases" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Phases As List(Of Phase)" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Phases : System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage.Phases" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt; Phases { get; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt; Phases" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Phases As IList(Of Phase)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Phases : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.Stage.Phases" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -217,7 +231,8 @@
         <AssemblyVersion>17.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">System.Collections.Generic.List&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet-preview">System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.Phase&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

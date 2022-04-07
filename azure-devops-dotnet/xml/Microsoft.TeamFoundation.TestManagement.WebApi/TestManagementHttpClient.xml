@@ -1,9 +1,13 @@
-﻿<Type Name="TestManagementHttpClient" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient">
-  <TypeSignature Language="C#" Value="public class TestManagementHttpClient : Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase, Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi TestManagementHttpClient extends Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase implements class Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient" />
+<Type Name="TestManagementHttpClient" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient">
+  <TypeSignature Language="C#" Value="public class TestManagementHttpClient : Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi TestManagementHttpClient extends Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase" FrameworkAlternate="azure-devops-dotnet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient" />
-  <TypeSignature Language="VB.NET" Value="Public Class TestManagementHttpClient&#xA;Inherits TestHttpClientBase&#xA;Implements ITestResultsHttpClient" />
-  <TypeSignature Language="F#" Value="type TestManagementHttpClient = class&#xA;    inherit TestHttpClientBase&#xA;    interface ITestResultsHttpClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class TestManagementHttpClient&#xA;Inherits TestHttpClientBase" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="F#" Value="type TestManagementHttpClient = class&#xA;    inherit TestHttpClientBase" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="C#" Value="public class TestManagementHttpClient : Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase, Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi TestManagementHttpClient extends Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase implements class Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class TestManagementHttpClient&#xA;Inherits TestHttpClientBase&#xA;Implements ITestResultsHttpClient" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type TestManagementHttpClient = class&#xA;    inherit TestHttpClientBase&#xA;    interface ITestResultsHttpClient" FrameworkAlternate="azure-devops-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -13,13 +17,14 @@
     <BaseTypeName>Microsoft.TeamFoundation.TestManagement.WebApi.TestHttpClientBase</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="azure-devops-dotnet-preview">
       <InterfaceName>Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.VisualStudio.Services.WebApi.ResourceArea("C2AA639C-3CCC-4740-B3B6-CE2A1E1D984E")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.VisualStudio.Services.WebApi.ResourceArea("C2AA639C-3CCC-4740-B3B6-CE2A1E1D984E")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.VisualStudio.Services.WebApi.ResourceArea("C2AA639C-3CCC-4740-B3B6-CE2A1E1D984E")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -92,8 +97,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -149,8 +155,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -165,9 +172,10 @@
       </Docs>
     </Member>
     <Member MemberName="BulkUpdateTestResultsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; BulkUpdateTestResultsAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResultUpdateModel result, string project, int runId, System.Collections.Generic.IEnumerable&lt;int&gt; resultIds, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; BulkUpdateTestResultsAsync (Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResultUpdateModel result, string project, int runId, System.Collections.Generic.IEnumerable&lt;int&gt; resultIds, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; BulkUpdateTestResultsAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResultUpdateModel result, string project, int32 runId, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; resultIds, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.BulkUpdateTestResultsAsync(Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResultUpdateModel,System.String,System.Int32,System.Collections.Generic.IEnumerable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BulkUpdateTestResultsAsync (result As TestCaseResultUpdateModel, project As String, runId As Integer, resultIds As IEnumerable(Of Integer), Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TestCaseResult))" />
       <MemberSignature Language="F#" Value="member this.BulkUpdateTestResultsAsync : Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResultUpdateModel * string * int * seq&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="testManagementHttpClient.BulkUpdateTestResultsAsync (result, project, runId, resultIds, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -187,11 +195,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="result"></param>
+        <param name="result" />
         <param name="project">Project ID or project name</param>
-        <param name="runId"></param>
-        <param name="resultIds"></param>
-        <param name="userState"></param>
+        <param name="runId" />
+        <param name="resultIds" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             This API is deprecated at 2.3 version and is no more supported.
@@ -229,6 +237,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;T&gt;&gt; GetPagedList&lt;T&gt; (System.Net.Http.HttpResponseMessage responseMessage, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;!!T&gt;&gt; GetPagedList&lt;T&gt;(class System.Net.Http.HttpResponseMessage responseMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetPagedList``1(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetPagedList(Of T) (responseMessage As HttpResponseMessage, cancellationToken As CancellationToken) As Task(Of IPagedList(Of T))" />
       <MemberSignature Language="F#" Value="member this.GetPagedList : System.Net.Http.HttpResponseMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;'T&gt;&gt;" Usage="testManagementHttpClient.GetPagedList (responseMessage, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -256,9 +265,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultGroupsByBuildV1Async">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt; GetResultGroupsByBuildV1Async (Guid project, int buildId, string publishContext, System.Collections.Generic.IEnumerable&lt;string&gt; fields = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt; GetResultGroupsByBuildV1Async (Guid project, int buildId, string publishContext, System.Collections.Generic.IEnumerable&lt;string&gt; fields = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt; GetResultGroupsByBuildV1Async(valuetype System.Guid project, int32 buildId, string publishContext, class System.Collections.Generic.IEnumerable`1&lt;string&gt; fields, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetResultGroupsByBuildV1Async(System.Guid,System.Int32,System.String,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResultGroupsByBuildV1Async (project As Guid, buildId As Integer, publishContext As String, Optional fields As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TestResultsGroupsForBuild)" />
       <MemberSignature Language="F#" Value="abstract member GetResultGroupsByBuildV1Async : Guid * int * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt;&#xA;override this.GetResultGroupsByBuildV1Async : Guid * int * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt;" Usage="testManagementHttpClient.GetResultGroupsByBuildV1Async (project, buildId, publishContext, fields, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -269,19 +279,19 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="buildId" Type="System.Int32" />
-        <Parameter Name="publishContext" Type="System.String" />
-        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="buildId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="publishContext" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="buildId"></param>
-        <param name="publishContext"></param>
-        <param name="fields"></param>
-        <param name="userState"></param>
+        <param name="buildId" />
+        <param name="publishContext" />
+        <param name="fields" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -291,9 +301,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultGroupsByBuildV1Async">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt; GetResultGroupsByBuildV1Async (string project, int buildId, string publishContext, System.Collections.Generic.IEnumerable&lt;string&gt; fields = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt; GetResultGroupsByBuildV1Async (string project, int buildId, string publishContext, System.Collections.Generic.IEnumerable&lt;string&gt; fields = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt; GetResultGroupsByBuildV1Async(string project, int32 buildId, string publishContext, class System.Collections.Generic.IEnumerable`1&lt;string&gt; fields, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetResultGroupsByBuildV1Async(System.String,System.Int32,System.String,System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResultGroupsByBuildV1Async (project As String, buildId As Integer, publishContext As String, Optional fields As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TestResultsGroupsForBuild)" />
       <MemberSignature Language="F#" Value="abstract member GetResultGroupsByBuildV1Async : string * int * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt;&#xA;override this.GetResultGroupsByBuildV1Async : string * int * string * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt;" Usage="testManagementHttpClient.GetResultGroupsByBuildV1Async (project, buildId, publishContext, fields, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -304,19 +315,19 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForBuild&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="buildId" Type="System.Int32" />
-        <Parameter Name="publishContext" Type="System.String" />
-        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="buildId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="publishContext" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="buildId"></param>
-        <param name="publishContext"></param>
-        <param name="fields"></param>
-        <param name="userState"></param>
+        <param name="buildId" />
+        <param name="publishContext" />
+        <param name="fields" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -326,9 +337,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultGroupsByBuildWithContinuationTokenAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByBuildWithContinuationTokenAsync (Guid project, int buildId, string publishContext, System.Collections.Generic.IEnumerable&lt;string&gt; fields = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByBuildWithContinuationTokenAsync (Guid project, int buildId, string publishContext, System.Collections.Generic.IEnumerable&lt;string&gt; fields = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByBuildWithContinuationTokenAsync(valuetype System.Guid project, int32 buildId, string publishContext, class System.Collections.Generic.IEnumerable`1&lt;string&gt; fields, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetResultGroupsByBuildWithContinuationTokenAsync(System.Guid,System.Int32,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResultGroupsByBuildWithContinuationTokenAsync (project As Guid, buildId As Integer, publishContext As String, Optional fields As IEnumerable(Of String) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of FieldDetailsForTestResults))" />
       <MemberSignature Language="F#" Value="abstract member GetResultGroupsByBuildWithContinuationTokenAsync : Guid * int * string * seq&lt;string&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;&#xA;override this.GetResultGroupsByBuildWithContinuationTokenAsync : Guid * int * string * seq&lt;string&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;" Usage="testManagementHttpClient.GetResultGroupsByBuildWithContinuationTokenAsync (project, buildId, publishContext, fields, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -337,28 +349,29 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="buildId" Type="System.Int32" />
-        <Parameter Name="publishContext" Type="System.String" />
-        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="buildId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="publishContext" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="continuationToken" Type="System.String" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="buildId"></param>
-        <param name="publishContext"></param>
-        <param name="fields"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="buildId" />
+        <param name="publishContext" />
+        <param name="fields" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -368,9 +381,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultGroupsByReleaseV1Async">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt; GetResultGroupsByReleaseV1Async (Guid project, int releaseId, string publishContext, Nullable&lt;int&gt; releaseEnvId = null, System.Collections.Generic.IEnumerable&lt;string&gt; fields = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt; GetResultGroupsByReleaseV1Async (Guid project, int releaseId, string publishContext, int? releaseEnvId = default, System.Collections.Generic.IEnumerable&lt;string&gt; fields = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt; GetResultGroupsByReleaseV1Async(valuetype System.Guid project, int32 releaseId, string publishContext, valuetype System.Nullable`1&lt;int32&gt; releaseEnvId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; fields, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetResultGroupsByReleaseV1Async(System.Guid,System.Int32,System.String,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResultGroupsByReleaseV1Async (project As Guid, releaseId As Integer, publishContext As String, Optional releaseEnvId As Nullable(Of Integer) = Nothing, Optional fields As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TestResultsGroupsForRelease)" />
       <MemberSignature Language="F#" Value="abstract member GetResultGroupsByReleaseV1Async : Guid * int * string * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt;&#xA;override this.GetResultGroupsByReleaseV1Async : Guid * int * string * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt;" Usage="testManagementHttpClient.GetResultGroupsByReleaseV1Async (project, releaseId, publishContext, releaseEnvId, fields, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -381,21 +395,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="releaseId" Type="System.Int32" />
-        <Parameter Name="publishContext" Type="System.String" />
-        <Parameter Name="releaseEnvId" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="releaseId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="publishContext" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="releaseEnvId" Type="System.Nullable&lt;System.Int32&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="releaseId"></param>
-        <param name="publishContext"></param>
-        <param name="releaseEnvId"></param>
-        <param name="fields"></param>
-        <param name="userState"></param>
+        <param name="releaseId" />
+        <param name="publishContext" />
+        <param name="releaseEnvId" />
+        <param name="fields" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -405,9 +419,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultGroupsByReleaseV1Async">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt; GetResultGroupsByReleaseV1Async (string project, int releaseId, string publishContext, Nullable&lt;int&gt; releaseEnvId = null, System.Collections.Generic.IEnumerable&lt;string&gt; fields = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt; GetResultGroupsByReleaseV1Async (string project, int releaseId, string publishContext, int? releaseEnvId = default, System.Collections.Generic.IEnumerable&lt;string&gt; fields = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt; GetResultGroupsByReleaseV1Async(string project, int32 releaseId, string publishContext, valuetype System.Nullable`1&lt;int32&gt; releaseEnvId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; fields, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetResultGroupsByReleaseV1Async(System.String,System.Int32,System.String,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResultGroupsByReleaseV1Async (project As String, releaseId As Integer, publishContext As String, Optional releaseEnvId As Nullable(Of Integer) = Nothing, Optional fields As IEnumerable(Of String) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TestResultsGroupsForRelease)" />
       <MemberSignature Language="F#" Value="abstract member GetResultGroupsByReleaseV1Async : string * int * string * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt;&#xA;override this.GetResultGroupsByReleaseV1Async : string * int * string * Nullable&lt;int&gt; * seq&lt;string&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt;" Usage="testManagementHttpClient.GetResultGroupsByReleaseV1Async (project, releaseId, publishContext, releaseEnvId, fields, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -418,21 +433,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestResultsGroupsForRelease&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="releaseId" Type="System.Int32" />
-        <Parameter Name="publishContext" Type="System.String" />
-        <Parameter Name="releaseEnvId" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="releaseId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="publishContext" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="releaseEnvId" Type="System.Nullable&lt;System.Int32&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="releaseId"></param>
-        <param name="publishContext"></param>
-        <param name="releaseEnvId"></param>
-        <param name="fields"></param>
-        <param name="userState"></param>
+        <param name="releaseId" />
+        <param name="publishContext" />
+        <param name="releaseEnvId" />
+        <param name="fields" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -442,9 +457,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultGroupsByReleaseWithContinuationTokenAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByReleaseWithContinuationTokenAsync (Guid project, int releaseId, string publishContext, Nullable&lt;int&gt; releaseEnvId = null, System.Collections.Generic.IEnumerable&lt;string&gt; fields = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByReleaseWithContinuationTokenAsync (Guid project, int releaseId, string publishContext, int? releaseEnvId = default, System.Collections.Generic.IEnumerable&lt;string&gt; fields = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByReleaseWithContinuationTokenAsync(valuetype System.Guid project, int32 releaseId, string publishContext, valuetype System.Nullable`1&lt;int32&gt; releaseEnvId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; fields, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetResultGroupsByReleaseWithContinuationTokenAsync(System.Guid,System.Int32,System.String,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResultGroupsByReleaseWithContinuationTokenAsync (project As Guid, releaseId As Integer, publishContext As String, Optional releaseEnvId As Nullable(Of Integer) = Nothing, Optional fields As IEnumerable(Of String) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of FieldDetailsForTestResults))" />
       <MemberSignature Language="F#" Value="abstract member GetResultGroupsByReleaseWithContinuationTokenAsync : Guid * int * string * Nullable&lt;int&gt; * seq&lt;string&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;&#xA;override this.GetResultGroupsByReleaseWithContinuationTokenAsync : Guid * int * string * Nullable&lt;int&gt; * seq&lt;string&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;" Usage="testManagementHttpClient.GetResultGroupsByReleaseWithContinuationTokenAsync (project, releaseId, publishContext, releaseEnvId, fields, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -453,30 +469,31 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.Guid" />
-        <Parameter Name="releaseId" Type="System.Int32" />
-        <Parameter Name="publishContext" Type="System.String" />
-        <Parameter Name="releaseEnvId" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.Guid" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="releaseId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="publishContext" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="releaseEnvId" Type="System.Nullable&lt;System.Int32&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="continuationToken" Type="System.String" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="7" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="releaseId"></param>
-        <param name="publishContext"></param>
-        <param name="releaseEnvId"></param>
-        <param name="fields"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="releaseId" />
+        <param name="publishContext" />
+        <param name="releaseEnvId" />
+        <param name="fields" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -486,9 +503,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultGroupsByReleaseWithContinuationTokenAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByReleaseWithContinuationTokenAsync (string project, int releaseId, string publishContext, Nullable&lt;int&gt; releaseEnvId = null, System.Collections.Generic.IEnumerable&lt;string&gt; fields = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByReleaseWithContinuationTokenAsync (string project, int releaseId, string publishContext, int? releaseEnvId = default, System.Collections.Generic.IEnumerable&lt;string&gt; fields = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt; GetResultGroupsByReleaseWithContinuationTokenAsync(string project, int32 releaseId, string publishContext, valuetype System.Nullable`1&lt;int32&gt; releaseEnvId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; fields, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetResultGroupsByReleaseWithContinuationTokenAsync(System.String,System.Int32,System.String,System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.String},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResultGroupsByReleaseWithContinuationTokenAsync (project As String, releaseId As Integer, publishContext As String, Optional releaseEnvId As Nullable(Of Integer) = Nothing, Optional fields As IEnumerable(Of String) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of FieldDetailsForTestResults))" />
       <MemberSignature Language="F#" Value="abstract member GetResultGroupsByReleaseWithContinuationTokenAsync : string * int * string * Nullable&lt;int&gt; * seq&lt;string&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;&#xA;override this.GetResultGroupsByReleaseWithContinuationTokenAsync : string * int * string * Nullable&lt;int&gt; * seq&lt;string&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;" Usage="testManagementHttpClient.GetResultGroupsByReleaseWithContinuationTokenAsync (project, releaseId, publishContext, releaseEnvId, fields, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -497,30 +515,31 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.FieldDetailsForTestResults&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="project" Type="System.String" />
-        <Parameter Name="releaseId" Type="System.Int32" />
-        <Parameter Name="publishContext" Type="System.String" />
-        <Parameter Name="releaseEnvId" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="userState" Type="System.Object" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="project" Type="System.String" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="releaseId" Type="System.Int32" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="publishContext" Type="System.String" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="releaseEnvId" Type="System.Nullable&lt;System.Int32&gt;" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="continuationToken" Type="System.String" Index="5" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="userState" Type="System.Object" Index="6" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="7" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="releaseId"></param>
-        <param name="publishContext"></param>
-        <param name="releaseEnvId"></param>
-        <param name="fields"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="releaseId" />
+        <param name="publishContext" />
+        <param name="releaseEnvId" />
+        <param name="fields" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -530,9 +549,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTestResultsByBuildAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByBuildAsync2 (Guid project, int buildId, string publishContext = null, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByBuildAsync2 (Guid project, int buildId, string publishContext = default, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = default, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByBuildAsync2(valuetype System.Guid project, int32 buildId, string publishContext, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetTestResultsByBuildAsync2(System.Guid,System.Int32,System.String,System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome},System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTestResultsByBuildAsync2 (project As Guid, buildId As Integer, Optional publishContext As String = Nothing, Optional outcomes As IEnumerable(Of TestOutcome) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of ShallowTestCaseResult))" />
       <MemberSignature Language="F#" Value="abstract member GetTestResultsByBuildAsync2 : Guid * int * string * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt;&#xA;override this.GetTestResultsByBuildAsync2 : Guid * int * string * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt;" Usage="testManagementHttpClient.GetTestResultsByBuildAsync2 (project, buildId, publishContext, outcomes, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -542,7 +562,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -560,12 +581,12 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="buildId"></param>
-        <param name="publishContext"></param>
-        <param name="outcomes"></param>
-        <param name="top"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="buildId" />
+        <param name="publishContext" />
+        <param name="outcomes" />
+        <param name="top" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -575,9 +596,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTestResultsByBuildAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByBuildAsync2 (string project, int buildId, string publishContext = null, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByBuildAsync2 (string project, int buildId, string publishContext = default, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = default, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByBuildAsync2(string project, int32 buildId, string publishContext, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetTestResultsByBuildAsync2(System.String,System.Int32,System.String,System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome},System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTestResultsByBuildAsync2 (project As String, buildId As Integer, Optional publishContext As String = Nothing, Optional outcomes As IEnumerable(Of TestOutcome) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of ShallowTestCaseResult))" />
       <MemberSignature Language="F#" Value="abstract member GetTestResultsByBuildAsync2 : string * int * string * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt;&#xA;override this.GetTestResultsByBuildAsync2 : string * int * string * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt;" Usage="testManagementHttpClient.GetTestResultsByBuildAsync2 (project, buildId, publishContext, outcomes, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -587,7 +609,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -605,12 +628,12 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="buildId"></param>
-        <param name="publishContext"></param>
-        <param name="outcomes"></param>
-        <param name="top"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="buildId" />
+        <param name="publishContext" />
+        <param name="outcomes" />
+        <param name="top" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -620,9 +643,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTestResultsByQueryAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; GetTestResultsByQueryAsync (Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel query, string project, Nullable&lt;bool&gt; includeResultDetails = null, Nullable&lt;bool&gt; includeIterationDetails = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; GetTestResultsByQueryAsync (Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel query, string project, bool? includeResultDetails = default, bool? includeIterationDetails = default, int? skip = default, int? top = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt; GetTestResultsByQueryAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel query, string project, valuetype System.Nullable`1&lt;bool&gt; includeResultDetails, valuetype System.Nullable`1&lt;bool&gt; includeIterationDetails, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetTestResultsByQueryAsync(Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTestResultsByQueryAsync (query As QueryModel, project As String, Optional includeResultDetails As Nullable(Of Boolean) = Nothing, Optional includeIterationDetails As Nullable(Of Boolean) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TestCaseResult))" />
       <MemberSignature Language="F#" Value="override this.GetTestResultsByQueryAsync : Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestCaseResult&gt;&gt;" Usage="testManagementHttpClient.GetTestResultsByQueryAsync (query, project, includeResultDetails, includeIterationDetails, skip, top, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -644,14 +668,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="query"></param>
-        <param name="project">Project ID or project name</param>
-        <param name="includeResultDetails"></param>
-        <param name="includeIterationDetails"></param>
-        <param name="skip"></param>
-        <param name="top"></param>
         <param name="userState">To be added.</param>
         <param name="cancellationToken">To be added.</param>
+        <param name="query" />
+        <param name="project">Project ID or project name</param>
+        <param name="includeResultDetails" />
+        <param name="includeIterationDetails" />
+        <param name="skip" />
+        <param name="top" />
         <summary>
             This API is deprecated at 2.3 version and is no more supported.
             Sends REST based msg to Server for getting TestCaseResult objects based on query, project, includeResultDetails, includeIterationDetails, skip, and top
@@ -662,9 +686,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTestResultsByReleaseAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByReleaseAsync2 (Guid project, int releaseId, Nullable&lt;int&gt; releaseEnvid = null, string publishContext = null, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByReleaseAsync2 (Guid project, int releaseId, int? releaseEnvid = default, string publishContext = default, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = default, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByReleaseAsync2(valuetype System.Guid project, int32 releaseId, valuetype System.Nullable`1&lt;int32&gt; releaseEnvid, string publishContext, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetTestResultsByReleaseAsync2(System.Guid,System.Int32,System.Nullable{System.Int32},System.String,System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome},System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTestResultsByReleaseAsync2 (project As Guid, releaseId As Integer, Optional releaseEnvid As Nullable(Of Integer) = Nothing, Optional publishContext As String = Nothing, Optional outcomes As IEnumerable(Of TestOutcome) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of ShallowTestCaseResult))" />
       <MemberSignature Language="F#" Value="abstract member GetTestResultsByReleaseAsync2 : Guid * int * Nullable&lt;int&gt; * string * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt;&#xA;override this.GetTestResultsByReleaseAsync2 : Guid * int * Nullable&lt;int&gt; * string * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt;" Usage="testManagementHttpClient.GetTestResultsByReleaseAsync2 (project, releaseId, releaseEnvid, publishContext, outcomes, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -674,7 +699,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -693,13 +719,13 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="releaseId"></param>
-        <param name="releaseEnvid"></param>
-        <param name="publishContext"></param>
-        <param name="outcomes"></param>
-        <param name="top"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="releaseId" />
+        <param name="releaseEnvid" />
+        <param name="publishContext" />
+        <param name="outcomes" />
+        <param name="top" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -709,9 +735,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTestResultsByReleaseAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByReleaseAsync2 (string project, int releaseId, Nullable&lt;int&gt; releaseEnvid = null, string publishContext = null, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByReleaseAsync2 (string project, int releaseId, int? releaseEnvid = default, string publishContext = default, System.Collections.Generic.IEnumerable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes = default, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt; GetTestResultsByReleaseAsync2(string project, int32 releaseId, valuetype System.Nullable`1&lt;int32&gt; releaseEnvid, string publishContext, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; outcomes, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetTestResultsByReleaseAsync2(System.String,System.Int32,System.Nullable{System.Int32},System.String,System.Collections.Generic.IEnumerable{Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome},System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTestResultsByReleaseAsync2 (project As String, releaseId As Integer, Optional releaseEnvid As Nullable(Of Integer) = Nothing, Optional publishContext As String = Nothing, Optional outcomes As IEnumerable(Of TestOutcome) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of ShallowTestCaseResult))" />
       <MemberSignature Language="F#" Value="abstract member GetTestResultsByReleaseAsync2 : string * int * Nullable&lt;int&gt; * string * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt;&#xA;override this.GetTestResultsByReleaseAsync2 : string * int * Nullable&lt;int&gt; * string * seq&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestOutcome&gt; * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.ShallowTestCaseResult&gt;&gt;" Usage="testManagementHttpClient.GetTestResultsByReleaseAsync2 (project, releaseId, releaseEnvid, publishContext, outcomes, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -721,7 +748,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -740,13 +768,13 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="releaseId"></param>
-        <param name="releaseEnvid"></param>
-        <param name="publishContext"></param>
-        <param name="outcomes"></param>
-        <param name="top"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="releaseId" />
+        <param name="releaseEnvid" />
+        <param name="publishContext" />
+        <param name="outcomes" />
+        <param name="top" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -756,9 +784,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTestRunsByQueryAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; GetTestRunsByQueryAsync (Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel query, string project, Nullable&lt;bool&gt; includeRunDetails = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; GetTestRunsByQueryAsync (Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel query, string project, bool? includeRunDetails = default, int? skip = default, int? top = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; GetTestRunsByQueryAsync(class Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel query, string project, valuetype System.Nullable`1&lt;bool&gt; includeRunDetails, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetTestRunsByQueryAsync(Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTestRunsByQueryAsync (query As QueryModel, project As String, Optional includeRunDetails As Nullable(Of Boolean) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of TestRun))" />
       <MemberSignature Language="F#" Value="member this.GetTestRunsByQueryAsync : Microsoft.TeamFoundation.TestManagement.WebApi.QueryModel * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;" Usage="testManagementHttpClient.GetTestRunsByQueryAsync (query, project, includeRunDetails, skip, top, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -779,12 +808,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="query"></param>
+        <param name="query" />
         <param name="project">Project ID or project name</param>
-        <param name="includeRunDetails"></param>
-        <param name="skip"></param>
-        <param name="top"></param>
-        <param name="userState"></param>
+        <param name="includeRunDetails" />
+        <param name="skip" />
+        <param name="top" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             This API is deprecated at 2.3 version and is no more supported.
@@ -794,9 +823,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTestSettingsAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt; GetTestSettingsAsync2 (Guid project, Nullable&lt;int&gt; top = null, Nullable&lt;int&gt; continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt; GetTestSettingsAsync2 (Guid project, int? top = default, int? continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt; GetTestSettingsAsync2(valuetype System.Guid project, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetTestSettingsAsync2(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTestSettingsAsync2 (project As Guid, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TestSettings2))" />
       <MemberSignature Language="F#" Value="abstract member GetTestSettingsAsync2 : Guid * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt;&#xA;override this.GetTestSettingsAsync2 : Guid * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt;" Usage="testManagementHttpClient.GetTestSettingsAsync2 (project, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -816,9 +846,9 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="top"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="top" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -828,9 +858,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTestSettingsAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt; GetTestSettingsAsync2 (string project, Nullable&lt;int&gt; top = null, Nullable&lt;int&gt; continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt; GetTestSettingsAsync2 (string project, int? top = default, int? continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt; GetTestSettingsAsync2(string project, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.GetTestSettingsAsync2(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTestSettingsAsync2 (project As String, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As Nullable(Of Integer) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TestSettings2))" />
       <MemberSignature Language="F#" Value="abstract member GetTestSettingsAsync2 : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt;&#xA;override this.GetTestSettingsAsync2 : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestSettings2&gt;&gt;" Usage="testManagementHttpClient.GetTestSettingsAsync2 (project, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -850,9 +881,9 @@
       </Parameters>
       <Docs>
         <param name="project">project name</param>
-        <param name="top"></param>
-        <param name="continuationToken"></param>
-        <param name="userState"></param>
+        <param name="top" />
+        <param name="continuationToken" />
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API]
@@ -883,13 +914,14 @@
       </Docs>
     </Member>
     <Member MemberName="QueryTestRunsAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2 (Guid project, DateTime minLastUpdatedDate, DateTime maxLastUpdatedDate, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; state = null, System.Collections.Generic.IEnumerable&lt;int&gt; planIds = null, Nullable&lt;bool&gt; isAutomated = null, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; publishContext = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildDefIds = null, string branchName = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseDefIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvDefIds = null, string runTitle = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2 (Guid project, DateTime minLastUpdatedDate, DateTime maxLastUpdatedDate, Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState? state = default, System.Collections.Generic.IEnumerable&lt;int&gt; planIds = default, bool? isAutomated = default, Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext? publishContext = default, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = default, System.Collections.Generic.IEnumerable&lt;int&gt; buildDefIds = default, string branchName = default, System.Collections.Generic.IEnumerable&lt;int&gt; releaseIds = default, System.Collections.Generic.IEnumerable&lt;int&gt; releaseDefIds = default, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvIds = default, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvDefIds = default, string runTitle = default, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2(valuetype System.Guid project, valuetype System.DateTime minLastUpdatedDate, valuetype System.DateTime maxLastUpdatedDate, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; state, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; planIds, valuetype System.Nullable`1&lt;bool&gt; isAutomated, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; publishContext, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildDefIds, string branchName, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseDefIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseEnvIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseEnvDefIds, string runTitle, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.QueryTestRunsAsync2(System.Guid,System.DateTime,System.DateTime,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState},System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryTestRunsAsync2 (project As Guid, minLastUpdatedDate As DateTime, maxLastUpdatedDate As DateTime, Optional state As Nullable(Of TestRunState) = Nothing, Optional planIds As IEnumerable(Of Integer) = Nothing, Optional isAutomated As Nullable(Of Boolean) = Nothing, Optional publishContext As Nullable(Of TestRunPublishContext) = Nothing, Optional buildIds As IEnumerable(Of Integer) = Nothing, Optional buildDefIds As IEnumerable(Of Integer) = Nothing, Optional branchName As String = Nothing, Optional releaseIds As IEnumerable(Of Integer) = Nothing, Optional releaseDefIds As IEnumerable(Of Integer) = Nothing, Optional releaseEnvIds As IEnumerable(Of Integer) = Nothing, Optional releaseEnvDefIds As IEnumerable(Of Integer) = Nothing, Optional runTitle As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TestRun))" />
       <MemberSignature Language="F#" Value="abstract member QueryTestRunsAsync2 : Guid * DateTime * DateTime * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; * seq&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;&#xA;override this.QueryTestRunsAsync2 : Guid * DateTime * DateTime * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; * seq&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;" Usage="testManagementHttpClient.QueryTestRunsAsync2 (project, minLastUpdatedDate, maxLastUpdatedDate, state, planIds, isAutomated, publishContext, buildIds, buildDefIds, branchName, releaseIds, releaseDefIds, releaseEnvIds, releaseEnvDefIds, runTitle, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.QueryTestRunsAsync2(System.Guid,System.DateTime,System.DateTime,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState},System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="azure-devops-dotnet-preview">M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.QueryTestRunsAsync2(System.Guid,System.DateTime,System.DateTime,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState},System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
@@ -938,7 +970,7 @@
         <param name="runTitle">Run Title of the Runs to be queried.</param>
         <param name="top">Number of runs to be queried. Limit is 100</param>
         <param name="continuationToken">continuationToken received from previous batch or null for first batch.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Query Test Runs based on filters.
@@ -948,13 +980,14 @@
       </Docs>
     </Member>
     <Member MemberName="QueryTestRunsAsync2">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2 (string project, DateTime minLastUpdatedDate, DateTime maxLastUpdatedDate, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; state = null, System.Collections.Generic.IEnumerable&lt;int&gt; planIds = null, Nullable&lt;bool&gt; isAutomated = null, Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; publishContext = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; buildDefIds = null, string branchName = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseDefIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvIds = null, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvDefIds = null, string runTitle = null, Nullable&lt;int&gt; top = null, string continuationToken = null, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2 (string project, DateTime minLastUpdatedDate, DateTime maxLastUpdatedDate, Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState? state = default, System.Collections.Generic.IEnumerable&lt;int&gt; planIds = default, bool? isAutomated = default, Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext? publishContext = default, System.Collections.Generic.IEnumerable&lt;int&gt; buildIds = default, System.Collections.Generic.IEnumerable&lt;int&gt; buildDefIds = default, string branchName = default, System.Collections.Generic.IEnumerable&lt;int&gt; releaseIds = default, System.Collections.Generic.IEnumerable&lt;int&gt; releaseDefIds = default, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvIds = default, System.Collections.Generic.IEnumerable&lt;int&gt; releaseEnvDefIds = default, string runTitle = default, int? top = default, string continuationToken = default, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.VisualStudio.Services.WebApi.IPagedList`1&lt;class Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt; QueryTestRunsAsync2(string project, valuetype System.DateTime minLastUpdatedDate, valuetype System.DateTime maxLastUpdatedDate, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; state, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; planIds, valuetype System.Nullable`1&lt;bool&gt; isAutomated, valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; publishContext, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; buildDefIds, string branchName, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseDefIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseEnvIds, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; releaseEnvDefIds, string runTitle, valuetype System.Nullable`1&lt;int32&gt; top, string continuationToken, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.QueryTestRunsAsync2(System.String,System.DateTime,System.DateTime,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState},System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryTestRunsAsync2 (project As String, minLastUpdatedDate As DateTime, maxLastUpdatedDate As DateTime, Optional state As Nullable(Of TestRunState) = Nothing, Optional planIds As IEnumerable(Of Integer) = Nothing, Optional isAutomated As Nullable(Of Boolean) = Nothing, Optional publishContext As Nullable(Of TestRunPublishContext) = Nothing, Optional buildIds As IEnumerable(Of Integer) = Nothing, Optional buildDefIds As IEnumerable(Of Integer) = Nothing, Optional branchName As String = Nothing, Optional releaseIds As IEnumerable(Of Integer) = Nothing, Optional releaseDefIds As IEnumerable(Of Integer) = Nothing, Optional releaseEnvIds As IEnumerable(Of Integer) = Nothing, Optional releaseEnvDefIds As IEnumerable(Of Integer) = Nothing, Optional runTitle As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPagedList(Of TestRun))" />
       <MemberSignature Language="F#" Value="abstract member QueryTestRunsAsync2 : string * DateTime * DateTime * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; * seq&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;&#xA;override this.QueryTestRunsAsync2 : string * DateTime * DateTime * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState&gt; * seq&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * seq&lt;int&gt; * string * Nullable&lt;int&gt; * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.VisualStudio.Services.WebApi.IPagedList&lt;Microsoft.TeamFoundation.TestManagement.WebApi.TestRun&gt;&gt;" Usage="testManagementHttpClient.QueryTestRunsAsync2 (project, minLastUpdatedDate, maxLastUpdatedDate, state, planIds, isAutomated, publishContext, buildIds, buildDefIds, branchName, releaseIds, releaseDefIds, releaseEnvIds, releaseEnvDefIds, runTitle, top, continuationToken, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.QueryTestRunsAsync2(System.String,System.DateTime,System.DateTime,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState},System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="azure-devops-dotnet-preview">M:Microsoft.TeamFoundation.TestManagement.WebApi.ITestResultsHttpClient.QueryTestRunsAsync2(System.String,System.DateTime,System.DateTime,System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunState},System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean},System.Nullable{Microsoft.TeamFoundation.TestManagement.WebApi.TestRunPublishContext},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Object,System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.TestManagement.WebApi</AssemblyName>
@@ -1003,7 +1036,7 @@
         <param name="runTitle">Run Title of the Runs to be queried.</param>
         <param name="top">Number of runs to be queried. Limit is 100</param>
         <param name="continuationToken">continuationToken received from previous batch or null for first batch.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Query Test Runs based on filters.
@@ -1013,9 +1046,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpRequestMessage message, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpRequestMessage message, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.SendAsync``1(System.Net.Http.HttpRequestMessage,System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (message As HttpRequestMessage, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="testManagementHttpClient.SendAsync (message, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1047,9 +1081,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="testManagementHttpClient.SendAsync (method, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1091,9 +1126,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = null, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = null, System.Net.Http.HttpContent content = null, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = null, object userState = null, System.Threading.CancellationToken cancellationToken = null, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; SendAsync&lt;T&gt; (System.Net.Http.HttpMethod method, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; additionalHeaders, Guid locationId, object routeValues = default, Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version = default, System.Net.Http.HttpContent content = default, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; queryParameters = default, object userState = default, System.Threading.CancellationToken cancellationToken = default, Func&lt;System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;T&gt;&gt; processResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; SendAsync&lt;T&gt;(class System.Net.Http.HttpMethod method, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; additionalHeaders, valuetype System.Guid locationId, object routeValues, class Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion version, class System.Net.Http.HttpContent content, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; queryParameters, object userState, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class System.Net.Http.HttpResponseMessage, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; processResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementHttpClient.SendAsync``1(System.Net.Http.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Guid,System.Object,Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion,System.Net.Http.HttpContent,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Object,System.Threading.CancellationToken,System.Func{System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync(Of T) (method As HttpMethod, additionalHeaders As IEnumerable(Of KeyValuePair(Of String, String)), locationId As Guid, Optional routeValues As Object = Nothing, Optional version As ApiResourceVersion = Nothing, Optional content As HttpContent = Nothing, Optional queryParameters As IEnumerable(Of KeyValuePair(Of String, String)) = Nothing, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing, Optional processResponse As Func(Of HttpResponseMessage, CancellationToken, Task(Of T)) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpMethod * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * Guid * obj * Microsoft.VisualStudio.Services.WebApi.ApiResourceVersion * System.Net.Http.HttpContent * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * obj * System.Threading.CancellationToken * Func&lt;System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="testManagementHttpClient.SendAsync (method, additionalHeaders, locationId, routeValues, version, content, queryParameters, userState, cancellationToken, processResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

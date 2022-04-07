@@ -1,4 +1,4 @@
-﻿<Type Name="FunctionNode" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode">
+<Type Name="FunctionNode" FullName="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode">
   <TypeSignature Language="C#" Value="public abstract class FunctionNode : Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FunctionNode extends Microsoft.TeamFoundation.DistributedTask.Expressions.ContainerNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,11 +42,13 @@
       </Docs>
     </Member>
     <Member MemberName="TraceFullyRealized">
-      <MemberSignature Language="C#" Value="protected override bool TraceFullyRealized { get; }" />
+      <MemberSignature Language="C#" Value="protected virtual bool TraceFullyRealized { get; }" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TraceFullyRealized" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode.TraceFullyRealized" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TraceFullyRealized As Boolean" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property TraceFullyRealized As Boolean" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="F#" Value="member this.TraceFullyRealized : bool" Usage="Microsoft.TeamFoundation.DistributedTask.Expressions.FunctionNode.TraceFullyRealized" />
+      <MemberSignature Language="C#" Value="protected override bool TraceFullyRealized { get; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TraceFullyRealized As Boolean" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>

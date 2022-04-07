@@ -1,4 +1,4 @@
-﻿<Type Name="JobInstance" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance">
+<Type Name="JobInstance" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance">
   <TypeSignature Language="C#" Value="public sealed class JobInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JobInstance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance" />
@@ -13,8 +13,9 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,6 +43,7 @@
       <MemberSignature Language="C#" Value="public JobInstance (Microsoft.TeamFoundation.DistributedTask.Pipelines.Job job);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.Job job) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.Job)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (job As Job)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance : Microsoft.TeamFoundation.DistributedTask.Pipelines.Job -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance job" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -162,7 +164,7 @@
       </Docs>
     </Member>
     <Member MemberName="FinishTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; FinishTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? FinishTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; FinishTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance.FinishTime" />
       <MemberSignature Language="VB.NET" Value="Public Property FinishTime As Nullable(Of DateTime)" />
@@ -242,7 +244,7 @@
       </Docs>
     </Member>
     <Member MemberName="Result">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; Result { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult? Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.TeamFoundation.DistributedTask.WebApi.TaskResult&gt; Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As Nullable(Of TaskResult)" />
@@ -262,7 +264,7 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.Runtime.JobInstance.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As Nullable(Of DateTime)" />

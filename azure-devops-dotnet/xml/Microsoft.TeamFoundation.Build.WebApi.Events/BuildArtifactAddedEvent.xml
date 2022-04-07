@@ -1,4 +1,4 @@
-﻿<Type Name="BuildArtifactAddedEvent" FullName="Microsoft.TeamFoundation.Build.WebApi.Events.BuildArtifactAddedEvent">
+<Type Name="BuildArtifactAddedEvent" FullName="Microsoft.TeamFoundation.Build.WebApi.Events.BuildArtifactAddedEvent">
   <TypeSignature Language="C#" Value="public class BuildArtifactAddedEvent : Microsoft.TeamFoundation.Build.WebApi.Events.BuildUpdatedEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildArtifactAddedEvent extends Microsoft.TeamFoundation.Build.WebApi.Events.BuildUpdatedEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.Events.BuildArtifactAddedEvent" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Use BuildEvent instead.")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("Use BuildEvent instead.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Use BuildEvent instead.")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public BuildArtifactAddedEvent (Microsoft.TeamFoundation.Build.WebApi.Build build, Microsoft.TeamFoundation.Build.WebApi.BuildArtifact artifact);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.Build.WebApi.Build build, class Microsoft.TeamFoundation.Build.WebApi.BuildArtifact artifact) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Events.BuildArtifactAddedEvent.#ctor(Microsoft.TeamFoundation.Build.WebApi.Build,Microsoft.TeamFoundation.Build.WebApi.BuildArtifact)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (build As Build, artifact As BuildArtifact)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.BuildArtifactAddedEvent : Microsoft.TeamFoundation.Build.WebApi.Build * Microsoft.TeamFoundation.Build.WebApi.BuildArtifact -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.BuildArtifactAddedEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.BuildArtifactAddedEvent (build, artifact)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -62,7 +65,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,9 +1,11 @@
-﻿<Type Name="IdentityReference" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference">
+<Type Name="IdentityReference" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference">
   <TypeSignature Language="C#" Value="public class IdentityReference : Microsoft.VisualStudio.Services.WebApi.IdentityRef" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityReference extends Microsoft.VisualStudio.Services.WebApi.IdentityRef implements class Microsoft.VisualStudio.Services.WebApi.ISecuredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityReference extends Microsoft.VisualStudio.Services.WebApi.IdentityRef" FrameworkAlternate="azure-devops-dotnet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference" />
   <TypeSignature Language="VB.NET" Value="Public Class IdentityReference&#xA;Inherits IdentityRef" />
-  <TypeSignature Language="F#" Value="type IdentityReference = class&#xA;    inherit IdentityRef&#xA;    interface ISecuredObject" />
+  <TypeSignature Language="F#" Value="type IdentityReference = class&#xA;    inherit IdentityRef" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityReference extends Microsoft.VisualStudio.Services.WebApi.IdentityRef implements class Microsoft.VisualStudio.Services.WebApi.ISecuredObject" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type IdentityReference = class&#xA;    inherit IdentityRef&#xA;    interface ISecuredObject" FrameworkAlternate="azure-devops-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -13,13 +15,14 @@
     <BaseTypeName>Microsoft.VisualStudio.Services.WebApi.IdentityRef</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="azure-devops-dotnet-preview">
       <InterfaceName>Microsoft.VisualStudio.Services.WebApi.ISecuredObject</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -52,6 +55,7 @@
       <MemberSignature Language="C#" Value="public IdentityReference (Microsoft.VisualStudio.Services.WebApi.IdentityRef identityRef);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualStudio.Services.WebApi.IdentityRef identityRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference.#ctor(Microsoft.VisualStudio.Services.WebApi.IdentityRef)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identityRef As IdentityRef)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference : Microsoft.VisualStudio.Services.WebApi.IdentityRef -&gt; Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference" Usage="new Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference identityRef" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -72,6 +76,7 @@
       <MemberSignature Language="C#" Value="public IdentityReference (Microsoft.VisualStudio.Services.WebApi.IdentityRef identityRef, string witIdentityName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualStudio.Services.WebApi.IdentityRef identityRef, string witIdentityName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference.#ctor(Microsoft.VisualStudio.Services.WebApi.IdentityRef,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identityRef As IdentityRef, witIdentityName As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference : Microsoft.VisualStudio.Services.WebApi.IdentityRef * string -&gt; Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference" Usage="new Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference (identityRef, witIdentityName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -104,7 +109,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="id")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,6 +127,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#GetToken" />
       <MemberSignature Language="VB.NET" Value="Function GetToken () As String Implements ISecuredObject.GetToken" />
+      <MemberSignature Language="F#" Value="override this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken : unit -&gt; string" Usage="identityReference.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.GetToken</InterfaceMember>
@@ -144,7 +151,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#NamespaceId" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property NamespaceId As Guid Implements ISecuredObject.NamespaceId" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId : Guid" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.NamespaceId</InterfaceMember>
@@ -167,7 +174,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.IdentityReference.Microsoft#VisualStudio#Services#WebApi#ISecuredObject#RequiredPermissions" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RequiredPermissions As Integer Implements ISecuredObject.RequiredPermissions" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions : int" Usage="Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualStudio.Services.WebApi.ISecuredObject.RequiredPermissions</InterfaceMember>
@@ -199,10 +206,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="name")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="name")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.VisualStudio.Services.WebApi.DefaultValueOnPublicAccessJsonConverter`1&lt;System.String&gt;))</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.VisualStudio.Services.WebApi.DefaultValueOnPublicAccessJsonConverter&lt;System.String&gt;))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.VisualStudio.Services.WebApi.DefaultValueOnPublicAccessJsonConverter&lt;System.String&gt;))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

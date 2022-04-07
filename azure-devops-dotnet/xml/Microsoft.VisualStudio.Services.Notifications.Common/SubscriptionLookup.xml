@@ -1,4 +1,4 @@
-﻿<Type Name="SubscriptionLookup" FullName="Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup">
+<Type Name="SubscriptionLookup" FullName="Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup">
   <TypeSignature Language="C#" Value="public class SubscriptionLookup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubscriptionLookup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup" />
@@ -54,10 +54,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SubscriptionLookup (Nullable&lt;int&gt; subscriptionId, string indexedExpression, string eventType, Nullable&lt;Guid&gt; subscriberId, string matcher, Nullable&lt;Guid&gt; dataspaceId, string classification = null, string channel = null, string metadata = null, Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags&gt; flags = null, bool restrictToDataspace = false, Nullable&lt;Guid&gt; scopeId = null, string contributedSubscriptionName = null, Nullable&lt;Guid&gt; uniqueId = null);" />
+      <MemberSignature Language="C#" Value="public SubscriptionLookup (int? subscriptionId, string indexedExpression, string eventType, Guid? subscriberId, string matcher, Guid? dataspaceId, string classification = default, string channel = default, string metadata = default, Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags? flags = default, bool restrictToDataspace = false, Guid? scopeId = default, string contributedSubscriptionName = default, Guid? uniqueId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int32&gt; subscriptionId, string indexedExpression, string eventType, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; subscriberId, string matcher, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; dataspaceId, string classification, string channel, string metadata, valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags&gt; flags, bool restrictToDataspace, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; scopeId, string contributedSubscriptionName, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; uniqueId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup.#ctor(System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.String,System.String,System.Nullable{Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags},System.Boolean,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (subscriptionId As Nullable(Of Integer), indexedExpression As String, eventType As String, subscriberId As Nullable(Of Guid), matcher As String, dataspaceId As Nullable(Of Guid), Optional classification As String = null, Optional channel As String = null, Optional metadata As String = null, Optional flags As Nullable(Of SubscriptionFlags) = null, Optional restrictToDataspace As Boolean = false, Optional scopeId As Nullable(Of Guid) = null, Optional contributedSubscriptionName As String = null, Optional uniqueId As Nullable(Of Guid) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subscriptionId As Nullable(Of Integer), indexedExpression As String, eventType As String, subscriberId As Nullable(Of Guid), matcher As String, dataspaceId As Nullable(Of Guid), Optional classification As String = Nothing, Optional channel As String = Nothing, Optional metadata As String = Nothing, Optional flags As Nullable(Of SubscriptionFlags) = Nothing, Optional restrictToDataspace As Boolean = false, Optional scopeId As Nullable(Of Guid) = Nothing, Optional contributedSubscriptionName As String = Nothing, Optional uniqueId As Nullable(Of Guid) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup : Nullable&lt;int&gt; * string * string * Nullable&lt;Guid&gt; * string * Nullable&lt;Guid&gt; * string * string * string * Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags&gt; * bool * Nullable&lt;Guid&gt; * string * Nullable&lt;Guid&gt; -&gt; Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup" Usage="new Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup (subscriptionId, indexedExpression, eventType, subscriberId, matcher, dataspaceId, classification, channel, metadata, flags, restrictToDataspace, scopeId, contributedSubscriptionName, uniqueId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -140,7 +140,7 @@
       </Docs>
     </Member>
     <Member MemberName="DataspaceId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; DataspaceId { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? DataspaceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; DataspaceId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup.DataspaceId" />
       <MemberSignature Language="VB.NET" Value="Public Property DataspaceId As Nullable(Of Guid)" />
@@ -180,7 +180,7 @@
       </Docs>
     </Member>
     <Member MemberName="Flags">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags&gt; Flags { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags? Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.VisualStudio.Services.Notifications.WebApi.SubscriptionFlags&gt; Flags" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Property Flags As Nullable(Of SubscriptionFlags)" />
@@ -280,7 +280,7 @@
       </Docs>
     </Member>
     <Member MemberName="ScopeId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; ScopeId { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? ScopeId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; ScopeId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup.ScopeId" />
       <MemberSignature Language="VB.NET" Value="Public Property ScopeId As Nullable(Of Guid)" />
@@ -300,7 +300,7 @@
       </Docs>
     </Member>
     <Member MemberName="SubscriberId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; SubscriberId { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? SubscriberId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; SubscriberId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup.SubscriberId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriberId As Nullable(Of Guid)" />
@@ -320,7 +320,7 @@
       </Docs>
     </Member>
     <Member MemberName="SubscriptionId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; SubscriptionId { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? SubscriptionId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; SubscriptionId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As Nullable(Of Integer)" />
@@ -340,7 +340,7 @@
       </Docs>
     </Member>
     <Member MemberName="UniqueId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; UniqueId { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? UniqueId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; UniqueId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.Services.Notifications.Common.SubscriptionLookup.UniqueId" />
       <MemberSignature Language="VB.NET" Value="Public Property UniqueId As Nullable(Of Guid)" />

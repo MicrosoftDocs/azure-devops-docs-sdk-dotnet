@@ -1,4 +1,4 @@
-﻿<Type Name="ContributionMethods" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods">
+<Type Name="ContributionMethods" FullName="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods">
   <TypeSignature Language="C#" Value="public static class ContributionMethods" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ContributionMethods extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods" />
@@ -21,9 +21,10 @@
   </Docs>
   <Members>
     <Member MemberName="GetProperty&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T GetProperty&lt;T&gt; (this Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string propertyName, T defaultValue = null, bool ignoreInvalidTypeError = true);" />
+      <MemberSignature Language="C#" Value="public static T GetProperty&lt;T&gt; (this Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string propertyName, T defaultValue = default, bool ignoreInvalidTypeError = true);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetProperty&lt;T&gt;(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string propertyName, !!T defaultValue, bool ignoreInvalidTypeError) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetProperty``1(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String,``0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProperty(Of T) (contribution As Contribution, propertyName As String, Optional defaultValue As T = Nothing, Optional ignoreInvalidTypeError As Boolean = true) As T" />
       <MemberSignature Language="F#" Value="static member GetProperty : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution * string * 'T * bool -&gt; 'T" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetProperty (contribution, propertyName, defaultValue, ignoreInvalidTypeError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -60,6 +61,7 @@
       <MemberSignature Language="C#" Value="public static object GetPropertyRawValue (this Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetPropertyRawValue(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetPropertyRawValue(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPropertyRawValue (contribution As Contribution, propertyName As String) As Object" />
       <MemberSignature Language="F#" Value="static member GetPropertyRawValue : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution * string -&gt; obj" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetPropertyRawValue (contribution, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -75,8 +77,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contribution"></param>
-        <param name="propertyName"></param>
+        <param name="contribution" />
+        <param name="propertyName" />
         <summary>
             Gets the value of a property in its raw form - with values converted from JObject/JToken into strings, numbers, arrays, dictionaries.
             </summary>
@@ -88,6 +90,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.VisualStudio.Services.WebApi.ReferenceLinks GetReferenceLinks (Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.VisualStudio.Services.WebApi.ReferenceLinks GetReferenceLinks(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetReferenceLinks(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReferenceLinks (contribution As Contribution, propertyName As String) As ReferenceLinks" />
       <MemberSignature Language="F#" Value="static member GetReferenceLinks : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution * string -&gt; Microsoft.VisualStudio.Services.WebApi.ReferenceLinks" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.GetReferenceLinks (contribution, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -103,8 +106,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contribution"></param>
-        <param name="propertyName"></param>
+        <param name="contribution" />
+        <param name="propertyName" />
         <summary>
             Convert the specified contribution property to a ReferenceLinks object
             </summary>
@@ -116,6 +119,7 @@
       <MemberSignature Language="C#" Value="public static bool IsOfType (this Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string contributionTypeId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOfType(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string contributionTypeId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.IsOfType(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsOfType (contribution As Contribution, contributionTypeId As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsOfType : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution * string -&gt; bool" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.IsOfType (contribution, contributionTypeId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -144,6 +148,7 @@
       <MemberSignature Language="C#" Value="public static bool IsTargeting (this Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string contributionId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTargeting(class Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution contribution, string contributionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.IsTargeting(Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsTargeting (contribution As Contribution, contributionId As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsTargeting : Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.Contribution * string -&gt; bool" Usage="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi.ContributionMethods.IsTargeting (contribution, contributionId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -159,8 +164,9 @@
         <Parameter Name="contributionId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contribution">Contribution to check</param>
         <param name="contributionId">To be added.</param>
+        <param name="contribution">Contribution to check</param>
+        <param name="contributionTypeId">The full id of the contribution to check for</param>
         <summary>
             Is the contribution targeting the specified contribution id
             </summary>

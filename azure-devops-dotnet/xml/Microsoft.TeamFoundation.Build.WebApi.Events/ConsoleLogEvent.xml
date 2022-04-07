@@ -1,4 +1,4 @@
-﻿<Type Name="ConsoleLogEvent" FullName="Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent">
+<Type Name="ConsoleLogEvent" FullName="Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent">
   <TypeSignature Language="C#" Value="public sealed class ConsoleLogEvent : Microsoft.TeamFoundation.Build.WebApi.Events.RealtimeBuildEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConsoleLogEvent extends Microsoft.TeamFoundation.Build.WebApi.Events.RealtimeBuildEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -24,14 +25,15 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConsoleLogEvent (int buildId, Guid timelineId, Guid recordId, System.Collections.Generic.IEnumerable&lt;string&gt; lines);" FrameworkAlternate="azure-devops-dotnet-latest" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 buildId, valuetype System.Guid timelineId, valuetype System.Guid recordId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; lines) cil managed" FrameworkAlternate="azure-devops-dotnet-latest" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.#ctor(System.Int32,System.Guid,System.Guid,System.Collections.Generic.IEnumerable{System.String})" FrameworkAlternate="azure-devops-dotnet-latest;azure-devops-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (buildId As Integer, timelineId As Guid, recordId As Guid, lines As IEnumerable(Of String))" FrameworkAlternate="azure-devops-dotnet-latest" />
-      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent : int * Guid * Guid * seq&lt;string&gt; -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent (buildId, timelineId, recordId, lines)" FrameworkAlternate="azure-devops-dotnet-latest;azure-devops-dotnet-preview" />
+      <MemberSignature Language="C#" Value="public ConsoleLogEvent (int buildId, Guid timelineId, Guid recordId, System.Collections.Generic.IEnumerable&lt;string&gt; lines);" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 buildId, valuetype System.Guid timelineId, valuetype System.Guid recordId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; lines) cil managed" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent.#ctor(System.Int32,System.Guid,System.Guid,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (buildId As Integer, timelineId As Guid, recordId As Guid, lines As IEnumerable(Of String))" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent : int * Guid * Guid * seq&lt;string&gt; -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent (buildId, timelineId, recordId, lines)" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="C#" Value="public ConsoleLogEvent (int buildId, Guid timelineId, Guid jobTimelineRecordId, System.Collections.Generic.IEnumerable&lt;string&gt; lines);" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 buildId, valuetype System.Guid timelineId, valuetype System.Guid jobTimelineRecordId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; lines) cil managed" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (buildId As Integer, timelineId As Guid, jobTimelineRecordId As Guid, lines As IEnumerable(Of String))" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent : int * Guid * Guid * seq&lt;string&gt; -&gt; Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent" Usage="new Microsoft.TeamFoundation.Build.WebApi.Events.ConsoleLogEvent (buildId, timelineId, jobTimelineRecordId, lines)" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.Build2.WebApi</AssemblyName>
@@ -41,7 +43,7 @@
       <Parameters>
         <Parameter Name="buildId" Type="System.Int32" Index="0" />
         <Parameter Name="timelineId" Type="System.Guid" Index="1" />
-        <Parameter Name="recordId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet-latest" />
+        <Parameter Name="recordId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet" />
         <Parameter Name="jobTimelineRecordId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
         <Parameter Name="lines" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="3" />
       </Parameters>
@@ -67,11 +69,11 @@
         <AssemblyVersion>16.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="buildId" Type="System.Int32" />
-        <Parameter Name="timelineId" Type="System.Guid" />
-        <Parameter Name="jobTimelineRecordId" Type="System.Guid" />
-        <Parameter Name="stepTimelineRecordId" Type="System.Guid" />
-        <Parameter Name="lines" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="buildId" Type="System.Int32" Index="0" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="timelineId" Type="System.Guid" Index="1" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="jobTimelineRecordId" Type="System.Guid" Index="2" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="stepTimelineRecordId" Type="System.Guid" Index="3" FrameworkAlternate="azure-devops-dotnet-preview" />
+        <Parameter Name="lines" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-devops-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="buildId">To be added.</param>
@@ -117,7 +119,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,7 +146,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -169,7 +173,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

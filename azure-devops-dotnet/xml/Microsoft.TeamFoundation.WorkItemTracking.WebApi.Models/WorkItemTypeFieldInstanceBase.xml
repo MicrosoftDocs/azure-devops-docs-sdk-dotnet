@@ -1,4 +1,4 @@
-﻿<Type Name="WorkItemTypeFieldInstanceBase" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTypeFieldInstanceBase">
+<Type Name="WorkItemTypeFieldInstanceBase" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTypeFieldInstanceBase">
   <TypeSignature Language="C#" Value="public abstract class WorkItemTypeFieldInstanceBase : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemFieldReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkItemTypeFieldInstanceBase extends Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemFieldReference" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemTypeFieldInstanceBase" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -77,7 +78,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -105,7 +107,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,7 +141,7 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj"></param>
+        <param name="obj" />
         <summary>
             This function is called when JSON serializer tries to check circular reference for an object of this class.
             JSON serializer checks every member and their members if any of them is equal to this object and throws error.
@@ -207,7 +210,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

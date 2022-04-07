@@ -1,4 +1,4 @@
-﻿<Type Name="ResourceUsage" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage">
+<Type Name="ResourceUsage" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage">
   <TypeSignature Language="C#" Value="public class ResourceUsage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceUsage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,7 +58,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -109,7 +112,7 @@
       </Docs>
     </Member>
     <Member MemberName="TotalCount">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; TotalCount { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? TotalCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; TotalCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage.TotalCount" />
       <MemberSignature Language="VB.NET" Value="Public Property TotalCount As Nullable(Of Integer)" />
@@ -121,7 +124,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,11 +138,15 @@
       </Docs>
     </Member>
     <Member MemberName="UsedCount">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; UsedCount { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; UsedCount" />
+      <MemberSignature Language="C#" Value="public int UsedCount { get; set; }" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UsedCount" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage.UsedCount" />
-      <MemberSignature Language="VB.NET" Value="Public Property UsedCount As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.UsedCount : Nullable&lt;int&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage.UsedCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property UsedCount As Integer" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.UsedCount : int with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage.UsedCount" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public int? UsedCount { get; set; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; UsedCount" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property UsedCount As Nullable(Of Integer)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.UsedCount : Nullable&lt;int&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage.UsedCount" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -147,14 +155,17 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">System.Int32</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet-preview">System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -163,7 +174,7 @@
       </Docs>
     </Member>
     <Member MemberName="UsedMinutes">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; UsedMinutes { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? UsedMinutes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; UsedMinutes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.WebApi.ResourceUsage.UsedMinutes" />
       <MemberSignature Language="VB.NET" Value="Public Property UsedMinutes As Nullable(Of Integer)" />
@@ -175,7 +186,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

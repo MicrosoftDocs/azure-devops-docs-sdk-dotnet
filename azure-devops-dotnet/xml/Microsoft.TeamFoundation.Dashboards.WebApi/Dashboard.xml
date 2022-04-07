@@ -1,4 +1,4 @@
-﻿<Type Name="Dashboard" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard">
+<Type Name="Dashboard" FullName="Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard">
   <TypeSignature Language="C#" Value="public class Dashboard : Microsoft.TeamFoundation.Dashboards.WebApi.DashboardSecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Dashboard extends Microsoft.TeamFoundation.Dashboards.WebApi.DashboardSecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -46,6 +47,7 @@
       <MemberSignature Language="C#" Value="public Dashboard (Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroupEntry dashboardGroupEntry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroupEntry dashboardGroupEntry) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard.#ctor(Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroupEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dashboardGroupEntry As DashboardGroupEntry)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard : Microsoft.TeamFoundation.Dashboards.WebApi.DashboardGroupEntry -&gt; Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard" Usage="new Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard dashboardGroupEntry" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -118,7 +120,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -146,7 +149,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,7 +165,7 @@
       </Docs>
     </Member>
     <Member MemberName="Id">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; Id { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As Nullable(Of Guid)" />
@@ -174,7 +178,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -226,7 +231,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="_links")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="_links")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="_links")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -252,7 +258,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -280,7 +287,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -308,7 +316,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -323,7 +332,7 @@
       </Docs>
     </Member>
     <Member MemberName="RefreshInterval">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; RefreshInterval { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? RefreshInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; RefreshInterval" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.Dashboards.WebApi.Dashboard.RefreshInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property RefreshInterval As Nullable(Of Integer)" />
@@ -336,7 +345,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -389,7 +399,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -415,7 +426,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

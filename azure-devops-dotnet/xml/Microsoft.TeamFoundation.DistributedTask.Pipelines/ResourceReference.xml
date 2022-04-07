@@ -1,4 +1,4 @@
-﻿<Type Name="ResourceReference" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceReference">
+<Type Name="ResourceReference" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceReference">
   <TypeSignature Language="C#" Value="public abstract class ResourceReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ResourceReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceReference" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -79,7 +81,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -94,11 +97,15 @@
       </Docs>
     </Member>
     <Member MemberName="Name">
-      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;string&gt; Name { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" FrameworkAlternate="azure-devops-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceReference.Name" />
-      <MemberSignature Language="VB.NET" Value="Public Property Name As ExpressionValue(Of String)" />
-      <MemberSignature Language="F#" Value="member this.Name : Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;string&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceReference.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceReference.Name" FrameworkAlternate="azure-devops-dotnet" />
+      <MemberSignature Language="C#" Value="public Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;string&gt; Name { get; set; }" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue`1&lt;string&gt; Name" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As ExpressionValue(Of String)" FrameworkAlternate="azure-devops-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Name : Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;string&gt; with get, set" Usage="Microsoft.TeamFoundation.DistributedTask.Pipelines.ResourceReference.Name" FrameworkAlternate="azure-devops-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -107,14 +114,17 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValueJsonConverter`1&lt;System.String&gt;))</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValueJsonConverter&lt;System.String&gt;))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValueJsonConverter&lt;System.String&gt;))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;System.String&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet">System.String</ReturnType>
+        <ReturnType FrameworkAlternate="azure-devops-dotnet-preview">Microsoft.TeamFoundation.DistributedTask.Pipelines.ExpressionValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

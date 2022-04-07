@@ -1,4 +1,4 @@
-﻿<Type Name="PhaseTarget" FullName="Microsoft.TeamFoundation.Build.WebApi.PhaseTarget">
+<Type Name="PhaseTarget" FullName="Microsoft.TeamFoundation.Build.WebApi.PhaseTarget">
   <TypeSignature Language="C#" Value="public abstract class PhaseTarget : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PhaseTarget extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.PhaseTarget" />
@@ -15,16 +15,20 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.PhaseTargetJsonConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.PhaseTargetJsonConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.PhaseTargetJsonConverter))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.AgentPoolQueueTarget))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.AgentPoolQueueTarget))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.AgentPoolQueueTarget))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ServerTarget))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ServerTarget))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.ServerTarget))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -109,7 +113,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

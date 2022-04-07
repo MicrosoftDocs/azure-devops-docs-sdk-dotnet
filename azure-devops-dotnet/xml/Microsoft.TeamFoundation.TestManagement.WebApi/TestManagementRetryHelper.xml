@@ -1,4 +1,4 @@
-﻿<Type Name="TestManagementRetryHelper" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper">
+<Type Name="TestManagementRetryHelper" FullName="Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper">
   <TypeSignature Language="C#" Value="public class TestManagementRetryHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TestManagementRetryHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper" />
@@ -18,10 +18,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TestManagementRetryHelper (int maxRetries, Nullable&lt;TimeSpan&gt; minBackoff = null, Nullable&lt;TimeSpan&gt; maxBackoff = null, Nullable&lt;TimeSpan&gt; deltaBackoff = null, Func&lt;Exception,bool&gt; canRetryDelegate = null);" />
+      <MemberSignature Language="C#" Value="public TestManagementRetryHelper (int maxRetries, TimeSpan? minBackoff = default, TimeSpan? maxBackoff = default, TimeSpan? deltaBackoff = default, Func&lt;Exception,bool&gt; canRetryDelegate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 maxRetries, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; minBackoff, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; maxBackoff, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; deltaBackoff, class System.Func`2&lt;class System.Exception, bool&gt; canRetryDelegate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper.#ctor(System.Int32,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Func{System.Exception,System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (maxRetries As Integer, Optional minBackoff As Nullable(Of TimeSpan) = null, Optional maxBackoff As Nullable(Of TimeSpan) = null, Optional deltaBackoff As Nullable(Of TimeSpan) = null, Optional canRetryDelegate As Func(Of Exception, Boolean) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (maxRetries As Integer, Optional minBackoff As Nullable(Of TimeSpan) = Nothing, Optional maxBackoff As Nullable(Of TimeSpan) = Nothing, Optional deltaBackoff As Nullable(Of TimeSpan) = Nothing, Optional canRetryDelegate As Func(Of Exception, Boolean) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper : int * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Func&lt;Exception, bool&gt; -&gt; Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper" Usage="new Microsoft.TeamFoundation.TestManagement.WebApi.TestManagementRetryHelper (maxRetries, minBackoff, maxBackoff, deltaBackoff, canRetryDelegate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

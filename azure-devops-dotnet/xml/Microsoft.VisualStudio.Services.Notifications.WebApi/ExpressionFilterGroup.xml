@@ -1,4 +1,4 @@
-﻿<Type Name="ExpressionFilterGroup" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup">
+<Type Name="ExpressionFilterGroup" FullName="Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup">
   <TypeSignature Language="C#" Value="public class ExpressionFilterGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressionFilterGroup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -85,7 +86,7 @@
         <Parameter Name="groups" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.VisualStudio.Services.Notifications.WebApi.ExpressionFilterGroup&gt;" />
       </Parameters>
       <Docs>
-        <param name="groups"></param>
+        <param name="groups" />
         <summary>
             Recursively assigns levels based on the group hierarchy
             </summary>
@@ -157,7 +158,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="end")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="end")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="end")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -191,8 +193,8 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="groups"></param>
-        <param name="row"></param>
+        <param name="groups" />
+        <param name="row" />
         <summary>
             Find the parent group for the current group
             </summary>
@@ -214,7 +216,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="level")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="level")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="level")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -242,7 +245,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="start")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="start")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false, Name="start")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

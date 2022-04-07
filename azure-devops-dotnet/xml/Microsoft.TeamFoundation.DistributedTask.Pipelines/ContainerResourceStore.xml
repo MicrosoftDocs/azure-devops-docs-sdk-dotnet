@@ -1,4 +1,4 @@
-﻿<Type Name="ContainerResourceStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResourceStore">
+<Type Name="ContainerResourceStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResourceStore">
   <TypeSignature Language="C#" Value="public class ContainerResourceStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.InMemoryResourceStore&lt;Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt;, Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerResourceStore extends Microsoft.TeamFoundation.DistributedTask.Pipelines.InMemoryResourceStore`1&lt;class Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource&gt; implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IContainerStore" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResourceStore" />
@@ -38,8 +38,9 @@
       <Parameters>
         <Parameter Name="containers" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.ContainerResource[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

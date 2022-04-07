@@ -1,4 +1,4 @@
-﻿<Type Name="Demand" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.Demand">
+<Type Name="Demand" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.Demand">
   <TypeSignature Language="C#" Value="public abstract class Demand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Demand extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.Demand" />
@@ -15,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.WebApi.DemandJsonConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.WebApi.DemandJsonConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.DistributedTask.WebApi.DemandJsonConverter))&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -179,7 +181,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -218,7 +221,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class Microsoft.TeamFoundation.DistributedTask.WebApi.Demand&amp; demand) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.Demand.TryParse(System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.Demand@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef demand As Demand) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.Demand.TryParse (input, demand)" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * Demand -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.Demand.TryParse (input, demand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>
@@ -278,7 +281,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(EmitDefaultValue=false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(EmitDefaultValue=false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

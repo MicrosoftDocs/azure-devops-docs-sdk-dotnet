@@ -1,4 +1,4 @@
-﻿<Type Name="PackageVersion" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion">
+<Type Name="PackageVersion" FullName="Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion">
   <TypeSignature Language="C#" Value="public class PackageVersion : IComparable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion&gt;, IEquatable&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PackageVersion extends System.Object implements class System.IComparable`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion&gt;, class System.IEquatable`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion" />
@@ -22,7 +22,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -182,7 +183,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -208,7 +210,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -259,7 +262,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -298,7 +302,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string versionStr, [out] class Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion&amp; version) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion.TryParse(System.String,Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (versionStr As String, ByRef version As PackageVersion) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion.TryParse (versionStr, version)" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * PackageVersion -&gt; bool" Usage="Microsoft.TeamFoundation.DistributedTask.WebApi.PackageVersion.TryParse (versionStr, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.TeamFoundation.DistributedTask.WebApi</AssemblyName>

@@ -1,4 +1,4 @@
-﻿<Type Name="WikiCompatHttpClientBase" FullName="Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase">
+<Type Name="WikiCompatHttpClientBase" FullName="Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase">
   <TypeSignature Language="C#" Value="public abstract class WikiCompatHttpClientBase : Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WikiCompatHttpClientBase extends Microsoft.VisualStudio.Services.WebApi.VssHttpClientBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase" />
@@ -15,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -88,8 +89,9 @@
         <Parameter Name="credentials" Type="Microsoft.VisualStudio.Services.Common.VssCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -145,8 +147,9 @@
         <Parameter Name="settings" Type="Microsoft.VisualStudio.Services.Common.VssHttpRequestSettings" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-latest">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -161,9 +164,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateWikiAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync (Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync (Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync(class Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase.CreateWikiAsync(Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWikiAsync (wikiCreateParams As WikiCreateParameters, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Wiki)" />
       <MemberSignature Language="F#" Value="member this.CreateWikiAsync : Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;" Usage="wikiCompatHttpClientBase.CreateWikiAsync (wikiCreateParams, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -181,7 +185,7 @@
       </Parameters>
       <Docs>
         <param name="wikiCreateParams">Object containing name of the wiki to be created and the ID of the project in which the wiki is to be created. The provided name will also be used in the name of the backing git repository. If this is empty, the name will be auto generated.</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a backing git repository and does the intialization of the wiki for the given project.
@@ -191,9 +195,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateWikiAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync (Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync (Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, Guid project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync(class Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase.CreateWikiAsync(Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters,System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWikiAsync (wikiCreateParams As WikiCreateParameters, project As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Wiki)" />
       <MemberSignature Language="F#" Value="member this.CreateWikiAsync : Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters * Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;" Usage="wikiCompatHttpClientBase.CreateWikiAsync (wikiCreateParams, project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -213,7 +218,7 @@
       <Docs>
         <param name="wikiCreateParams">Object containing name of the wiki to be created and the ID of the project in which the wiki is to be created. The provided name will also be used in the name of the backing git repository. If this is empty, the name will be auto generated.</param>
         <param name="project">Project ID</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a backing git repository and does the intialization of the wiki for the given project.
@@ -223,9 +228,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateWikiAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync (Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync (Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, string project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt; CreateWikiAsync(class Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters wikiCreateParams, string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase.CreateWikiAsync(Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWikiAsync (wikiCreateParams As WikiCreateParameters, project As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Wiki)" />
       <MemberSignature Language="F#" Value="member this.CreateWikiAsync : Microsoft.TeamFoundation.Wiki.WebApi.WikiCreateParameters * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;" Usage="wikiCompatHttpClientBase.CreateWikiAsync (wikiCreateParams, project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -245,7 +251,7 @@
       <Docs>
         <param name="wikiCreateParams">Object containing name of the wiki to be created and the ID of the project in which the wiki is to be created. The provided name will also be used in the name of the backing git repository. If this is empty, the name will be auto generated.</param>
         <param name="project">Project ID or project name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Creates a backing git repository and does the intialization of the wiki for the given project.
@@ -255,9 +261,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWikisAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync (object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync (object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync(object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase.GetWikisAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWikisAsync (Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of Wiki))" />
       <MemberSignature Language="F#" Value="member this.GetWikisAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt;" Usage="wikiCompatHttpClientBase.GetWikisAsync (userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -273,7 +280,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Gets wiki repositories in a project or collection.
@@ -283,9 +290,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWikisAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync (Guid project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync (Guid project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync(valuetype System.Guid project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase.GetWikisAsync(System.Guid,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWikisAsync (project As Guid, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of Wiki))" />
       <MemberSignature Language="F#" Value="member this.GetWikisAsync : Guid * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt;" Usage="wikiCompatHttpClientBase.GetWikisAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -303,7 +311,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Gets wiki repositories in a project or collection.
@@ -313,9 +321,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetWikisAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync (string project, object userState = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync (string project, object userState = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt; GetWikisAsync(string project, object userState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.Wiki.WebApi.WikiCompatHttpClientBase.GetWikisAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWikisAsync (project As String, Optional userState As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of List(Of Wiki))" />
       <MemberSignature Language="F#" Value="member this.GetWikisAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.TeamFoundation.Wiki.WebApi.Wiki&gt;&gt;" Usage="wikiCompatHttpClientBase.GetWikisAsync (project, userState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -333,7 +342,7 @@
       </Parameters>
       <Docs>
         <param name="project">Project ID or project name</param>
-        <param name="userState"></param>
+        <param name="userState" />
         <param name="cancellationToken">The cancellation token to cancel operation.</param>
         <summary>
             [Preview API] Gets wiki repositories in a project or collection.

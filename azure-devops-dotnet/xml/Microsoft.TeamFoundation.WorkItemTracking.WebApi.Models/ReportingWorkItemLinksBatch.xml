@@ -1,9 +1,13 @@
-﻿<Type Name="ReportingWorkItemLinksBatch" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.ReportingWorkItemLinksBatch">
-  <TypeSignature Language="C#" Value="public class ReportingWorkItemLinksBatch : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.StreamedBatch&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemRelation&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReportingWorkItemLinksBatch extends Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.StreamedBatch`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemRelation&gt;" />
+<Type Name="ReportingWorkItemLinksBatch" FullName="Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.ReportingWorkItemLinksBatch">
+  <TypeSignature Language="C#" Value="public class ReportingWorkItemLinksBatch : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.StreamedBatch&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.ReportingWorkItemLink&gt;" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReportingWorkItemLinksBatch extends Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.StreamedBatch`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.ReportingWorkItemLink&gt;" FrameworkAlternate="azure-devops-dotnet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.ReportingWorkItemLinksBatch" />
-  <TypeSignature Language="VB.NET" Value="Public Class ReportingWorkItemLinksBatch&#xA;Inherits StreamedBatch(Of WorkItemRelation)" />
-  <TypeSignature Language="F#" Value="type ReportingWorkItemLinksBatch = class&#xA;    inherit StreamedBatch&lt;WorkItemRelation&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReportingWorkItemLinksBatch&#xA;Inherits StreamedBatch(Of ReportingWorkItemLink)" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="F#" Value="type ReportingWorkItemLinksBatch = class&#xA;    inherit StreamedBatch&lt;ReportingWorkItemLink&gt;" FrameworkAlternate="azure-devops-dotnet" />
+  <TypeSignature Language="C#" Value="public class ReportingWorkItemLinksBatch : Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.StreamedBatch&lt;Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemRelation&gt;" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReportingWorkItemLinksBatch extends Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.StreamedBatch`1&lt;class Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItemRelation&gt;" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReportingWorkItemLinksBatch&#xA;Inherits StreamedBatch(Of WorkItemRelation)" FrameworkAlternate="azure-devops-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type ReportingWorkItemLinksBatch = class&#xA;    inherit StreamedBatch&lt;WorkItemRelation&gt;" FrameworkAlternate="azure-devops-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.TeamFoundation.WorkItemTracking.WebApi</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +23,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

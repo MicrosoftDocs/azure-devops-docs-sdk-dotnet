@@ -1,4 +1,4 @@
-﻿<Type Name="BuildProcess" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildProcess">
+<Type Name="BuildProcess" FullName="Microsoft.TeamFoundation.Build.WebApi.BuildProcess">
   <TypeSignature Language="C#" Value="public class BuildProcess : Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildProcess extends Microsoft.VisualStudio.Services.WebApi.BaseSecuredObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.Build.WebApi.BuildProcess" />
@@ -15,19 +15,24 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.BuildProcessJsonConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.BuildProcessJsonConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.TeamFoundation.Build.WebApi.BuildProcessJsonConverter))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.DesignerProcess))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.DesignerProcess))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.DesignerProcess))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.YamlProcess))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.YamlProcess))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.YamlProcess))&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.DockerProcess))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.DockerProcess))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(Microsoft.TeamFoundation.Build.WebApi.DockerProcess))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -95,7 +100,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(Name="Type")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="Type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="Type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

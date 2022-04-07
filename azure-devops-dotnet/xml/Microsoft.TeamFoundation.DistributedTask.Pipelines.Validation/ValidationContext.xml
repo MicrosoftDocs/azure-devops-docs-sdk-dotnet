@@ -1,4 +1,4 @@
-﻿<Type Name="ValidationContext" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationContext">
+<Type Name="ValidationContext" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationContext">
   <TypeSignature Language="C#" Value="public sealed class ValidationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ValidationContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationContext" />
@@ -13,8 +13,9 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -23,10 +24,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ValidationContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions options, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore, Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore resourceStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.IInputValidator inputValidator = null, Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources resources = null);" />
+      <MemberSignature Language="C#" Value="public ValidationContext (Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions options, Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore, Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore resourceStore = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.IInputValidator inputValidator = default, Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources resources = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions options, class Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore taskStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore resourceStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore packageStore, class Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.IInputValidator inputValidator, class Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources resources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationContext.#ctor(Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions,Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore,Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.IInputValidator,Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (options As ValidationOptions, taskStore As ITaskStore, Optional resourceStore As IResourceStore = null, Optional packageStore As IPackageStore = null, Optional inputValidator As IInputValidator = null, Optional resources As PipelineResources = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (options As ValidationOptions, taskStore As ITaskStore, Optional resourceStore As IResourceStore = Nothing, Optional packageStore As IPackageStore = Nothing, Optional inputValidator As IInputValidator = Nothing, Optional resources As PipelineResources = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationContext : Microsoft.TeamFoundation.DistributedTask.Pipelines.ValidationOptions * Microsoft.TeamFoundation.DistributedTask.Pipelines.ITaskStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IResourceStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.IPackageStore * Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.IInputValidator * Microsoft.TeamFoundation.DistributedTask.Pipelines.PipelineResources -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationContext" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.Validation.ValidationContext (options, taskStore, resourceStore, packageStore, inputValidator, resources)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

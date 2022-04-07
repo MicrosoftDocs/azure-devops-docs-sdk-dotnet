@@ -1,4 +1,4 @@
-﻿<Type Name="VariableGroupStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore">
+<Type Name="VariableGroupStore" FullName="Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore">
   <TypeSignature Language="C#" Value="public class VariableGroupStore : Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VariableGroupStore extends System.Object implements class Microsoft.TeamFoundation.DistributedTask.Pipelines.IStepProvider, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupStore" />
   <TypeSignature Language="DocId" Value="T:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore" />
@@ -20,8 +20,9 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,10 +31,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VariableGroupStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; resources, Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver resolver = null, params Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[] valueProviders);" />
+      <MemberSignature Language="C#" Value="public VariableGroupStore (System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; resources, Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver resolver = default, params Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[] valueProviders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; resources, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver resolver, class Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[] valueProviders) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore.#ctor(System.Collections.Generic.IList{Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup},Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver,Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (resources As IList(Of VariableGroup), Optional resolver As IVariableGroupResolver = null, ParamArray valueProviders As IVariableValueProvider())" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resources As IList(Of VariableGroup), Optional resolver As IVariableGroupResolver = Nothing, ParamArray valueProviders As IVariableValueProvider())" />
       <MemberSignature Language="F#" Value="new Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore : System.Collections.Generic.IList&lt;Microsoft.TeamFoundation.DistributedTask.WebApi.VariableGroup&gt; * Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver * Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[] -&gt; Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore" Usage="new Microsoft.TeamFoundation.DistributedTask.Pipelines.VariableGroupStore (resources, resolver, valueProviders)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -45,8 +46,9 @@
         <Parameter Name="resolver" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableGroupResolver" />
         <Parameter Name="valueProviders" Type="Microsoft.TeamFoundation.DistributedTask.Pipelines.IVariableValueProvider[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-devops-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
